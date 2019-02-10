@@ -1,2 +1,2 @@
-* This is readme file
-just testing
+* Bioinformatics exercises
+** [[./shell_introduction.md][Introduction to shell]] 
