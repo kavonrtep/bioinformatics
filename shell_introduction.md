@@ -82,20 +82,21 @@ Several commands are frequently used to **create**, **inspect**, **rename**, and
 ---
 
 ## Start shell
-run `term` program
+run `terminal` program
 
 ### command prompt:
 ~~~
-manager@$bl8vbox: /home/manager$
+user@bioinfo:~$ 
 ~~~
 a **prompt**, which shows us that the shell is waiting for input;
 your shell may use a different character as a prompt and may add information before the prompt.
 When typing commands, either from these lessons or from other sources, do not type the prompt, only the commands that follow it.
 
 ---
+Commands can be written on the terminal line and arbitrary edited until **Enter key** is pressed.
 
 Type the command `whoami`,
-then press the Enter key (sometimes marked Return) to send the command to the shell.
+then press the **Enter key** (sometimes marked Return) to send the command to the shell.
 The command's output is the ID of the current user,
 i.e.,
 it shows us who the shell thinks we are:
@@ -106,7 +107,7 @@ $ whoami
 output:
 
 ~~~
-manager
+user
 ~~~
 
 ---
@@ -115,13 +116,13 @@ More specifically, when we type `whoami` the shell:
 
 1.  finds a program called `whoami`,
 2.  runs that program,
-3.  displays that program's output, then
+3.  displays that program's output on terminal, then
 4.  displays a new prompt to tell us that it's ready for more commands.
 
 ---
 
 
-Next, let's find out where we are by running a command called `pwd` (which stands for "print working directory").
+Next, let's find out where we are by running a command called `pwd` (which stands for **"print working directory"**).
 **current working directory** = default directory (the directory that the computer assumes we want to run commands in unless we explicitly specify something else)
 
 ---
@@ -136,7 +137,7 @@ Next, let's find out where we are by running a command called `pwd` (which stand
 ├── home
 |   ├── franta
 |   ├── pavel
-|   └── petr
+|   └── user
 ├── lib
 ├── lib32
 ├── lib64
@@ -196,17 +197,19 @@ $ ls --help
 ~~~
 
 ~~~
-Usage: ls [OPTION]... [FILE]...
-List information about the FILEs (the current directory by default).
-Sort entries alphabetically if none of -cftuvSUX nor --sort is specified.
 
-Mandatory arguments to long options are mandatory for short options too.
-  -a, --all                  do not ignore entries starting with .
+  Usage: ls [OPTION]... [FILE]...
+  List information about the FILEs (the current directory by default).
+  Sort entries alphabetically if none of -cftuvSUX nor --sort is specified.
+
+  Mandatory arguments to long options are mandatory for short options too.
+  -a, --aluser@bioinfo:~$ l                  do not ignore entries starting with .
   -A, --almost-all           do not list implied . and ..
       --author               with -l, print the author of each file
   -b, --escape               print C-style escapes for nongraphic characters
       --block-size=SIZE      scale sizes by SIZE before printing them; e.g.,
   ...
+
 ~~~
 
 ---
@@ -234,9 +237,13 @@ Mandatory arguments to long options are mandatory for short options too.
 
 ---
 
-Many bash commands, and programs that people have written that can be run from within bash, support a `--help` flag to display more information on how to use the commands or programs.
+Many bash commands, and programs that people have written that can be run from
+within bash, support a `--help` flag to display more information on how to use
+the commands or programs.
 
-For more information on how to use `ls` we can type `man ls`. `man` is the Unix "manual" command: it prints a description of a command and its options, and (if you're lucky) provides a few examples of how to use it.
+For more information on how to use `ls` we can type `man ls`. `man` is the Unix
+"manual" command: it prints a description of a command and its options, and (if
+you're lucky) provides a few examples of how to use it.
 
 ---
 
@@ -257,10 +264,29 @@ The second argument the one *without* a leading dash tells `ls` that
 we want a listing of something other than our current working directory
 
 ---
+## Arguments syntax conventions
 
-try from home directory
+- Arguments are options if they begin with a hyphen delimiter (`-`).
+- Multiple options may follow a hyphen delimiter in a single token if the
+  options do not take arguments. Thus, `-abc` is equivalent to `-a -b -c`
+- Option names are single alphanumeric characters
+- Long options consist of `--`` followed by a name made of alphanumeric characters and dashes
+
+### Examples:
 ~~~
-ls Desktop/Sample_Data/ -l
+ls -lh --sort size -r
+ls -lhr --sort size
+ls -l -h --sort time --reverse
+~~~
+
+
+---
+
+We can also use `ls` to see the contents of a different directory.
+try from home directory
+
+~~~
+ls Desktop/ -l
 ~~~
 
 - Files are organized in an hierarchical file system.
@@ -281,8 +307,8 @@ Try (from your home directory):
 
 ~~~
 $ cd Desktop
-$ cd Sample_Data
-$ cd fasta
+$ cd bioinformatics
+$ cd data
 ~~~
 
 - `cd` doesn't print anything, but if we run `pwd` after it, we can see that we are now in different directory.
@@ -314,7 +340,7 @@ There is a shortcut in the shell to move up one directory level that looks like 
 $ cd ..
 ~~~
 
-`..` is a special directory name meaning - ==**parent**== of the current directory.
+`..` is a special directory name meaning  **parent** of the current directory.
 
 ---
 
@@ -404,11 +430,11 @@ let’s say you want to run the **firefox** command. You can just type **fir** o
 
 ## Absolute vs Relative Paths
 
-Starting from `/home/manager/Desktop/Sample_Data`, which of the following commands you could use to navigate to home directory, which is `/home/manager`?
+Starting from `/home/manager/Desktop/Bioinformatics`, which of the following commands you could use to navigate to home directory, which is `/home/user`?
 ~~~
 1. cd .
 2. cd /
-3. cd /home/manager
+3. cd /home/user
 4. cd ../..
 5. cd ~
 6. cd home
@@ -422,10 +448,12 @@ Starting from `/home/manager/Desktop/Sample_Data`, which of the following comman
 **Relative Path Resolution**
 If `pwd` displays `/Users/thing`, what will `ls ../backup` display?
 ![File System for Challenge Questions](fig/filesystem-challenge.svg)
-`1. ../backup: No such file or directory`
-`2. 2012-12-01 2013-01-08 2013-01-27`
-`3. 2012-12-01/ 2013-01-08/ 2013-01-27/`
-`4. original pnas_final pnas_sub`
+
+
+1. `../backup: No such file or directory`
+2. `2012-12-01 2013-01-08 2013-01-27`
+3. `2012-12-01/ 2013-01-08/ 2013-01-27/`
+4. `original pnas_final pnas_sub`
 
 ---
 
@@ -446,7 +474,7 @@ What does the command `ls` do when used with the `-l` and `-h` arguments?
 
 ---
 
-# Creating file/directories
+# Creating file and directories
 
 ---
 
@@ -457,8 +485,8 @@ ls
 mkdir analysis
 ls
 ~~~
-`mkdir` means "make directory". Since `thesis` is a relative path (i.e., doesn't
-have a leading slash), the new directory is created in the current working
+`mkdir` means "make directory". Since `analysis` is a relative path (i.e., doesn't
+have a leading slash `\`), the new directory is created in the current working
 directory:
 
 ---
@@ -481,6 +509,10 @@ directory:
 - emacs
 ### graphical 
 - gedit
+- xed
+- kate
+
+MS Word or Libre Office are **document** editors not suitable for handling data files!
 
 ---
 
@@ -489,9 +521,9 @@ directory:
 ![Nano in Action](fig/nano-screenshot.png)
 Control, Ctrl, or ^ Key
 
-## gedit
+## xed
 
-try `gedit` 
+try `xed` 
 
 ---
 
@@ -502,10 +534,10 @@ rm     # remove file(s)
 rmdir  # remove dir - must be empty
 ~~~
 try to `rm` directory  - what happens?
-
+document
 
 ~~~
-rm: cannot remove `thesis': Is a directory
+rm: cannot remove `analysis': Is a directory
 ~~~
 
 try again with `rm -r`
@@ -515,11 +547,12 @@ try again with `rm -r`
 
 ## Renaming and moving files `mv`
 command `mv` means move
+(hashtag `#` mark commentary)
 ### exercise:
 ~~~
 mkdir data
-gedit samples.txt # create some text file and save
-# quit gedit
+xed samples.txt # create some text file and save
+# quit xed
 ls
 mv samples.txt data/ # moving
 ls
@@ -555,12 +588,15 @@ ls data/
 
 ## example
 go to directory:
-`~/Desktop/shell-novice/filesystem/Users/nelle/molecules`
+
+`~/Desktop/bioinformatics/data/molecules` and list files in directory:
  
 ~~~
-$ ls molecules
+cd ~/Desktop/bioinformatics/data/molecules
+ls 
 ~~~
 
+results:
 ~~~
 cubane.pdb    ethane.pdb    methane.pdb
 octane.pdb    pentane.pdb   propane.pdb
@@ -570,7 +606,7 @@ octane.pdb    pentane.pdb   propane.pdb
 it counts the number of lines, words, and characters in files.
 
 ~~~
-cd molecules
+
 ls *.pdb
 wc *.pdb
 wc -c *.pdb   # number of character only
@@ -594,8 +630,7 @@ When the shell sees a wildcard, it expands the wildcard to create a list of matc
 ---
 
 ## Examples
-try in directory
-`~/Desktop/shell-novice/filesystem/Users/nelle/molecules`
+try in `molecules` directory
 
 ~~~
 ls *th*.pdb
@@ -622,7 +657,7 @@ cat lengths.txt
 # displaying files
 - `cat` print whole file(s) on the screen
 - `less` display page by page
-- `head` and `tail` - beggining or end of file
+- `head` and `tail` print  beggining or end of file
 ---
 
 # sorting
@@ -631,9 +666,11 @@ cat lengths.txt
 sort lengths.txt
 # is this what we want?
 
+# try to add option -n (numeric sort)
 sort -n lengths.txt
 ~~~
 
+correct results
 ~~~
   9  methane.pdb
  12  ethane.pdb
@@ -707,6 +744,7 @@ for FILENAME in cubane.pdb ethane.pdb methane.pdb
 >    head -n 3 $FILENAME
 > done
 ~~~
+
 - `for` shell keyword
 - `$FILENAME` variable
 - command prompt is different `>`
@@ -779,51 +817,58 @@ done
 
 ---
 
-# `grep`
+# `grep` Global/Regular Expression/Print
 
-Global/Regular Rexpression/Print
+grep syntax:
+grep [OPTION]... PATTERN [FILE]...
+        
 ~~~
-cd /home/manager/Desktop/shell-novice/filesystem/Users/nelle/writing
-cat haiku.txt
-grep not haiku.txt
+cd ~/Desktop/bioinformatics/data
+ls
+less Dm_annotation.gtf
+# find lines in the file which contain gene name Alg-2
+grep Alg-2 Dm_annotation.gtf
+
+# write subset of lines into new file
+grep Alg-2 Dm_annotation.gtf > Alg-2.gtf
 ~~~
 
-Here, `not` is the pattern we're searching for
-Let's try a different pattern: `day`
-
-~~~
-grep day haiku.txt
-# count occurences
-grep -c day haiku.txt
-
-~~~
 
 ---
 
-Analyzing fasta files:
+Use grep to analyze fasta files:
 ~~~
 # count number of sequences in fasta:
-grep -c ">" ~/Desktop/Sample_Data/muscle/peps_to_align.fasta
+cd  ~/Desktop/bioinformatics/data
+# in the next command quotes around > are important!
+grep -c ">" short-reads.fasta
 # list sequence ids:
-grep ">" ~/Desktop/Sample_Data/muscle/peps_to_align.fasta
-grep ">OLATSOX9B" -A 10 ~/Desktop/Sample_Data/muscle/peps_to_align.fasta
-grep -c ">" ~/Desktop/Sample_Data/**/*.fasta
+grep ">" short-reads.fasta
+
 ~~~
 ---
 
+~~~
 # `grep` other useful options
-~~~
-grep -w "is not" haiku.txt   # whole words
-grep -n "is not" haiku.txt   # show line numbers
-grep -n -w -i "the" haiku.txt  # -i = case insensitive
-grep -v -i "The" haiku.txt   # -v invert match
+# find sequences which contain N character - unknown base
+grep -n N short-reads.fasta
+# -n mean print also line numbers
+# but we want to know also sequence id for sequences containing N
+grep -B 2 -n N short-reads.fasta
+# -B  print also 2 lines before pattern match
+# -A means after
+#  but uknown bases could be written either as n or N
+grep -n -i n short-reads.fasta
+# -i = case insensitive
 # see help for more
-
+grep --help
 ~~~
 
----
 
-# `find` command
+
+
+## Find command
+
 
 ![File Tree for Find Example](fig/find-file-tree.svg)
 
@@ -835,6 +880,7 @@ find .
 - `find`'s output is the names of every file and directory under the current working directory.
 
 ~~~
+# try this in ~/Desktop/bioinformatics/data
 find . -type d   # directories
 find . -type f   # files
 ~~~
@@ -848,6 +894,9 @@ find . -name *.txt    # shell expands * before running find!
 
 find . -name '*.txt'
 ~~~
+
+
+# Advanced topics
 
 ## combining find and other command
 use `$()` expression
@@ -871,7 +920,7 @@ grep FE  $(find .. -name '*.pdb')
 ~~~
 
 ---
-running command line blast:
+# running command line blast exercise:
 visit `ftp://ftp.ncbi.nih.gov/refseq/M_musculus/mRNA_Prot`
 Download sequences and create blast database
 
