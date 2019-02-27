@@ -1,0 +1,329 @@
+#+TITLE: Sequence Alignment
+#+OPTIONS: toc:nil
+
+* dotplots
+
+Dotter is a graphical dotplot program for detailed comparison of two sequences.
+It generates a dotplot where the first sequence to be compared is set along the
+x-axis, and the second sequence along the y-axis. If two sequences are similar
+in two regions, a dot is plotted with an intensity proportional to the
+similarity.
+
+** dotplot programs:
+- Destop applications:
+  - dotter (https://www.sanger.ac.uk/science/tools/seqtools), linux only
+  - gepard (http://cube.univie.ac.at/gepard)  - suitable for larger sequences, platworm independent
+- Web applications
+  - YASS server (https://bioinfo.lifl.fr/yass/index.php), suitable for large sequences or whole chromosomes
+  - Dot server (https://dnanexus.github.io/dot/) - whole genome comparison
+
+To run *dotter*, open terminal window and  type "dotter" followed by two file names:
+#+BEGIN_SRC bash
+dotter file1.fasta file2.fasta
+#+END_SRC
+
+
+** Fasta files specification:
+FASTA format is a text-based format for representing either nucleotide sequences
+or peptide sequences, in which nucleotides or amino acids are represented using
+single-letter codes. The description line (defline) or header line, which begins
+with ~>~ gives a name and/or a unique identifier for the sequence, and may also
+contain additional information After the header line and comments, one or more
+lines may follow describing the sequence
+
+Example of fasta file format:
+
+#+BEGIN_EXAMPLE
+>sequence_name
+ACGTGCGTACGTACGTGTGTCGTA
+ACGTACGTAAACCGTCGTACGTAC
+ACGTGTGTACAGTCGTACAGTACG
+#+END_EXAMPLE
+
+** Exercise - structure of HER proteins - Human epidermal growth receptors
+
+- download protein sequences of receptor protein-tyrosine kinase from Uniprot:
+| accessions | name        |
+|------------+-------------|
+| P00533     | ERBB2       |
+| P21860     | ERB3        |
+| Q15303     | ERB4        |
+| O18735     | ERBB2 (Dog) |
+|------------+-------------|
+
+data for this exercise were downloaded from iniprot using the commands:
+#+begin_src sh 
+mkdir data/dotter_sequences
+cd data/dotter_sequences
+wget https://www.uniprot.org/uniprot/P00533.fasta
+wget https://www.uniprot.org/uniprot/P21860.fasta
+wget https://www.uniprot.org/uniprot/Q15303.fasta
+wget https://www.uniprot.org/uniprot/O18735.fasta
+#+end_src
+
+#+RESULTS:
+
+- compare /ErbB2/ against /ErB3/. Notice the patterns
+  in the dot plot and try to find functional domains, for example cysteine rich
+  regions
+- compare /ErbB2/ with /ErbB2-dog/. Do you see the same pattern? There is an
+  insertion in the C-term of one of the sequences. Which sequence has the
+  insertion and what is it? Use the dotter sequence window to view the
+  sequences. You can make a magnified view by dragging out a region with the
+  middle mouse button (makes a new dot plot)
+- compare all proteins to all proteins
+
+#+begin_src sh 
+cd ~/Desktop/bioinformatics/data/dotter_sequences/
+dotter P00533.fasta P21860.fasta # human ERBB2 vs human ERB3  (paralogs)
+dotter P00533.fasta Q15303.fasta  # human ERBB2 vs dog ERBB2  (orthologs)
+# all to all comparison:
+cat *.fasta > all_erb.fasta # first we need concatenated sequences in single fasta file
+dotter all_erb.fasta all_erb.fasta
+#+end_src
+
+#+BEGIN_COMMENT
+insertion - KTLSP
+#+END_COMMENT
+
+** Exercise - Locate exon/intron boundaries using dotter (splice sites).
+- download sequence AC108130.3 from genbank, save only region from 60000 to 119999
+- download cDNA sequence of GABA A receptor: https://www.ncbi.nlm.nih.gov/nuccore/21265167?report=fasta
+- run dotter on these two sequences, identify exon/intron structure
+- Are the splice sites consensus splice sites? In vertebrates, the intron starts
+  with GT and ends with AG, which are called consensus splice sites.
+- What's going on at the 3' end of the cDNA?
+- download GABAA1 protein sequence - https://www.ncbi.nlm.nih.gov/protein/27808653?report=fasta
+- make dotter of genomic dna vs protein sequence
+- what is different, why is the protein alignment shorter than cDNA
+
+#+begin_src sh
+dotter AC108130.3.fna BC030696.1.fna  # genome vs cDNA
+dotter AC108130.3.fna GBRA1_HUMAN.fna   # genome vs protein 
+#+end_src
+
+** Exercise - identification of repeats
+*** repeat structure in CDC10 protein - ankyrin repeat
+- download CDC10 protein - http://www.uniprot.org/uniprot/P01129.fasta 
+- make dotplot of CDC10 against itself
+- what is the position of repeat?
+- compare with position of ANK repeat in uniprot database
+#+begin_src sh
+mkdir repeats
+cd repeats
+wget http://www.uniprot.org/uniprot/P01129.fasta 
+#+end_src
+
+#+begin_comment
+Repeat1	356 – 385	ANK 1
+Repeat2	483 – 512	ANK 2
+#+end_comment
+
+
+*** repeats in ice nucleation protein 
+- P20469 is an ice nucleation protein, with a large number of repeats. What is the structure of repeating units
+- download sequences from uniprot : http://www.uniprot.org/uniprot/P20469.fasta
+#+begin_src sh
+wget http://www.uniprot.org/uniprot/P20469.fasta
+dotter P20469.fasta P20469.fasta
+#+end_src
+
+*** example repeats in DNA sequences 
+**** Inverted repeats
+create dotter with https://www.ncbi.nlm.nih.gov/nuccore/LC052278.1?report=fasta&log$=seqview&format=text
+**** Direct repeats
+create dotter using https://www.ncbi.nlm.nih.gov/nuccore/AF049230.1?report=fasta&log$=seqview&format=text
+**** Tandem repeats
+create dotter using https://www.ncbi.nlm.nih.gov/nuccore/KF293390.1?report=fasta&log$=seqview&format=text
+
+** overlaping sequences
+make dotplot from following sequences:
+#+BEGIN_EXAMPLE
+>seqA
+CCACAGCCCAGCTGTTCCCTCCGCGGATTCTCCGGGGCTGGTTCATCACCTCCGAATATTCCTGTGACAG
+GAGACGCTTGCAAAACCCGCCTCCAGCCTCCAGCAGCAAATAAATAGAAGGCTTGCAGCCCAGAAGGAGC
+CAGAAGAAGTTTCTAGGCGCGCGTGCCCTGGGTTTATTAAGCTCCTGGCTCCGCTCTAGACCTCAGCGGT
+TCTGGCTGCCAGCCTGGGCAGCCTGGGAAGCCTGGGAGGACGGTGGCTTGCCGGTCTGTCGTGAGGCAGT
+GCGGACGGGGACCCTCTGGGATTCTGCTGGATCTGCCCCGGGGGTTACCTTTGGGGGCTGGGACCCCAGT
+CGAGGGGACACAACCGTCCCTGGCAGTGGTTGGTTCTGCTTCTCCCTGCAGAAAAGCAGCATTTTCGGAA
+GCTGAAGAATAAGCTAGCCCAGCCACACCACCTTGTTGTGTGACCTTGGGCAGGTGGTTCTGTCTCTCTG
+AGCCTCTGTTTCTCTCTGAGCTGAGCAGCCACCATGGCTGACGGTCAGATGCCCTTCTCCTGCCACTACC
+CAAGCCGCCTGCGCCGAGACCCCTTCCGGGACTCTCCCCTCTCCTCTCGCCTGCTGGATGATGGCTTTGG
+>seqB
+CGAGGGGACACAACCGTCCCTGGCAGTGGTTGGTTCTGCTTCTCCCTGCAGAAAAGCAGCATTTTCGGAA
+GCTGAAGAATAAGCTAGCCCAGCCACACCACCTTGTTGTGTGACCTTGGGCAGGTGGTTCTGTCTCTCTG
+AGCCTCTGTTTCTCTCTGAGCTGAGCAGCCACCATGGCTGACGGTCAGATGCCCTTCTCCTGCCACTACC
+CAAGCCGCCTGCGCCGAGACCCCTTCCGGGACTCTCCCCTCTCCTCTCGCCTGCTGGATGATGGCTTTGG
+CATGGACCCCTTCCCAGACGACTTGACAGCCTCTTGGCCCGACTGGGCTCTGCCTCGTCTCTCCTCCGCC
+TGGCCAGGCACCCTAAGGTCGGGCATGGTGCCCCGGGGCCCCACTGCCACCGCCAGGTTTGGGGTGCCTG
+CCGAGGGCAGGACCCCCCCACCCTTCCCTGGGGAGCCCTGGAAAGTGTGTGTGAATGTGCACAGCTTCAA
+GCCAGAGGAGTTGATGGTGAAGACCAAAGATGGATACGTGGAGGTGTCTGGTAAGTCAGGGGCAGGAGGG
+AGAGAGAATGGGGAGGCCGGGATGTAGCCCTCAGCCCTGGGAATAGCCAGAGAAAGTTTCCTGGGAGCTG
+ACGTTGGGACAGTGTGACACAGGTGACCTCAGGGCTCAGGAATGCAGCCTGCAAAGTTATCTTTACGGAA
+AACTTCTCTCCCGGCTCCCAGCAGAGATCTTAACCTGCCTGACTCAGCTATTGGGGCCTCTGGGTGCTCA
+TCAATCATGGTACAGACAGGAAAATAGAAACCATGTTGGATATTTTGACAGAGGGCATTTAATATAAAGA
+>seqC
+TCTTTATATTAAATGCCCTCTGTCAAAATATCCAACATGGTTTCTATTTTCCTGTCTGTA
+CCATGATTGATGAGCACCCAGAGGCCCCAATAGCTGAGTCAGGCAGGTTAAGATCTCTGC
+TGGGAGCCGGGAGAGAAGTTTTCCGTAAAGATAACTTTGCAGGCTGCATTCCTGAGCCCT
+GAGGTCACCTGTGTCACACTGTCCCAACGTCAGCTCCCAGGAAACTTTCTCTGGCTATTC
+CCAGGGCTGAGGGCTACATCCCGGCCTCCCCATTCTCTCTCCCTCCTGCCCCTGACTTAC
+CAGACACCTCCACGTATCCATCTTTGGTCTTCACCATCAACTCCTCTGGCTTGAAGCTGT
+GCACATTCACACACACTTTCCAGGGCTCCCCAGGGAAGGGTGGGGGGGTCCTGCCCTCGG
+CAGGCACCCCAAACCTGGCGGTGGCAGTGGGGCCCCGGGGCACCATGCCCGACCTTAGGG
+TGCCTGGCCAGGCGGAGGAGAGACGAGGCAGAGCCCAGTCGGGCCAAGAGGCTGTCAAGT
+CGTCTGGGAAGGGGTCCATGCCAAAGCCATCATCCAGCAGGCGAGAGGAGAGGGGAGAGT
+CCCGGAAGGGGTCTCGGCGCAGGCGGCTTGGGTAGTGGCAGGAGAAGGGCATCTGACCGT
+CAGCCATGGTGGCTGCTCAGCTCAGAGAGAAACAGAGGCT
+#+END_EXAMPLE
+what is relation between sequences?
+
+
+** Exercise - identification of problems in sequences from SRA database
+*** Illumina data : SRR2911427  (Migratory locust WGS)
+# overlap, high NN proportion
+- download sequences from SRA database using =fastq-dump= command line program 
+- for documentation see https://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?view=toolkit_doc&f=fastq-dump )
+- inspect data and create dotplot
+
+#+BEGIN_SRC bash
+cd ~/tmp
+fastq-dump -X 20 --split-files --fasta SRR2911427
+# -X 20 = download 20 sequences only
+# --fasta = convert sequences to fasta format
+# --split-file = create two files one for each pair
+# SRR291142 - accession ID
+ls -l
+cat SRR2911427_1.fast
+dotter SRR2911427_1.fasta SRR2911427_2.fasta
+#+END_SRC
+
+what does it mean?  # paired sequences are overlaping
+
+*** Illumina data : SRR453021 (Nicotian repanda - WGS)
+# adapter sequence
+# ACACTCTTTCCCTACACGACGCTCTTCCGATCT
+#+BEGIN_SRC bash
+fastq-dump -X 50 --split-files  --fasta SRR453021
+dotter SRR453021_2.fasta SRR453021_2.fasta 
+dotter SRR453021_1.fasta SRR453021_1.fasta 
+dotter SRR453021_1.fasta SRR453021_2.fasta 
+#+END_SRC
+select repeated sequences using dotter and search with NCBI blast:
+
+https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastn&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome
+
+** whole genome/chromosome dotplot
+- download part of genome assembly from Zea mays:
+- link https://www.ncbi.nlm.nih.gov/nuccore/NW_007617762.1
+- use range 1-1,000,000 nt
+- start GUI program =gepard=
+- as sequences 1 and 2 select downloaded sequence and create dotplot
+- what do you see and what does it mean?
+
+* pairwise alignment
+** Sequences for alignment:
+*** =ERB2_HUMAN= : http://www.uniprot.org/uniprot/P04626.fasta
+*** =EGFR_DROME= : http://www.uniprot.org/uniprot/P04412.fasta
+*** =Unknown protein= : *http://www.uniprot.org/uniprot/Q8SZW1.fasta
+
+To download sequences use either web browser of try to use ~wget~ command in terminal:
+#+BEGIN_SRC bash
+cd ~/Downloads
+wget http://www.uniprot.org/uniprot/P04626.fasta
+wget http://www.uniprot.org/uniprot/P04412.fasta
+wget http://www.uniprot.org/uniprot/Q8SZW1.fasta
+#+END_SRC
+
+** Exercise - compare global and local alignments
+- global alignment is performed by program ~needle~
+  - http://www.bioinformatics.nl/cgi-bin/emboss/help/needle
+- for local alignment use program ~water~, 
+  - http://www.bioinformatics.nl/cgi-bin/emboss/help/water
+
+Programs ~needle~ and ~water~ are available from command line or from EBI web interface: http://www.ebi.ac.uk/Tools/emboss/
+
+#+BEGIN_SRC bash
+# command example:
+water P04626.fasta P04412.fasta
+#+END_SRC
+
+- compare ERB2 vs EGFR using ~needle~ and then using ~water~
+- compare ERB2 vs Unknown protein using ~needle~ and then using ~water~
+- what is difference between local and global alignments?
+- what happened what gap penalty is increased to 20 and extend_penalty to 2?
+- by default BLOSUM62 scoring matrix is used, what happend when you use PAM10?
+- to view results use either command line programs =cat= or =less= or view in text editor gedit
+#+BEGIN_SRC bash
+# using PAM10 example
+water P04626.fasta P04412.fasta -datafile EPAM10
+#+END_SRC
+*** differences between PAM10 and BLOSUM62 matrices
+PAM10 : ftp://ftp.ncbi.nih.gov/blast/matrices/PAM10
+BLOSUM62 : ftp://ftp.ncbi.nih.gov/blast/matrices/BLOSUM62
+
+#+BEGIN_COMMENT
+#* alignment in geneious?
+# create alignments from secret sequences - see http://people.binf.ku.dk/~krogh/courses/fall03/MultipleAlign/
+# test two options - global alignment vs global with free end gaps
+# # motiv C-x(4,5)-V-I-x(3)-K-X-V-S-x(3,5)-G-x(3)-C
+# 
+# The file secretseqs.fsa contains a set of fasta-formatted sequences. They all belong to the same family of proteins.
+# 
+#     Find out which family we are talking about.
+#     This family can be subdivided into several subgroups - the file you have only contains members from the two major subgroups.
+#         Divide the sequences into these two groups using CLUSTALX and NJPLOT. You might want to add an unrelated protein of the same length as an outgroup(part of an elongation factor for instance.
+#     Structurally these proteins are characterised by conserved disulfide bonds. Identify the residues involved. What is the difference between the two groups?
+#     Optional: What does these proteins do?
+#+END_COMMENT
+
+* Multiple alignment from HSPB8 proteins
+- obtain protein sequence of HSPB8 from NCBI, gene link is: https://www.ncbi.nlm.nih.gov/gene/26353
+- go to related protein entry (menu on the right)
+- go to protein NP_055180.1
+- from right menu select =analyze this sequence/Run BLAST=
+- select accession from this species:
+  - Sus scrofa (pig) 
+  - Danio rerio (zebrafish) 
+  - Bos taurus (cattle)
+  - Mus musculus (house mouse)
+  - Xenopus laevis (African clawed frog)
+  - Danio rerio (zebrafish)
+  - Drosophila melanogaster (fruit fly)
+  - Gallus gallus (chicken) 
+# list of accessions:  	XP_004934466 NP_523827 NP_001094427 NP_001079782 NP_109629 NP_001014955 NP_001094427 XP_001929620 NP_055180.1
+- download fasta file all accession
+- edit fasta file - remove gaps, put name of organism at the beginning of description line e.g.:
+#+BEGIN_EXAMPLE
+>chicken XP_004934466.1 PREDICTED: heat shock protein beta-8 [Gallus gallus]
+MADSQLPFSCHYPGRRSLRDPFREPGLTSRLLDDDFGLSPFPGDLTADWPDWARPRLTPTWPGPLRARAS
+AMAPGYSTRFGGYPESRSPAPTSREPWKVCVNVHSFKPEELTVKTKDGYVEVSGKHEEQQVEGGIVSKNF
+TKKIQLPYEVDPITVFASLSPEGLLIIEAPQIPPYQQYGEGGCSGEIPLESPEATCA
+>fruitfly NP_523827.1 lethal (2) essential for life, isoform A [Drosophila melanogaster]
+MSVVPLMFRDWWDELDFPMRTSRLLDQHFGQGLKRDDLMSSVWNSRPTVLRSGYLRPWHTNSLQKQESGS
+TLNIDSEKFEVILDVQQFSPSEITVKVADKFVIVEGKHEEKQDEHGYVSRQFSRRYQLPSDVNPDTVTSS
+LSSDGLLTIKAPMKALPPPQTERLVQITQTGPSSKEDNAKKVETSTA
+...
+#+END_EXAMPLE
+- start seaview program, open sequences
+- align seaquences =align/align all=
+- inspect alignment, what part is conserved?
+- create consensus sequence:
+  - label all sequences 
+  - use =edit/consensus sequence=
+  - modify consensus setting =props/consensus options/edit threshold=
+  - set threshold to 80%
+  - create consensus again!
+- what part of sequence is conserved?
+- compare conserved part with domains annotation
+  - go to https://www.ncbi.nlm.nih.gov/protein/NP_055180.1
+  - select =analyze this sequence/identify conserved domains
+- will you be able to identify conserved domain if you use only mouse, cow, pig and human sequences?
+  - in seaview, delete other sequences and align only mammalian 
+** Alternative alignment program - web browser interface:
+- go to http://www.ebi.ac.uk/Tools/msa/clustalo/
+- paste your sequences and align
+- color alignment or go to result summary and start =jalview= program
+
+
+
