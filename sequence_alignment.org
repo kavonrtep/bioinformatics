@@ -12,7 +12,7 @@ similarity.
 ** dotplot programs:
 - Destop applications:
   - dotter (https://www.sanger.ac.uk/science/tools/seqtools), linux only
-  - gepard (http://cube.univie.ac.at/gepard)  - suitable for larger sequences, platworm independent
+  - gepard (http://cube.univie.ac.at/gepard)  - suitable for larger sequences, platform independent
 - Web applications
   - YASS server (https://bioinfo.lifl.fr/yass/index.php), suitable for large sequences or whole chromosomes
   - Dot server (https://dnanexus.github.io/dot/) - whole genome comparison
@@ -152,7 +152,12 @@ make dotplot from following sequences stored in file:
 [[~/Desktop/data/dotter_sequences/dna_examples/overlaping_sequences.fasta]]
 what is relation between sequences?
 
-[[file:fig/scheme_dotter_overlap.png][file:fig/scheme_dotter_overlap.png]]
+#+begin_comment 
+solution
+[[
+file:fig/scheme_dotter_overlap.png]]
+#+end_comment
+
 
 
 ** Exercise - identification of problems in sequences from SRA database
@@ -163,6 +168,7 @@ what is relation between sequences?
 - inspect data and create dotplot
 
 #+BEGIN_SRC bash
+mkdir ~/tmp
 cd ~/tmp
 fastq-dump -X 20 --split-files --fasta SRR2911427
 # -X 20 = download 20 sequences only
@@ -170,7 +176,7 @@ fastq-dump -X 20 --split-files --fasta SRR2911427
 # --split-file = create two files one for each pair
 # SRR291142 - accession ID
 ls -l
-cat SRR2911427_1.fast
+cat SRR2911427_1.fasta
 dotter SRR2911427_1.fasta SRR2911427_2.fasta
 #+END_SRC
 
@@ -189,13 +195,18 @@ select repeated sequences using dotter and search with NCBI blast:
 
 https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastn&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome
 
+#+begin_comment
+# sequence 
 ** whole genome/chromosome dotplot
+
 - download part of genome assembly from Zea mays:
 - link https://www.ncbi.nlm.nih.gov/nuccore/NW_007617762.1
 - use range 1-1,000,000 nt
 - start GUI program =gepard=
 - as sequences 1 and 2 select downloaded sequence and create dotplot
 - what do you see and what does it mean?
+
+#+end_comment
 
 * pairwise alignment
 ** Sequences for alignment:
