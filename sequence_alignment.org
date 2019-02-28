@@ -149,7 +149,9 @@ dotter inverted_repeat.fasta inverted_repeat.fasta
 
 ** overlaping sequences
 make dotplot from following sequences stored in file:
-[[~/Desktop/data/dotter_sequences/dna_examples/overlaping_sequences.fasta]]
+#+begin_example
+~/Desktop/data/dotter_sequences/dna_examples/overlaping_sequences.fasta
+#+end_example
 what is relation between sequences?
 
 #+begin_comment 
@@ -180,7 +182,8 @@ cat SRR2911427_1.fasta
 dotter SRR2911427_1.fasta SRR2911427_2.fasta
 #+END_SRC
 
-what does it mean?  # paired sequences are overlaping
+what does it mean? 
+# paired sequences are overlaping
 
 *** Illumina data : SRR453021 (Nicotian repanda - WGS)
 # adapter sequence
