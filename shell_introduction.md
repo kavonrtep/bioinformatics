@@ -1,5 +1,6 @@
 # Introducing the Shell
 
+
 based on Software Carpentry course material
 
 [https://software-carpentry.org](https://software-carpentry.org)
@@ -244,6 +245,8 @@ the commands or programs.
 For more information on how to use `ls` we can type `man ls`. `man` is the Unix
 "manual" command: it prints a description of a command and its options, and (if
 you're lucky) provides a few examples of how to use it.
+
+Even more information can be found ising command `info`.
 
 ---
 
