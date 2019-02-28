@@ -152,7 +152,8 @@ make dotplot from following sequences stored in file:
 [[~/Desktop/data/dotter_sequences/dna_examples/overlaping_sequences.fasta]]
 what is relation between sequences?
 
-see figure for answer: [[fig/scheme_dotter_overlap.png]]
+[[file:fig/scheme_dotter_overlap.png][file:fig/scheme_dotter_overlap.png]]
+
 
 ** Exercise - identification of problems in sequences from SRA database
 *** Illumina data : SRR2911427  (Migratory locust WGS)
