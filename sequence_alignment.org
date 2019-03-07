@@ -215,7 +215,7 @@ https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastn&PAGE_TYPE=BlastSearch&LI
 ** Sequences for alignment:
 *** =ERB2_HUMAN= : http://www.uniprot.org/uniprot/P04626.fasta
 *** =EGFR_DROME= : http://www.uniprot.org/uniprot/P04412.fasta
-*** =Unknown protein= : *http://www.uniprot.org/uniprot/Q8SZW1.fasta
+*** =Unknown protein= : http://www.uniprot.org/uniprot/Q8SZW1.fasta
 
 To download sequences use either web browser of try to use ~wget~ command in terminal:
 #+BEGIN_SRC bash
@@ -237,42 +237,36 @@ Programs ~needle~ and ~water~ are available from command line or from EBI web in
 # command example:
 water P04626.fasta P04412.fasta
 #+END_SRC
-
-- compare ERB2 vs EGFR using ~needle~ and then using ~water~
-- compare ERB2 vs Unknown protein using ~needle~ and then using ~water~
+- files for alignment are loacated in =~/Desktop/bioinformatics_git/data/alignment_sequences/=
+- compare ERB2 (P04626.fasta) vs EGFR (P04412.fasta) using ~needle~ and then using ~water~
+#+begin_comment
+show/ explain alignment options - it is possible to select scoring matrix and gap penalties
+#+end_comment
+- compare ERB2 (P04626.fasta) vs Unknown protein (Q8SZW1.fasta) using ~needle~ and then using ~water~
 - what is difference between local and global alignments?
-- what happened what gap penalty is increased to 20 and extend_penalty to 2?
+- what happened what gap penalty is increased to 20 and extend_penalty to 5 when using local alignment
+- what happened with global alignment if you change =end gap panalty- setting.
 - by default BLOSUM62 scoring matrix is used, what happend when you use PAM10?
-- to view results use either command line programs =cat= or =less= or view in text editor gedit
+#+begin_comment
+using PAM10 - does don really tolerate mismatches, gap penalty would have to be set accordingly 
+#+end_comment
+
 #+BEGIN_SRC bash
-# using PAM10 example
+# command line example using PAM10
 water P04626.fasta P04412.fasta -datafile EPAM10
 #+END_SRC
 *** differences between PAM10 and BLOSUM62 matrices
 PAM10 : ftp://ftp.ncbi.nih.gov/blast/matrices/PAM10
 BLOSUM62 : ftp://ftp.ncbi.nih.gov/blast/matrices/BLOSUM62
 
-#+BEGIN_COMMENT
-#* alignment in geneious?
-# create alignments from secret sequences - see http://people.binf.ku.dk/~krogh/courses/fall03/MultipleAlign/
-# test two options - global alignment vs global with free end gaps
-# # motiv C-x(4,5)-V-I-x(3)-K-X-V-S-x(3,5)-G-x(3)-C
-# 
-# The file secretseqs.fsa contains a set of fasta-formatted sequences. They all belong to the same family of proteins.
-# 
-#     Find out which family we are talking about.
-#     This family can be subdivided into several subgroups - the file you have only contains members from the two major subgroups.
-#         Divide the sequences into these two groups using CLUSTALX and NJPLOT. You might want to add an unrelated protein of the same length as an outgroup(part of an elongation factor for instance.
-#     Structurally these proteins are characterised by conserved disulfide bonds. Identify the residues involved. What is the difference between the two groups?
-#     Optional: What does these proteins do?
-#+END_COMMENT
 
 * Multiple alignment from HSPB8 proteins
-- obtain protein sequence of HSPB8 from NCBI, gene link is: https://www.ncbi.nlm.nih.gov/gene/26353
-- go to related protein entry (menu on the right)
-- go to protein NP_055180.1
+- obtain protein sequence of HSPB8 from NCBI, 
+# gene link is: https://www.ncbi.nlm.nih.gov/gene/26353
+- protein link is https://www.ncbi.nlm.nih.gov/protein/NP_055180.1
 - from right menu select =analyze this sequence/Run BLAST=
-- select accession from this species:
+- select search against sefseq_protein database, use delta-blast
+- from results select following species (some species can have multiple hits, select the best:
   - Sus scrofa (pig) 
   - Danio rerio (zebrafish) 
   - Bos taurus (cattle)
@@ -283,7 +277,7 @@ BLOSUM62 : ftp://ftp.ncbi.nih.gov/blast/matrices/BLOSUM62
   - Gallus gallus (chicken) 
 # list of accessions:  	XP_004934466 NP_523827 NP_001094427 NP_001079782 NP_109629 NP_001014955 NP_001094427 XP_001929620 NP_055180.1
 - download fasta file all accession
-- edit fasta file - remove gaps, put name of organism at the beginning of description line e.g.:
+- edit fasta file - remove gaps, put the name of organism at the beginning of the description line e.g.:
 #+BEGIN_EXAMPLE
 >chicken XP_004934466.1 PREDICTED: heat shock protein beta-8 [Gallus gallus]
 MADSQLPFSCHYPGRRSLRDPFREPGLTSRLLDDDFGLSPFPGDLTADWPDWARPRLTPTWPGPLRARAS
@@ -295,25 +289,24 @@ TLNIDSEKFEVILDVQQFSPSEITVKVADKFVIVEGKHEEKQDEHGYVSRQFSRRYQLPSDVNPDTVTSS
 LSSDGLLTIKAPMKALPPPQTERLVQITQTGPSSKEDNAKKVETSTA
 ...
 #+END_EXAMPLE
-- start seaview program, open sequences
-- align seaquences =align/align all=
-- inspect alignment, what part is conserved?
-- create consensus sequence:
-  - label all sequences 
-  - use =edit/consensus sequence=
-  - modify consensus setting =props/consensus options/edit threshold=
-  - set threshold to 80%
-  - create consensus again!
-- what part of sequence is conserved?
+- start jalview program from web: http://www.jalview.org/
+- open sequences (File
+- align seaquences =Web service/Alignment/Mafft with defaults=, 
+- inspect alignment set coloring of alignment. Try different coloring schemes.
+- What part of proteins is conserved?
 - compare conserved part with domains annotation
   - go to https://www.ncbi.nlm.nih.gov/protein/NP_055180.1
   - select =analyze this sequence/identify conserved domains
 - will you be able to identify conserved domain if you use only mouse, cow, pig and human sequences?
-  - in seaview, delete other sequences and align only mammalian 
+  - in jalwview, selecte subset of sequences(mammals) and create alignment again. 
+- save alignment in =fasta= and and =msf= format, inspect the saved file using =less= command
 ** Alternative alignment program - web browser interface:
 - go to http://www.ebi.ac.uk/Tools/msa/clustalo/
 - paste your sequences and align
 - color alignment or go to result summary and start =jalview= program
+** Alignment using command program.
 
-
-
+   #+begin_src sh
+   mafft HSP8.fasta > aligned_sequences_mafft.fasta
+   muscle -in HSP8.fasta -out aligned_sequences_muscle.fasta
+   #+end_src
