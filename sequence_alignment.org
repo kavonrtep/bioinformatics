@@ -304,7 +304,7 @@ LSSDGLLTIKAPMKALPPPQTERLVQITQTGPSSKEDNAKKVETSTA
 - go to http://www.ebi.ac.uk/Tools/msa/clustalo/
 - paste your sequences and align
 - color alignment or go to result summary and start =jalview= program
-** Alignment using command program.
+** Alignment using command line program.
 
    #+begin_src sh
    mafft HSP8.fasta > aligned_sequences_mafft.fasta
