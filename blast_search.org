@@ -1,0 +1,200 @@
+
+* BLAST 
+** Protein BLAST - NCBI web interface
+The following is the product of a gene in C. elegans that seems to be important in development.
+#+begin_example
+>C.elegans protein
+MFHPGMTSQPSTSNQMYYDPLYGAEQIVQCNPMDYHQANILCGMQYFNNSHNRYPLLPQMPPQFTNDHPY
+DFPNVPTISTLDEASSFNGFLIPSQPSSYNNNNISCVFTPTPCTSSQASSQPPPTPTVNPTPIPPNAGAV
+LTTAMDSCQQISHVLQCYQQGGEDSDFVRKAIESLVKKLKDKRIELDALITAVTSNGKQPTGCVTIQRSL
+DGRLQVAGRKGVPHVVYARIWRWPKVSKNELVKLVQCQTSSDHPDNICINPYHYERVVSNRITSADQSLH
+VENSPMKSEYLGDAGVIDSCSDWPNTPPDNNFNGGFAPDQPQLVTPIISDIPIDLNQIYVPTPPQLLDNW
+CSIIYYELDTPIGETFKVSARDHGKVIVDGGMDPHGENEGRLCLGALSNVHRTEASEKARIHIGRGVELT
+AHADGNISITSNCKIFVRSGYLDYTHGSEYSSKAHRFTPNESSFTVFDIRWAYMQMLRRSRSSNEAVRAQ
+AAAVAGYAPMSVMPAIMPDSGVDRMRRDFCTIAISFVKAWGDVYQRKTIKETPCWIEVTLHRPLQILDQL
+LKNSSQFGS
+#+end_example
+
+
+Use the protein-protein blast page to perform search against the non redundant
+protein database (nr) to identify protein and find its homologs.
+
+
+blast link : https://blast.ncbi.nlm.nih.gov/Blast.cgi
+
+- Based on the identical hit to C. elegans what is the identity of this protein? 
+# show how you can get from blast result to ncbi proein and uniprot record
+#  Dwarfin sma-4, involved in TGF-beta pathway
+- Aside from the C. elegans proteins, what is the most significant hit? What is
+  its identity and E-value?
+# hypothetical protein FL83_19826 [Caenorhabditis latens], pval 0 but shorter alignemnt
+- Check also taxonomy report. How many hits was found total. How many hits was
+  found in "chordata" taxonomy group.
+- Use edit and resubmit  to modify blast search.  In new search, use DELTA-BLAST
+  algorithm.
+# this make only sense when student are familiar with psi and delta blast
+- How many similar protein is found with DELTA-BLAST, How many is in vertebrates
+- Use edit and resubmit  to modify blast search.  In new search, use DELTA-BLAST
+  algorithm. and additionally search only in vertebrates taxon (Organism is set
+  to vertebrates (taxid:7742)
+- What is the best hit in vertebrates. What is its accession, organism, Evalue,
+  Identity and Similarity)
+
+
+
+** BLASTX - NCBI web interface
+The part of genomic sequence of Twort bacteriophage is bellow. Use BLAST to
+search protein database  (Non-redundant protein sequences  - nr) to find
+homologous protein from other bacteriophages and viruses.
+- For search try to use Blosum62 and Blosum45 scoring matrix. What is the
+  difference between searches with different matrices
+- What proteins (Accessions) has alignment with E value < 1e-10
+
+#+begin_example
+>Staphylococcus phage Twort, partial sequence
+AAAGATGCAGAGTTAGCTGTAATGGAAATCAACAAAAAACAATTGGAGGACTAATCT
+TAATGAGTAAATTTTCAAATATTCTAGAAGAATATAATAAATTACAATCACAAGATG
+TTGAAAAATCATTAGAAGAAAATAAAGATGAAGAACCTAAAGAAGAGGCTACTGTAG
+AATCAGTTACGGAAGAACAAGTAGTTGAAACAGATGCACCGCAAAAAGAAGAACCAC
+AACAAGTATCTGAAGAAGACGCTAAAAAAGCACAAGAAGAATCTAAGAAATTAGAAT
+CAGAAAAGCAAGAAGAAGATAAAGAAGTAGAGAAGTCTGTTAAAGATTCTAAAGACC
+CAGTAGACCATAAAGATACTAAAACTGAAGACAAAGACAATGAGAAACGTAAAAACA
+AAAAAGAAGATAAAGAAGACGAGTCTAAAGAAGAAGATGAAAAAGAATCTAAGAAAG
+ATAAAGACAAAGAAGATAAAAAGTCTGAAAACAAAAAAGATTCTGAAAAAGTTAAAA
+AGTCAGCTTTATCTGATGAAGATATTGTAGAAGGATTTAGTACAGTATTAAAATCTT
+TACAAGACTTACCTAAACAATTTGCTACTAAAGATGATGTCAAGGAAATTAAAAAAT
+CTTTAGAAGAATTACAAGATGCTTTTGCTGAAAAAGAAAAGAAACAAGAAGAAAAAG
+TAGAAACTATTAAAGAAGAAGTTAACAAAGAACAAGAAGATAAAGAAGAAGAAAATA
+CTGATGAATCAGTAGAAAAATCAGTAACAACTTCTAACACTGCACAGCAAGATGATG
+TTAATTATGTTTCTAAATCAGCAGTTGTAGAAGAAGAAGTACAAGAGGAACAACCTG
+AGGAAGATAAGCAAGAGGTTAATACAATTACACAAGAAGACCGTGAGGCTTTCATGA
+ATAAATTCAAATCAGAATCTCAACGTCGTGACAAACCTACACGTCAATTAAATGATG
+CATATTTAGCATATATGGACGTTCGTAATAATGGTGAAAATGCAAGTCCAAGTTCTT
+TAAAAACTGTTAAAGATTTTATTAAGTAATACAAAGTAGTTGTGTTATATTATACAT
+GAAATTAAATTAATAAAA
+#+end_example
+
+#+begin_comment
+- show *Recent resuts* menu
+- distance tree view (in blastp results)
+#+end_comment
+
+
+** blastx vs blastn
+characterization of unknown DNA PCR amplified fragment from unknown
+non-cultivatable microorganism
+
+#+begin_example
+>clone12
+AACGGGCACGGGACGCATGTAGCTGGAACAGTGGCAGCCGTAAATAATAATGGTATCGGA
+GTTGCCGGGGTTGCAGGAGGAAACGGCTCTACCAATAGTGGAGCAAGGTTAATGTCCACA
+CAAATTTTTAATAGTGATGGGGATTATACAAATAGCGAAACTCTTGTGTACAGAGCCATT
+GTTTATGGTGCAGATAACGGAGCTGTGATCTCGCAAAATAGCTGGGGTAGTCAGTCTCTG
+ACTATTAAGGAGTTGCAGAAAGCTGCGATCGACTATTTCATTGATTATGCAGGAATGGAC
+GAAACAGGAGAAATACAGACAGGCCCTATGAGGGGAGGTATATTTATAGCTGCCGCCGGA
+AACGATAACGTTTCCACTCCAAATATGCCTTCAGCTTATGAACGGGTTTTAGCTGTGGCC
+TCAATGGGACCAGATTTTACTAAGGCAAGCTATAGCACTTTTGGAACATGGACTGATATT
+ACTGCTCCTGGCGGAGATATTGACAAATTTGATTTGTCAGAATACGGAGTTCTCAGCACT
+TATGCCGATAATTATTATGCTTATGGAGAGGGAACATCCATGGCTTGTCCACATGTCGCC
+GGCGCCGCC
+#+end_example
+
+Use =blastn= and =blastx= to characterize clone12. What tool is relevant to use?
+
+What kind of enzyme is coded by =clone12=?
+
+
+* Use of BLAST from command line
+
+Basic commands:
+
+=makeblastdb=, =blastn=, =blastp=, =blastx=
+
+
+
+Basic use of blast commands
+#+BEGIN_SRC bash
+# create database:
+makeblastdb -dbtype nucl -in  dna_sequences.fasta
+# nucleotide - nucleotide search
+blastn -db datatabase_file -query query_sequences.fasta -out output_file
+#+END_SRC
+
+The most used blast options:
+#+begin_example
+-db <String>
+   BLAST database name
+
+-out <File_Out>
+   Output file name
+   Default = `-'
+
+-evalue <Real>
+   Expectation value (E) threshold for saving hits 
+   Default = `10'
+
+-word_size <Integer, >=4>
+   Word size for wordfinder algorithm (length of best perfect match)
+
+-outfmt <String>
+   output format
+#+end_example
+for complete options type =blastn -help=
+
+
+
+** blastp exercise
+
+*** files in exercise:
+- query : =~/Desktop/bioinformatics/data/blast_data/protein.fasta=
+- database : =~/Desktop/bioinformatics/data/blast_data/db/pdbaa=
+
+run protein blast with default parameters in terminal
+#+BEGIN_SRC bash
+# go to directory with data:
+cd ~/Desktop/bioinformatics/data/blast_data
+# inspect the query file  protein.fasta
+cat protein.fasta
+# fasta file db/pdbaa will be used as database, it must be formated using
+# makeblastdb command to make data blast compatible
+makeblastdb -in db/pdbaa -dbtype prot
+# this command created additional files in db directory, what are these files?
+ls -l db
+
+# run basic blastp
+blastp -query proteins.fasta -db db/pdbaa -out proteins_blastp.txt
+# inspect output with less command or gedit
+less proteins_blastp.txt
+#+END_SRC
+
+
+try command line blast with different parameters:
+#+BEGIN_SRC bash
+blastp -query proteins.fasta -db db/pdbaa -out proteins_blastp_1align.txt -num_alignments 1
+blastp -query proteins.fasta -db db/pdbaa -out proteins_blastp_1align_1e-30.txt -num_alignments 1 -evalue 1e-30
+blastp -query proteins.fasta -db db/pdbaa -out proteins_blastp_1e-30_table.txt -evalue 1e-30 -outfmt 7
+blastp -query proteins.fasta -db db/pdbaa -out proteins_blastp_1e-30_table.html -evalue 1e-30 -outfmt 2 -html
+# inspect all output, html output should be viewed in firefox!
+#+END_SRC
+
+
+* Localization of sequences in genome using BLAT in Ensemble genome
+
+Use BLAT to find location of the sequence in Caenorabditis elegans genome. For
+search, use Ensemble database: https://www.ensembl.org/index.html
+
+#+begin_example
+>C.elegans unkown sequence
+GAATATTTAGGAGATGCAGGAGTTATTGATAGCTGCAGTGATTGGCCGAACACACCTCCT
+GATAACAATTTTAATGGTAAGAGTTGAACTCCAAAACTGTAAGTAGAGGTGGCTGCTCTC
+TCTCTCTGACTTTTATGCCTGCCTACGTACCTTCTAATACTTATTTGTTTGATATGGATG
+TTTAGTGAAGATAAAGGGTAGATAGAGGCATTTCTCATCTGCCCAAGATGAGCATGAATA
+TATTTAATACAAAATCAACACTGAGAATTTTAGAGACCGATTTTAAATGTGACCCAATTT
+TTTTCAGGAGGATTTGCACCAGATCAACCTCAGCTAGTCACACCGATTATTTCTGATATT
+CCGATAGATCTCAATCAAATATATGTTCCAACACCTCCACAATTACTTGATAATTGGTGT
+TCAATCATTTATTATGAACTGGATACACCCATTGGTGAAACCTTTAAGGTATGTTTTTCT
+ATGAAATCTGATGACTATTCATTCATGGTGCAAATCGCCTAGAAATTTTTGTGAAAGAGC
+#+end_example
+
+- What is the genomic location of sequences. Is the sequence part of any gene?
+
