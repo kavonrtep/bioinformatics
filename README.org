@@ -1,3 +1,4 @@
 * Bioinformatics exercises
 ** [[./shell_introduction.md][Introduction to shell]] 
 ** [[./sequence_alignment.org][Sequence Alignment]]
+** [[./blast_search.org][NCBI Blast]]

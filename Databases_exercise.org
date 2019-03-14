@@ -1,0 +1,212 @@
+#+TITLE:Searching in Biological Databeses
+* NCBI databases
+** Nucleotide sequence search
+Go to NCGI genebank at http://www.ncbi.nlm.nih.gov/sites/entrez?db=nuccore.
+*** simple search 
+- enter *presenilin 1* in the search box, hit search (If you surround a phrase
+  with quotes, that will force Entrez to search it as a /phrase/. If you do not
+  surround a phrase with quotes, Entrez will separate the terms with a default
+  Boolean AND if the terms do not exist as a phrase in the index of the desired
+  field. Press the Details button after a search is done to see how Entrez
+  parsed the query)
+- Over thousand results are shown. Go to *Advanced search*
+- In query builder, set new search:
+  1. Search for *presenilin 1* in the *Title* field
+  2. *human* in the *Organism* field, organism can be selected from pop-up menu
+- on page with search results *Search details* shows parameters of the search
+- how many records did you  found?
+- panel on the right shows available filters - you can restrict your
+  search to records from a specific source database, such as the curated
+  *RefSeq* database. What results dou you get when you filter your search?
+** Reusing previous searches
+In advanced search, previous searches are recorded and can be used to build new
+queries
+** Formating and downloading search results
+- Format of the results can be changes from "summary" to FASTA/ FASTA(text), GenBank or other formats. 
+- *Send to*  enable saving results to file
+
+** Gene searching: 
+go to NCBI website and select "Gene" database. Search for human *presenilin 1*
+- what is the gene ID?
+- what is the chromosomal location of the gene
+# chromosome 14
+- how many exon have this genes?
+# 14
+# show also expression from RNASeq
+
+** Retrieve sequence records that were added or modified between two dates
+
+If a researcher is particularly interested in the sequences associated with a
+specific gene or topic, they might do a periodic search to find out what new
+data have been added since the last time they searched. If the researcher does
+not want to see previously retrieved records, but only records that have been
+added to the database or modified since the last time they searched
+
+- go to NCBI and select *nucleotide* database
+- go to advanced searched
+- search for mouse  *actin* in title
+- set required modification date 2019/02/01 to present
+
+# (("Mus"[Organism] OR "Mus musculus"[Organism]) AND actin[Title]) AND
+# ("2019/01/01"[MDAT] : "3000"[MDAT])
+- alternativelly, release data from filter menu can be used
+- other ranges can be used in search too (molecular weight, sequence length,..)
+  
+#+begin_comment
+Range searching on other data elements Range searching can also be done in the
+following search fields -- try them in the Entrez CoreNucleotide, Entrez
+NucleotideGSS, or Entrez Protein databases, as appropriate/desired. accession
+AF114696:AF114714[ACCN] (GSS sequences) sequence length 3000:4000[SLEN]
+molecular weight 002002:002009[MOLWT] date 1998/02:2000/01/25[MDAT]
+#+end_comment
+
+More information on search fields can be found in
+https://www.ncbi.nlm.nih.gov/books/NBK49540/
+
+** Accessing complete genome
+on NCBI web select "Genome" database in resources and search for *Haemophilus
+influenzae* ("Haemophilus influenzae"[orgn] )
+- how many assemblies is available?
+- What assembly levels are available?
+- what is the length os reference assembly (NC_000907.1)?
+*** downloading assembly data:
+data are stored on NCBI ftp server. Files can be downloaded using web browser
+but this could be problematic for large datasets. Alternatively, we can use
+command line donwload:
+
+#+begin_src bash results: value raw
+mkdir ~/Desktop/genome_assembly cd ~/Desktop/genome_assembly
+# single file download:
+wget
+ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/002/988/225/GCA_002988225.1_ASM298822v1/GCA_002988225.1_ASM298822v1_genomic.fna.gz
+# or download complete directory with assembly:
+wget
+ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/002/988/225/GCA_002988225.1_ASM298822v1/*
+ls -l #+end_src
+
+#+RESULTS:
+| total      | 3044 |      |      |         |     |    |       |                                                     |
+| -rw-rw-r-- |    1 | petr | petr |     410 | bře |  9 |  2018 | annotation_hashes.txt                               |
+| -rw-rw-r-- |    1 | petr | petr |      14 | úno | 13 | 09:47 | assembly_status.txt                                 |
+| -rw-rw-r-- |    1 | petr | petr |   64401 | bře |  9 |  2018 | GCA_002988225.1_ASM298822v1_feature_table.txt.gz    |
+| -rw-rw-r-- |    1 | petr | petr |  510141 | bře |  9 |  2018 | GCA_002988225.1_ASM298822v1_genomic.fna.gz          |
+| -rw-rw-r-- |    1 | petr | petr | 1214456 | bře |  9 |  2018 | GCA_002988225.1_ASM298822v1_genomic.gbff.gz         |
+| -rw-rw-r-- |    1 | petr | petr |  137899 | bře |  9 |  2018 | GCA_002988225.1_ASM298822v1_genomic.gff.gz          |
+| -rw-rw-r-- |    1 | petr | petr |  286551 | bře |  9 |  2018 | GCA_002988225.1_ASM298822v1_protein.faa.gz          |
+| -rw-rw-r-- |    1 | petr | petr |  461253 | bře |  9 |  2018 | GCA_002988225.1_ASM298822v1_protein.gpff.gz         |
+| -rw-rw-r-- |    1 | petr | petr |    1241 | bře |  9 |  2018 | GCA_002988225.1_ASM298822v1_rna_from_genomic.fna.gz |
+| -rw-rw-r-- |    1 | petr | petr |  331110 | bře |  9 |  2018 | GCA_002988225.1_ASM298822v1_translated_cds.faa.gz   |
+| -rw-rw-r-- |    1 | petr | petr |    1014 | bře |  9 |  2018 | GCA_002988225.1_ASM298822v1_wgsmaster.gbff.gz       |
+| -rw-rw-r-- |    1 | petr | petr |    1136 | bře |  9 |  2018 | md5checksums.txt                                    |
+| -rw-rw-r-- |    1 | petr | petr |   27762 | bře |  9 |  2018 | README.txt                                          |
+
+
+*** Assembly levels - NCBI definition
+- *Complete genome* - all chromosomes are gapless and have no runs of 10 or more
+  ambiguous bases (Ns), there are no unplaced or unlocalized scaffolds, and all
+  the expected chromosomes are present (i.e. the assembly is not noted as having
+  partial genome representation). Plasmids and organelles may or may not be
+  included in the assembly but if present then the sequences are gapless.
+
+- *Chromosome* - there is sequence for one or more chromosomes. This could be a
+  completely sequenced chromosome without gaps or a chromosome containing
+  scaffolds or contigs with gaps between them. There may also be unplaced or
+  unlocalized scaffolds.
+
+- *Scaffold* - some sequence contigs have been connected across gaps to create
+  scaffolds, but the scaffolds are all unplaced or unlocalized
+
+- *Contig* - nothing is assembled beyond the level of sequence contigs
+
+* Uniprot
+
+UniProt, http://www.uniprot.org/, consists of three parts:
+
+- UniProt Knowledge-base (UniProtKB) protein sequences with annotation and references
+- UniProt Reference Clusters (UniRef) homology-reduced database, where similar
+  sequences (having a certain percentage identity) are merged into clusters,
+  each with a representative sequence
+- UniProt Archive (UniParc) an archive containing all versions of Uniprot without annotations
+
+UniProtKB/Swiss-Prot a manually annotated (reviewed) protein-database.
+UniProtKB/TrEMBL a computer-annotated supplement to Swiss-Prot, that contains
+all translations of EMBL nucleotide sequences not yet included in Swiss-Prot.
+
+** simple search
+Open the UniProt home-page http://www.uniprot.org/
+Type *human insulin* in the search field in the top of the page. Leave the search
+menu on "UniProtKB", which is default. Click the Search button.
+- How many hits do you find? (tip: See the number above the results list)
+- How many of these hits are from Swiss-Prot? (tip: See under "Reviewed" at the top left)
+- Can you identify the correct hit (i.e. see which one is actually human insulin
+  and not something else)? If yes, write down is Accession code (found under
+  Entry) and Entry name (also called ID).
+  # P01308 (INS_HUMAN)
+
+** advanced search 
+- go to advanced search menu, query can be build in similar way as in NCBI databases:
+- try search "insulin" in protein name filed and "human" in organism field.
+
+** Information included in uniprot record
+
+find in the uniprot record page of human insulin:
+- Where in the cell / outside the cell do you find insulin?
+- How long is the signal peptide?
+- where is the highest expression of insulin
+- what organism has the most similar protein to human insulin
+  # gorila 	Q6YK33 - according uniref
+- go to cross-references section - what types of linked databases you can find?
+#+begin_comment
+- sequence databases - NCBI, ebi
+- structure databases - PDB, PDBsum
+- protein domain interaction databases
+- protein domains
+#+end_comment
+
+* Genome assemblies
+- Ensembe : https://www.ensembl.org 
+- Ensemble plant http://plants.ensembl.org/index.html (available species : http://plants.ensembl.org/species.html)
+** What can be don with Ensemble
+View genes with other annotation along the chromosomes.
+- View alternative transcripts (i.e. splice variants) for a given gene.
+- Explore homologues and phylogenetic trees across more than 100
+  species for any gene.
+- Compare whole genome alignments and conserved regions across
+  species.
+- View microarray probe sequences that match to Ensembl genes.
+- View ESTs, clones, mRNA and proteins for any chromosomal region.
+- Examine single nucleotide polymorphisms (SNPs) for a gene or
+  chromosomal region.
+- View SNPs across strains (rat, mouse), populations (human), or
+  breeds (dog).
+- View positions and sequence of mRNAs and proteins that align with
+  Ensembl genes.
+- Upload your own data.
+- Use BLAST, or BLAT against any genome in Ensembl.
+- Export sequences or create a table with gene information using
+  BioMart.
+- Share Ensembl displays with your colleagues and collaborators
+
+:comment:
+show what type of information can be found in ensemble
+- broad range of species
+ - mammals, birds, fish, insect, model organism
+ - bacteria, fungi yeast, plants
+ - gene Models - databases aligned to genomes -> clusters -> authomated
+   annotation pipeline
+ - manual annotations
+ - new and older version of availables
+- browser - blast/blat, biomart, search( coordinates, gename,  
+*example Gene in browser*  
+- show ho to search gene by name
+- gene tab
+- browser tab
+- CCDS - Consensus Coding DNA Sequence Set (colaborative annotation)
+- transcript models
+  - contigs
+  - exon, intron, filled/unfiled boxes
+  - golden trascrtipt(manual), red transctipt(automated), blue - non coding
+*example - biomart*
+:END:
+
+
