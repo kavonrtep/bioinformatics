@@ -74,6 +74,7 @@ data are stored on NCBI ftp server. Files can be downloaded using web browser
 but this could be problematic for large datasets. Alternatively, we can use
 command line donwload:
 
+
 #+begin_src bash results: value raw
 mkdir ~/Desktop/genome_assembly cd ~/Desktop/genome_assembly
 # single file download:
@@ -83,22 +84,7 @@ ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/002/988/225/GCA_002988225.1_ASM298822
 wget
 ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/002/988/225/GCA_002988225.1_ASM298822v1/*
 ls -l #+end_src
-
-#+RESULTS:
-| total      | 3044 |      |      |         |     |    |       |                                                     |
-| -rw-rw-r-- |    1 | petr | petr |     410 | bře |  9 |  2018 | annotation_hashes.txt                               |
-| -rw-rw-r-- |    1 | petr | petr |      14 | úno | 13 | 09:47 | assembly_status.txt                                 |
-| -rw-rw-r-- |    1 | petr | petr |   64401 | bře |  9 |  2018 | GCA_002988225.1_ASM298822v1_feature_table.txt.gz    |
-| -rw-rw-r-- |    1 | petr | petr |  510141 | bře |  9 |  2018 | GCA_002988225.1_ASM298822v1_genomic.fna.gz          |
-| -rw-rw-r-- |    1 | petr | petr | 1214456 | bře |  9 |  2018 | GCA_002988225.1_ASM298822v1_genomic.gbff.gz         |
-| -rw-rw-r-- |    1 | petr | petr |  137899 | bře |  9 |  2018 | GCA_002988225.1_ASM298822v1_genomic.gff.gz          |
-| -rw-rw-r-- |    1 | petr | petr |  286551 | bře |  9 |  2018 | GCA_002988225.1_ASM298822v1_protein.faa.gz          |
-| -rw-rw-r-- |    1 | petr | petr |  461253 | bře |  9 |  2018 | GCA_002988225.1_ASM298822v1_protein.gpff.gz         |
-| -rw-rw-r-- |    1 | petr | petr |    1241 | bře |  9 |  2018 | GCA_002988225.1_ASM298822v1_rna_from_genomic.fna.gz |
-| -rw-rw-r-- |    1 | petr | petr |  331110 | bře |  9 |  2018 | GCA_002988225.1_ASM298822v1_translated_cds.faa.gz   |
-| -rw-rw-r-- |    1 | petr | petr |    1014 | bře |  9 |  2018 | GCA_002988225.1_ASM298822v1_wgsmaster.gbff.gz       |
-| -rw-rw-r-- |    1 | petr | petr |    1136 | bře |  9 |  2018 | md5checksums.txt                                    |
-| -rw-rw-r-- |    1 | petr | petr |   27762 | bře |  9 |  2018 | README.txt                                          |
+#+end_src
 
 
 *** Assembly levels - NCBI definition
