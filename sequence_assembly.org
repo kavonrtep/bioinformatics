@@ -1,0 +1,11 @@
+* Assembly Sanger sequence reads using Staden program 
+- Available for Linux, Windows and MacOS - http://staden.sourceforge.net/
+- Concise tutorial : https://bioinf.comav.upv.es/courses/intro_bioinf/_downloads/5521cd30ca085b97175a9d32ce58f517/staden_course.pdf
+- Detailed manual : http://bioinformatics.se/tools/staden/staden_package_manual.pdf
+** Staden programs required for assembly:
+- =pregap= pre-processing of trace files, removing low quality sequences, cliping vector sequences
+- =trev= - viewing trace files
+- =gap4= genome assembly program
+
+** Data for assembly:
+
