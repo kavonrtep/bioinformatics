@@ -7,11 +7,10 @@
 *** trev
 viewier and editor of trace files
 *** pregap4
-Pregap is used to process raw traces, hot off the sequencer (although it can be used for text files as
-well). It is used to mask all of the sequence you probably don’t want in the final assembly such as bits
-of vector and poor quality sequence.
+Pregap is used to process raw traces. It is used to mask all of low quality
+sequences, sequencing primers and vector sequences. 
 *** gap4
-Gap is the Genome Assembly Program – the bit which actually assembles your individual fragments
+Gap is the Genome Assembly Program – the program which actually assembles your individual fragments
 into long contigs. It allows you to edit the assembly, referring back to the starting traces where they
 are present. 
 

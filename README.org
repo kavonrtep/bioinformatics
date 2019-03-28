@@ -3,3 +3,4 @@
 ** [[./sequence_alignment.org][Sequence Alignment]]
 ** [[./blast_search.org][NCBI Blast]]
 ** [[./Databases_exercise.org][Databases]]
+** [[./sequence_assembly.org][Sequence Assembly]]
