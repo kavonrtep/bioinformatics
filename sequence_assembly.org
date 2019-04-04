@@ -19,3 +19,223 @@ are present.
 
 data for assembly are located in =~/Desktop/bioinformatics/data/sanger=
 
+* Assembly from short NGS reads using Velvet program - single end reads:
+
+** Single-end library
+**** Data
+The data you will examine is from /Staphylococcus aureus/ USA300 which has a genome of
+around 3MB . The reads are Illumina and are unpaired, also known as single-end library. 
+The data needed for this section can be obtained from the Sequence Read Archive (SRA). For the
+following example use the run data SRR022825 and SRR022823 from the SRA Sample
+SRS004748. The SRA experiment could be viewed by setting your browser to the URL:
+http://www.ebi.ac.uk/ena/data/view/SRS004748
+
+create directory for assembly:
+#+begin_src sh
+mkdir ngs_assembly
+cd ngs_assembly
+#+end_src
+
+data can be obtained directly using either wget command 
+#+begin_src sh
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR022/SRR022825/SRR022825.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR022/SRR022823/SRR022823.fastq.gz
+#+end_src
+or using fastq-dump from NCBI-SRA:
+#+begin_src sh
+fastq-dump --gzip SRR022825
+fastq-dump --gzip SRR022823
+#+end_src
+
+** Quality control using FASTQC program
+
+fastqc installation:
+#+begin_src sh :tangle install_additional_programs.sh  :tangle-mode (identity #o755)
+#/usr/bash
+cd
+# FASTQC
+wget https://www.bioinformatics.babraham.ac.uk/projects/fastqc/fastqc_v0.11.8.zip
+unzip fastqc_v0.11.8.zip
+chmod 755 ~/FastQC/fastqc
+ln -s ~/FastQC/fastqc ~/bin/fastqc
+# when asked set symlink to ~/bin/
+apt install fastx-toolkit sickle
+#+end_src
+
+    
+run fastqc program on illumina reads:
+#+begin_src 
+fastqc *.fastqc.gz
+#+end_src
+
+this command will create html reports:
+- =SRR022825_fastqc.html=
+- =SRR022823_fastqc.html=
+
+Inspect reports. 
+- What is the sequence read length?
+- how many sequences is in single runs?
+- What is the total number of bases
+
+** Estimation of genome size:
+
+We will used kmer-count based estimation of genome size according
+http://qb.cshl.edu/genomescope/
+
+#+begin_src sh
+# jellyfish nees file in uncompressed format
+zcat SRR022825.fastq.gz > SRR022825.fastq
+zcat SRR022823.fastq.gz > SRR022823.fastq
+# kmer counting:
+jellyfish count -C -m 21 -s 1000000000 -t 2 *.fastq -o reads.jc
+# create histogram:
+jellyfish histo -t 2 reads.jf > reads.histo
+#+end_src
+
+go to http://qb.cshl.edu/genomescope/ and upload resulting =reads.histo= and
+fill correct parameters - kmer size and read length:
+
+- what is the estimated genome size?
+
+#+begin_comment
+Staphylococcus aureus MRSA252, a genome closely related to
+the genome that provided the short read data in the earlier sections of this exercise. The sequence
+data this time is the fully assembled genome. The genome size is therefore known exactly and is
+2,902,619 bp.
+#+end_comment
+
+** Assembly 
+You are ready to assembly your data with velvet. Velvet has two
+main components:
+- velveth - used to construct, from raw read data, a dataset organised in the
+  fashion expected by the second component, velvetg.
+- velvetg - the core of velvet where the de Bruijn graph assembly is built and
+  manipulated.
+
+You can always get further information about the usage of both velvet programs by typing velvetg
+or velveth in your terminal. 
+
+#+begin_src sh
+# make kmer counting
+velveth run_25 25 -fastq.gz -short SRR022825.fastq.gz SRR022823.fastq.gz
+# explore files in the run_25 directory
+
+# run assembly:
+velvetg run_25
+#+end_src
+explanation:
+- =run_25= assembly directory
+- =25= hash length(kmer length)
+- =-fastq.gz= specifies input format
+
+** Genome assembly statistics:
+Use *Quast* tools to assess quality of assembly : http://quast.bioinf.spbau.ru/
+Upload file contig.fa and run quality assessment. 
+- What is the N50
+- What is the total lenght of assembly
+- How long is the longest contig?
+- Considering the amount of input data (read lenght x number of reads), what is
+  the sequencing coverage
+- Is the total length of genome assembly in agreement with kmer-based estimation
+  of genome size?
+
+Assembly graph can be inspected using *Bandage* program . 
+
+Results from kmer based analysis suggests, that sequencing coverage is more that
+10x and lower frequency kmers are likely erroneous kmers. Excluding such kmers
+can improved the assembly. We will rerun velvetg  with =-cov_cutoff 6=  and
+=-exp_cov 14=  command line option.
+
+#+begin_src bash
+# Make a copy of the run
+cp run_25/contigs.fa run_25/contigs.fa.0
+velvetg run_25 -cov_cutoff 6 -exp_cov 14 -amos_file yes
+#+end_src
+=-amos_file yes= option will expovelvetg run_25_paired -ins_length 350velvetg run_25_paired -ins_length 350rt results to AMOS format 
+
+#+begin_comment
+Results:
+Final graph has 4238 nodes and n50 of 4423, max 26428, total 2836372, using 0/5356745 reads
+Final graph has 2707 nodes and n50 of 5393, max 26428, total 2827773, using 3916445/5356745 reads
+#+end_comment
+
+* Assembly from short NGS reads using Velvet program - single end reads:
+
+** paired end data and QC:
+The data you will examine is from again from /Staphylococcus aureus/ USA300 .
+The reads are Illumina paired end.
+
+#+begin_src bash
+mkdir ngc_assembly2
+ce ngs_assembly2
+fastq-dump --split-files  SRR022852
+# this will download paired end reads to separate files
+# run fastqc program
+fastqc *.fastq
+#+end_src
+
+** Removing of low quality reads:
+Some reads has low quality. We can filter low quality sequences either using
+program fastx-toolkit
+Additionaly, according fastqc report, the first base in reads is biased and and
+needs to be removed too.
+
+
+#+begin_src bash
+fastx_trimmer -f 2 -i SRR022852_1.fastq -o SRR022852_1_trimmed.fastq
+fastx_trimmer -f 2 -i SRR022852_2.fastq -o SRR022852_2_trimmed.fastq
+# check quality
+fastqc SRR022852_1_trimmed.fastq SRR022852_2_trimmed.fastq
+
+
+#+end_src
+
+** Assembly
+
+#+begin_src bash
+velveth run_25_paired 25 -fastq -shortPaired -separate SRR022852_1_trimmed.fastq SRR022852_2_trimmed.fastq 
+velvetg run_25_paired -ins_length 350
+#+end_src
+
+** compare paired end assembly with single end assembly
+use Quast program to calculate basing statistics of assembly and compare it to
+previous assembly from single end Illumina reads
+
+** align short paired reads to assembly:
+
+#+begin_src bash
+# create database from contigs 
+bowtie2-build  run_25_paired/contigs.fa run_25_paired/contigs.fa
+#  map reads to assembly : (~7min)
+bowtie2 -p 3 -x run_25_paired/contigs.fa -1 SRR022852_1_trimmed.fastq -2 SRR022852_2_trimmed.fastq > SRR022852.sam
+# convert SAM to BAM format (~1min):
+samtools view -b SRR022852.sam > SRR022852.bam
+# sorting according position 
+samtools sort SRR022852.bam > SRR022852_sorted.bam
+# create index:
+samtools index SRR022852_sorted.bam
+#+end_src
+
+
+** Visualization of assembly
+run IGV program to inspect assembly. In IGV load genome - select contigs.fa
+file. Then load read mapping from SRR022852_sorted.bam
+
+Manual for IGV can be found on
+http://software.broadinstitute.org/software/igv/UserGuide.
+Explanation of color coding :
+http://software.broadinstitute.org/software/igv/interpreting_insert_size
+
+* Example of fastqc on low quality data:
+We will explore various NGS data from Sequence read archive using FASTQC
+program. For download, we will use =fastq-dump= command:
+
+#+begin_src bash
+fastq-dump -X 500000 --split-files  ERR268415
+fastq-dump -X 500000 --split-files  SRR453021
+fastq-dump -X 500000 --split-files  SRR2911427
+
+fastqc *.fastqc
+#+end_src
+# each download takes about 2 min.
+Inspect resulting html reports
