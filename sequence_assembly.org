@@ -139,7 +139,7 @@ Upload file contig.fa and run quality assessment.
 - Is the total length of genome assembly in agreement with kmer-based estimation
   of genome size?
 
-Assembly graph can be inspected using *Bandage* program . 
+# Assembly graph can be inspected using *Bandage* program . 
 
 Results from kmer based analysis suggests, that sequencing coverage is more that
 10x and lower frequency kmers are likely erroneous kmers. Excluding such kmers
@@ -159,15 +159,15 @@ Final graph has 4238 nodes and n50 of 4423, max 26428, total 2836372, using 0/53
 Final graph has 2707 nodes and n50 of 5393, max 26428, total 2827773, using 3916445/5356745 reads
 #+end_comment
 
-* Assembly from short NGS reads using Velvet program - single end reads:
+* Assembly from short NGS reads using Velvet program - pair-end reads:
 
 ** paired end data and QC:
 The data you will examine is from again from /Staphylococcus aureus/ USA300 .
-The reads are Illumina paired end.
+The reads are Illumina paired end with higher sequence coverage
 
 #+begin_src bash
 mkdir ngc_assembly2
-ce ngs_assembly2
+cd ngs_assembly2
 fastq-dump --split-files  SRR022852
 # this will download paired end reads to separate files
 # run fastqc program
@@ -176,8 +176,8 @@ fastqc *.fastq
 
 ** Removing of low quality reads:
 Some reads has low quality. We can filter low quality sequences either using
-program fastx-toolkit
-Additionaly, according fastqc report, the first base in reads is biased and and
+program fastx-toolkit.
+Additionally, according *fastqc* report, the first base in reads is biased and and
 needs to be removed too.
 
 
@@ -186,8 +186,6 @@ fastx_trimmer -f 2 -i SRR022852_1.fastq -o SRR022852_1_trimmed.fastq
 fastx_trimmer -f 2 -i SRR022852_2.fastq -o SRR022852_2_trimmed.fastq
 # check quality
 fastqc SRR022852_1_trimmed.fastq SRR022852_2_trimmed.fastq
-
-
 #+end_src
 
 ** Assembly
@@ -198,10 +196,12 @@ velvetg run_25_paired -ins_length 350
 #+end_src
 
 ** compare paired end assembly with single end assembly
-use Quast program to calculate basing statistics of assembly and compare it to
+use Quast program (http://quast.bioinf.spbau.ru) to calculate basic statistics of assembly and compare it to
 previous assembly from single end Illumina reads
 
 ** align short paired reads to assembly:
+We will aligne original sequence read to resulting genome assembly so we can
+explore assembly quality using IGV genomic browser
 
 #+begin_src bash
 # create database from contigs 
@@ -225,6 +225,7 @@ Manual for IGV can be found on
 http://software.broadinstitute.org/software/igv/UserGuide.
 Explanation of color coding :
 http://software.broadinstitute.org/software/igv/interpreting_insert_size
+
 
 * Example of fastqc on low quality data:
 We will explore various NGS data from Sequence read archive using FASTQC
