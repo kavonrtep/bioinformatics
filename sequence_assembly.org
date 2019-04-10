@@ -217,7 +217,6 @@ samtools sort SRR022852.bam > SRR022852_sorted.bam
 samtools index SRR022852_sorted.bam
 #+end_src
 
-
 ** Visualization of assembly
 run IGV program to inspect assembly. In IGV load genome - select contigs.fa
 file. Then load read mapping from SRR022852_sorted.bam
@@ -226,7 +225,6 @@ Manual for IGV can be found on
 http://software.broadinstitute.org/software/igv/UserGuide.
 Explanation of color coding :
 http://software.broadinstitute.org/software/igv/interpreting_insert_size
-
 
 * Example of fastqc on low quality data:
 We will explore various NGS data from Sequence read archive using FASTQC
