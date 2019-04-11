@@ -4,3 +4,4 @@
 ** [[./blast_search.org][NCBI Blast]]
 ** [[./Databases_exercise.org][Databases]]
 ** [[./sequence_assembly.org][Sequence Assembly]]
+** [[./transciptome_assembly.org][Transcriptome Assembly]]

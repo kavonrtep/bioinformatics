@@ -174,11 +174,12 @@ fastq-dump --split-files  SRR022852
 # run fastqc program
 fastqc *.fastq
 #+end_src
-*** Alternative download(valid till 05/11/2019:
+*** Alternative download(valid till 05/11/2019):
+https://filesender.cesnet.cz/?s=download&token=44c9e0a2-f284-0f8a-22e6-1146d2bea083
 
 
 
-** Removing of low quality reads:Next
+** Removing of low quality reads:
 
 Some reads has low quality. We can filter low quality sequences either using
 program fastx-toolkit.
