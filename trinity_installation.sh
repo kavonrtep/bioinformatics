@@ -1,4 +1,4 @@
-#!/bin/nash
+#!/bin/bash
 sudo apt-get install build-essential libz-dev libncurses5-dev jellyfish bowtie ncbi-blast+ python3-numpy python-numpy cmake
 
 cd ~/Downloads
@@ -20,3 +20,8 @@ tar zxfv Trinity-v2.8.4.tar.gz
 cd trinityrnaseq-Trinity-v2.8.4/
 make
 sudo ln -s  $PWD/Trinity /usr/local/bin/
+# bandage installation
+cd ~/Downloads
+wget https://github.com/rrwick/Bandage/releases/download/v0.8.1/Bandage_Ubuntu_dynamic_v0_8_1.zip
+unzip Bandage_Ubuntu_dynamic_v0_8_1.zip
+sudo ln -s $PWD/Bandage /usr/local/bin/

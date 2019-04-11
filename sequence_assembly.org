@@ -165,7 +165,7 @@ Final graph has 2707 nodes and n50 of 5393, max 26428, total 2827773, using 3916
 ** paired end data and QC:
 The data you will examine is from again from /Staphylococcus aureus/ USA300 .
 The reads are Illumina paired end with higher sequence coverage
-
+*** download from NCBI: 
 #+begin_src bash
 mkdir ngc_assembly2
 cd ngs_assembly2
@@ -174,8 +174,12 @@ fastq-dump --split-files  SRR022852
 # run fastqc program
 fastqc *.fastq
 #+end_src
+*** Alternative download(valid till 05/11/2019:
 
-** Removing of low quality reads:
+
+
+** Removing of low quality reads:Next
+
 Some reads has low quality. We can filter low quality sequences either using
 program fastx-toolkit.
 Additionally, according *fastqc* report, the first base in reads is biased and and

@@ -1,19 +1,22 @@
 * Trinity assembly and identification of gene of interest
-use data files from RNA-Seq exercise
 
+Task: We have protein sequence of PAX6 from /Esox lucius/ Nothern pike and we
+want to identify ortologous gene and protein in our model organism. To do that,
+we will use RNA-Seq data to assembly all possible transcripts. Transcript of
+interest will be identified using =tblastn=.
+
+
+* Data:
 - RNA-Seq data are in =~/Desktop/bioinformatics_git/data/fastq/=
 - create new directory and copy RNA-Seq data:
 #+BEGIN_SRC sh
 mkdir ~/Desktop/rna-seq
 cd ~/Desktop/rna-seq
-cp /Desktop/bioinformatics_git/data/fastq/*.fastq .
+cp ~/Desktop/bioinformatics_git/data/fastq/*.fastq .
 #+END_SRC
 
 
-* protein product of genes of interest (PAX6)
-
-save this as =protein_sequence.fasta=
-
+- protein product of genes of interest (PAX6)
 #+BEGIN_EXAMPLE
 >XP_010874552.1 PREDICTED: paired box protein Pax-6 isoform X3 [Esox lucius]
 MPQKEYHNQSTWESGVASMMQNSHSGVNQLGGVFVNGRPLPDTTRQKIVELAHSGARPCDISRILQTHDD
@@ -24,33 +27,73 @@ LAAKIDLPEARIQVWFSNRRAKWRREEKLRNQRRQASNSSSHIPISSSFSTSVYQAIPQPATPVSFSSGS
 MLGRPDTALTNTYSALPPMPSFTMANNLPMQPSQTSYSCMLPTSPSVNGRSYDTYTPPHMQAHMNSQSMT
 TSGTTSTGLISPGVSVPVQVPGGEPDMSQYWSRLQ
 #+END_EXAMPLE
+save this as =protein_sequence.fasta=
 
 
 
 * Running assembly
 
 #+BEGIN_SRC sh
-cd ~/fastq_data 
+cd ~/Desktop/rna-seq
 Trinity --max_memory 2G --seqType fq --left WT_01_R1.fastq  --right WT_01_R2.fastq --output output_directory_trinity --CPU 1
-
-#
+# output from trinity is stored in subdirectory:
 cd output_directory_trinity
 #+END_SRC
+** Output of Trinity assembly:
+When Trinity completes, it will create a 'Trinity.fasta' output file in the
+'trinity_out_dir/' output directory.
 
-* indentification of protein of interest using blast
+Trinity groups transcripts into clusters based on shared sequence content. Such
+a transcript cluster is very loosely referred to as a 'gene'. This information
+is encoded in the Trinity fasta accession. An example Fasta entry for one of the
+transcripts is formatted like so:
 
+#+begin_example
+>TRINITY_DN1000_c115_g5_i1 len=247 path=[31015:0-148 23018:149-246]
+AATCTTTTTTGGTATTGGCAGTACTGTGCTCTGGGTAGTGATTAGGGCAAAAGAAGACAC
+ACAATAAAGAACCAGGTGTTAGACGTCAGCAAGTCAAGGCCTTGGTTCTCAGCAGACAGA
+AGACAGCCCTTCTCAATCCTCATCCCTTCCCTGAACAGACATGTCTTCTGCAAGCTTCTC
+CAAGTCAGTTGTTCACAGGAACATCATCAGAATAAATTTGAAATTATGATTAGTATCTGA
+TAAAGCA
+#+end_example
+=TRINITY_DN1000_c115_g5_i1= indicates Trinity read cluster
+=TRINITY_DN1000_c115=, gene =g5=, and isoform =i1=. Because a given run of
+trinity involves many many clusters of reads, each of which are assembled
+separately, and because the 'gene' numberings are unique within a given
+processed read cluster, the 'gene' identifier should be considered an aggregate
+of the read cluster and corresponding gene identifier, which in this case would
+be 'TRINITY_DN1000_c115_g5'.
+
+* Indentification of protein of interest using blast
+We will create blast databases from trinity assembled transcripts and use
+protein sequence as query in =tblastn= search
 
 #+BEGIN_SRC sh
 makeblastdb -in Trinity.fasta -dbtype nucl
 tblastn -db Trinity.fasta -query protein_sequence.fasta -out blast_output
 #+END_SRC
 
+* Inspect output file and extract positive sequence
+Program =seqkit= can be use for various manipulations of fasta/fastq files. More
+information can be found at https://github.com/shenwei356/seqkit
 
+
+# TRINITY_DN35_c0_g1_i1 
+#+begin_src bash
+# show basig information about fasta file:
+seqkit stat output_directory_trinity/Trinity.fasta
+# extract sequence of interest - you have to replace "seqname" with real name identified using tblatn
+cat Trinity.fasta | seqkit grep -r -n -p "seqname" > putative_pax6.fasta
+#+end_src
+
+* Get protein sequence using ORF finder:
+https://www.ncbi.nlm.nih.gov/orffinder/
+ 
 
 
 * Trinity installation
 #+BEGIN_SRC sh :tangle trinity_installation.sh :tangle-mode (identity #o755)
-#!/bin/nash
+#!/bin/bash
 sudo apt-get install build-essential libz-dev libncurses5-dev jellyfish bowtie ncbi-blast+ python3-numpy python-numpy cmake
 
 cd ~/Downloads
@@ -72,7 +115,10 @@ tar zxfv Trinity-v2.8.4.tar.gz
 cd trinityrnaseq-Trinity-v2.8.4/
 make
 sudo ln -s  $PWD/Trinity /usr/local/bin/
-
-
-
+# bandage installation
+cd ~/Downloads
+wget https://github.com/rrwick/Bandage/releases/download/v0.8.1/Bandage_Ubuntu_dynamic_v0_8_1.zip
+unzip Bandage_Ubuntu_dynamic_v0_8_1.zip
+sudo ln -s $PWD/Bandage /usr/local/bin/
 #+END_SRC
+a
