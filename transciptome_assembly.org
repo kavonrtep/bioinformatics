@@ -12,7 +12,7 @@ interest will be identified using =tblastn=.
 #+BEGIN_SRC sh
 mkdir ~/Desktop/rna-seq
 cd ~/Desktop/rna-seq
-cp ~/Desktop/bioinformatics_git/data/fastq/*.fastq .
+cp ~/Desktop/bioinformatics/data/fastq/*.fastq .
 #+END_SRC
 
 
@@ -28,8 +28,6 @@ MLGRPDTALTNTYSALPPMPSFTMANNLPMQPSQTSYSCMLPTSPSVNGRSYDTYTPPHMQAHMNSQSMT
 TSGTTSTGLISPGVSVPVQVPGGEPDMSQYWSRLQ
 #+END_EXAMPLE
 save this as =protein_sequence.fasta=
-
-
 
 * Running assembly
 
