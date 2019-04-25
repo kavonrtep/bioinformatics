@@ -6,7 +6,7 @@ we will use RNA-Seq data to assembly all possible transcripts. Transcript of
 interest will be identified using =tblastn=.
 
 
-* Data:
+** Data:
 - RNA-Seq data are in =~/Desktop/bioinformatics_git/data/fastq/=
 - create new directory and copy RNA-Seq data:
 #+BEGIN_SRC sh
@@ -29,7 +29,7 @@ TSGTTSTGLISPGVSVPVQVPGGEPDMSQYWSRLQ
 #+END_EXAMPLE
 save this as =protein_sequence.fasta=
 
-* Running assembly
+** Running assembly
 
 #+BEGIN_SRC sh
 cd ~/Desktop/rna-seq
@@ -62,7 +62,70 @@ processed read cluster, the 'gene' identifier should be considered an aggregate
 of the read cluster and corresponding gene identifier, which in this case would
 be 'TRINITY_DN1000_c115_g5'.
 
-* Indentification of protein of interest using blast
+** Running assembly on Metacentrum (alternative)
+metacentrum wiki : https://wiki.metacentrum.cz/wiki/Main_Page
+
+*** data transfer
+If we need more computation resources, it is preferable to run assembly on
+computer cluster. For this exercise we will use Metacentrum. 
+
+First, we need to transfer data from local computer to remote storage. We will
+connect to metacentrum frontend (see https://wiki.metacentrum.cz/wiki/Frontend)
+using program Filezilla. 
+- start Filezilla
+- open =File/Site Manager=
+- use =New Site= button to set connection:
+[[./fig/filezilla_example.png]]
+
+- connect to server
+- on remote site create new directory =rna-seq=
+- transfer fastq files =WT_01_R1.fastq= and  =WT_01_R2.fastq= using drag and
+  drop
+*** configuring assembly:
+Instruction for assembly must be placed into file which we will upload to
+metacentrum server. Use editor and create file =assembly.sh= with following content:
+
+#+BEGIN_SRC bash :tangle scripts/assembly.sh
+#PBS -l select=1:ncpus=2:mem=2gb
+# -l walltime=2:00:00
+# the line above species that we request one computer node with
+# 2 processors(cpu) and 2 GB of RAM. computation will take max 2 hrs
+pwd                  # show  working directory
+cd $PBS_O_WORKDIR    # change directory to initial directory we run qsub comment
+pwd                  # show working directory
+ls -l                # and its connctent
+
+module add trinity-2.6.5
+Trinity --max_memory 2G --seqType fq --left WT_01_R1.fastq  --right WT_01_R2.fastq --output output_directory_trinity --CPU 2
+
+#+END_SRC
+
+transfer resulting file to =rna-seq= directory on remote frontend using filezilla
+
+*** run trinity assembly remotely:
+#+BEGIN_SRC bash
+ssh frantapepa@skirit.ics.muni.cz
+# enter password when prompted
+cd rna-seq
+qsub assembly.sh 
+#+END_SRC
+- the ID of job should be return (e.g.Job 10578850.arien-pro.ics.muni.cz)
+- status of all running or waiting jobs can be found on
+  https://metavo.metacentrum.cz/en/state/index.html in personal view tab
+  (running time ~ 13 min)
+- output from assembly is writen into =output_directory_trinity= folder.Check if
+  output_folder contain file =Trinity.fasta=. Use Filezilla to transfer results
+  back to your local computer
+
+
+#+BEGIN_COMMENT
+Explain in detail how metecentrum work
+
+show various statuses of jobs, explain memory/cpu/walltime usage
+explain exit status
+#+END_COMMENT
+
+** Indentification of protein of interest using blast
 We will create blast databases from trinity assembled transcripts and use
 protein sequence as query in =tblastn= search
 
@@ -71,7 +134,7 @@ makeblastdb -in Trinity.fasta -dbtype nucl
 tblastn -db Trinity.fasta -query protein_sequence.fasta -out blast_output
 #+END_SRC
 
-* Inspect output file and extract positive sequence
+** Inspect output file and extract positive sequence
 Program =seqkit= can be use for various manipulations of fasta/fastq files. More
 information can be found at https://github.com/shenwei356/seqkit
 
@@ -84,7 +147,7 @@ seqkit stat output_directory_trinity/Trinity.fasta
 cat Trinity.fasta | seqkit grep -r -n -p "seqname" > putative_pax6.fasta
 #+end_src
 
-* Get protein sequence using ORF finder:
+** Get protein sequence using ORF finder:
 https://www.ncbi.nlm.nih.gov/orffinder/
  
 
@@ -119,4 +182,18 @@ wget https://github.com/rrwick/Bandage/releases/download/v0.8.1/Bandage_Ubuntu_d
 unzip Bandage_Ubuntu_dynamic_v0_8_1.zip
 sudo ln -s $PWD/Bandage /usr/local/bin/
 #+END_SRC
-a
+
+
+* Metacentrum usefull links: 
+- list of frontends https://wiki.metacentrum.cz/wiki/Frontend
+- example of specifiyng computation job:
+  https://wiki.metacentrum.cz/wiki/How_to_compute/Batch_jobs
+- how to run interactive jobs:
+  https://wiki.metacentrum.cz/wiki/How_to_compute/Interactive_jobs
+- how to use modules:
+  https://wiki.metacentrum.cz/wiki/How_to_compute/Applications_and_modules
+- list of available software:
+  https://wiki.metacentrum.cz/wiki/MetaCentrum_Application_List
+
+* How to connect to metacentrum from windows:
+ssh protocol is available using Putty program (https://www.putty.org/)
