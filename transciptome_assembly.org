@@ -1,4 +1,4 @@
-* Trinity assembly and identification of gene of interest
+#+TITLE: Trinity assembly and identification of gene of interest
 
 Task: We have protein sequence of PAX6 from /Esox lucius/ Nothern pike and we
 want to identify ortologous gene and protein in our model organism. To do that,
@@ -37,30 +37,6 @@ Trinity --max_memory 2G --seqType fq --left WT_01_R1.fastq  --right WT_01_R2.fas
 # output from trinity is stored in subdirectory:
 cd output_directory_trinity
 #+END_SRC
-** Output of Trinity assembly:
-When Trinity completes, it will create a 'Trinity.fasta' output file in the
-'trinity_out_dir/' output directory.
-
-Trinity groups transcripts into clusters based on shared sequence content. Such
-a transcript cluster is very loosely referred to as a 'gene'. This information
-is encoded in the Trinity fasta accession. An example Fasta entry for one of the
-transcripts is formatted like so:
-
-#+begin_example
->TRINITY_DN1000_c115_g5_i1 len=247 path=[31015:0-148 23018:149-246]
-AATCTTTTTTGGTATTGGCAGTACTGTGCTCTGGGTAGTGATTAGGGCAAAAGAAGACAC
-ACAATAAAGAACCAGGTGTTAGACGTCAGCAAGTCAAGGCCTTGGTTCTCAGCAGACAGA
-AGACAGCCCTTCTCAATCCTCATCCCTTCCCTGAACAGACATGTCTTCTGCAAGCTTCTC
-CAAGTCAGTTGTTCACAGGAACATCATCAGAATAAATTTGAAATTATGATTAGTATCTGA
-TAAAGCA
-#+end_example
-=TRINITY_DN1000_c115_g5_i1= indicates Trinity read cluster
-=TRINITY_DN1000_c115=, gene =g5=, and isoform =i1=. Because a given run of
-trinity involves many many clusters of reads, each of which are assembled
-separately, and because the 'gene' numberings are unique within a given
-processed read cluster, the 'gene' identifier should be considered an aggregate
-of the read cluster and corresponding gene identifier, which in this case would
-be 'TRINITY_DN1000_c115_g5'.
 
 ** Running assembly on Metacentrum (alternative)
 metacentrum wiki : https://wiki.metacentrum.cz/wiki/Main_Page
@@ -124,6 +100,30 @@ Explain in detail how metecentrum work
 show various statuses of jobs, explain memory/cpu/walltime usage
 explain exit status
 #+END_COMMENT
+** Output of Trinity assembly:
+When Trinity completes, it will create a 'Trinity.fasta' output file in the
+'trinity_out_dir/' output directory.
+
+Trinity groups transcripts into clusters based on shared sequence content. Such
+a transcript cluster is very loosely referred to as a 'gene'. This information
+is encoded in the Trinity fasta accession. An example Fasta entry for one of the
+transcripts is formatted like so:
+
+#+begin_example
+>TRINITY_DN1000_c115_g5_i1 len=247 path=[31015:0-148 23018:149-246]
+AATCTTTTTTGGTATTGGCAGTACTGTGCTCTGGGTAGTGATTAGGGCAAAAGAAGACAC
+ACAATAAAGAACCAGGTGTTAGACGTCAGCAAGTCAAGGCCTTGGTTCTCAGCAGACAGA
+AGACAGCCCTTCTCAATCCTCATCCCTTCCCTGAACAGACATGTCTTCTGCAAGCTTCTC
+CAAGTCAGTTGTTCACAGGAACATCATCAGAATAAATTTGAAATTATGATTAGTATCTGA
+TAAAGCA
+#+end_example
+=TRINITY_DN1000_c115_g5_i1= indicates Trinity read cluster
+=TRINITY_DN1000_c115=, gene =g5=, and isoform =i1=. Because a given run of
+trinity involves many many clusters of reads, each of which are assembled
+separately, and because the 'gene' numberings are unique within a given
+processed read cluster, the 'gene' identifier should be considered an aggregate
+of the read cluster and corresponding gene identifier, which in this case would
+be 'TRINITY_DN1000_c115_g5'.
 
 ** Indentification of protein of interest using blast
 We will create blast databases from trinity assembled transcripts and use
@@ -149,8 +149,19 @@ cat Trinity.fasta | seqkit grep -r -n -p "seqname" > putative_pax6.fasta
 
 ** Get protein sequence using ORF finder:
 https://www.ncbi.nlm.nih.gov/orffinder/
- 
+* Metacentrum usefull links: 
+- list of frontends https://wiki.metacentrum.cz/wiki/Frontend
+- example of specifiyng computation job:
+  https://wiki.metacentrum.cz/wiki/How_to_compute/Batch_jobs
+- how to run interactive jobs:
+  https://wiki.metacentrum.cz/wiki/How_to_compute/Interactive_jobs
+- how to use modules:
+  https://wiki.metacentrum.cz/wiki/How_to_compute/Applications_and_modules
+- list of available software:
+  https://wiki.metacentrum.cz/wiki/MetaCentrum_Application_List
 
+* How to connect to metacentrum from windows:
+ssh protocol is available using Putty program (https://www.putty.org/)
 
 * Trinity installation
 #+BEGIN_SRC sh :tangle trinity_installation.sh :tangle-mode (identity #o755)
@@ -182,18 +193,3 @@ wget https://github.com/rrwick/Bandage/releases/download/v0.8.1/Bandage_Ubuntu_d
 unzip Bandage_Ubuntu_dynamic_v0_8_1.zip
 sudo ln -s $PWD/Bandage /usr/local/bin/
 #+END_SRC
-
-
-* Metacentrum usefull links: 
-- list of frontends https://wiki.metacentrum.cz/wiki/Frontend
-- example of specifiyng computation job:
-  https://wiki.metacentrum.cz/wiki/How_to_compute/Batch_jobs
-- how to run interactive jobs:
-  https://wiki.metacentrum.cz/wiki/How_to_compute/Interactive_jobs
-- how to use modules:
-  https://wiki.metacentrum.cz/wiki/How_to_compute/Applications_and_modules
-- list of available software:
-  https://wiki.metacentrum.cz/wiki/MetaCentrum_Application_List
-
-* How to connect to metacentrum from windows:
-ssh protocol is available using Putty program (https://www.putty.org/)
