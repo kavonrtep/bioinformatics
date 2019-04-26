@@ -63,7 +63,7 @@ metacentrum server. Use editor and create file =assembly.sh= with following cont
 
 #+BEGIN_SRC bash :tangle scripts/assembly.sh
 #PBS -l select=1:ncpus=2:mem=2gb
-# -l walltime=2:00:00
+#PBS -l walltime=2:00:00
 # the line above species that we request one computer node with
 # 2 processors(cpu) and 2 GB of RAM. computation will take max 2 hrs
 pwd                  # show  working directory
