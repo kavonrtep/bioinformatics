@@ -88,9 +88,20 @@ to =yes=
 
 [[./fig/deseq2.png]]
 
-tree new datasets will be created, table with normalized expression values,
-graphical summary and table with statistics. 
+Three new datasets will be created:
+1/ table with normalized expression values,
+2/ graphical summary 
+3/ table with statistics. 
+** Visualization:
+*** Heatmap
+table with normalizad expression values can be used for visualization using
+heatmap (e.g. using https://software.broadinstitute.org/morpheus/)
+*** Genome browser
+Use IGV browser to visualize read alignment and try to inspect genes which
+exhibit statistically significant differential expression 
 
-Use IGV browser to visualize read alignment and find genes which exhibit
-statistically significant differential expression 
 Bam files can be loaded directly from Galaxy interface
+- open all 6 bam files in IGV
+- load also GTF file so we can search for genes
+  using Flybase gene identifiers.
+- Use search box to search for gene =FBgn0026869=
