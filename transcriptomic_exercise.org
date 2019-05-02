@@ -1,6 +1,17 @@
 #+TITLE: Analysis gene expression in Galaxy environment
 
 * Galaxy server:
+Galaxy is an open source, web-based platform for data intensive biomedical
+research.
+There are several servers available:
+- https://usegalaxy.org/
+- https://usegalaxy.eu/
+** Documentation:
+- Using Galaxy Interface https://usegalaxy.org/tours/core.galaxy_ui
+- Uploading data - https://galaxyproject.org/tutorials/upload/
+- Using Histories - https://galaxyproject.org/tutorials/histories/
+
+
 
 
 * RNA-Seq Data
