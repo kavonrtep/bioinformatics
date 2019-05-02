@@ -1,0 +1,96 @@
+#+TITLE: Analysis gene expression in Galaxy environment
+
+* Galaxy server:
+
+
+* RNA-Seq Data
+The sequencing data you will be working with is from /Drosophila melanogaster/.
+The experiment has two conditioins, WT (wildtype) and KO (knockout), and three
+samples in each condition. The sequencing data is paired-end, so there are two
+files for each of the samples. Your aim will be to find differentially expressed
+genes in WT vs KO.
+
+RNA-Seq data are located in =~/Desktop/bioinformatics/data/rna-seq-drosophila=
+
+* Upload data to Galaxy
+
+Before upload, you will need to create new account on https://usegalaxy.eu/.
+Upload all 13 files included in the dataset  to  server. For fastq files select
+fastqsanger format before upload.
+
+
+
+** Files description:
+
+Gene annotation file:
+=ensembl_dm3.chr4.gtf=
+
+6 files containing paired-ended reads for the KO samples:
+
+#+begin_example
+KO_01_R1.fastq
+KO_01_R2.fastq
+KO_02_R1.fastq
+KO_02_R2.fastq
+KO_03_R1.fastq
+KO_03_R2.fastq
+#+end_example
+
+files containing paired-ended reads for the WT samples:
+
+#+begin_example
+WT_01_R1.fastq
+WT_01_R2.fastq
+WT_02_R1.fastq
+WT_02_R2.fastq
+WT_03_R1.fastq
+WT_03_R2.fastq
+#+end_example
+Each condition has three samples, and each sample has two files (an R1 file
+containing forward reads and an R2 file containing reverse reads).
+
+Click on the eye icon to the top right of any FASTQ file to view the first part
+of the file.
+
+Note: Since the reads in this dataset are synthetic, they do not have real
+quality scores.
+
+Note: The reads are paired-end, i.e. WT_01_R1.fastq and WT_01_R2.fastq are
+paired reads from one sequencing run. If you're unfamiliar with paired-end
+sequencing, you can read about it here.
+
+
+* Mapping reads with RNA-Star
+We will map RNA-Seq reads into genome od D.melanogaster using RNA-STAR program. For alignment use following
+parameters:
+
+
+- Single-end or paired-end reads:	paired	
+- Reference genome : D. melanogaster, Dm3
+- Gene model (gff3,gtf) file for splice junctions	1: ensembl_dm3.chr4.gtf (from upload)
+Other parameters can be set to dafaults:
+
+To align all data at once, use batch mode:
+
+[[./fig/rna_star_alignment.png]]
+
+Output of RNA-STAR are alingments in BAM format. Click on eye icon and inspect
+BAM file. Mapping can be also viewed from USCS genome or using IGV browser. 
+
+* convert bam files to feature count
+ 
+We will count individual reads mapped to gened using tool =featureCounts=. 
+[[./fig/featureCount.png]]
+
+* Test for differential expression with DESeq2 tool
+Set test according to screenshot below, also, set Output normalized counts table
+to =yes=
+
+[[./fig/deseq2.png]]
+
+tree new datasets will be created, table with normalized expression values,
+graphical summary and table with statistics. 
+
+Use IGV browser to visualize read alignment and find genes which exhibit
+statistically significant differential expression 
+Bam files can be loaded directly from Galaxy interface
