@@ -1,9 +1,14 @@
+---
+marp: false
+---
+
+
 # Introducing the Shell
-
-
-based on Software Carpentry course material
+based on Software Carpentry course material:
 
 [https://software-carpentry.org](https://software-carpentry.org)
+
+and Bioinformatics Data Skills book: [http://shop.oreilly.com/product/0636920030157.do](http://shop.oreilly.com/product/0636920030157.do)
 
 ---
 # Terminology:
@@ -17,6 +22,8 @@ based on Software Carpentry course material
 - A shell is a program whose primary purpose is to read commands and run other programs
 - Automating repetitive tasks, access networked machines."
 - The shell's main disadvantages - primarily textual nature, cryptic its commands and operation
+- There are many Unix shells implementations - **bash**, zsh, csh, tcsh, ..  
+- Bash is widely used and used in examples
 
 
 ---
@@ -31,6 +38,7 @@ The heart of a CLI is a **read-evaluate-print loop**, or REPL:
 - read command
 - evaluate command 
 - print/output results
+
 
 ---
 
@@ -59,6 +67,8 @@ The heart of a CLI is a **read-evaluate-print loop**, or REPL:
 - "`whoami` shows the user's current identity."
 - "`/` on its own is the root directory of the whole file system."
 
+Note that `path` is a location of file or directory in a file system
+
 ---
 # Relative vs Absolute path
 - A relative path specifies a location starting from the current location.
@@ -85,13 +95,19 @@ Several commands are frequently used to **create**, **inspect**, **rename**, and
 ## Start shell
 run `terminal` program
 
-### command prompt:
+![terminal program](fig/terminal_program.png)
+
+---
+
+## Command prompt:
 ~~~
 user@bioinfo:~$ 
 ~~~
 a **prompt**, which shows us that the shell is waiting for input;
 your shell may use a different character as a prompt and may add information before the prompt.
 When typing commands, either from these lessons or from other sources, do not type the prompt, only the commands that follow it.
+
+Note that commands are **case sensitive**
 
 ---
 Commands can be written on the terminal line and arbitrary edited until **Enter key** is pressed.
@@ -161,7 +177,7 @@ Next, let's find out where we are by running a command called `pwd` (which stand
 
 We know that our current working directory `/home/franta` is stored inside `/home`
 because `/home` is the first part of its name. 
-Similarly, we know that `/home` is stored inside the root directory `/`because its name begins with `/`.
+Similarly, we know that `/home` is stored inside the root directory `/` because its name begins with `/`.
 
 ---
 
@@ -242,16 +258,16 @@ Many bash commands, and programs that people have written that can be run from
 within bash, support a `--help` flag to display more information on how to use
 the commands or programs.
 
-For more information on how to use `ls` we can type `man ls`. `man` is the Unix
-"manual" command: it prints a description of a command and its options, and (if
-you're lucky) provides a few examples of how to use it.
+For more information on how to use `ls` we can type `man ls`. 
+
+`man` is the Unix "manual" command: it prints a description of a command and its options, and (if you're lucky) provides a few examples of how to use it.
 
 Even more information can be found ising command `info`.
 
 ---
 
 To navigate through the `man` pages
-- use the up and down arrow keys to move line-by-line, or try the "b" and spacebar keys to skip up and down by full page.
+- use the **up** and **down** arrow keys to move line-by-line, or try the "b" and spacebar keys to skip up and down by full page.
 - **Quit** the `man` pages by typing **q**.
 
 ---
@@ -449,6 +465,7 @@ Starting from `/home/manager/Desktop/Bioinformatics`, which of the following com
 ---
 
 **Relative Path Resolution**
+
 If `pwd` displays `/Users/thing`, what will `ls ../backup` display?
 ![File System for Challenge Questions](fig/filesystem-challenge.svg)
 
@@ -496,13 +513,13 @@ directory:
 
 ## Good names for files and directories
 
-1. Don't use whitespaces.
+1. Don't use whitespaces (space or tab).
    You can use `-` or `_` instead of whitespace.
 2. Don't begin the name with `-` (dash).
    Commands treat names starting with `-` as options.
 3. Stick with letters, numbers, `.` (period), `-` (dash) and `_` (underscore).
    Many other characters have special meanings on the command line.
-
+4. `.` at the begining of names is used for 'hidden' files/dirs
 ---
 
 ## Linux Text Editors
@@ -554,7 +571,7 @@ command `mv` means move
 ### exercise:
 ~~~
 mkdir data
-xed samples.txt # create some text file and save
+xed samples.txt # create some text file and save it from file menu
 # quit xed
 ls
 mv samples.txt data/ # moving
@@ -642,6 +659,23 @@ ls ?????.pdb
 
 ---
 
+## Example - check data integrity using md5 check sum
+The risk of data corruption during transfers is a concern when transferring large datasets. It is important to explicitly check the transferred data’s integrity with check‐sums. Checksums are very compressed summaries of data, computed in a way that
+even if just one bit of the data is changed, the checksum will be different.
+
+~~~
+cd ~/Desktop/bioinformatics/data/molecules
+# calculate checksum of single file
+md5sum pentane.pdb
+# or use wildcart to calculate checksum for all pdb files:
+md5sum *.pdb
+
+# validation integrity of files using file with original checksums:
+md5sum -c original_md5sums.txt
+~~~
+
+---
+
 # How to save output from program to file
 - program arguments (e.g. -o filename)
 - `>` redirection
@@ -652,8 +686,11 @@ wc -l *.pdb > lengths.txt
 ls 
 cat lengths.txt
 ~~~
+
 - The greater than symbol, `>`, tells the shell to **redirect** the command's output to a file instead of printing it to the screen.
 - If the file exists, it will be silently overwritten, which may lead to data loss and thus requires some caution.
+
+**Exercise:** how do you save md5 check sum of all pdb file to `md5sums.txt` file? 
 
 ---
 
@@ -734,8 +771,38 @@ what is the difference?
 
 ---
 
+# Downloading data using `wget` command
 
-# Loops
+wget is useful for quickly downloading a file from the command line—for example,
+human chromosome 22 from the GRCh37 (also known as hg19) assembly version:
+~~~
+cd ~/Downloads
+wget http://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/chr22.fa.gz
+~~~
+---
+
+# Example - using `seqkit` program
+
+Program `seqkit` can be used for analysis and parsing of fasta/fastq sequences.
+([https://bioinf.shenwei.me/seqkit/usage/](https://bioinf.shenwei.me/seqkit/usage/))
+
+See usage of `seqkit` program:
+~~~
+seqkit -h
+~~~
+
+Basic statistic about fasta or fastq sequences can be obtained using command `seqkit stat`
+
+~~~
+seqkit stat ~/Downloads/chr22.fa.gz
+seqkit stat ~/Desktop/bioinformatics/data/sequences/*.fasta
+~~~
+---
+
+
+# Advanced topics
+
+## Loops
 
 How can I perform the same actions on many different files?
 
@@ -754,7 +821,7 @@ for FILENAME in cubane.pdb ethane.pdb methane.pdb
 
 ---
 
-# Iterating over all files in directory
+## Iterating over all files in directory
 
 ~~~
 for FILENAME in *.pdb
@@ -765,7 +832,7 @@ done
 ~~~
 
 ---
-# Using scripts
+## Using scripts
 
 How we can reuse commands?
 
@@ -789,7 +856,7 @@ bash sample_script.sh
 
 ---
 
-# scripts arguments
+## scripts arguments
 
 create script `test_script.sh`:
 ~~~
@@ -812,7 +879,7 @@ done
 
 ---
 
-# Finding Things
+## Finding Things
 - How can I find files
 - How can I finth things in files?
 - `grep` finds and prints lines in files that match a pattern.
@@ -820,7 +887,7 @@ done
 
 ---
 
-# `grep` Global/Regular Expression/Print
+## `grep` Global/Regular Expression/Print
 
 grep syntax:
 grep [OPTION]... PATTERN [FILE]...
@@ -868,8 +935,6 @@ grep --help
 ~~~
 
 
-
-
 ## Find command
 
 
@@ -899,7 +964,6 @@ find . -name '*.txt'
 ~~~
 
 
-# Advanced topics
 
 ## combining find and other command
 use `$()` expression

@@ -1,15 +1,16 @@
-#+TITLE:Searching in Biological Databeses
+#+TITLE:Searching in Biological Databases
 * NCBI databases
 ** Nucleotide sequence search
-Go to NCGI genebank at http://www.ncbi.nlm.nih.gov/sites/entrez?db=nuccore.
-*** simple search 
+Go to NCBI genebank at http://www.ncbi.nlm.nih.gov/sites/entrez?db=nuccore.
+or on main NBCI page switch to *Nucleotide* database
+*** Simple search 
+- Over thousand results are shown. Go to *Advanced search*
 - enter *presenilin 1* in the search box, hit search (If you surround a phrase
   with quotes, that will force Entrez to search it as a /phrase/. If you do not
   surround a phrase with quotes, Entrez will separate the terms with a default
   Boolean AND if the terms do not exist as a phrase in the index of the desired
   field. Press the Details button after a search is done to see how Entrez
   parsed the query)
-- Over thousand results are shown. Go to *Advanced search*
 - In query builder, set new search:
   1. Search for *presenilin 1* in the *Title* field
   2. *human* in the *Organism* field, organism can be selected from pop-up menu
