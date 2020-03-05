@@ -1,7 +1,7 @@
 #+TITLE: Sequence Alignment
 #+OPTIONS: toc:nil
 
-* dotplots
+* Dotplots
 
 Dotter is a graphical dotplot program for detailed comparison of two sequences.
 It generates a dotplot where the first sequence to be compared is set along the
@@ -10,7 +10,7 @@ in two regions, a dot is plotted with an intensity proportional to the
 similarity.
 
 ** dotplot programs:
-- Destop applications:
+- Desktop applications:
   - dotter (https://www.sanger.ac.uk/science/tools/seqtools), linux only
   - gepard (http://cube.univie.ac.at/gepard)  - suitable for larger sequences, platform independent
 - Web applications
@@ -59,6 +59,8 @@ wget https://www.uniprot.org/uniprot/P00533.fasta
 wget https://www.uniprot.org/uniprot/P21860.fasta
 wget https://www.uniprot.org/uniprot/Q15303.fasta
 wget https://www.uniprot.org/uniprot/O18735.fasta
+# check sequence statistics:
+seqkit stat *.fasta
 #+end_src
 
 #+RESULTS:
@@ -74,20 +76,23 @@ wget https://www.uniprot.org/uniprot/O18735.fasta
 - compare all proteins to all proteins
 
 #+begin_src sh 
-cd ~/Desktop/bioinformatics/data/dotter_sequences/
 dotter P00533.fasta P21860.fasta # human ERBB2 vs human ERB3  (paralogs)
-dotter P00533.fasta Q15303.fasta  # human ERBB2 vs dog ERBB2  (orthologs)
+dotter P00533.fasta O18735.fasta  # human ERBB2 vs dog ERBB2  (orthologs)
 # all to all comparison:
 cat *.fasta > all_erb.fasta # first we need concatenated sequences in single fasta file
 dotter all_erb.fasta all_erb.fasta
 #+end_src
+to navigate in =dotter= program use mouse click to select region, arrows to move vertically and horizontally, ">" and "<"  to move diagonally. To zoom select area with mouse while holding middle mouse button.
+
+
 
 #+BEGIN_COMMENT
+backup of sequences is stored in ~/Desktop/bioinformatics/data/dotter_sequences/
 insertion - KTLSP
 #+END_COMMENT
 
 ** Exercise - Locate exon/intron boundaries using dotter (splice sites).
-- download sequence AC108130.3 from genbank, save only region from 60000 to 119999
+- download sequence AC108130.3 from genbank, save only region from 60000 to 119999 
 - download cDNA sequence of GABA A receptor: https://www.ncbi.nlm.nih.gov/nuccore/21265167?report=fasta
 - run dotter on these two sequences, identify exon/intron structure
 - Are the splice sites consensus splice sites? In vertebrates, the intron starts
@@ -101,24 +106,26 @@ insertion - KTLSP
 dotter AC108130.3.fna BC030696.1.fna  # genome vs cDNA
 dotter AC108130.3.fna GBRA1_HUMAN.fna   # genome vs protein 
 #+end_src
+# Data are also available in ~/Desktop/bioinformatics/data/dotter_sequences
+When using =dotter= to compare  DNA to protein, DNA sequence must be in forward orientation!
 
 ** Exercise - identification of repeats
 *** repeat structure in CDC10 protein - ankyrin repeat
 - download CDC10 protein - http://www.uniprot.org/uniprot/P01129.fasta 
 - make dotplot of CDC10 against itself
 - what is the position of repeat?
-- compare with position of ANK repeat in uniprot database
+- compare with position of ANK repeat in uniprot database (https://www.uniprot.org/uniprot/P01129)
 #+begin_src sh
-mkdir repeats
-cd repeats
 wget http://www.uniprot.org/uniprot/P01129.fasta 
+dotter P01129.fasta P01129.fasta
 #+end_src
 
+
 #+begin_comment
+visibility is quite bad
 Repeat1	356 – 385	ANK 1
 Repeat2	483 – 512	ANK 2
 #+end_comment
-
 
 *** repeats in ice nucleation protein 
 - P20469 is an ice nucleation protein, with a large number of repeats. What is the structure of repeating units
@@ -127,6 +134,7 @@ Repeat2	483 – 512	ANK 2
 wget http://www.uniprot.org/uniprot/P20469.fasta
 dotter P20469.fasta P20469.fasta
 #+end_src
+Distances between diagonal parallel lines can be used to estimate length of monomer in tandem repeat.
 
 *** example repeats in DNA sequences 
 **** Inverted repeat
@@ -146,21 +154,16 @@ dotter direct_repeat.fasta direct_repeat.fasta
 dotter inverted_repeat.fasta inverted_repeat.fasta
 #+end_src
 
-
 ** overlaping sequences
 make dotplot from following sequences stored in file:
 #+begin_example
-~/Desktop/data/dotter_sequences/dna_examples/overlaping_sequences.fasta
+~/Desktop/bioinformatics/data/dotter_sequences/dna_examples/ovoverlaping_sequences.fasta
 #+end_example
+
 what is relation between sequences?
-
-#+begin_comment 
-solution
-[[
-file:fig/scheme_dotter_overlap.png]]
-#+end_comment
-
-
+ 
+solution:
+[[./fig/scheme_dotter_overlap.png]]
 
 ** Exercise - identification of problems in sequences from SRA database
 *** Illumina data : SRR2911427  (Migratory locust WGS)
@@ -211,7 +214,7 @@ https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastn&PAGE_TYPE=BlastSearch&LI
 
 #+end_comment
 
-* pairwise alignment
+* Pairwise alignment
 ** Sequences for alignment:
 *** =ERB2_HUMAN= : http://www.uniprot.org/uniprot/P04626.fasta
 *** =EGFR_DROME= : http://www.uniprot.org/uniprot/P04412.fasta
@@ -231,17 +234,22 @@ wget http://www.uniprot.org/uniprot/Q8SZW1.fasta
 - for local alignment use program ~water~, 
   - http://www.bioinformatics.nl/cgi-bin/emboss/help/water
 
-Programs ~needle~ and ~water~ are available from command line or from EBI web interface: http://www.ebi.ac.uk/Tools/emboss/
-
+- Programs ~needle~ and ~water~ are available from command line or from EBI web interface: http://www.ebi.ac.uk/Tools/emboss/
+- Sequences for alignments are located in directory =~/Desktop/bioinformatics/data/alignment_sequences=
+- compare ERB2 (P04626.fasta) vs EGFR (P04412.fasta) using ~needle~ and then using ~water~ using command lne programs:
 #+BEGIN_SRC bash
 # command example:
+needle P04626.fasta P04412.fasta
 water P04626.fasta P04412.fasta
 #+END_SRC
-- files for alignment are loacated in =~/Desktop/bioinformatics_git/data/alignment_sequences/=
-- compare ERB2 (P04626.fasta) vs EGFR (P04412.fasta) using ~needle~ and then using ~water~
+same programs are also available from web interface:
+- https://www.ebi.ac.uk/Tools/psa/emboss_water/
+- https://www.ebi.ac.uk/Tools/psa/emboss_needle/
+
 #+begin_comment
 show/ explain alignment options - it is possible to select scoring matrix and gap penalties
 #+end_comment
+
 - compare ERB2 (P04626.fasta) vs Unknown protein (Q8SZW1.fasta) using ~needle~ and then using ~water~
 - what is difference between local and global alignments?
 - what happened what gap penalty is increased to 20 and extend_penalty to 5 when using local alignment
@@ -259,25 +267,27 @@ water P04626.fasta P04412.fasta -datafile EPAM10
 PAM10 : ftp://ftp.ncbi.nih.gov/blast/matrices/PAM10
 BLOSUM62 : ftp://ftp.ncbi.nih.gov/blast/matrices/BLOSUM62
 
-
 * Multiple alignment from HSPB8 proteins
+purpose of this exercise is to obtain set of orthologs of HSPB8 protein (Heat shock protein beta-8), create multiple sequence alignment and identify conserved regions.
+
 - obtain protein sequence of HSPB8 from NCBI, 
 # gene link is: https://www.ncbi.nlm.nih.gov/gene/26353
 - protein link is https://www.ncbi.nlm.nih.gov/protein/NP_055180.1
 - from right menu select =analyze this sequence/Run BLAST=
-- select search against sefseq_protein database, use delta-blast
-- from results select following species (some species can have multiple hits, select the best:
+- select search against sefseq_protein database, set algorithm of search to DELTA-BLAST (Domain Enhanced Lookup Time Accelerated BLAST)
+- Limit blast search to the following species (add species to =Organims= field):
   - Sus scrofa (pig) 
   - Danio rerio (zebrafish) 
   - Bos taurus (cattle)
   - Mus musculus (house mouse)
   - Xenopus laevis (African clawed frog)
-  - Danio rerio (zebrafish)
   - Drosophila melanogaster (fruit fly)
   - Gallus gallus (chicken) 
 # list of accessions:  	XP_004934466 NP_523827 NP_001094427 NP_001079782 NP_109629 NP_001014955 NP_001094427 XP_001929620 NP_055180.1
-- download fasta file all accession
-- edit fasta file - remove gaps, put the name of organism at the beginning of the description line e.g.:
+- select best hit from each species :
+- download fasta file for selected proteins. 
+# make sure that other sequences are unselected!
+- edit fasta file in text editor - remove gaps, put the name of organism at the beginning of the description line e.g.:
 #+BEGIN_EXAMPLE
 >chicken XP_004934466.1 PREDICTED: heat shock protein beta-8 [Gallus gallus]
 MADSQLPFSCHYPGRRSLRDPFREPGLTSRLLDDDFGLSPFPGDLTADWPDWARPRLTPTWPGPLRARAS
@@ -289,24 +299,34 @@ TLNIDSEKFEVILDVQQFSPSEITVKVADKFVIVEGKHEEKQDEHGYVSRQFSRRYQLPSDVNPDTVTSS
 LSSDGLLTIKAPMKALPPPQTERLVQITQTGPSSKEDNAKKVETSTA
 ...
 #+END_EXAMPLE
+** Create multiple sequences alignment:
+*** Option 1:  Jalview program
 - start jalview program from web: http://www.jalview.org/
-- open sequences (File
-- align seaquences =Web service/Alignment/Mafft with defaults=, 
-- inspect alignment set coloring of alignment. Try different coloring schemes.
-- What part of proteins is conserved?
-- compare conserved part with domains annotation
-  - go to https://www.ncbi.nlm.nih.gov/protein/NP_055180.1
-  - select =analyze this sequence/identify conserved domains
-- will you be able to identify conserved domain if you use only mouse, cow, pig and human sequences?
-  - in jalwview, selecte subset of sequences(mammals) and create alignment again. 
-- save alignment in =fasta= and and =msf= format, inspect the saved file using =less= command
-** Alternative alignment program - web browser interface:
+- open sequences from file menu.
+- align sequences =Web service/Alignment/Mafft with defaults=
+
+*** Option 2: Use web browser interface:
 - go to http://www.ebi.ac.uk/Tools/msa/clustalo/
 - paste your sequences and align
-- color alignment or go to result summary and start =jalview= program
-** Alignment using command line program.
+- color alignment or go to result viewer to create visualization using Mview
+*** Option 4: Alignment using command line program.
 
    #+begin_src sh
    mafft HSP8.fasta > aligned_sequences_mafft.fasta
    muscle -in HSP8.fasta -out aligned_sequences_muscle.fasta
    #+end_src
+*** Option 4: Geneious Prime program
+- start Geneious
+- create new project folder
+- import sequences from file
+- create multiple sequence alignment from Align/Assemble/Multiple align. Use program MUSCLE
+
+** Inspect MSA results
+- Inspect alignment, Try different coloring schemes.
+- What part of proteins is conserved?
+- compare conserved part with domains annotation
+  - go to https://www.ncbi.nlm.nih.gov/protein/NP_055180.1
+  - select =analyze this sequence/identify conserved domains
+- will you be able to identify conserved domain if you use only mouse, cow, pig and human sequences?
+  - try to  select subset of sequences(mammals) and create alignment again. 
+- save alignment in =fasta= and and =msf= format, inspect the saved file using =less= command
