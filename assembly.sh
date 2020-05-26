@@ -1,4 +1,4 @@
-#PBS -l select=1:ncpus=2:mem=2gb walltime=2:00:00
+#PBS -l select=1:ncpus=2:mem=2gb -l walltime=2:00:00
 # the line above species that we request one computer node with
 # 2 processors(cpu) and 2 GB of RAM. computation will take max 2 hrs
 

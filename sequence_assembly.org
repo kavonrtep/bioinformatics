@@ -84,14 +84,19 @@ We will used kmer-count based estimation of genome size according
 http://qb.cshl.edu/genomescope/
 
 #+begin_src sh
-# jellyfish nees file in uncompressed format
+# jellyfish needs file in uncompressed format
 zcat SRR022825.fastq.gz > SRR022825.fastq
 zcat SRR022823.fastq.gz > SRR022823.fastq
-# kmer counting:
-jellyfish count -C -m 21 -s 1000000000 -t 2 *.fastq -o reads.jc
+# kmer counting (several minutes):
+jellyfish count -C -m 21 -s 100000000 -t 2 *.fastq -o reads.jf
 # create histogram:
 jellyfish histo -t 2 reads.jf > reads.histo
+# inspect kmer count using:
+less reads.histo
+
 #+end_src
+Note: parameter =-s= is Initial hash size - affect memory usage
+
 
 go to http://qb.cshl.edu/genomescope/ and upload resulting =reads.histo= and
 fill correct parameters - kmer size and read length:
@@ -129,8 +134,16 @@ explanation:
 - =25= hash length(kmer length)
 - =-fastq.gz= specifies input format
 
+Explore run_25 directory files:
+
+- =directory/contigs.fa=		: fasta file of contigs longer than twice hash length
+- =directory/stats.txt=		: stats file (tab-spaced) useful for determining appropriate coverage cutoff
+- =directory/LastGraph=		: special formatted file with all the information on the final graph
+- =directory/velvet_asm.afg=	: (if requested) AMOS compatible assembly file
+- =Log= information about assembly
+
 ** Genome assembly statistics:
-Use *Quast* tools to assess quality of assembly : http://quast.bioinf.spbau.ru/
+Use *Quast* tools to assess quality of assembly : http://quast.sourceforge.net/quast
 Upload file contig.fa and run quality assessment. 
 - What is the N50
 - What is the total lenght of assembly
@@ -140,7 +153,7 @@ Upload file contig.fa and run quality assessment.
 - Is the total length of genome assembly in agreement with kmer-based estimation
   of genome size?
 
-# Assembly graph can be inspected using *Bandage* program . 
+ Assembly graph can be inspected using *Bandage* program . 
 
 Results from kmer based analysis suggests, that sequencing coverage is more that
 10x and lower frequency kmers are likely erroneous kmers. Excluding such kmers
@@ -167,17 +180,14 @@ The data you will examine is from again from /Staphylococcus aureus/ USA300 .
 The reads are Illumina paired end with higher sequence coverage
 *** download from NCBI: 
 #+begin_src bash
-mkdir ngc_assembly2
+mkdir ngs_assembly2
 cd ngs_assembly2
-fastq-dump --split-files  SRR022852
-# this will download paired end reads to separate files
+# get paired end reads
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR022/SRR022852/SRR022852_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR022/SRR022852/SRR022852_2.fastq.gz
 # run fastqc program
 fastqc *.fastq
 #+end_src
-*** Alternative download(valid till 05/11/2019):
-https://filesender.cesnet.cz/?s=download&token=44c9e0a2-f284-0f8a-22e6-1146d2bea083
-
-
 
 ** Removing of low quality reads:
 
@@ -188,8 +198,8 @@ needs to be removed too.
 
 
 #+begin_src bash
-fastx_trimmer -f 2 -i SRR022852_1.fastq -o SRR022852_1_trimmed.fastq
-fastx_trimmer -f 2 -i SRR022852_2.fastq -o SRR022852_2_trimmed.fastq
+zcat SRR022852_1.fastq.gz | fastx_trimmer -f 2 -o SRR022852_1_trimmed.fastq
+zcat SRR022852_2.fastq.gz | fastx_trimmer -f 2 -o SRR022852_2_trimmed.fastq
 # check quality
 fastqc SRR022852_1_trimmed.fastq SRR022852_2_trimmed.fastq
 #+end_src
@@ -202,10 +212,14 @@ velvetg run_25_paired -ins_length 350
 #+end_src
 
 ** compare paired end assembly with single end assembly
-use Quast program (http://quast.bioinf.spbau.ru) to calculate basic statistics of assembly and compare it to
-previous assembly from single end Illumina reads
+- use *Quast* program (http://quast.sourceforge.net/quast) to calculate basic statistics of assembly and compare it to
+  previous assembly from single end Illumina reads
+- use *Bandage* program
 
-** align short paired reads to assembly:
+
+
+
+** Align short paired reads to assembly (optional):
 We will aligne original sequence read to resulting genome assembly so we can
 explore assembly quality using IGV genomic browser
 
@@ -222,7 +236,7 @@ samtools sort SRR022852.bam > SRR022852_sorted.bam
 samtools index SRR022852_sorted.bam
 #+end_src
 
-** Visualization of assembly
+*** Visualization of assembly
 run IGV program to inspect assembly. In IGV load genome - select contigs.fa
 file. Then load read mapping from SRR022852_sorted.bam
 
@@ -230,6 +244,54 @@ Manual for IGV can be found on
 http://software.broadinstitute.org/software/igv/UserGuide.
 Explanation of color coding :
 http://software.broadinstitute.org/software/igv/interpreting_insert_size
+
+** How to make assembly on Metacentrum
+
+we need to execute all these commands on Metacentrum:
+#+begin_src bash  :tangle scripts/assembly_script1.sh
+mkdir ngs_assembly2
+cd ngs_assembly2
+# get paired end reads
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR022/SRR022852/SRR022852_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR022/SRR022852/SRR022852_2.fastq.gz
+zcat SRR022852_1.fastq.gz | fastx_trimmer -f 2 -o SRR022852_1_trimmed.fastq
+zcat SRR022852_2.fastq.gz | fastx_trimmer -f 2 -o SRR022852_2_trimmed.fastq
+velveth run_25_paired 25 -fastq -shortPaired -separate SRR022852_1_trimmed.fastq SRR022852_2_trimmed.fastq 
+velvetg run_25_paired -ins_length 350
+#+end_src
+we need to also specify computational resources
+
+#+begin_src bash :tangle scripts/assembly_script2_pbs.sh
+#PBS -N genome_assembly
+#PBS -l select=1:ncpus=4:mem=4gb -l walltime=1:00:00
+# the line above species that we request one computer node with
+# 4 processors(cpu) and 4 GB of RAM. computation will take max 1 hrs
+cd /storage/praha1/home/$LOGNAME  # go to your home directory on tarkil
+module add velvet-1.2.09
+mkdir ngs_assembly2
+cd ngs_assembly2
+# get paired end reads
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR022/SRR022852/SRR022852_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR022/SRR022852/SRR022852_2.fastq.gz
+zcat SRR022852_1.fastq.gz | fastx_trimmer -f 2 -o SRR022852_1_trimmed.fastq
+zcat SRR022852_2.fastq.gz | fastx_trimmer -f 2 -o SRR022852_2_trimmed.fastq
+velveth run_25_paired 25 -fastq -shortPaired -separate SRR022852_1_trimmed.fastq SRR022852_2_trimmed.fastq 
+velvetg run_25_paired -ins_length 350
+#+end_src
+
+we need to copy file with script to Metacentrum frontend:
+- Use can use program filezilla to transfer data to you home directory =/storage/praha1/home/$LOGNAME=
+[[filezilla_tarkil.png]]
+
+* More info about Matecentrum:
+
+- How to use modules: https://wiki.metacentrum.cz/wiki/Application_modules
+- Available modules:  https://wiki.metacentrum.cz/wiki/MetaCentrum_Application_List
+- https://wiki.metacentrum.cz/wiki/Beginners_guide
+- PBS system https://wiki.metacentrum.cz/wiki/About_scheduling_system
+- Metacentrum frontends : https://wiki.metacentrum.cz/wiki/Frontend
+- your current jobs can be viewed at https://metavo.metacentrum.cz/pbsmon2/user/username
+
 
 * Example of fastqc on low quality data:
 We will explore various NGS data from Sequence read archive using FASTQC
