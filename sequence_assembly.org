@@ -259,7 +259,8 @@ zcat SRR022852_2.fastq.gz | fastx_trimmer -f 2 -o SRR022852_2_trimmed.fastq
 velveth run_25_paired 25 -fastq -shortPaired -separate SRR022852_1_trimmed.fastq SRR022852_2_trimmed.fastq 
 velvetg run_25_paired -ins_length 350
 #+end_src
-we need to also specify computational resources
+
+We need to also specify computational resources (lines starting with #PBS)
 
 #+begin_src bash :tangle scripts/assembly_script2_pbs.sh
 #PBS -N genome_assembly
@@ -268,6 +269,8 @@ we need to also specify computational resources
 # 4 processors(cpu) and 4 GB of RAM. computation will take max 1 hrs
 cd /storage/praha1/home/$LOGNAME  # go to your home directory on tarkil
 module add velvet-1.2.09
+module add fastx-0.0.14
+
 mkdir ngs_assembly2
 cd ngs_assembly2
 # get paired end reads
@@ -279,11 +282,33 @@ velveth run_25_paired 25 -fastq -shortPaired -separate SRR022852_1_trimmed.fastq
 velvetg run_25_paired -ins_length 350
 #+end_src
 
-we need to copy file with script to Metacentrum frontend:
+ Copy file with script to Metacentrum frontend:
 - Use can use program filezilla to transfer data to you home directory =/storage/praha1/home/$LOGNAME=
-[[filezilla_tarkil.png]]
+[[./fig/filezilla_tarkil.png]]
+- alternatively copy script file using =scp= command
+#+begin_src bash
+# replace username with your ctredentials!
+scp ./scripts/assembly_script2_pbs.sh username@tarkil.grid.cesnet.cz:/storage/praha1/home/username/
+#+end_src
 
-* More info about Matecentrum:
+Login to matacentrum front end server:
+#+begin_src bash
+ssh username@tarkil.grid.cesnet.cz
+#+end_src
+
+Now you should be in your home directory which contain also script =assembly_script2_pbs.sh=
+
+Execute assembly by running:
+#+begin_src bash
+qsub assembly_script2_pbs.sh
+#+end_src
+
+status of your submission can be monitored from https://metavo.metacentrum.cz/pbsmon2/user/username
+
+To transfer data back to your local computer, you can use filezila.
+
+
+* More info about Metacentrum:
 
 - How to use modules: https://wiki.metacentrum.cz/wiki/Application_modules
 - Available modules:  https://wiki.metacentrum.cz/wiki/MetaCentrum_Application_List
@@ -292,7 +317,7 @@ we need to copy file with script to Metacentrum frontend:
 - Metacentrum frontends : https://wiki.metacentrum.cz/wiki/Frontend
 - your current jobs can be viewed at https://metavo.metacentrum.cz/pbsmon2/user/username
 
-
+  
 * Example of fastqc on low quality data:
 We will explore various NGS data from Sequence read archive using FASTQC
 program. For download, we will use =fastq-dump= command:
