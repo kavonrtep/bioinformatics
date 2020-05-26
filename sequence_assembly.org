@@ -305,8 +305,7 @@ qsub assembly_script2_pbs.sh
 
 status of your submission can be monitored from https://metavo.metacentrum.cz/pbsmon2/user/username
 
-To transfer data back to your local computer, you can use filezila.
-
+To transfer data back to your local computer, you can use filezilla.
 
 * More info about Metacentrum:
 
@@ -316,8 +315,6 @@ To transfer data back to your local computer, you can use filezila.
 - PBS system https://wiki.metacentrum.cz/wiki/About_scheduling_system
 - Metacentrum frontends : https://wiki.metacentrum.cz/wiki/Frontend
 - your current jobs can be viewed at https://metavo.metacentrum.cz/pbsmon2/user/username
-
-  
 * Example of fastqc on low quality data:
 We will explore various NGS data from Sequence read archive using FASTQC
 program. For download, we will use =fastq-dump= command:

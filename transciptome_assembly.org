@@ -59,9 +59,9 @@ using program Filezilla.
   drop
 *** configuring assembly:
 Instruction for assembly must be placed into file which we will upload to
-metacentrum server. Use editor and create file =assembly.sh= with following content:
+metacentrum server. Use editor and create file =transcriptome_assembly.sh= with following content:
 
-#+BEGIN_SRC bash :tangle scripts/assembly.sh
+#+BEGIN_SRC bash :tangle scripts/transcriptome_assembly.sh
 #PBS -l select=1:ncpus=2:mem=2gb
 #PBS -l walltime=2:00:00
 # the line above species that we request one computer node with
@@ -76,14 +76,13 @@ Trinity --max_memory 2G --seqType fq --left WT_01_R1.fastq  --right WT_01_R2.fas
 
 #+END_SRC
 
-transfer resulting file to =rna-seq= directory on remote frontend using filezilla
+transfer script file to remote frontend using filezilla
 
 *** run trinity assembly remotely:
 #+BEGIN_SRC bash
 ssh frantapepa@skirit.ics.muni.cz
 # enter password when prompted
-cd rna-seq
-qsub assembly.sh 
+qsub transcriptome_assembly.sh 
 #+END_SRC
 - the ID of job should be return (e.g.Job 10578850.arien-pro.ics.muni.cz)
 - status of all running or waiting jobs can be found on
@@ -134,6 +133,10 @@ makeblastdb -in Trinity.fasta -dbtype nucl
 tblastn -db Trinity.fasta -query protein_sequence.fasta -out blast_output
 #+END_SRC
 
+
+#+begin_comment
+show different output formats
+#+end_comment
 ** Inspect output file and extract positive sequence
 Program =seqkit= can be use for various manipulations of fasta/fastq files. More
 information can be found at https://github.com/shenwei356/seqkit
