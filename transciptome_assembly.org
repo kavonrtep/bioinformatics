@@ -141,17 +141,24 @@ show different output formats
 Program =seqkit= can be use for various manipulations of fasta/fastq files. More
 information can be found at https://github.com/shenwei356/seqkit
 
+we will use program seqkit to extract required sequence from multi fasta file, type =seqkit grep --help=
 
 # TRINITY_DN35_c0_g1_i1 
 #+begin_src bash
 # show basig information about fasta file:
 seqkit stat output_directory_trinity/Trinity.fasta
 # extract sequence of interest - you have to replace "seqname" with real name identified using tblatn
-cat Trinity.fasta | seqkit grep -r -n -p "seqname" > putative_pax6.fasta
+seqkit grep -r -n -p "seqname" Trinity.fasta > putative_pax6.fasta
 #+end_src
 
-** Get protein sequence using ORF finder:
+
+
+- Inspect sequence using ORF finder:
 https://www.ncbi.nlm.nih.gov/orffinder/
+- and using blastx https://blast.ncbi.nlm.nih.gov/Blast.cgi
+
+is the transcript complete?
+
 * Metacentrum usefull links: 
 - list of frontends https://wiki.metacentrum.cz/wiki/Frontend
 - example of specifiyng computation job:
