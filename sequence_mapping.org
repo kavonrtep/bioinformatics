@@ -1,0 +1,123 @@
+* sequence mapping using bowtie2 program
+
+** input data:
+fastq reads are available at:
+#+begin_src txt
+https://zenodo.org/record/1324070/files/wt_H3K4me3_read1.fastq.gz
+https://zenodo.org/record/1324070/files/wt_H3K4me3_read2.fastq.gz
+#+end_src
+
+Genome for mapping:
+#+begin_src txt
+ftp://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/release_M22/GRCm38.p6.genome.fa.gz
+#+end_src
+
+ use =wget= command to download databases (this can take several several minutes)
+
+#+begin_src bash
+wget https://zenodo.org/record/1324070/files/wt_H3K4me3_read1.fastq.gz
+wget https://zenodo.org/record/1324070/files/wt_H3K4me3_read2.fastq.gz
+
+#+end_src
+#+begin_comment
+- explain gz format
+- how to view it =zcat, =zless=, =gunzip=
+#+end_comment
+
+
+#+begin_comment
+start download and then explain =-c=  =--continue= optio
+show full help
+#+end_comment
+
+
+#+begin_comment
+explain use of fa.gz, fastq.gz
+Stress that constant verification is neccessary - files are created as expected
+#+end_comment
+
+
+create bowtie2 database with bowtie2-build command - this can take long time - several hours
+#+begin_src bash
+  wget ftp://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/release_M22/GRCm38.p6.genome.fa.gz
+  # unpack file from gz archive
+  gunzip GRCm38.p6.genome.fa.gz
+  # gunzip program unpack .gz file to plain fasta, original fa.gz file is removed
+  # verify with ls command
+
+  # now create bowtie database  with command (this takes several hours) :
+  bowtie2-build GRCm38.p6.genome.fa mm10
+#+end_src
+
+#+begin_comment
+inspect bowtie web and show indexes
+#+end_comment
+
+alternativelly, you can download pre-build index from bowtie website : http://bowtie-bio.sourceforge.net/bowtie2/index.shtml (~ 30 minutes, ~3G)
+# TODO add alternative link on RE server!
+#+begin_src bash
+  wget https://genome-idx.s3.amazonaws.com/bt/mm10.zip
+  # alternative address if ubove is too slow:
+  wget http://repeatexplorer.org/repeatexplorer/wp-content/uploads/mm10.zip
+  unzip mm10.zip
+  # inspect files:
+  ls -l
+#+end_src
+
+
+
+
+
+verify quality with FASTQC program
+#+begin_src bash
+fastqc *.fastq.gz
+#+end_src
+inspect results in web browser
+
+Read mapping
+#+begin_src bash
+  # check bowtie2 options
+  bowtie2 --help
+  # bowtie2 [options]* -x <bt2-idx> {-1 <m1> -2 <m2> | -U <r> | --interleaved <i>} [-S <sam>]
+  # map reads with default options
+  bowtie2 -x mm10 -1 wt_H3K4me3_read1.fastq.gz -2 wt_H3K4me3_read2.fastq.gz -S wt_H3K4me3_reads.sam
+  # new sam file is created and information about mapping is printet on terminal. if you wish
+  # to store information about mapping in file use:
+  bowtie2 -x mm10 -1 wt_H3K4me3_read1.fastq.gz -2 wt_H3K4me3_read2.fastq.gz -S wt_H3K4me3_reads.sam > mapping_inf.txt
+  # to view result of mapping in IGV , we need to obrain sorted bam file:
+  # 1/ convert sam to bam:
+  samtools view -b -o wt_H3K4me3_reads.bam  wt_H3K4me3_reads.sam 
+  # check output file
+  ls -l
+  # note the size difference
+  # bam file must be sorted by reference:
+  samtools sort wt_H3K4me3_reads.bam -o wt_H3K4me3_reads_sorted.bam
+  # igv also require bam index - this enable fast viewing of alignments
+  samtools index wt_H3K4me3_reads_sorted.bam
+#+end_src
+
+#+begin_comment
+- explain samtools command and subcommand:
+  - samtools --help
+  -  samtools view --help
+  - samtools view -o output        without -o output to stdout
+#+end_comment
+
+Now you can view results of mapping in IGV browser - don't forget to switch to mouse reference =mm10= genome
+
+check region chr2:98,649,356-98,676,730
+
+try also  these commadns :
+#+begin_src
+samtools view wt_H3K4me3_reads_sorted.bam | less
+samtools view wt_H3K4me3_reads_sorted.bam | cut -f 3 | less | uniq -c
+#+end_src
+
+to create data suitable for IGV, several command were necessary, we can make it shorter when we use pipes:
+#+begin_src bash
+   bowtie2 -x mm10 -1 wt_H3K4me3_read1.fastq.gz -2 wt_H3K4me3_read2.fastq.gz | samtools view -b  | samtools sort > wt_H3K4me3_reads_sorted2.bam
+
+  # but what about log file?
+   bowtie2 -x mm10 -1 wt_H3K4me3_read1.fastq.gz -2 wt_H3K4me3_read2.fastq.gz 2> logfile | samtools view -b  | samtools sort > wt_H3K4me3_reads_sorted2.bam
+ 
+#+end_src

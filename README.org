@@ -2,6 +2,7 @@
 ** [[./shell_introduction.md][Introduction to shell]] 
 ** [[./sequence_alignment.org][Sequence Alignment]]
 ** [[./blast_search.org][NCBI Blast]]
+** [[./sequence_mapping.org][Sequence Mapping]]
 ** [[./Databases_exercise.org][Databases]]
 ** [[./sequence_assembly.org][Sequence Assembly]]
 ** [[./transciptome_assembly.org][Transcriptome Assembly]]
