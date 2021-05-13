@@ -277,7 +277,7 @@ discuss type of sequence id in fasta - what is behind the first space
 
 
 #+end_src
-** blast agaist remote database -  exercise 3
+** blast against remote database -  exercise 3
 Instead of having to download the entirety of NR or other NCBI databases, we can BLAST against the version held on the website. This ensures we have the most up to date version but is also significantly slower. We use the -remote command to do this. Lets BLAST out sequences against NR held on the NCBI website by typing:
 #+begin_comment
 take  too long or does not work at all
@@ -287,11 +287,11 @@ blastp -query proteins.fasta -remote -db nr -out proteins_nr.txt -outfmt 6 -eval
 #+end_src
 
 
-** BLAST exercise 4
+** blast - exercise 4
 - visit ftp://ftp.ncbi.nih.gov/refseq/M_musculus/mRNA_Prot
 - there are several file with protein sequences named =*protein.faa.gz=
-- download these sequences, you can use web browser of you can try to use wget command.
-  Note that  wget command can accept wildcards like {1..3}
+- download these sequences, you can use web browser of you can try to use =wget= command.
+  Note that  =wget= command can accept wildcards like {1..3}
 - unzip downloaded fasta  ( use =gunzip= command)
 - concatenate all fasta files into one (use =cat= commad)
 - create blast database (=makeblastdb=)
