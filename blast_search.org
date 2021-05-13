@@ -196,11 +196,16 @@ run protein blast with default parameters in terminal
 
 try command line blast with different parameters:
 #+BEGIN_SRC bash
-blastp -query proteins.fasta -db db/pdbaa -out proteins_blastp_1align.txt -num_alignments 1
-blastp -query proteins.fasta -db db/pdbaa -out proteins_blastp_1align_1e-30.txt -num_alignments 1 -evalue 1e-30
-blastp -query proteins.fasta -db db/pdbaa -out proteins_blastp_1e-30_table.txt -evalue 1e-30 -outfmt 7
-blastp -query proteins.fasta -db db/pdbaa -out proteins_blastp_1e-30_table.html -evalue 1e-30 -outfmt 2 -html
-# inspect all output, html output should be viewed in firefox!
+  # see all passoble blast options:
+  blastp -h
+  # or
+  blast -help
+
+  blastp -query proteins.fasta -db db/pdbaa -out proteins_blastp_1align.txt -num_alignments 1
+  blastp -query proteins.fasta -db db/pdbaa -out proteins_blastp_1align_1e-30.txt -num_alignments 1 -evalue 1e-30
+  blastp -query proteins.fasta -db db/pdbaa -out proteins_blastp_1e-30_table.txt -evalue 1e-30 -outfmt 7
+  blastp -query proteins.fasta -db db/pdbaa -out proteins_blastp_1e-30_table.html -evalue 1e-30 -outfmt 2 -html
+  # inspect all output, html output should be viewed in firefox!
 #+END_SRC
 
 #+begin_comment
@@ -244,9 +249,9 @@ discuss type of sequence id in fasta - what is behind the first space
   dotter proteins.fasta seq1_hits.fasta
   dotter proteins.fasta seq2_hits.fasta
 
-  # how to extract sequences in order? 
+  # how to extract sequences in order of hit significance? 
   cdbfasta db/pdbaa
-  # this creat file pdbaa.cidx
+  # this creates file pdbaa.cidx
   # this is binary index of fasta file - it can be used for fast retriever of sequences
   cat hits_to_seq1.txt | cdbyank db/pdbaa.cidx > seq1_hits_in_order.fasta
   cat hits_to_seq2.txt | cdbyank db/pdbaa.cidx > seq2_hits_in_order.fasta
@@ -263,7 +268,12 @@ discuss type of sequence id in fasta - what is behind the first space
   # we well usee mafft program
   mafft --help
   mafft query_with_hits.fasta > query_with_hits_aligned.fasta
+  # inspect  query_with_hits_aligned.fasta with less command
+  less query_with_hits_aligned.fasta
+   
 
+  # view alignemnt 
+ seqview query_with_hits_aligned.fasta
 
 
 #+end_src
@@ -275,6 +285,23 @@ take  too long or does not work at all
 #+begin_src bash
 blastp -query proteins.fasta -remote -db nr -out proteins_nr.txt -outfmt 6 -evalue 1e-30
 #+end_src
+
+
+** BLAST exercise 4
+- visit ftp://ftp.ncbi.nih.gov/refseq/M_musculus/mRNA_Prot
+- there are several file with protein sequences named =*protein.faa.gz=
+- download these sequences, you can use web browser of you can try to use wget command.
+  Note that  wget command can accept wildcards like {1..3}
+- unzip downloaded fasta  ( use =gunzip= command)
+- concatenate all fasta files into one (use =cat= commad)
+- create blast database (=makeblastdb=)
+- inspect restuls
+- query sequence is protein from Danio rerio, you fill find it in =~/Desktop/bioinformatics/data/blast_data/danio_rerio_proteins.fasta=
+- use =blastp= and find best hit to Danio rerio protein in Mus musculus refseq sequences
+- what are these sequences, what is identity and e-value of the best hits
+- which protein has more hits by blast
+  
+  
 
 
 * Localization of sequences in genome using BLAT in Ensemble genome

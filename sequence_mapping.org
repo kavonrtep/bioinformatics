@@ -84,15 +84,15 @@ Read mapping
   # new sam file is created and information about mapping is printet on terminal. if you wish
   # to store information about mapping in file use:
   bowtie2 -x mm10 -1 wt_H3K4me3_read1.fastq.gz -2 wt_H3K4me3_read2.fastq.gz -S wt_H3K4me3_reads.sam > mapping_inf.txt
-  # to view result of mapping in IGV , we need to obrain sorted bam file:
-  # 1/ convert sam to bam:
+  # to view result of mapping in IGV , we need to obtain sorted bam file:
+  # convert sam to bam:
   samtools view -b -o wt_H3K4me3_reads.bam  wt_H3K4me3_reads.sam 
   # check output file
   ls -l
   # note the size difference
   # bam file must be sorted by reference:
   samtools sort wt_H3K4me3_reads.bam -o wt_H3K4me3_reads_sorted.bam
-  # igv also require bam index - this enable fast viewing of alignments
+  # igv also require bam index - this enable fast access to the alignments data
   samtools index wt_H3K4me3_reads_sorted.bam
 #+end_src
 
@@ -121,3 +121,19 @@ to create data suitable for IGV, several command were necessary, we can make it 
    bowtie2 -x mm10 -1 wt_H3K4me3_read1.fastq.gz -2 wt_H3K4me3_read2.fastq.gz 2> logfile | samtools view -b  | samtools sort > wt_H3K4me3_reads_sorted2.bam
  
 #+end_src
+
+
+
+same command as above but lines are brokend using backslash "\":
+#+begin_src bash
+      bowtie2 -x mm10 -1 wt_H3K4me3_read1.fastq.gz -2 wt_H3K4me3_read2.fastq.gz\
+          | samtools view -b  | samtools sort > wt_H3K4me3_reads_sorted2.bam
+
+     # but what about log file?
+      bowtie2 -x mm10 -1 wt_H3K4me3_read1.fastq.gz -2 wt_H3K4me3_read2.fastq.gz 2> \
+              logfile | samtools view -b  | samtools sort > wt_H3K4me3_reads_sorted2.bam
+
+#+end_src
+
+
+
