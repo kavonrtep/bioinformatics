@@ -24,7 +24,7 @@ data for assembly are located in =~/Desktop/bioinformatics/data/sanger=
 ** Single-end library
 **** Data
 The data you will examine is from /Staphylococcus aureus/ USA300 which has a genome of
-around 3MB . The reads are Illumina and are unpaired, also known as single-end library. 
+around 3MB . The r eads are Illumina and are unpaired, also known as single-end library. 
 The data needed for this section can be obtained from the Sequence Read Archive (SRA). For the
 following example use the run data SRR022825 and SRR022823 from the SRA Sample
 SRS004748. The SRA experiment could be viewed by setting your browser to the URL:
@@ -41,7 +41,7 @@ data can be obtained directly using either wget command
 wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR022/SRR022825/SRR022825.fastq.gz
 wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR022/SRR022823/SRR022823.fastq.gz
 #+end_src
-or using fastq-dump from NCBI-SRA:
+or using fastq-dump from NCBI-SRA,  fastq-dump is utility for downloading data from NCBI-SRA database:
 #+begin_src sh
 fastq-dump --gzip SRR022825
 fastq-dump --gzip SRR022823
@@ -49,21 +49,7 @@ fastq-dump --gzip SRR022823
 
 ** Quality control using FASTQC program
 
-fastqc installation:
-#+begin_src sh :tangle install_additional_programs.sh  :tangle-mode (identity #o755)
-#/usr/bash
-cd
-# FASTQC
-wget https://www.bioinformatics.babraham.ac.uk/projects/fastqc/fastqc_v0.11.8.zip
-unzip fastqc_v0.11.8.zip
-chmod 755 ~/FastQC/fastqc
-mkdir -p  ~/bin
-ln -s ~/FastQC/fastqc ~/bin/fastqc
-# when asked set symlink to ~/bin/
-apt install fastx-toolkit sickle
-#+end_src
-
-    
+   
 run fastqc program on illumina reads:
 #+begin_src 
 fastqc *.fastq.gz
@@ -83,23 +69,30 @@ Inspect reports.
 We will used kmer-count based estimation of genome size according
 http://qb.cshl.edu/genomescope/
 
-#+begin_src sh
-# jellyfish needs file in uncompressed format
-zcat SRR022825.fastq.gz > SRR022825.fastq
-zcat SRR022823.fastq.gz > SRR022823.fastq
-# kmer counting (several minutes):
-jellyfish count -C -m 21 -s 100000000 -t 2 *.fastq -o reads.jf
-# create histogram:
-jellyfish histo -t 2 reads.jf > reads.histo
-# inspect kmer count using:
-less reads.histo
+We will use Jellyfish program. It is a command-line program that reads FASTA and multi-FASTA files containing DNA sequences. It outputs its k-mer counts in a binary format, which can be translated into a human-readable text format using the "jellyfish dump" command
+(https://github.com/gmarcais/Jellyfish)
 
+
+#+begin_src sh
+  # jellyfish needs file in uncompressed format
+  zcat SRR022825.fastq.gz > SRR022825.fastq
+  zcat SRR022823.fastq.gz > SRR022823.fastq
+  # kmer counting (several minutes):
+  jellyfish count -C -m 21 -s 100000000 -t 2 *.fastq -o reads.jf
+  # create histogram:
+  jellyfish histo -t 2 reads.jf > reads.histo
+  # inspect kmer count using:
+  less reads.histo
+  # this file can be also inspected in libreoffice calc or ms excel
+
+  # read.jf is binary format, kmers could be viewed using jellyfish dump command e.g.:
+  jellyfish dump -c reads.jf | less
 #+end_src
 Note: parameter =-s= is Initial hash size - affect memory usage
 
 
 go to http://qb.cshl.edu/genomescope/ and upload resulting =reads.histo= and
-fill correct parameters - kmer size and read length:
+fill correct parameters - *kmer size* and *read length*:
 
 - what is the estimated genome size?
 
@@ -186,7 +179,7 @@ cd ngs_assembly2
 wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR022/SRR022852/SRR022852_1.fastq.gz
 wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR022/SRR022852/SRR022852_2.fastq.gz
 # run fastqc program
-fastqc *.fastq
+fastqc *.fastq.gz
 #+end_src
 
 ** Removing of low quality reads:
@@ -200,7 +193,7 @@ needs to be removed too.
 #+begin_src bash
 zcat SRR022852_1.fastq.gz | fastx_trimmer -f 2 -o SRR022852_1_trimmed.fastq
 zcat SRR022852_2.fastq.gz | fastx_trimmer -f 2 -o SRR022852_2_trimmed.fastq
-# check quality
+# check quality again
 fastqc SRR022852_1_trimmed.fastq SRR022852_2_trimmed.fastq
 #+end_src
 
@@ -214,12 +207,22 @@ velvetg run_25_paired -ins_length 350
 ** compare paired end assembly with single end assembly
 - use *Quast* program (http://quast.sourceforge.net/quast) to calculate basic statistics of assembly and compare it to
   previous assembly from single end Illumina reads
-- use *Bandage* program
+- use *Bandage* program,
+  #+begin_comment
+assembly from paired end reads  (also higher coverage) creates single connected components, from single ends assebmly is more fragmented
+  #+end_comment
+- use Busco program:
+  #+begin_src bash
+ # run from run25 and run25_paired directory
+ busco -i cotings.fa -o busco_output -m genome --auto-lineage-prok
+ # it should take several minuts to finish - each
+  #+end_src
+  
 
 
 
 
-** Align short paired reads to assembly (optional):
+** Align short paired reads to assembly:
 We will aligne original sequence read to resulting genome assembly so we can
 explore assembly quality using IGV genomic browser
 
@@ -291,7 +294,7 @@ velvetg run_25_paired -ins_length 350
 scp ./scripts/assembly_script2_pbs.sh username@tarkil.grid.cesnet.cz:/storage/praha1/home/username/
 #+end_src
 
-Login to matacentrum front end server:
+Login to metacentrum front end server:
 #+begin_src bash
 ssh username@tarkil.grid.cesnet.cz
 #+end_src
@@ -328,3 +331,19 @@ fastqc *.fastqc
 #+end_src
 # each download takes about 2 min.
 Inspect resulting html reports
+
+
+* used blast to find location of genes  in the assembly
+
+download these proteins from S.aureus:
+- https://www.uniprot.org/uniprot/Q2FUW1.fasta
+- https://www.uniprot.org/uniprot/Q7A656.fasta
+- https://www.uniprot.org/uniprot/Q8NUJ3.fasta
+
+  
+- use wget command to download sequences
+- use =cat= to concatenate sequences into single fasta
+- run blast on contigs.fa from run25_paired assembly to verify that the genes coding this protein are in the assembly.
+  You will need to create blast database first. Then use =tblastn= (query is protein, database is nucleotide)
+- what are the properties if the best hits, can you find complete CDS
+  
