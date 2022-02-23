@@ -23,7 +23,7 @@ To run *dotter*, open terminal window and  type "dotter" followed by two file na
 #+BEGIN_SRC bash
 dotter file1.fasta file2.fasta
 #+END_SRC
-Sequences fro dotter program must be provided in [[file:file_formats.org::The FASTA format][FASTA format]].
+Sequences fro dotter program must be provided in [[./file_formats.org::The FASTA format][FASTA format]].
 
 
 ** Exercise - structure of HER proteins - Human epidermal growth receptors
