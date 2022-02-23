@@ -1,0 +1,26 @@
+* File Formats and how to work with them
+** The FASTA format
+FASTA format is a text-based format for representing either nucleotide sequences
+or peptide sequences, in which nucleotides or amino acids are represented using
+single-letter codes. The description line (defline) or header line, which begins
+with ~>~ gives a name and/or a unique identifier for the sequence, and may also
+contain additional information.  After the header line and comments, one or more
+lines may follow describing the sequence
+
+Example of fasta file format:
+
+#+BEGIN_EXAMPLE
+>sequence_name
+ACGTGCGTACGTACGTGTGTCGTA
+ACGTACGTAAACCGTCGTACGTAC
+ACGTGTGTACAGTCGTACAGTACG
+#+END_EXAMPLE
+
+** The FASTQ format
+** The BED format
+** The SAM/BAM format
+** The GFF2, GFF3, GTF formats
+** The VCF
+
+
+see https://www.hadriengourle.com/tutorials/file_formats/

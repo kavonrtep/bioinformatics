@@ -15,30 +15,16 @@ similarity.
   - gepard (http://cube.univie.ac.at/gepard)  - suitable for larger sequences, platform independent
 - Web applications
   - YASS server (https://bioinfo.lifl.fr/yass/index.php), suitable for large sequences or whole chromosomes
-  - Dot server (https://dnanexus.github.io/dot/) - whole genome comparison
+  - D-genies (http://dgenies.toulouse.inra.fr/) - whole genome comparison
+    
+    
 
 To run *dotter*, open terminal window and  type "dotter" followed by two file names:
 #+BEGIN_SRC bash
 dotter file1.fasta file2.fasta
 #+END_SRC
+Sequences fro dotter program must be provided in [[file:file_formats.org::The FASTA format][FASTA format]].
 
-
-** Fasta files specification:
-FASTA format is a text-based format for representing either nucleotide sequences
-or peptide sequences, in which nucleotides or amino acids are represented using
-single-letter codes. The description line (defline) or header line, which begins
-with ~>~ gives a name and/or a unique identifier for the sequence, and may also
-contain additional information After the header line and comments, one or more
-lines may follow describing the sequence
-
-Example of fasta file format:
-
-#+BEGIN_EXAMPLE
->sequence_name
-ACGTGCGTACGTACGTGTGTCGTA
-ACGTACGTAAACCGTCGTACGTAC
-ACGTGTGTACAGTCGTACAGTACG
-#+END_EXAMPLE
 
 ** Exercise - structure of HER proteins - Human epidermal growth receptors
 
@@ -191,6 +177,7 @@ what does it mean?
 *** Illumina data : SRR453021 (Nicotian repanda - WGS)
 # adapter sequence
 # ACACTCTTTCCCTACACGACGCTCTTCCGATCT
+# change it to faster-dump!
 #+BEGIN_SRC bash
 fastq-dump -X 50 --split-files  --fasta SRR453021
 dotter SRR453021_2.fasta SRR453021_2.fasta 
