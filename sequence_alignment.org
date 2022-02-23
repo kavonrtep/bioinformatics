@@ -37,9 +37,9 @@ Sequences fro dotter program must be provided in [[./file_formats.org#the-fasta-
 | O18735     | ERBB2 (Dog) |
 |------------+-------------|
 
-data for this exercise were downloaded from iniprot using the commands:
+data for this exercise could  be downloaded from directly from uniprot using the wget command:
 #+begin_src sh 
-mkdir data/dotter_sequences
+mkdir -p data/dotter_sequences
 cd data/dotter_sequences
 wget https://www.uniprot.org/uniprot/P00533.fasta
 wget https://www.uniprot.org/uniprot/P21860.fasta
@@ -49,17 +49,32 @@ wget https://www.uniprot.org/uniprot/O18735.fasta
 seqkit stat *.fasta
 #+end_src
 
-#+RESULTS:
+To get better names for files we can modify wget commands:
+#+begin_src sh
+wget https://www.uniprot.org/uniprot/P00533.fasta -O ERBB2.fasta
+wget https://www.uniprot.org/uniprot/P21860.fasta -O ERB3.fasta
+wget https://www.uniprot.org/uniprot/Q15303.fasta -O ERB4.fasta
+wget https://www.uniprot.org/uniprot/O18735.fasta -O ERBB2_dog.fasta
+#+end_src
+
 
 - compare /ErbB2/ against /ErB3/. Notice the patterns
   in the dot plot and try to find functional domains, for example cysteine rich
-  regions
+  regions 
 - compare /ErbB2/ with /ErbB2-dog/. Do you see the same pattern? There is an
   insertion in the C-term of one of the sequences. Which sequence has the
   insertion and what is it? Use the dotter sequence window to view the
   sequences. You can make a magnified view by dragging out a region with the
   middle mouse button (makes a new dot plot)
-- compare all proteins to all proteins
+- compare all proteins to all proteins (concatenate all four FASTA file into one sequence using ~cat~ command)
+
+  
+  #+begin_comment
+it is necessary to use ubuntu interface!
+explain double click and copying
+make aha slide for this task
+  #+end_comment
+
 
 #+begin_src sh 
 dotter P00533.fasta P21860.fasta # human ERBB2 vs human ERB3  (paralogs)
@@ -68,8 +83,9 @@ dotter P00533.fasta O18735.fasta  # human ERBB2 vs dog ERBB2  (orthologs)
 cat *.fasta > all_erb.fasta # first we need concatenated sequences in single fasta file
 dotter all_erb.fasta all_erb.fasta
 #+end_src
-to navigate in =dotter= program use mouse click to select region, arrows to move vertically and horizontally, ">" and "<"  to move diagonally. To zoom select area with mouse while holding middle mouse button.
-
+to navigate in =dotter= program use mouse click to select region
+- To move cursor in dotter use *arrows* for vertical or diagonal direction
+- to move diagonally use ~<~, ~>~, ~[~ or  =]= ">" and "<"  to move diagonally. To zoom select area with mouse while holding middle mouse button.
 
 
 #+BEGIN_COMMENT
@@ -193,7 +209,7 @@ https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastn&PAGE_TYPE=BlastSearch&LI
 ** whole genome/chromosome dotplot
 
 - download part of genome assembly from Zea mays:
-- link https://www.ncbi.nlm.nih.gov/nuccore/NW_007617762.1
+- link   https://www.ncbi.nlm.nih.gov/nuccore/KV887992.1
 - use range 1-1,000,000 nt
 - start GUI program =gepard=
 - as sequences 1 and 2 select downloaded sequence and create dotplot
@@ -203,9 +219,10 @@ https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastn&PAGE_TYPE=BlastSearch&LI
 
 * Pairwise alignment
 ** Sequences for alignment:
-*** =ERB2_HUMAN= : http://www.uniprot.org/uniprot/P04626.fasta
-*** =EGFR_DROME= : http://www.uniprot.org/uniprot/P04412.fasta
+*** =ERB2_HUMAN= : http://www.uniprot.org/uniprot/P04626.fasta   
+*** =EGFR_DROME= : http://www.uniprot.org/uniprot/P04412.fasta   
 *** =Unknown protein= : http://www.uniprot.org/uniprot/Q8SZW1.fasta
+(Receptor tyrosine-protein kinase erbB-2, Epidermal growth factor receptor)
 
 To download sequences use either web browser of try to use ~wget~ command in terminal:
 #+BEGIN_SRC bash
@@ -240,8 +257,9 @@ show/ explain alignment options - it is possible to select scoring matrix and ga
 - compare ERB2 (P04626.fasta) vs Unknown protein (Q8SZW1.fasta) using ~needle~ and then using ~water~
 - what is difference between local and global alignments?
 - what happened what gap penalty is increased to 20 and extend_penalty to 5 when using local alignment
-- what happened with global alignment if you change =end gap panalty- setting.
+- what happened with global alignment if you change =end gap panalty= setting.
 - by default BLOSUM62 scoring matrix is used, what happend when you use PAM10?
+- compare these protein sequence using =dotter=
 #+begin_comment
 using PAM10 - does don really tolerate mismatches, gap penalty would have to be set accordingly 
 #+end_comment
@@ -253,6 +271,12 @@ water P04626.fasta P04412.fasta -datafile EPAM10
 *** differences between PAM10 and BLOSUM62 matrices
 PAM10 : ftp://ftp.ncbi.nih.gov/blast/matrices/PAM10
 BLOSUM62 : ftp://ftp.ncbi.nih.gov/blast/matrices/BLOSUM62
+
+*** using blast (blast2seq) to create local aligment for two sequences:
+https://blast.ncbi.nlm.nih.gov/Blast.cgi?BLAST_SPEC=blast2seq&LINK_LOC=align2seq&PAGE_TYPE=BlastSearch
+blast2seq can be used instead of =needle=. It also provide graphical view of alignment and non-interactive dotplot. Use blast2 seq on  =P046256.fasta= and  =P04412.fasta= sequences and explore results. Compare alignments and dotplot.
+
+You can paste either AA sequences to the blast form or you can use just accession ID (P046256, P04412).
 
 * Multiple alignment from HSPB8 proteins
 purpose of this exercise is to obtain set of orthologs of HSPB8 protein (Heat shock protein beta-8), create multiple sequence alignment and identify conserved regions.

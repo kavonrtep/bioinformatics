@@ -7,7 +7,7 @@ with ~>~ gives a name and/or a unique identifier for the sequence, and may also
 contain additional information.  After the header line and comments, one or more
 lines may follow describing the sequence
 
-Example of fasta file format:
+Examples of sequences in FASTA format
 
 #+BEGIN_EXAMPLE
 >sequence_name
@@ -15,6 +15,43 @@ ACGTGCGTACGTACGTGTGTCGTA
 ACGTACGTAAACCGTCGTACGTAC
 ACGTGTGTACAGTCGTACAGTACG
 #+END_EXAMPLE
+
+ Each sequence will be separated by their "header" line, starting by ~>~:
+ #+begin_example
+>KRN06561.1 heat shock [Lactobacillus sucicola DSM 21376 = JCM 15457]
+MSLVMANELTNRFNNWMKQDDFFGNLGRSFFDLDNSVNRALKTDVKETDKAYEVRIDVPGIDKKDITVDY
+HDGVLSVNAKRDSFNDESDSEGNVIASERSYGRFARQYSLPNVDESGIKAKCEDGVLKLTLPKLAEEKIN
+GNHIEIE
+>3HHU_A Chain A, Human Heat-Shock Protein 90 (Hsp90)
+MPEETQTQDQPMEEEEVETFAFQAEIAQLMSLIINTFYSNKEIFLRELISNSSDALDKIRYESLTDPSKL
+DSGKELHINLIPNKQDRTLTIVDTGIGMTKADLINNLGTIAKSGTKAFMEALQAGADISMIGQFGVGFYS
+AYLVAEKVTVITKHNDDEQYAWESSAGGSFTVRTDTGEPMGRGTKVILHLKEDQTEYLEERRIKEIVKKH
+SQFIGYPITLFVEK
+#+end_example
+
+By definition, FASTA names do not contain spaces, therefore use underscore or dash if you want to specify more than one word.
+Names should be unique within the first 15 characters, since some programs (e.g. JalView) only consider the first 15 characters and fail in "interesting" ways if names are identical.
+
+To get information about sequence in fasta file:
+#+begin_src bash
+grep -c "^>" file.fa
+#+end_src
+it is important to have ">" in parenthesis!
+
+Using ~seqkit~ program:
+#+begin_src bash
+# get basic information about fasta file
+sekqit stats file.fasta
+# split fasta to individual sequences:
+seqkit split -i file.fasta
+  
+# split fasta to N parts:
+seqkit split -p N file.fasta
+# get single sequence by  
+seqkit grep -p ID file.fasta
+
+
+#+end_src
 
 ** The FASTQ format
 ** The BED format
