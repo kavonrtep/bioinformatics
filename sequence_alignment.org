@@ -315,6 +315,7 @@ LSSDGLLTIKAPMKALPPPQTERLVQITQTGPSSKEDNAKKVETSTA
 - start jalview program from web: http://www.jalview.org/
 - open sequences from file menu.
 - align sequences =Web service/Alignment/Mafft with defaults=
+ 
 
 *** Option 2: Use web browser interface:
 - go to http://www.ebi.ac.uk/Tools/msa/clustalo/
@@ -333,7 +334,7 @@ LSSDGLLTIKAPMKALPPPQTERLVQITQTGPSSKEDNAKKVETSTA
 - create multiple sequence alignment from Align/Assemble/Multiple align. Use program MUSCLE
 
 ** Inspect MSA results
-- Inspect alignment, Try different coloring schemes.
+- Inspect alignment, Try different coloring schemes. (see https://www.jalview.org/help/html/colourSchemes/index.html)
 - What part of proteins is conserved?
 - compare conserved part with domains annotation
   - go to https://www.ncbi.nlm.nih.gov/protein/NP_055180.1
@@ -341,3 +342,7 @@ LSSDGLLTIKAPMKALPPPQTERLVQITQTGPSSKEDNAKKVETSTA
 - will you be able to identify conserved domain if you use only mouse, cow, pig and human sequences?
   - try to  select subset of sequences(mammals) and create alignment again. 
 - save alignment in =fasta= and and =msf= format, inspect the saved file using =less= command
+
+* Amino Acid codes
+
+[[./fig/aa_codes.png]]
