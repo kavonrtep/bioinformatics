@@ -102,7 +102,17 @@ GGCGCCGCC
 Use =blastn= and =blastx= to characterize clone12. What tool is relevant to use?
 
 What kind of enzyme is coded by =clone12=?
+** Using BLAST (blast2seq) to create local aligment for two sequences:
+Two sequences can be also comared using BLAST web interface. For comparison use:
+(two align two sequences to erach other - click on checkbox *Align two or more sequences*  in NCBI BLAST form)
+- =ERB2_HUMAN= : http://www.uniprot.org/uniprot/P04626.fasta   
+- =EGFR_DROME= : http://www.uniprot.org/uniprot/P04412.fasta  
+paste these sequences to BLAST form. Use blastp.
+  
+https://blast.ncbi.nlm.nih.gov/Blast.cgi?BLAST_SPEC=blast2seq&LINK_LOC=align2seq&PAGE_TYPE=BlastSearch
+blast2seq can be used instead of =needle=. It also provide graphical view of alignment and non-interactive dotplot. Use blast2 seq on  =P04626.fasta= and  =P04412.fasta= sequences and explore results. Compare alignments and dotplot.
 
+Alternativelly, it is possible to enter can use just accession ID to search window (P04626, P04412).
 
 * Use of BLAST from command line
 
@@ -120,14 +130,13 @@ explan differences in commands
 
 Basic use of blast commands
 #+BEGIN_SRC shell
-  # create database:
-  makeblastdb -dbtype nucl -in  dna_sequences.fasta
-
-
-
+# create database:
+makeblastdb -dbtype nucl -in  dna_sequences.fasta
+# or for proteins: 
+makeblastdb -dbtype prot -in  prot_sequences.fasta
 
   # nucleotide - nucleotide search
-  blastn -db datatabase_file -query query_sequences.fasta -out output_file
+blastn -db datatabase_file -query query_sequences.fasta -out output_file
 
 #+END_SRC
 

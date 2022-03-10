@@ -274,7 +274,7 @@ BLOSUM62 : ftp://ftp.ncbi.nih.gov/blast/matrices/BLOSUM62
 
 *** using blast (blast2seq) to create local aligment for two sequences:
 https://blast.ncbi.nlm.nih.gov/Blast.cgi?BLAST_SPEC=blast2seq&LINK_LOC=align2seq&PAGE_TYPE=BlastSearch
-blast2seq can be used instead of =needle=. It also provide graphical view of alignment and non-interactive dotplot. Use blast2 seq on  =P046256.fasta= and  =P04412.fasta= sequences and explore results. Compare alignments and dotplot.
+blast2seq can be used instead of =needle=. It also provide graphical view of alignment and non-interactive dotplot. Use blast2 seq on  =P04626.fasta= and  =P04412.fasta= sequences and explore results. Compare alignments and dotplot.
 
 You can paste either AA sequences to the blast form or you can use just accession ID (P046256, P04412).
 
@@ -332,14 +332,16 @@ LSSDGLLTIKAPMKALPPPQTERLVQITQTGPSSKEDNAKKVETSTA
 - create new project folder
 - import sequences from file
 - create multiple sequence alignment from Align/Assemble/Multiple align. Use program MUSCLE
+- reorder sequences in alignments, try to edit alignment gaps
+  
 
 ** Inspect MSA results
 - Inspect alignment, Try different coloring schemes. (see https://www.jalview.org/help/html/colourSchemes/index.html)
 - What part of proteins is conserved?
 - compare conserved part with domains annotation
   - go to https://www.ncbi.nlm.nih.gov/protein/NP_055180.1
-  - select =analyze this sequence/identify conserved domains
-- will you be able to identify conserved domain if you use only mouse, cow, pig and human sequences?
+  - select =analyze this sequence/identify conserved domains=
+  - will you be able to identify conserved domain if you use only mouse, cow, pig and human sequences?
   - try to  select subset of sequences(mammals) and create alignment again. 
 - save alignment in =fasta= and and =msf= format, inspect the saved file using =less= command
 
