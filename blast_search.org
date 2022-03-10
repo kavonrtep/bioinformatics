@@ -120,6 +120,8 @@ When to use blast from CLI:
 - if you have large number of queries (it is possible do download whore =nr= database and run blast localy)
 - When your sequence database is not part of public databases (NCBI, EBI,...)
 - If you need to automate your similarity search
+- more detailed manual can be found at https://www.ncbi.nlm.nih.gov/books/NBK279684/
+
 
 ** Basic commands:
 
@@ -237,8 +239,12 @@ discuss type of sequence id in fasta - what is behind the first space
 
   blastp -query proteins.fasta -db db/pdbaa -out proteins_blastp_1e-10_table.txt -evalue 1e-10 -outfmt 6
   # see structure of output from blast - use less command
-  # we want extract list of sequence ids
 
+  # column in the tabular output are:
+  # 1.qaccver 2.saccver 3.pident 4.length 5.mismatch 6.gapopen
+  # 7.qstart 8.qend 9.sstart 10.send 11.evalue 12.bitscore
+
+  # we want extract list of sequence ids:
   # extract second column from blast output - it contains ID from database
   cut -f 2 proteins_blastp_1e-10_table.txt > all_hits_id.txt
   seqkit grep -f  all_hits_id.txt db/pdbaa -o all_hits.fasta
@@ -260,6 +266,10 @@ discuss type of sequence id in fasta - what is behind the first space
 
   # how to extract sequences in order of hit significance? 
   cdbfasta db/pdbaa
+  # !! if cdbfasta is not installed used:
+  sudo apt install cdbfasta
+
+
   # this creates file pdbaa.cidx
   # this is binary index of fasta file - it can be used for fast retriever of sequences
   cat hits_to_seq1.txt | cdbyank db/pdbaa.cidx > seq1_hits_in_order.fasta
@@ -282,7 +292,7 @@ discuss type of sequence id in fasta - what is behind the first space
    
 
   # view alignemnt 
- seqview query_with_hits_aligned.fasta
+  seqview query_with_hits_aligned.fasta
 
 
 #+end_src
