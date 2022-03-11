@@ -212,8 +212,9 @@ try command line blast with different parameters:
   # or
   blast -help
 
-  blastp -query proteins.fasta -db db/pdbaa -out proteins_blastp_1align.txt -num_alignments 1
-  blastp -query proteins.fasta -db db/pdbaa -out proteins_blastp_1align_1e-30.txt -num_alignments 1 -evalue 1e-30
+  blastp -query proteins.fasta -db db/pdbaa -out proteins_blastp_1align_all.txt
+  blastp -query proteins.fasta -db db/pdbaa -out proteins_blastp_1align.txt -num_alignments 10
+  blastp -query proteins.fasta -db db/pdbaa -out proteins_blastp_1align_1e-30.txt -num_alignments 10 -evalue 1e-30
   blastp -query proteins.fasta -db db/pdbaa -out proteins_blastp_1e-30_table.txt -evalue 1e-30 -outfmt 7
   blastp -query proteins.fasta -db db/pdbaa -out proteins_blastp_1e-30_table.html -evalue 1e-30 -outfmt 2 -html
   # inspect all output, html output should be viewed in firefox!
