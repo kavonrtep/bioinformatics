@@ -1,7 +1,7 @@
 * Some protein sequences for exercises
 
-Natural varianti VAR_048023	186	Q → K of HOXA2 gene. 
-#+begin_src txt
+** Natural variant VAR_048023	186	Q → K of HOXA2 gene. 
+#+begin_src
 >HOXA2_VAR_048023
 MNYEFEREIGFINSQPSLAECLTSFPPVADTFQSSSIKTSTLSHSTLIPP
 PFEQTIPSLNPGSHPRHGAGGRPKPSPAGSRGSPVPAGALQPPEYPWMKE
@@ -17,7 +17,7 @@ Mutation in HOXA2 Is Responsible for Autosomal-Recessive Microtia. Microtia (sma
 (https://doi.org/10.1016/j.ajhg.2008.02.015)
 
 
-uknown seq - analyze using InterPro/CDD
+** Unknown sequence - analyze using InterPro/CDD
 #+begin_src 
 >MY_SEQ 
 MAAGGSGAESAPPTPSMSSLPLAALNVRVRHRLSLFLNVRTQVAADWTGLAEEM
@@ -31,8 +31,9 @@ CDYTNPCTKSWFWTRLARALSLP
 
 
 
-Analyze folowing sequence using InterPro and CDD
-#+begin_src txt
+** Unknown sequence - analyze using InterPro/CDD
+
+#+begin_src
 >squirrel_seq
 MALPARLVPLCCLALLALPAQSCGPGRGPVGRRRYVRKQLVPLLYKQ
 FVPSVPERTLGASGPAEGRVARGSERFRDLVPNYNPDIIFKDEENSG
