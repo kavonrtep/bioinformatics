@@ -141,7 +141,7 @@ The current trimming steps are:
            recommended  in  most  cases  that  adapter clipping, if required, is done as early as
            possible.
 
-  examples:
+*** Example 1 - quality filtering
   
   #+begin_src bash
 # filtering single end reads:
@@ -151,11 +151,12 @@ TrimmomaticSE -phred33 SRR11180057_1.fastq.gz SRR11180057_1_clean_se.fastq.gz SL
 TrimmomaticPE -phred33 SRR11180057_1.fastq.gz SRR11180057_2.fastq.gz \
 SRR11180057_1_clean.fastq.gz SRR11180057_1_unpaired.fastq.gz \
 SRR11180057_2_clean.fastq.gz SRR11180057_2_unpaired.fastq_unpaired.gz \
-SLIDINGWINDOW:4:20  MINLEN:30
-
-
+SLIDINGWINDOW:4:20  MINLEN:100
 #+end_src
 
-run =fastqc= again on processed files and check report.
+run =fastqc= again on processed files and check report. Compare this report with the report for input data.
+
+*** Example 2 - adapter removing
+
 
 
