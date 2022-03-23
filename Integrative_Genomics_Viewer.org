@@ -1,0 +1,48 @@
+* Integrative Genomics Viewer
+- multiplatform
+- Manual pages - https://software.broadinstitute.org/software/igv/
+- File formats:
+  - BAM
+  - BED
+  - BigWig
+  - GFF3
+  - VCF
+  - ...
+* E.coli data
+Data for E.coli genome NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete genome can be found in =bioinformatics/data/igv_data_e_coli=
+
+For BAM file, you will need to create index file using command:
+
+#+begin_src bash
+samtools index dna_sequencing.bam
+#+end_src
+
+- Start IGV
+- load Genome from file.
+- import individual tracks from files 
+  
+Types of files:
+
+** BAM/SAM
+A BAM file (.bam) is the binary version of a SAM file.  A SAM file (.sam) is a tab-delimited text file that contains *sequence alignment data*.   These formats are described on the SAM Tools web site: http://samtools.github.io/hts-specs/.
+
+This file can be inspected using
+#+begin_src bash
+samtools view dna_sequencing.bam | less -S
+#+end_src
+** BED
+
+A BED file (.bed) is a tab-delimited text file that defines a feature track. It can have any file extension, but .bed is recommended. The BED file format is described on the UCSC Genome Bioinformatics web site: http://genome.ucsc.edu/FAQ/FAQformat. Tracks in the UCSC Genome Browser (http://genome.ucsc.edu/) can be downloaded to BED files and loaded into IGV.
+
+simplest form example:
+#+begin_src tsv
+chr11	5246919	5246920
+chr11	5255660	5255661
+chr11	5247945	5247946
+#+end_src
+
+** GFF3
+
+A General Feature Format (GFF) file is a simple tab-delimited text file for describing genomic features. This format can be used to describe and visualize gene structure.
+
+[[./fig/gff_gene.png]]
