@@ -50,3 +50,8 @@ A General Feature Format (GFF) file is a simple tab-delimited text file for desc
 ** BigWig
 The bigWig format is for display of dense, continuous data that will be displayed as a graph:
 [[fig/bigwig.png]]
+
+** VCF 
+ Variant Call Format, and it is used  encode structural genetic variants. Variant calls include SNPs, indels, and genomic rearrangements.
+
+ 
