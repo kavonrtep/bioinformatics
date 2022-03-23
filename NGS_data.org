@@ -1,0 +1,161 @@
+* Databases
+- European Nucleotide Archive - https://www.ebi.ac.uk/ena/browser/home
+- NCBI Sequence Read Archive (SRA) - https://www.ncbi.nlm.nih.gov/sra
+
+** How to download sequence read data:
+create new directory and gather FASTQ files from multiple sources
+
+*** NCBI SRA download from run browser
+- Find run you want to download (single)
+- Click the *Reads* tab.
+- Find certain reads by applying a Filter or leave the Filter field empty.
+- Click on the Filtered Download button.
+- Select available download format (fasta or fastq) and click Download link.
+
+  This approach is suitable only for small number of runs.
+
+  
+*** NCBI SRA command line download using SRA toolkit
+SRA toolkit can be installed using command:
+#+begin_src bash
+conda install -c bioconda sra-tools
+#+end_src
+
+sequence read download:
+#+begin_src bash
+# pair-end read
+fastq-dump --split-files SRR11180057
+# gzip compressed 
+fastq-dump --gzip --split-files SRR11180057
+# append pair read specification
+fastq-dump --gzip --defline-seq '@$sn/$ri' --split-files SRR18352305
+
+# download only first 10000 reads from run:
+fastq-dump -X 10000 --gzip --defline-seq '@$si/$ri' --split-files SRR11180057
+
+#+end_src
+
+To download multiple runs we need to used  loop:
+
+#+begin_src bash
+for RUN in SRR17713797 SRR17499358 SRR18090207
+do
+ echo $RUN
+ fastq-dump --gzip --defline-seq '@$si/$ri' --split-files $RUN 
+done           
+#+end_src
+
+
+*** Using ENA Browser
+https://www.ebi.ac.uk/ena/browser/home
+Once the find the run you want to download, you can download all associated files as single zip archive
+
+*** Using wget command
+first, link for each file must be using ENA browser, Links can be obtained from TSV report:
+
+
+#+begin_src bash
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR164/ERR164407/ERR164407.fastq.gz
+#+end_src
+
+you can create file with links to multiple fastq file per line:
+
+create text file containing following links and save it as =ENA.txt=
+#+begin_src txt
+ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR180/007/SRR18090207/SRR18090207_1.fastq.gz
+ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR180/007/SRR18090207/SRR18090207_2.fastq.gz
+ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR857/001/ERR8577821/ERR8577821_1.fastq.gz
+ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR857/001/ERR8577821/ERR8577821_2.fastq.gz
+#+end_src
+
+download all files using :
+#+begin_src 
+wget -i ENA.txt
+#+end_src
+
+** Quality Control usinf FastQC program
+
+#+begin_src bash
+mkdir fastqc_output
+fastqc -o fastqc_output *.fastq*
+#+end_src
+Inspect FastQC report. Structure of FastQC output is described https://www.bioinformatics.babraham.ac.uk/projects/fastqc/
+
+
+
+** FASTQ data filtering
+- filter out low quality reads
+- trim adapters, 5' or 3' end
+- trim low quality ends
+- remove reads shorter that threshold
+
+Install program Trimmomatic: 
+#+begin_src bash
+sudo apt install trimmomatic
+#+end_src
+
+Trimmomatic performs a variety of useful trimming tasks for illumina paired-end and single
+ended data. The selection of trimming steps and their associated parameters are supplied on
+the command line.
+
+Usage:
+
+Paired End Mode:
+#+begin_src bash
+TrimmomaticPE  [-threads threads] [-phred33 | -phred64] [-trimlog logFile] \
+paired_output_1 unpaired_output_1 paired_output_2 unpaired_output_2 step_1 ...
+#+end_src>
+
+
+Single End Mode:
+#+begin_src bash
+TrimmomaticSE [-threads threads] [-phred33 | -phred64] [-trimlog logFile]  input output  step_1 ...
+#+end_src
+
+
+The current trimming steps are:
+- ILLUMINACLIP:<fastaWithAdaptersEtc>:<seed mismatches>:<palindrome clip threshold>:<simple clip threshold>
+  fastaWithAdaptersEtc: specifies the path to a fasta file containing all the
+  adapters, PCR sequences etc. The naming of the various sequences within this
+  file determines how they are used. See below. seedMismatches: specifies the
+  maximum mismatch count which will still allow a full match to be performed
+  palindromeClipThreshold: specifies how accurate the match between the two
+  ´adapter ligated´ reads must be for PE palindrome read alignment.
+  simpleClipThreshold: specifies how accurate the match between any adapter etc.
+  sequence must be against a read.
+- SLIDINGWINDOW:<windowSize>:<requiredQuality>
+                   windowSize: specifies the number of bases to average across
+                   requiredQuality: specifies the average quality required.
+
+- LEADING:<quality>
+                   quality: Specifies the minimum quality required to keep a base.
+- TRAILING:<quality>
+                   quality: Specifies the minimum quality required to keep a base.
+- CROP:<length>
+                   length: The number of bases to keep, from the start of the read.
+- HEADCROP:<length>
+                   length: The number of bases to remove from the start of the read.
+- MINLEN:<length>
+                   length: Specifies the minimum length of reads to be kept.
+ Trimming occurs in the order which the steps are specified on the command line. It  is
+           recommended  in  most  cases  that  adapter clipping, if required, is done as early as
+           possible.
+
+  examples:
+  
+  #+begin_src bash
+# filtering single end reads:
+TrimmomaticSE -phred33 SRR11180057_1.fastq.gz SRR11180057_1_clean_se.fastq.gz SLIDINGWINDOW:4:20  MINLEN:30
+
+# simple quality based filtering
+TrimmomaticPE -phred33 SRR11180057_1.fastq.gz SRR11180057_2.fastq.gz \
+SRR11180057_1_clean.fastq.gz SRR11180057_1_unpaired.fastq.gz \
+SRR11180057_2_clean.fastq.gz SRR11180057_2_unpaired.fastq_unpaired.gz \
+SLIDINGWINDOW:4:20  MINLEN:30
+
+
+#+end_src
+
+run =fastqc= again on processed files and check report.
+
+
