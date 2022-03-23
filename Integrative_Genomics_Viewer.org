@@ -43,6 +43,10 @@ chr11	5247945	5247946
 
 ** GFF3
 
-A General Feature Format (GFF) file is a simple tab-delimited text file for describing genomic features. This format can be used to describe and visualize gene structure.
+A General Feature Format (GFF) file is a simple tab-delimited text file for describing genomic features. This format can be used to describe and visualize gene structure:
 
 [[fig/gff_gene.png]]
+
+** BigWig
+The bigWig format is for display of dense, continuous data that will be displayed as a graph:
+[[fig/bigwig.png]]
