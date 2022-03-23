@@ -115,13 +115,14 @@ TrimmomaticSE [-threads threads] [-phred33 | -phred64] [-trimlog logFile]  input
 
 The current trimming steps are:
 - ILLUMINACLIP:<fastaWithAdaptersEtc>:<seed mismatches>:<palindrome clip threshold>:<simple clip threshold>
-  fastaWithAdaptersEtc: specifies the path to a fasta file containing all the
+  - *fastaWithAdaptersEtc*: specifies the path to a fasta file containing all the
   adapters, PCR sequences etc. The naming of the various sequences within this
-  file determines how they are used. See below. seedMismatches: specifies the
+  file determines how they are used.
+  -  *seedMismatches*: specifies the
   maximum mismatch count which will still allow a full match to be performed
-  palindromeClipThreshold: specifies how accurate the match between the two
+  - *palindromeClipThreshold*: specifies how accurate the match between the two
   ´adapter ligated´ reads must be for PE palindrome read alignment.
-  simpleClipThreshold: specifies how accurate the match between any adapter etc.
+  - *simpleClipThreshold*: specifies how accurate the match between any adapter etc.
   sequence must be against a read.
 - SLIDINGWINDOW:<windowSize>:<requiredQuality>
                    windowSize: specifies the number of bases to average across
@@ -158,5 +159,48 @@ run =fastqc= again on processed files and check report. Compare this report with
 
 *** Example 2 - adapter removing
 
+Sequences of Illumina addapters are shipped with Trimmomatic program or they can be found in =~/Desktop/bioinformatics/data/illumina_adapters/= directory. Copy file =NexteraPE-PE.fa=  to your working directory.
+
+#+begin_src bash
+TrimmomaticPE -phred33 SRR18090207_1.fastq.gz SRR18090207_2.fastq.gz \
+SRR18090207_1_clean.fastq.gz SRR18090207_1_unpaired.fastq.gz \
+SRR18090207_2_clean.fastq.gz SRR18090207_2_unpaired.fastq_unpaired.gz \
+ILLUMINACLIP:NexteraPE-PE.fa:2:40:15 SLIDINGWINDOW:4:20  MINLEN:100
+
+# run fastqc again:
+fastqc SRR18090207*
+#+end_src
+
+*** Example 3 processing  larger number of runs
+
+create file in the working directory name =read_processing.sh= with following content
+#+begin_src bash
+for ACCESSION in SRR11180057 SRR17499358 SRR17499358 SRR17713797 SRR18352305
+do
+  TrimmomaticPE -phred33 ${ACCESSION}_1.fastq.gz ${ACCESSION}_2.fastq.gz \
+  ${ACCESSION}_1_clean.fastq.gz ${ACCESSION}_1_unpaired.fastq.gz \
+  ${ACCESSION}_2_clean.fastq.gz ${ACCESSION}_2_unpaired.fastq_unpaired.gz \
+  ILLUMINACLIP:NexteraPE-PE.fa:2:40:15 SLIDINGWINDOW:4:20  MINLEN:100
+done
+  
+#+end_src
+
+run command in the file using:
+#+begin_src bash
+bash read_processing.sh
+#+end_src
 
 
+
+if we want to put process read into separate directory you can use:
+#+begin_src bash
+mkdir processed_reads
+for ACCESSION in SRR11180057 SRR17499358 SRR17499358 SRR17713797 SRR18352305
+do
+  TrimmomaticPE -phred33 ${ACCESSION}_1.fastq.gz ${ACCESSION}_2.fastq.gz \
+  processed_reads/${ACCESSION}_1_clean.fastq.gz processed_reads/${ACCESSION}_1_unpaired.fastq.gz \
+  processed_reads/${ACCESSION}_2_clean.fastq.gz processed_reads/${ACCESSION}_2_unpaired.fastq_unpaired.gz \
+  ILLUMINACLIP:NexteraPE-PE.fa:2:40:15 SLIDINGWINDOW:4:20  MINLEN:100
+done
+
+#+end_src
