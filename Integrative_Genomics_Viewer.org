@@ -21,7 +21,7 @@ samtools index dna_sequencing.bam
 - load Genome from file.
 - import individual tracks from files 
   
-Types of files:
+* Types of files included:
 
 ** BAM/SAM
 A BAM file (.bam) is the binary version of a SAM file.  A SAM file (.sam) is a tab-delimited text file that contains *sequence alignment data*.   These formats are described on the SAM Tools web site: http://samtools.github.io/hts-specs/.
