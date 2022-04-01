@@ -20,11 +20,17 @@ are present.
 data for assembly are located in =~/Desktop/bioinformatics/data/sanger=
 
 * Assembly from short NGS reads using Velvet program - single end reads:
+** Installation of necessary programs
+
+#+begin_src bash
+mamba create -n assembly -c bioconda jellyfish fastx_toolkit quast bandage samtools
+conda activate assembly
+#+end_src
 
 ** Single-end library
 **** Data
 The data you will examine is from /Staphylococcus aureus/ USA300 which has a genome of
-around 3MB . The r eads are Illumina and are unpaired, also known as single-end library. 
+around 3MB. The reads are Illumina and are unpaired, also known as single-end library. 
 The data needed for this section can be obtained from the Sequence Read Archive (SRA). For the
 following example use the run data SRR022825 and SRR022823 from the SRA Sample
 SRS004748. The SRA experiment could be viewed by setting your browser to the URL:
@@ -32,6 +38,7 @@ http://www.ebi.ac.uk/ena/data/view/SRS004748
 
 create directory for assembly:
 #+begin_src sh
+cd
 mkdir ngs_assembly
 cd ngs_assembly
 #+end_src
@@ -101,6 +108,9 @@ Staphylococcus aureus MRSA252, a genome closely related to
 the genome that provided the short read data in the earlier sections of this exercise. The sequence
 data this time is the fully assembled genome. The genome size is therefore known exactly and is
 2,902,619 bp.
+# results from previous run:
+http://genomescope.org/analysis.php?code=f4vvkosUs4ne9RG1JDFF
+
 #+end_comment
 
 ** Assembly 
@@ -145,9 +155,13 @@ Upload file contig.fa and run quality assessment.
   the sequencing coverage
 - Is the total length of genome assembly in agreement with kmer-based estimation
   of genome size?
-
+command line quast:
+  #+begin_src 
+quast run25/contigs.fa
+  #+end_src
  Assembly graph can be inspected using *Bandage* program . 
 
+*** Optional: 
 Results from kmer based analysis suggests, that sequencing coverage is more that
 10x and lower frequency kmers are likely erroneous kmers. Excluding such kmers
 can improved the assembly. We will rerun velvetg  with =-cov_cutoff 6=  and
@@ -158,7 +172,7 @@ can improved the assembly. We will rerun velvetg  with =-cov_cutoff 6=  and
 cp run_25/contigs.fa run_25/contigs.fa.0
 velvetg run_25 -cov_cutoff 6 -exp_cov 14 -amos_file yes
 #+end_src
-=-amos_file yes= option will expovelvetg run_25_paired -ins_length 350velvetg run_25_paired -ins_length 350rt results to AMOS format 
+=-amos_file yes= option will export velvetg run_25_paired -ins_length 350velvetg run_25_paired -ins_length 350rt results to AMOS format 
 
 #+begin_comment
 Results:
@@ -167,12 +181,12 @@ Final graph has 2707 nodes and n50 of 5393, max 26428, total 2827773, using 3916
 #+end_comment
 
 * Assembly from short NGS reads using Velvet program - pair-end reads:
-
 ** paired end data and QC:
 The data you will examine is from again from /Staphylococcus aureus/ USA300 .
 The reads are Illumina paired end with higher sequence coverage
 *** download from NCBI: 
 #+begin_src bash
+cd 
 mkdir ngs_assembly2
 cd ngs_assembly2
 # get paired end reads
@@ -207,20 +221,16 @@ velvetg run_25_paired -ins_length 350
 ** compare paired end assembly with single end assembly
 - use *Quast* program (http://quast.sourceforge.net/quast) to calculate basic statistics of assembly and compare it to
   previous assembly from single end Illumina reads
+#+begin_src bash
+# quast can be run on multiple assemblies
+# we will compare assembly from SE reads and PE reads:
+quast ngs_assembly/run_25/contigs.fa ngs_assembly2/run_25_paired/contigs.fa -o ngs_assembly2/quast
+
+#+end_src
 - use *Bandage* program,
   #+begin_comment
 assembly from paired end reads  (also higher coverage) creates single connected components, from single ends assebmly is more fragmented
   #+end_comment
-- use Busco program:
-  #+begin_src bash
- # run from run25 and run25_paired directory
- busco -i cotings.fa -o busco_output -m genome --auto-lineage-prok
- # it should take several minuts to finish - each
-  #+end_src
-  
-
-
-
 
 ** Align short paired reads to assembly:
 We will aligne original sequence read to resulting genome assembly so we can
@@ -239,6 +249,8 @@ samtools sort SRR022852.bam > SRR022852_sorted.bam
 samtools index SRR022852_sorted.bam
 #+end_src
 
+
+
 *** Visualization of assembly
 run IGV program to inspect assembly. In IGV load genome - select contigs.fa
 file. Then load read mapping from SRR022852_sorted.bam
@@ -247,6 +259,18 @@ Manual for IGV can be found on
 http://software.broadinstitute.org/software/igv/UserGuide.
 Explanation of color coding :
 http://software.broadinstitute.org/software/igv/interpreting_insert_size
+
+** Analyze completeness of assembly by  Busco program:
+  #+begin_src bash
+# run from run25 and run25_paired directory
+conda activate busco
+cd ~/ngs_assembly/run25
+busco -i contigs.fa -o busco_output -m genome --auto-lineage-prok
+cd ~/ngs_assembly2/run_25_paired/
+busco -i contigs.fa -o busco_output -m genome --auto-lineage-prok
+# each run will take several minuts to finish
+  #+end_src
+
 
 ** How to make assembly on Metacentrum
 
@@ -332,8 +356,7 @@ fastqc *.fastqc
 # each download takes about 2 min.
 Inspect resulting html reports
 
-
-* used blast to find location of genes  in the assembly
+* Use BLAST to find location of genes in the assembly
 
 download these proteins from S.aureus:
 - https://www.uniprot.org/uniprot/Q2FUW1.fasta
@@ -347,3 +370,4 @@ download these proteins from S.aureus:
   You will need to create blast database first. Then use =tblastn= (query is protein, database is nucleotide)
 - what are the properties if the best hits, can you find complete CDS
   
+
