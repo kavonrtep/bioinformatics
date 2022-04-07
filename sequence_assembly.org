@@ -147,6 +147,7 @@ Explore run_25 directory files:
 
 ** Genome assembly statistics:
 Use *Quast* tools to assess quality of assembly : http://quast.sourceforge.net/quast
+
 Upload file contig.fa and run quality assessment. 
 - What is the N50
 - What is the total lenght of assembly
@@ -157,7 +158,7 @@ Upload file contig.fa and run quality assessment.
   of genome size?
 command line quast:
   #+begin_src 
-quast run25/contigs.fa
+quast run_25/contigs.fa
   #+end_src
  Assembly graph can be inspected using *Bandage* program . 
 
@@ -298,8 +299,8 @@ cd /storage/praha1/home/$LOGNAME  # go to your home directory on tarkil
 module add velvet-1.2.09
 module add fastx-0.0.14
 
-mkdir ngs_assembly2
-cd ngs_assembly2
+mkdir ngs_assembly
+cd ngs_assembly
 # get paired end reads
 wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR022/SRR022852/SRR022852_1.fastq.gz
 wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR022/SRR022852/SRR022852_2.fastq.gz
@@ -335,13 +336,45 @@ status of your submission can be monitored from https://metavo.metacentrum.cz/pb
 To transfer data back to your local computer, you can use filezilla.
 
 * More info about Metacentrum:
-
+- How to specify parameters for qsub command (qsub assembler) : https://metavo.metacentrum.cz/pbsmon2/qsub_pbspro
 - How to use modules: https://wiki.metacentrum.cz/wiki/Application_modules
 - Available modules:  https://wiki.metacentrum.cz/wiki/MetaCentrum_Application_List
 - https://wiki.metacentrum.cz/wiki/Beginners_guide
 - PBS system https://wiki.metacentrum.cz/wiki/About_scheduling_system
 - Metacentrum frontends : https://wiki.metacentrum.cz/wiki/Frontend
 - your current jobs can be viewed at https://metavo.metacentrum.cz/pbsmon2/user/username
+
+* Using SCRATCH directory
+Most application produce some temporary files during the calculation. Scratch directory is disk space where temporary files can be stored.
+
+#+begin_src bash :tangle scripts/assembly_script2_pbs.sh
+#PBS -N genome_assembly2
+#PBS -l select=1:ncpus=4:mem=4gb:scratch_local=10gb -l walltime=1:00:00
+# the line above species that we request one computer node with
+# 4 processors(cpu) and 4 GB of RAM. computation will take max 1 hrs
+cd /storage/praha1/home/$LOGNAME  # go to your home directory on tarkil
+module add velvet-1.2.09
+module add fastx-0.0.14
+
+cd $SCRATCH
+mkdir ngs_assembly2
+cd ngs_assembly2
+# get paired end reads
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR022/SRR022852/SRR022852_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR022/SRR022852/SRR022852_2.fastq.gz
+zcat SRR022852_1.fastq.gz | fastx_trimmer -f 2 -o SRR022852_1_trimmed.fastq
+zcat SRR022852_2.fastq.gz | fastx_trimmer -f 2 -o SRR022852_2_trimmed.fastq
+velveth run_25_paired 25 -fastq -shortPaired -separate SRR022852_1_trimmed.fastq SRR022852_2_trimmed.fastq 
+velvetg run_25_paired -ins_length 350
+cp -r ../ngs_assembly2 cd /storage/praha1/home/$LOGNAME/
+
+# clean the SCRATCH directory
+clean_scratch
+#+end_src
+
+
+
+
 * Example of fastqc on low quality data:
 We will explore various NGS data from Sequence read archive using FASTQC
 program. For download, we will use =fastq-dump= command:
