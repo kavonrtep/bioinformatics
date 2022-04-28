@@ -53,5 +53,14 @@ The bigWig format is for display of dense, continuous data that will be displaye
 
 ** VCF 
  Variant Call Format, and it is used  encode structural genetic variants. Variant calls include SNPs, indels, and genomic rearrangements.
-
+IGV visualization : https://software.broadinstitute.org/software/igv/viewing_vcf_files
  
+#+begin_comment
+- update bioinformatics repository
+- load E.coli genome from directory ~/Desktop/bioinformatics_git/data/igv_data_e_coli
+- load all tracks:
+- show coverage after zoom
+- colors of genomic reads (grey long inser or single, green shorter insert)
+- variants - show coloring
+- coverage plot - multiple show group autoscale
+#+end_comment>

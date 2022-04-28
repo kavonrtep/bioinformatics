@@ -256,10 +256,35 @@ samtools index SRR022852_sorted.bam
 run IGV program to inspect assembly. In IGV load genome - select contigs.fa
 file. Then load read mapping from SRR022852_sorted.bam
 
-Manual for IGV can be found on
+Manual for IGV can be found on:
 http://software.broadinstitute.org/software/igv/UserGuide.
-Explanation of color coding :
-http://software.broadinstitute.org/software/igv/interpreting_insert_size
+Explanation of color coding (insert size):
+- Insert size: http://software.broadinstitute.org/software/igv/interpreting_insert_size
+- Pair orientation: http://software.broadinstitute.org/software/igv/interpreting_pair_orientations
+
+
+
+#+begin_comment
+- open IGV
+- import Genome + bam alignment
+- show first contig
+- zoom
+- by default "color alignment by" Insert size and pair orientation, explain
+  - red - insert large than expected
+  - blue - insert smaller than expected (see above link to igv help)
+ - switch to color by pair orientation only, find incorrect pair
+ - switch to view as pairs
+ - zoom out and show purple triangles - insertions and deletions
+ - explain intervals with removed reads - downsampled for faster visualization
+ - show left side of contig (color by pair and size must be on)
+ - explain color - mate on other chromosome /contig
+ - show other side of contig
+ - explain "go to mate" / or split screen
+ - show contigs node_439 - right side - there are multiple related contigs through mate
+ 
+ 
+#+end_comment
+
 
 ** Analyze completeness of assembly by  Busco program:
   #+begin_src bash
