@@ -1,0 +1,38 @@
+* Online tools
+
+
+** multiple sequence alignment
+- Clustal omega: http://www.ebi.ac.uk/Tools/msa/clustalo/
+- mafft:  http://www.ebi.ac.uk/Tools/msa/mafft/
+- muscle: http://www.ebi.ac.uk/Tools/msa/muscle/
+- Jalview.js https://www.jalview.org/jalview-js/JalviewJS.shtm
+  
+
+** MSA viewer
+- Interactive viewer:  https://alignmentviewer.org/
+- MView : http://www.ebi.ac.uk/Tools/msa/mview
+- NCBI: https://www.ncbi.nlm.nih.gov/projects/msaviewer/
+
+** tree calculation
+
+- neighbor-joining:  https://www.ebi.ac.uk/Tools/phylogeny/simple_phylogeny/
+- phyml: http://www.atgc-montpellier.fr/phyml/
+
+** tree viewer
+- PRESTO:  http://www.atgc-montpellier.fr/presto/
+- iTOL: https://itol.embl.de/
+
+** Format conversion
+
+- convert fasta to phylip (sequential):  http://phylogeny.lirmm.fr/phylo_cgi/data_converter.cgi
+- emboss seqret: https://www.ebi.ac.uk/Tools/sfc/emboss_seqret/
+
+** complete phylogenetic pipelines:
+
+- https://ngphylogeny.fr/
+
+* Desktop tools
+
+- Dendroscope  - tree viewer - https://software-ab.informatik.uni-tuebingen.de/download/dendroscope/welcome.html
+
+

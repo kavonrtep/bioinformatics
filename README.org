@@ -8,3 +8,4 @@
 ** [[./transciptome_assembly.org][Transcriptome Assembly]]
 ** [[./transcriptomic_exercise.org][Differential expression using RNA-Seq]]
 ** [[./Integrative_Genomics_Viewer.org][Integrative_Genomics_Viewer]]
+** [[./phylogenetic.org][Phylogenetics - tools]]
