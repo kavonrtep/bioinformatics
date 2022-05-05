@@ -1,0 +1,148 @@
+* Prediction of protein structural features
+** Secondary structure
+*** -NetSurfP - 1.1
+- Protein secondary structure and relative solvent accessibility: https://services.healthtech.dtu.dk/service.php?NetSurfP-1.1
+- include prediction of alpha, beta, coil and RSA
+- tabular output
+*** Jpred
+- A Protein Secondary Structure Prediction Server: http://www.compbio.dundee.ac.uk/jpred/
+- Jpred is also available from Jalview webservices
+- include /lupas/ program for coil prediction, jnetsol -  prediction of burial/solvet accessibility
+*** PSIPRED
+Workbench with multiple tools: http://bioinf.cs.ucl.ac.uk/psipred/
+- PSIPRED: secondary structure prediction
+- MEMSAT3 and MEMSATSVM : Predict all-helical transmembrane proteins and the location of their constituent helical elements within a membrane
+- MEMPACK:  a membrane helix packing predictor, predict also possible inter-helix interactions
+- DISOPRED: Protein intrinsic disorder prediction
+
+**  Transmembrane segments
+*** MEMSAT
+part of PSPRED server
+*** TMHHM
+Prediction of transmembrane helice using hidden Markov model: https://services.healthtech.dtu.dk/service.php?TMHMM-2.0
+- graphical and tabular output, obsolete
+*** DeepTMHMM
+https://dtu.biolib.com/DeepTMHMM
+- the prediction of the topology of both *alpha-helical* and *beta-barrel* transmembrane proteins.
+- tabular output
+- gff3 output
+  
+** Intrinsically disordered regions
+*** DISOPRED
+part of PSIPRED server
+*** IUPRED
+Prediction of disordered protein regions using IUPred2 and disordered binding regions using ANCHOR2
+- https://iupred2a.elte.hu  (older version)
+# - https://iupred.elte.hu/    - this version does not work correctly
+*** PONDR
+Predictor of Natural Disordered Regions http://www.pondr.com/
+
+** Coiled-Coils
+
+*** DeepCoil
+- https://toolkit.tuebingen.mpg.de/tools/deepcoil
+*** Waggawagga
+- https://waggawagga.motorprotein.de/
+- prediction using multiple programs
+*** Lupas
+part of *Jpred* server - http://www.compbio.dundee.ac.uk/jpred/
+
+
+* Proteins to analyze:
+
+Use following proteins and predict secondary structure, transmembrane domains and intrinsically disordered regions
+
+#+begin_src text
+>sp|P78562|PHEX_HUMAN Phosphate-regulating neutral endopeptidase PHEX OS=Homo sapiens OX=9606 GN=PHEX PE=1 SV=1
+MEAETGSSVETGKKANRGTRIALVVFVGGTLVLGTILFLVSQGLLSLQAKQEYCLKPECI
+EAAAAILSKVNLSVDPCDNFFRFACDGWISNNPIPEDMPSYGVYPWLRHNVDLKLKELLE
+KSISRRRDTEAIQKAKILYSSCMNEKAIEKADAKPLLHILRHSPFRWPVLESNIGPEGVW
+SERKFSLLQTLATFRGQYSNSVFIRLYVSPDDKASNEHILKLDQATLSLAVREDYLDNST
+EAKSYRDALYKFMVDTAVLLGANSSRAEHDMKSVLRLEIKIAEIMIPHENRTSEAMYNKM
+NISELSAMIPQFDWLGYIKKVIDTRLYPHLKDISPSENVVVRVPQYFKDLFRILGSERKK
+TIANYLVWRMVYSRIPNLSRRFQYRWLEFSRVIQGTTTLLPQWDKCVNFIESALPYVVGK
+MFVDVYFQEDKKEMMEELVEGVRWAFIDMLEKENEWMDAGTKRKAKEKARAVLAKVGYPE
+FIMNDTHVNEDLKAIKFSEADYFGNVLQTRKYLAQSDFFWLRKAVPKTEWFTNPTTVNAF
+YSASTNQIRFPAGELQKPFFWGTEYPRSLSYGAIGVIVGHEFTHGFDNNGRKYDKNGNLD
+PWWSTESEEKFKEKTKCMINQYSNYYWKKAGLNVKGKRTLGENIADNGGLREAFRAYRKW
+INDRRQGLEEPLLPGITFTNNQLFFLSYAHVRCNSYRPEAAREQVQIGAHSPPQFRVNGA
+ISNFEEFQKAFNCPPNSTMNRGMDSCRLW
+#+end_src
+
+#+begin_comment
+no PDB structure, but alphaphold
+contains short ~20 AA disordered region, then membrane (helix), and rest is globular.
+work well with jpred, TMHHM and IUPRED
+#+end_comment
+
+
+#+begin_src text
+>sp|P04637|P53_HUMAN Cellular tumor antigen p53 OS=Homo sapiens OX=9606 GN=TP53 PE=1 SV=4
+MEEPQSDPSVEPPLSQETFSDLWKLLPENNVLSPLPSQAMDDLMLSPDDIEQWFTEDPGP
+DEAPRMPEAAPPVAPAPAAPTPAAPAPAPSWPLSSSVPSQKTYQGSYGFRLGFLHSGTAK
+SVTCTYSPALNKMFCQLAKTCPVQLWVDSTPPPGTRVRAMAIYKQSQHMTEVVRRCPHHE
+RCSDSDGLAPPQHLIRVEGNLRVEYLDDRNTFRHSVVVPYEPPEVGSDCTTIHYNYMCNS
+SCMGGMNRRPILTIITLEDSSGNLLGRNSFEVRVCACPGRDRRTEEENLRKKGEPHHELP
+PGSTKRALPNNTSSSPQPKKKPLDGEYFTLQIRGRERFEMFRELNEALELKDAQAGKEPG
+GSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
+#+end_src
+
+#+begin_comment
+example of disordered regions, good axemple for ANCHOR program
+both N and C terminus are disordered, bind to different proteins
+#+end_comment
+
+
+
+#+begin_src text
+>sp|A6NFH5|Fatty acid-binding protein 12 OS=Homo sapiens
+MIDQLQGTWKSISCENSEDYMKELGIGRASRKLGRLAKPTVTISTDGDVITIKTKSIFKN
+NEISFKLGEEFEEITPGGHKTKSKVTLDKESLIQVQDWDGKETTITRKLVDGKMVVESTV
+NSVICTRTYEKVSSNSVSNS
+#+end_src
+
+#+begin_comment
+https://www.uniprot.org/uniprot/A6NFH5
+Fatty acid-binding protein 12, may play role in transport
+most likely globular, no transmembrane
+#+end_comment
+
+#+begin_src text
+>sp|Q93VI0|DNA-binding protein S1FA3 OS=Arabidopsis thaliana 
+MAAEFDGKIESKGLNPGLIVLLVIGGLLLTFLVGNFILYTYAQKNLPPRKKKPVSKKKMK
+KEKMKQGVQVPGE
+#+end_src
+
+#+begin_comment
+DNA-binding protein that specifically recognizes a negative element (S1F) within the RPS1 promoter.
+show leucine rich region, not too interesting
+#+end_comment
+
+#+begin_src text
+>sp|P03069
+MSEYQPSLFALNPMGFSPLDGSKSTNENVSASTSTAKPMVGQLIFDKFIKTEEDPIIKQD
+TPSNLDFDFALPQTATAPDAKTVLPIPELDDAVVESFFSSSTDSTPMFEYENLEDNSKEW
+TSLFDNDIPVTTDDVSLADKAIESTEEVSLVPSNLEVSTTSFLPTPVLEDAKLTQTRKVK
+KPNSVVKKSHHVGKDDESRLDHLGVVAYNRKQRSIPLSPIVPESSDPAALKRARNTEAAR
+RSRARKLQRMKQLEDKVEELLSKNYHLENEVARLKKLVGER
+#+end_src
+
+#+begin_comment
+example of coiled-coil - can be predicted by waggawagga and Jpred lupas
+- nice helical wheel view, works as homodimer!
+- some disordered and anchore region detected by IUPred2
+#+end_comment>
+
+
+#+begin_src text
+>tr|Q9HWW1|
+MRKSWLTASLLALTVASPFAAADIQGHKAGDFIIRGGFATVDPDDSSSDIKLDGAKQRGT
+KATVDSDTQLGLTFTYMFADKWGVELVAATPFNHQVDVKGLGPGLDGKLADIKQLPPTLL
+LQYYPMGGTNSAFQPYGGLGVNYTTFFDEDLASNRKAQGFSSMKLQDSWGLAGELGFDYM
+LNEHALFNMAVWYMDIDTKASINGPSALGVNKTKVDVDVDPWVYMIGFGYKF
+#+end_src
+#+begin_comment
+Q9HWW1_PSEAE Outer membrane protein OprG OS=Pseudomonas aeruginosa (strain ATCC 15692 / DSM 22644 / CIP 104116 / JCM 14847 / LMG 12228 / 1C / PRS 101 / PAO1) OX=208964 GN=oprG PE=1 SV=1
+nice Beta barrel, predicted by DeepTMHMM
+
+#+end_comment>
