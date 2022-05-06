@@ -1,6 +1,7 @@
+
 * Prediction of protein structural features
 ** Secondary structure
-*** -NetSurfP - 1.1
+*** NetSurfP - 1.1
 - Protein secondary structure and relative solvent accessibility: https://services.healthtech.dtu.dk/service.php?NetSurfP-1.1
 - include prediction of alpha, beta, coil and RSA
 - tabular output
@@ -50,8 +51,12 @@ part of *Jpred* server - http://www.compbio.dundee.ac.uk/jpred/
 
 * Proteins to analyze:
 
-Use following proteins and predict secondary structure, transmembrane domains and intrinsically disordered regions
-
+Use following proteins and predict secondary structure, transmembrane domains and intrinsically disordered regions. For prediction use programs:
+- http://www.compbio.dundee.ac.uk/jpred/
+- https://dtu.biolib.com/DeepTMHMM
+- https://waggawagga.motorprotein.de/
+- https://iupred2a.elte.hu
+  
 #+begin_src text
 >sp|P78562|PHEX_HUMAN Phosphate-regulating neutral endopeptidase PHEX OS=Homo sapiens OX=9606 GN=PHEX PE=1 SV=1
 MEAETGSSVETGKKANRGTRIALVVFVGGTLVLGTILFLVSQGLLSLQAKQEYCLKPECI
