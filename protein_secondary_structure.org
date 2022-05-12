@@ -108,6 +108,7 @@ NSVICTRTYEKVSSNSVSNS
 
 #+begin_comment
 https://www.uniprot.org/uniprot/A6NFH5
+
 Fatty acid-binding protein 12, may play role in transport
 most likely globular, no transmembrane
 #+end_comment
@@ -146,8 +147,9 @@ KATVDSDTQLGLTFTYMFADKWGVELVAATPFNHQVDVKGLGPGLDGKLADIKQLPPTLL
 LQYYPMGGTNSAFQPYGGLGVNYTTFFDEDLASNRKAQGFSSMKLQDSWGLAGELGFDYM
 LNEHALFNMAVWYMDIDTKASINGPSALGVNKTKVDVDVDPWVYMIGFGYKF
 #+end_src
+
 #+begin_comment
 Q9HWW1_PSEAE Outer membrane protein OprG OS=Pseudomonas aeruginosa (strain ATCC 15692 / DSM 22644 / CIP 104116 / JCM 14847 / LMG 12228 / 1C / PRS 101 / PAO1) OX=208964 GN=oprG PE=1 SV=1
 nice Beta barrel, predicted by DeepTMHMM
 
-#+end_comment>
+#+end_comment

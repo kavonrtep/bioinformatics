@@ -1,0 +1,43 @@
+* Online tools
+
+** Databases
+- Protein Data Bank in Europe: https://www.ebi.ac.uk/pdbe/
+- RCSB Protein Data Bank https://www.rcsb.org/
+- PDBsum https://www.ebi.ac.uk/thornton-srv/databases/cgi-bin/pdbsum/GetPage.pl?pdbcode=index.html pictorial database that provides an at-a-glance overview of the contents of each 3D structure deposited in the Protein Data Bank.
+  
+** Predicting protein 3D structure
+- Swiss-Model   https://swissmodel.expasy.org/
+- I-TASSER https://zhanglab.ccmb.med.umich.edu/I-TASSER
+- Alphafold  https://colab.research.google.com/github/deepmind/alphafold/blob/main/notebooks/AlphaFold.ipynb or 
+  https://usegalaxy.eu/
+
+** Model quality assessment
+- ModFOLD https://www.reading.ac.uk/bioinf/ModFOLD/ModFOLD8_form.html
+- https://saves.mbi.ucla.edu/ multiple programs including WHATCHECK
+
+** Structure alignment
+- DALI http://ekhidna2.biocenter.helsinki.fi/dali/
+- PDBeFold https://www.ebi.ac.uk/msd-srv/ssm/
+  
+** 3D viewers
+- mol* https://molstar.org/
+  
+
+
+* Example sequences and structure:
+
+** CASP14 sequences
+#+begin_src text
+>T1090 NP_595817.1, Schizosaccharomyces pombe, 193 residues|
+HHAHGTENLYFQGSAATMAAQSLLSIPVEYRSQVWCRANLPYPPAPQLPIPAVVDILTKASQALPQISFSWTLIDQPPDGSLFLVWQAPTLPSPPDGMHFMSNERFFNMDVAGKVLEIHEAKHGFYPLSETRTMHVRCRYRLLGVGFDNFWLVHYFQGSETDSIPANISVAKPPHLRRYPLPDVKTSPFLLQE
+#+end_src
+
+
+** structures for DALI pairwise alignment
+compare:
+- phosphotriesterase entry 4xd3 with chains A and G : 4xd3A
+- 3ubpC
+- 1a4mA
+(result http://ekhidna2.biocenter.helsinki.fi/daliviewer/pairwise_EXAMPLE.html)
+** Example of DALI all against all comparison:
+http://ekhidna2.biocenter.helsinki.fi/daliviewer/matrix_EXAMPLE/
