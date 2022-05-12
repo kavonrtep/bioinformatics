@@ -10,3 +10,4 @@
 ** [[./Integrative_Genomics_Viewer.org][Integrative_Genomics_Viewer]]
 ** [[./phylogenetic.org][Phylogenetics - tools]]
 ** [[./protein_secondary_structure.org][Prediction of protein structure]]
+** [[./protein_tertiary_structure.org][Protein tertiary structure]]
