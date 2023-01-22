@@ -9,6 +9,7 @@ tasks:
       source "${HOME}/miniconda/etc/profile.d/conda.sh"
       conda init
       bash
+      rm Miniconda3-latest-Linux-x86_64.sh
       export PATH="${HOME}/miniconda/bin:$PATH"
     command: echo 'start script'
 
