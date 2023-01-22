@@ -570,7 +570,7 @@ MS Word or Libre Office are **document** editors not suitable for handling data 
 
 ## nano
 
-![Nano in Action](fig/nano-screenshot.png)
+![Nano in Action](../fig/nano-screenshot.png)
 Control, Ctrl, or ^ Key
 
 ## xed
