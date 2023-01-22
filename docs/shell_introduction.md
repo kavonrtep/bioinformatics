@@ -1,9 +1,8 @@
 ---
 marp: false
 ---
-
-
 # Introducing the Shell
+
 based on Software Carpentry course material:
 
 [https://software-carpentry.org](https://software-carpentry.org)
@@ -11,38 +10,43 @@ based on Software Carpentry course material:
 and Bioinformatics Data Skills book: [http://shop.oreilly.com/product/0636920030157.do](http://shop.oreilly.com/product/0636920030157.do)
 
 ---
+
 # Terminology:
--  differences between a **file** and a **directory**
+
+- differences between a **file** and a **directory**
 - **Absolute** path vs. **relative** path
 - Actual command, flags, and filenames in a command-line call."
 - Demonstrate the use of **tab completion**, advantages
 
 ---
+
 # What is shell:
+
 - A shell is a program whose primary purpose is to read commands and run other programs
 - Automating repetitive tasks, access networked machines."
 - The shell's main disadvantages - primarily textual nature, cryptic its commands and operation
-- There are many Unix shells implementations - **bash**, zsh, csh, tcsh, ..  
+- There are many Unix shells implementations - **bash**, zsh, csh, tcsh, ..
 - Bash is widely used and used in examples
 
-
 ---
+
 # Computer interfaces
 
 **command-line interface**, or CLI,
- vs. 
+vs.
 **graphical user interface**, or GUI,
 (prevalent)
 
 The heart of a CLI is a **read-evaluate-print loop**, or REPL:
-- read command
-- evaluate command 
-- print/output results
 
+- read command
+- evaluate command
+- print/output results
 
 ---
 
 # Files and directories
+
 - How can I move around on my computer? (`cd`)
 - How can I see what files and directories I have? (`ls`')
 - How can I specify the location of a file or directory on my computer?
@@ -54,6 +58,7 @@ The heart of a CLI is a **read-evaluate-print loop**, or REPL:
 ---
 
 ## Files and directories
+
 - The file system is responsible for managing information on the disk
 - Information is stored in files, which are stored in directories (folders)
 - Directories can also store other directories, which forms a directory tree
@@ -61,6 +66,7 @@ The heart of a CLI is a **read-evaluate-print loop**, or REPL:
 ---
 
 ## Some commands
+
 - "`cd path` changes the current working directory."
 - "`ls path` prints a listing of a specific file or directory; `ls` on its own lists the current working directory."
 - "`pwd` prints the user's current working directory."
@@ -70,7 +76,9 @@ The heart of a CLI is a **read-evaluate-print loop**, or REPL:
 Note that `path` is a location of file or directory in a file system
 
 ---
+
 # Relative vs Absolute path
+
 - A relative path specifies a location starting from the current location.
 - An absolute path specifies a location from the root of the file system.
 - Directory names in a path are separated with '/'
@@ -80,11 +88,12 @@ Note that `path` is a location of file or directory in a file system
 
 ---
 
-![directory structure](fig/dir_structure.png)
+![directory structure](../fig/dir_structure.png)
 
 ---
 
 # File system
+
 The part of the operating system responsible for managing files and directories is called the **file system**. It organizes our data into files, which hold information, and directories (also called "folders"),
 which hold files or other directories.
 
@@ -93,16 +102,19 @@ Several commands are frequently used to **create**, **inspect**, **rename**, and
 ---
 
 ## Start shell
+
 run `terminal` program
 
-![terminal program](fig/terminal_program.png)
+![terminal program](../fig/terminal_program.png)
 
 ---
 
 ## Command prompt:
+
 ~~~
 user@bioinfo:~$ 
 ~~~
+
 a **prompt**, which shows us that the shell is waiting for input;
 your shell may use a different character as a prompt and may add information before the prompt.
 When typing commands, either from these lessons or from other sources, do not type the prompt, only the commands that follow it.
@@ -110,6 +122,7 @@ When typing commands, either from these lessons or from other sources, do not ty
 Note that commands are **case sensitive**
 
 ---
+
 Commands can be written on the terminal line and arbitrary edited until **Enter key** is pressed.
 
 Type the command `whoami`,
@@ -121,6 +134,7 @@ it shows us who the shell thinks we are:
 ~~~
 $ whoami
 ~~~
+
 output:
 
 ~~~
@@ -131,13 +145,12 @@ user
 
 More specifically, when we type `whoami` the shell:
 
-1.  finds a program called `whoami`,
-2.  runs that program,
-3.  displays that program's output on terminal, then
-4.  displays a new prompt to tell us that it's ready for more commands.
+1. finds a program called `whoami`,
+2. runs that program,
+3. displays that program's output on terminal, then
+4. displays a new prompt to tell us that it's ready for more commands.
 
 ---
-
 
 Next, let's find out where we are by running a command called `pwd` (which stands for **"print working directory"**).
 **current working directory** = default directory (the directory that the computer assumes we want to run commands in unless we explicitly specify something else)
@@ -145,6 +158,7 @@ Next, let's find out where we are by running a command called `pwd` (which stand
 ---
 
 ## what "home directory" is?
+
 ~~~
 .
 ├── bin
@@ -171,28 +185,30 @@ Next, let's find out where we are by running a command called `pwd` (which stand
 ---
 
 **root directory**
-- holds everything else - slash character `/`
-(this is the leading slash in `/home/franta`)
 
+- holds everything else - slash character `/`
+  (this is the leading slash in `/home/franta`)
 
 We know that our current working directory `/home/franta` is stored inside `/home`
-because `/home` is the first part of its name. 
+because `/home` is the first part of its name.
 Similarly, we know that `/home` is stored inside the root directory `/` because its name begins with `/`.
 
 ---
 
 ## Slashes
+
 Two meanings for the `/` character.
 At the front of a file or directory name = root directory
 *inside* a name = it's just a separator.
 
 ---
 
-
 # Basic commands
+
 ~~~
 $ ls
 ~~~
+
 example output:
 
 ~~~
@@ -232,6 +248,7 @@ $ ls --help
 ---
 
 **most important `ls` options**:
+
 ~~~
   -a, --all                  do not ignore entries starting with .
   -F, --classify             append indicator (one of */=>@|) to entries
@@ -258,7 +275,7 @@ Many bash commands, and programs that people have written that can be run from
 within bash, support a `--help` flag to display more information on how to use
 the commands or programs.
 
-For more information on how to use `ls` we can type `man ls`. 
+For more information on how to use `ls` we can type `man ls`.
 
 `man` is the Unix "manual" command: it prints a description of a command and its options, and (if you're lucky) provides a few examples of how to use it.
 
@@ -267,12 +284,14 @@ Even more information can be found ising command `info`.
 ---
 
 To navigate through the `man` pages
+
 - use the **up** and **down** arrow keys to move line-by-line, or try the "b" and spacebar keys to skip up and down by full page.
 - **Quit** the `man` pages by typing **q**.
 
 ---
 
 ## Parameters vs. Arguments
+
 the terms **argument** and **parameter** - often used interchangeably
 
 We can also use `ls` to see the contents of a different directory.
@@ -283,6 +302,7 @@ The second argument the one *without* a leading dash tells `ls` that
 we want a listing of something other than our current working directory
 
 ---
+
 ## Arguments syntax conventions
 
 - Arguments are options if they begin with a hyphen delimiter (`-`).
@@ -292,12 +312,12 @@ we want a listing of something other than our current working directory
 - Long options consist of `--`` followed by a name made of alphanumeric characters and dashes
 
 ### Examples:
+
 ~~~
 ls -lh --sort size -r
 ls -lhr --sort size
 ls -l -h --sort time --reverse
 ~~~
-
 
 ---
 
@@ -312,7 +332,6 @@ ls Desktop/ -l
 - Organizing things hierarchically in this way helps us keep track of our work:
 
 ---
-
 
 We can actually **change our location** to a different directory, so we are no longer located in our home directory.
 
@@ -341,9 +360,11 @@ how do we go up?  We might try the following:
 ~~~
 cd Desktop
 ~~~
+
 ~~~
 -bash: cd: data-shell: No such file or directory
 ~~~
+
 We get an error!  Why is this?
 
 ---
@@ -354,7 +375,9 @@ try:
 ~~~
 ls -a
 ~~~
+
 There is a shortcut in the shell to move up one directory level that looks like this:
+
 ~~~
 $ cd ..
 ~~~
@@ -363,7 +386,7 @@ $ cd ..
 
 ---
 
-- The special directory `..` doesn't usually show up when we run `ls`.  
+- The special directory `..` doesn't usually show up when we run `ls`.
 - If we want to display it, we can give `ls` the `-a` flag:
 
 ~~~
@@ -371,46 +394,49 @@ $ ls -F -a
 ~~~
 
 - `-a` stands for "show all"; it forces `ls` to show us file and directory names that begin with `.`,
-such as `..` 
+  such as `..`
 - it also displays another special directory that's just called `.` = "the current working directory".
 
-Multiple parameters can be combined with a single `-` and no spaces between the parameters: `ls -F -a` is 
-equivalent to `ls -Fa` 
+Multiple parameters can be combined with a single `-` and no spaces between the parameters: `ls -F -a` is
+equivalent to `ls -Fa`
 
 ---
 
 ## Other Hidden Files
+
 - In addition to the hidden directories `..` and `.`, you may also see a more files begining with `.`
 - Usually files and directories that are used to configure different programs on your computer.
-
 
 ---
 
 ## Summary
-basic commands for navigating the filesystem on your computer:
-`pwd`, `ls` and `cd`.  
 
-What happens if you type `cd` on its own, without giving a directory?  
+basic commands for navigating the filesystem on your computer:
+`pwd`, `ls` and `cd`.
+
+What happens if you type `cd` on its own, without giving a directory?
 
 ~~~
 $ cd
 ~~~
 
-
 `cd` without an argument -> return you to your home directory
 
 ---
+
 ## relative / absolute path
+
 - to move up one level from the data directory - use `cd ..`
 - there is another way to move to any directory, regardless of your
-current location.  
-
+  current location.
 - **relative paths** - find that location from where we are.
 - **absolute path** - entire path from the root directory - indicated by a
-leading slash -`/` 
+  leading slash -`/`
+
 ---
 
 ## relative / absolute path
+
 ~~~
 /
 ├── bin
@@ -427,15 +453,15 @@ leading slash -`/`
 ...
 
 ~~~
+
 absolute path - allows to specify file location from anywhere on the filesystem.
 
 ---
 
 ## Two More Shortcuts
--  the character `~` (tilde) at the start of a path to mean "the current user's home directory".
 
+- the character `~` (tilde) at the start of a path to mean "the current user's home directory".
 - `-` (dash) character.  `cd` translate `-` into *the previous directory I was in*
-
 
 ---
 
@@ -450,6 +476,7 @@ let’s say you want to run the **firefox** command. You can just type **fir** o
 ## Absolute vs Relative Paths
 
 Starting from `/home/manager/Desktop/Bioinformatics`, which of the following commands you could use to navigate to home directory, which is `/home/user`?
+
 ~~~
 1. cd .
 2. cd /
@@ -467,8 +494,7 @@ Starting from `/home/manager/Desktop/Bioinformatics`, which of the following com
 **Relative Path Resolution**
 
 If `pwd` displays `/Users/thing`, what will `ls ../backup` display?
-![File System for Challenge Questions](fig/filesystem-challenge.svg)
-
+![File System for Challenge Questions](../fig/filesystem-challenge.svg)
 
 1. `../backup: No such file or directory`
 2. `2012-12-01 2013-01-08 2013-01-27`
@@ -478,10 +504,10 @@ If `pwd` displays `/Users/thing`, what will `ls ../backup` display?
 ---
 
 ## Exploring More `ls` Arguments
+
 What does the command `ls` do when used with the `-l` and `-h` arguments?
 
-
-- The `-l` arguments makes `ls` use a **l**ong listing format, showing not only the file/directory names but also additional information such as the file size  and the time of its last modification. 
+- The `-l` arguments makes `ls` use a **l**ong listing format, showing not only the file/directory names but also additional information such as the file size  and the time of its last modification.
 - The `-h` argument makes the file size "**h**uman readable", i.e. display something like `5.3K` instead of `5369`
 
 ---
@@ -505,6 +531,7 @@ ls
 mkdir analysis
 ls
 ~~~
+
 `mkdir` means "make directory". Since `analysis` is a relative path (i.e., doesn't
 have a leading slash `\`), the new directory is created in the current working
 directory:
@@ -520,14 +547,19 @@ directory:
 3. Stick with letters, numbers, `.` (period), `-` (dash) and `_` (underscore).
    Many other characters have special meanings on the command line.
 4. `.` at the begining of names is used for 'hidden' files/dirs
+
 ---
 
 ## Linux Text Editors
+
 ### Terminal based
-- nano 
+
+- nano
 - vim
 - emacs
-### graphical 
+
+### graphical
+
 - gedit
 - xed
 - kate
@@ -543,7 +575,7 @@ Control, Ctrl, or ^ Key
 
 ## xed
 
-try `xed` 
+try `xed`
 
 ---
 
@@ -553,6 +585,7 @@ try `xed`
 rm     # remove file(s)
 rmdir  # remove dir - must be empty
 ~~~
+
 try to `rm` directory  - what happens?
 document
 
@@ -566,9 +599,12 @@ try again with `rm -r`
 ---
 
 ## Renaming and moving files `mv`
+
 command `mv` means move
 (hashtag `#` mark commentary)
+
 ### exercise:
+
 ~~~
 mkdir data
 xed samples.txt # create some text file and save it from file menu
@@ -584,15 +620,17 @@ ls data/
 ---
 
 # Pipes and Filters
- - How can I combine existing commands to do new things
- - Redirect a command's output to a file.
- - Process a file instead of keyboard input using redirection.
- -  Construct command pipelines with two or more stages 
- -  Unix's 'small pieces, loosely joined' philosophy."
+
+- How can I combine existing commands to do new things
+- Redirect a command's output to a file.
+- Process a file instead of keyboard input using redirection.
+- Construct command pipelines with two or more stages
+- Unix's 'small pieces, loosely joined' philosophy."
 
 ---
 
 ## keypoints
+
 - `cat` displays the contents of its inputs.
 - `head` displays the first few lines of its input.
 - `tail` displays the last few lines of its input.
@@ -607,16 +645,18 @@ ls data/
 ---
 
 ## example
+
 go to directory:
 
 `~/Desktop/bioinformatics/data/molecules` and list files in directory:
- 
-~~~
+
+~~~bash
 cd ~/Desktop/bioinformatics/data/molecules
 ls 
 ~~~
 
 results:
+
 ~~~
 cubane.pdb    ethane.pdb    methane.pdb
 octane.pdb    pentane.pdb   propane.pdb
@@ -643,13 +683,15 @@ wc -w *.pdb   # number of words
 - `p*.pdb` only matches > `pentane.pdb` and `propane.pdb`
 
 `?` is also a wildcard, but it only matches a single character
+
 - `p?.pdb` would match `pi.pdb` or `p5.pdb`
-    
+
 When the shell sees a wildcard, it expands the wildcard to create a list of matching filenames *before* running the command that was asked for.
 
 ---
 
 ## Examples
+
 try in `molecules` directory
 
 ~~~
@@ -660,6 +702,7 @@ ls ?????.pdb
 ---
 
 ## Example - check data integrity using md5 check sum
+
 The risk of data corruption during transfers is a concern when transferring large datasets. It is important to explicitly check the transferred data’s integrity with check‐sums. Checksums are very compressed summaries of data, computed in a way that
 even if just one bit of the data is changed, the checksum will be different.
 
@@ -677,6 +720,7 @@ md5sum -c original_md5sums.txt
 ---
 
 # How to save output from program to file
+
 - program arguments (e.g. -o filename)
 - `>` redirection
 
@@ -690,14 +734,16 @@ cat lengths.txt
 - The greater than symbol, `>`, tells the shell to **redirect** the command's output to a file instead of printing it to the screen.
 - If the file exists, it will be silently overwritten, which may lead to data loss and thus requires some caution.
 
-**Exercise:** how do you save md5 check sum of all pdb file to `md5sums.txt` file? 
+**Exercise:** how do you save md5 check sum of all pdb file to `md5sums.txt` file?
 
 ---
 
 # displaying files
+
 - `cat` print whole file(s) on the screen
 - `less` display page by page
 - `head` and `tail` print  beggining or end of file
+
 ---
 
 # sorting
@@ -711,6 +757,7 @@ sort -n lengths.txt
 ~~~
 
 correct results
+
 ~~~
   9  methane.pdb
  12  ethane.pdb
@@ -730,32 +777,38 @@ by putting `> sorted-lengths.txt` after the command
 $ sort -n lengths.txt > sorted-lengths.txt
 $ head -n 1 sorted-lengths.txt
 ~~~
+
 Using the parameter `-n 1` with `head` tells it that we only want the first line of the file; `-n 20` would get the first 20, and so on.
 
 ---
 
 # Pipes
+
 ~~~
 $ sort -n lengths.txt | head -n 1
 ~~~
 
 - The vertical bar, `|`, between the two commands is called a **pipe**.
--  It tells the shell that we want to use the output of the command on the left as the input to the command on the right. 
+- It tells the shell that we want to use the output of the command on the left as the input to the command on the right.
 - we can chain multiple commands using pipes
+
 ~~~
 $ wc -l *.pdb | sort -n
 ~~~
 
 ---
 
-![Redirects and Pipes](fig/redirects-and-pipes.png)
+![Redirects and Pipes](../fig/redirects-and-pipes.png)
+
 - linux -  lots of simple tools that each do one job well, and that work well with each other.
 - this programming model is called "pipes and filters".
 
 ---
 
 # redirecting using `>` or `>>`'
+
 try:
+
 ~~~
 echo "hello" 
 echo "hello" > testfile01.txt
@@ -765,6 +818,7 @@ cat testfile01.txt
 echo "hello" >> testfile01.txt
 cat testfile01.txt
 ~~~
+
 what is the difference?
 `>>` append to existing file
 `>` overwrite existing file
@@ -775,10 +829,12 @@ what is the difference?
 
 wget is useful for quickly downloading a file from the command line—for example,
 human chromosome 22 from the GRCh37 (also known as hg19) assembly version:
+
 ~~~
 cd ~/Downloads
 wget http://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/chr22.fa.gz
 ~~~
+
 ---
 
 # Example - using `seqkit` program
@@ -787,6 +843,7 @@ Program `seqkit` can be used for analysis and parsing of fasta/fastq sequences.
 ([https://bioinf.shenwei.me/seqkit/usage/](https://bioinf.shenwei.me/seqkit/usage/))
 
 See usage of `seqkit` program:
+
 ~~~
 seqkit -h
 ~~~
@@ -797,8 +854,8 @@ Basic statistic about fasta or fastq sequences can be obtained using command `se
 seqkit stat ~/Downloads/chr22.fa.gz
 seqkit stat ~/Desktop/bioinformatics/data/sequences/*.fasta
 ~~~
----
 
+---
 
 # Advanced topics
 
@@ -832,14 +889,17 @@ done
 ~~~
 
 ---
+
 ## Using scripts
 
 How we can reuse commands?
 
 Create file:
+
 ~~~
 gedit sample_script.sh
 ~~~
+
 insert to file and save:
 
 ~~~
@@ -849,7 +909,9 @@ do
     head -n 3 $FILENAME
 done
 ~~~
+
 to run :
+
 ~~~
 bash sample_script.sh
 ~~~
@@ -859,18 +921,22 @@ bash sample_script.sh
 ## scripts arguments
 
 create script `test_script.sh`:
-~~~
+
+~~~bash
 echo $1
 echo $2
 echo $3
 ~~~
+
 try:
+
 ~~~
 bash test_script.sh A B C
 ~~~
+
 iterate over all arguments `$@`:
 
-~~~
+~~~bash
 for i in $@
 do
   echo $i
@@ -880,6 +946,7 @@ done
 ---
 
 ## Finding Things
+
 - How can I find files
 - How can I finth things in files?
 - `grep` finds and prints lines in files that match a pattern.
@@ -891,8 +958,8 @@ done
 
 grep syntax:
 grep [OPTION]... PATTERN [FILE]...
-        
-~~~
+
+~~~bash
 cd ~/Desktop/bioinformatics/data
 ls
 less Dm_annotation.gtf
@@ -903,11 +970,11 @@ grep Alg-2 Dm_annotation.gtf
 grep Alg-2 Dm_annotation.gtf > Alg-2.gtf
 ~~~
 
-
 ---
 
 Use grep to analyze fasta files:
-~~~
+
+~~~bash
 # count number of sequences in fasta:
 cd  ~/Desktop/bioinformatics/data
 # in the next command quotes around > are important!
@@ -916,9 +983,10 @@ grep -c ">" short-reads.fasta
 grep ">" short-reads.fasta
 
 ~~~
+
 ---
 
-~~~
+~~~bash
 # `grep` other useful options
 # find sequences which contain N character - unknown base
 grep -n N short-reads.fasta
@@ -934,11 +1002,9 @@ grep -n -i n short-reads.fasta
 grep --help
 ~~~
 
-
 ## Find command
 
-
-![File Tree for Find Example](fig/find-file-tree.svg)
+![File Tree for Find Example](../fig/find-file-tree.svg)
 
 ~~~
 find .
@@ -947,7 +1013,7 @@ find .
 - the `.` on its own means the current working director
 - `find`'s output is the names of every file and directory under the current working directory.
 
-~~~
+~~~bash
 # try this in ~/Desktop/bioinformatics/data
 find . -type d   # directories
 find . -type f   # files
@@ -957,17 +1023,17 @@ find . -type f   # files
 
 ## wildcard matching:
 
-~~~
+~~~bash
 find . -name *.txt    # shell expands * before running find!
 
 find . -name '*.txt'
 ~~~
 
-
-
 ## combining find and other command
+
 use `$()` expression
-~~~
+
+~~~bash
 cd /home/manager/Desktop/shell-novice/filesystem/Users/nelle
 wc $(find ./data -name '*.txt')
 # is equivalent to :
@@ -976,22 +1042,24 @@ wc ./data/one.txt ./data/two.txt ./haiku.txt
 
 ---
 
-## combining grep and find 
+## combining grep and find
 
- - first find files which match pattern
- - second - look for another pattern inside those files
- try in `Users/nelle` directory
- 
-~~~
+- first find files which match pattern
+- second - look for another pattern inside those files
+  try in `Users/nelle` directory
+
+~~~bash
 grep FE  $(find .. -name '*.pdb')
 ~~~
 
 ---
-# running command line blast exercise:
+
+# Running command line blast exercise:
+
 visit `ftp://ftp.ncbi.nih.gov/refseq/M_musculus/mRNA_Prot`
 Download sequences and create blast database
 
-~~~ 
+~~~bash
 cd ~/Desktop
 mkdir blast_test
 cd blast_test
@@ -1009,7 +1077,8 @@ ls -l
 ---
 
 Downlad more sequences
-~~~
+
+~~~bash
 wget ftp://ftp.ncbi.nih.gov/refseq/D_rerio/mRNA_Prot/zebrafish.1.protein.faa.gz
 gunzip zebrafish.1.protein.faa.gz
 head zebrafish.1.protein.faa -n 8 > first_two.fasta
@@ -1027,7 +1096,7 @@ blastp -help
 # 7 = tabular with comment lines,
 
 ~~~
+
 how to redirect output to file?
 try this option:
 `-html`
-
