@@ -1,0 +1,13 @@
+* Bioinformatics exercises
+** [[./shell_introduction.md][Introduction to shell]] 
+** [[./sequence_alignment.org][Sequence Alignment]]
+** [[./blast_search.org][NCBI Blast]]
+** [[./sequence_mapping.org][Sequence Mapping]]
+** [[./Databases_exercise.org][Databases]]
+** [[./sequence_assembly.org][Sequence Assembly]]
+** [[./transciptome_assembly.org][Transcriptome Assembly]]
+** [[./transcriptomic_exercise.org][Differential expression using RNA-Seq]]
+** [[./Integrative_Genomics_Viewer.org][Integrative_Genomics_Viewer]]
+** [[./phylogenetic.org][Phylogenetics - tools]]
+** [[./protein_secondary_structure.org][Prediction of protein structure]]
+** [[./protein_tertiary_structure.org][Protein tertiary structure]]

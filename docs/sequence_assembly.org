@@ -337,7 +337,7 @@ velvetg run_25_paired -ins_length 350
 
  Copy file with script to Metacentrum frontend:
 - Use can use program filezilla to transfer data to you home directory =/storage/praha1/home/$LOGNAME=
-[[./fig/filezilla_tarkil.png]]
+[[../fig/filezilla_tarkil.png]]
 - alternatively copy script file using =scp= command
 #+begin_src bash
 # replace username with your ctredentials!

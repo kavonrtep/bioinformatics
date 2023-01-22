@@ -83,7 +83,7 @@ Other parameters can be set to dafaults:
 
 To align all data at once, use batch mode:
 
-[[./fig/rna_star_alignment.png]]
+[[../fig/rna_star_alignment.png]]
 
 Output of RNA-STAR are alingments in BAM format. Click on eye icon and inspect
 BAM file. Mapping can be also viewed from USCS genome or using IGV browser. 
@@ -91,13 +91,13 @@ BAM file. Mapping can be also viewed from USCS genome or using IGV browser.
 * convert bam files to feature count
  
 We will count individual reads mapped to gened using tool =featureCounts=. 
-[[./fig/featureCount.png]]
+[[../fig/featureCount.png]]
 
 * Test for differential expression with DESeq2 tool
 Set test according to screenshot below, also, set Output normalized counts table
 to =yes=
 
-[[./fig/deseq2.png]]
+[[../fig/deseq2.png]]
 
 Three new datasets will be created:
 1/ table with normalized expression values,

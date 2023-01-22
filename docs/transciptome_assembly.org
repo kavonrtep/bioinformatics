@@ -51,7 +51,7 @@ using program Filezilla.
 - start Filezilla
 - open =File/Site Manager=
 - use =New Site= button to set connection:
-[[./fig/filezilla_example.png]]
+[[../fig/filezilla_example.png]]
 
 - connect to server
 - on remote site create new directory =rna-seq=

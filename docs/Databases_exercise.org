@@ -19,6 +19,7 @@ or on main NBCI page switch to *Nucleotide* database
 - panel on the right shows available filters - you can restrict your
   search to records from a specific source database, such as the curated
   *RefSeq* database. What results dou you get when you filter your search?
+  #+END_SRC
 ** Reusing previous searches
 In advanced search, previous searches are recorded and can be used to build new
 queries

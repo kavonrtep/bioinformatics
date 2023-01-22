@@ -23,7 +23,7 @@ To run *dotter*, open terminal window and  type "dotter" followed by two file na
 #+BEGIN_SRC bash
 dotter file1.fasta file2.fasta
 #+END_SRC
-Sequences fro dotter program must be provided in [[./file_formats.org#the-fasta-format][FASTA format]]
+Sequences from dotter program must be provided in [[./file_formats.org#the-fasta-format][FASTA format]]
 
 
 ** Exercise - structure of HER proteins - Human epidermal growth receptors
@@ -165,7 +165,7 @@ make dotplot from following sequences stored in file:
 what is relation between sequences?
  
 solution:
-[[./fig/scheme_dotter_overlap.png]]
+[[../fig/scheme_dotter_overlap.png]]
 
 ** Exercise - identification of problems in sequences from SRA database
 *** Illumina data : SRR2911427  (Migratory locust WGS)
@@ -347,4 +347,4 @@ LSSDGLLTIKAPMKALPPPQTERLVQITQTGPSSKEDNAKKVETSTA
 
 * Amino Acid codes
 
-[[./fig/aa_codes.png]]
+[[../fig/aa_codes.png]]

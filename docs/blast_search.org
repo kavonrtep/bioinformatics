@@ -131,16 +131,15 @@ explan differences in commands
 #+end_comment
 
 Basic use of blast commands
-#+BEGIN_SRC shell
-# create database:
-makeblastdb -dbtype nucl -in  dna_sequences.fasta
-# or for proteins: 
-makeblastdb -dbtype prot -in  prot_sequences.fasta
-
+#+BEGIN_SRC bash
+  # create database:
+  makeblastdb -dbtype nucl -in  dna_sequences.fasta
+  # or for proteins:
+  makeblastdb -dbtype prot -in  prot_sequences.fasta
   # nucleotide - nucleotide search
-blastn -db datatabase_file -query query_sequences.fasta -out output_file
-
+  blastn -db database_file -query query_sequences.fasta -out output_file
 #+END_SRC
+
 
 The most used blast options:
 #+begin_example
