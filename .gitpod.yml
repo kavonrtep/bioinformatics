@@ -4,7 +4,7 @@ tasks:
     init: |
       echo 'init script' # runs during prebuild => https://www.gitpod.io/docs/configure/projects/prebuilds
       sudo apt-get update
-      sudo apt-get install ncbi-blast+ samtools muscle 
+      sudo apt-get install -y ncbi-blast+ samtools muscle 
       wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh && bash Miniconda3-latest-Linux-x86_64.sh -b -p $HOME/miniconda
       source "${HOME}/miniconda/etc/profile.d/conda.sh"
       conda init
