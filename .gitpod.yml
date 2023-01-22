@@ -6,6 +6,7 @@ tasks:
       sudo apt-get update && install ncbi-blast+ samtools muscle 
       wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh && bash Miniconda3-latest-Linux-x86_64.sh -b -p $HOME/miniconda
       source "${HOME}/miniconda/etc/profile.d/conda.sh"
+      conda init
       export PATH="${HOME}/miniconda/bin:$PATH"
     command: echo 'start script'
 
