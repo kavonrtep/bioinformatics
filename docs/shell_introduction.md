@@ -2,9 +2,9 @@
 marp: false
 ---
 # Introducing the Shell
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/kavonrtep/bioinformatics)
 
-based on Software Carpentry course material:
-
+Based on Software Carpentry course material:
 [https://software-carpentry.org](https://software-carpentry.org)
 
 and Bioinformatics Data Skills book: [http://shop.oreilly.com/product/0636920030157.do](http://shop.oreilly.com/product/0636920030157.do)
