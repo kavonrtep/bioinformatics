@@ -26,7 +26,7 @@ dotter file1.fasta file2.fasta
 Sequences from dotter program must be provided in [[./file_formats.org#the-fasta-format][FASTA format]]
 
 
-** Exercise - structure of HER proteins - Human epidermal growth receptors
+** Exercise 1 - structure of HER proteins - Human epidermal growth receptors
 
 - download protein sequences of receptor protein-tyrosine kinase from Uniprot:
 | accessions | name        |
@@ -93,7 +93,15 @@ backup of sequences is stored in ~/Desktop/bioinformatics/data/dotter_sequences/
 insertion - KTLSP
 #+END_COMMENT
 
-** Exercise - Locate exon/intron boundaries using dotter (splice sites).
+** Exercise 2 - comparison of HOX proteins
+#+begin_src 
+wget https://rest.uniprot.org/uniprotkb/P49639.fasta
+wget https://rest.uniprot.org/uniprotkb/P20719.fasta
+wget https://rest.uniprot.org/uniprotkb/P09067.fasta
+cat P*.fasta > all.fasta
+#+end_src
+
+** Exercise 3 - Locate exon/intron boundaries using dotter (splice sites).
 - download sequence AC108130.3 from genbank, save only region from 60000 to 119999 
 - download cDNA sequence of GABA A receptor: https://www.ncbi.nlm.nih.gov/nuccore/21265167?report=fasta
 - run dotter on these two sequences, identify exon/intron structure

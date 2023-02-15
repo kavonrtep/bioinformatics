@@ -1,5 +1,7 @@
 * Bioinformatics exercises
 
+[[https://gitpod.io/#https://github.com/kavonrtep/bioinformatics][https://gitpod.io/button/open-in-gitpod.svg]]
+
 ** [[./docs/shell_introduction.md][Introduction to shell]] 
 ** [[./docs/sequence_alignment.org][Sequence Alignment]]
 ** [[./docs/blast_search.org][NCBI Blast]]
