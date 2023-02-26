@@ -85,8 +85,12 @@ cat *.fasta > all_erb.fasta # first we need concatenated sequences in single fas
 dotter all_erb.fasta all_erb.fasta
 #+end_src
 
-Domain structure of ERBB2 protein
+Domain structure of *ERBB2* protein:
 [[../fig/ERBB2.png]]
+
+
+Domain structure of *ERBB3* protein:
+[[../fig/ERBB3.png]]
 
 
 
