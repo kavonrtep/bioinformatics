@@ -115,7 +115,6 @@ dotter all_hox.fasta all_hox.fasta
 #+end_src
 Which paires of protein are more similar to each other?
 
-
 ** Exercise 3 - Locate exon/intron boundaries using dotter (splice sites).
 - download sequence AC108130.3 from genbank, save only region from 60000 to 119999 
 - download cDNA sequence of GABA A receptor: https://www.ncbi.nlm.nih.gov/nuccore/21265167?report=fasta
@@ -171,7 +170,7 @@ dotter tandem_repeat,fasta tandem_repeat.fasta
 
 ** Exercise 5 - identification of insertions, deletions, duplications
 Compare two genomic regions =a_region= and =b_region=
-- first do selfcomparison for each sequence
+- first do self comparison for each sequence
 - then compare =a_region= against =b_region=
 - What you can say about these genomic regions? Are there any insertions,
   duplications or deletions?
@@ -343,7 +342,6 @@ LSSDGLLTIKAPMKALPPPQTERLVQITQTGPSSKEDNAKKVETSTA
 - open sequences from file menu.
 - align sequences =Web service/Alignment/Mafft with defaults=
  
-
 *** Option 2: Use web browser interface:
 - go to http://www.ebi.ac.uk/Tools/msa/clustalo/
 - paste your sequences and align
