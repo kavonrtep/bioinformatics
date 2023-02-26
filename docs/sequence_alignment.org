@@ -133,7 +133,7 @@ dotter AC108130.3.fna GBRA1_HUMAN.fna   # genome vs protein
 # Data are also available in ~/Desktop/bioinformatics/data/dotter_sequences
 When using =dotter= to compare  DNA to protein, DNA sequence must be in forward orientation!
 
-** Exercise 4 - identification of repeats
+** Exercise 4 - Identification of repeats
 
 Distances between diagonal parallel lines can be used to estimate length of monomer in tandem repeat.
 
@@ -145,7 +145,7 @@ Distances between diagonal parallel lines can be used to estimate length of mono
 - can you identify palindromes in the sequence? 
 #+begin_src bash
 # copy sequence to current directory
-cp ~/Desktop/Bioinformatics/inverted_repeat.fasta .
+cp ~/Desktop/Bioinformatics/data/dotter_sequences/inverted_repeat.fasta .
 # make dotplot
 dotter inverted_repeat.fasta inverted_repeat.fasta
 #+end_src
@@ -156,7 +156,7 @@ Make dotplot of sequence which contain LTR retrotransposon against itself.
 - What is the length of the whole LTR retrotransposon?
 - What is the length of LTR?
 #+begin_src bash
-cp ~/Desktop/Bioinformatics/direct_repeat.fasta .
+cp ~/Desktop/Bioinformatics/data/dotter_sequences/direct_repeat.fasta .
 dotter direct_repeat.fasta direct_repeat.fasta
 #+end_src
 **** Tandem repeat
@@ -164,11 +164,11 @@ Make dotplot of sequence containing tandem repeat.
 - how do you interpret dotplot?
 - what is a monomer length of tandem repeat
 #+begin_src bash
-cp ~/Desktop/Bioinformatics/tandem_repeat.fasta .
+cp ~/Desktop/Bioinformatics/data/dotter_sequences/tandem_repeat.fasta .
 dotter tandem_repeat,fasta tandem_repeat.fasta
 #+end_src
 
-** Exercise 5 - identification of insertions, deletions, duplications
+** Exercise 5 - Identification of insertions, deletions, duplications
 Compare two genomic regions =a_region= and =b_region=
 - first do self comparison for each sequence
 - then compare =a_region= against =b_region=
@@ -176,24 +176,24 @@ Compare two genomic regions =a_region= and =b_region=
   duplications or deletions?
 
 #+begin_src bash
-cp ~/Desktop/Bioinformatics/*_region.fasta .
+cp ~/Desktop/Bioinformatics/data/dotter_sequences/*_region.fasta .
 dotter a_regions.fasta a_region.fasta
 dotter b_regions.fasta b_region.fasta
 dotter a_regions.fasta b_region.fasta
 #+end_src>
 
-** overlaping sequences
+** Exercise 6 - Overlapping sequences
 make dotplot from following sequences stored in file:
 #+begin_example
 ~/Desktop/bioinformatics/data/dotter_sequences/dna_examples/ovoverlaping_sequences.fasta
 #+end_example
 
 what is relation between sequences?
- 
+
 solution:
 [[../fig/scheme_dotter_overlap.png]]
 
-** Exercise - identification of problems in sequences from SRA database
+** Exercise - Identification of problems in sequences from SRA database
 *** Illumina data : SRR2911427  (Migratory locust WGS)
 # overlap, high NN proportion
 - download sequences from SRA database using =fastq-dump= command line program 
@@ -232,7 +232,7 @@ https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastn&PAGE_TYPE=BlastSearch&LI
 
 #+begin_comment
 # sequence 
-** whole genome/chromosome dotplot
+** Whole genome/chromosome dotplot
 
 - download part of genome assembly from Zea mays:
 - link   https://www.ncbi.nlm.nih.gov/nuccore/KV887992.1
