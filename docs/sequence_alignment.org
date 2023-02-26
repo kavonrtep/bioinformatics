@@ -164,7 +164,7 @@ Make dotplot of sequence containing tandem repeat.
 - how do you interpret dotplot?
 - what is a monomer length of tandem repeat
 #+begin_src bash
-cp ~/Desktop/Bioinformatics/data/dotter_sequences/tandem_repeat.fasta .
+cp ~/Desktop/bioinformatics/data/dotter_sequences/tandem_repeat.fasta .
 dotter tandem_repeat,fasta tandem_repeat.fasta
 #+end_src
 
@@ -176,10 +176,10 @@ Compare two genomic regions =a_region= and =b_region=
   duplications or deletions?
 
 #+begin_src bash
-cp ~/Desktop/Bioinformatics/data/dotter_sequences/*_region.fasta .
-dotter a_regions.fasta a_region.fasta
-dotter b_regions.fasta b_region.fasta
-dotter a_regions.fasta b_region.fasta
+cp ~/Desktop/bioinformatics/data/dotter_sequences/*_region.fasta .
+dotter a_region.fasta a_region.fasta
+dotter b_region.fasta b_region.fasta
+dotter a_region.fasta b_region.fasta
 #+end_src>
 
 ** Exercise 6 - Overlapping sequences
