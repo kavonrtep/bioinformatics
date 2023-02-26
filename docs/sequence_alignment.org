@@ -165,7 +165,7 @@ Make dotplot of sequence containing tandem repeat.
 - what is a monomer length of tandem repeat
 #+begin_src bash
 cp ~/Desktop/bioinformatics/data/dotter_sequences/tandem_repeat.fasta .
-dotter tandem_repeat,fasta tandem_repeat.fasta
+dotter tandem_repeat.fasta tandem_repeat.fasta
 #+end_src
 
 ** Exercise 5 - Identification of insertions, deletions, duplications
