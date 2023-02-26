@@ -152,21 +152,21 @@ dotter inverted_repeat.fasta inverted_repeat.fasta
 #+end_src
 
 **** Direct repeat
-https://www.ncbi.nlm.nih.gov/nuccore/AF049230.1?report=fasta&log$=seqview&format=text
+Boundary of transposable element is defined by long terminal repeat (LTR).
+Make dotplot of sequence which contain LTR retrotransposon against itself. 
+- What is the length of the whole LTR retrotransposon?
+- What is the length of LTR?
 #+begin_src bash
 cp ~/Desktop/Bioinformatics/direct_repeat.fasta .
+dotter direct_repeat.fasta direct_repeat.fasta
 #+end_src
 **** Tandem repeat
-https://www.ncbi.nlm.nih.gov/nuccore/KF293390.1?report=fasta&log$=seqview&format=text
-
-
-#+begin_src sh
-# sequences are downloaded in ~/Desktop/bioinformatics/data/dotter_sequences/dna_examples
-# go to directory with sequences
-# run
-dotter direct_repeat.fasta direct_repeat.fasta 
-dotter direct_repeat.fasta direct_repeat.fasta
-dotter inverted_repeat.fasta inverted_repeat.fasta
+Make dotplot of sequence containing tandem repeat.
+- how do you interpret dotplot?
+- what is a monomer length of tandem repeat
+#+begin_src bash
+cp ~/Desktop/Bioinformatics/tandem_repeat.fasta .
+dotter tandem_repeat,fasta tandem_repeat.fasta
 #+end_src
 
 ** overlaping sequences
