@@ -13,17 +13,25 @@ similarity.
 - Desktop applications:
   - dotter (https://www.sanger.ac.uk/science/tools/seqtools), linux only
   - gepard (http://cube.univie.ac.at/gepard)  - suitable for larger sequences, platform independent
+  - re-DOT-able https://www.bioinformatics.babraham.ac.uk/projects/redotable/
 - Web applications
   - YASS server (https://bioinfo.lifl.fr/yass/index.php), suitable for large sequences or whole chromosomes
   - D-genies (http://dgenies.toulouse.inra.fr/) - whole genome comparison
+  
     
-    
-
+** Dotter
 To run *dotter*, open terminal window and  type "dotter" followed by two file names:
 #+BEGIN_SRC bash
 dotter file1.fasta file2.fasta
 #+END_SRC
-Sequences from dotter program must be provided in [[./file_formats.org#the-fasta-format][FASTA format]]
+- Sequences from dotter program must be provided in [[./file_formats.org#the-fasta-format][FASTA format]]
+- Dotter can be used for protein-proten, DNA-DNA or protein-DNA comparison
+
+*** Dotter keyboard shortcuts
+to navigate in =dotter= program use mouse click to select region
+- To move cursor in dotter use *arrows* for vertical or diagonal direction
+- to move diagonally use ~<~, ~>~, ~[~ or  =]=. 
+- To zoom select area with mouse while holding middle mouse button.
 
 
 ** Exercise 1 - structure of HER proteins - Human epidermal growth receptors
@@ -41,31 +49,23 @@ data for this exercise could  be downloaded from directly from uniprot using the
 #+begin_src sh 
 mkdir -p data/dotter_sequences
 cd data/dotter_sequences
-wget https://www.uniprot.org/uniprot/P00533.fasta
-wget https://www.uniprot.org/uniprot/P21860.fasta
-wget https://www.uniprot.org/uniprot/Q15303.fasta
-wget https://www.uniprot.org/uniprot/O18735.fasta
+wget https://www.uniprot.org/uniprot/P00533.fasta -O ERBB2.fasta
+wget https://www.uniprot.org/uniprot/P21860.fasta -O ERBB3.fasta
+wget https://www.uniprot.org/uniprot/Q15303.fasta -O ERBB4.fasta
+wget https://www.uniprot.org/uniprot/O18735.fasta -O ERBB2_dog.fasta
 # check sequence statistics:
 seqkit stat *.fasta
 #+end_src
 
-To get better names for files we can modify wget commands:
-#+begin_src sh
-wget https://www.uniprot.org/uniprot/P00533.fasta -O ERBB2.fasta
-wget https://www.uniprot.org/uniprot/P21860.fasta -O ERB3.fasta
-wget https://www.uniprot.org/uniprot/Q15303.fasta -O ERB4.fasta
-wget https://www.uniprot.org/uniprot/O18735.fasta -O ERBB2_dog.fasta
-#+end_src
-
-
 - compare /ErbB2/ against /ErB3/. Notice the patterns
-  in the dot plot and try to find functional domains, for example cysteine rich
+  in the dotplot and try to find functional domains, for example cysteine rich
   regions 
-- compare /ErbB2/ with /ErbB2-dog/. Do you see the same pattern? There is an
-  insertion in the C-term of one of the sequences. Which sequence has the
-  insertion and what is it? Use the dotter sequence window to view the
-  sequences. You can make a magnified view by dragging out a region with the
-  middle mouse button (makes a new dot plot)
+- try different dotplot stringency using slider on gray-scale strip
+- sequences below dotplot correspond to position of blue cross, you can change
+  the position of cross either using mouse or  by keyboard shortcuts.
+- click on the line and then use arrows to find a good alignment.
+- when you identify match, move along diagonal.
+- compare /ErbB2/ with /ErbB2-dog/. Do you see the same pattern? 
 - compare all proteins to all proteins (concatenate all four FASTA file into one sequence using ~cat~ command)
 
   
@@ -76,16 +76,18 @@ make aha slide for this task
   #+end_comment
 
 
+
 #+begin_src sh 
-dotter P00533.fasta P21860.fasta # human ERBB2 vs human ERB3  (paralogs)
-dotter P00533.fasta O18735.fasta  # human ERBB2 vs dog ERBB2  (orthologs)
+dotter ERBB2.fasta ERBB3.fasta # human ERBB2 vs human ERB3  (paralogs)
+dotter ERBB2.fasta ERBB2_dog.fasta  # human ERBB2 vs dog ERBB2  (orthologs)
 # all to all comparison:
 cat *.fasta > all_erb.fasta # first we need concatenated sequences in single fasta file
 dotter all_erb.fasta all_erb.fasta
 #+end_src
-to navigate in =dotter= program use mouse click to select region
-- To move cursor in dotter use *arrows* for vertical or diagonal direction
-- to move diagonally use ~<~, ~>~, ~[~ or  =]= ">" and "<"  to move diagonally. To zoom select area with mouse while holding middle mouse button.
+
+Domain structure of ERBB2 protein
+[[../fig/ERBB2.png]]
+
 
 
 #+BEGIN_COMMENT
@@ -98,6 +100,7 @@ insertion - KTLSP
 wget https://rest.uniprot.org/uniprotkb/P49639.fasta
 wget https://rest.uniprot.org/uniprotkb/P20719.fasta
 wget https://rest.uniprot.org/uniprotkb/P09067.fasta
+
 cat P*.fasta > all.fasta
 #+end_src
 

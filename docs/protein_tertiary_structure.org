@@ -7,7 +7,7 @@
   
 ** Predicting protein 3D structure
 - Swiss-Model   https://swissmodel.expasy.org/
-- I-TASSER https://zhanglab.ccmb.med.umich.edu/I-TASSER
+- I-TASSER https://zsk-xJekDddzJCBA59Zh62CzT3BlbkFJ8116sImRthXO6wIXR8wAhanglab.ccmb.med.umich.edu/I-TASSER
 - Alphafold  https://colab.research.google.com/github/deepmind/alphafold/blob/main/notebooks/AlphaFold.ipynb or 
   https://usegalaxy.eu/
 
