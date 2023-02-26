@@ -169,6 +169,20 @@ cp ~/Desktop/Bioinformatics/tandem_repeat.fasta .
 dotter tandem_repeat,fasta tandem_repeat.fasta
 #+end_src
 
+** Exercise 5 - identification of insertions, deletions, duplications
+Compare two genomic regions =a_region= and =b_region=
+- first do selfcomparison for each sequence
+- then compare =a_region= against =b_region=
+- What you can say about these genomic regions? Are there any insertions,
+  duplications or deletions?
+
+#+begin_src bash
+cp ~/Desktop/Bioinformatics/*_region.fasta .
+dotter a_regions.fasta a_region.fasta
+dotter b_regions.fasta b_region.fasta
+dotter a_regions.fasta b_region.fasta
+#+end_src>
+
 ** overlaping sequences
 make dotplot from following sequences stored in file:
 #+begin_example
