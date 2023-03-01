@@ -19,7 +19,7 @@ similarity.
   - D-genies (http://dgenies.toulouse.inra.fr/) - whole genome comparison
   
     
-** Dotter
+*** Dotter
 To run *dotter*, open terminal window and  type "dotter" followed by two file names:
 #+BEGIN_SRC bash
 dotter file1.fasta file2.fasta
@@ -33,6 +33,14 @@ to navigate in =dotter= program use mouse click to select region
 - to move diagonally use ~<~, ~>~, ~[~ or  =]=. 
 - To zoom select area with mouse while holding middle mouse button.
 
+*** Gepard 
+Gepard is Java based program, also available on Windows or MacOS. See https://cube.univie.ac.at/gepard
+To run gepard:
+#+begin_src 
+conda activate gepard
+gepard
+#+end_src
+In Graphical user interface select pair of sequences you want to compare. Test different word size settings
 
 ** Exercise 1 - structure of HER proteins - Human epidermal growth receptors
 
