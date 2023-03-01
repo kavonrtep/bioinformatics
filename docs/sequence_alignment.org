@@ -135,8 +135,6 @@ When using =dotter= to compare  DNA to protein, DNA sequence must be in forward 
 
 ** Exercise 4 - Identification of repeats
 
-Distances between diagonal parallel lines can be used to estimate length of monomer in tandem repeat.
-
 *** example repeats in DNA sequences 
 **** Inverted repeat
  Triticum aestivum DNA, mobile element MITE contains inverted repeat. Compare the
@@ -163,6 +161,7 @@ dotter direct_repeat.fasta direct_repeat.fasta
 Make dotplot of sequence containing tandem repeat.
 - how do you interpret dotplot?
 - what is a monomer length of tandem repeat
+Hint: distances between diagonal parallel lines can be used to estimate length of monomer in tandem repeat.
 #+begin_src bash
 cp ~/Desktop/bioinformatics/data/dotter_sequences/tandem_repeat.fasta .
 dotter tandem_repeat.fasta tandem_repeat.fasta
@@ -180,8 +179,7 @@ cp ~/Desktop/bioinformatics/data/dotter_sequences/*_region.fasta .
 dotter a_region.fasta a_region.fasta
 dotter b_region.fasta b_region.fasta
 dotter a_region.fasta b_region.fasta
-#+end_src>
-
+#+end_src
 ** Exercise 6 - Overlapping sequences
 make dotplot from following sequences stored in file:
 #+begin_example
@@ -193,6 +191,13 @@ what is relation between sequences?
 solution:
 [[../fig/scheme_dotter_overlap.png]]
 
+** Exercise 7 - Compare two genomic regions:
+#+begin_src 
+cp ~/Desktop//bioinformatics/data/dotter_sequences/genome?_part.fasta ,
+dotter genomeA.fasta genomeB.fasta
+#+end_src
+
+How would characterize difference between genomes?
 ** Exercise - Identification of problems in sequences from SRA database
 *** Illumina data : SRR2911427  (Migratory locust WGS)
 # overlap, high NN proportion
@@ -304,63 +309,64 @@ blast2seq can be used instead of =needle=. It also provide graphical view of ali
 
 You can paste either AA sequences to the blast form or you can use just accession ID (P046256, P04412).
 
-* Multiple alignment from HSPB8 proteins
-purpose of this exercise is to obtain set of orthologs of HSPB8 protein (Heat shock protein beta-8), create multiple sequence alignment and identify conserved regions.
+* Exercise - Multiple sequence alignment - Cyclin-dependent kinase
+[[https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Cyclin-dependent_kinase_structure.pdf/page1-216px-Cyclin-dependent_kinase_structure.pdf.jpg
+]]Cyclin-dependent kinases (CDKs) are a group of enzymes that regulate the
+progression of the cell cycle by adding phosphate groups to other proteins, a
+process called phosphorylation. They are activated by binding to regulatory
+proteins called cyclins, which undergo cyclic changes in abundance and activity
+throughout the cell cycle.
 
-- obtain protein sequence of HSPB8 from NCBI, 
-# gene link is: https://www.ncbi.nlm.nih.gov/gene/26353
-- protein link is https://www.ncbi.nlm.nih.gov/protein/NP_055180.1
-- from right menu select =analyze this sequence/Run BLAST=
-- select search against sefseq_protein database, set algorithm of search to DELTA-BLAST (Domain Enhanced Lookup Time Accelerated BLAST)
-- Limit blast search to the following species (add species to =Organims= field):
-  - Sus scrofa (pig) 
-  - Danio rerio (zebrafish) 
-  - Bos taurus (cattle)
-  - Mus musculus (house mouse)
-  - Xenopus laevis (African clawed frog)
-  - Drosophila melanogaster (fruit fly)
-  - Gallus gallus (chicken) 
-# list of accessions:  	XP_004934466 NP_523827 NP_001094427 NP_001079782 NP_109629 NP_001014955 NP_001094427 XP_001929620 NP_055180.1
-- select best hit from each species :
-- download fasta file for selected proteins. 
-# make sure that other sequences are unselected!
-- edit fasta file in text editor - remove gaps, put the name of organism at the beginning of the description line e.g.:
-#+BEGIN_EXAMPLE
->chicken XP_004934466.1 PREDICTED: heat shock protein beta-8 [Gallus gallus]
-MADSQLPFSCHYPGRRSLRDPFREPGLTSRLLDDDFGLSPFPGDLTADWPDWARPRLTPTWPGPLRARAS
-AMAPGYSTRFGGYPESRSPAPTSREPWKVCVNVHSFKPEELTVKTKDGYVEVSGKHEEQQVEGGIVSKNF
-TKKIQLPYEVDPITVFASLSPEGLLIIEAPQIPPYQQYGEGGCSGEIPLESPEATCA
->fruitfly NP_523827.1 lethal (2) essential for life, isoform A [Drosophila melanogaster]
-MSVVPLMFRDWWDELDFPMRTSRLLDQHFGQGLKRDDLMSSVWNSRPTVLRSGYLRPWHTNSLQKQESGS
-TLNIDSEKFEVILDVQQFSPSEITVKVADKFVIVEGKHEEKQDEHGYVSRQFSRRYQLPSDVNPDTVTSS
-LSSDGLLTIKAPMKALPPPQTERLVQITQTGPSSKEDNAKKVETSTA
-...
-#+END_EXAMPLE
-** Create multiple sequences alignment:
-*** Option 1:  Jalview program
-- start jalview program from web: http://www.jalview.org/
-- open sequences from file menu.
-- align sequences =Web service/Alignment/Mafft with defaults=
- 
-*** Option 2: Use web browser interface:
-- go to http://www.ebi.ac.uk/Tools/msa/clustalo/
-- paste your sequences and align
-- color alignment or go to result viewer to create visualization using Mview
-*** Option 4: Alignment using command line program.
+Create multiple sequence alignment for group of CDKs from human and mouse. Use
+program ~mafft~.  use default setting. Before running
+~mafft~ check help documentation using ~mafft --help~
 
-   #+begin_src sh
-   mafft HSP8.fasta > aligned_sequences_mafft.fasta
-   muscle -in HSP8.fasta -out aligned_sequences_muscle.fasta
-   #+end_src
-*** Option 4: Geneious Prime program
-- start Geneious
-- create new project folder
-- import sequences from file
-- create multiple sequence alignment from Align/Assemble/Multiple align. Use program MUSCLE
-- reorder sequences in alignments, try to edit alignment gaps
-  
 
-** Inspect MSA results
+#+begin_src bash
+mkdir cdk
+cd cdk
+cp ~Desktop/bioinformatics/data/alignment_sequences/CDK/cdk.fasta .
+mafft --help
+mafft cdk.fasta > cdk_fasta.aln
+
+#+end_src
+Inspect alignment using Jalview program. 
+- Try different coloring schemes-  clustal, percentage identity, hydrophobicity
+  and by conservation
+- Try to identify the most conserved regions.
+- What are the coordinates of most conserved region related to *CDK1* sequence.
+- Compare this conserved regions with conserved regions which can be identified
+  using *conserved domain database*.  use this ling for search
+  https://www.ncbi.nlm.nih.gov/Structure/cdd/wrpsb.cgi and CDK1 sequence below.
+#+begin_src text
+>CDK1
+MEDYTKIEKIGEGTYGVVYKGRHKTTGQVVAMKKIRLESEEEGVPSTAIREISLLKE
+LRHPNIVSLQDVLMQDSRLYLIFEFLSMDLKKYLDSIPPGQYMDSSLVKSYLYQILQ
+GIVFCHSRRVLHRDLKPQNLLIDDKGTIKLADFGLARAFGIPIRVYTHEVVTLWYRS
+PEVLLGSARYSTPVDIWSIGTIFAELATKKPLFHGDSEIDQLFRIFRALGTPNNEVW
+PEVESLQDYKNTFPKWKPGSLASHVKNLDENGLDLLSKMLIYDPAKRISGKMALNHP
+YFNDLDNQIKKM
+#+end_src
+
+* Exercise -  Multiple alignment from HSPB8 proteins
+Create MSA for set of orthologs of HSPB8 protein (Heat shock protein beta-8) and identify conserved regions.
+
+Make copy of of fasta file and then rename fasta headers:
+#+begin_src bash
+mkdir hspb8
+cd hsbb8
+cp ~/Desktop/bioinformatics/data/alignment_sequences/HSP8.fasta .
+gedit HSP8.fasta
+#+end_src
+Change the header from ~>XP_004934466.1 heat shock protein beta-8 [Gallus gallus]~ to ~>Gallus_gallus~
+Rename all sequences in the same way.
+
+Create alignment using ~mafft~ program.
+#+begin_src 
+mafft HSP8.fasta > HSP8_aln.fasta
+#+end_src
+
+Open resulting alignment in ~Jalview~ program.
 - Inspect alignment, Try different coloring schemes. (see https://www.jalview.org/help/html/colourSchemes/index.html)
 - What part of proteins is conserved?
 - compare conserved part with domains annotation
@@ -369,7 +375,146 @@ LSSDGLLTIKAPMKALPPPQTERLVQITQTGPSSKEDNAKKVETSTA
   - will you be able to identify conserved domain if you use only mouse, cow, pig and human sequences?
   - try to  select subset of sequences(mammals) and create alignment again. 
 - save alignment in =fasta= and and =msf= format, inspect the saved file using =less= command
+* Exercise - Multiple sequence alignment of the mitochondrial 16S gene
+The mitochondrial 16S gene is a widely studied genetic marker in molecular
+biology, which is used for species identification, phylogenetic analysis, and
+evolutionary studies. 16S gene codes for a RNA subunit of the mitochondrial
+ribosome and contains many regions with high substitution rates.
+We will use *MAFFT* to align the two sets of sequences, and visualize the
+resulting alignments with program called *AliView*. Alignments can be edited
+manually or automatically with the software *BMGE*, which determines the most
+reliable alignment positions based on the proportion of missing data and their
+entropy score.
+
+make new directory and copy sequences. Each sequence is iin one file. We will
+concatenate to single multi FASTA file using ~cat~ command
+
+#+begin_src bash
+mkdir MSA_16s
+cd MSA_16s
+cat ~/Desktop/bioinformatics/data/alignment_sequences/16s/*.fasta > 16s.fasta
+# get information about sequences
+seqkit stat 16s.fasta
+#+end_src
+Inspect resulting file with ~less~ command. 
+
+Align sequence using ~mafft~ program, at first use default setting. Before running
+~mafft~ check help documentation using ~mafft --help~
+
+#+begin_src bash
+mafft --help
+# align 16s with defaults
+mafft 16s.fasta > 16s_aln.fasta
+# explore output with less command
+less 16s_aln.fasta
+seqkit stats 16s_aln.fasta
+#+end_src
+
+Inspect alignment using ~Aliview~ program.
+#+begin_src bash
+~/Desktop/bioinformatics/bin/aliview 16s_aln.fasta
+#+end_src
+Inspect alignment. By default, ~mafft~ keep order of sequences in the alignment
+same as in input file. Close ~aliview~ and rerun ~mafft~ with ~reorder~ option. 
+#+begin_src 
+mafft --reorder 16s.fasta > 16s_aln.fasta
+#+end_src
+inspect alignment in ~Aliview~
+
+** Manual editing of alignment : 
+
+In the AliView window of 16s_aln.fasta, place the cursor on the sequence that
+bridges the first of the two large gaps near the end of the alignment (around
+bp 2000) and zoom in (ctrl + mouse wheel) until you can see the labels of the
+individual bases. You’ll see that the taxon responsible for these gaps is called
+/Balistecaprisc/. It appears that the sequence alignment for this taxon is correct
+up to this gap , but that the sequence is not homologous to other taxa between
+bp ~ 2000 and the end of the alignment.
+
+Use the cursor to select position begining of gap around 2000 bp of the
+‘Balistecaprisc’ sequence. Use ‘Expand selection Right’ in the ‘Selection’ menu.
+
+Remove this part of the ‘Balistecaprisc’ sequence using ‘Clear selected bases’
+in the ‘Edit’ menu or just press delete
+
+After removing this part of the ‘Balistecaprisc’ sequence, the two large gaps
+near the end are not bridged by any sequence anymore. Remove these gaps entirely
+using ‘Delete gap-only columns’ in the ‘Edit’ menu.
+
+Have a look at the regions which appears to be poorly aligned. Use the cursor to
+click in the ruler area (above the alignment) and select the regions delimited
+by boundary sites which appear to be reliably aligned, in contrast to the
+alignment block between these boundaries.
+
+In the ‘Align’ menu, click ‘Change default Aligner program > for realigning all
+(or selected blocks)’.
+
+Click the third radio button to select ‘Mafft-globalpair’ as the default
+algorithm for realignment. Make sure that the specified MAFFT installation path
+is correct, and confirm with ‘OK’.
+
+Click ‘Realign selected block’ in the ‘Align’ menu.
+
+Does the alignment look more reliable now? Once more, remove gap-only columns,
+and save the alignment file.
+
+check the lengths of resulting alignments.
+
+** Automatic evaluation of alignment
+*** using ~t_coffee~ program 
+(this can take several hours to finish)
+
+TCS is an alignment evaluation score that makes it possible to identify the most
+correct positions in an MSA. It has been shown that these positions are the most
+likely to be structuraly correct and also the most informative when estimating
+phylogenetic trees. The TCS evaluation and filtering procedure is implemented in
+the T-Coffee package and can be used to evaluate and filter any third party MSA
+
+The TCS is most informative when used to identify low-scoring portions within an
+MSA. It is also worth noting that the TCS is not informative when aligning less
+than five sequences.
+
+check is program t_coffee is installed, if not run:
+#+begin_src bash
+sudo apt-get install t_coffee
+#+end_src
+evaluate alignment:
+
+#+begin_src bash
+# this can take several minutes to finish
+t_coffee -infile  16s_aln.fasta -evaluate
+#+end_src
+
+*** using ~bmge~ program
+BMGE is able to perform biologically relevant trimming on a multiple alignment
+of DNA, codon or amino acid sequences. BMGE is designed to select regions in a
+multiple sequence alignment that are suited for phylogenetic inference. For each
+character, BMGE computes a score closely related to an entropy value.
+Calculation of these entropy-like scores is weighted with BLOSUM or PAM
+similarity matrices in order to distinguish among biologically expected and
+unexpected variability for each aligned character
+
+#+begin_src 
+conda create -n bmge -c conda-forge -c biconda bmge
+conda activate bmge
+#+end_src
+
+run ~bmgi~
+#+begin_src 
+bmge  -i 16s_aln.fasta -t DNA -of 16s_filtered.fasta -oh 16s_filtered.html
+#+end_src
+~bmge~ generates two output - html is suitable for viewing in web browser.
+fitered.fasta can be used for phylogenetic analysis.
+
+
+
 
 * Amino Acid codes
 
 [[../fig/aa_codes.png]]
+* Jalview
+- *Clustal X* color scheme
+https://www.jalview.org/help/html/colourSchemes/clustal.html 
+- *Blosum62* Gaps are coloured white. If a residue matches the consensus sequence residue at that
+position it is coloured dark blue. If it does not match the consensus residue
+but the 2 residues have a positive Blosum62 score, it is coloured light blue.
