@@ -196,7 +196,6 @@ solution:
 cp ~/Desktop//bioinformatics/data/dotter_sequences/genome?_part.fasta ,
 dotter genomeA.fasta genomeB.fasta
 #+end_src
-
 How would characterize difference between genomes?
 ** Exercise - Identification of problems in sequences from SRA database
 *** Illumina data : SRR2911427  (Migratory locust WGS)
@@ -310,8 +309,7 @@ blast2seq can be used instead of =needle=. It also provide graphical view of ali
 You can paste either AA sequences to the blast form or you can use just accession ID (P046256, P04412).
 
 * Exercise - Multiple sequence alignment - Cyclin-dependent kinase
-[[https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Cyclin-dependent_kinase_structure.pdf/page1-216px-Cyclin-dependent_kinase_structure.pdf.jpg
-]]Cyclin-dependent kinases (CDKs) are a group of enzymes that regulate the
+Cyclin-dependent kinases (CDKs) are a group of enzymes that regulate the
 progression of the cell cycle by adding phosphate groups to other proteins, a
 process called phosphorylation. They are activated by binding to regulatory
 proteins called cyclins, which undergo cyclic changes in abundance and activity
