@@ -1,6 +1,65 @@
+* BLAST
+** BLASTN - NCBI web interface
+Make nucleotine blast  search against following sequence:
+#+begin_src text
+>gi|202471|gb|M57671.1|OCOINS Octodon degus insulin mRNA, complete cds
+GCATTCTGAGGCATTCTCTAACAGGTTCTCGACCCTCCGCCATGGCCCCGTGGATGCATCTCCTCACCGT
+GCTGGCCCTGCTGGCCCTCTGGGGACCCAACTCTGTTCAGGCCTATTCCAGCCAGCACCTGTGCGGCTCC
+AACCTAGTGGAGGCACTGTACATGACATGTGGACGGAGTGGCTTCTATAGACCCCACGACCGCCGAGAGC
+TGGAGGACCTCCAGGTGGAGCAGGCAGAACTGGGTCTGGAGGCAGGCGGCCTGCAGCCTTCGGCCCTGGA
+GATGATTCTGCAGAAGCGCGGCATTGTGGATCAGTGCTGTAATAACATTTGCACATTTAACCAGCTGCAG
+AACTACTGCAATGTCCCTTAGACACCTGCCTTGGGCCTGGCCTGCTGCTCTGCCCTGGCAACCAATAAAC
+CCCTTGAATGAG
+#+end_src
+*** search I
+setting of the search:
+- In the section "Program Selection" select the option "Somewhat similar
+  sequences (blastn)"
+- Choose "Nucleotide collection (nr/nt)" as the search database. NR is the "Non
+  Redundant" database, which contains all non-redundant (non-identical)
+  sequences from GenBank and the full genome databases.
+- Check "Show results in a new window" and  Click the BLAST button to launch the search.
+After the search has completed, make yourself familiar with the BLAST output page. After a header with some information about the search, there are four main parts:
 
-* BLAST 
-** Protein BLAST - NCBI web interface
+**** Graphic Summary
+each hit is represented by a line showing which part of the query sequence the alignment covers. The lines are coloured according to alignment score.
+**** Descriptions
+a table with a one-line description of each hit with some alignment statistics, The columns in the Descriptions table are:
+- Description — the description line from the database
+- Max score — the alignment score of the best match (local alignment) between the query and the database hit
+- Total score — the sum of alignment scores for all matches (alignments) between the query and the database hit (if there is only one match per hit, these two scores are identical)
+- Query cover — the percentage of the query sequence that is covered by the alignment(s)
+- E value — the Expect value calculated from the Max score (i.e. the number of unrelated hits with that score or better you would expect to find for random reasons)
+- Ident — the percent identity in the alignment(s)
+- Accession — the accession number of the database hit.
+**** Alignments
+the actual alignments between the query and the database hits.
+**** Taxonomy
+Taxonomic summary of all positive hits 
+
+First, take a look at the best hit. Since our search sequence (the query) was taken from GenBank which is part of NR, we should find an identical sequence in the search. Make sure this is the case!
+Find the best hit from human (Homo sapiens) that is not a synthetic construct
+and answer following questions:
+- what is the identifier (Accession)?
+- what is the alignment score ("max score")?
+- what is the percent identity and query coverage?
+- what is the E-value?
+- are there any gaps in the alignment?
+*** Search II
+Make a new BLASTN search with the same query sequence, this time with select database
+ to Human genomic + transcript (Human G+T). For the best hits answer following:
+- what is the identifier (Accession)?
+- what is the alignment score ("max score")?
+- what is the percent identity and query coverage?
+- what is the E-value?
+- are there any gaps in the alignment?
+Compare hit of this search with hit from previous search.  You may have noticed
+that the E-value changed, while the alignment score did not. Why?
+
+*Hint*:  Expand the "Search summary" section near the top by clicking it. Compare
+E values and  the sizes (in basepairs) of the databases we used for the two BLAST searches
+
+** BLASTP - NCBI web interface
 The following is the product of a gene in C. elegans that seems to be important in development.
 #+begin_example
 >C.elegans protein
@@ -14,11 +73,8 @@ AHADGNISITSNCKIFVRSGYLDYTHGSEYSSKAHRFTPNESSFTVFDIRWAYMQMLRRSRSSNEAVRAQ
 AAAVAGYAPMSVMPAIMPDSGVDRMRRDFCTIAISFVKAWGDVYQRKTIKETPCWIEVTLHRPLQILDQL
 LKNSSQFGS
 #+end_example
-
-
 Use the protein-protein blast page to perform search against the non redundant
 protein database (nr) to identify protein and find its homologs.
-
 
 blast link : https://blast.ncbi.nlm.nih.gov/Blast.cgi
 
@@ -27,6 +83,8 @@ blast link : https://blast.ncbi.nlm.nih.gov/Blast.cgi
 #  Dwarfin sma-4, involved in TGF-beta pathway
 - Aside from the C. elegans proteins, what is the most significant hit? What is
   its identity and E-value?
+- switch for "graphic summary" - for blastp there is additional information
+  about identified conserved domains.
 # hypothetical protein FL83_19826 [Caenorhabditis latens], pval 0 but shorter alignemnt
 - Check also taxonomy report. How many hits was found total. How many hits was
   found in "chordata" taxonomy group.
@@ -39,8 +97,6 @@ blast link : https://blast.ncbi.nlm.nih.gov/Blast.cgi
   to vertebrates (taxid:7742)
 - What is the best hit in vertebrates. What is its accession, organism, Evalue,
   Identity and Similarity)
-
-
 
 ** BLASTX - NCBI web interface
 The part of genomic sequence of Twort bacteriophage is bellow. Use BLAST to
@@ -79,11 +135,9 @@ GAAATTAAATTAATAAAA
 - distance tree view (in blastp results)
 #+end_comment
 
-
-** blastx vs blastn
+** Identification of coding sequence using blastx vs blastn
 characterization of unknown DNA PCR amplified fragment from unknown
 non-cultivatable microorganism
-
 #+begin_example
 >clone12
 AACGGGCACGGGACGCATGTAGCTGGAACAGTGGCAGCCGTAAATAATAATGGTATCGGA
@@ -99,9 +153,28 @@ TATGCCGATAATTATTATGCTTATGGAGAGGGAACATCCATGGCTTGTCCACATGTCGCC
 GGCGCCGCC
 #+end_example
 
-Use =blastn= and =blastx= to characterize clone12. What tool is relevant to use?
 
-What kind of enzyme is coded by =clone12=?
+- use =blastn= and =blastx= to characterize clone12. What tool is relevant to use?
+- check DNA sequence using ORFfinder https://www.ncbi.nlm.nih.gov/orffinder/-
+- use =blastp= against longest ORF, compare results with blastx search. 
+- What kind of enzyme is coded by =clone12=?
+- does the clone12 represent complete CDS of putative protein?
+#+begin_comment
+in blastx AA alignment is truncated probably because of low complexity
+filtering, turn of filtering and run in again.
+Use *job name* for all searches and show history of searches
+#+end_comment
+- compare best hit from blastx directly using tblastx against DNA sequence of
+  clone12
+  - click on accession - this will take you to protein entry. 
+  - on protein entry page, click on left panel on *run BLAST*
+  - select * tblastn* - query is a protein accession (this represent query)
+  - select ~Align two or more sequences~
+  - second sequence is clone12 nucleotide sequence
+  - run blast and explore results
+  - inspect also dotplot page
+
+
 ** Using BLAST (blast2seq) to create local aligment for two sequences:
 Two sequences can be also comared using BLAST web interface. For comparison use:
 (two align two sequences to erach other - click on checkbox *Align two or more sequences*  in NCBI BLAST form)
@@ -321,7 +394,6 @@ blastp -query proteins.fasta -remote -db nr -out proteins_nr.txt -outfmt 6 -eval
 - which protein has more hits by blast
   
   
-
 
 * Localization of sequences in genome using BLAT in Ensemble genome
 

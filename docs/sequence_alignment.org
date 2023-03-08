@@ -514,7 +514,6 @@ fitered.fasta can be used for phylogenetic analysis.
 
 
 
-
 * Amino Acid codes
 
 [[../fig/aa_codes.png]]
