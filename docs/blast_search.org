@@ -175,8 +175,8 @@ Use *job name* for all searches and show history of searches
   - inspect also dotplot page
 
 ** Using BLAST (blast2seq) to create local aligment for two sequences:
-Two sequences can be also comared using BLAST web interface. For comparison use:
-(two align two sequences to erach other - click on checkbox *Align two or more sequences*  in NCBI BLAST form)
+Two sequences can be also compared using BLAST web interface. For comparison use:
+(two align two sequences to each other - click on checkbox *Align two or more sequences*  in NCBI BLAST form)
 - =ERB2_HUMAN= : http://www.uniprot.org/uniprot/P04626.fasta   
 - =EGFR_DROME= : http://www.uniprot.org/uniprot/P04412.fasta  
 paste these sequences to BLAST form. Use blastp.
@@ -204,6 +204,8 @@ explan differences in commands
 
 Basic use of blast commands
 #+BEGIN_SRC bash
+  makeblastdb -help
+  blastn -help
   # create database:
   makeblastdb -dbtype nucl -in  dna_sequences.fasta
   # or for proteins:
