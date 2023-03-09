@@ -174,7 +174,6 @@ Use *job name* for all searches and show history of searches
   - run blast and explore results
   - inspect also dotplot page
 
-
 ** Using BLAST (blast2seq) to create local aligment for two sequences:
 Two sequences can be also comared using BLAST web interface. For comparison use:
 (two align two sequences to erach other - click on checkbox *Align two or more sequences*  in NCBI BLAST form)
@@ -240,7 +239,7 @@ for complete options type =blastn -help=
 ** blastp exercise 1
 
 *** files in exercise:
-- query : =~/Desktop/bioinformatics/data/blast_data/protein.fasta=
+- query : =~/Desktop/bioinformatics/data/blast_data/proteins.fasta=
 - database : =~/Desktop/bioinformatics/data/blast_data/db/pdbaa=
 #+begin_comment
 input sequenc contain two proteins - sequence1 and sequence2
@@ -255,10 +254,10 @@ run protein blast with default parameters in terminal
   # go to directory with data:
   cd ~/Desktop/bioinformatics/data/blast_data
   # inspect the query file  protein.fasta
-  cat protein.fasta
+  cat proteins.fasta
   # usefull program for manupulation with sequences is *seqkit*
   # try:
-  seqkit stats protein.fasta
+  seqkit stats proteins.fasta
 
   # fasta file db/pdbaa will be used as database, it must be formated using
   # makeblastdb command to make data blast compatible
@@ -364,8 +363,8 @@ discuss type of sequence id in fasta - what is behind the first space
   less query_with_hits_aligned.fasta
    
 
-  # view alignemnt 
-  seqview query_with_hits_aligned.fasta
+  # view alignemnt with jalview program
+
 
 
 #+end_src

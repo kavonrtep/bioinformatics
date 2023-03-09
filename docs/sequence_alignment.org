@@ -513,11 +513,25 @@ bmge  -i 16s_aln.fasta -t DNA -of 16s_filtered.fasta -oh 16s_filtered.html
 fitered.fasta can be used for phylogenetic analysis.
 
 
-
 * Amino Acid codes
 
 [[../fig/aa_codes.png]]
 * Jalview
+
+- Jalview has *two navigation and editing modes*: _normal mode_, where editing and navigation is
+  performed using the mouse, and _cursor mode_ where editing and navigation are performed using
+  the keyboard. The *F2* key is used to switch between these two modes.
+- Navigation in cursor mode:
+  - Jump to Sequence n: Type a number n then press [S] to move to sequence (row) n.
+  - Jump to Column n: Type a number n then press [C] to move to column n in the alignment.
+  - Jump to Residue n: Type a number n then press [P] to move to residue number
+    n in the current sequence.
+- Overview of the whole alignment, especially when it is large. Select *View*
+⇒ *Overview Window*
+- Find sequence - *ctrl-F*
+
+
+
 - *Clustal X* color scheme
 https://www.jalview.org/help/html/colourSchemes/clustal.html 
 - *Blosum62* Gaps are coloured white. If a residue matches the consensus sequence residue at that
