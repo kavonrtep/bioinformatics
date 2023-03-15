@@ -512,6 +512,88 @@ bmge  -i 16s_aln.fasta -t DNA -of 16s_filtered.fasta -oh 16s_filtered.html
 ~bmge~ generates two output - html is suitable for viewing in web browser.
 fitered.fasta can be used for phylogenetic analysis.
 
+* Exercise - MSA of globins proteins
+ Create and analyze a multiple sequence alignment (MSA) of proteins from the globin family. Globins are oxygen-binding proteins found in many organisms, including humans. They play a crucial role in oxygen transport and storage. Some well-known globin family members are hemoglobin, myoglobin, and neuroglobin.
+
+Protein Sequence Set: Select protein sequences from different organisms representing hemoglobin, myoglobin, and neuroglobin. For example:
+
+- Human Hemoglobin Subunit Alpha (P69905)
+- Human Hemoglobin Subunit Beta (P68871)
+- Human Myoglobin (P02144)
+- Human Neuroglobin (Q9NPG2)
+- Mouse Hemoglobin Subunit Alpha (P01942)
+- Mouse Hemoglobin Subunit Beta (P02088)
+- Mouse Myoglobin (P04247)
+- Mouse Neuroglobin (Q9ER97)
+
+P69905; P68871; P02144; Q9NPG2; P01942; P02088; P04247; Q9ER97
+
+
+
+1. Which regions of the aligned sequences are conserved across all the globin
+family members? What might be the functional significance of these conserved
+regions?
+
+2. Can you identify any organism-specific or protein-specific sequence variations?
+What might be the evolutionary or functional implications of these differences?
+
+Inspect 3D structure of globon protein  - for example
+https://www.rcsb.org/3d-sequence/1OJ6?assemblyId=1
+
+#+begin_comment
+- use Jalview
+- mafft with defaults
+- show logo
+- try to show active site in 3d structure with heme
+*Answers*
+Answers for Interpretation:
+
+1. Conserved regions in the aligned sequences are typically found in the
+*heme-binding pocket* and the central helices, which form the core structure of
+globin proteins. The conservation of these regions indicates their functional
+importance in binding and interacting with heme, as well as maintaining the
+protein's structural integrity for proper function.
+
+2. sort protein based on pairwise similarities - it turn out that orthologs are
+   more similar than paralogs - myoglobins/hemoglobins and neuroglobins. All
+   globins bound oxigens but they have different oxigen affinity - so the
+   sequences are different. myoglobin and neuroglobin are monomer while 
+hemoglobin is tetramer
+#+end_comment
+
+
+
+* Exercise - serine proteases
+create and analyze an MSA of serine proteases, a family of enzymes that cleave
+peptide bonds in proteins. They play essential roles in digestion, blood
+clotting, and immune responses. Some well-known serine proteases include
+trypsin, chymotrypsin, and elastase.
+
+Human Trypsin-1 (P07477)
+Human Chymotrypsinogen B(P17538)
+Human Neutrophil Elastase (P08246)
+Mouse Trypsin-2 (P07146)
+Mouse Chymotrypsinogen B (Q9CR35)
+Mouse Neutrophil Elastase (Q3UP87)
+Drosophila melanogaster Serine proteinase stubble (Q05319)
+Drosophila melanogaster Chymotrypsin (Q9VVA6)
+Xenopus laevis Complement C3 (Q91701)
+Manduca sexta Chymotrypsinogen (Q25503)
+
+P07477; P17538; P08246; P07146; Q9CR35;Q3UP87;Q05319; P42280;Q91701;Q25503
+
+Identify the conserved catalytic triad residues in the aligned sequences. The
+conserved catalytic triad residues in serine proteases are typically histidine (H),
+aspartate (D) , and serine (S). These residues form a charge relay system that enables
+the nucleophilic attack by the serine residue on the peptide bond of the
+substrate. The conservation of this triad is essential for the
+catalytic mechanism of serine proteases.
+
+In serine proteases, the catalytic triad and other essential structural elements
+are typically under negative selection, while surface loops and other flexible
+regions might be under positive selection, reflecting the adaptation to
+different substrates and physiological conditions.
+
 
 * Amino Acid codes
 
