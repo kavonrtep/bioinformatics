@@ -537,7 +537,7 @@ P69905; P68871; P02144; Q9NPG2; P01942; P02088; P04247; Q9ER97
    these differences?
 
 
-Inspect 3D structure of globon protein  - for example
+Inspect 3D structure of globin protein  - for example
 https://www.rcsb.org/3d-sequence/1OJ6?assemblyId=1
 
 #+begin_comment
@@ -568,16 +568,16 @@ peptide bonds in proteins. They play essential roles in digestion, blood
 clotting, and immune responses. Some well-known serine proteases include
 trypsin, chymotrypsin, and elastase.
 
-Human Trypsin-1 (P07477)
-Human Chymotrypsinogen B(P17538)
-Human Neutrophil Elastase (P08246)
-Mouse Trypsin-2 (P07146)
-Mouse Chymotrypsinogen B (Q9CR35)
-Mouse Neutrophil Elastase (Q3UP87)
-Drosophila melanogaster Serine proteinase stubble (Q05319)
-Drosophila melanogaster Chymotrypsin (Q9VVA6)
-Xenopus laevis Complement C3 (Q91701)
-Manduca sexta Chymotrypsinogen (Q25503)
+- Human Trypsin-1 (P07477)
+- Human Chymotrypsinogen B (P17538)
+- Human Neutrophil Elastase (P08246)
+- Mouse Trypsin-2 (P07146)
+- Mouse Chymotrypsinogen B (Q9CR35)
+- Mouse Neutrophil Elastase (Q3UP87)
+- Drosophila melanogaster Serine proteinase stubble (Q05319)
+-  Drosophila melanogaster Chymotrypsin (Q9VVA6)
+- Xenopus laevis Complement C3 (Q91701)
+- Manduca sexta Chymotrypsinogen (Q25503)
 
 P07477; P17538; P08246; P07146; Q9CR35;Q3UP87;Q05319; P42280;Q91701;Q25503
 
