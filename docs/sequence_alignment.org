@@ -529,13 +529,13 @@ Protein Sequence Set: Select protein sequences from different organisms represen
 P69905; P68871; P02144; Q9NPG2; P01942; P02088; P04247; Q9ER97
 
 
-
 1. Which regions of the aligned sequences are conserved across all the globin
-family members? What might be the functional significance of these conserved
-regions?
+   family members? What might be the functional significance of these conserved
+   regions?
+2. Can you identify any organism-specific or protein-specific sequence
+   variations? What might be the evolutionary or functional implications of
+   these differences?
 
-2. Can you identify any organism-specific or protein-specific sequence variations?
-What might be the evolutionary or functional implications of these differences?
 
 Inspect 3D structure of globon protein  - for example
 https://www.rcsb.org/3d-sequence/1OJ6?assemblyId=1
@@ -549,10 +549,10 @@ https://www.rcsb.org/3d-sequence/1OJ6?assemblyId=1
 Answers for Interpretation:
 
 1. Conserved regions in the aligned sequences are typically found in the
-*heme-binding pocket* and the central helices, which form the core structure of
-globin proteins. The conservation of these regions indicates their functional
-importance in binding and interacting with heme, as well as maintaining the
-protein's structural integrity for proper function.
+   *heme-binding pocket* and the central helices, which form the core structure of
+   globin proteins. The conservation of these regions indicates their functional
+   importance in binding and interacting with heme, as well as maintaining the
+   protein's structural integrity for proper function.
 
 2. sort protein based on pairwise similarities - it turn out that orthologs are
    more similar than paralogs - myoglobins/hemoglobins and neuroglobins. All
@@ -562,8 +562,8 @@ hemoglobin is tetramer
 #+end_comment
 
 
-* Exercise - serine proteases
-create and analyze an MSA of serine proteases, a family of enzymes that cleave
+* Exercise - Identification of catalytic triad residues in serine proteases
+Create and analyze an MSA of serine proteases, a family of enzymes that cleave
 peptide bonds in proteins. They play essential roles in digestion, blood
 clotting, and immune responses. Some well-known serine proteases include
 trypsin, chymotrypsin, and elastase.
