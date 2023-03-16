@@ -562,7 +562,6 @@ hemoglobin is tetramer
 #+end_comment
 
 
-
 * Exercise - serine proteases
 create and analyze an MSA of serine proteases, a family of enzymes that cleave
 peptide bonds in proteins. They play essential roles in digestion, blood
