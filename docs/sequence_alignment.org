@@ -520,7 +520,7 @@ Protein Sequence Set: Select protein sequences from different organisms represen
 - Human Hemoglobin Subunit Alpha (P69905)
 - Human Hemoglobin Subunit Beta (P68871)
 - Human Myoglobin (P02144)
-- Human Neuroglobin (Q9NPG2)
+- Human Neuroglobin (Q9)nl
 - Mouse Hemoglobin Subunit Alpha (P01942)
 - Mouse Hemoglobin Subunit Beta (P02088)
 - Mouse Myoglobin (P04247)
@@ -561,7 +561,6 @@ Answers for Interpretation:
 hemoglobin is tetramer
 #+end_comment
 
-
 * Exercise - Identification of catalytic triad residues in serine proteases
 Create and analyze an MSA of serine proteases, a family of enzymes that cleave
 peptide bonds in proteins. They play essential roles in digestion, blood
@@ -592,6 +591,70 @@ In serine proteases, the catalytic triad and other essential structural elements
 are typically under negative selection, while surface loops and other flexible
 regions might be under positive selection, reflecting the adaptation to
 different substrates and physiological conditions.
+
+* Identification of Bacterial Homologs of Human Neuroglobin and Analysis of Heme-Binding Pocket Conservation
+*Objective*:  In this assignment, you will identify bacterial homologs of human
+neuroglobin, create a multiple sequence alignment (MSA) with human and mouse
+globin homologs (hemoglobin, myoglobin, and neuroglobin), and analyze the
+conservation of the heme-binding pocket residues, particularly the two histidine
+residues, in the bacterial sequences.
+
+*Background*:lobins are a family of heme-containing proteins found in various
+organisms, including bacteria, plants, and animals. They are involved in various
+functions, such as oxygen transport and storage. The heme-binding pocket in
+globins typically contains two conserved histidine residues that coordinate with
+the iron atom in the heme group, allowing the protein to reversibly bind oxygen
+or other small ligands.
+
+Some of the key functions of bacterial globins include:
+- Oxygen transport and storage: Bacterial globins maintain oxygen supply for
+  cellular respiration in microaerophilic or facultative anaerobic bacteria.
+- Oxygen sensing and regulation: They function as oxygen sensors, helping
+  bacteria adapt to changing oxygen levels and modulating gene expression.
+- Nitric oxide detoxification: Flavohemoglobins detoxify nitric oxide,
+  converting it to a less toxic form.
+- Oxidative stress protection: Bacterial globins scavenge reactive oxygen
+  species to protect cells from oxidative stress.
+- Terminal oxidases: Cytochrome bd-type oxidase globins act as terminal oxidases
+  in the respiratory chain, transferring electrons to oxygen.
+- Sulfide oxidation: Sulfide:quinone oxidoreductases (SQR) globins oxidize
+  hydrogen sulfide for energy in sulfur bacteria.
+- Sensing and signaling: Bacterial globins act as sensors and signal
+  transducers, detecting environmental changes and triggering cellular
+  responses.
+
+** Tasks:
+
+1. Obtain the amino acid sequence of human neuroglobin from a database, such as
+   UniProt or NCBI Protein.
+2. Use a sequence similarity search tool  BLASTP, to identify bacterial homologs
+   of human neuroglobin.
+   - First use simple BLASTP (default settings)
+   - For second search change default settings to *DELTA-BLAST* algorithm.
+3. Compare result from two searches. Chose the strategy you consider better and
+   retrieve FASTA sequence for the 10 best bacterial hits based on E-value,
+   sequence identity, and query coverage.
+4. Import FASTA with bacterial globins to Jalview program. 
+5. Collect the amino acid sequences of human and mouse globin homologs
+   (hemoglobin, myoglobin, and neuroglobin) from UniProt directly from Jalview
+   program. Use following accessions: P69905; P68871; P02144; Q9NPG2; P01942;
+   P02088; P04247; Q9ER97 (use Fetch sequences command from FIle menu)
+6. Create a multiple sequence alignment (MSA) using the Jalview program with
+   bacterial, human and mouse sequences.
+7. Analyze the MSA to assess the conservation of the two histidine residues in
+   the heme-binding pocket among the bacterial globin sequences.
+8. Clearly describe your observations and conclusions regarding the conservation
+   of the two histidine residues in the heme-binding pocket.
+
+** Example of bacterial globins with known 3D structure:
+- https://www.uniprot.org/uniprotkb/A7HD43
+- https://www.uniprot.org/uniprotkb/O66586
+- https://www.rcsb.org/3d-sequence/1TU9
+
+
+
+
+
 
 
 * Amino Acid codes

@@ -155,7 +155,7 @@ GGCGCCGCC
 
 
 - use =blastn= and =blastx= to characterize clone12. What tool is relevant to use?
-- check DNA sequence using ORFfinder https://www.ncbi.nlm.nih.gov/orffinder/-
+- check DNA sequence using ORFfinder https://www.ncbi.nlm.nih.gov/orffinder
 - use =blastp= against longest ORF, compare results with blastx search. 
 - What kind of enzyme is coded by =clone12=?
 - does the clone12 represent complete CDS of putative protein?
@@ -393,9 +393,7 @@ blastp -query proteins.fasta -remote -db nr -out proteins_nr.txt -outfmt 6 -eval
 - use =blastp= and find best hit to Danio rerio protein in Mus musculus refseq sequences
 - what are these sequences, what is identity and e-value of the best hits
 - which protein has more hits by blast
-  
-  
-
+    
 * Localization of sequences in genome using BLAT in Ensemble genome
 
 Use BLAT to find location of the sequence in Caenorabditis elegans genome. For
@@ -416,3 +414,7 @@ ATGAAATCTGATGACTATTCATTCATGGTGCAAATCGCCTAGAAATTTTTGTGAAAGAGC
 
 - What is the genomic location of sequences. Is the sequence part of any gene?
 
+* Use BLAST to obtain sequences for MSA
+run delta blast with query:
+
+- 
