@@ -1,5 +1,5 @@
 #+TITLE: Sequence Alignment
-#+OPTIONS: toc:nil
+
 
 * Dotplots
 
@@ -631,7 +631,7 @@ Some of the key functions of bacterial globins include:
    of human neuroglobin.
    - First use simple BLASTP (default settings)
    - For second search change default settings to *DELTA-BLAST* algorithm.
-3. Compare result from two searches. Chose the strategy you consider better and
+3. Compare results from two searches. Chose the strategy you consider better and
    retrieve FASTA sequence for the 10 best bacterial hits based on E-value,
    sequence identity, and query coverage.
 4. Import FASTA with bacterial globins to Jalview program. 

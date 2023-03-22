@@ -189,10 +189,10 @@ Alternativelly, it is possible to enter can use just accession ID to search wind
 * Use of BLAST from command line
 
 When to use blast from CLI:
-- if you have large number of queries (it is possible do download whore =nr= database and run blast localy)
+- If you have large number of queries (it is possible do download whore =nr= database and run blast localy)
 - When your sequence database is not part of public databases (NCBI, EBI,...)
 - If you need to automate your similarity search
-- more detailed manual can be found at https://www.ncbi.nlm.nih.gov/books/NBK279684/
+- More detailed manual can be found at https://www.ncbi.nlm.nih.gov/books/NBK279684/
 
 
 ** Basic commands:
@@ -253,25 +253,30 @@ db is fraction od blast protein database
 
 run protein blast with default parameters in terminal
 #+BEGIN_SRC bash
-  # go to directory with data:
-  cd ~/Desktop/bioinformatics/data/blast_data
+
+  mkdir blast_search
+  cd blast_search
+  # copy query and database to directory with data:  
+  cp ~/Desktop/bioinformatics/data/blast_data/proteins.fasta .
+  cp ~/Desktop/bioinformatics/data/blast_data/db/pdbaa .
+
   # inspect the query file  protein.fasta
   cat proteins.fasta
-  # usefull program for manupulation with sequences is *seqkit*
-  # try:
   seqkit stats proteins.fasta
+  # inspect fasta file we will use as database
+  seqkit stat pdbaa
 
+
+ 
   # fasta file db/pdbaa will be used as database, it must be formated using
   # makeblastdb command to make data blast compatible
-
-
-  makeblastdb -in db/pdbaa -dbtype prot
+  makeblastdb -in pdbaa -dbtype prot
   # after succesfull creation of database, information about size of database is printet to stdout
   # Additional files in db directory were created, what are these files?
-  ls -l db
+  ls -l 
 
-  # run basic blastp
-  blastp -query proteins.fasta -db db/pdbaa -out proteins_blastp.txt
+  # run blastp with default settings:
+  blastp -query proteins.fasta -db pdbaa -out proteins_blastp_default.txt
   # inspect output with less command or text editor
   less proteins_blastp.txt
 #+END_SRC
@@ -284,20 +289,107 @@ try command line blast with different parameters:
   blastp -h
   # or
   blast -help
+  # blast documentation is long, it can be more convenient pipe it to less
+  blast -help | less
+  #+END_SRC
+The most important blastp/blastn options:
+- =-task= type of algorithm for search (blast/megablast for blastn or blastp/blastp-fast for blastp)
+- =-outfmt= output format
+- =-word_size=
+- -=evalue=
+- =-num_alignments= Number of database sequences to show alignments for (Default = 250)
 
-  blastp -query proteins.fasta -db db/pdbaa -out proteins_blastp_1align_all.txt
-  blastp -query proteins.fasta -db db/pdbaa -out proteins_blastp_1align.txt -num_alignments 10
-  blastp -query proteins.fasta -db db/pdbaa -out proteins_blastp_1align_1e-30.txt -num_alignments 10 -evalue 1e-30
-  blastp -query proteins.fasta -db db/pdbaa -out proteins_blastp_1e-30_table.txt -evalue 1e-30 -outfmt 7
-  blastp -query proteins.fasta -db db/pdbaa -out proteins_blastp_1e-30_table.html -evalue 1e-30 -outfmt 2 -html
-  # inspect all output, html output should be viewed in firefox!
+
+#+BEGIN_SRC bash
+# default:
+  blastp -query proteins.fasta -db pdbaa -out proteins_blastp_align_all.txt
+# limit output to 10 alignments
+  blastp -query proteins.fasta -db pdbaa -out proteins_blastp_align.txt -num_alignments 10
+# return max 10 alingments, hits must be e-value 1e-30 or less
+  blastp -query proteins.fasta -db pdbaa -out proteins_blastp_align_1e-30.txt -num_alignments 10 -evalue 1e-30
+# tabular ouput with descriptions
+  blastp -query proteins.fasta -db pdbaa -out proteins_blastp_1e-30_table.txt -evalue 1e-30 -outfmt 7
+# plain tabular output
+  blastp -query proteins.fasta -db pdbaa -out proteins_blastp_1e-30_table.txt -evalue 1e-30 -outfmt 6
+# simple html output
+  blastp -query proteins.fasta -db pdbaa -out proteins_blastp_1e-30.html -evalue 1e-30 -outfmt 2 -html
+# inspect all output using less command
+# html output should be viewed in firefox!
 #+END_SRC
 
 #+begin_comment
 show tabular output in libreoffice
 #+end_comment
 
-** blastp exercise 2 : extract hits from database and create alignment with query proteins:
+
+** blastp exercise 2 : extract hits from database and create alignment with query:
+The aim of this exercise is to perform a BLASTP search against a protein
+database using a single query sequence and subsequently analyze the
+results, extracting hit information, retrieving and ordering the hit sequences,
+and finally, creating a multiple sequence alignment.
+
+TODO ADJUST PATHS
+#+begin_src bash
+    # Run BLASTP search
+    cd 
+    mkdir blast_search2
+    cd blast_search2
+      # copy query and database to directory with data:  
+    cp ~/Desktop/bioinformatics/data/blast_data/query2.fasta .
+    cp ~/Desktop/bioinformatics/data/blast_data/db/pdbaa .
+    makeblastdb -in pdbaa -dbtype prot
+
+
+    blastp -query query2.fasta -db pdbaa -out query_blastp_1e-10_table.txt -evalue 1e-10 -outfmt 6
+
+    # Inspect the structure of the output from BLAST using the 'less' command
+    less query_blastp_1e-10_table.txt
+
+    # The columns in the tabular output are:
+    # 1.qaccver 2.saccver 3.pident 4.length 5.mismatch 6.gapopen
+    # 7.qstart 8.qend 9.sstart 10.send 11.evalue 12.bitscore
+
+    # Extract a list of sequence IDs:
+    # Extract the second column from the BLAST output, which contains the database IDs
+
+  # Count the number of hits for the query sequence
+    wc query_blastp_1e-10_table.txt
+
+    cut -f 2 query_blastp_1e-10_table.txt > all_hits_id.txt
+    seqkit grep -f all_hits_id.txt pdbaa -o all_hits.fasta
+ seqkit stats  all_hits.fasta
+
+
+    # Explore the extracted sequences with Dotter
+    dotter query2.fasta all_hits.fasta
+
+    # Extract sequences in the order of hit significance
+    cdbfasta pdbaa
+    # If cdbfasta is not installed, use the following command to install it:
+    sudo apt install cdbfasta
+
+    # Create a binary index of the FASTA file for fast sequence retrieval
+    cat all_hits_id.txt | cdbyank pdbaa.cidx > all_hits_in_order.fasta
+
+    # Check the ordered sequences using the Dotter program
+    dotter query2.fasta all_hits_in_order.fasta
+
+    # Create an alignment with the query protein
+    cat query2.fasta all_hits_in_order.fasta > query_with_hits.fasta
+
+    # Create a multiple sequence alignment using the MAFFT program
+    mafft --help
+    mafft query_with_hits.fasta > query_with_hits_aligned.fasta
+
+    # Inspect the aligned sequences with the 'less' command
+    less query_with_hits_aligned.fasta
+
+    # View the alignment with the Jalview program
+
+#+end_src
+
+
+** blastp exercise 3 : extract hits from database and create alignment with query proteins:
 #+begin_comment
 TODO  introduce cut and grep commands
 discuss =less - S=
@@ -379,6 +471,11 @@ take  too long or does not work at all
 blastp -query proteins.fasta -remote -db nr -out proteins_nr.txt -outfmt 6 -evalue 1e-30
 #+end_src
 
+#+begin_src bash
+# install  NCBI Entrez utilities on the command line
+sudo apt install ncbi-entrez-direct
+
+#+end_src
 
 ** blast - exercise 4
 - visit ftp://ftp.ncbi.nih.gov/refseq/M_musculus/mRNA_Prot
@@ -414,7 +511,3 @@ ATGAAATCTGATGACTATTCATTCATGGTGCAAATCGCCTAGAAATTTTTGTGAAAGAGC
 
 - What is the genomic location of sequences. Is the sequence part of any gene?
 
-* Use BLAST to obtain sequences for MSA
-run delta blast with query:
-
-- 
