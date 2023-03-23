@@ -599,7 +599,7 @@ globin homologs (hemoglobin, myoglobin, and neuroglobin), and analyze the
 conservation of the heme-binding pocket residues, particularly the two histidine
 residues, in the bacterial sequences.
 
-*Background*:lobins are a family of heme-containing proteins found in various
+*Background*:Globins are a family of heme-containing proteins found in various
 organisms, including bacteria, plants, and animals. They are involved in various
 functions, such as oxygen transport and storage. The heme-binding pocket in
 globins typically contains two conserved histidine residues that coordinate with
