@@ -8,7 +8,7 @@
   - GFF3
   - VCF
   - ...
-* E.coli data
+* Custom E.coli data
 Data for E.coli genome NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete genome can be found in =bioinformatics/data/igv_data_e_coli=
 
 For BAM file, you will need to create index file using command:
@@ -64,3 +64,64 @@ IGV visualization : https://software.broadinstitute.org/software/igv/viewing_vcf
 - variants - show coloring
 - coverage plot - multiple show group autoscale
 #+end_comment>
+* Navigation in IGV
+*** Navigating using the search bar:
+Enter a specific gene, transcript, or genomic coordinate  in the search bar and press Enter to navigate to that location.
+Examples:
+- Genomic coordinate: =NC_000913.3:34,861-39,466=
+- Gene Name: 
+  -  =carB= 
+  - =NC_000913.3.g48.t1=
+*** Navigating using the chromosome ideogram:
+Click on a specific chromosome in the ideogram (the graphic representation of chromosomes) to navigate to that chromosome.
+Use the mouse to click and drag the chromosome ideogram, which will allow for scrolling through the chromosome.
+*** Zooming in and out:
+- Use the "+" and "-" buttons or the scroll wheel on the mouse to zoom in and out of specific regions.
+- Double-click on a specific region to zoom in for a closer look at the genomic features.
+- Click and drag the background of the genome browser to pan across the genome horizontally.
+*** Navigating using bookmarks:
+Set bookmarks for interesting genomic regions by clicking on "Region" > "Region Navigator."
+
+Bookmarked regions can be exported and imported using BED format.
+
+* Create custom track for IGV using NCBI BLAST
+
+find region of interest in =genome.fa= which correspond to sequences:
+#+begin_src text
+>seq1
+GTATGAATACGGAAGGCTTCGGCGACTTTCAGGGATTCGGCCGCCACGTCGATAT
+CTTTTTCCACGCAGCGAGCTAACGCACATACGCGGCTGTTTTTAACCTGGCGGGC
+GATGGTTTGCACCGATTCAAAATCGCCCGGCGAAGAGACGGGGAAACCGACTTCC
+ATCACGTCA
+>seq2
+TGACCCTGCTGTTCTCCTTCGCTCAGGCTCGTGCTTGTGCGGAAGCGGGCGTGTT
+CCTGATCTCGCCGTTTGTTGGCCGTATTCTTGACTGGTACAAAGCGAATACCGAT
+AAGAAAGAGTACGCTCCGGCAGAAGATCCGGGCGTGGTTTCTGTATCTGAAATCT
+ACCAGTACT
+>seq3
+CGCGTCCGGCGCTGCGTTTTGTAGCCCGCTCTGGCTTGCGGGAAGTGTTTAGTGC
+CGT
+>seq4
+AGCACGAAGCCGTTATTGACGACGGCTGCGACTTTATCGACTACCTGGGGGGCAG
+CGAAACTGGTATTCGCGATCATGGCGATACCGAGAAGCAGCGTTTTCCAGTTCTT
+CATACTTTATCCATTTCAATTATCCGCACTGCGGATTACGTGGTAAATCAACAAA
+TCACAAAGTGTTTTGATACGGCAGAATGTTCGAACGCAGCATCTCTTGCGTACCC
+AGACCGTAGTTGGAGCTCAGGCGGCGAAGTTCGATGTTAAAGCCGATTGCGTTGT
+
+#+end_src
+
+create text file with FASTA sequences and save it as =query.fasta= to IGV directory
+
+#+begin_src bash
+mkdir IGV
+cd IGV
+gedit query.fasta ## insert sequences and save
+# make copy of genome
+cp ~/Desktop/bioinformatics/data/igv_data_e_coli/genome.fa .
+makeblastdb -in genome.fa -dbtype nucl
+blastn -query query.fasta -db genome.fa -outfmt '6 sseqid sstart send qseqid pident' -out regions.bed
+# inspect regions bed file
+#+end_src
+
+File =regions.bed= can be either loaded as track (=File/Load from File=) or from  =Regions= menu. Try both ways
+
