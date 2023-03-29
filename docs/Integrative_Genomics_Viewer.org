@@ -8,6 +8,9 @@
   - GFF3
   - VCF
   - ...
+
+[[../fig/tracks_formats.png]]
+
 * Custom E.coli data
 Data for E.coli genome NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete genome can be found in =bioinformatics/data/igv_data_e_coli=
 
