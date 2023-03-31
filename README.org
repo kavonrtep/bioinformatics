@@ -14,3 +14,5 @@
 ** [[./docs/phylogenetic.org][Phylogenetics - tools]]
 ** [[./docs/protein_secondary_structure.org][Prediction of protein structure]]
 ** [[./docs/protein_tertiary_structure.org][Protein tertiary structure]]
+
+https://training.galaxyproject.org/training-material/topics/introduction/tutorials/galaxy-intro-short/tutorial.html
