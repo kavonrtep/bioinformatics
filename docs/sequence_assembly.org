@@ -234,9 +234,9 @@ assembly from paired end reads  (also higher coverage) creates single connected 
   #+end_comment
 
 ** Align short paired reads to assembly:
-We will aligne original sequence read to resulting genome assembly so we can
+We will align original sequence read to resulting genome assembly so we can
 explore assembly quality using IGV genomic browser
-
+NOTE : deactivate assembly environment fro this step
 #+begin_src bash
 # create database from contigs 
 bowtie2-build  run_25_paired/contigs.fa run_25_paired/contigs.fa
