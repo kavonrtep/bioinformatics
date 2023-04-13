@@ -290,7 +290,7 @@ Explanation of color coding (insert size):
   #+begin_src bash
 # run from run25 and run25_paired directory
 conda activate busco
-cd ~/ngs_assembly/run25
+cd ~/ngs_assembly/run_25
 busco -i contigs.fa -o busco_output -m genome --auto-lineage-prok
 cd ~/ngs_assembly2/run_25_paired/
 busco -i contigs.fa -o busco_output -m genome --auto-lineage-prok
