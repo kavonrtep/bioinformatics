@@ -35,6 +35,7 @@ to navigate in =dotter= program use mouse click to select region
 
 *** Gepard 
 Gepard is Java based program, also available on Windows or MacOS. See https://cube.univie.ac.at/gepard
+Gepard can be run either of Desktop or using command line:
 To run gepard:
 #+begin_src 
 conda activate gepard
@@ -64,7 +65,7 @@ wget https://www.uniprot.org/uniprot/O18735.fasta -O ERBB2_dog.fasta
 # check sequence statistics:
 seqkit stat *.fasta
 #+end_src
-
+- compare ErbB2 against itself
 - compare /ErbB2/ against /ErB3/. Notice the patterns
   in the dotplot and try to find functional domains, for example cysteine rich
   regions B
@@ -86,6 +87,9 @@ make aha slide for this task
 
 
 #+begin_src sh 
+# selfcomparison:
+dotter ERBB2.fasta ERBB2.fasta
+# compare two sequences against each other:
 dotter ERBB2.fasta ERBB3.fasta # human ERBB2 vs human ERB3  (paralogs)
 dotter ERBB2.fasta ERBB2_dog.fasta  # human ERBB2 vs dog ERBB2  (orthologs)
 # all to all comparison:
@@ -121,7 +125,7 @@ cat H*.fasta > all_hox.fasta
 dotter all_hox.fasta all_hox.fasta
 
 #+end_src
-Which paires of protein are more similar to each other?
+Which pairs of protein are more similar to each other? What part of the proteins is conserved (N or C end)?
 
 ** Exercise 3 - Locate exon/intron boundaries using dotter (splice sites).
 - download sequence AC108130.3 from genbank, save only region from 60000 to 119999 
@@ -141,7 +145,7 @@ dotter AC108130.3.fna GBRA1_HUMAN.fna   # genome vs protein
 # Data are also available in ~/Desktop/bioinformatics/data/dotter_sequences
 When using =dotter= to compare  DNA to protein, DNA sequence must be in forward orientation!
 
-** Exercise 4 - Identification of repeats
+** Exercise 4 - Identification of repetitive motifs
 
 *** example repeats in DNA sequences 
 **** Inverted repeat
@@ -150,8 +154,7 @@ When using =dotter= to compare  DNA to protein, DNA sequence must be in forward 
 - What is the position of inverted repeat?
 - can you identify palindromes in the sequence? 
 #+begin_src bash
-# copy sequence to current directory
-cp ~/Desktop/Bioinformatics/data/dotter_sequences/inverted_repeat.fasta .
+cd ~/Desktop/Bioinformatics/data/dotter_sequences/
 # make dotplot
 dotter inverted_repeat.fasta inverted_repeat.fasta
 #+end_src
@@ -162,8 +165,8 @@ Make dotplot of sequence which contain LTR retrotransposon against itself.
 - What is the length of the whole LTR retrotransposon?
 - What is the length of LTR?
 #+begin_src bash
-cp ~/Desktop/Bioinformatics/data/dotter_sequences/direct_repeat.fasta .
-dotter direct_repeat.fasta direct_repeat.fasta
+cd ~/Desktop/Bioinformatics/data/dotter_sequences/
+dotter ltr_rt2.fasta ltr_rt2.fasta
 #+end_src
 **** Tandem repeat
 Make dotplot of sequence containing tandem repeat.
@@ -171,9 +174,14 @@ Make dotplot of sequence containing tandem repeat.
 - what is a monomer length of tandem repeat
 Hint: distances between diagonal parallel lines can be used to estimate length of monomer in tandem repeat.
 #+begin_src bash
-cp ~/Desktop/bioinformatics/data/dotter_sequences/tandem_repeat.fasta .
+cd~/Desktop/bioinformatics/data/dotter_sequences
 dotter tandem_repeat.fasta tandem_repeat.fasta
+dotter tandem_repeat2.fasta tandem_repeat2.fasta
 #+end_src
+
+
+
+
 
 ** Exercise 5 - Identification of insertions, deletions, duplications
 Compare two genomic regions =a_region= and =b_region=
@@ -181,9 +189,11 @@ Compare two genomic regions =a_region= and =b_region=
 - then compare =a_region= against =b_region=
 - What you can say about these genomic regions? Are there any insertions,
   duplications or deletions?
-
+#+begin_comment
+skip this, this is too complicated 
+#+end_comment
 #+begin_src bash
-cp ~/Desktop/bioinformatics/data/dotter_sequences/*_region.fasta .
+cd ~/Desktop/bioinformatics/data/dotter_sequences/
 dotter a_region.fasta a_region.fasta
 dotter b_region.fasta b_region.fasta
 dotter a_region.fasta b_region.fasta
@@ -242,8 +252,7 @@ select repeated sequences using dotter and search with NCBI blast:
 
 https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastn&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome
 
-#+begin_comment
-# sequence 
+
 ** Whole genome/chromosome dotplot
 
 - download part of genome assembly from Zea mays:

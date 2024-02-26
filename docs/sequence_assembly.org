@@ -23,7 +23,7 @@ data for assembly are located in =~/Desktop/bioinformatics/data/sanger=
 ** Installation of necessary programs
 
 #+begin_src bash
-mamba create -n assembly -c bioconda jellyfish fastx_toolkit quast bandage samtools
+mamba create -n assembly -c bioconda jellyfish fastx_toolkit quast bandage samtools fastqc multiqc
 conda activate assembly
 #+end_src
 
@@ -157,8 +157,9 @@ Upload file contig.fa and run quality assessment.
 - Is the total length of genome assembly in agreement with kmer-based estimation
   of genome size?
 command line quast:
-  #+begin_src 
-quast run_25/contigs.fa
+  #+begin_src bash
+conda activate quast 
+quast run_25/contigs.fa --threads 7
   #+end_src
  Assembly graph can be inspected using *Bandage* program . 
 
@@ -174,6 +175,11 @@ cp run_25/contigs.fa run_25/contigs.fa.0
 velvetg run_25 -cov_cutoff 6 -exp_cov 14 -amos_file yes
 #+end_src
 =-amos_file yes= option will export velvetg run_25_paired -ins_length 350velvetg run_25_paired -ins_length 350rt results to AMOS format 
+
+compare first and second assembly using quast:
+#+begin_src bash
+quast run_25/contigs.fa run_25/contigs.fa.0 --threads 7
+#+end_src
 
 #+begin_comment
 Results:
