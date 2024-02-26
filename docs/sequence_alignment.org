@@ -189,15 +189,19 @@ Compare two genomic regions =a_region= and =b_region=
 - then compare =a_region= against =b_region=
 - What you can say about these genomic regions? Are there any insertions,
   duplications or deletions?
+
 #+begin_comment
 skip this, this is too complicated 
 #+end_comment
+
 #+begin_src bash
 cd ~/Desktop/bioinformatics/data/dotter_sequences/
 dotter a_region.fasta a_region.fasta
 dotter b_region.fasta b_region.fasta
 dotter a_region.fasta b_region.fasta
 #+end_src
+
+
 ** Exercise 6 - Overlapping sequences
 make dotplot from following sequences stored in file:
 #+begin_example
