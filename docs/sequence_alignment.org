@@ -182,7 +182,6 @@ dotter tandem_repeat2.fasta tandem_repeat2.fasta
 
 
 
-
 ** Exercise 5 - Identification of insertions, deletions, duplications
 Compare two genomic regions =a_region= and =b_region=
 - first do self comparison for each sequence
@@ -213,12 +212,14 @@ what is relation between sequences?
 solution:
 [[../fig/scheme_dotter_overlap.png]]
 
+
 ** Exercise 7 - Compare two genomic regions:
 #+begin_src 
-cp ~/Desktop//bioinformatics/data/dotter_sequences/genome?_part.fasta ,
-dotter genomeA.fasta genomeB.fasta
+cd ~/Desktop//bioinformatics/data/dotter_sequences/
+dotter genomeA_part.fasta genomeB_part.fasta
 #+end_src
 How would characterize difference between genomes?
+
 ** Exercise - Identification of problems in sequences from SRA database
 *** Illumina data : SRR2911427  (Migratory locust WGS)
 # overlap, high NN proportion
@@ -261,12 +262,17 @@ https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastn&PAGE_TYPE=BlastSearch&LI
 
 - download part of genome assembly from Zea mays:
 - link   https://www.ncbi.nlm.nih.gov/nuccore/KV887992.1
-- use range 1-1,000,000 nt
-- start GUI program =gepard=
+- start GUI program =gepard=, use word length 100 and window size 200
 - as sequences 1 and 2 select downloaded sequence and create dotplot
 - what do you see and what does it mean?
-
-#+end_comment
+# not to interesting
+** Whole mycoplasma genome comparison
+Mycoplasma hyopneumoniae is a bacterial pathogen that primarily affects pigs, causing enzootic pneumonia, a chronic respiratory disease.The genome of Mycoplasma hyopneumoniae is relatively small can be analyzed using Gepard dotplot program. Download genomic sequences of two strains and compare them using Gepard.
+#+begin_src txt
+https://zenodo.org/record/4485547/files/mycoplasma-232.fasta
+https://zenodo.org/record/4485547/files/mycoplasma-7422.fasta
+#+end_src
+What are the biggest differences you can see from dotplot (deletions, insertions, inversions)
 
 * Pairwise alignment
 ** Sequences for alignment:
