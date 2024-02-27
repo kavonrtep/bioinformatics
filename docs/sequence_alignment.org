@@ -171,10 +171,11 @@ dotter ltr_rt2.fasta ltr_rt2.fasta
 **** Tandem repeat
 Make dotplot of sequence containing tandem repeat.
 - how do you interpret dotplot?
-- what is a monomer length of tandem repeat
+- what is a monomer length of tandem repeat(s)
+- what is unusual about tandem repeat in =tandem_repeat2.fasta=?
 Hint: distances between diagonal parallel lines can be used to estimate length of monomer in tandem repeat.
 #+begin_src bash
-cd~/Desktop/bioinformatics/data/dotter_sequences
+cd ~/Desktop/bioinformatics/data/dotter_sequences
 dotter tandem_repeat.fasta tandem_repeat.fasta
 dotter tandem_repeat2.fasta tandem_repeat2.fasta
 #+end_src
@@ -220,7 +221,7 @@ dotter genomeA_part.fasta genomeB_part.fasta
 #+end_src
 How would characterize difference between genomes?
 
-** Exercise - Identification of problems in sequences from SRA database
+** Exercise 8 - Identification of problems in sequences from SRA database
 *** Illumina data : SRR2911427  (Migratory locust WGS)
 # overlap, high NN proportion
 - download sequences from SRA database using =fastq-dump= command line program 
@@ -258,7 +259,7 @@ select repeated sequences using dotter and search with NCBI blast:
 https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastn&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome
 
 
-** Whole genome/chromosome dotplot
+** Exercise 9 - Whole genome/chromosome dotplot
 
 - download part of genome assembly from Zea mays:
 - link   https://www.ncbi.nlm.nih.gov/nuccore/KV887992.1
@@ -266,13 +267,17 @@ https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastn&PAGE_TYPE=BlastSearch&LI
 - as sequences 1 and 2 select downloaded sequence and create dotplot
 - what do you see and what does it mean?
 # not to interesting
-** Whole mycoplasma genome comparison
-Mycoplasma hyopneumoniae is a bacterial pathogen that primarily affects pigs, causing enzootic pneumonia, a chronic respiratory disease.The genome of Mycoplasma hyopneumoniae is relatively small can be analyzed using Gepard dotplot program. Download genomic sequences of two strains and compare them using Gepard.
+** Exercise 10- Whole mycoplasma genome comparison
+ /Mycoplasma hyopneumoniae/ is a bacterial pathogen that primarily affects pigs, causing enzootic pneumonia, a chronic respiratory disease.The genome of Mycoplasma hyopneumoniae is relatively small can be analyzed using =Gepard= dotplot program. Download genomic sequences of two strains and compare them using Gepard  
 #+begin_src txt
 https://zenodo.org/record/4485547/files/mycoplasma-232.fasta
 https://zenodo.org/record/4485547/files/mycoplasma-7422.fasta
 #+end_src
-What are the biggest differences you can see from dotplot (deletions, insertions, inversions)
+- You can  use G and H (slow movement) or J and K (fast navigation) to slide along the current diagonal
+- Do you observe any diagonal lines in the dot plot other than the main diagonal? What do these lines indicate about the genomic organization (e.g., inversions, duplications)?
+ - Recalculate dotplot with word length 100
+ - Are there any regions of divergence (areas with no or few dots) between the two genomes? What could these regions represent (e.g., strain-specific genes, deletions, insertions)?
+ - How many deletions in you can observe in strain 232?
 
 * Pairwise alignment
 ** Sequences for alignment:
