@@ -357,17 +357,36 @@ program ~mafft~.  use default setting. Before running
 mkdir ~/data/cdk
 cd ~/data/cdk
 cp ~/Desktop/Bioinformatics/data/alignment_sequences/CDK/cdk.fasta .
+# alignment using mafft program
 mafft --help
 mafft cdk.fasta > cdk_mafft_aligned.fasta
+# alterantive alignment using muscle program
+muscle --help
+muscle -align cdk.fasta -output cdk_muscle_aligned.fasta
+# some muscle version have different options:
+# muscle -in cdk.fasta -out cdk_muscle_aligned.fast
+seqkit stat *.fasta
 
+# evaluate alignment using transitive consistency score
+t_coffee -infile cdk_mafft_aligned.fasta  -evaluate
+t_coffee -infile cdk_muscle_aligned.fasta  -evaluate
+# the above steps will generate html file with TCS results, inspect them in firefox
 #+end_src
-Inspect alignment using Jalview program. 
+
+
+Inspect alignment using *Jalview* program. 
 - Try different coloring schemes - clustal, percentage identity, hydrophobicity
   and by conservation
   - Clustal:  It colors the sequences according to the amino acid type and the level of conservation within the alignment. Highly conserved residues are highlighted in specific colors, making it easier to spot conserved motifs or domains across different sequences. This scheme is derived from the Clustal series of programs, which are widely used for sequence alignment.
   - Zappo: The Zappo coloring scheme colors amino acids based on their physicochemical properties, such as charge, polarity, and hydrophobicity.
   - Taylor: , like Zappo, colors amino acids based on their physicochemical properties but uses a different set of colors. It is designed to make it easier to distinguish between different types of amino acids by using a broader and more intuitive color palette.
   - The Hydrophobicity coloring scheme highlights amino acids based on their hydrophobic or hydrophilic properties.
+- Jalview is using several metrics calculated from score:
+  - Conservation: How similar or different are the amino acids at this position?" If all the amino acids are the same, it's considered highly conserved (very important and likely critical for the protein's function). If the amino acids are different but still similar in their chemical properties, it's also considered conserved, but to a lesser extent
+  - Quality: measure of the likelihood of observing the mutations
+  - Consensus
+  - Occupancy
+- How are sequences in the alignment sorted? 
 - Try to identify the most conserved regions.
 - What are the coordinates of most conserved region related to *CDK1* sequence.
 - Compare this conserved regions with conserved regions which can be identified
@@ -382,7 +401,7 @@ PEVLLGSARYSTPVDIWSIGTIFAELATKKPLFHGDSEIDQLFRIFRALGTPNNEVW
 PEVESLQDYKNTFPKWKPGSLASHVKNLDENGLDLLSKMLIYDPAKRISGKMALNHP
 YFNDLDNQIKKM
 #+end_src
-
+*Transitive consistency score* : TCS is an alignment evaluation score that makes it possible to identify in an MSA the most correct positions. It has been shown that these positions are the most likely to be structuraly correct and also the most informative when estimating phylogenetic trees. The TCS evaluation and filtering procedure is implemented in the T-Coffee package and can be used to evaluate and filter any third party multiple sequence alignment  
 * Exercise -  Multiple alignment from HSPB8 proteins
 Create MSA for set of orthologs of HSPB8 protein (Heat shock protein beta-8) and identify conserved regions.
 
