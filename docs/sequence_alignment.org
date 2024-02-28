@@ -175,7 +175,7 @@ Make dotplot of sequence containing tandem repeat.
 - what is unusual about tandem repeat in =tandem_repeat2.fasta=?
 Hint: distances between diagonal parallel lines can be used to estimate length of monomer in tandem repeat.
 #+begin_src bash
-cd ~/Desktop/bioinformatics/data/dotter_sequences
+cd ~/Desktop/Bioinformatics/data/dotter_sequences
 dotter tandem_repeat.fasta tandem_repeat.fasta
 dotter tandem_repeat2.fasta tandem_repeat2.fasta
 #+end_src
@@ -195,7 +195,7 @@ skip this, this is too complicated
 #+end_comment
 
 #+begin_src bash
-cd ~/Desktop/bioinformatics/data/dotter_sequences/
+cd ~/Desktop/Bioinformatics/data/dotter_sequences/
 dotter a_region.fasta a_region.fasta
 dotter b_region.fasta b_region.fasta
 dotter a_region.fasta b_region.fasta
@@ -205,7 +205,7 @@ dotter a_region.fasta b_region.fasta
 ** Exercise 6 - Overlapping sequences
 make dotplot from following sequences stored in file:
 #+begin_example
-~/Desktop/bioinformatics/data/dotter_sequences/dna_examples/ovoverlaping_sequences.fasta
+~/Desktop/Bioinformatics/data/dotter_sequences/dna_examples/ovoverlaping_sequences.fasta
 #+end_example
 
 what is relation between sequences?
@@ -267,7 +267,7 @@ https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastn&PAGE_TYPE=BlastSearch&LI
 - as sequences 1 and 2 select downloaded sequence and create dotplot
 - what do you see and what does it mean?
 # not to interesting
-** Exercise 10- Whole mycoplasma genome comparison
+** Exercise 10 - Whole  genome comparison - Mycoplasma strain
  /Mycoplasma hyopneumoniae/ is a bacterial pathogen that primarily affects pigs, causing enzootic pneumonia, a chronic respiratory disease.The genome of Mycoplasma hyopneumoniae is relatively small can be analyzed using =Gepard= dotplot program. Download genomic sequences of two strains and compare them using Gepard  
 #+begin_src txt
 https://zenodo.org/record/4485547/files/mycoplasma-232.fasta
@@ -281,20 +281,21 @@ https://zenodo.org/record/4485547/files/mycoplasma-7422.fasta
 
 * Pairwise alignment
 ** Sequences for alignment:
-*** =ERB2_HUMAN= : http://www.uniprot.org/uniprot/P04626.fasta   
-*** =EGFR_DROME= : http://www.uniprot.org/uniprot/P04412.fasta   
-*** =Unknown protein= : http://www.uniprot.org/uniprot/Q8SZW1.fasta
+-  =ERB2_HUMAN= : http://www.uniprot.org/uniprot/P04626.fasta   
+-  =EGFR_DROME= : http://www.uniprot.org/uniprot/P04412.fasta   
+-  =Unknown protein= : http://www.uniprot.org/uniprot/Q8SZW1.fasta
 (Receptor tyrosine-protein kinase erbB-2, Epidermal growth factor receptor)
 
 To download sequences use either web browser of try to use ~wget~ command in terminal:
 #+BEGIN_SRC bash
-cd ~/Downloads
+mkdir ~/data/erb
+cd ~/data/erb
 wget http://www.uniprot.org/uniprot/P04626.fasta
 wget http://www.uniprot.org/uniprot/P04412.fasta
 wget http://www.uniprot.org/uniprot/Q8SZW1.fasta
 #+END_SRC
 
-** Exercise - compare global and local alignments
+** Exercise 11 - compare global and local alignments
 - global alignment is performed by program ~needle~
   - http://www.bioinformatics.nl/cgi-bin/emboss/help/needle
 - for local alignment use program ~water~, 
@@ -340,7 +341,7 @@ blast2seq can be used instead of =needle=. It also provide graphical view of ali
 
 You can paste either AA sequences to the blast form or you can use just accession ID (P046256, P04412).
 
-* Exercise - Multiple sequence alignment - Cyclin-dependent kinase
+* Exercise 12 - Multiple sequence alignment - Cyclin-dependent kinase
 Cyclin-dependent kinases (CDKs) are a group of enzymes that regulate the
 progression of the cell cycle by adding phosphate groups to other proteins, a
 process called phosphorylation. They are activated by binding to regulatory
@@ -353,16 +354,20 @@ program ~mafft~.  use default setting. Before running
 
 
 #+begin_src bash
-mkdir cdk
-cd cdk
-cp ~Desktop/bioinformatics/data/alignment_sequences/CDK/cdk.fasta .
+mkdir ~/data/cdk
+cd ~/data/cdk
+cp ~/Desktop/Bioinformatics/data/alignment_sequences/CDK/cdk.fasta .
 mafft --help
-mafft cdk.fasta > cdk_fasta.aln
+mafft cdk.fasta > cdk_mafft_aligned.fasta
 
 #+end_src
 Inspect alignment using Jalview program. 
-- Try different coloring schemes-  clustal, percentage identity, hydrophobicity
+- Try different coloring schemes - clustal, percentage identity, hydrophobicity
   and by conservation
+  - Clustal:  It colors the sequences according to the amino acid type and the level of conservation within the alignment. Highly conserved residues are highlighted in specific colors, making it easier to spot conserved motifs or domains across different sequences. This scheme is derived from the Clustal series of programs, which are widely used for sequence alignment.
+  - Zappo: The Zappo coloring scheme colors amino acids based on their physicochemical properties, such as charge, polarity, and hydrophobicity.
+  - Taylor: , like Zappo, colors amino acids based on their physicochemical properties but uses a different set of colors. It is designed to make it easier to distinguish between different types of amino acids by using a broader and more intuitive color palette.
+  - The Hydrophobicity coloring scheme highlights amino acids based on their hydrophobic or hydrophilic properties.
 - Try to identify the most conserved regions.
 - What are the coordinates of most conserved region related to *CDK1* sequence.
 - Compare this conserved regions with conserved regions which can be identified
