@@ -182,7 +182,6 @@ dotter tandem_repeat2.fasta tandem_repeat2.fasta
 
 
 
-
 ** Exercise 5 - Identification of insertions, deletions, duplications
 Compare two genomic regions =a_region= and =b_region=
 - first do self comparison for each sequence
@@ -201,7 +200,6 @@ dotter b_region.fasta b_region.fasta
 dotter a_region.fasta b_region.fasta
 #+end_src
 
-
 ** Exercise 6 - Overlapping sequences
 make dotplot from following sequences stored in file:
 #+begin_example
@@ -212,7 +210,6 @@ what is relation between sequences?
 
 solution:
 [[../fig/scheme_dotter_overlap.png]]
-
 
 ** Exercise 7 - Compare two genomic regions:
 #+begin_src 
@@ -257,7 +254,6 @@ dotter SRR453021_1.fasta SRR453021_2.fasta
 select repeated sequences using dotter and search with NCBI blast:
 
 https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastn&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome
-
 
 ** Exercise 9 - Whole genome/chromosome dotplot
 
@@ -340,8 +336,77 @@ https://blast.ncbi.nlm.nih.gov/Blast.cgi?BLAST_SPEC=blast2seq&LINK_LOC=align2seq
 blast2seq can be used instead of =needle=. It also provide graphical view of alignment and non-interactive dotplot. Use blast2 seq on  =P04626.fasta= and  =P04412.fasta= sequences and explore results. Compare alignments and dotplot.
 
 You can paste either AA sequences to the blast form or you can use just accession ID (P046256, P04412).
+** Exercise 11.2 - Pairwise alignment using NCBI blast
+Compare two sequences of human Hexokinase and yeast Hexokinase using NCBI blast (You will have to use option Align two or more sequences). 
 
-* Exercise 12 - Multiple sequence alignment - Cyclin-dependent kinase
+Describe results of BLAST and answer following questions:
+
++ Sequence Identity: What is the percent identity between human Hexokinase and yeast Hexokinase?
++ Alignment Coverage: What percentage of the human Hexokinase and yeast Hexokinase sequences is covered by the alignment
++ Sequence of human Hexokinase is longer that yeast Hexokinase,  explain why is it so. Hint: explore Dot Plot tab in BLAST output.
+#+begin_src text
+>HXK1_HUMAN Hexokinase-1
+MIAAQLLAYYFTELKDDQVKKIDKYLYAMRLSDETLIDIMTRFRKEMKNGLSRDFNPTAT
+VKMLPTFVRSIPDGSEKGDFIALDLGGSSFRILRVQVNHEKNQNVHMESEVYDTPENIVH
+GSGSQLFDHVAECLGDFMEKRKIKDKKLPVGFTFSFPCQQSKIDEAILITWTKRFKASGV
+EGADVVKLLNKAIKKRGDYDANIVAVVNDTVGTMMTCGYDDQHCEVGLIIGTGTNACYME
+ELRHIDLVEGDEGRMCINTEWGAFGDDGSLEDIRTEFDREIDRGSLNPGKQLFEKMVSGM
+YLGELVRLILVKMAKEGLLFEGRITPELLTRGKFNTSDVSAIEKNKEGLHNAKEILTRLG
+VEPSDDDCVSVQHVCTIVSFRSANLVAATLGAILNRLRDNKGTPRLRTTVGVDGSLYKTH
+PQYSRRFHKTLRRLVPDSDVRFLLSESGSGKGAAMVTAVAYRLAEQHRQIEETLAHFHLT
+KDMLLEVKKRMRAEMELGLRKQTHNNAVVKMLPSFVRRTPDGTENGDFLALDLGGTNFRV
+LLVKIRSGKKRTVEMHNKIYAIPIEIMQGTGEELFDHIVSCISDFLDYMGIKGPRMPLGF
+TFSFPCQQTSLDAGILITWTKGFKATDCVGHDVVTLLRDAIKRREEFDLDVVAVVNDTVG
+TMMTCAYEEPTCEVGLIVGTGSNACYMEEMKNVEMVEGDQGQMCINMEWGAFGDNGCLDD
+IRTHYDRLVDEYSLNAGKQRYEKMISGMYLGEIVRNILIDFTKKGFLFRGQISETLKTRG
+IFETKFLSQIESDRLALLQVRAILQQLGLNSTCDDSILVKTVCGVVSRRAAQLCGAGMAA
+VVDKIRENRGLDRLNVTVGVDGTLYKLHPHFSRIMHQTVKELSPKCNVSFLLSEDGSGKG
+AALITAVGVRLRTEASS
+>HXKA_YEAST Hexokinase-1
+MVHLGPKKPQARKGSMADVPKELMDEIHQLEDMFTVDSETLRKVVKHFIDELNKGLTKKG
+GNIPMIPGWVMEFPTGKESGNYLAIDLGGTNLRVVLVKLSGNHTFDTTQSKYKLPHDMRT
+TKHQEELWSFIADSLKDFMVEQELLNTKDTLPLGFTFSYPASQNKINEGILQRWTKGFDI
+PNVEGHDVVPLLQNEISKRELPIEIVALINDTVGTLIASYYTDPETKMGVIFGTGVNGAF
+YDVVSDIEKLEGKLADDIPSNSPMAINCEYGSFDNEHLVLPRTKYDVAVDEQSPRPGQQA
+FEKMTSGYYLGELLRLVLLELNEKGLMLKDQDLSKLKQPYIMDTSYPARIEDDPFENLED
+TDDIFQKDFGVKTTLPERKLIRRLCELIGTRAARLAVCGIAAICQKRGYKTGHIAADGSV
+YNKYPGFKEAAAKGLRDIYGWTGDASKDPITIVPAEDGSGAGAAVIAALSEKRIAEGKSL
+GIIGA
+  #+end_src
+
+** Exercise 11.3 - Comparing P53 and P63 Protein Sequences
+Use NCBI BLAST to compare the protein sequences of human P53 and P63. These proteins share the DNA-binding domain and oligomerization domains but have distinct transactivation domains, reflecting their different roles in cellular processes.
+
+Use the NCBI BLAST's "Align two or more sequences" option to align these two sequences. From BLAST results:
+- Identify the shared  domain in the alignment. What is the percent identity within this domain?
+- What part of the P53 and P63  are likely transactivation and oligomerization domains
+- Run BLASTP with p53 and p63 as query against Conserved Domain Database https://www.ncbi.nlm.nih.gov/Structure/cdd/wrpsb.cgi. Was you conclusion about position of shared domains correct?
+
+#+begin_src txt
+>sp|P04637|P53_HUMAN Cellular tumor antigen p53 OS=Homo sapiens OX=9606 GN=TP53 PE=1 SV=4
+MEEPQSDPSVEPPLSQETFSDLWKLLPENNVLSPLPSQAMDDLMLSPDDIEQWFTEDPGP
+DEAPRMPEAAPPVAPAPAAPTPAAPAPAPSWPLSSSVPSQKTYQGSYGFRLGFLHSGTAK
+SVTCTYSPALNKMFCQLAKTCPVQLWVDSTPPPGTRVRAMAIYKQSQHMTEVVRRCPHHE
+RCSDSDGLAPPQHLIRVEGNLRVEYLDDRNTFRHSVVVPYEPPEVGSDCTTIHYNYMCNS
+SCMGGMNRRPILTIITLEDSSGNLLGRNSFEVRVCACPGRDRRTEEENLRKKGEPHHELP
+PGSTKRALPNNTSSSPQPKKKPLDGEYFTLQIRGRERFEMFRELNEALELKDAQAGKEPG
+GSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
+>sp|Q9H3D4|P63_HUMAN Tumor protein 63 OS=Homo sapiens OX=9606 GN=TP63 PE=1 SV=1
+MNFETSRCATLQYCPDPYIQRFVETPAHFSWKESYYRSTMSQSTQTNEFLSPEVFQHIWD
+FLEQPICSVQPIDLNFVDEPSEDGATNKIEISMDCIRMQDSDLSDPMWPQYTNLGLLNSM
+DQQIQNGSSSTSPYNTDHAQNSVTAPSPYAQPSSTFDALSPSPAIPSNTDYPGPHSFDVS
+FQQSSTAKSATWTYSTELKKLYCQIAKTCPIQIKVMTPPPQGAVIRAMPVYKKAEHVTEV
+VKRCPNHELSREFNEGQIAPPSHLIRVEGNSHAQYVEDPITGRQSVLVPYEPPQVGTEFT
+TVLYNFMCNSSCVGGMNRRPILIIVTLETRDGQVLGRRCFEARICACPGRDRKADEDSIR
+KQQVSDSTKNGDGTKRPFRQNTHGIQMTSIKKRRSPDDELLYLPVRGRETYEMLLKIKES
+LELMQYLPQHTIETYRQQQQQQHQHLLQKQTSIQSPSSYGNSSPPLNKMNSMNKLPSVSQ
+LINPQQRNALTPTTIPDGMGANIPMMGTHMPMAGDMNGLSPTQALPPPLSMPSTSHCTPP
+PPYPTDCSIVSFLARLGCSSCLDYFTTQGLTTIYQIEHYSMDDLASLKIPEQFRHAIWKG
+ILDHRQLHEFSSPSHLLRTPSSASTVSVGSSETRGERVIDAVRFTLRQTISFPPRDEWND
+FNFDMDARRNKQQRIKEEGE
+#+end_src
+* Multiple sequence alignment
+** Exercise 12 - Multiple sequence alignment - Cyclin-dependent kinase
 Cyclin-dependent kinases (CDKs) are a group of enzymes that regulate the
 progression of the cell cycle by adding phosphate groups to other proteins, a
 process called phosphorylation. They are activated by binding to regulatory
@@ -402,7 +467,7 @@ PEVESLQDYKNTFPKWKPGSLASHVKNLDENGLDLLSKMLIYDPAKRISGKMALNHP
 YFNDLDNQIKKM
 #+end_src
 *Transitive consistency score* : TCS is an alignment evaluation score that makes it possible to identify in an MSA the most correct positions. It has been shown that these positions are the most likely to be structuraly correct and also the most informative when estimating phylogenetic trees. The TCS evaluation and filtering procedure is implemented in the T-Coffee package and can be used to evaluate and filter any third party multiple sequence alignment  
-* Exercise -  Multiple alignment from HSPB8 proteins
+** Exercise 13 - Multiple alignment from HSPB8 proteins
 Create MSA for set of orthologs of HSPB8 protein (Heat shock protein beta-8) and identify conserved regions.
 
 Make copy of of fasta file and then rename fasta headers:
@@ -429,7 +494,23 @@ Open resulting alignment in ~Jalview~ program.
   - will you be able to identify conserved domain if you use only mouse, cow, pig and human sequences?
   - try to  select subset of sequences(mammals) and create alignment again. 
 - save alignment in =fasta= and and =msf= format, inspect the saved file using =less= command
-* Exercise - Multiple sequence alignment of the mitochondrial 16S gene
+** Exercise 14 - Alignment of protein isoforms
+Investigate the alignment of 11 alternatively-spliced gene products from the human erythrocyte membrane protein band 4.1 (EPB41) gene, focusing on how different multiple sequence alignment (MSA) programs handle the dataset. The aim is to compare the performance of three popular MSA programs—MAFFT, MUSCLE, and ClustalW—when aligning sequences that differ only by deletions due to alternative splicing.
+
+Correct alignment of isoforms will contain only matches and gaps, no mismatches!
+
+sequences can be obtained [[../data/alignment_sequences/epb41.fasta]]
+
+- Retrieve the dataset consisting of 11 EPB41 isoforms.
+- Open the JalView desktop application and load the unaligned sequences to visually inspect their similarities and differences.
+- Use the JalView web services menu to access the MAFFT, MUSCLE, and ClustalW alignment services. Perform an MSA with each program using the EPB41 isoform dataset, setting the output format to ClustalW for consistency.
+- Keep the results accessible for comparison, either by keeping the tabs/windows open or by saving the output files.
+- Compare the three alignments using JalView to assess how each program performed. Remember, an ideal alignment for isoforms should contain only matches and gaps, with no mismatches, since the sequences are identical except for the presence of deletions.
+- Evaluate the alignments to determine which program produced the best results based on the criteria of correctly handling deletions without introducing mismatches.
+- Choose one of the alignments you believe has the potential to be corrected manually. Using JalView, edit this alignment to resolve any issues, aiming to create an ideal alignment that reflects the expected pattern of matches and gaps for alternatively spliced isoforms.
+
+
+** Exercise 15 - Multiple sequence alignment of the mitochondrial 16S gene
 The mitochondrial 16S gene is a widely studied genetic marker in molecular
 biology, which is used for species identification, phylogenetic analysis, and
 evolutionary studies. 16S gene codes for a RNA subunit of the mitochondrial
@@ -475,7 +556,7 @@ mafft --reorder 16s.fasta > 16s_aln.fasta
 #+end_src
 inspect alignment in ~Aliview~
 
-** Manual editing of alignment : 
+*** Manual editing of alignment : 
 
 In the AliView window of 16s_aln.fasta, place the cursor on the sequence that
 bridges the first of the two large gaps near the end of the alignment (around
@@ -514,8 +595,8 @@ and save the alignment file.
 
 check the lengths of resulting alignments.
 
-** Automatic evaluation of alignment
-*** using ~t_coffee~ program 
+*** Automatic evaluation of alignment
+**** using ~t_coffee~ program 
 (this can take several hours to finish)
 
 TCS is an alignment evaluation score that makes it possible to identify the most
@@ -539,7 +620,7 @@ evaluate alignment:
 t_coffee -infile  16s_aln.fasta -evaluate
 #+end_src
 
-*** using ~bmge~ program
+**** using ~bmge~ program
 BMGE is able to perform biologically relevant trimming on a multiple alignment
 of DNA, codon or amino acid sequences. BMGE is designed to select regions in a
 multiple sequence alignment that are suited for phylogenetic inference. For each
@@ -560,7 +641,7 @@ bmge  -i 16s_aln.fasta -t DNA -of 16s_filtered.fasta -oh 16s_filtered.html
 ~bmge~ generates two output - html is suitable for viewing in web browser.
 fitered.fasta can be used for phylogenetic analysis.
 
-* Exercise - MSA of globins proteins
+** Exercise 16 -  MSA of globins proteins
  Create and analyze a multiple sequence alignment (MSA) of proteins from the globin family. Globins are oxygen-binding proteins found in many organisms, including humans. They play a crucial role in oxygen transport and storage. Some well-known globin family members are hemoglobin, myoglobin, and neuroglobin.
 
 Protein Sequence Set: Select protein sequences from different organisms representing hemoglobin, myoglobin, and neuroglobin. For example:
@@ -609,7 +690,7 @@ Answers for Interpretation:
 hemoglobin is tetramer
 #+end_comment
 
-* Exercise - Identification of catalytic triad residues in serine proteases
+** Exercise 17 - Identification of catalytic triad residues in serine proteases
 Create and analyze an MSA of serine proteases, a family of enzymes that cleave
 peptide bonds in proteins. They play essential roles in digestion, blood
 clotting, and immune responses. Some well-known serine proteases include
@@ -640,7 +721,7 @@ are typically under negative selection, while surface loops and other flexible
 regions might be under positive selection, reflecting the adaptation to
 different substrates and physiological conditions.
 
-* Identification of Bacterial Homologs of Human Neuroglobin and Analysis of Heme-Binding Pocket Conservation
+** Exercise 18 - Identification of Bacterial Homologs of Human Neuroglobin and Analysis of Heme-Binding Pocket Conservation
 *Objective*:  In this assignment, you will identify bacterial homologs of human
 neuroglobin, create a multiple sequence alignment (MSA) with human and mouse
 globin homologs (hemoglobin, myoglobin, and neuroglobin), and analyze the
@@ -698,8 +779,6 @@ Some of the key functions of bacterial globins include:
 - https://www.uniprot.org/uniprotkb/A7HD43
 - https://www.uniprot.org/uniprotkb/O66586
 - https://www.rcsb.org/3d-sequence/1TU9
-
-
 
 
 
