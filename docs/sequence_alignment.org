@@ -380,8 +380,10 @@ Use NCBI BLAST to compare the protein sequences of human P53 and P63. These prot
 Use the NCBI BLAST's "Align two or more sequences" option to align these two sequences. From BLAST results:
 - Identify the shared  domain in the alignment. What is the percent identity within this domain?
 - What part of the P53 and P63  are likely transactivation and oligomerization domains
+- Compare BLAST results with dot plot analysis. Create file ~p53.fasta~ with P53 sequence and ~p63.fasta~ with P63 sequences and the compare them by ~dotter~ program. 
 - Run BLASTP with p53 and p63 as query against Conserved Domain Database https://www.ncbi.nlm.nih.gov/Structure/cdd/wrpsb.cgi. Was you conclusion about position of shared domains correct?
 
+P53 and P63 sequence in fasta format:
 #+begin_src txt
 >sp|P04637|P53_HUMAN Cellular tumor antigen p53 OS=Homo sapiens OX=9606 GN=TP53 PE=1 SV=4
 MEEPQSDPSVEPPLSQETFSDLWKLLPENNVLSPLPSQAMDDLMLSPDDIEQWFTEDPGP
@@ -499,16 +501,13 @@ Investigate the alignment of 11 alternatively-spliced gene products from the hum
 
 Correct alignment of isoforms will contain only matches and gaps, no mismatches!
 
-sequences can be obtained [[../data/alignment_sequences/epb41.fasta]]
-
-- Retrieve the dataset consisting of 11 EPB41 isoforms.
+- Sequences can be obtained from [[../data/alignment_sequences/epb41.fasta]]
 - Open the JalView desktop application and load the unaligned sequences to visually inspect their similarities and differences.
 - Use the JalView web services menu to access the MAFFT, MUSCLE, and ClustalW alignment services. Perform an MSA with each program using the EPB41 isoform dataset, setting the output format to ClustalW for consistency.
 - Keep the results accessible for comparison, either by keeping the tabs/windows open or by saving the output files.
 - Compare the three alignments using JalView to assess how each program performed. Remember, an ideal alignment for isoforms should contain only matches and gaps, with no mismatches, since the sequences are identical except for the presence of deletions.
 - Evaluate the alignments to determine which program produced the best results based on the criteria of correctly handling deletions without introducing mismatches.
 - Choose one of the alignments you believe has the potential to be corrected manually. Using JalView, edit this alignment to resolve any issues, aiming to create an ideal alignment that reflects the expected pattern of matches and gaps for alternatively spliced isoforms.
-
 
 ** Exercise 15 - Multiple sequence alignment of the mitochondrial 16S gene
 The mitochondrial 16S gene is a widely studied genetic marker in molecular
@@ -752,7 +751,7 @@ Some of the key functions of bacterial globins include:
   transducers, detecting environmental changes and triggering cellular
   responses.
 
-** Tasks:
+*** Tasks:
 
 1. Obtain the amino acid sequence of human neuroglobin from a database, such as
    UniProt or NCBI Protein.
@@ -775,7 +774,7 @@ Some of the key functions of bacterial globins include:
 8. Clearly describe your observations and conclusions regarding the conservation
    of the two histidine residues in the heme-binding pocket.
 
-** Example of bacterial globins with known 3D structure:
+*** Example of bacterial globins with known 3D structure:
 - https://www.uniprot.org/uniprotkb/A7HD43
 - https://www.uniprot.org/uniprotkb/O66586
 - https://www.rcsb.org/3d-sequence/1TU9
