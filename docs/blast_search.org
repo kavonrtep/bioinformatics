@@ -1,6 +1,6 @@
 * BLAST
-** BLASTN - NCBI web interface
-Make nucleotine blast  search against following sequence:
+** Exercise 1- BLASTN - NCBI web interface
+Make nucleotide blast  search against following sequence:
 #+begin_src text
 >gi|202471|gb|M57671.1|OCOINS Octodon degus insulin mRNA, complete cds
 GCATTCTGAGGCATTCTCTAACAGGTTCTCGACCCTCCGCCATGGCCCCGTGGATGCATCTCCTCACCGT
@@ -59,7 +59,7 @@ that the E-value changed, while the alignment score did not. Why?
 *Hint*:  Expand the "Search summary" section near the top by clicking it. Compare
 E values and  the sizes (in basepairs) of the databases we used for the two BLAST searches
 
-** BLASTP - NCBI web interface
+** Exercise 2 - BLASTP - NCBI web interface
 The following is the product of a gene in C. elegans that seems to be important in development.
 #+begin_example
 >C.elegans protein
@@ -79,7 +79,7 @@ protein database (nr) to identify protein and find its homologs.
 blast link : https://blast.ncbi.nlm.nih.gov/Blast.cgi
 
 - Based on the identical hit to C. elegans what is the identity of this protein? 
-# show how you can get from blast result to ncbi proein and uniprot record
+# show how you can get from blast result to ncbi protein and uniprot record
 #  Dwarfin sma-4, involved in TGF-beta pathway
 - Aside from the C. elegans proteins, what is the most significant hit? What is
   its identity and E-value?
@@ -98,12 +98,13 @@ blast link : https://blast.ncbi.nlm.nih.gov/Blast.cgi
 - What is the best hit in vertebrates. What is its accession, organism, Evalue,
   Identity and Similarity)
 
-** BLASTX - NCBI web interface
+** Exercies 3 - BLASTX - NCBI web interface
 The part of genomic sequence of Twort bacteriophage is bellow. Use BLAST to
 search protein database  (Non-redundant protein sequences  - nr) to find
 homologous protein from other bacteriophages and viruses.
 - For search try to use Blosum62 and Blosum45 scoring matrix. What is the
   difference between searches with different matrices
+ # different score, blosum45 find bit litle bit more hits
 - What proteins (Accessions) has alignment with E value < 1e-10
 
 #+begin_example
@@ -135,7 +136,7 @@ GAAATTAAATTAATAAAA
 - distance tree view (in blastp results)
 #+end_comment
 
-** Identification of coding sequence using blastx vs blastn
+** Exercise 4 - Identification of coding sequence using BLASTX vs BLASTN
 characterization of unknown DNA PCR amplified fragment from unknown
 non-cultivatable microorganism
 #+begin_example
@@ -156,12 +157,13 @@ GGCGCCGCC
 
 - use =blastn= and =blastx= to characterize clone12. What tool is relevant to use?
 - check DNA sequence using ORFfinder https://www.ncbi.nlm.nih.gov/orffinder
-- use =blastp= against longest ORF, compare results with blastx search. 
+- use =blastp= against longest ORF, run blastb directly from orffinder, compare results with blastx search. 
 - What kind of enzyme is coded by =clone12=?
 - does the clone12 represent complete CDS of putative protein?
 #+begin_comment
 in blastx AA alignment is truncated probably because of low complexity
 filtering, turn of filtering and run in again.
+when searching against from orf finder - it is selecting uniprot database!!!
 Use *job name* for all searches and show history of searches
 #+end_comment
 - compare best hit from blastx directly using tblastx against DNA sequence of
