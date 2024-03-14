@@ -240,7 +240,7 @@ for complete options type =blastn -help=
 
 
 
-** blastp exercise 1
+** blastp exercise 5
 
 *** files in exercise:
 - query : =~/Desktop/bioinformatics/data/blast_data/proteins.fasta=
@@ -259,8 +259,8 @@ run protein blast with default parameters in terminal
 mkdir blast_search
 cd blast_search
 # copy query and database to directory with data:  
-cp ~/Desktop/bioinformatics/data/blast_data/proteins.fasta .
-cp ~/Desktop/bioinformatics/data/blast_data/db/pdbaa .
+cp ~/Desktop/Bioinformatics/data/blast_data/proteins.fasta .
+cp ~/Desktop/Bioinformatics/data/blast_data/db/pdbaa .
 
 # inspect the query file  protein.fasta
 cat proteins.fasta
@@ -268,15 +268,12 @@ seqkit stats proteins.fasta
 # inspect fasta file we will use as database
 seqkit stat pdbaa
 
-
-
 # fasta file db/pdbaa will be used as database, it must be formated using
 # makeblastdb command to make data blast compatible
 makeblastdb -in pdbaa -dbtype prot
 # after succesfull creation of database, information about size of database is printet to stdout
 # Additional files in db directory were created, what are these files?
 ls -l 
-
 # run blastp with default settings:
 blastp -query proteins.fasta -db pdbaa -out proteins_blastp_default.txt
 # inspect output with less command or text editor
@@ -324,7 +321,7 @@ show tabular output in libreoffice
 #+end_comment
 
 
-** blastp exercise 2 : extract hits from database and create alignment with query:
+** blastp exercise 6 : extract hits from database and create alignment with query:
 The aim of this exercise is to perform a BLASTP search against a protein
 database using a single query sequence and subsequently analyze the
 results, extracting hit information, retrieving and ordering the hit sequences,
@@ -336,8 +333,8 @@ cd
 mkdir blast_search2
 cd blast_search2
 # copy query and database to directory with data:  
-cp ~/Desktop/bioinformatics/data/blast_data/query2.fasta .
-cp ~/Desktop/bioinformatics/data/blast_data/db/pdbaa .
+cp ~/Desktop/Bioinformatics/data/blast_data/query2.fasta .
+cp ~/Desktop/Bioinformatics/data/blast_data/db/pdbaa .
 makeblastdb -in pdbaa -dbtype prot
 
 
