@@ -1,4 +1,4 @@
-* Assembly Sanger sequence reads using Staden program 
+* Exercise 1 -  Assembly Sanger sequence reads using Staden program 
 - Available for Linux, Windows and MacOS - http://staden.sourceforge.net/
 - Concise tutorial : https://bioinf.comav.upv.es/courses/intro_bioinf/_downloads/5521cd30ca085b97175a9d32ce58f517/staden_course.pdf
 - Detailed manual : http://bioinformatics.se/tools/staden/staden_package_manual.pdf
@@ -19,11 +19,11 @@ are present.
 
 data for assembly are located in =~/Desktop/bioinformatics/data/sanger=
 
-* Assembly from short NGS reads using Velvet program - single end reads:
+* Exercise 2 -  Assembly from short NGS reads using Velvet program - single end reads:
 ** Installation of necessary programs
 
 #+begin_src bash
-mamba create -n assembly -c bioconda jellyfish fastx_toolkit quast bandage samtools fastqc multiqc
+mamba create -n assembly -c bioconda jellyfish fastx_toolkit quast bandage samtools fastqc multiqc 
 conda activate assembly
 #+end_src
 
@@ -69,7 +69,8 @@ this command will create html reports:
 Inspect reports. 
 - What is the sequence read length?
 - how many sequences is in single runs?
-- What is the total number of bases
+- What is the total number of bases?
+- What is the sequencing coverage?
 
 ** Estimation of genome size:
 
