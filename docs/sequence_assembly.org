@@ -23,7 +23,7 @@ data for assembly are located in =~/Desktop/bioinformatics/data/sanger=
 ** Installation of necessary programs
 
 #+begin_src bash
-mamba create -n assembly -c bioconda jellyfish fastx_toolkit quast bandage samtools fastqc multiqc 
+mamba create -n assembly -c bioconda jellyfish fastx_toolkit quast bandage samtools fastqc multiqc bowtie2
 conda activate assembly
 #+end_src
 
@@ -247,11 +247,11 @@ NOTE : deactivate assembly environment for this step
 #+begin_src bash
 # create database from contigs 
 bowtie2-build  run_25_paired/contigs.fa run_25_paired/contigs.fa
-#  map reads to assembly : (~7min)
-bowtie2 -p 3 -x run_25_paired/contigs.fa -1 SRR022852_1_trimmed.fastq -2 SRR022852_2_trimmed.fastq > SRR022852.sam
+#  map reads to assembly : (~1min)
+bowtie2 -p 8 -x run_25_paired/contigs.fa -1 SRR022852_1_trimmed.fastq -2 SRR022852_2_trimmed.fastq > SRR022852.sam
 # convert SAM to BAM format (~1min):
 samtools view -b SRR022852.sam > SRR022852.bam
-# sorting according position 
+# sorting according position (~1min)
 samtools sort SRR022852.bam > SRR022852_sorted.bam
 # create index:
 samtools index SRR022852_sorted.bam
