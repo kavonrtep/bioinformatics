@@ -138,7 +138,7 @@ same command as above but lines are brokend using backslash "\":
 
 
 * ChIP-Seq on Galaxy server
-Login to https://usegalaxy.eu and import data from history:   
+Login to https://usegalaxy.eu and import data from history: https://usegalaxy.eu/u/petr_novak/h/chip-seq-cenh
 
 Imported dataset include three files:
 
@@ -182,4 +182,7 @@ trim sequence 20-151
 - Explore CENH3 enriched regions
 - What type of sequences are associated with CENH3 domains?
 - How many CENH3 associated domains you can identify?
-  
+- Are sequences associated with CENH3 domain similar?
+  - zoom to individual domains and extract part of the associated sequence
+  - put sequence into single FASTA file
+  - compare sequences using dotter
