@@ -138,7 +138,7 @@ same command as above but lines are brokend using backslash "\":
 
 
 * ChIP-Seq on Galaxy server
-Login to https://usegalaxy.eu and import data from history: https://usegalaxy.eu/u/petr_novak/h/chip-seq-cenh
+Login to https://usegalaxy.eu and import data from history: https://usegalaxy.eu/u/petr_novak/h/chip-seq-cenh3
 
 Imported dataset include three files:
 
