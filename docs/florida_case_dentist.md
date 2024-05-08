@@ -63,9 +63,9 @@ Use Phyml-SMS program with default settings. This script runs SMS to select the 
 7. Use command tool to color dentist, patients, and control sequences in the tree. Use the following command:
 
 ```dendroscope
-find searchtext='Dentist' target=nodes regex=true;set labelcolor=#FF0000;deselect all; 
-find searchtext='Patient' target=nodes regex=true;set labelcolor=#00FF00;deselect all;
-find searchtext='Control' target=nodes regex=true;set labelcolor=#0000FF;deselect all;
+find searchtext='Dentist' target=nodes regex=true;set labelcolor=#AA0000;deselect all; 
+find searchtext='Patient' target=nodes regex=true;set labelcolor=#00AA00;deselect all;
+find searchtext='Control' target=nodes regex=true;set labelcolor=#0000AA;deselect all;
 ```
 8. Select outgroup and use Edit/reroot on outgroup to root the tree.
 
