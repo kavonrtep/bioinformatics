@@ -44,12 +44,16 @@ cd hiv_env
 cp ~/Desktop/Bioinformatics/data/phylogenetic/hiv_env_renamed.fna .
 mafft --reorder hiv_env_renamed.fna > hiv_env_aligned.fna
 ```
+2. Inspect the MSA file using Jalview program. Inspect end of the alignment to see if all sequences are aligned. Are there any gaps in the alignment at the end of the sequences? Try to identify parts of sequences which should be removed from the alignment. If necessary trim the alignment in Jalview and save it as a new file.
+
+Optional: calculate NJ tree in Jalview from trimmed and untrimmed alignment. Compare the trees.
 
 3. Calculate the genetic distances between the sequences in the MSA file. Use the distmat program with the following command:
 
 ```shell
 distmat --help
 distmat -sequence hiv_env_aligned.fna -nucmethod 1 -outfile hiv_env_distances.csv
+distmat -sequence hiv_env_aligned_trimmed.fna -nucmethod 1 -outfile hiv_env_trimmed_distances.csv
 ```
 
 4. Import the distance matrix to LibreOffice Calc or Excel and visualize it as a heatmap using conditional formatting. What do you observe? 
