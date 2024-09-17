@@ -43,6 +43,84 @@ gepard
 #+end_src
 In Graphical user interface select pair of sequences you want to compare. Test different word size settings
 
+** Exercise 1: Simple Self-Comparison
+Make self comparison of the following sequences and identify repetitive sequences.
+- How long is repetitive element?
+- Is it in forward or reverse-complement orientation.
+- How many copies have repetitive element?
+
+Sequences for comparison are located in  ~~/Desktop/Bioinformatics/data/dotter_sequences2~
+To run self comparison run =dotter= as:
+#+begin_src bash
+cd ~/Desktop/Bioinformatics/data/dotter_sequences2
+dotter seq1.fasta seq1.fasta
+...
+#+end_src
+
+#+begin_src txt :tangle ../data/dotter_sequences2/seq1.fasta
+>seq1
+TACCTTGACTTCAGATCTTCCTGAAATAGTGCCGTTTTTATTTTTTGTGATATTTGATAT
+ACCTTTAGCTCTGGGCACTATAGCAATTCTATGCATCGATTGCTATAATGGCAGAACATG
+GATTCCCCCCCTCCAGACTTAAAGGAATTCGAGAAGACTGGGACTCAAAAAATGTAGAAG
+ACCTTGAAGATGGCTACGGACATGCTACTGTTTGTATAACTCCAATTTGCAAATAAGCCA
+TTAGAATTAACTTTTTATTTACCAAACGGTCTTCAAACGGATCTCTTGGCATACGCGCCA
+TGAATTCAAGAACCAAAGCAAAGTTAAGTACATGATTGCCCATACCTTGTTGCAATATTG
+AGTTTCGACGAGTTTTGCATATTAAAAGGTCAAAAACCTGCATGCTACTGTTTGTATAAC
+TCCAATTTGCAAAGAGCCGATATTGGCGTTGCAATGGGTATTTCTGGATCTGA
+#+end_src
+# 1 repeat - two occurrences 
+
+#+begin_src txt :tangle ../data/dotter_sequences2/seq2.fasta
+>seq2
+TACCTTGACTTCAGATCTTCCTGAAATAGTGCCATGCTACTGTTTGTATAACTCCAATTT
+GCAACGTTTTTATTTTTTGTGATATTTGATATACCTTTAGCTCTGGGCACTATAGCAATT
+CTATGCATCGATTGCTATAATGGCAGAACATGGATTCCCCCCCTCCAGACTTAAAGGAAT
+TCGAGAAGACTGGGACTCAAAAAATGTAGAAGACCTTGAAGATGGCTACGGACATGCTAC
+TGTTTGTATAACTCCAATTTGCAAATAAGCCATTAGAATTAACTTTTTATTTACCAAACG
+GTCTTCAAACGGATCTCTTGGCATACGCGCCATGAATTCAAGAACCAAAGCAAAGTTAAG
+TACATGATTGCCCATACCTTGTTGCAATATTGAGTTTCGACGAGTTTTGCATATTAAAAG
+GTCAAAAACCTGCATGCTACTGTTTGTATAACTCCAATTTGCAAAGAGCCGATATTGGCG
+TTGCAATGGGTATTTCTGGATCTGACGTTTCTAAGCAGCCGGCAGATATGATTCTATTTG
+ATGACAACTTTGCATCAAGTGTTG
+#+end_src
+# 1 repeat - three occurrences
+#+begin_src txt :tangle ../data/dotter_sequences2/seq3.fasta
+>seq3 
+ATACCTTTAGCTCTGGGCACTATAGCAATTCTATGCATCGATATCGGCGATGACAACTTT
+GCATCAAGTGTTGTACCTTGACTTCAGATCTTCCTGAAATAGTGCCATGCTACTGTTTGT
+ATAACTCCAATTTGCAACGTTTTTATTTTTTGTGATATTTGATATACCTTTAGCTCTGGG
+CACTATAGCAATTCTATGCATCGATTGCTATAATGGCAGAACATGGATTCCCCCCCTCCA
+GACTTAAAGGAATTCGAGAAGACTGGGACTCAAAAAATGTAGAAGACCTTGAAGATGGCT
+ACGGACATGCTACTGTTTGTATAACTCCAATTTGCAAATAAGCCATTAGAATTAACTTTT
+TATTTACCAAACGGTCTTCAAACGGATCTCTTGGCATACGCGCCATGAATTCAAGAACCA
+AAGCAAAGTTAAGTACATGATTGCCCATACCTTGTTGCAATATTGAGTTTCGACGAGTTT
+TGCATATTAAAAGGTCAAAAACCTGCATGCTACTGTTTGTATAACTCCAATTTGCAAAGA
+GCCGATATTGGCGTTGCAATGGGTATTTCTGGATCTGACGTTTCTAAGCAGCCGGCAGAT
+ATGATTCTATTTGATGACAACTTTGCATCAAGTGTTGTCCCTGTAGGTCCATTCTTGTCC
+GTAGCCATCTTC
+#+end_src
+
+#+begin_src txt :tangle ../data/dotter_sequences2/seq4.fasta
+>seq4
+ACAGTGCGGGCTTTTTTTTTCGACCAAAGGTAACGAGGTAACAACCATGCGAGTGTTGAA
+GTTCGGCGGTACATCAGTGGCAAATGCAGAACGTTTTCACTGCCCCAACAAACTAATGCC
+ATGCAGGACATGTTTTATTTGGGCAAATTCCTGATCGACGAAAGTTTTCAATTGCGCCAG
+CGGGAACCCCGGCCTGCGTGTTGCCGATATTCTGGAAAGCAATGCCAGGCAGGGGCAGGT
+GGCCACCGTCCTCTCTGCCCCCGCCAAAATCACCAACCACCTGGTGGCGATGATTGAAAA
+AACCATTAGCGGCCAGGATGCTTTACCCAATATCAGCGATGCCGAACGTATTTTTGCCGA
+ACTTTTGACGGGACTCGCCGCCGCCCAGCCGGGGTTCCCGCTGGCGCAATTGAAAACTTT
+CGTCGATCAGGAATTTGCCCAAATAAAACATGTCCTGCATGGCATTAGTTTGTTGGGGCA
+GTGCCCGGATAGCATCAACGCTGCGCTGATTTGCCGTGGCGAGAAAATGTCGATCGCCAT
+TATGGCCGGCGTATTAGAAGCGCGCGGTCACAACGTTACTGTTATCGATCCGGTCGAAAA
+ACTGCTGGCAGTGGGGCATTACCTCGAATCTACCCACTGCCCCAACAAACTAATGCCATG
+CAGGACATGTTTTATTTGGGCAAATTCCTGATCGACGAAAGTTTTCAATTGCGCCAGCGG
+GAACCCCGGCCTCGGACGCTTTGCCGATAAGCTGCCGTCAGAACCACGGGAAAATATCGT
+TTATCAGTGCTGGGAGCGTTTTTGCCAGGAACTGGGTAAGCAAATTCCAGTGGCGATGAC
+CCTGGAAAAGAATATGCCGATCGGTTCGGGCTTAGGCTCCAGTGCCTGTTCGGTGGTCGC
+GGCGCTGATGGCGA
+#+end_src
+# three occurrences, one in reverse complement orientation
+
 ** Exercise 1 - structure of HER proteins - Human epidermal growth receptors
 
 - download protein sequences of receptor protein-tyrosine kinase from Uniprot:
@@ -180,16 +258,41 @@ dotter tandem_repeat.fasta tandem_repeat.fasta
 dotter tandem_repeat2.fasta tandem_repeat2.fasta
 #+end_src
 
+** Exercise X - Comparison of sequence with insertions, deletions, inversions
+Use dotter to visualize alignments and identify insertions or deletions in sequences AX02 and AX03 relative to AX01. Sequence are located in ~/Desktop/Bioinformatics/data/dotter_sequences/~ directory. 
+To create dotplot use:
+#+begin_src bash
+dotter AX01.fasta AX02.fasta
+dotter AX01.fasta AX03.fasta
+#+end_src
+- Examine the dot plots to identify any insertions or deletions (indels) or iversions in AX02 and AX03 with respect to the AX01 sequence. Describe the location and nature of these indels.
+- Based on what you see in the dot plots, answer the following:
+  - When comparing AX01 and AX02, would you use local or global alignment? Justify your choice.
+  - What type of alignment (local or global) would you use to compare AX01 with AX03? Explain your reasoning.
+
+    
+- Performing Global and Local Alignments:
+  - For global alignment use: https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastSearch&BLAST_SPEC=GlobalAln
+  - For local alignemnt use: https://blast.ncbi.nlm.nih.gov/Blast.cgi?BLAST_SPEC=blast2seq&LINK_LOC=align2seq&PAGE_TYPE=BlastSearch 
+-  Perform both types of alignments for:
+  - AX01 vs AX02
+  - AX01 vs AX03
+
+ Compare the results of the dot plots with the global and local alignments. Which method (global or local) gave you a clearer understanding of the differences (e.g., indels) between the sequences? How the choice of alignment (local vs. global) impacts the interpretation of the sequence similarities and differences?
 
 
-** Exercise 5 - Identification of insertions, deletions, duplications
+
+
+
+
+** Exercise 5 - Identification of insertions, deletions, duplications - more complex example
 Compare two genomic regions =a_region= and =b_region=
 - first do self comparison for each sequence
 - then compare =a_region= against =b_region=
 - What you can say about these genomic regions? Are there any insertions,
   duplications or deletions?
 
-#+begin_comment
+#+begin_comment 
 skip this, this is too complicated 
 #+end_comment
 
