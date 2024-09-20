@@ -43,7 +43,7 @@ gepard
 #+end_src
 In Graphical user interface select pair of sequences you want to compare. Test different word size settings
 
-** Exercise 1: Simple Self-Comparison
+** Exercise - Simple self-comparison using dotplot
 Make self comparison of the following sequences and identify repetitive sequences.
 - How long is repetitive element?
 - Is it in forward or reverse-complement orientation.
@@ -121,8 +121,65 @@ GGCGCTGATGGCGA
 #+end_src
 # three occurrences, one in reverse complement orientation
 
-** Exercise 1 - structure of HER proteins - Human epidermal growth receptors
+** Exercise - Identification of repetitive motifs using dotplot
 
+*** example repeats in DNA sequences 
+**** Inverted repeat
+ Triticum aestivum DNA, mobile element MITE contains inverted repeat. Compare the
+ sequences of MITE element against itself. 
+- What is the position of inverted repeat?
+- can you identify palindromes in the sequence? 
+#+begin_src bash
+cd ~/Desktop/Bioinformatics/data/dotter_sequences/
+# make dotplot
+dotter inverted_repeat.fasta inverted_repeat.fasta
+#+end_src
+
+**** Direct repeat
+Boundary of transposable element is defined by long terminal repeat (LTR).
+Make dotplot of sequence which contain LTR retrotransposon against itself. 
+- What is the length of the whole LTR retrotransposon?
+- What is the length of LTR?
+#+begin_src bash
+cd ~/Desktop/Bioinformatics/data/dotter_sequences/
+dotter ltr_rt2.fasta ltr_rt2.fasta
+#+end_src
+**** Tandem repeat
+Make dotplot of sequence containing tandem repeat.
+- how do you interpret dotplot?
+- what is a monomer length of tandem repeat(s)
+- what is unusual about tandem repeat in =tandem_repeat2.fasta=?
+Hint: distances between diagonal parallel lines can be used to estimate length of monomer in tandem repeat.
+#+begin_src bash
+cd ~/Desktop/Bioinformatics/data/dotter_sequences
+dotter tandem_repeat.fasta tandem_repeat.fasta
+dotter tandem_repeat2.fasta tandem_repeat2.fasta
+#+end_src
+
+** Exercise - Comparison of sequences with insertions, deletions, inversions
+Use dotter to visualize alignments and identify insertions or deletions in sequences AX02 and AX03 relative to AX01. Sequence are located in ~/Desktop/Bioinformatics/data/dotter_sequences/~ directory. 
+To create dotplot use:
+#+begin_src bash
+dotter AX01.fasta AX02.fasta
+dotter AX01.fasta AX03.fasta
+#+end_src
+- Examine the dot plots to identify any insertions or deletions (indels) or iversions in AX02 and AX03 with respect to the AX01 sequence. Describe the location and nature of these indels.
+- Based on what you see in the dot plots, answer the following:
+  - When comparing AX01 and AX02, would you use local or global alignment? Justify your choice.
+  - What type of alignment (local or global) would you use to compare AX01 with AX03? Explain your reasoning.
+
+    
+- Performing Global and Local Alignments:
+  - For global alignment use: https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastSearch&BLAST_SPEC=GlobalAln
+  - For local alignemnt use: https://blast.ncbi.nlm.nih.gov/Blast.cgi?BLAST_SPEC=blast2seq&LINK_LOC=align2seq&PAGE_TYPE=BlastSearch 
+-  Perform both types of alignments for:
+  - AX01 vs AX02
+  - AX01 vs AX03
+
+ Compare the results of the dot plots with the global and local alignments. Which method (global or local) gave you a clearer understanding of the differences (e.g., indels) between the sequences? How the choice of alignment (local vs. global) impacts the interpretation of the sequence similarities and differences?
+
+** Exercise - Comparison of HER proteins using dotplot
+compare sequence of HER proteins - Human epidermal growth receptors using dotter program. 
 - download protein sequences of receptor protein-tyrosine kinase from Uniprot:
 | accessions | name        |
 |------------+-------------|
@@ -132,7 +189,7 @@ GGCGCTGATGGCGA
 | O18735     | ERBB2 (Dog) |
 |------------+-------------|
 
-data for this exercise could  be downloaded from directly from uniprot using the wget command:
+- data for this exercise could  be downloaded from directly from uniprot using the wget command:
 #+begin_src sh 
 mkdir -p ~/data/dotter_sequences
 cd ~/data/dotter_sequences
@@ -189,7 +246,7 @@ backup of sequences is stored in ~/Desktop/bioinformatics/data/dotter_sequences/
 insertion - KTLSP
 #+END_COMMENT
 
-** Exercise 2 - comparison of HOX proteins
+** Exercise - comparison of HOX proteins using dotplot
 Download sequence for protein from uniprote, concatenate all HOX protein
 sequence into single FASTA file and make all-to-all comparison using dotplot.
 
@@ -205,7 +262,7 @@ dotter all_hox.fasta all_hox.fasta
 #+end_src
 Which pairs of protein are more similar to each other? What part of the proteins is conserved (N or C end)?
 
-** Exercise 3 - Locate exon/intron boundaries using dotter (splice sites).
+** Exercise - Locate exon/intron boundaries using dotter (splice sites).
 - download sequence AC108130.3 from genbank, save only region from 60000 to 119999 
 - download cDNA sequence of GABA A receptor: https://www.ncbi.nlm.nih.gov/nuccore/21265167?report=fasta
 - run dotter on these two sequences, identify exon/intron structure
@@ -223,69 +280,7 @@ dotter AC108130.3.fna GBRA1_HUMAN.fna   # genome vs protein
 # Data are also available in ~/Desktop/bioinformatics/data/dotter_sequences
 When using =dotter= to compare  DNA to protein, DNA sequence must be in forward orientation!
 
-** Exercise 4 - Identification of repetitive motifs
-
-*** example repeats in DNA sequences 
-**** Inverted repeat
- Triticum aestivum DNA, mobile element MITE contains inverted repeat. Compare the
- sequences of MITE element against itself. 
-- What is the position of inverted repeat?
-- can you identify palindromes in the sequence? 
-#+begin_src bash
-cd ~/Desktop/Bioinformatics/data/dotter_sequences/
-# make dotplot
-dotter inverted_repeat.fasta inverted_repeat.fasta
-#+end_src
-
-**** Direct repeat
-Boundary of transposable element is defined by long terminal repeat (LTR).
-Make dotplot of sequence which contain LTR retrotransposon against itself. 
-- What is the length of the whole LTR retrotransposon?
-- What is the length of LTR?
-#+begin_src bash
-cd ~/Desktop/Bioinformatics/data/dotter_sequences/
-dotter ltr_rt2.fasta ltr_rt2.fasta
-#+end_src
-**** Tandem repeat
-Make dotplot of sequence containing tandem repeat.
-- how do you interpret dotplot?
-- what is a monomer length of tandem repeat(s)
-- what is unusual about tandem repeat in =tandem_repeat2.fasta=?
-Hint: distances between diagonal parallel lines can be used to estimate length of monomer in tandem repeat.
-#+begin_src bash
-cd ~/Desktop/Bioinformatics/data/dotter_sequences
-dotter tandem_repeat.fasta tandem_repeat.fasta
-dotter tandem_repeat2.fasta tandem_repeat2.fasta
-#+end_src
-
-** Exercise X - Comparison of sequence with insertions, deletions, inversions
-Use dotter to visualize alignments and identify insertions or deletions in sequences AX02 and AX03 relative to AX01. Sequence are located in ~/Desktop/Bioinformatics/data/dotter_sequences/~ directory. 
-To create dotplot use:
-#+begin_src bash
-dotter AX01.fasta AX02.fasta
-dotter AX01.fasta AX03.fasta
-#+end_src
-- Examine the dot plots to identify any insertions or deletions (indels) or iversions in AX02 and AX03 with respect to the AX01 sequence. Describe the location and nature of these indels.
-- Based on what you see in the dot plots, answer the following:
-  - When comparing AX01 and AX02, would you use local or global alignment? Justify your choice.
-  - What type of alignment (local or global) would you use to compare AX01 with AX03? Explain your reasoning.
-
-    
-- Performing Global and Local Alignments:
-  - For global alignment use: https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastSearch&BLAST_SPEC=GlobalAln
-  - For local alignemnt use: https://blast.ncbi.nlm.nih.gov/Blast.cgi?BLAST_SPEC=blast2seq&LINK_LOC=align2seq&PAGE_TYPE=BlastSearch 
--  Perform both types of alignments for:
-  - AX01 vs AX02
-  - AX01 vs AX03
-
- Compare the results of the dot plots with the global and local alignments. Which method (global or local) gave you a clearer understanding of the differences (e.g., indels) between the sequences? How the choice of alignment (local vs. global) impacts the interpretation of the sequence similarities and differences?
-
-
-
-
-
-
-** Exercise 5 - Identification of insertions, deletions, duplications - more complex example
+** Exercise - Identification of insertions, deletions, duplications  - more complex example
 Compare two genomic regions =a_region= and =b_region=
 - first do self comparison for each sequence
 - then compare =a_region= against =b_region=
@@ -303,25 +298,31 @@ dotter b_region.fasta b_region.fasta
 dotter a_region.fasta b_region.fasta
 #+end_src
 
-** Exercise 6 - Overlapping sequences
+** Exercise - Identifying overlaps and creating a "sequence assembly" using dot plots
 make dotplot from following sequences stored in file:
 #+begin_example
 ~/Desktop/Bioinformatics/data/dotter_sequences/dna_examples/ovoverlaping_sequences.fasta
 #+end_example
 
-what is relation between sequences?
+- Sequence file contain SeqA, SeqB and SeqC. generate an all-to-all dot plot using dotter. This will compare each sequence (seqA, seqB, and seqC) against the others in a single analysis.
+- Examine the resulting dot plot to identify overlaps among seqA, seqB, and seqC.
+- Using the overlaps you identified, Create a simple schematic to show how the sequences fit together into a longer continuous sequence (contig).
 
-solution:
-[[../fig/scheme_dotter_overlap.png]]
 
-** Exercise 7 - Compare two genomic regions:
+# solution:
+# [../fig/scheme_dotter_overlap.png]]
+
+** Exercise - Compare two genomic regions with dotter
+Use a dot plot to compare two large genomic regions and identify structural variation.
+
 #+begin_src 
 cd ~/Desktop//bioinformatics/data/dotter_sequences/
 dotter genomeA_part.fasta genomeB_part.fasta
 #+end_src
-How would characterize difference between genomes?
+- How would characterize difference between genomes?
+- For larger sequences, the dot plot may appear "noisy" due to the presence of short repetitive sequences scattered throughout the genome. Identify regions in the dot plot that appear messy or contain many small dots. Zoom into this areas and identify what kind of sequences are causing these 'noise'
 
-** Exercise 8 - Identification of problems in sequences from SRA database
+** Exercise - Identification of problems in sequences from SRA database
 *** Illumina data : SRR2911427  (Migratory locust WGS)
 # overlap, high NN proportion
 - download sequences from SRA database using =fastq-dump= command line program 
@@ -358,15 +359,7 @@ select repeated sequences using dotter and search with NCBI blast:
 
 https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastn&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome
 
-** Exercise 9 - Whole genome/chromosome dotplot
-
-- download part of genome assembly from Zea mays:
-- link   https://www.ncbi.nlm.nih.gov/nuccore/KV887992.1
-- start GUI program =gepard=, use word length 100 and window size 200
-- as sequences 1 and 2 select downloaded sequence and create dotplot
-- what do you see and what does it mean?
-# not to interesting
-** Exercise 10 - Whole  genome comparison - Mycoplasma strain
+** Exercise - Whole  genome comparison with Gepard program
  /Mycoplasma hyopneumoniae/ is a bacterial pathogen that primarily affects pigs, causing enzootic pneumonia, a chronic respiratory disease.The genome of Mycoplasma hyopneumoniae is relatively small can be analyzed using =Gepard= dotplot program. Download genomic sequences of two strains and compare them using Gepard  
 #+begin_src txt
 https://zenodo.org/record/4485547/files/mycoplasma-232.fasta
