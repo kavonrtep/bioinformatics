@@ -9,7 +9,7 @@ x-axis, and the second sequence along the y-axis. If two sequences are similar
 in two regions, a dot is plotted with an intensity proportional to the
 similarity.
 
-** dotplot programs:
+** Dotplot programs:
 - Desktop applications:
   - dotter (https://www.sanger.ac.uk/science/tools/seqtools), linux only
   - gepard (http://cube.univie.ac.at/gepard)  - suitable for larger sequences, platform independent
@@ -43,7 +43,7 @@ gepard
 #+end_src
 In Graphical user interface select pair of sequences you want to compare. Test different word size settings
 
-** Exercise - Simple self-comparison using dotplot
+** Exercise 1.1 - Simple self-comparison using dotplot
 Make self comparison of the following sequences and identify repetitive sequences.
 - How long is repetitive element?
 - Is it in forward or reverse-complement orientation.
@@ -121,7 +121,7 @@ GGCGCTGATGGCGA
 #+end_src
 # three occurrences, one in reverse complement orientation
 
-** Exercise - Identification of repetitive motifs using dotplot
+** Exercise 1.2 - Identification of repetitive motifs using dotplot
 
 *** example repeats in DNA sequences 
 **** Inverted repeat
@@ -156,7 +156,7 @@ dotter tandem_repeat.fasta tandem_repeat.fasta
 dotter tandem_repeat2.fasta tandem_repeat2.fasta
 #+end_src
 
-** Exercise - Comparison of sequences with insertions, deletions, inversions
+** Exercise 1.3 - Comparison of sequences with insertions, deletions, inversions
 Use dotter to visualize alignments and identify insertions or deletions in sequences AX02 and AX03 relative to AX01. Sequence are located in ~/Desktop/Bioinformatics/data/dotter_sequences/~ directory. 
 To create dotplot use:
 #+begin_src bash
@@ -178,7 +178,7 @@ dotter AX01.fasta AX03.fasta
 
  Compare the results of the dot plots with the global and local alignments. Which method (global or local) gave you a clearer understanding of the differences (e.g., indels) between the sequences? How the choice of alignment (local vs. global) impacts the interpretation of the sequence similarities and differences?
 
-** Exercise - Comparison of HER proteins using dotplot
+** Exercise 1.4 - Comparison of HER proteins using dotplot
 compare sequence of HER proteins - Human epidermal growth receptors using dotter program. 
 - download protein sequences of receptor protein-tyrosine kinase from Uniprot:
 | accessions | name        |
@@ -246,7 +246,7 @@ backup of sequences is stored in ~/Desktop/bioinformatics/data/dotter_sequences/
 insertion - KTLSP
 #+END_COMMENT
 
-** Exercise - comparison of HOX proteins using dotplot
+** Exercise 1.5 - comparison of HOX proteins using dotplot
 Download sequence for protein from uniprote, concatenate all HOX protein
 sequence into single FASTA file and make all-to-all comparison using dotplot.
 
@@ -262,7 +262,7 @@ dotter all_hox.fasta all_hox.fasta
 #+end_src
 Which pairs of protein are more similar to each other? What part of the proteins is conserved (N or C end)?
 
-** Exercise - Locate exon/intron boundaries using dotter (splice sites).
+** Exercise 1.6 - Locate exon/intron boundaries using dotter (splice sites).
 - download sequence AC108130.3 from genbank, save only region from 60000 to 119999 
 - download cDNA sequence of GABA A receptor: https://www.ncbi.nlm.nih.gov/nuccore/21265167?report=fasta
 - run dotter on these two sequences, identify exon/intron structure
@@ -280,7 +280,7 @@ dotter AC108130.3.fna GBRA1_HUMAN.fna   # genome vs protein
 # Data are also available in ~/Desktop/bioinformatics/data/dotter_sequences
 When using =dotter= to compare  DNA to protein, DNA sequence must be in forward orientation!
 
-** Exercise - Identification of insertions, deletions, duplications  - more complex example
+** Exercise 1.7 - Identification of insertions, deletions, duplications  - more complex example
 Compare two genomic regions =a_region= and =b_region=
 - first do self comparison for each sequence
 - then compare =a_region= against =b_region=
@@ -298,7 +298,7 @@ dotter b_region.fasta b_region.fasta
 dotter a_region.fasta b_region.fasta
 #+end_src
 
-** Exercise - Identifying overlaps and creating a "sequence assembly" using dot plots
+** Exercise 1.8 - Identifying overlaps and creating a "sequence assembly" using dot plots
 make dotplot from following sequences stored in file:
 #+begin_example
 ~/Desktop/Bioinformatics/data/dotter_sequences/dna_examples/ovoverlaping_sequences.fasta
@@ -312,7 +312,7 @@ make dotplot from following sequences stored in file:
 # solution:
 # [../fig/scheme_dotter_overlap.png]]
 
-** Exercise - Compare two genomic regions with dotter
+** Exercise 1.9 - Compare two genomic regions with dotter
 Use a dot plot to compare two large genomic regions and identify structural variation.
 
 #+begin_src 
@@ -322,7 +322,19 @@ dotter genomeA_part.fasta genomeB_part.fasta
 - How would characterize difference between genomes?
 - For larger sequences, the dot plot may appear "noisy" due to the presence of short repetitive sequences scattered throughout the genome. Identify regions in the dot plot that appear messy or contain many small dots. Zoom into this areas and identify what kind of sequences are causing these 'noise'
 
-** Exercise - Identification of problems in sequences from SRA database
+** Exercise 1.10 - Whole genome comparison with Gepard program
+ /Mycoplasma hyopneumoniae/ is a bacterial pathogen that primarily affects pigs, causing enzootic pneumonia, a chronic respiratory disease.The genome of Mycoplasma hyopneumoniae is relatively small can be analyzed using =Gepard= dotplot program. Download genomic sequences of two strains and compare them using Gepard  
+#+begin_src txt
+https://zenodo.org/record/4485547/files/mycoplasma-232.fasta
+https://zenodo.org/record/4485547/files/mycoplasma-7422.fasta
+#+end_src
+- You can  use G and H (slow movement) or J and K (fast navigation) to slide along the current diagonal
+- Do you observe any diagonal lines in the dot plot other than the main diagonal? What do these lines indicate about the genomic organization (e.g., inversions, duplications)?
+ - Recalculate dotplot with word length 100
+ - Are there any regions of divergence (areas with no or few dots) between the two genomes? What could these regions represent (e.g., strain-specific genes, deletions, insertions)?
+ - How many deletions in you can observe in strain 232?
+
+** Exercise 1.11 - Identification of problems in sequences from SRA database
 *** Illumina data : SRR2911427  (Migratory locust WGS)
 # overlap, high NN proportion
 - download sequences from SRA database using =fastq-dump= command line program 
@@ -359,18 +371,6 @@ select repeated sequences using dotter and search with NCBI blast:
 
 https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastn&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome
 
-** Exercise - Whole  genome comparison with Gepard program
- /Mycoplasma hyopneumoniae/ is a bacterial pathogen that primarily affects pigs, causing enzootic pneumonia, a chronic respiratory disease.The genome of Mycoplasma hyopneumoniae is relatively small can be analyzed using =Gepard= dotplot program. Download genomic sequences of two strains and compare them using Gepard  
-#+begin_src txt
-https://zenodo.org/record/4485547/files/mycoplasma-232.fasta
-https://zenodo.org/record/4485547/files/mycoplasma-7422.fasta
-#+end_src
-- You can  use G and H (slow movement) or J and K (fast navigation) to slide along the current diagonal
-- Do you observe any diagonal lines in the dot plot other than the main diagonal? What do these lines indicate about the genomic organization (e.g., inversions, duplications)?
- - Recalculate dotplot with word length 100
- - Are there any regions of divergence (areas with no or few dots) between the two genomes? What could these regions represent (e.g., strain-specific genes, deletions, insertions)?
- - How many deletions in you can observe in strain 232?
-
 * Pairwise alignment
 ** Sequences for alignment:
 -  =ERB2_HUMAN= : http://www.uniprot.org/uniprot/P04626.fasta   
@@ -387,7 +387,7 @@ wget http://www.uniprot.org/uniprot/P04412.fasta
 wget http://www.uniprot.org/uniprot/Q8SZW1.fasta
 #+END_SRC
 
-** Exercise 11 - compare global and local alignments
+** Exercise 2.1 - Compare global and local alignments
 - global alignment is performed by program ~needle~
   - http://www.bioinformatics.nl/cgi-bin/emboss/help/needle
 - for local alignment use program ~water~, 
@@ -432,7 +432,7 @@ https://blast.ncbi.nlm.nih.gov/Blast.cgi?BLAST_SPEC=blast2seq&LINK_LOC=align2seq
 blast2seq can be used instead of =needle=. It also provide graphical view of alignment and non-interactive dotplot. Use blast2 seq on  =P04626.fasta= and  =P04412.fasta= sequences and explore results. Compare alignments and dotplot.
 
 You can paste either AA sequences to the blast form or you can use just accession ID (P046256, P04412).
-** Exercise 11.2 - Pairwise alignment using NCBI blast
+** Exercise 2.2 - Pairwise alignment using NCBI blast
 Compare two sequences of human Hexokinase and yeast Hexokinase using NCBI blast (You will have to use option Align two or more sequences). 
 
 Describe results of BLAST and answer following questions:
@@ -470,7 +470,7 @@ YNKYPGFKEAAAKGLRDIYGWTGDASKDPITIVPAEDGSGAGAAVIAALSEKRIAEGKSL
 GIIGA
   #+end_src
 
-** Exercise 11.3 - Comparing P53 and P63 Protein Sequences
+** Exercise 2.3 - Comparing P53 and P63 Protein Sequences
 Use NCBI BLAST to compare the protein sequences of human P53 and P63. These proteins share the DNA-binding domain and oligomerization domains but have distinct transactivation domains, reflecting their different roles in cellular processes.
 
 Use the NCBI BLAST's "Align two or more sequences" option to align these two sequences. From BLAST results:
@@ -504,7 +504,7 @@ ILDHRQLHEFSSPSHLLRTPSSASTVSVGSSETRGERVIDAVRFTLRQTISFPPRDEWND
 FNFDMDARRNKQQRIKEEGE
 #+end_src
 * Multiple sequence alignment
-** Exercise 12 - Multiple sequence alignment - Cyclin-dependent kinase
+** Exercise 3.1 - Multiple sequence alignment - Cyclin-dependent kinase
 Cyclin-dependent kinases (CDKs) are a group of enzymes that regulate the
 progression of the cell cycle by adding phosphate groups to other proteins, a
 process called phosphorylation. They are activated by binding to regulatory
@@ -565,7 +565,7 @@ PEVESLQDYKNTFPKWKPGSLASHVKNLDENGLDLLSKMLIYDPAKRISGKMALNHP
 YFNDLDNQIKKM
 #+end_src
 *Transitive consistency score* : TCS is an alignment evaluation score that makes it possible to identify in an MSA the most correct positions. It has been shown that these positions are the most likely to be structuraly correct and also the most informative when estimating phylogenetic trees. The TCS evaluation and filtering procedure is implemented in the T-Coffee package and can be used to evaluate and filter any third party multiple sequence alignment  
-** Exercise 13 - Multiple alignment from HSPB8 proteins
+** Exercise 3.2 - Multiple alignment from HSPB8 proteins
 Create MSA for set of orthologs of HSPB8 protein (Heat shock protein beta-8) and identify conserved regions.
 
 Make copy of of fasta file and then rename fasta headers:
@@ -592,7 +592,7 @@ Open resulting alignment in ~Jalview~ program.
   - will you be able to identify conserved domain if you use only mouse, cow, pig and human sequences?
   - try to  select subset of sequences(mammals) and create alignment again. 
 - save alignment in =fasta= and and =msf= format, inspect the saved file using =less= command
-** Exercise 14 - Alignment of protein isoforms
+** Exercise 3.3 - Alignment of protein isoforms
 Investigate the alignment of 11 alternatively-spliced gene products from the human erythrocyte membrane protein band 4.1 (EPB41) gene, focusing on how different multiple sequence alignment (MSA) programs handle the dataset. The aim is to compare the performance of three popular MSA programs—MAFFT, MUSCLE, and ClustalW—when aligning sequences that differ only by deletions due to alternative splicing.
 
 Correct alignment of isoforms will contain only matches and gaps, no mismatches!
@@ -605,7 +605,7 @@ Correct alignment of isoforms will contain only matches and gaps, no mismatches!
 - Evaluate the alignments to determine which program produced the best results based on the criteria of correctly handling deletions without introducing mismatches.
 - Choose one of the alignments you believe has the potential to be corrected manually. Using JalView, edit this alignment to resolve any issues, aiming to create an ideal alignment that reflects the expected pattern of matches and gaps for alternatively spliced isoforms.
 
-** Exercise 15 - Multiple sequence alignment of the mitochondrial 16S gene
+** Exercise 3.4 - Multiple sequence alignment of the mitochondrial 16S gene
 The mitochondrial 16S gene is a widely studied genetic marker in molecular
 biology, which is used for species identification, phylogenetic analysis, and
 evolutionary studies. 16S gene codes for a RNA subunit of the mitochondrial
@@ -736,7 +736,7 @@ bmge  -i 16s_aln.fasta -t DNA -of 16s_filtered.fasta -oh 16s_filtered.html
 ~bmge~ generates two output - html is suitable for viewing in web browser.
 fitered.fasta can be used for phylogenetic analysis.
 
-** Exercise 16 -  MSA of globins proteins
+** Exercise 3.5 - MSA of globins proteins
  Create and analyze a multiple sequence alignment (MSA) of proteins from the globin family. Globins are oxygen-binding proteins found in many organisms, including humans. They play a crucial role in oxygen transport and storage. Some well-known globin family members are hemoglobin, myoglobin, and neuroglobin.
 
 Protein Sequence Set: Select protein sequences from different organisms representing hemoglobin, myoglobin, and neuroglobin. For example:
@@ -785,7 +785,7 @@ Answers for Interpretation:
 hemoglobin is tetramer
 #+end_comment
 
-** Exercise 17 - Identification of catalytic triad residues in serine proteases
+** Exercise 3.6 - Identification of catalytic triad residues in serine proteases
 Create and analyze an MSA of serine proteases, a family of enzymes that cleave
 peptide bonds in proteins. They play essential roles in digestion, blood
 clotting, and immune responses. Some well-known serine proteases include
@@ -816,7 +816,7 @@ are typically under negative selection, while surface loops and other flexible
 regions might be under positive selection, reflecting the adaptation to
 different substrates and physiological conditions.
 
-** Exercise 18 - Identification of Bacterial Homologs of Human Neuroglobin and Analysis of Heme-Binding Pocket Conservation
+** Exercise 3.7 - Identification of Bacterial Homologs of Human Neuroglobin and Analysis of Heme-Binding Pocket Conservation
 *Objective*:  In this assignment, you will identify bacterial homologs of human
 neuroglobin, create a multiple sequence alignment (MSA) with human and mouse
 globin homologs (hemoglobin, myoglobin, and neuroglobin), and analyze the
