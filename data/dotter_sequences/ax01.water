@@ -1,0 +1,115 @@
+########################################
+# Program: water
+# Rundate: Tue 17 Sep 2024 19:40:46
+# Commandline: water
+#    [-asequence] AX01.fasta
+#    [-bsequence] AX03.fasta
+# Align_format: srspair
+# Report_file: ax01.water
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: AX01
+# 2: AX03
+# Matrix: EDNAFULL
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 1043
+# Identity:     821/1043 (78.7%)
+# Similarity:   821/1043 (78.7%)
+# Gaps:         176/1043 (16.9%)
+# Score: 3529.0
+# 
+#
+#=======================================
+
+AX01               1 GCGAGCGCCTCGTTCAGCTTGTTGGTGATGATATCTCCCCAGAATTGATA     50
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+AX03               1 GCGAGCGCCTCGTTCAGCTTGTTGGTGATGATATCTCCCCAGAATTGATA     50
+
+AX01              51 CAGATCTTTCCCTCGGGCATTCTCAAGACGGATCCCCATTTCCAGACGAC    100
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+AX03              51 CAGATCTTTCCCTCGGGCATTCTCAAGACGGATCCCCATTTCCAGACGAC    100
+
+AX01             101 TTTTGCCAAACTGGCGGATGTAGCGAAACTGCGATAAGGCTGCATTAAAT    150
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+AX03             101 TTTTGCCAAACTGGCGGATGTAGCGAAACTGCGATAAGGCTGCATTAAAT    150
+
+AX01             151 CGAGCGGGCGGAGTACGCCATACAAGCCGGAAAGCATTCGCAAATGCTGT    200
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+AX03             151 CGAGCGGGCGGAGTACGCCATACAAGCCGGAAAGCATTCGCAAATGCTGT    200
+
+AX01             201 TGGGCAAAATCGAAATCGTCTTCGCTGAAGGTTTCGGCCTGCA-------    243
+                     |||||||||||||||||||||||||||||||||||||||||||       
+AX03             201 TGGGCAAAATCGAAATCGTCTTCGCTGAAGGTTTCGGCCTGCATAAATTT    250
+
+AX01             244 --AGC-CGGTGTAGACA--------------TCACCT--TTAAACG----    270
+                       .|| .||..|.||.|              ||||||  ..|||||    
+AX03             251 CCTGCAAGGACTGGATATGCTGATTCTTATTTCACCTGCGAAAACGCTTG    300
+
+AX01             271 ----CCAGAATCGCCTGG-------CGGGC-ATTCGCCGGCGTGAAATCT    308
+                         ||| ||.|.|.|.|       ||.|| ||.|||.|.|| ||     
+AX03             301 ATTACCA-AAGCCCGTTGACCACCACGCGCTATACGCTGCCG-GA-----    343
+
+AX01             309 GGCTG-----------CCAG--------TCATGAAAGCGAGCGGCGTTGA    339
+                      ||||           ||||        .|||||        ||||..||
+AX03             344 -GCTGTTAGACAATTCCCAGCAGTTGATCCATGA--------GGCGCGGA    384
+
+AX01             340 TAC--------CCGCCAGTTT--GTCGCTGATGCGCATCAGCGTGCTAAT    379
+                     .||        ||| |||.||  ..|||||||||||||||||  |..||.
+AX03             385 AACTGACGCCTCCG-CAGATTAGCACGCTGATGCGCATCAGC--GACAAA    431
+
+AX01             380 CT-GCGGAGGCGTCAGTTTCCGCGCC--------TCATGGATCAACTGCT    420
+                     || ||||        ||.||..||||        |||||     ||||  
+AX03             432 CTGGCGG--------GTATCAACGCCGCTCGCTTTCATG-----ACTG--    466
+
+AX01             421 GGGAATTGTCTAACAGC------TC-CGGCAGCGTATAGCGCGTGGTGGT    463
+                                 .||||      || ||.|.|||.|| ||.||       
+AX03             467 ------------GCAGCCAGATTTCACGCCGGCGAAT-GCCCG-------    496
+
+AX01             464 CAACGGGCTT-TGGTAATCAAGCGTTTTCGCAGGTGAAATAAGAATCAGC    512
+                     |.|.|.|.|| ||        ||||||  ..|||||              
+AX03             497 CCAGGCGATTCTG--------GCGTTT--AAAGGTG--------------    522
+
+AX01             513 ATATCCAGTCCTTGCAGGAAATTTATGCCGACTTTAGCAAAAAATGAGAA    562
+                     ||.||.|..||     ||     ..|||||||||||||||||||||||||
+AX03             523 ATGTCTACACC-----GG-----CTTGCCGACTTTAGCAAAAAATGAGAA    562
+
+AX01             563 TGAGTTGATCGATAGTTGTGATTACTCCTGCGAAACATCATCCCACGCGT    612
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+AX03             563 TGAGTTGATCGATAGTTGTGATTACTCCTGCGAAACATCATCCCACGCGT    612
+
+AX01             613 CCGGAGAAAGCTGGCGACCGATATCCGGATAACGCAATGGATCAAACACC    662
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+AX03             613 CCGGAGAAAGCTGGCGACCGATATCCGGATAACGCAATGGATCAAACACC    662
+
+AX01             663 GGGCGCACGCCGAGTTTACGCTGGCGTAGATAATCACTGGCAATGGTATG    712
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+AX03             663 GGGCGCACGCCGAGTTTACGCTGGCGTAGATAATCACTGGCAATGGTATG    712
+
+AX01             713 AACCACAGGCGAGAGCAGTAAAATGGCGGTCAAATTGGTAATAGCCATGC    762
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+AX03             713 AACCACAGGCGAGAGCAGTAAAATGGCGGTCAAATTGGTAATAGCCATGC    762
+
+AX01             763 AGGCCATTATGATATCTGCCAGTTGCCACATCAGCGGAAGGCTTAGCAAG    812
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+AX03             763 AGGCCATTATGATATCTGCCAGTTGCCACATCAGCGGAAGGCTTAGCAAG    812
+
+AX01             813 GTGCCGCCGATGACCGTTGCGAAGGTGCAGATCCGCAAACACCAGATCGC    862
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+AX03             813 GTGCCGCCGATGACCGTTGCGAAGGTGCAGATCCGCAAACACCAGATCGC    862
+
+AX01             863 TTTAGGGTTGTTCAGGCGTAAAAAGAAGAGATTGTTTTCGGCATAAATGT    912
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+AX03             863 TTTAGGGTTGTTCAGGCGTAAAAAGAAGAGATTGTTTTCGGCATAAATGT    912
+
+AX01             913 AGTTGGCAACGATGGAGCTGAAGGCAAACAGAATAACCACAAG    955
+                     |||||||||||||||||||||||||||||||||||||||||||
+AX03             913 AGTTGGCAACGATGGAGCTGAAGGCAAACAGAATAACCACAAG    955
+
+
+#---------------------------------------
+#---------------------------------------
