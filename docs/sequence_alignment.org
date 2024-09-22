@@ -48,11 +48,15 @@ Make self comparison of the following sequences and identify repetitive sequence
 - How long is repetitive element?
 - Is it in forward or reverse-complement orientation.
 - How many copies have repetitive element?
+- Draw schematic of sequence structure
 
 Sequences for comparison are located in  ~~/Desktop/Bioinformatics/data/dotter_sequences2~
 To run self comparison run =dotter= as:
 #+begin_src bash
 cd ~/Desktop/Bioinformatics/data/dotter_sequences2
+# to get information about sequence run:
+seqkit stat seq1.fasta
+# to show dotter
 dotter seq1.fasta seq1.fasta
 ...
 #+end_src
@@ -124,22 +128,23 @@ GGCGCTGATGGCGA
 ** Exercise 1.2 - Identification of repetitive motifs using dotplot
 
 *** example repeats in DNA sequences 
-**** Inverted repeat
+**** Inverted repeat in MITE element
  Triticum aestivum DNA, mobile element MITE contains inverted repeat. Compare the
  sequences of MITE element against itself. 
 - What is the position of inverted repeat?
-- can you identify palindromes in the sequence? 
+- Can you identify palindromes in the sequence? 
 #+begin_src bash
 cd ~/Desktop/Bioinformatics/data/dotter_sequences/
 # make dotplot
 dotter inverted_repeat.fasta inverted_repeat.fasta
 #+end_src
 
-**** Direct repeat
+**** Direct repeat in LTR retrotransposon
 Boundary of transposable element is defined by long terminal repeat (LTR).
 Make dotplot of sequence which contain LTR retrotransposon against itself. 
 - What is the length of the whole LTR retrotransposon?
 - What is the length of LTR?
+- Are LTR sequences identical?
 #+begin_src bash
 cd ~/Desktop/Bioinformatics/data/dotter_sequences/
 dotter ltr_rt2.fasta ltr_rt2.fasta
@@ -171,6 +176,7 @@ dotter AX01.fasta AX03.fasta
     
 - Performing Global and Local Alignments:
   - For global alignment use: https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastSearch&BLAST_SPEC=GlobalAln
+    (change gap cost in algorithm parameter to 'Existence:5, extension: 2)
   - For local alignemnt use: https://blast.ncbi.nlm.nih.gov/Blast.cgi?BLAST_SPEC=blast2seq&LINK_LOC=align2seq&PAGE_TYPE=BlastSearch 
 -  Perform both types of alignments for:
   - AX01 vs AX02
@@ -299,12 +305,18 @@ dotter a_region.fasta b_region.fasta
 #+end_src
 
 ** Exercise 1.8 - Identifying overlaps and creating a "sequence assembly" using dot plots
-make dotplot from following sequences stored in file:
+Make dotplot from following sequences stored in file:
 #+begin_example
-~/Desktop/Bioinformatics/data/dotter_sequences/dna_examples/ovoverlaping_sequences.fasta
+~/Desktop/Bioinformatics/data/dotter_sequences/dna_examples/overlaping_sequences.fasta
 #+end_example
 
-- Sequence file contain SeqA, SeqB and SeqC. generate an all-to-all dot plot using dotter. This will compare each sequence (seqA, seqB, and seqC) against the others in a single analysis.
+- Sequence file contain SeqA, SeqB and SeqC. 
+- Get information about sequences in file using =seqkit= program:
+  #+begin_src bash
+seqkit stat overlaping_sequences.fasta
+seqkit fx2tab --length --name overlaping_sequences.fasta
+#+end_src
+- Generate an all-to-all dot plot using dotter. This will compare each sequence (seqA, seqB, and seqC) against the others in a single analysis.
 - Examine the resulting dot plot to identify overlaps among seqA, seqB, and seqC.
 - Using the overlaps you identified, Create a simple schematic to show how the sequences fit together into a longer continuous sequence (contig).
 
@@ -322,8 +334,8 @@ dotter genomeA_part.fasta genomeB_part.fasta
 - How would characterize difference between genomes?
 - For larger sequences, the dot plot may appear "noisy" due to the presence of short repetitive sequences scattered throughout the genome. Identify regions in the dot plot that appear messy or contain many small dots. Zoom into this areas and identify what kind of sequences are causing these 'noise'
 
-** Exercise 1.10 - Whole genome comparison with Gepard program
- /Mycoplasma hyopneumoniae/ is a bacterial pathogen that primarily affects pigs, causing enzootic pneumonia, a chronic respiratory disease.The genome of Mycoplasma hyopneumoniae is relatively small can be analyzed using =Gepard= dotplot program. Download genomic sequences of two strains and compare them using Gepard  
+** Exercise 1.10 - Whole genome comparison with =Gepard= program
+ /Mycoplasma hyopneumoniae/ is a bacterial pathogen that primarily affects pigs, causing enzootic pneumonia, a chronic respiratory disease.The genome of Mycoplasma hyopneumoniae is relatively small can be analyzed using =Gepard= dotplot program. Download genomic sequences of two strains, characterize them with =seqkit= program  and compare them using =Gepard=. You will find shortcut to =Gepard= program on Desktop. 
 #+begin_src txt
 https://zenodo.org/record/4485547/files/mycoplasma-232.fasta
 https://zenodo.org/record/4485547/files/mycoplasma-7422.fasta
@@ -435,8 +447,13 @@ You can paste either AA sequences to the blast form or you can use just accessio
 ** Exercise 2.2 - Pairwise alignment using NCBI blast
 Compare two sequences of human Hexokinase and yeast Hexokinase using NCBI blast (You will have to use option Align two or more sequences). 
 
-Describe results of BLAST and answer following questions:
+Compare sequences using global and local alignment:
+- For global alignment use: https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastSearch&BLAST_SPEC=GlobalAln
+- For local alignemnt use: https://blast.ncbi.nlm.nih.gov/Blast.cgi?BLAST_SPEC=blast2seq&LINK_LOC=align2seq&PAGE_TYPE=BlastSearch 
 
+Note: Switch to Protein tab!
+
+Describe results of BLAST and answer following questions:
 + Sequence Identity: What is the percent identity between human Hexokinase and yeast Hexokinase?
 + Alignment Coverage: What percentage of the human Hexokinase and yeast Hexokinase sequences is covered by the alignment
 + Sequence of human Hexokinase is longer that yeast Hexokinase,  explain why is it so. Hint: explore Dot Plot tab in BLAST output.
