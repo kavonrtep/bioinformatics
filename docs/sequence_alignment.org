@@ -490,11 +490,10 @@ GIIGA
 ** Exercise 2.3 - Comparing P53 and P63 Protein Sequences
 Use NCBI BLAST to compare the protein sequences of human P53 and P63. These proteins share the DNA-binding domain and oligomerization domains but have distinct transactivation domains, reflecting their different roles in cellular processes.
 
-Use the NCBI BLAST's "Align two or more sequences" option to align these two sequences. From BLAST results:
-- Identify the shared  domain in the alignment. What is the percent identity within this domain?
+Use the NCBI BLAST's "Align two or more sequences" (https://blast.ncbi.nlm.nih.gov/Blast.cgi?BLAST_SPEC=blast2seq&LINK_LOC=align2seq&PAGE_TYPE=BlastSearch ) option to align these two sequences. From BLAST results:
+- Identify the shared  domain in the alignment. What is the percent identity/similarity within this domain?
 - What part of the P53 and P63  are likely transactivation and oligomerization domains
-- Compare BLAST results with dot plot analysis. Create file ~p53.fasta~ with P53 sequence and ~p63.fasta~ with P63 sequences and the compare them by ~dotter~ program. 
-- Run BLASTP with p53 and p63 as query against Conserved Domain Database https://www.ncbi.nlm.nih.gov/Structure/cdd/wrpsb.cgi. Was you conclusion about position of shared domains correct?
+- Run search with p53 and p63 as queries against Conserved Domain Database https://www.ncbi.nlm.nih.gov/Structure/cdd/wrpsb.cgi. Was you conclusion about position of shared domains correct?
 
 P53 and P63 sequence in fasta format:
 #+begin_src txt
@@ -537,6 +536,8 @@ program ~mafft~.  use default setting. Before running
 mkdir ~/data/cdk
 cd ~/data/cdk
 cp ~/Desktop/Bioinformatics/data/alignment_sequences/CDK/cdk.fasta .
+# inspect sequence using less command
+less cdk.fasta
 # alignment using mafft program
 mafft --help
 mafft cdk.fasta > cdk_mafft_aligned.fasta
@@ -552,34 +553,36 @@ t_coffee -infile cdk_mafft_aligned.fasta  -evaluate
 t_coffee -infile cdk_muscle_aligned.fasta  -evaluate
 # the above steps will generate html file with TCS results, inspect them in firefox
 #+end_src
+# t_coffee takes couple secconds to finish
 
-
-Inspect alignment using *Jalview* program. 
+Inspect alignment from mafft using *Jalview* program. 
 - Try different coloring schemes - clustal, percentage identity, hydrophobicity
   and by conservation
-  - Clustal:  It colors the sequences according to the amino acid type and the level of conservation within the alignment. Highly conserved residues are highlighted in specific colors, making it easier to spot conserved motifs or domains across different sequences. This scheme is derived from the Clustal series of programs, which are widely used for sequence alignment.
-  - Zappo: The Zappo coloring scheme colors amino acids based on their physicochemical properties, such as charge, polarity, and hydrophobicity.
-  - Taylor: , like Zappo, colors amino acids based on their physicochemical properties but uses a different set of colors. It is designed to make it easier to distinguish between different types of amino acids by using a broader and more intuitive color palette.
-  - The Hydrophobicity coloring scheme highlights amino acids based on their hydrophobic or hydrophilic properties.
+  - *Clustal*:  It colors the sequences according to the amino acid type and the level of conservation within the alignment. Highly conserved residues are highlighted in specific colors, making it easier to spot conserved motifs or domains across different sequences. This scheme is derived from the Clustal series of programs, which are widely used for sequence alignment.
+  - *Zappo*: The Zappo coloring scheme colors amino acids based on their physicochemical properties, such as charge, polarity, and hydrophobicity.
+  - *Taylor*: , like Zappo, colors amino acids based on their physicochemical properties but uses a different set of colors. It is designed to make it easier to distinguish between different types of amino acids by using a broader and more intuitive color palette.
+  - The *Hydrophobicity* coloring scheme highlights amino acids based on their hydrophobic or hydrophilic properties.
 - Jalview is using several metrics calculated from score:
-  - Conservation: How similar or different are the amino acids at this position?" If all the amino acids are the same, it's considered highly conserved (very important and likely critical for the protein's function). If the amino acids are different but still similar in their chemical properties, it's also considered conserved, but to a lesser extent
-  - Quality: measure of the likelihood of observing the mutations
-  - Consensus
+  - *Conservation*: How similar or different are the amino acids at this position?" If all the amino acids are the same, it's considered highly conserved (very important and likely critical for the protein's function). If the amino acids are different but still similar in their chemical properties, it's also considered conserved, but to a lesser extent
+  - Quality: measure of base on blosum62 score
+  - Consensus - by default it shows histogram, can be switched to sequence logo
   - Occupancy
-- How are sequences in the alignment sorted? 
+- How are sequences in the alignment sorted? Reorder sequences using Calculate->Sort->By Pairwise Identity.
 - Try to identify the most conserved regions.
-- What are the coordinates of most conserved region related to *CDK1* sequence.
+- What are the coordinates of most conserved region related to *CDK14* sequence.
 - Compare this conserved regions with conserved regions which can be identified
-  using *conserved domain database*.  use this ling for search
-  https://www.ncbi.nlm.nih.gov/Structure/cdd/wrpsb.cgi and CDK1 sequence below.
+  using *conserved domain database*.  Use this link for search
+  https://www.ncbi.nlm.nih.gov/Structure/cdd/wrpsb.cgi and CDK14 sequence below.
 #+begin_src text
->CDK1
-MEDYTKIEKIGEGTYGVVYKGRHKTTGQVVAMKKIRLESEEEGVPSTAIREISLLKE
-LRHPNIVSLQDVLMQDSRLYLIFEFLSMDLKKYLDSIPPGQYMDSSLVKSYLYQILQ
-GIVFCHSRRVLHRDLKPQNLLIDDKGTIKLADFGLARAFGIPIRVYTHEVVTLWYRS
-PEVLLGSARYSTPVDIWSIGTIFAELATKKPLFHGDSEIDQLFRIFRALGTPNNEVW
-PEVESLQDYKNTFPKWKPGSLASHVKNLDENGLDLLSKMLIYDPAKRISGKMALNHP
-YFNDLDNQIKKM
+>CDK14
+MCDLIEPQPAEKIGKMKKLRRTLSESFSRIALKKDDTTFDEICVTKMSTRNCQGMDSVIK
+PLDTIPEDKKVRVQRTQSTFDPFEKPANQVKRVHSENNACINFKTSSTGKESPKVRRHSS
+PSSPTSPKFGKADSYEKLEKLGEGSYATVYKGKSKVNGKLVALKVIRLQEEEGTPFTAIR
+EASLLKGLKHANIVLLHDIIHTKETLTLVFEYVHTDLCQYMDKHPGGLHPDNVKLFLFQL
+LRGLSYIHQRYILHRDLKPQNLLISDTGELKLADFGLARAKSVPSHTYSNEVVTLWYRPP
+DVLLGSTEYSTCLDMWGVGCIFVEMIQGVAAFPGMKDIQDQLERIFLVLGTPNEDTWPGV
+HSLPHFKPERFTLYSSKNLRQAWNKLSYVNHAEDLASKLLQCSPKNRLSAQAALSHEYFS
+DLPPRLWELTDMSSIFTVPNVRLQPEAGESMRAFGKNNSYGKSLSNSKH
 #+end_src
 *Transitive consistency score* : TCS is an alignment evaluation score that makes it possible to identify in an MSA the most correct positions. It has been shown that these positions are the most likely to be structuraly correct and also the most informative when estimating phylogenetic trees. The TCS evaluation and filtering procedure is implemented in the T-Coffee package and can be used to evaluate and filter any third party multiple sequence alignment  
 ** Exercise 3.2 - Multiple alignment from HSPB8 proteins
@@ -587,9 +590,10 @@ Create MSA for set of orthologs of HSPB8 protein (Heat shock protein beta-8) and
 
 Make copy of of fasta file and then rename fasta headers:
 #+begin_src bash
-mkdir hspb8
-cd hsbb8
-cp ~/Desktop/bioinformatics/data/alignment_sequences/HSP8.fasta .
+cd 
+mkdir data/hspb8
+cd data/hsbb8
+cp ~/Desktop/Bioinformatics/data/alignment_sequences/HSP8.fasta .
 gedit HSP8.fasta
 #+end_src
 Change the header from ~>XP_004934466.1 heat shock protein beta-8 [Gallus gallus]~ to ~>Gallus_gallus~
@@ -602,25 +606,27 @@ mafft HSP8.fasta > HSP8_aln.fasta
 
 Open resulting alignment in ~Jalview~ program.
 - Inspect alignment, Try different coloring schemes. (see https://www.jalview.org/help/html/colourSchemes/index.html)
-- What part of proteins is conserved?
+- What part of proteins is conserved? Use =Colour -> By Conservation=  to change coloring threshold.
 - compare conserved part with domains annotation
   - go to https://www.ncbi.nlm.nih.gov/protein/NP_055180.1
   - select =analyze this sequence/identify conserved domains=
   - will you be able to identify conserved domain if you use only mouse, cow, pig and human sequences?
-  - try to  select subset of sequences(mammals) and create alignment again. 
-- save alignment in =fasta= and and =msf= format, inspect the saved file using =less= command
-** Exercise 3.3 - Alignment of protein isoforms
+  - In Jalview. select subset of sequences(mammals) and create alignment again from 'Web Service -> Alignment -> mafft with defaults'. Is conserved domain still visible in the new alignment?
+
+** Exercise 3.3 - Alignment of protein isoforms, alignment editing
 Investigate the alignment of 11 alternatively-spliced gene products from the human erythrocyte membrane protein band 4.1 (EPB41) gene, focusing on how different multiple sequence alignment (MSA) programs handle the dataset. The aim is to compare the performance of three popular MSA programs—MAFFT, MUSCLE, and ClustalW—when aligning sequences that differ only by deletions due to alternative splicing.
 
 Correct alignment of isoforms will contain only matches and gaps, no mismatches!
 
 - Sequences can be obtained from [[../data/alignment_sequences/epb41.fasta]]
 - Open the JalView desktop application and load the unaligned sequences to visually inspect their similarities and differences.
-- Use the JalView web services menu to access the MAFFT, MUSCLE, and ClustalW alignment services. Perform an MSA with each program using the EPB41 isoform dataset, setting the output format to ClustalW for consistency.
+- Use the JalView web services menu to access the MAFFT, MUSCLE, and ClustalW alignment services. Perform an MSA with each program using the EPB41 isoform dataset.
 - Keep the results accessible for comparison, either by keeping the tabs/windows open or by saving the output files.
 - Compare the three alignments using JalView to assess how each program performed. Remember, an ideal alignment for isoforms should contain only matches and gaps, with no mismatches, since the sequences are identical except for the presence of deletions.
-- Evaluate the alignments to determine which program produced the best results based on the criteria of correctly handling deletions without introducing mismatches.
-- Choose one of the alignments you believe has the potential to be corrected manually. Using JalView, edit this alignment to resolve any issues, aiming to create an ideal alignment that reflects the expected pattern of matches and gaps for alternatively spliced isoforms.
+- Evaluate the alignments to determine which program produced the best results based on the criteria of correctly handling deletions without introducing mismatches. In Consensus histogram set option *Ignore Gaps in Consensus*. This will help you identify problematic regions.
+- Choose one of the alignments you believe has the potential to be corrected easily manually. Using JalView, edit this alignment to resolve any issues, aiming to create an ideal alignment that reflects the expected pattern of matches and gaps for alternatively spliced isoforms.
+- Inspect structural annotation of this gene in UCSC genome browser - https://genome.ucsc.edu/cgi-bin/hgTracks?hgsid=2356525077_wGXvGEoZ9M0QWUR4riuRK94xqF93&db=hg38&position=lastDbPos
+  (enter EPB41 to the search window)
 
 ** Exercise 3.4 - Multiple sequence alignment of the mitochondrial 16S gene
 The mitochondrial 16S gene is a widely studied genetic marker in molecular
@@ -832,6 +838,9 @@ In serine proteases, the catalytic triad and other essential structural elements
 are typically under negative selection, while surface loops and other flexible
 regions might be under positive selection, reflecting the adaptation to
 different substrates and physiological conditions.
+
+In the alignemnt, there are two conserved Serines, Two identify which one is part of the catalytic triad, you will need to check function of Huma Trypsin in Uniprot database - https://www.uniprot.org/uniprotkb/P07477
+
 
 ** Exercise 3.7 - Identification of Bacterial Homologs of Human Neuroglobin and Analysis of Heme-Binding Pocket Conservation
 *Objective*:  In this assignment, you will identify bacterial homologs of human
