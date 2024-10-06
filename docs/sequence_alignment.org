@@ -902,7 +902,50 @@ Some of the key functions of bacterial globins include:
 - https://www.rcsb.org/3d-sequence/1TU9
 
 
+** Exercise 3.8 - Alignment-Based Primer Design
 
+** Motivation
+Cuscuta([[https://en.wikipedia.org/wiki/Cuscuta]]), commonly known as dodder, is a parasitic plant that affects a wide range of host species. Proper identification of different Cuscuta species is important for understanding their ecological impacts and for managing affected plants. The 5.8 rDNA gene is part of the ribosomal DNA (rDNA) gene cluster, which includes the 18S, 5.8S, and 28S rDNA genes separated by internal transcribed spacers (ITS1 and ITS2). The 5.8 rDNA gene is commonly used for this type of task because it contains both conserved and variable regions, making it suitable for distinguishing between species while still being conserved enough for primer design. Your task is to design primers that could be used for species identification in further experiments. These primers will help amplify specific conserved regions, aiding in the confirmation of species identity.
+
+*** Organization of rDNA
+[[./rDNA.png]]
+
+The set of rDNA sequences from Cuscuta species can be found in file [[../data/alignment_sequences/5.8S_Cuscuta.fasta]]. Your task is to identify conserved regions and design primers accordingly. The exercise will guide you through the following steps:
+
+*** Sequence Alignment with Jalview
+
+Open the provided set of sequences using Jalview.
+
+Perform a multiple sequence alignment to visualize conserved and variable regions among the different Cuscuta species. Use =mafft= program with L-INS-i setting.
+
+Inspect the alignment to identify suitable regions for primers, and save the alignment for use in the next step.
+
+*** Generating a Consensus Sequence with EMBOSS Cons
+
+Use the EMBOSS Cons program available on the web to create a consensus sequence from your alignment. [[http://www.ebi.ac.uk/jdispatcher/msa/emboss_cons?stype=dna&matrix=EDNAFULL][Link to EMBOSS Cons]]
+
+The consensus sequence should highlight the regions that are conserved across all species, which will be key for primer design. Set a suitable identity threshold ( you have to unfold parameters setting). Here the identity parameter mean "The required number of identities at a site for it to give a consensus at that position".
+
+*** Primer Design with Primer3
+
+Use the consensus sequence as input for Primer3 (web version: [[https://primer3.ut.ee/][Primer3]]) to design primers.
+
+Select a suitable product size range, aiming for as large a product as possible, and click on "Pick Primers."
+
+Do the suggested primers correspond to the conserved regions observed in the alignment from step 1?
+
+** Deliverable
+Once your primers are designed, they could potentially serve to confirm species identity in further experiments. Submit your designed primers along with a short explanation of why you chose these particular regions and how they might help differentiate between Cuscuta species.
+
+** Tools Needed
+
+Jalview: For sequence alignment.
+
+EMBOSS Cons: To create a consensus sequence from the alignment.
+
+Primer3: To design primers based on the consensus sequence.
+
+This exercise will give you hands-on experience in using bioinformatics tools to identify conserved regions and design primers, skills that are crucial for species identification and molecular biology research.
 
 
 * Amino Acid codes
