@@ -425,7 +425,7 @@ ls -l
 # run blastp with default settings:
 blastp -query proteins.fasta -db pdbaa -out proteins_blastp_default.txt
 # inspect output with less command or text editor
-less proteins_blastp.txt
+less proteins_blastp_default.txt
 #+END_SRC
 
 
@@ -442,7 +442,7 @@ The most important blastp/blastn options:
 - =-task= type of algorithm for search (blast/megablast for blastn or blastp/blastp-fast for blastp)
 - =-outfmt= output format
 - =-word_size=
-- -=evalue=
+- =-evalue=
 - =-num_alignments= Number of database sequences to show alignments for (Default = 250)
 
 
@@ -450,13 +450,13 @@ The most important blastp/blastn options:
 # default:
   blastp -query proteins.fasta -db pdbaa -out proteins_blastp_align_all.txt
 # limit output to 10 alignments
-  blastp -query proteins.fasta -db pdbaa -out proteins_blastp_align.txt -num_alignments 10
+  blastp -query proteins.fasta -db pdbaa -out proteins_blastp_align_top10.txt -num_alignments 10
 # return max 10 alingments, hits must be e-value 1e-30 or less
   blastp -query proteins.fasta -db pdbaa -out proteins_blastp_align_1e-30.txt -num_alignments 10 -evalue 1e-30
 # tabular ouput with descriptions
-  blastp -query proteins.fasta -db pdbaa -out proteins_blastp_1e-30_table.txt -evalue 1e-30 -outfmt 7
+  blastp -query proteins.fasta -db pdbaa -out proteins_blastp_1e-30_table.csv -evalue 1e-30 -outfmt 7
 # plain tabular output
-  blastp -query proteins.fasta -db pdbaa -out proteins_blastp_1e-30_table.txt -evalue 1e-30 -outfmt 6
+  blastp -query proteins.fasta -db pdbaa -out proteins_blastp_1e-30_table2.csv -evalue 1e-30 -outfmt 6
 # simple html output
   blastp -query proteins.fasta -db pdbaa -out proteins_blastp_1e-30.html -evalue 1e-30 -outfmt 2 -html
 # inspect all output using less command
@@ -486,41 +486,57 @@ makeblastdb -in pdbaa -dbtype prot
 
 
 blastp -query query2.fasta -db pdbaa -out query_blastp_1e-10_table.txt -evalue 1e-10 -outfmt 6
+# -query: Specifies the input query file (in FASTA format).
+# -db: Specifies the protein database to search against.
+# -out: Specifies the output file to save results.
+# -evalue 1e-10: Sets the e-value threshold for reporting hits (only hits with an e-value less than 1e-10 will be reported).
+# -outfmt 6: Specifies the output format (6 is a tabular format).
+
 
 # Inspect the structure of the output from BLAST using the 'less' command
 less query_blastp_1e-10_table.txt
-
 # The columns in the tabular output are:
 # 1.qaccver 2.saccver 3.pident 4.length 5.mismatch 6.gapopen
 # 7.qstart 8.qend 9.sstart 10.send 11.evalue 12.bitscore
 
-# Extract a list of sequence IDs:
-# Extract the second column from the BLAST output, which contains the database IDs
-
 # Count the number of hits for the query sequence
 wc query_blastp_1e-10_table.txt
+# wc: Counts the number of lines, words, and characters in a file (use -l to only count lines).
 
+
+# Extract a list of sequence IDs:
+# Extract the second column from the BLAST output, which contains the database IDs
 cut -f 2 query_blastp_1e-10_table.txt > all_hits_id.txt
+# -f 2: Extracts the second field (subject IDs).
+
 seqkit grep -f all_hits_id.txt pdbaa -o all_hits.fasta
+# -f all_hits_id.txt: Specifies the file with the list of sequence IDs.
+# -o all_hits.fasta: Specifies the output file for the extracted sequences.
+
 seqkit stats  all_hits.fasta
 
 
 # Explore the extracted sequences with Dotter
 dotter query2.fasta all_hits.fasta
 
-# Extract sequences in the order of hit significance
-cdbfasta pdbaa
 # If cdbfasta is not installed, use the following command to install it:
 sudo apt install cdbfasta
 
+
+# Extract sequences in the order of hit significance
+cdbfasta pdbaa
+# cdbfasta creates an index (.cidx file) for the FASTA file to allow rapid access to specific sequences.
+
 # Create a binary index of the FASTA file for fast sequence retrieval
 cat all_hits_id.txt | cdbyank pdbaa.cidx > all_hits_in_order.fasta
+# cdbyank retrieves sequences from a .cidx indexed FASTA file.
 
 # Check the ordered sequences using the Dotter program
 dotter query2.fasta all_hits_in_order.fasta
 
-# Create an alignment with the query protein
+# Concatenate the query sequence with the ordered hit sequences to create a combined FASTA file:
 cat query2.fasta all_hits_in_order.fasta > query_with_hits.fasta
+# cat concatenates the files into a single FASTA file.
 
 # Create a multiple sequence alignment using the MAFFT program
 mafft --help
@@ -533,79 +549,75 @@ less query_with_hits_aligned.fasta
 
 #+end_src
 
-
-
-** blastp exercise 2.3 : extract hits from database and create alignment with query proteins:
-#+begin_comment
-TODO  introduce cut and grep commands
-discuss =less - S=
-discuss type of sequence id in fasta - what is behind the first space
-
-- explain =seqkit grep=  (see help)  The order of sequences in result is consistent with that in original
-       file, not the order of the query patterns.
-
-#+end_comment
-
-
+The whole process can be automated with simple bash script. Create text file with following content:
 #+begin_src bash
+#!/bin/bash
+# Check if correct number of arguments is given
+if [ "$#" -ne 3 ]; then
+    echo "Usage: $0 <query_fasta> <database_fasta> <output_dir>"
+    exit 1
+fi
+# Assign input arguments to variables
+QUERY=$1
+DATABASE=$2
+OUTPUT_DIR=$3
+# Create output directory and move to it
+mkdir -p $OUTPUT_DIR
 
-blastp -query proteins.fasta -db db/pdbaa -out proteins_blastp_1e-10_table.txt -evalue 1e-10 -outfmt 6
-# see structure of output from blast - use less command
+# Copy input files to the working directory
+cp $QUERY $OUTPUT_DIR/query.fasta
+cp $DATABASE $OUTPUT_DIR/database.fasta
 
-# column in the tabular output are:
-# 1.qaccver 2.saccver 3.pident 4.length 5.mismatch 6.gapopen
-# 7.qstart 8.qend 9.sstart 10.send 11.evalue 12.bitscore
-
-# we want extract list of sequence ids:
-# extract second column from blast output - it contains ID from database
-cut -f 2 proteins_blastp_1e-10_table.txt > all_hits_id.txt
-seqkit grep -f  all_hits_id.txt db/pdbaa -o all_hits.fasta
-
-
-# now lets exctract id of positive hits against sequence1
-cat proteins_blastp_1e-10_table.txt | grep "sequence1" | cut -f 2 > hits_to_seq1.txt
-cat proteins_blastp_1e-10_table.txt | grep "sequence2" | cut -f 2 > hits_to_seq2.txt
-
-# how many hits was against sequence1 or sequence2 ?
-wc hits_to_seq?.txt
-
-seqkit grep -f hits_to_seq1.txt db/pdbaa -o seq1_hits.fasta
-seqkit grep -f hits_to_seq2.txt db/pdbaa -o seq2_hits.fasta
-
-#explore extracted sequences with dotter
-dotter proteins.fasta seq1_hits.fasta
-dotter proteins.fasta seq2_hits.fasta
-
-# how to extract sequences in order of hit significance? 
-cdbfasta db/pdbaa
-# !! if cdbfasta is not installed used:
-sudo apt install cdbfasta
-
-
-# this creates file pdbaa.cidx
-# this is binary index of fasta file - it can be used for fast retriever of sequences
-cat hits_to_seq1.txt | cdbyank db/pdbaa.cidx > seq1_hits_in_order.fasta
-cat hits_to_seq2.txt | cdbyank db/pdbaa.cidx > seq2_hits_in_order.fasta
-
-#check using dotter program:
-dotter proteins.fasta seq1_hits_in_order.fasta
-dotter proteins.fasta seq2_hits_in_order.fasta
-
-# create alignment with query protein:
-seqkit grep -p "sequence2" proteins.fasta > query_with_hits.fasta
-cat seq2_hits_in_order.fasta >> query_with_hits.fasta
-
-# create multiple sequence alignment:
-# we well usee mafft program
-mafft --help
+cd $OUTPUT_DIR
+# Create BLAST database
+makeblastdb -in database.fasta -dbtype prot
+# Run BLASTP search
+blastp -query query.fasta -db database.fasta -out query_blastp_1e-10_table.txt -evalue 1e-10 -outfmt 6
+# Extract sequence IDs of hits
+cut -f 2 query_blastp_1e-10_table.txt > all_hits_id.txt
+# Retrieve sequences of hits
+seqkit grep -f all_hits_id.txt database.fasta -o all_hits.fasta
+# Create binary index for database
+cdbfasta database.fasta
+# Extract sequences in order of significance
+cat all_hits_id.txt | cdbyank database.fasta.cidx > all_hits_in_order.fasta
+# Concatenate query and hits
+cat query.fasta all_hits_in_order.fasta > query_with_hits.fasta
+# Create multiple sequence alignment with MAFFT
 mafft query_with_hits.fasta > query_with_hits_aligned.fasta
-# inspect  query_with_hits_aligned.fasta with less command
-less query_with_hits_aligned.fasta
+# Notify the user of completion
+echo "BLASTP search and alignment complete. Results are in $OUTPUT_DIR."
+#+end_src
+ and save it as =blast2alignment.sh= and run following command to make script executable
+ #+begin_src bash
+chmod +x blast2alignment.sh
+ #+end_src
 
+ This script automates the process of conducting a BLASTP search followed by a
+ multiple sequence alignment. It takes three inputs: a query sequence (FASTA
+ format), a protein database (FASTA format), and an output directory for storing
+ the results. The automation offers several benefits:
 
-# view alignemnt with jalview program
+- Reproducibility: The script ensures that the analysis steps are easily
+   repeatable, enabling consistent results and reliable workflows.
+- Efficiency: By
+   integrating all commands, the script saves time and minimizes human error
+   compared to running each step manually.
+- Scalability: Automating the process
+   makes it feasible to handle larger datasets and batch analyses, which are common
+   in bioinformatics research.
 
+The script carries out several steps, including creating a BLAST
+database, running a BLASTP search, extracting and retrieving significant hits,
+and aligning the sequences using MAFFT. The results are then stored in the
+specified output directory.
 
+To run script:
+#+begin_src bash
+cp ~/Desktop/Bioinformatics/data/blast_data/query3.fasta .
+./blast2alignment.sh query3.fasta pdbaa output3
+# inspect output3 directory
+#+end_src
 
 #+end_src
 ** blast against remote database -  exercise 3
