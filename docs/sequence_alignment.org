@@ -767,7 +767,7 @@ Protein Sequence Set: Select protein sequences from different organisms represen
 - Human Hemoglobin Subunit Alpha (P69905)
 - Human Hemoglobin Subunit Beta (P68871)
 - Human Myoglobin (P02144)
-- Human Neuroglobin (Q9)nl
+- Human Neuroglobin (Q9NPG2)
 - Mouse Hemoglobin Subunit Alpha (P01942)
 - Mouse Hemoglobin Subunit Beta (P02088)
 - Mouse Myoglobin (P04247)
@@ -784,7 +784,7 @@ P69905; P68871; P02144; Q9NPG2; P01942; P02088; P04247; Q9ER97
    these differences?
 
 
-Inspect 3D structure of globin protein  - for example
+Inspect 3D structure of neuroglobin protein  - for example
 https://www.rcsb.org/3d-sequence/1OJ6?assemblyId=1
 
 #+begin_comment
@@ -849,7 +849,7 @@ globin homologs (hemoglobin, myoglobin, and neuroglobin), and analyze the
 conservation of the heme-binding pocket residues, particularly the two histidine
 residues, in the bacterial sequences.
 
-*Background*:Globins are a family of heme-containing proteins found in various
+*Background*: Globins are a family of heme-containing proteins found in various
 organisms, including bacteria, plants, and animals. They are involved in various
 functions, such as oxygen transport and storage. The heme-binding pocket in
 globins typically contains two conserved histidine residues that coordinate with
@@ -896,15 +896,16 @@ Some of the key functions of bacterial globins include:
 8. Clearly describe your observations and conclusions regarding the conservation
    of the two histidine residues in the heme-binding pocket.
 
-*** Example of bacterial globins with known 3D structure:
-- https://www.uniprot.org/uniprotkb/A7HD43
-- https://www.uniprot.org/uniprotkb/O66586
+*** Example of bacterial globin with known 3D structure:
 - https://www.rcsb.org/3d-sequence/1TU9
+*** Example of neuroglobin
+https://www.rcsb.org/3d-sequence/1OJ6?assemblyId=1
 
+In 3d viewer, highlight *metal coordination hem* for both structures, in bacterial globin highlight binding site PPI (Q)
 
 ** Exercise 3.8 - Alignment-Based Primer Design
 
-** Motivation
+*** Motivation
 Cuscuta([[https://en.wikipedia.org/wiki/Cuscuta]]), commonly known as dodder, is a parasitic plant that affects a wide range of host species. Proper identification of different Cuscuta species is important for understanding their ecological impacts and for managing affected plants. The 5.8 rDNA gene is part of the ribosomal DNA (rDNA) gene cluster, which includes the 18S, 5.8S, and 28S rDNA genes separated by internal transcribed spacers (ITS1 and ITS2). The 5.8 rDNA gene is commonly used for this type of task because it contains both conserved and variable regions, making it suitable for distinguishing between species while still being conserved enough for primer design. Your task is to design primers that could be used for species identification in further experiments. These primers will help amplify specific conserved regions, aiding in the confirmation of species identity.
 
 *** Organization of rDNA
@@ -935,10 +936,10 @@ Select a suitable product size range, aiming for as large a product as possible,
 
 Do the suggested primers correspond to the conserved regions observed in the alignment from step 1?
 
-** Deliverable
+*** Deliverable
 Once your primers are designed, they could potentially serve to confirm species identity in further experiments. Submit your designed primers along with a short explanation of why you chose these particular regions and how they might help differentiate between Cuscuta species.
 
-** Tools Needed
+*** Tools Needed
 
 Jalview: For sequence alignment.
 
