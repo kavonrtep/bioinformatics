@@ -19,16 +19,17 @@ are present.
 
 data for assembly are located in =~/Desktop/bioinformatics/data/sanger=
 
-* Exercise 2 -  Assembly from short NGS reads using Velvet program - single end reads:
-** Installation of necessary programs
+* Exercise 2 -  Assembly from short NGS reads using Velvet program
+** Part 1 - Single End Reads:
+*** Installation of necessary programs
 
 #+begin_src bash
 mamba create -n assembly -c bioconda jellyfish fastx_toolkit quast bandage samtools fastqc multiqc bowtie2
 conda activate assembly
 #+end_src
 
-** Single-end library
-**** Data
+*** Single-end library
+***** Data
 The data you will examine is from /Staphylococcus aureus/ USA300 which has a genome of
 around 3MB. The reads are Illumina and are unpaired, also known as single-end library. 
 The data needed for this section can be obtained from the Sequence Read Archive (SRA). For the
@@ -54,7 +55,7 @@ fastq-dump --gzip SRR022825
 fastq-dump --gzip SRR022823
 #+end_src
 
-** Quality control using FASTQC program
+*** Quality control using FASTQC program
 
    
 run fastqc program on illumina reads:
@@ -72,10 +73,10 @@ Inspect reports.
 - What is the total number of bases?
 - What is the sequencing coverage?
 
-** Estimation of genome size:
+*** Estimation of genome size:
 
 We will used kmer-count based estimation of genome size according
-http://qb.cshl.edu/genomescope/
+http://genomescope.org
 
 We will use Jellyfish program. It is a command-line program that reads FASTA and multi-FASTA files containing DNA sequences. It outputs its k-mer counts in a binary format, which can be translated into a human-readable text format using the "jellyfish dump" command
 (https://github.com/gmarcais/Jellyfish)
@@ -114,7 +115,7 @@ http://genomescope.org/analysis.php?code=f4vvkosUs4ne9RG1JDFF
 
 #+end_comment
 
-** Assembly 
+*** Assembly 
 You are ready to assembly your data with velvet. Velvet has two
 main components:
 - velveth - used to construct, from raw read data, a dataset organised in the
@@ -146,7 +147,7 @@ Explore run_25 directory files:
 - =directory/velvet_asm.afg=	: (if requested) AMOS compatible assembly file
 - =Log= information about assembly
 
-** Genome assembly statistics:
+*** Genome assembly statistics:
 Use *Quast* tools to assess quality of assembly : http://quast.sourceforge.net/quast
 
 Upload file contig.fa and run quality assessment. 
@@ -159,12 +160,12 @@ Upload file contig.fa and run quality assessment.
   of genome size?
 command line quast:
   #+begin_src bash
-conda activate quast 
+conda activate quast # run only if quast program is not available
 quast run_25/contigs.fa --threads 7
   #+end_src
  Assembly graph can be inspected using *Bandage* program . 
 
-*** Optional: 
+**** Optional: 
 Results from kmer based analysis suggests, that sequencing coverage is more that
 10x and lower frequency kmers are likely erroneous kmers. Excluding such kmers
 can improved the assembly. We will rerun velvetg  with =-cov_cutoff 6=  and
@@ -188,11 +189,11 @@ Final graph has 4238 nodes and n50 of 4423, max 26428, total 2836372, using 0/53
 Final graph has 2707 nodes and n50 of 5393, max 26428, total 2827773, using 3916445/5356745 reads
 #+end_comment
 
-* Assembly from short NGS reads using Velvet program - pair-end reads:
-** paired end data and QC:
+** Part 2 - Pair-End Eeads:
+*** paired end data and QC:
 The data you will examine is from again from /Staphylococcus aureus/ USA300 .
 The reads are Illumina paired end with higher sequence coverage
-*** download from NCBI: 
+**** download from NCBI: 
 #+begin_src bash
 cd 
 mkdir ngs_assembly2
@@ -204,9 +205,9 @@ wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR022/SRR022852/SRR022852_2.fastq.gz
 fastqc *.fastq.gz
 #+end_src
 
-** Removing of low quality reads:
+*** Removing of low quality reads:
 
-Some reads has low quality. We can filter low quality sequences either using
+Some reads has low quality. We can filter low quality sequences  using
 program fastx-toolkit.
 Additionally, according *fastqc* report, the first base in reads is biased and and
 needs to be removed too.
@@ -219,14 +220,14 @@ zcat SRR022852_2.fastq.gz | fastx_trimmer -f 2 -o SRR022852_2_trimmed.fastq
 fastqc SRR022852_1_trimmed.fastq SRR022852_2_trimmed.fastq
 #+end_src
 
-** Assembly
+*** Assembly
 
 #+begin_src bash
 velveth run_25_paired 25 -fastq -shortPaired -separate SRR022852_1_trimmed.fastq SRR022852_2_trimmed.fastq 
 velvetg run_25_paired -ins_length 350
 #+end_src
 
-** compare paired end assembly with single end assembly
+*** compare paired end assembly with single end assembly
 - use *Quast* program (http://quast.sourceforge.net/quast) to calculate basic statistics of assembly and compare it to
   previous assembly from single end Illumina reads
 #+begin_src bash
@@ -240,7 +241,7 @@ quast ngs_assembly/run_25/contigs.fa ngs_assembly2/run_25_paired/contigs.fa -o n
 assembly from paired end reads  (also higher coverage) creates single connected components, from single ends assebmly is more fragmented
   #+end_comment
 
-** Align short paired reads to assembly:
+*** Align short paired reads to assembly:
 We will align original sequence read to resulting genome assembly so we can
 explore assembly quality using IGV genomic browser
 NOTE : deactivate assembly environment for this step
@@ -259,7 +260,7 @@ samtools index SRR022852_sorted.bam
 
 
 
-*** Visualization of assembly
+**** Visualization of assembly
 run IGV program to inspect assembly. In IGV load genome - select contigs.fa
 file. Then load read mapping from SRR022852_sorted.bam
 
@@ -293,7 +294,7 @@ Explanation of color coding (insert size):
 #+end_comment
 
 
-** Analyze completeness of assembly by  Busco program:
+*** Analyze completeness of assembly by  Busco program:
   #+begin_src bash
 # run from run25 and run25_paired directory
 conda activate busco
@@ -305,7 +306,7 @@ busco -i contigs.fa -o busco_output -m genome --auto-lineage-prok
   #+end_src
 
 
-** How to make assembly on Metacentrum
+*** How to make assembly on Metacentrum
 
 we need to execute all these commands on Metacentrum:
 #+begin_src bash  :tangle scripts/assembly_script1.sh
