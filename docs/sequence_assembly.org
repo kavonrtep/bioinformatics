@@ -104,6 +104,7 @@ go to http://genomescope.org and upload resulting =reads.histo= and
 fill correct parameters - *kmer size* and *read length*:
 
 - what is the estimated genome size?
+- What is you sequencing coverage? (/read_length/  * /number_of_reads/) /  /genome_size/
 
 #+begin_comment
 Staphylococcus aureus MRSA252, a genome closely related to
@@ -174,7 +175,7 @@ can improved the assembly. We will rerun velvetg  with =-cov_cutoff 6=  and
 #+begin_src bash
 # Make a copy of the run
 cp run_25/contigs.fa run_25/contigs.fa.0
-velvetg run_25 -cov_cutoff 6 -exp_cov 14 -amos_file yes
+velvetg run_25 -cov_cutoff 6 -exp_cov 14
 #+end_src
 =-amos_file yes= option will export velvetg run_25_paired -ins_length 350velvetg run_25_paired -ins_length 350rt results to AMOS format 
 
@@ -189,7 +190,7 @@ Final graph has 4238 nodes and n50 of 4423, max 26428, total 2836372, using 0/53
 Final graph has 2707 nodes and n50 of 5393, max 26428, total 2827773, using 3916445/5356745 reads
 #+end_comment
 
-** Part 2 - Pair-End Eeads:
+** Part 2 - Pair-End reads:
 *** paired end data and QC:
 The data you will examine is from again from /Staphylococcus aureus/ USA300 .
 The reads are Illumina paired end with higher sequence coverage
@@ -233,6 +234,7 @@ velvetg run_25_paired -ins_length 350
 #+begin_src bash
 # quast can be run on multiple assemblies
 # we will compare assembly from SE reads and PE reads:
+cd
 quast ngs_assembly/run_25/contigs.fa ngs_assembly2/run_25_paired/contigs.fa -o ngs_assembly2/quast
 
 #+end_src
@@ -244,7 +246,13 @@ assembly from paired end reads  (also higher coverage) creates single connected 
 *** Align short paired reads to assembly:
 We will align original sequence read to resulting genome assembly so we can
 explore assembly quality using IGV genomic browser
-NOTE : deactivate assembly environment for this step
+NOTE : We will need to install install bowtie2 program if not available into new environment
+#+begin_src 
+mamba create -n bowtie2 -c bioconda bowtie2
+conda activate bowtie2
+#+end_src
+
+
 #+begin_src bash
 # create database from contigs 
 bowtie2-build  run_25_paired/contigs.fa run_25_paired/contigs.fa
@@ -295,15 +303,39 @@ Explanation of color coding (insert size):
 
 
 *** Analyze completeness of assembly by  Busco program:
+BUSCO (Benchmarking Universal Single-Copy Orthologs) is a tool designed to
+evaluate genome assembly quality by checking for the presence of single-copy
+orthologs expected in nearly all genomes from a given lineage. This method
+offers a metric for assembly completeness by assessing the proportion of
+universally conserved genes found in the assembly. For genome assemblies, BUSCO
+identifies these essential genes and classifies them as *complete*, *duplicated*,
+*fragmented*, or *missing*. By comparing these results across multiple assemblies,
+we can gain insights into which assembly version is more complete and thus of
+higher quality, making it especially useful in comparative genomics and genome
+improvement projects.
+
+Before runing analysis, we need to specify suitable lineage. List all available lineages in busco database:
   #+begin_src bash
-# run from run25 and run25_paired directory
-conda activate busco
-cd ~/ngs_assembly/run_25
-busco -i contigs.fa -o busco_output -m genome --auto-lineage-prok
-cd ~/ngs_assembly2/run_25_paired/
-busco -i contigs.fa -o busco_output -m genome --auto-lineage-prok
-# each run will take several minuts to finish
+  # run from run25 and run25_paired directory
+  conda activate busco
+  cd ~/ngs_assembly/run_25
+  busco --list-datasets
+#+end_src
+The above command will list all taxonomic groups, we need to select the one which is the closest
+to /Staphylococcus aureus/. Go to NCBI website and search Taxonomy database for /Staphylococcus aureus/
+and compare NCBI taxonomy with BUSCO lineages and select the closest taxonomy group for analysis and set
+~--lineage~ argument accordingly.
+
+# should be bacillales_odb10
+# what happen if bacteria_odb10??
+
+#+begin_src bash
+  busco -i contigs.fa -o busco_output -m genome -c 5 --lineage  ??????
+  cd ~/ngs_assembly2/run_25_paired/
+  busco -i contigs.fa -o busco_output -m genome -c 5 --lineage  ??????
+  # each run will take several minuts to finish
   #+end_src
+Inspect output files. Which assembly is more complete according BUSCO statistics?
 
 
 *** How to make assembly on Metacentrum
