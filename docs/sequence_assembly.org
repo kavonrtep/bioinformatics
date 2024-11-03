@@ -100,7 +100,7 @@ We will use Jellyfish program. It is a command-line program that reads FASTA and
 Note: parameter =-s= is Initial hash size - affect memory usage
 
 
-go to http://qb.cshl.edu/genomescope/ and upload resulting =reads.histo= and
+go to http://genomescope.org and upload resulting =reads.histo= and
 fill correct parameters - *kmer size* and *read length*:
 
 - what is the estimated genome size?
