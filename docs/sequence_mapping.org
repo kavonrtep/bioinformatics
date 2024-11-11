@@ -157,7 +157,7 @@ Map ChIP and Input sequences to genome assembly and identify CENH3 associated re
 ** Steps:
 *** Quality control with FASTQ program + sequence filtering
 - Analyze both FASTQ file with FASTQ program and identify potential problems
-- To fix potential problem you can use =cutadapt=  program to remove sequences contaminated with adapter sequences.
+- To fix potential problem you can use =cutadapt=  program to remove sequences contaminated with adapter sequences. (adapter sequence: AGATCGGAAGAG)
 - removing part of the sequence from 5' or 3' end can be done using =Trim sequences= tool
 - After each step, run FASTQC program to verify that you got expected result
 
