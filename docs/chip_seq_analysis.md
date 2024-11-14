@@ -1,4 +1,4 @@
-**ChIP-Seq Analysis of CENH3 in *Pisum sativum* Using Galaxy**
+# ChIP-Seq Analysis of CENH3 in *Pisum sativum* Using Galaxy
 
 In this exercise, you will analyze ChIP-seq data from Pisum sativum (garden pea) to study centromere locations. Pisum sativum has metapolycentric chromosomes, which means it has multiple centromeric regions on a single chromosome. Your task is to identify these regions associated with the centromere-specific histone H3 variant CENH3.
 
