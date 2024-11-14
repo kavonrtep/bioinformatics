@@ -1,7 +1,10 @@
 **ChIP-Seq Analysis of CENH3 in *Pisum sativum* Using Galaxy**
 
-**Objective:**
-Map ChIP and Input sequences to a genome assembly to identify CENH3-associated regions. Explore the types of sequences associated with CENH3 regions in *Pisum sativum* and investigate their characteristics.
+In this exercise, you will analyze ChIP-seq data from Pisum sativum (garden pea) to study centromere locations. Pisum sativum has metapolycentric chromosomes, which means it has multiple centromeric regions on a single chromosome. Your task is to identify these regions associated with the centromere-specific histone H3 variant CENH3.
+
+You will compare the identified CENH3-associated regions with existing gene annotations and tandem repeat sequences. This comparison aims to provide an understanding of the structural organization of the pea genome, particularly how centromeric regions relate to gene distribution and repetitive DNA elements.
+
+Your task will be to map ChIP and Input sequences to a genome assembly to identify CENH3-associated regions. Explore the types of sequences associated with CENH3 regions in *Pisum sativum* and investigate their characteristics.
 
 
 ---
