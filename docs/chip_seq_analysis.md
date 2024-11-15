@@ -193,8 +193,8 @@ Your task will be to map ChIP and Input sequences to a genome assembly to identi
    1. **Extract Sequences with Seqkit:**
       - **Tool:** *Seqkit*
       - **Command:** Use the following command to extract sequences from the regions identified by MACS2:
-        ```
-        seqkit subseq -f enriched_regions.bed genome.fasta -o enriched_sequences.fasta
+        ```bash
+        seqkit subseq --bed enriched_regions.bed genome.fasta -o enriched_sequences.fasta
         ```
       - **Input:** BED file from MACS2 and genome FASTA file.
       - **Output:** Extracted sequences in FASTA format.
