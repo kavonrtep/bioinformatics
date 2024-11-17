@@ -137,4 +137,4 @@ same command as above but lines are broken using backslash "\":
 
 
 * ChIP-Seq on Galaxy server
-see [./chip_seq_analysis.md]
+see [[./chip_seq_analysis.md]]
