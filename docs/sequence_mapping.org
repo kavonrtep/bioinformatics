@@ -124,7 +124,7 @@ to create data suitable for IGV, several command were necessary, we can make it 
 
 
 
-same command as above but lines are brokend using backslash "\":
+same command as above but lines are broken using backslash "\":
 #+begin_src bash
       bowtie2 -x mm10 -1 wt_H3K4me3_read1.fastq.gz -2 wt_H3K4me3_read2.fastq.gz\
           | samtools view -b  | samtools sort > wt_H3K4me3_reads_sorted2.bam
@@ -136,53 +136,5 @@ same command as above but lines are brokend using backslash "\":
 #+end_src
 
 
-
 * ChIP-Seq on Galaxy server
-Login to https://usegalaxy.eu and import data from history: https://usegalaxy.eu/u/petr_novak/h/chip-seq-cenh3
-
-Imported dataset include three files:
-
-- Partial genome assembly in FASTA format. The assembly represent 177.6 Mb region of chromosome 6 of Pisum sativum including its 81.6 Mb centromere  and adjacent chromosome arms
-- ChIP sequences in FASTQ format, with CENH3 antibody
-- Input sequences in FASTQ format as a control
-
-  Additional information:
-  
-- Illumina adapters:   https://github.com/golharam/FastQC/blob/master/Configuration/adapter_list.txt
-- Gene annotation: =~/Desktop/Bioinformatics/data/chip_seq_cenh3/genes_jon_220520.gff=
-- Tandem repeat annotation: =~/Desktop/Bioinformatics/data/chip_seq_cenh3/tandem_repeats_curated_track_220419.gff=
-  
-** Objective:
-Map ChIP and Input sequences to genome assembly and identify CENH3 associated regions. What type of sequences are associated with CENH3 regions in P.sativum?
-** Steps:
-*** Quality control with FASTQ program + sequence filtering
-- Analyze both FASTQ file with FASTQ program and identify potential problems
-- To fix potential problem you can use =cutadapt=  program to remove sequences contaminated with adapter sequences. (adapter sequence: AGATCGGAAGAG)
-- removing part of the sequence from 5' or 3' end can be done using =Trim sequences= tool
-- After each step, run FASTQC program to verify that you got expected result
-
-#+begin_comment
-Fastqc show presence of adapter + some unknown adapter from bases composition
-run cutadapt with 3' end, use option to create report in output selector
-filter option - discard trimmed reads
-trim sequence 20-151
-#+end_comment
-*** Mapping sequence to genome assembly using Bowtie2 program
-- use single end mode
-- use setting =Very fast end-to-end (--very-fast)=
-*** Compare ChiP and Input bam file using bamCompare tool.
-- correctly select treated(ChIP) and control (Input) sample
-- use =Bin size in bases= 5000
-*** Download data to desktop and visualize in IGV
-- download bowtie2 output BAM dataseq and their index. Use informative names
-- download bigwig output from bamCompare tool.
-- Download also  genome assembly used for mapping
-- Load genome to IGV
-- Load BAM files, bigwig file, gene annotation and tandem repeat annotation
-- Explore CENH3 enriched regions
-- What type of sequences are associated with CENH3 domains?
-- How many CENH3 associated domains you can identify?
-- Are sequences associated with CENH3 domain similar?
-  - zoom to individual domains and extract part of the associated sequence
-  - put sequence into single FASTA file
-  - compare sequences using dotter
+see [./chip_seq_analysis.md]
