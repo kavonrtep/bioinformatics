@@ -1,28 +1,45 @@
 * Integrative Genomics Viewer
-- multiplatform
-- Manual pages - https://software.broadinstitute.org/software/igv/
-- File formats:
-  - BAM
-  - BED
-  - BigWig
-  - GFF3
-  - VCF
-  - ...
+The Integrative Genomics Viewer (IGV) is a high-performance, interactive tool for the visual exploration of genomic data. It supports a wide variety of data types and file formats, allowing users to visualize alignments, annotations, and variant calls in the context of a reference genome.
+
+- Multiplatform: Available for Windows, macOS, and Linux.
+- Official website and manual: https://software.broadinstitute.org/software/igv/
+
+
+** Supported File Formats
+IGV supports a wide range of file formats, including:
+
+- BAM/SAM: Sequence alignment data.
+- BED: Feature tracks.
+- BigWig: Continuous data tracks.
+- GFF3/GTF: Genomic annotations.
+- VCF: Variant call data.
+
 
 [[../fig/tracks_formats.png]]
 
 * Custom E.coli data
-Data for E.coli genome NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete genome can be found in =bioinformatics/data/igv_data_e_coli=
+Data for E.coli genome NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete genome can be found in =Desktop/Bioinformatics/data/igv_data_e_coli=
 
-For BAM file, you will need to create index file using command:
+For BAM file, you will need to create index file (if does not exist) using command:
 
 #+begin_src bash
 samtools index dna_sequencing.bam
 #+end_src
 
 - Start IGV
-- load Genome from file.
-- import individual tracks from files 
+- Load the E. coli Genome: In IGV, navigate to Genomes > Load Genome from File....
+- Select the genome file (=genome.fa=)
+- Load Data Tracks: Go to File > Load from File....
+- Select the data files you wish to load. Available tracks are:
+  - ~blastp_genes.gff3~
+  - ~dna_sequencing.bam~
+  - ~'dna_sequencing coverage.bw'~
+  - ~genes_de_novo.gff3~
+  - ~genes_NCBI.gff3~
+  - ~RNA-Seq_coverage_1.bw~
+  - ~RNA-Seq_coverage_2.bw~
+  - ~variants.vcf~
+
   
 * Types of files included:
 

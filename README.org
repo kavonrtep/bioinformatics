@@ -1,8 +1,12 @@
 * Bioinformatics exercises
 
+Galaxy server:
+https://usegalaxy.eu/
+
+To join training:
 https://usegalaxy.eu/join-training/kmb613-2
 
-[[https://gitpod.io/#https://github.com/kavonrtep/bioinformatics][https://gitpod.io/button/open-in-gitpod.svg]]
+
 
 ** [[./docs/shell_introduction.md][Introduction to shell]] 
 ** [[./docs/sequence_alignment.org][Sequence Alignment]]
