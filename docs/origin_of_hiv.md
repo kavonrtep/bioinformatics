@@ -58,7 +58,11 @@ There are four output datasets:
   - Open Dendroscope 
   - Navigate to `File` > `Open` and select the downloaded tree file.
   - Find `SIV-MON;_Mona_monkey;_AY340701` and set it as outgroup
-  - Identify major groups and subtypes of HIV-1 and HIV-2.
+  - Identify major groups and subtypes of HIV-1 and HIV-2. You can use commad window to select and color HIV-1 and HIV-2 leaves:
+```
+find searchtext='HIV-1' target=nodes regex=true;set labelcolor=#AA0000;deselect all; 
+find searchtext='HIV-2' target=nodes regex=true;set labelcolor=#00AA00;deselect all;
+```    
   - Examine the placement of SIV strains to infer the origins of HIV-1 and HIV-2.
   - Determine from which **African** primates HIVs originated. 
   - Do you think that transmission occurred just once or multiple times?
