@@ -8,7 +8,7 @@ Metacentrum Documentation:
 - Available software
 
 
-# Running Genome Assembly on MetaCentrum (Velvet Example) 
+# Running Genome Assembly on MetaCentrum (Spades Example) 
 When working with large-scale computations, such as genome assembly, your personal computer often lacks the necessary computational power, memory, or time to complete the task efficiently. MetaCentrum provides a cluster of powerful computing nodes managed by a job scheduler called PBS (Portable Batch System). Using PBS:
 
 You submit jobs with specific resource requirements (CPUs, memory, walltime).
@@ -21,7 +21,7 @@ PBS distributes these jobs among the available compute nodes.
 
 The first lines of your PBS script define how the job is scheduled:
  
-- `#PBS -N velvet_assembly`
+- `#PBS -N spades_assembly`
 **Job Name** : Sets the name of your job, making it easier to identify in the queue.
  
 - `#PBS -l select=1:ncpus=4:mem=16gb:scratch_local=50gb`
@@ -34,9 +34,9 @@ The first lines of your PBS script define how the job is scheduled:
 
 ## Log Files (Standard Output and Standard Error) 
 By default, when you submit a PBS job, two log files are created in the directory where you ran `qsub`: 
-- `velvet_assembly.o<JOBID>`: This file contains the **standard output (stdout)**  of your job. It logs all the normal output messages produced by your scripts and commands.
+- `spades_assembly.o<JOBID>`: This file contains the **standard output (stdout)**  of your job. It logs all the normal output messages produced by your scripts and commands.
  
-- `velvet_assembly.e<JOBID>`: This file contains the **standard error (stderr)**  of your job. Any error messages or warnings are written here.
+- `spades_assembly.e<JOBID>`: This file contains the **standard error (stderr)**  of your job. Any error messages or warnings are written here.
 
 These logs are useful for:
 
@@ -84,7 +84,7 @@ After logging in, navigate to your home directory on the remote server.
 Your directory path will be something like:
 
 
-```arduino
+```bash
 /auto/plzen1/home/username/ngs_assembly
 ```
 Replace `username` with your actual MetaCentrum username.
@@ -106,29 +106,40 @@ Use FileZilla to transfer the two FASTQ files from your local machine to:
 
 ```bash
 #!/bin/bash
-#PBS -N velvet_assembly
-#PBS -l select=1:ncpus=2:mem=4gb:scratch_local=50gb
+#PBS -N spades_assembly
+#PBS -l select=1:ncpus=2:mem=6gb:scratch_local=50gb
 #PBS -l walltime=1:00:00
 
-# Set data directory in your home directory
+# Load necessary modules
+module add spades
+
+# Define data directory in your home directory
 DATADIR=/auto/plzen1/home/username/ngs_assembly
 
-# Load the velvet module
-module add velvet
+# Define input file names
+READ1=SRR022852_1.fastq.gz
+READ2=SRR022852_2.fastq.gz
 
 # Copy input data from home directory to scratch directory
-cp $DATADIR/SRR022852_1.fastq.gz $SCRATCHDIR
-cp $DATADIR/SRR022852_2.fastq.gz $SCRATCHDIR
+cp "$DATADIR/$READ1" "$SCRATCHDIR/"
+cp "$DATADIR/$READ2" "$SCRATCHDIR/"
 
-# Move into the scratch directory
-cd $SCRATCHDIR
+# Change to scratch directory
+cd "$SCRATCHDIR"
 
-# Run velvet: using local scratch for input and output
-velveth run_25_paired 25 -fastq.gz -shortPaired -separate SRR022852_1.fastq.gz SRR022852_2.fastq.gz
-velvetg run_25_paired -ins_length 350
+# Run SPAdes assembly with isolate mode and speed optimizations
+spades.py \
+    --isolate \
+    --only-assembler \
+    -1 "$READ1" \
+    -2 "$READ2" \
+    -o spades_output \
+    -t 2 \
+    -m 6 \
+    -k 21,33
 
-# Copy results back to home directory
-cp -r run_25_paired $DATADIR/
+cp -r spades_output "$DATADIR/"
+
 ```
 Replace `username` in `DATADIR` with your actual username.
  
@@ -174,21 +185,21 @@ qstat -u username
 ```
 Status can be also monitored on https://metavo.metacentrum.cz/pbsmon2/person (this require login with EduID)
 
-Once the job finishes, you’ll find a directory `run_25_paired` with `contigs.fa` and other assembly results in your `ngs_assembly` directory.
+Once the job finishes, you’ll find a directory `spades_output` with `scaffolds.fasta` and other assembly results in your `ngs_assembly` directory.
 Working directory will also contain files:
 ```bash
-velvet_assembly.o<JOBID>
-velvet_assembly.e<JOBID>
+spades_assembly.o<JOBID>
+spades_assembly.e<JOBID>
 ```
 This files contain standard output and standard error messages produced by script and are usefull when debugin pbs script.
 
 ### Step 6: Retrieve Results 
 After the job is complete, use FileZilla again to connect to `nympha.meta.zcu.cz` and navigate to:
 
-```arduino
-/auto/plzen1/home/username/ngs_assembly/run_25_paired
+```bash
+/auto/plzen1/home/username/ngs_assembly/
 ```
-Download `contigs.fa` (and any other files, for example complete directory with results) to your local machine.
+Download whole `spades_output` directory to your local machine.
 
 ---
 
