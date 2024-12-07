@@ -94,7 +94,7 @@ Replace `username` with your actual MetaCentrum username.
 Use FileZilla to transfer the two FASTQ files from your local machine to:
 
 
-```arduino
+```bash
 /auto/plzen1/home/username/ngs_assembly
 ```
 
@@ -102,11 +102,13 @@ Use FileZilla to transfer the two FASTQ files from your local machine to:
  
 1. **Create the script locally**  using a text editor (e.g., `gedit`). Name it `run_assembly.sh`:
 
+2. **Important** before saving script change `username` string to your real `username` 
+
 ```bash
 #!/bin/bash
 #PBS -N velvet_assembly
-#PBS -l select=1:ncpus=4:mem=16gb:scratch_local=50gb
-#PBS -l walltime=12:00:00
+#PBS -l select=1:ncpus=2:mem=4gb:scratch_local=50gb
+#PBS -l walltime=1:00:00
 
 # Set data directory in your home directory
 DATADIR=/auto/plzen1/home/username/ngs_assembly
@@ -144,22 +146,41 @@ ssh username@nympha.metacentrum.cz
 2. **Navigate to your working directory** :
 
 ```bash
+# see current location
+pwd
+# go to directory with data and pbs script
 cd /auto/plzen1/home/username/ngs_assembly
+# or simply 
+cd ngs_assembly # if you are already in /auto/plzen1/home/username
 ```
- 
+NOTE: Some network directories on metacentrum have alternative names, so for example `/auto/plzen1/home/username/` point to the same location as `/storage/plzen1/home/username/` 
+
 3. **Submit the job** :
 
 ```bash
 qsub run_assembly.sh
 ```
+After execution you should see message like:
+```bash
+6724234234.pbs-m1.metacentrum.cz
+```
+This is the job ID. 
 The job will be placed in the queue, and once it starts running, it will use the requested resources and `$SCRATCHDIR`.
  
 4. **Check job status** :
-
+On frontend shell you can use command:
 ```bash
-qstat
+qstat -u username
 ```
+Status can be also monitored on https://metavo.metacentrum.cz/pbsmon2/person (this require login with EduID)
+
 Once the job finishes, you’ll find a directory `run_25_paired` with `contigs.fa` and other assembly results in your `ngs_assembly` directory.
+Working directory will also contain files:
+```bash
+velvet_assembly.o<JOBID>
+velvet_assembly.e<JOBID>
+```
+This files contain standard output and standard error messages produced by script and are usefull when debugin pbs script.
 
 ### Step 6: Retrieve Results 
 After the job is complete, use FileZilla again to connect to `nympha.meta.zcu.cz` and navigate to:
@@ -167,7 +188,7 @@ After the job is complete, use FileZilla again to connect to `nympha.meta.zcu.cz
 ```arduino
 /auto/plzen1/home/username/ngs_assembly/run_25_paired
 ```
-Download `contigs.fa` (and any other files) to your local machine.
+Download `contigs.fa` (and any other files, for example complete directory with results) to your local machine.
 
 ---
 
