@@ -29,6 +29,7 @@ The first lines of your PBS script define how the job is scheduled:
  
 - `#PBS -l walltime=12:00:00`
 **Time Limit** : The maximum wall time for your job. If it exceeds 12 hours, the job will be terminated.
+- `#PBS -m bae` Email will be sent user when computation begins and ends.
 ---
 
 
@@ -109,6 +110,7 @@ Use FileZilla to transfer the two FASTQ files from your local machine to:
 #PBS -N spades_assembly
 #PBS -l select=1:ncpus=2:mem=6gb:scratch_local=50gb
 #PBS -l walltime=1:00:00
+#PBS -m bae
 
 # Load necessary modules
 module add spades
