@@ -57,12 +57,12 @@ rggifvgpcgnkvDHAVAAVGYGpNYILIKNSWGTGWGenGYIRIKRgtgnsygvcglytSSFYpvkn
 *(Consider all sequences in your alignment, including the unknown.)*
  
 3. **Save the final alignment as an image**  
-  - *(In Jalview: File > Export Image > PNG)*
-  - Upload this image to Moodle.
+    - *(In Jalview: File > Export Image > PNG)*
+    - Upload this image to Moodle.
  
 4. **Save the alignment in FASTA format**  
-  - *(In Jalview: File > Save As > FASTA (aligned))*
-  - Upload this file to Moodle.
+    - *(In Jalview: File > Save As > FASTA (aligned))*
+    - Upload this file to Moodle.
 
 
 ---
