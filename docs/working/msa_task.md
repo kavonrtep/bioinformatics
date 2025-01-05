@@ -9,11 +9,12 @@ Identify the positions of the catalytic amino acids (C and H) in an **unknown cy
 ---
 ### Sequences of Known Cysteine Proteases
 
-Below is an example set of cysteine proteases. 
+Below are examples of cysteine proteases. 
  
 - Human Cathepsin B  (P07858)
 - Human Cathepsin L  (P07711)
-Full set of sequences can be downloaded from [here](https://raw.githubusercontent.com/bioinformatics-core-shared-training/sequence_alignment/main/data/cysteine_proteases.fasta).
+
+Full set of sequences can be downloaded from [here](https://raw.githubusercontent.com/kavonrtep/bioinformatics/refs/heads/master/docs/working/cystein_proteases.fasta).
 ---
 
 
