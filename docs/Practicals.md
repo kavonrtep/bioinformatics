@@ -9,8 +9,8 @@ git pull
 
  
 - [Sequence self-comparison](./sequence_alignment.md/#dotplots)
-  - Exercise 1.1 
-  - Exercice 1.2
+  - [Exercise 1.1](./sequence_alignment.md/#exercise-11---simple-self-comparison-using-dotplot)
+  - [Exercice 1.2](#exercise-12---identification-of-repetitive-motifs-using-dotplot)
 Compare two or more sequences
 Exercise 1.3
 Exercise 1.8
