@@ -8,7 +8,7 @@ git pull
 ```
 
  
-- [Sequence self-comparison](./sequence_alignment.md/##Dotplots)
+- [Sequence self-comparison](./sequence_alignment.md/#dotplots)
   - Exercise 1.1 
   - Exercice 1.2
 Compare two or more sequences
