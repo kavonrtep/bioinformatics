@@ -296,7 +296,9 @@ seqkit fx2tab --length --name overlaping_sequences.fasta
 
 <details>
 <summary>💡 Hint</summary>
-[../fig/scheme_dotter_overlap.png]]
+
+![scheme_dotter_overlap](../fig/scheme_dotter_overlap.png)
+
 </details>
 
 ### Exercise 1.9 - Compare two genomic regions with dotter
