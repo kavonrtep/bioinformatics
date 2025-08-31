@@ -8,6 +8,7 @@ git pull
 ```
  
 - [Sequence self-comparison](./sequence_alignment.md/#dotplots)
+- 
   - [Exercise 1.1](./sequence_alignment.md/#exercise-11---simple-self-comparison-using-dotplot)
   - [Exercise 1.2](./sequence_alignment.md/#exercise-12---identification-of-repetitive-motifs-using-dotplot)
 - Compare two or more sequences
@@ -21,3 +22,4 @@ git pull
   - [Exercise 1.5](./sequence_alignment.md/#exercise-15---comparison-of-hox-proteins-using-dotplot)
 - Global vs. local alignment
   - [Exercise 2.2](./sequence_alignment.md/#exercise-22---pairwise-alignment-using-ncbi-blast)
+

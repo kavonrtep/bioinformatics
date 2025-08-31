@@ -285,16 +285,19 @@ Make dotplot from following sequences stored in file:
 
 - Sequence file contain SeqA, SeqB and SeqC. 
 - Get information about sequences in file using `seqkit` program:
-  ```bash
+```bash
 seqkit stat overlaping_sequences.fasta
 seqkit fx2tab --length --name overlaping_sequences.fasta
 ```
+
 - Generate an all-to-all dot plot using dotter. This will compare each sequence (seqA, seqB, and seqC) against the others in a single analysis.
 - Examine the resulting dot plot to identify overlaps among seqA, seqB, and seqC.
 - Using the overlaps you identified, Create a simple schematic to show how the sequences fit together into a longer continuous sequence (contig).
 
-# solution:
-# [../fig/scheme_dotter_overlap.png]]
+<details>
+<summary>💡 Hint</summary>
+[../fig/scheme_dotter_overlap.png]]
+</details>
 
 ### Exercise 1.9 - Compare two genomic regions with dotter
 Use a dot plot to compare two large genomic regions and identify structural variation.
@@ -342,9 +345,7 @@ what does it mean?
 # paired sequences are overlaping
 
 #### Illumina data : SRR453021 (Nicotian repanda - WGS)
-# adapter sequence
-# ACACTCTTTCCCTACACGACGCTCTTCCGATCT
-# change it to faster-dump!
+
 ```bash
 fastq-dump -X 50 --split-files  --fasta SRR453021
 dotter SRR453021_2.fasta SRR453021_2.fasta 
@@ -517,7 +518,6 @@ t_coffee -infile cdk_mafft_aligned.fasta  -evaluate
 t_coffee -infile cdk_muscle_aligned.fasta  -evaluate
 # the above steps will generate html file with TCS results, inspect them in firefox
 ```
-# t_coffee takes couple secconds to finish
 
 Inspect alignment from mafft using *Jalview* program. 
 - Try different coloring schemes - clustal, percentage identity, hydrophobicity
