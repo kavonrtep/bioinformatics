@@ -313,10 +313,12 @@ dotter genomeA_part.fasta genomeB_part.fasta
 
 ### Exercise 1.10 - Whole genome comparison with `Gepard` program
  *Mycoplasma hyopneumoniae* is a bacterial pathogen that primarily affects pigs, causing enzootic pneumonia, a chronic respiratory disease.The genome of Mycoplasma hyopneumoniae is relatively small can be analyzed using `Gepard` dotplot program. Download genomic sequences of two strains, characterize them with `seqkit` program  and compare them using `Gepard`. You will find shortcut to `Gepard` program on Desktop. 
+
 ```txt
 https://zenodo.org/record/4485547/files/mycoplasma-232.fasta
 https://zenodo.org/record/4485547/files/mycoplasma-7422.fasta
 ```
+
 - You can  use G and H (slow movement) or J and K (fast navigation) to slide along the current diagonal
 - Do you observe any diagonal lines in the dot plot other than the main diagonal? What do these lines indicate about the genomic organization (e.g., inversions, duplications)?
  - Recalculate dotplot with word length 100
@@ -324,8 +326,9 @@ https://zenodo.org/record/4485547/files/mycoplasma-7422.fasta
  - How many deletions in you can observe in strain 232?
 
 ### Exercise 1.11 - Identification of problems in sequences from SRA database
+
 #### Illumina data : SRR2911427  (Migratory locust WGS)
-# overlap, high NN proportion
+
 - download sequences from SRA database using `fastq-dump` command line program 
 - for documentation see https://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?view=toolkit_doc&f=fastq-dump )
 - inspect data and create dotplot

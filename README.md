@@ -1,5 +1,9 @@
 # Bioinformatics exercises
 
+## Practicals exercises 
+
+- [Week 1 - Dotplots and pairwise alignments](./docs/Practicals.md#week-1---dotplots-and-pairwise-alignments)
+
 Galaxy server:
 https://usegalaxy.eu/
 
@@ -24,7 +28,3 @@ https://usegalaxy.eu/join-training/kmb613-2
 ## Additional Resources
 
 https://training.galaxyproject.org/training-material/topics/introduction/tutorials/galaxy-intro-short/tutorial.html
-
-Genome annotation with Funannotate:
-
-https://training.galaxyproject.org/training-material/topics/genome-annotation/tutorials/funannotate/tutorial.html
