@@ -347,7 +347,7 @@ dotter SRR2911427_1.fasta SRR2911427_2.fasta
 ```
 
 what does it mean? 
-# paired sequences are overlaping
+
 
 #### Illumina data : SRR453021 (Nicotian repanda - WGS)
 
