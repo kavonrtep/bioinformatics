@@ -4,11 +4,7 @@
 
 - [Week 1 - Dotplots and pairwise alignments](./docs/Practicals.md#week-1---dotplots-and-pairwise-alignments)
 
-Galaxy server:
-https://usegalaxy.eu/
-
-To join training:
-https://usegalaxy.eu/join-training/kmb613-2
+- [Week 2 - Multiple sequence alignment](./docs/Practicals.md#week-2---multiple-sequence-alignment)
 
 ## Course Materials
 
