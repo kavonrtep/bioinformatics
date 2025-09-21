@@ -9,6 +9,7 @@ git pull
 ## Dotplots
 - [Dotplot demo I](https://kavonrtep.github.io/games/dotplot-demo.html)
 - [Dotplot demo II](https://kavonrtep.github.io/games/dotplot-explorer.html)
+- [FASTA format](./data_formats.md/#fasta-fa-fna-faa-fasta)
 - [Sequence self-comparison](./sequence_alignment.md/#dotplots)
   - [Exercise 1.1](./sequence_alignment.md/#exercise-11---simple-self-comparison-using-dotplot)
   - [Exercise 1.2](./sequence_alignment.md/#exercise-12---identification-of-repetitive-motifs-using-dotplot)
