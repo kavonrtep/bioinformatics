@@ -29,8 +29,13 @@ git pull
   - [Exercise 2.2](./sequence_alignment.md/#exercise-22---pairwise-alignment-using-ncbi-blast)
 
 
-# Week 2 - Multiple sequence alignment
+# Week 2 
 
+## Recap of pairwise alignment:
+ - [Excercise A1](./extra_tasks.md#exercise-a1)
+ - [Excercise A2](./extra_tasks.md#exercise-a2)
+
+## Multiple sequence alignment
 - [Exercise 3.1 - Cyclin-dependent kinase](./sequence_alignment.md/#exercise-31---multiple-sequence-alignment---cyclin-dependent-kinase)
 - [Exercise 3.2 - Multiple alignment from HSPB8 proteins](./sequence_alignment.md/#exercise-32---multiple-alignment-from-hspb8-proteins)
 - [Exercise 3.3 - Alignment of protein isoforms, alignment editing](./sequence_alignment.md/#exercise-33---alignment-of-protein-isoforms-alignment-editing)
