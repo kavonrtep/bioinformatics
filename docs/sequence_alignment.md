@@ -368,7 +368,7 @@ seqkit fx2tab --length --name overlaping_sequences.fasta
 Use a dot plot to compare two large genomic regions and identify structural variation.
 
 ```
-cd ~/Desktop//bioinformatics/data/dotter_sequences/
+cd ~/Desktop/Bioinformatics/data/dotter_sequences/
 dotter genomeA_part.fasta genomeB_part.fasta
 ```
 - How would characterize difference between genomes?
@@ -381,6 +381,23 @@ dotter genomeA_part.fasta genomeB_part.fasta
 https://zenodo.org/record/4485547/files/mycoplasma-232.fasta
 https://zenodo.org/record/4485547/files/mycoplasma-7422.fasta
 ```
+
+<details>
+<summary>💡 Details</summary>
+
+To download sequences use `wget` command:
+```bash
+cd ~/Desktop/
+mkdir mycoplasma
+cd mycoplasma
+wget https://zenodo.org/record/4485547/files/mycoplasma-232.fasta
+wget https://zenodo.org/record/4485547/files/mycoplasma-7422.fasta
+# check sequence statistics:
+# use seqkit program to get information about sequences
+seqkit stat *.fasta
+```
+</details>
+
 
 - You can  use G and H (slow movement) or J and K (fast navigation) to slide along the current diagonal
 - Do you observe any diagonal lines in the dot plot other than the main diagonal? What do these lines indicate about the genomic organization (e.g., inversions, duplications)?
