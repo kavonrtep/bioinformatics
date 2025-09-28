@@ -47,6 +47,7 @@ Make self comparison of the following sequences and identify repetitive sequence
 - Is it in forward or reverse-complement orientation.
 - How many copies have repetitive element?
 - Draw schematic of sequence structure
+- What is the position (coordinates) of repetitive region(s)?
 
 Sequences for comparison are located in  `~/Desktop/Bioinformatics/data/dotter_sequences2`
 To run self comparison run `dotter` as:

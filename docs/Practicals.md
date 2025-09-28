@@ -40,3 +40,51 @@ git pull
 - [Exercise 3.2 - Multiple alignment from HSPB8 proteins](./sequence_alignment.md/#exercise-32---multiple-alignment-from-hspb8-proteins)
 - [Exercise 3.3 - Alignment of protein isoforms, alignment editing](./sequence_alignment.md/#exercise-33---alignment-of-protein-isoforms-alignment-editing)
 - [Exercise 3.6 - Identification of catalytic triad residues in serine proteases](./sequence_alignment.md/#exercise-36---identification-of-catalytic-triad-residues-in-serine-proteases)
+
+# Week 3
+- [Exercise 3.2 - Multiple alignment from HSPB8 proteins](./sequence_alignment.md/#exercise-32---multiple-alignment-from-hspb8-proteins)
+- [Exercise 3.5 - MSA of globins proteins](./sequence_alignment.md/#exercise-35---msa-of-globins-proteins)
+- [Exercise 3.7 - Identification of Bacterial Homologs of Human Neuroglobin and Analysis of Heme-Binding Pocket Conservation](./sequence_alignment.md/#exercise-37---identification-of-bacterial-homologs-of-human-neuroglobin-and-analysis-of-heme-binding-pocket-conservation)
+- [Exercise 3.8 - Alignment-Based Primer Design](./sequence_alignment.md/#exercise-38---alignment-based-primer-design)
+
+
+# Week 4
+
+NCBI BLAST
+Exercise 1.1- BLASTN - NCBI web interface
+Exercise 1.6 - Identification of species using NCBI BLAST
+Exercise 1.7 - Identification of mutations in gyrA gene
+Exercise 1.4 - Identification of coding sequence using BLASTX
+Use of BLAST from command line
+
+Exercise 2.1
+Exercise 2.2
+
+seqkit ???
+
+# Week 5
+BLAST - cont.
+Genome assembly
+# Week 6 
+Genome assembly - cont.
+
+
+# Week 7 
+Genome Annotation
+
+# Week 8
+Chip-Seq
+
+
+# Week 9
+
+Variant calling, Amplicon sequencing
+
+# Week 10
+Creating phylogenetic tree
+Exercise 1 - Comparison of phylogenetic trees based on amino acid and nucleotide sequences of ubiquitin gene
+Exercise 2 -The case of the Florida dentist
+Exercies 3 - Origin of HIV
+
+# Week 11
+Structural bioinformatics, AlphaFold
