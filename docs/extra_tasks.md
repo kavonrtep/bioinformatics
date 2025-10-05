@@ -156,7 +156,7 @@ CHPFVYGGCGGNANRFGTREACERRCPPRVVQSQGTGTAQD
 ```
 
 
-Used dotter and also NCBI BLAST (https://blast.ncbi.nlm.nih.gov/Blast.cgi, use Protein BLAST, align two or more sequences) to identify the deletion in the variant sequence.
+Use dotter and also NCBI BLAST (https://blast.ncbi.nlm.nih.gov/Blast.cgi, use Protein BLAST, align two or more sequences) to identify the deletion in the variant sequence.
 
 - What does dotplot tell us about the protein sequence
 - Which tools (dotter or BLAST) is better for identifying this deletions? Why?

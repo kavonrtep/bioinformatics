@@ -323,8 +323,8 @@ Which pairs of protein are more similar to each other? What part of the proteins
 dotter AC108130.3.fna BC030696.1.fna  # genome vs cDNA
 dotter AC108130.3.fna GBRA1_HUMAN.fna   # genome vs protein 
 ```
-# Data are also available in ~/Desktop/bioinformatics/data/dotter_sequences
-When using `dotter` to compare  DNA to protein, DNA sequence must be in forward orientation!
+- Data are also available in ~/Desktop/bioinformatics/data/dotter_sequences
+- When using `dotter` to compare  DNA to protein, DNA sequence must be in forward orientation!
 
 ### Exercise 1.7 - Identification of insertions, deletions, duplications  - more complex example
 Compare two genomic regions `a_region` and `b_region`
