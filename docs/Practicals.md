@@ -69,6 +69,7 @@ git pull
 ## NCBI BLAST
 - 
 - [Exercise 1.1 - BLASTN - NCBI web interface](./blast_search.md/#exercise-11---blastn---ncbi-web-interface)
+- [Exercise 1.2 - BLASTP - NCBI web interface](./blast_search.md/#exercise-12---blastp---ncbi-web-interface)
 - [Exercise 1.6 - Identification of species using NCBI BLAST](./blast_search.md/#exercise-16---identification-of-species-using-ncbi-blast)
 - Exercise 1.7 - Identification of mutations in gyrA gene
 - Exercise 1.4 - Identification of coding sequence using BLASTX
@@ -76,11 +77,11 @@ git pull
  - Exercise 2.1
  - Exercise 2.2
 
-seqkit ???
 
 # Week 5
 - BLAST - cont.
 - Genome assembly
+- seqkit
 
 # Week 6 
 - Genome assembly - cont.

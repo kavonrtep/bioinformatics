@@ -87,39 +87,15 @@ protein database (nr) to identify protein and find its homologs.
 blast link : https://blast.ncbi.nlm.nih.gov/Blast.cgi
 
 - Based on the identical hit to C. elegans what is the identity of this protein?
-
-<details>
-<summary>Details</summary>
-show how you can get from blast result to ncbi protein and uniprot record
- Dwarfin sma-4, involved in TGF-beta pathway
-</details>
-
 - Aside from the C. elegans proteins, what is the most significant hit? What is
   its identity and E-value?
 - switch for "graphic summary" - for blastp there is additional information
   about identified conserved domains.
-
-<details>
-<summary>Details</summary>
-hypothetical protein FL83_19826 [Caenorhabditis latens], pval 0 but shorter alignemnt
-</details>
-
+- Explore link to other databases 
 - Check also taxonomy report. How many hits was found total. How many hits was
   found in "chordata" taxonomy group.
 - Use edit and resubmit  to modify blast search.  In new search, use DELTA-BLAST
   algorithm.
-
-<details>
-<summary>Details</summary>
-this make only sense when student are familiar with psi and delta blast
-</details>
-
-- How many similar protein is found with DELTA-BLAST, How many is in vertebrates
-- Use edit and resubmit  to modify blast search.  In new search, use DELTA-BLAST
-  algorithm. and additionally search only in vertebrates taxon (Organism is set
-  to vertebrates (taxid:7742)
-- What is the best hit in vertebrates. What is its accession, organism, Evalue,
-  Identity and Similarity)
 
 ## Exercies 1.3 - BLASTX - NCBI web interface
 The part of genomic sequence of Twort bacteriophage is bellow. Use BLAST to
@@ -127,12 +103,6 @@ search protein database  (Non-redundant protein sequences  - nr) to find
 homologous protein from other bacteriophages and viruses.
 - For search try to use Blosum62 and Blosum45 scoring matrix. What is the
   difference between searches with different matrices
-
-<details>
-<summary>Details</summary>
-different score, blosum45 find bit litle bit more hits
-</details>
-
 - What proteins (Accessions) has alignment with E value < 1e-10
 
 ```
@@ -159,11 +129,6 @@ TAAAAACTGTTAAAGATTTTATTAAGTAATACAAAGTAGTTGTGTTATATTATACAT
 GAAATTAAATTAATAAAA
 ```
 
-<details>
-<summary>Details</summary>
-- show *Recent resuts* menu
-- distance tree view (in blastp results)
-</details>
 
 ## Exercise 1.4 - Identification of coding sequence using BLASTX vs BLASTN
 characterization of unknown DNA PCR amplified fragment from unknown
