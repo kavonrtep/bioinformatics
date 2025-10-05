@@ -919,7 +919,7 @@ are typically under negative selection, while surface loops and other flexible
 regions might be under positive selection, reflecting the adaptation to
 different substrates and physiological conditions.
 
-In the alignemnt, there are two conserved Serines, Two identify which one is part of the catalytic triad, you will need to check function of Huma Trypsin in Uniprot database - https://www.uniprot.org/uniprotkb/P07477
+In the alignment, there are two conserved Serines, Two identify which one is part of the catalytic triad, you will need to check the function of Human Trypsin in Uniprot database - https://www.uniprot.org/uniprotkb/P07477
 
 ### Exercise 3.7 - Identification of Bacterial Homologs of Human Neuroglobin and Analysis of Heme-Binding Pocket Conservation
 *Objective*:  In this assignment, you will identify bacterial homologs of human

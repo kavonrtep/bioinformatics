@@ -6,11 +6,15 @@
 
 - [Week 2 - Sequence alignment](./docs/Practicals.md#week-2)
 
+- [Week 3 - Sequences alignment - cont.](./docs/Practicals.md#week-3)
+
+- [Week 4 - NCBI BLAST](./docs/Practicals.md#week-4)
+- 
 ## Course Materials
 
 - [Introduction to shell](./docs/shell_introduction.md)
 - [Sequence Alignment](./docs/sequence_alignment.md)
-- [NCBI Blast](./docs/blast_search.org)
+- [NCBI Blast](./docs/blast_search.md)
 - [Sequence Mapping](./docs/sequence_mapping.org)
 - [Databases](./docs/Databases_exercise.org)
 - [Sequence Assembly](./docs/sequence_assembly.org)
