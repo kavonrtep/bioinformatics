@@ -67,7 +67,7 @@ git pull
 # Week 4
 
 NCBI BLAST
-- Exercise 1.1- BLASTN - NCBI web interface
+- Exercise 1.1 - BLASTN - NCBI web interface
 - Exercise 1.6 - Identification of species using NCBI BLAST
 - Exercise 1.7 - Identification of mutations in gyrA gene
 - Exercise 1.4 - Identification of coding sequence using BLASTX
