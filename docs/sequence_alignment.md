@@ -642,7 +642,7 @@ Create MSA for set of orthologs of HSPB8 protein (Heat shock protein beta-8) and
 Make copy of fasta file and then rename fasta headers:
 ```bash
 cd 
-mkdir data/hspb8
+mkdir -p data/hspb8
 cd data/hsbb8
 cp ~/Desktop/Bioinformatics/data/alignment_sequences/HSP8.fasta .
 
@@ -667,15 +667,69 @@ Investigate the alignment of 11 alternatively-spliced gene products from the hum
 
 Correct alignment of isoforms will contain only matches and gaps, no mismatches!
 
-- Sequences can be obtained from ../data/alignment_sequences/epb41.fasta
+- Sequences can be obtained from `../data/alignment_sequences/epb41.fasta`
 - Open the JalView desktop application and load the unaligned sequences to visually inspect their similarities and differences.
 - Use the JalView web services menu to access the MAFFT, MUSCLE, and ClustalW alignment services. Perform an MSA with each program using the EPB41 isoform dataset.
 - Keep the results accessible for comparison, either by keeping the tabs/windows open or by saving the output files.
 - Compare the three alignments using JalView to assess how each program performed. Remember, an ideal alignment for isoforms should contain only matches and gaps, with no mismatches, since the sequences are identical except for the presence of deletions.
+- Set coloring and sort sequences based on pairwise comparison.
 - Evaluate the alignments to determine which program produced the best results based on the criteria of correctly handling deletions without introducing mismatches. In Consensus histogram set option *Ignore Gaps in Consensus*. This will help you identify problematic regions.
 - Choose one of the alignments you believe has the potential to be corrected easily manually. Using JalView, edit this alignment to resolve any issues, aiming to create an ideal alignment that reflects the expected pattern of matches and gaps for alternatively spliced isoforms.
 - Inspect structural annotation of this gene in UCSC genome browser - https://genome.ucsc.edu/cgi-bin/hgTracks?hgsid=2356525077_wGXvGEoZ9M0QWUR4riuRK94xqF93&db=hg38&position=lastDbPos
   (enter EPB41 to the search window)
+
+    
+<details>
+<summary>💡 Using Jalview</summary>
+
+## Jalview: quick orientation
+
+-   Two edit modes:
+    -   **Normal mode** (default): mostly mouse-based editing; use Shift/Ctrl + drag to add/remove gaps.
+    -   **Cursor mode**: keyboard-centric; toggle with **F2**. 
+
+### Mode & help
+-   **F2** – Toggle Cursor mode on/off. 
+-   **F1** – Open built-in help. 
+-   **Esc** – Clear selection (and cancel partial commands in Cursor mode). 
+
+### Gaps (Cursor mode)
+-   **Space** – Insert a gap at cursor; prefix with a number to insert *n* gaps (e.g., `12` then **Space**)
+-   **Delete** or **Backspace** – Remove a gap at cursor; prefix number removes *n* gaps
+-   **Ctrl+Space** or **Shift+Space** – Insert gaps across a **group** (all sequences in the group); same for group delete with **Ctrl/Shift+Delete/Backspace**. (Win uses Shift+Space; macOS supports Ctrl+Space too.)
+    
+### Navigation (Cursor mode)
+-   **Arrow keys** – Move cursor; hold **Shift** to jump between aligned region ↔ gap runs. 
+-   **p S** – Jump to sequence *p* (e.g., `7 S`).
+-   **p C** – Jump to column *p*.
+-   **p P** – Jump to residue *p* in current sequence.
+-   **p1, p2 ↩︎** – Jump to column *p1*, sequence *p2* (e.g., `13,5` then **Enter**). 
+
+### Making a rectangular selection (Cursor mode)
+
+-   Move to top-left → **Q** (marks start)
+-   Move to bottom-right → **M** (marks end)  
+    Now edits apply within the box. 
+
+### Column/sequence operations
+
+-   **Ctrl+L** – Remove columns left of leftmost column marker.
+-   **Ctrl+R** – Remove columns right of rightmost column marker.
+-   **Ctrl+E** – Remove gapped columns (columns containing only gaps).
+-   **Ctrl+Shift+E** – Remove *all* gaps.
+
+### Clipboard & undo/redo
+
+-   **Ctrl+X / Ctrl+C / Ctrl+V** – Cut / Copy / Paste to current alignment.
+-   **Ctrl+Shift+V** – Paste to **new** alignment window.
+-   **Ctrl+Z / Ctrl+Y** – Undo / Redo sequence edits (gap insertions/deletions, trims, etc.).
+
+### Hiding & selecting columns (handy while editing)
+
+-   **B / Alt+B / Ctrl+B** – Add highlighted columns / invert add / toggle column selection marks.
+-   **H / Shift+H / Ctrl+H / Ctrl+Shift+H** – Hide/reveal columns or sequences; “hide all but selection”.
+
+</details>
 
 ### Exercise 3.4 - Multiple sequence alignment of the mitochondrial 16S gene
 The mitochondrial 16S gene is a widely studied genetic marker in molecular
