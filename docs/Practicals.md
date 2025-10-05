@@ -26,7 +26,12 @@ git pull
     - [Exercise 1.9](./sequence_alignment.md/#exercise-19---compare-two-genomic-regions-with-dotter)
 
 # Week 2 
+❗Before doing exercises run:
 
+```bash
+cd ~/Desktop/Bioinformatics
+git pull
+```
 ## Recap of dotplot
  - [Excercise A1](./extra_tasks.md#exercise-a1)
 

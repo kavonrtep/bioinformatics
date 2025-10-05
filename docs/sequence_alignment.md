@@ -611,11 +611,13 @@ Inspect alignment from mafft using *Jalview* program.
   - *Zappo*: The Zappo coloring scheme colors amino acids based on their physicochemical properties, such as charge, polarity, and hydrophobicity.
   - *Taylor*: , like Zappo, colors amino acids based on their physicochemical properties but uses a different set of colors. It is designed to make it easier to distinguish between different types of amino acids by using a broader and more intuitive color palette.
   - The *Hydrophobicity* coloring scheme highlights amino acids based on their hydrophobic or hydrophilic properties.
+  - Percentage Identity: This scheme colors residues based on the percentage of sequences in the alignment that have the same amino acid at a given position. Highly conserved positions (where most sequences share the same amino acid) are colored differently from variable positions.
 - Jalview is using several metrics calculated from score:
   - *Conservation*: How similar or different are the amino acids at this position?" If all the amino acids are the same, it's considered highly conserved (very important and likely critical for the protein's function). If the amino acids are different but still similar in their chemical properties, it's also considered conserved, but to a lesser extent
   - Quality: measure of base on blosum62 score
   - Consensus - by default it shows histogram, can be switched to sequence logo
   - Occupancy
+- *Overview window* (View->Overview window) shows complete alignment
 - How are sequences in the alignment sorted? Reorder sequences using Calculate->Sort->By Pairwise Identity.
 - Try to identify the most conserved regions.
 - What are the coordinates of most conserved region related to *CDK14* sequence.
@@ -633,23 +635,21 @@ DVLLGSTEYSTCLDMWGVGCIFVEMIQGVAAFPGMKDIQDQLERIFLVLGTPNEDTWPGV
 HSLPHFKPERFTLYSSKNLRQAWNKLSYVNHAEDLASKLLQCSPKNRLSAQAALSHEYFS
 DLPPRLWELTDMSSIFTVPNVRLQPEAGESMRAFGKNNSYGKSLSNSKH
 ```
-*Transitive consistency score* : TCS is an alignment evaluation score that makes it possible to identify in an MSA the most correct positions. It has been shown that these positions are the most likely to be structuraly correct and also the most informative when estimating phylogenetic trees. The TCS evaluation and filtering procedure is implemented in the T-Coffee package and can be used to evaluate and filter any third party multiple sequence alignment  
+*Transitive consistency score* : TCS is an alignment evaluation score that makes it possible to identify in an MSA the most correct positions. It has been shown that these positions are the most likely to be structurally correct and also the most informative when estimating phylogenetic trees. The TCS evaluation and filtering procedure is implemented in the T-Coffee package and can be used to evaluate and filter any third party multiple sequence alignment  
 ### Exercise 3.2 - Multiple alignment from HSPB8 proteins
 Create MSA for set of orthologs of HSPB8 protein (Heat shock protein beta-8) and identify conserved regions.
 
-Make copy of of fasta file and then rename fasta headers:
+Make copy of fasta file and then rename fasta headers:
 ```bash
 cd 
 mkdir data/hspb8
 cd data/hsbb8
 cp ~/Desktop/Bioinformatics/data/alignment_sequences/HSP8.fasta .
-gedit HSP8.fasta
-```
-Change the header from `>XP_004934466.1 heat shock protein beta-8 [Gallus gallus]` to `>Gallus_gallus`
-Rename all sequences in the same way.
 
-Create alignment using `mafft` program.
 ```
+Create alignment using `mafft` program.
+
+```bash
 mafft HSP8.fasta > HSP8_aln.fasta
 ```
 
