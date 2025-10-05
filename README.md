@@ -4,7 +4,7 @@
 
 - [Week 1 - Dotplots and pairwise alignments](./docs/Practicals.md#week-1---dotplots-and-pairwise-alignments)
 
-- [Week 2 - Multiple sequence alignment](./docs/Practicals.md#week-2---multiple-sequence-alignment)
+- [Week 2 - Sequence alignment](./docs/Practicals.md#week-2)
 
 ## Course Materials
 

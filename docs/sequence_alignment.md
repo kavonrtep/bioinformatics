@@ -547,7 +547,7 @@ Use the NCBI BLAST's "Align two or more sequences" (https://blast.ncbi.nlm.nih.g
 - Run search with p53 and p63 as queries against Conserved Domain Database https://www.ncbi.nlm.nih.gov/Structure/cdd/wrpsb.cgi. Was you conclusion about position of shared domains correct?
 
 P53 and P63 sequence in fasta format:
-```txt
+```text
 >sp|P04637|P53_HUMAN Cellular tumor antigen p53 OS=Homo sapiens OX=9606 GN=TP53 PE=1 SV=4
 MEEPQSDPSVEPPLSQETFSDLWKLLPENNVLSPLPSQAMDDLMLSPDDIEQWFTEDPGP
 DEAPRMPEAAPPVAPAPAAPTPAAPAPAPSWPLSSSVPSQKTYQGSYGFRLGFLHSGTAK
@@ -583,7 +583,7 @@ program `mafft`.  use default setting. Before running
 `mafft` check help documentation using `mafft --help`
 
 ```bash
-mkdir ~/data/cdk
+mkdir -p ~/data/cdk
 cd ~/data/cdk
 cp ~/Desktop/Bioinformatics/data/alignment_sequences/CDK/cdk.fasta .
 # inspect sequence using less command
