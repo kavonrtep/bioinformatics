@@ -973,10 +973,8 @@ Some of the key functions of bacterial globins include:
    UniProt or NCBI Protein.
 2. Use a sequence similarity search tool  BLASTP, to identify bacterial homologs
    of human neuroglobin.
-   - First use simple BLASTP (default settings)
-   - For second search change default settings to *DELTA-BLAST* algorithm.
-3. Compare results from two searches. Chose the strategy you consider better and
-   retrieve FASTA sequence for the 10 best bacterial hits based on E-value,
+   - limit search to 50 sequences and e-value threshold to 1e-5
+3. Retrieve FASTA sequence for the 10 best bacterial hits based on E-value,
    sequence identity, and query coverage.
 4. Import FASTA with bacterial globins to Jalview program. 
 5. Collect the amino acid sequences of human and mouse globin homologs
@@ -996,6 +994,16 @@ Some of the key functions of bacterial globins include:
 https://www.rcsb.org/3d-sequence/1OJ6?assemblyId=1
 
 In 3d viewer, highlight *metal coordination hem* for both structures, in bacterial globin highlight binding site PPI (Q)
+
+<details>
+<summary>💡 Hint</summary>
+
+The proximal His(F8) is conserved to ligate the heme iron.
+The distal position is what varies—bacteria often use Gln (plus Tyr/Trp neighbors) to re-shape the H-bonding landscape,
+slow O₂ off-rates, limit autoxidation, and favor NO-dioxygenase/sensing functions instead of the vertebrate-style His
+gate used for reversible gas transport
+
+</details>
 
 ### Exercise 3.8 - Alignment-Based Primer Design
 
