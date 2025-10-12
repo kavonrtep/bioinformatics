@@ -42,22 +42,21 @@ git pull
 ## Pairwise sequence alignment
 - [Global alignment demo](https://kavonrtep.github.io/games/needleman-wunsch.html)
 - [Local alignment demo](https://kavonrtep.github.io/games/smith-waterman.html)
-- Global vs. local alignment
-  - [Exercise 2.2](./sequence_alignment.md/#exercise-22---pairwise-alignment-using-ncbi-blast)
 
 
 ## Multiple sequence alignment
 - [Exercise 3.1 - Cyclin-dependent kinase](./sequence_alignment.md/#exercise-31---multiple-sequence-alignment---cyclin-dependent-kinase)
-- [Exercise 3.2 - Multiple alignment from HSPB8 proteins](./sequence_alignment.md/#exercise-32---multiple-alignment-from-hspb8-proteins)
 - [Exercise 3.3 - Alignment of protein isoforms, alignment editing](./sequence_alignment.md/#exercise-33---alignment-of-protein-isoforms-alignment-editing)
 
 
 # Week 3
 
-## Recap - dotplot, local and global alignment
+## Dotplot, local and global alignment
+  - [Exercise 2.2](./sequence_alignment.md/#exercise-22---pairwise-alignment-using-ncbi-blast)
   - [Excercise A2](./extra_tasks.md#exercise-a2)
 
 ## Multiple sequence alignment - cont.
+- [Exercise 3.2 - Multiple alignment from HSPB8 proteins](./sequence_alignment.md/#exercise-32---multiple-alignment-from-hspb8-proteins)
 - [Exercise 3.6 - Identification of catalytic triad residues in serine proteases](./sequence_alignment.md/#exercise-36---identification-of-catalytic-triad-residues-in-serine-proteases)
 - [Exercise 3.5 - MSA of globins proteins](./sequence_alignment.md/#exercise-35---msa-of-globins-proteins)
 - [Exercise 3.7 - Identification of Bacterial Homologs of Human Neuroglobin and Analysis of Heme-Binding Pocket Conservation](./sequence_alignment.md/#exercise-37---identification-of-bacterial-homologs-of-human-neuroglobin-and-analysis-of-heme-binding-pocket-conservation)
