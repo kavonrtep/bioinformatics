@@ -540,6 +540,7 @@ GIIGA
 
 <details>
 <summary>💡 Hint</summary>
+
 - This size difference reflects a fundamental evolutionary relationship: mammalian hexokinases, including human HK1, evolved through **gene duplication** and **fusion** of an ancestral 50 kDa hexokinase gene similar to modern yeast hexokinase. The mammalian enzyme essentially represents a "doubled" version of the yeast enzyme, with both halves sharing extensive sequence homology to yeast hexokinase.
 - Human HK1: Only the C-terminal domain retains catalytic activity, while the N-terminal domain has lost its catalytic function despite maintaining the structural framework. The N-terminal domain contains a critical amino acid substitution - lysine to glutamate in the ATP-binding site
 - Allosteric Regulation Mechanisms, The regulatory mechanisms differ significantly between the two enzymes:
