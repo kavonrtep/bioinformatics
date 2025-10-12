@@ -7,7 +7,7 @@ Goal: Practice reading self‑dotplots to detect tandem, direct, inverted, and p
 Use text editor (gedit) to create a FASTA files with following sequences
 
 <details>
-<summary>Sequences</summary>
+<summary>Sequence (click to expand)</summary>
 
 ```fasta
 >selfA
@@ -96,7 +96,7 @@ COL7A1 protein provides stability to skin and mucous membranes. The deletion in 
 identify deletion in COL7A protein in the variant sequence below.
 
 <details>
-<summary>COL7A1 sequences</summary>
+<summary>COL7A1 sequences (click to expand)</summary>
 
 ```fasta
 >sp|Q02388|CO7A1_HUMAN Collagen alpha-1(VII) chain OS=Homo sapiens OX=9606 GN=COL7A1 PE=1 SV=2
