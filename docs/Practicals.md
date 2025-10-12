@@ -58,9 +58,9 @@ git pull
 ## Multiple sequence alignment - cont.
 - [Exercise 3.2 - Multiple alignment from HSPB8 proteins](./sequence_alignment.md/#exercise-32---multiple-alignment-from-hspb8-proteins)
 - [Exercise 3.6 - Identification of catalytic triad residues in serine proteases](./sequence_alignment.md/#exercise-36---identification-of-catalytic-triad-residues-in-serine-proteases)
+- [Exercise 3.8 - Alignment-Based Primer Design](./sequence_alignment.md/#exercise-38---alignment-based-primer-design)
 - [Exercise 3.5 - MSA of globins proteins](./sequence_alignment.md/#exercise-35---msa-of-globins-proteins)
 - [Exercise 3.7 - Identification of Bacterial Homologs of Human Neuroglobin and Analysis of Heme-Binding Pocket Conservation](./sequence_alignment.md/#exercise-37---identification-of-bacterial-homologs-of-human-neuroglobin-and-analysis-of-heme-binding-pocket-conservation)
-- [Exercise 3.8 - Alignment-Based Primer Design](./sequence_alignment.md/#exercise-38---alignment-based-primer-design)
 
 
 # Week 4

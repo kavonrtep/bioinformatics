@@ -667,10 +667,10 @@ mafft HSP8.fasta > HSP8_aln.fasta
 Open resulting alignment in `Jalview` program.
 - Inspect alignment, Try different coloring schemes. (see https://www.jalview.org/help/html/colourSchemes/index.html)
 - What part of proteins is conserved? Use `Colour -> By Conservation`  to change coloring threshold.
-- compare conserved part with domains annotation
-  - go to https://www.ncbi.nlm.nih.gov/protein/NP_055180.1
-  - select `analyze this sequence/identify conserved domains`
-  - will you be able to identify conserved domain if you use only mouse, cow, pig and human sequences?
+- Compare conserved part with domains annotation
+  - Go to https://www.ncbi.nlm.nih.gov/protein/NP_055180.1
+  - Select `analyze this sequence/identify conserved domains`
+  - Will you be able to identify conserved domain if you use only mouse, cow, pig and human sequences?
   - In Jalview. select subset of sequences(mammals) and create alignment again from 'Web Service -> Alignment -> mafft with defaults'. Is conserved domain still visible in the new alignment?
 
 ### Exercise 3.3 - Alignment of protein isoforms, alignment editing
@@ -918,6 +918,10 @@ trypsin, chymotrypsin, and elastase.
 
 P07477; P17538; P08246; P07146; Q9CR35;Q3UP87;Q05319; P42280;Q91701;Q25503
 
+Sequences can be obtained either 
+  - from UniProt database (https://www.uniprot.org/) using above accessions with 'list' option
+  - or directly from Jalview program using 'Fetch sequences' command from File menu
+
 Identify the conserved catalytic triad residues in the aligned sequences. The
 conserved catalytic triad residues in serine proteases are typically histidine (H),
 aspartate (D) , and serine (S). These residues form a charge relay system that enables
@@ -1002,7 +1006,7 @@ Cuscuta([[https://en.wikipedia.org/wiki/Cuscuta]]), commonly known as dodder, is
  The ITS1 and ITS2 regions are highly variable, which makes them useful for distinguishing between closely related species, whereas the 18S, 5.8S, and 28S regions are more conserved, providing stable targets for primer design.
 ![rDNA](./rDNA.png)
 
-The set of rDNA sequences from Cuscuta species can be found in file ../data/alignment_sequences/5.8S_Cuscuta.fasta. Your task is to identify conserved regions and design primers accordingly. The exercise will guide you through the following steps:
+The set of rDNA sequences from Cuscuta species can be found in file `../data/alignment_sequences/5.8S_Cuscuta.fasta`. Your task is to identify conserved regions and design primers accordingly. The exercise will guide you through the following steps:
 
 #### Sequence Alignment with Jalview
 
@@ -1027,7 +1031,7 @@ Select a suitable product size range, aiming for as large a product as possible,
 Do the suggested primers correspond to the conserved regions observed in the alignment from step 1?
 
 #### Deliverable
-Once your primers are designed, they could potentially serve to confirm species identity in further experiments. Submit your designed primers along with a short explanation of why you chose these particular regions and how they might help differentiate between Cuscuta species.
+Once your primers are designed, they could potentially serve to confirm species identity in further experiments. 
 
 #### Tools Needed
 
