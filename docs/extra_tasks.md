@@ -4,7 +4,10 @@ Self‑comparison of sequences with mixed repeats
 Goal: Practice reading self‑dotplots to detect tandem, direct, inverted, and palindromic repeats.
 
 
-Use text editor to create a FASTA files with following sequences
+Use text editor (gedit) to create a FASTA files with following sequences
+
+<details>
+<summary>Sequences</summary>
 
 ```fasta
 >selfA
@@ -64,6 +67,9 @@ gaatatttggaagcgcatcaccatctctggatcgtcataagtcattacgtcaagggttca
 gaaggcgcatatagaattatgaagcggtaagttagcgggaagtgtgctacggcggaac
 
 ```
+
+</details>
+
 Save each sequence in separate file named `selfA.fasta`, `selfB.fasta`, and `selfC.fasta`.
 
 In terminal in the same directory where you saved the FASTA files run following commands to generate dotplots:
