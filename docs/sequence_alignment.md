@@ -998,7 +998,7 @@ In 3d viewer, highlight *metal coordination hem* for both structures, in bacteri
 <details>
 <summary>💡 Hint</summary>
 
-The proximal His(F8) is conserved to ligate the heme iron.
+The proximal His is conserved to ligate the heme iron.
 The distal position is what varies—bacteria often use Gln (plus Tyr/Trp neighbors) to re-shape the H-bonding landscape,
 slow O₂ off-rates, limit autoxidation, and favor NO-dioxygenase/sensing functions instead of the vertebrate-style His
 gate used for reversible gas transport
