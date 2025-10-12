@@ -89,6 +89,9 @@ Answer these questions:
 COL7A1 protein provides stability to skin and mucous membranes. The deletion in this protein is associated with the skin disorder dystrophic epidermolysis bullosa (DEB). Use dotter and BLAST to
 identify deletion in COL7A protein in the variant sequence below.
 
+<details>
+<summary>COL7A1 sequences</summary>
+
 ```fasta
 >sp|Q02388|CO7A1_HUMAN Collagen alpha-1(VII) chain OS=Homo sapiens OX=9606 GN=COL7A1 PE=1 SV=2
 MTLRLLVAALCAGILAEAPRVRAQHRERVTCTRLYAADIVFLLDGSSSIGRSNFREVRSFLEGLVLPFSGAASAQGVRFATVQYSDDPRTEFGLDALGSG
@@ -155,7 +158,9 @@ CHPFVYGGCGGNANRFGTREACERRCPPRVVQSQGTGTAQD
 
 ```
 
+</details>
 
+Use progrem gedit to create two files named `COL7A1.fasta` and `COL7A1_variant.fasta` and copy the respective sequences above into these files.
 Use dotter and also NCBI BLAST (https://blast.ncbi.nlm.nih.gov/Blast.cgi, use Protein BLAST, align two or more sequences) to identify the deletion in the variant sequence.
 
 - What does dotplot tell us about the protein sequence
