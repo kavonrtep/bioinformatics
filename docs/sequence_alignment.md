@@ -538,6 +538,16 @@ YNKYPGFKEAAAKGLRDIYGWTGDASKDPITIVPAEDGSGAGAAVIAALSEKRIAEGKSL
 GIIGA
 ```
 
+<details>
+<summary>💡 Hint</summary>
+- This size difference reflects a fundamental evolutionary relationship: mammalian hexokinases, including human HK1, evolved through **gene duplication** and **fusion** of an ancestral 50 kDa hexokinase gene similar to modern yeast hexokinase. The mammalian enzyme essentially represents a "doubled" version of the yeast enzyme, with both halves sharing extensive sequence homology to yeast hexokinase.
+- Human HK1: Only the C-terminal domain retains catalytic activity, while the N-terminal domain has lost its catalytic function despite maintaining the structural framework. The N-terminal domain contains a critical amino acid substitution - lysine to glutamate in the ATP-binding site
+- Allosteric Regulation Mechanisms, The regulatory mechanisms differ significantly between the two enzymes:
+  - Human HK1 exhibits dual inhibition mechanisms by glucose-6-phosphate (G6P):
+  - Active site inhibition: G6P competes directly with ATP at the C-terminal catalytic domain
+  - Allosteric inhibition: G6P binds to the regulatory N-terminal domain, causing conformational changes that indirectly displace ATP from the active site
+</details>
+
 ### Exercise 2.3 - Comparing P53 and P63 Protein Sequences
 Use NCBI BLAST to compare the protein sequences of human P53 and P63. These proteins share the DNA-binding domain and oligomerization domains but have distinct transactivation domains, reflecting their different roles in cellular processes.
 
