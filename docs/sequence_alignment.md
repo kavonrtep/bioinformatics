@@ -654,7 +654,7 @@ Make copy of fasta file and then rename fasta headers:
 ```bash
 cd 
 mkdir -p data/hspb8
-cd data/hsbb8
+cd data/hspb.8
 cp ~/Desktop/Bioinformatics/data/alignment_sequences/HSP8.fasta .
 
 ```
