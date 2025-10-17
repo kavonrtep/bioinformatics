@@ -1,7 +1,7 @@
 # BLAST
 
-## Exercise 1.1- BLASTN - NCBI web interface
-Make nucleotide blast  search against following sequence:
+## Exercise 1.1 - BLASTN - NCBI web interface
+Make a nucleotide BLAST search against the following sequence:
 ```
 >gi|202471|gb|M57671.1|OCOINS Octodon degus insulin mRNA, complete cds
 GCATTCTGAGGCATTCTCTAACAGGTTCTCGACCCTCCGCCATGGCCCCGTGGATGCATCTCCTCACCGT
@@ -13,8 +13,8 @@ AACTACTGCAATGTCCCTTAGACACCTGCCTTGGGCCTGGCCTGCTGCTCTGCCCTGGCAACCAATAAAC
 CCCTTGAATGAG
 ```
 
-### search I
-setting of the search:
+### Search I
+Settings of the search:
 - In the section "Program Selection" select the option "Somewhat similar
   sequences (blastn)"
 - Choose "Nucleotide collection (nr/nt)" as the search database. NR is the "Non
@@ -25,10 +25,10 @@ setting of the search:
 After the search has completed, make yourself familiar with the BLAST output page. After a header with some information about the search, there are four main parts:
 
 #### Graphic Summary
-each hit is represented by a line showing which part of the query sequence the alignment covers. The lines are coloured according to alignment score.
+Each hit is represented by a line showing which part of the query sequence the alignment covers. The lines are colored according to alignment score.
 
 #### Descriptions
-a table with a one-line description of each hit with some alignment statistics, The columns in the Descriptions table are:
+A table with a one-line description of each hit with some alignment statistics. The columns in the Descriptions table are:
 - Description — the description line from the database
 - Max score — the alignment score of the best match (local alignment) between the query and the database hit
 - Total score — the sum of alignment scores for all matches (alignments) between the query and the database hit (if there is only one match per hit, these two scores are identical)
@@ -38,14 +38,14 @@ a table with a one-line description of each hit with some alignment statistics, 
 - Accession — the accession number of the database hit.
 
 #### Alignments
-the actual alignments between the query and the database hits.
+The actual alignments between the query and the database hits.
 
 #### Taxonomy
-Taxonomic summary of all positive hits
+Taxonomic summary of all positive hits.
 
-First, take a look at the best hit. Since our search sequence (the query) was taken from GenBank which is part of NR, we should find an identical sequence in the search. Make sure this is the case!
+First, take a look at the best hits. Since our search sequence (the query) was taken from GenBank which is part of NR, we should find an identical sequence in the search. Make sure this is the case!
 Find the best hit from human (Homo sapiens) that is not a synthetic construct
-and answer following questions:
+and answer the following questions:
 - what is the identifier (Accession)?
 - what is the alignment score ("max score")?
 - what is the percent identity and query coverage?
@@ -53,19 +53,19 @@ and answer following questions:
 - are there any gaps in the alignment?
 
 ### Search II
-Make a new BLASTN search with the same query sequence, this time with select database
- to Human genomic + transcript (Human G+T). For the best hits answer following:
+Make a new BLASTN search with the same query sequence, this time selecting the database
+Human genomic + transcript (Human G+T). For the best hits, answer the following:
 - what is the identifier (Accession)?
 - what is the alignment score ("max score")?
 - what is the percent identity and query coverage?
 - what is the E-value?
 - are there any gaps in the alignment?
 
-Compare hit of this search with hit from previous search.  You may have noticed
+Compare the hit of this search with the hit from the previous search. You may have noticed
 that the E-value changed, while the alignment score did not. Why?
 
-**Hint**:  Expand the "Search summary" section near the top by clicking it. Compare
-E values and  the sizes (in basepairs) of the databases we used for the two BLAST searches
+**Hint**: Expand the "Search summary" section near the top by clicking it. Compare
+E-values and the sizes (in basepairs) of the databases we used for the two BLAST searches.
 
 ## Exercise 1.2 - BLASTP - NCBI web interface
 The following is the product of a gene in C. elegans that seems to be important in development.
@@ -81,29 +81,29 @@ AHADGNISITSNCKIFVRSGYLDYTHGSEYSSKAHRFTPNESSFTVFDIRWAYMQMLRRSRSSNEAVRAQ
 AAAVAGYAPMSVMPAIMPDSGVDRMRRDFCTIAISFVKAWGDVYQRKTIKETPCWIEVTLHRPLQILDQL
 LKNSSQFGS
 ```
-Use the protein-protein blast page to perform search against the non redundant
-protein database (nr) to identify protein and find its homologs.
+Use the protein-protein BLAST page to perform a search against the non-redundant
+protein database (nr) to identify the protein and find its homologs.
 
-blast link : https://blast.ncbi.nlm.nih.gov/Blast.cgi
+BLAST link: https://blast.ncbi.nlm.nih.gov/Blast.cgi
 
-- Based on the identical hit to C. elegans what is the identity of this protein?
+- Based on the identical hit to C. elegans, what is the identity of this protein?
 - Aside from the C. elegans proteins, what is the most significant hit? What is
   its identity and E-value?
-- switch for "graphic summary" - for blastp there is additional information
+- Switch to "graphic summary" - for BLASTP there is additional information
   about identified conserved domains.
-- Explore link to other databases 
-- Check also taxonomy report. How many hits was found total. How many hits was
-  found in "chordata" taxonomy group.
-- Use edit and resubmit  to modify blast search.  In new search, use DELTA-BLAST
+- Explore links to other databases.
+- Check the taxonomy report as well. How many hits were found in total? How many hits were
+  found in the "Chordata" taxonomy group?
+- Use "Edit and Resubmit" to modify the BLAST search. In the new search, use the DELTA-BLAST
   algorithm.
 
-## Exercies 1.3 - BLASTX - NCBI web interface
-The part of genomic sequence of Twort bacteriophage is bellow. Use BLAST to
-search protein database  (Non-redundant protein sequences  - nr) to find
-homologous protein from other bacteriophages and viruses.
-- For search try to use Blosum62 and Blosum45 scoring matrix. What is the
-  difference between searches with different matrices
-- What proteins (Accessions) has alignment with E value < 1e-10
+## Exercise 1.3 - BLASTX - NCBI web interface
+The partial genomic sequence of Twort bacteriophage is below. Use BLAST to
+search the protein database (Non-redundant protein sequences - nr) to find
+homologous proteins from other bacteriophages and viruses.
+- For the search, try to use BLOSUM62 and BLOSUM45 scoring matrices. What is the
+  difference between searches with different matrices?
+- What proteins (Accessions) have alignments with E-value < 1e-10?
 
 ```
 >Staphylococcus phage Twort, partial sequence
@@ -131,8 +131,8 @@ GAAATTAAATTAATAAAA
 
 
 ## Exercise 1.4 - Identification of coding sequence using BLASTX vs BLASTN
-characterization of unknown DNA PCR amplified fragment from unknown
-non-cultivatable microorganism
+Characterization of an unknown DNA PCR-amplified fragment from an unknown
+non-cultivatable microorganism:
 ```
 >clone12
 AACGGGCACGGGACGCATGTAGCTGGAACAGTGGCAGCCGTAAATAATAATGGTATCGGA
@@ -149,41 +149,43 @@ GGCGCCGCC
 ```
 
 
-- use `blastn` and `blastx` to characterize clone12. What tool is relevant to use?
-- check DNA sequence using ORFfinder https://www.ncbi.nlm.nih.gov/orffinder
-- use `blastp` against longest ORF, run blastb directly from orffinder, compare results with blastx search.
-- What kind of enzyme is coded by `clone12`?
-- does the clone12 represent complete CDS of putative protein?
+- Use `blastn` and `blastx` to characterize clone12. What tool is more relevant to use?
+- Check the DNA sequence using ORFfinder: https://www.ncbi.nlm.nih.gov/orffinder
+- Use `blastp` against the longest ORF. Run BLAST directly from ORFfinder and compare results with the blastx search.
+- What kind of enzyme is encoded by `clone12`?
+- Does clone12 represent the complete CDS of the putative protein?
 
 <details>
 <summary>Details</summary>
-in blastx AA alignment is truncated probably because of low complexity
-filtering, turn of filtering and run in again.
-when searching against from orf finder - it is selecting uniprot database!!!
-Use *job name* for all searches and show history of searches
+In BLASTX, the amino acid alignment is truncated probably because of low-complexity
+filtering. Turn off filtering and run it again.
+When searching from ORF finder, it is selecting the UniProt database by default.
+Use a *job name* for all searches and show the history of searches.
 </details>
 
-- compare best hit from blastx directly using tblastx against DNA sequence of
-  clone12
-  - click on accession - this will take you to protein entry.
-  - on protein entry page, click on left panel on *run BLAST*
-  - select * tblastn* - query is a protein accession (this represent query)
-  - select `Align two or more sequences`
-  - second sequence is clone12 nucleotide sequence
-  - run blast and explore results
-  - inspect also dotplot page
+- Compare the best hit from BLASTX directly using TBLASTN against the DNA sequence of
+  clone12:
+  - Click on the accession - this will take you to the protein entry.
+  - On the protein entry page, click on the left panel on *Run BLAST*.
+  - Select *TBLASTN* - the query is a protein accession (this represents the query).
+  - Select `Align two or more sequences`.
+  - The second sequence is the clone12 nucleotide sequence.
+  - Run BLAST and explore the results.
+  - Inspect the dotplot page as well.
 
-## Exercise 1.5 - Using BLAST (blast2seq) to create local aligment for two sequences:
-Two sequences can be also compared using BLAST web interface. For comparison use:
-(two align two sequences to each other - click on checkbox *Align two or more sequences*  in NCBI BLAST form)
-- `ERB2_HUMAN` : http://www.uniprot.org/uniprot/P04626.fasta
-- `EGFR_DROME` : http://www.uniprot.org/uniprot/P04412.fasta
-paste these sequences to BLAST form. Use blastp.
+## Exercise 1.5 - Using BLAST (blast2seq) to create local alignment for two sequences
+Two sequences can also be compared using the BLAST web interface. For comparison, use:
+(To align two sequences to each other, click the checkbox *Align two or more sequences* in the NCBI BLAST form)
+- `ERB2_HUMAN`: http://www.uniprot.org/uniprot/P04626.fasta
+- `EGFR_DROME`: http://www.uniprot.org/uniprot/P04412.fasta
+
+Paste these sequences into the BLAST form. Use BLASTP.
 
 https://blast.ncbi.nlm.nih.gov/Blast.cgi?BLAST_SPEC=blast2seq&LINK_LOC=align2seq&PAGE_TYPE=BlastSearch
-blast2seq can be used instead of `needle`. It also provide graphical view of alignment and non-interactive dotplot. Use blast2 seq on  `P04626.fasta` and  `P04412.fasta` sequences and explore results. Compare alignments and dotplot.
 
-Alternativelly, it is possible to enter can use just accession ID to search window (P04626, P04412).
+blast2seq can be used instead of `needle`. It also provides a graphical view of the alignment and a non-interactive dotplot. Use blast2seq on `P04626.fasta` and `P04412.fasta` sequences and explore the results. Compare the alignments and dotplot.
+
+Alternatively, it is possible to use just the accession IDs in the search window (P04626, P04412).
 
 ## Exercise 1.6 - Identification of species using NCBI BLAST
 In your experiment, you are working with plant species Cuscuta campestris,
@@ -338,9 +340,9 @@ Did any of the strains contain an insertion or deletion?
 
 # Use of BLAST from command line
 
-When to use blast from CLI:
-- If you have large number of queries (it is possible do download whore `nr` database and run blast localy)
-- When your sequence database is not part of public databases (NCBI, EBI,...)
+When to use BLAST from CLI:
+- If you have a large number of queries (it is possible to download the whole `nr` database and run BLAST locally)
+- When your sequence database is not part of public databases (NCBI, EBI, etc.)
 - If you need to automate your similarity search
 - More detailed manual can be found at https://www.ncbi.nlm.nih.gov/books/NBK279684/
 
@@ -351,10 +353,10 @@ When to use blast from CLI:
 
 <details>
 <summary>Details</summary>
-explan differences in commands
+Explain differences in commands
 </details>
 
-Basic use of blast commands
+Basic use of BLAST commands:
 ```bash
   makeblastdb -help
   blastn -help
@@ -398,13 +400,13 @@ files in exercise:
 
 <details>
 <summary>Details</summary>
-input sequenc contain two proteins - sequence1 and sequence2
-sequence1: is cytochome c oxidase subunit )
-sequence2: - HIV1 envelope protein
-db is fraction of PDB protein database
+Input sequences contain two proteins - sequence1 and sequence2.
+sequence1: cytochrome c oxidase subunit
+sequence2: HIV1 envelope protein
+Database is a fraction of the PDB protein database.
 </details>
 
-run protein blast with default parameters in terminal
+Run protein BLAST with default parameters in the terminal:
 ```bash
 cd
 mkdir blast_search
@@ -419,10 +421,10 @@ seqkit stats proteins.fasta
 # inspect fasta file we will use as database
 seqkit stats pdbaa
 
-# fasta file db/pdbaa will be used as database, it must be formated using
-# makeblastdb command to make data blast compatible
+# fasta file db/pdbaa will be used as database, it must be formatted using
+# makeblastdb command to make data BLAST compatible
 makeblastdb -in pdbaa -dbtype prot
-# after succesfull creation of database, information about size of database is printet to stdout
+# after successful creation of database, information about size of database is printed to stdout
 # Additional files in db directory were created, what are these files?
 ls -l
 # run blastp with default settings:
@@ -432,14 +434,14 @@ less proteins_blastp_default.txt
 ```
 
 
-try command line blast with different parameters:
+Try command-line BLAST with different parameters:
 ```bash
-# see all passoble blast options:
+# see all possible BLAST options:
 blastp -h
 # or
-blast -help
-# blast documentation is long, it can be more convenient pipe it to less
-blast -help | less
+blastp -help
+# BLAST documentation is long, it can be more convenient to pipe it to less
+blastp -help | less
 ```
 
 The most important blastp/blastn options:
@@ -455,9 +457,9 @@ The most important blastp/blastn options:
   blastp -query proteins.fasta -db pdbaa -out proteins_blastp_align_all.txt
 # limit output to 10 alignments
   blastp -query proteins.fasta -db pdbaa -out proteins_blastp_align_top10.txt -num_alignments 10
-# return max 10 alingments, hits must be e-value 1e-30 or less
+# return max 10 alignments, hits must be e-value 1e-30 or less
   blastp -query proteins.fasta -db pdbaa -out proteins_blastp_align_1e-30.txt -num_alignments 10 -evalue 1e-30
-# tabular ouput with descriptions
+# tabular output with descriptions
   blastp -query proteins.fasta -db pdbaa -out proteins_blastp_1e-30_table.csv -evalue 1e-30 -outfmt 7
 # plain tabular output
   blastp -query proteins.fasta -db pdbaa -out proteins_blastp_1e-30_table2.csv -evalue 1e-30 -outfmt 6
@@ -473,11 +475,11 @@ show tabular output in libreoffice
 </details>
 
 
-## Exercise 2.2 - extract hits from database and create alignment with query:
+## Exercise 2.2 - Extract hits from database and create alignment with query
 The aim of this exercise is to perform a BLASTP search against a protein
 database using a single query sequence and subsequently analyze the
 results, extracting hit information, retrieving and ordering the hit sequences,
-and finally, creating a multiple sequence alignment.
+and finally creating a multiple sequence alignment.
 
 ```bash
 # Run BLASTP search
@@ -617,7 +619,7 @@ database, running a BLASTP search, extracting and retrieving significant hits,
 and aligning the sequences using MAFFT. The results are then stored in the
 specified output directory.
 
-To run script:
+To run the script:
 ```bash
 cp ~/Desktop/Bioinformatics/data/blast_data/query3.fasta .
 ./blast2alignment.sh query3.fasta pdbaa output3
@@ -625,11 +627,11 @@ cp ~/Desktop/Bioinformatics/data/blast_data/query3.fasta .
 ```
 
 ## Exercise 2.3 - BLAST against remote database
-Instead of having to download the entirety of NR or other NCBI databases, we can BLAST against the version held on the website. This ensures we have the most up to date version but is also significantly slower. We use the -remote command to do this. Lets BLAST out sequences against NR held on the NCBI website by typing:
+Instead of having to download the entirety of NR or other NCBI databases, we can BLAST against the version held on the website. This ensures we have the most up-to-date version but is also significantly slower. We use the -remote command to do this. Let's BLAST our sequences against NR held on the NCBI website by typing:
 
 <details>
 <summary>Details</summary>
-take  too long or does not work at all
+Takes too long or does not work at all
 </details>
 
 ```bash
@@ -637,32 +639,32 @@ blastp -query proteins.fasta -remote -db nr -out proteins_nr.txt -outfmt 6 -eval
 ```
 
 ```bash
-# install  NCBI Entrez utilities on the command line
+# install NCBI Entrez utilities on the command line
 sudo apt install ncbi-entrez-direct
 
 ```
 
-## Exercies 2.4
-- visit ftp://ftp.ncbi.nih.gov/refseq/M_musculus/mRNA_Prot
-- there are several file with protein sequences named `*protein.faa.gz`
-- download these sequences, you can use web browser of you can try to use `wget` command.
-  Note that  `wget` command can accept wildcards like {1..3}
-- unzip downloaded fasta  ( use `gunzip` command)
-- concatenate all fasta files into one (use `cat` commad)
-- create blast database (`makeblastdb`)
-- inspect restuls
-- query sequence is protein from Danio rerio, you fill find it in `~/Desktop/bioinformatics/data/blast_data/danio_rerio_proteins.fasta`
-- use `blastp` and find best hit to Danio rerio protein in Mus musculus refseq sequences
-- what are these sequences, what is identity and e-value of the best hits
-- which protein has more hits by blast
+## Exercise 2.4
+- Visit ftp://ftp.ncbi.nih.gov/refseq/M_musculus/mRNA_Prot
+- There are several files with protein sequences named `*protein.faa.gz`
+- Download these sequences. You can use a web browser or you can try to use the `wget` command.
+  Note that the `wget` command can accept wildcards like {1..3}
+- Unzip the downloaded FASTA files (use the `gunzip` command)
+- Concatenate all FASTA files into one (use the `cat` command)
+- Create a BLAST database (`makeblastdb`)
+- Inspect the results
+- The query sequence is a protein from Danio rerio. You will find it in `~/Desktop/bioinformatics/data/blast_data/danio_rerio_proteins.fasta`
+- Use `blastp` and find the best hit to the Danio rerio protein in Mus musculus RefSeq sequences
+- What are these sequences? What is the identity and E-value of the best hits?
+- Which protein has more hits in BLAST?
 
-# Localization of sequences in genome using BLAT in Ensemble genome
+# Localization of sequences in genome using BLAT in Ensembl genome
 
-Use BLAT to find location of the sequence in Caenorabditis elegans genome. For
-search, use Ensemble database: https://www.ensembl.org/index.html
+Use BLAT to find the location of the sequence in the Caenorhabditis elegans genome. For
+the search, use the Ensembl database: https://www.ensembl.org/index.html
 
 ```
->C.elegans unkown sequence
+>C.elegans unknown sequence
 GAATATTTAGGAGATGCAGGAGTTATTGATAGCTGCAGTGATTGGCCGAACACACCTCCT
 GATAACAATTTTAATGGTAAGAGTTGAACTCCAAAACTGTAAGTAGAGGTGGCTGCTCTC
 TCTCTCTGACTTTTATGCCTGCCTACGTACCTTCTAATACTTATTTGTTTGATATGGATG
@@ -674,4 +676,4 @@ TCAATCATTTATTATGAACTGGATACACCCATTGGTGAAACCTTTAAGGTATGTTTTTCT
 ATGAAATCTGATGACTATTCATTCATGGTGCAAATCGCCTAGAAATTTTTGTGAAAGAGC
 ```
 
-- What is the genomic location of sequences. Is the sequence part of any gene?
+- What is the genomic location of the sequence? Is the sequence part of any gene?
