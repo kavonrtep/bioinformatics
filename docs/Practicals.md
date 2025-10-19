@@ -60,22 +60,26 @@ git pull
 - [Exercise 3.6 - Identification of catalytic triad residues in serine proteases](./sequence_alignment.md/#exercise-36---identification-of-catalytic-triad-residues-in-serine-proteases)
 - [Exercise 3.8 - Alignment-Based Primer Design](./sequence_alignment.md/#exercise-38---alignment-based-primer-design)
 - [Exercise 3.5 - MSA of globins proteins](./sequence_alignment.md/#exercise-35---msa-of-globins-proteins)
-- [Exercise 3.7 - Identification of Bacterial Homologs of Human Neuroglobin and Analysis of Heme-Binding Pocket Conservation](./sequence_alignment.md/#exercise-37---identification-of-bacterial-homologs-of-human-neuroglobin-and-analysis-of-heme-binding-pocket-conservation)
 
 
 # Week 4
 
+## Multiple sequence alignment - cont.
+
+- [Exercise 3.7 - Identification of Bacterial Homologs of Human Neuroglobin and Analysis of Heme-Binding Pocket Conservation](./sequence_alignment.md/#exercise-37---identification-of-bacterial-homologs-of-human-neuroglobin-and-analysis-of-heme-binding-pocket-conservation)
+
 ## NCBI BLAST
-- 
+
+### Using BLAST from NCBI web interface
 - [Exercise 1.1 - BLASTN - NCBI web interface](./blast_search.md/#exercise-11---blastn---ncbi-web-interface)
 - [Exercise 1.2 - BLASTP - NCBI web interface](./blast_search.md/#exercise-12---blastp---ncbi-web-interface)
 - [Exercise 1.6 - Identification of species using NCBI BLAST](./blast_search.md/#exercise-16---identification-of-species-using-ncbi-blast)
-- Exercise 1.7 - Identification of mutations in gyrA gene
-- Exercise 1.4 - Identification of coding sequence using BLASTX
-- Use of BLAST from command line
- - Exercise 2.1
- - Exercise 2.2
+- [Exercise 1.7 - Identification of mutations in gyrA gene](./blast_search.md/#exercise-17---identification-of-mutations-in-gyrA-gene)
+- [Exercise 1.4 - Identification of coding sequence using BLASTX](./blast_search.md/#exercise-14---identification-of-coding-sequence-using-blastx-vs-blastn)
 
+### Using BLAST from command line
+ - [Exercise 2.1](./blast_search.md/#exercise-21)
+ - [Exercise 2.2](./blast_search.md/#exercise-22---extract-hits-from-database-and-create-alignment-with-query)
 
 # Week 5
 - BLAST - cont.
@@ -84,7 +88,6 @@ git pull
 
 # Week 6 
 - Genome assembly - cont.
-
 
 # Week 7 
  - Genome Annotation
