@@ -73,9 +73,10 @@ git pull
 ### Using BLAST from NCBI web interface
 - [Exercise 1.1 - BLASTN - NCBI web interface](./blast_search.md/#exercise-11---blastn---ncbi-web-interface)
 - [Exercise 1.2 - BLASTP - NCBI web interface](./blast_search.md/#exercise-12---blastp---ncbi-web-interface)
+- [Exercise 1.3 - BLASTX - NCBI web interface](./blast_search.md/#exercise-13---blastx---ncbi-web-interface)
 - [Exercise 1.6 - Identification of species using NCBI BLAST](./blast_search.md/#exercise-16---identification-of-species-using-ncbi-blast)
-- [Exercise 1.7 - Identification of mutations in gyrA gene](./blast_search.md/#exercise-17---identification-of-mutations-in-gyrA-gene)
 - [Exercise 1.4 - Identification of coding sequence using BLASTX](./blast_search.md/#exercise-14---identification-of-coding-sequence-using-blastx-vs-blastn)
+- [Exercise 1.7 - Identification of mutations in gyrA gene](./blast_search.md/#exercise-17---identification-of-mutations-in-gyrA-gene)
 
 ### Using BLAST from command line
  - [Exercise 2.1](./blast_search.md/#exercise-21)

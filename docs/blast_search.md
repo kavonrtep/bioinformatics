@@ -93,7 +93,7 @@ blast link : https://blast.ncbi.nlm.nih.gov/Blast.cgi
   about identified conserved domains.
 - Explore link to other databases  - find coresponding entry in uniprot database.
 - Check also taxonomy report. How many hits was found total. How many hits was
-  found in "chordata" taxonomy group? If no hits found in chordata, try to modify search
+  found in "chordata" taxonomy group? If no hits are found in Chordata, try to modify search
   parameters to identify similar sequence in Chordata group.
 
 ## Exercies 1.3 - BLASTX - NCBI web interface
@@ -156,13 +156,12 @@ GGCGCCGCC
 
 <details>
 <summary>Details</summary>
-in blastx AA alignment is truncated probably because of low complexity
-filtering, turn of filtering and run in again.
-when searching against from orf finder - it is selecting uniprot database!!!
-Use *job name* for all searches and show history of searches
+In blastx AA alignment is truncated probably because of low complexity
+filtering, try to turn off filtering and run in again.
+When using BLASTP from orf finder - select non-redundant protein database (nr).
 </details>
 
-- compare best hit from blastx directly using tblastx against DNA sequence of
+- compare best hit from blastx directly using tblast against DNA sequence of
   clone12
   - click on accession - this will take you to protein entry.
   - on protein entry page, click on left panel on *run BLAST*
@@ -325,14 +324,16 @@ Use the TBLASTN tool on NCBI to compare each of the protein sequences with the
 reference genome NZ_CP021520.1. Set the mode to "Align two sequences" for a
 direct comparison of your sequence (query) with the reference sequence
 (subject). Enter the reference genome ID in the subject field and run the
-search.
+search for each strain's protein sequence.
+
+Inspect different alignments views (pairwise, query-anchored, ...).
 
 Questions:
 
-How many mutations did you find in each strain's protein compared to the
+- How many mutations did you find in each strain's protein compared to the
 reference genome?
-
-Did any of the strains contain an insertion or deletion?
+- Did any of the strains contain an insertion or deletion?
+- Can you use BLASTX instead of TBLASTN for this analysis? Why or why not?
 
 
 # Use of BLAST from command line
