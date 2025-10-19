@@ -91,11 +91,10 @@ blast link : https://blast.ncbi.nlm.nih.gov/Blast.cgi
   its identity and E-value?
 - switch for "graphic summary" - for blastp there is additional information
   about identified conserved domains.
-- Explore link to other databases 
+- Explore link to other databases  - find coresponding entry in uniprot database.
 - Check also taxonomy report. How many hits was found total. How many hits was
-  found in "chordata" taxonomy group.
-- Use edit and resubmit  to modify blast search.  In new search, use DELTA-BLAST
-  algorithm.
+  found in "chordata" taxonomy group? If no hits found in chordata, try to modify search
+  parameters to identify similar sequence in Chordata group.
 
 ## Exercies 1.3 - BLASTX - NCBI web interface
 The part of genomic sequence of Twort bacteriophage is bellow. Use BLAST to
