@@ -30,7 +30,10 @@ Data for assembly are located in `~/Desktop/bioinformatics/data/sanger`
 ### Installation of necessary programs
 
 ```bash
-mamba create -n assembly -c bioconda jellyfish fastx_toolkit quast bandage samtools fastqc multiqc bowtie2
+# you will have to run in on VM as administrator
+su root   # enter administrator password
+mamba create -n assembly -y -c bioconda jellyfish fastx_toolkit quast bandage samtools fastqc multiqc bowtie2 velvet hifiasm
+exit  # exit from root user
 conda activate assembly
 ```
 
@@ -159,7 +162,6 @@ Upload the file contigs.fa and run quality assessment.
 Command line Quast:
 
 ```bash
-conda activate quast # run only if quast program is not available
 quast run_25/contigs.fa --threads 7
 ```
 
@@ -170,8 +172,9 @@ The assembly graph can be inspected using the **Bandage** program.
     Results from the k-mer-based analysis suggest that the sequencing coverage is more than 10x and lower frequency k-mers are likely erroneous. Excluding such k-mers can improve the assembly. We will rerun velvetg with `-cov_cutoff 6` and `-exp_cov 14` command line options.
 
     ```bash
-    # Make a copy of the run
+    # Make a copy of previous assembly
     cp run_25/contigs.fa run_25/contigs.fa.0
+    # rerun velvetg with coverage cutoff
     velvetg run_25 -cov_cutoff 6 -exp_cov 14
     ```
 
