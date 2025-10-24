@@ -301,6 +301,25 @@ Inspect the output files. Which assembly is more complete according to BUSCO sta
 
 ## Part 3 - Assembly using long PacBio HIFI reads
 
+In the third part of the exercise we will perform genome assembly using long PacBio HiFi reads. The data is from *Staphylococcus aureus* USA300. The data can be downloaded from SRA run SRR11606884. PacBio HiFi reads are high-fidelity long reads with low error rates, making them suitable for complex genome assemblies.
+
+PacBio HiFi are located in `~/Desktop/Bioinformatics/data/genome_assembly/pacbio_hifi_reads25.fastq.gz`
+
+```bash
+# create new directory for pacbio assembly
+cd 
+mkdir pacbio_assembly
+cd pacbio_assembly
+# copy pacbio reads
+cp ~/Desktop/Bioinformatics/data/genome_assembly/pacbio_hifi_reads25.fastq.gz .
+
+# Check the reads with fastqc program
+fastqc pacbio_hifi_reads25.fastq.gz
+```
+- How many reads are in the dataset, and what is the total number of bases?
+- What is the average read length?
+- What is the estimated genome coverage (considering genome size of 2.8 MB)?
+
 
 
 ### How to make assembly on Metacentrum
