@@ -32,7 +32,7 @@ Data for assembly are located in `~/Desktop/bioinformatics/data/sanger`
 ```bash
 # you will have to run in on VM as administrator
 su root   # enter administrator password
-mamba create -n assembly -y -c bioconda jellyfish fastx_toolkit quast bandage samtools fastqc multiqc bowtie2 velvet hifiasm
+mamba create -n assembly -y -c bioconda jellyfish fastx_toolkit quast samtools fastqc multiqc bowtie2 velvet hifiasm
 exit  # exit from root user
 conda activate assembly
 ```
@@ -190,7 +190,8 @@ The assembly graph can be inspected using the **Bandage** program.
 
 ### Paired-end data and QC:
 
-The data you will examine is again from *Staphylococcus aureus* USA300. The reads are Illumina paired-end with higher sequence coverage.
+Now we will perform assembly of Illumina paired-end reads from
+*Staphylococcus aureus* USA300. Using paired-end reads usually improves assembly quality because the distance between the two reads is known and this information can be used to resolve repeats during assembly. Additionally will used higher number of reads (coverage) which should also improve assembly quality.
 
 1.  Download from NCBI:
 
@@ -239,12 +240,10 @@ Bandage can visualize assembly graphs. Open the file `ngs_assembly2/run_25_paire
 
 ### Align short paired reads to assembly:
 
-We will align original sequence reads to the resulting genome assembly so we can explore assembly quality using the IGV genomic browser. Note: We will need to install the bowtie2 program if it is not available in the new environment.
-
+We will align original sequence reads to the resulting genome assembly so we can explore assembly quality using the IGV genomic browser. 
 ```bash
-mamba create -n bowtie2 -c bioconda bowtie2
-conda activate bowtie2
-
+cd 
+cd ngs_assembly2
 # create database from contigs
 bowtie2-build run_25_paired/contigs.fa run_25_paired/contigs.fa
 # map reads to assembly : (~1min)
@@ -256,17 +255,26 @@ samtools sort SRR022852.bam > SRR022852_sorted.bam
 # create index:
 samtools index SRR022852_sorted.bam
 ```
+Note all above comands can be run in single line using pipes to speed up the process and save disk space:
+```bash
+bowtie2 -p 8 -x run_25_paired/contigs.fa -1 SRR022852_1_trimmed.fastq -2 SRR022852_2_trimmed.fastq | samtools view -b - | samtools sort -o SRR022852_sorted.bam
+samtools index SRR022852_sorted.bam
+```
 
-1.  Visualization of assembly
 
-    Run IGV program to inspect the assembly. In IGV load the genome - select the contigs.fa file. Then load the read mapping from SRR022852_sorted.bam.
+### Visualization of assembly
 
-    The manual for IGV can be found at: <http://software.broadinstitute.org/software/igv/UserGuide>
+Run IGV program to inspect the assembly. In IGV load the genome - select the `contigs.fa` file. Then load the read mapping from SRR022852_sorted.bam. Genome assembly is loaded using menu `Genomes -> Load Genome from File...` and the read mapping is loaded using menu `File -> Load from File...`
 
-    Explanation of color coding (insert size):
+The manual for IGV can be found at: <http://software.broadinstitute.org/software/igv/UserGuide>
 
-    -   Insert size: <http://software.broadinstitute.org/software/igv/interpreting_insert_size>
-    -   Pair orientation: <http://software.broadinstitute.org/software/igv/interpreting_pair_orientations>
+Explanation of color coding (insert size):
+
+- Insert size: <http://software.broadinstitute.org/software/igv/interpreting_insert_size>
+- Pair orientation: <http://software.broadinstitute.org/software/igv/interpreting_pair_orientations>
+
+Inspect the begining and end of contigs in IGV. The color coding of mapper reads can also indicate mapping of the mates to different contigs. This can indicate possible mis-assemblies or unresolved repeats.
+
 
 ### Analyze completeness of assembly using the BUSCO program:
 
@@ -275,15 +283,14 @@ BUSCO (Benchmarking Universal Single-Copy Orthologs) is a tool designed to evalu
 Before running analysis, we need to specify a suitable lineage. List all available lineages in the BUSCO database:
 
 ```bash
-# run from run_25 and run_25_paired directory
-conda activate busco
-cd ~/ngs_assembly/run_25
 busco --list-datasets
 ```
 
-The above command will list all taxonomic groups. We need to select the one that is closest to *Staphylococcus aureus*. Go to the NCBI website and search the Taxonomy database for *Staphylococcus aureus* and compare the NCBI taxonomy with BUSCO lineages and select the closest taxonomy group for analysis and set the `--lineage` argument accordingly.
+The above command will list all taxonomic groups. We need to select the one that is closest to *Staphylococcus aureus*. Go to the NCBI website (https://www.ncbi.nlm.nih.gov/) and search the Taxonomy database for *Staphylococcus aureus* and compare the NCBI taxonomy with BUSCO lineages and select the closest taxonomy group for analysis and set the `--lineage` argument accordingly.
+Note - our version of BUSCO is compatible only with lineage datasets version 10. - https://busco.ezlab.org/frames/bact.htm
 
 ```bash
+cd ~/ngs_assembly/run_25/
 busco -i contigs.fa -o busco_output -m genome -c 5 --lineage ??????
 cd ~/ngs_assembly2/run_25_paired/
 busco -i contigs.fa -o busco_output -m genome -c 5 --lineage ??????
