@@ -300,6 +300,13 @@ busco -i contigs.fa -o busco_output -m genome -c 5 --lineage ??????
 Inspect the output files. Which assembly is more complete according to BUSCO statistics?
 
 ## Part 3 - Assembly using long PacBio HIFI reads
+Before starting this part, update data in your Bioinformatics repository:
+
+```bash
+`cd ~/Desktop/Bioinformatics
+git pull`
+```
+
 
 In the third part of the exercise we will perform genome assembly using long PacBio HiFi reads. The data is from *Staphylococcus aureus* USA300. The data can be downloaded from SRA run SRR11606884. PacBio HiFi reads are high-fidelity long reads with low error rates, making them suitable for complex genome assemblies.
 
@@ -320,9 +327,124 @@ fastqc pacbio_hifi_reads25.fastq.gz
 - What is the average read length?
 - What is the estimated genome coverage (considering genome size of 2.8 MB)?
 
+### Assembly using hifiasm program
+
+We will use the hifiasm program for assembly of PacBio HiFi reads. Hifiasm is a fast and efficient assembler specifically designed for high-fidelity long reads, such as PacBio HiFi data or Oxford Nanopore reads. More information can be found at https://github.com/chhylp123/hifiasm. By default hisiasm assemler focus on creating haplotype-resolved assemblies, which can be useful for diploid or polyploid organisms. However, for bacterial genomes, which is haploid, we can simplify the assembly process by using the `-l0` option to disable haplotype resolution.
 
 
-### How to make assembly on Metacentrum
+```bash
+hifiasm -f0  -o ams -t 4 -l0 pacbio_hifi_reads25.fastq.gz
+```
+The above command will take ~ 3 minutes to finish.
+During assembly, hifiasm show simple histogram of k-mer frequencies. From the histogram you can see the average coverage of the genome. Is this in agreement with your previous estimation of genome coverage?
+
+The assmebler will produce .gfa files from which we can extract contigs in FASTA format:
+
+```bash
+# this is command from hifiasm manual to extract contigs from gfa file
+awk '/^S/{print ">"$2"\n"$3}' ams.bp.p_ctg.gfa > contigs.fa
+```
+Alternatively, you can inspect the assembly graph using the Bandage program by opening the file `ams.p_ctg.gfa` and export contigs in FASTA format using Bandage.
+
+### Assembly statistics
+
+Run Quast program to calculate assembly statistics:
+
+```bash
+quast contigs.fa --threads 4 -o quast_output
+```
+- How many contigs are in the assembly?
+- What is the total length of the assembly?
+- What is the N50 of the assembly?
+
+### Compare hifiasm assembly with Illumina paired-end assembly 
+
+- Use Gepard program to compare the two assemblies using dotplots
+- Alternatively, you can compare the two assemblies using D-Genies online tool: https://dgenies.toulouse.inra.fr/ - on resulting dotplot from D-genies try on options "Sort contigs" and "Hide noise" 
+
+
+
+### Evaluate completeness of assembly using BUSCO program:
+
+```bash
+busco -i contigs.fa -o busco_output -m genome -c 5 --lineage bacillales
+```
+Compare the BUSCO statistics with previous assemblies from Illumina reads. Is the assembly from PacBio HiFi reads more complete?
+
+
+### Compare USA300 assembly with reference genome of *Staphylococcus aureus* NCTC 8325 strain 
+
+- NCTC 8325 is a well-studied laboratory strain of *Staphylococcus aureus* with a fully sequenced and annotated genome. The reference genome can be downloaded from NCBI at: https://www.ncbi.nlm.nih.gov/assembly/GCF_000013425.1/
+- NCTC 8325 genome file is located in `~/Desktop/Bioinformatics/data/genome_assembly/GCF_000013425.1_ASM1342v1_genomic.fna`
+- USA300 strain is methicillin-resistant Staphylococcus aureus (MRSA) and is genetically distinct from other strains of Staphylococcus aureus. MRSA is responsible for several difficult-to-treat infections in humans.
+- The comparison of the two genomes can provide insights into genetic variations, virulence factors, and antibiotic resistance mechanisms specific to the USA300 strain.
+
+```bash
+# make copy of reference genome in pacbio_assembly directory
+cp ~/Desktop/Bioinformatics/data/genome_assembly/GCF_000013425.1_ASM1342v1_genomic.fna .
+```
+Use Gepard program to compare our USA300 assembly with the reference genome using dotplots.
+- What are the major differences between the two genomes according to the dotplot?
+- What is your interpretation of these differences?
+- How can these differences relate to the pathogenicity of USA300 strain?
+
+### Genome annotation with Bakta program
+
+For genome annotation we will use the Bakta program. Bakta is a rapid and standardized annotation tool for bacterial genomes that provides consistent and comprehensive annotations by leveraging a curated database of known genes and proteins. It is designed to be user-friendly and efficient, making it suitable for both small-scale and large-scale bacterial genome projects. We will use an online version of Bakta available on Galaxy server: https://usegalaxy.eu/
+
+- gor to Galaxy server: https://usegalaxy.eu/
+- upload the file `contigs.fa` to Galaxy
+- search for Bakta tool
+- run Bakta on the uploaded `contigs.fa` file, set Optional annotation -> Keep original contig header to "yes"
+- when the job is finished, download the resulting GFF3 annotation file.
+
+(run may take several minutes to finish)
+
+
+### Identification of genomic features present in USA300 assembly but absent in NCTC 8325 reference genome
+
+We will compare two genome sequences using BLASTN program to identify genomic features present in USA300 assembly but absent in the NCTC 8325 reference genome.
+
+```bash
+# create BLAST database from NCTC 8325 genome
+makeblastdb -in GCF_000013425.1_ASM1342v1_genomic.fna -dbtype nucl
+# run BLASTN of USA300 against NCTC 8325 genome
+blastn -task megablast -query contigs.fa -db GCF_000013425.1_ASM1342v1_genomic.fna -outfmt 6 -out usa300_vs_nctc8325.blastn -word_size 28 -evalue 1e-10 -num_threads 4 -perc_identity 95
+```
+Output will be in tabular format with columns:
+1. query id
+2. subject id
+3. % identity
+4. alignment length
+5. mismatches
+6. gap opens
+7. q. start
+8. q. end
+9. s. start
+10. s. end
+11. evalue
+12. bit score
+
+### Create BED file from BLASTN results 
+
+To be able to visualize BLASTN results in IGV browser, we need to convert the BLASTN output to BED format. We will filter only query id, q.start, q.end and create a BED file:
+
+```bash
+cut -f 1,7,8 usa300_vs_nctc8325.blastn > usa300_vs_nctc8325.bed
+```
+### Visualize BLASTN results in IGV browser
+
+Start IGV program and load USA300 assembly contigs as genome and load the BED file with BLASTN results as annotation track.
+
+
+
+```bash
+
+
+
+
+
+## How to make assembly on Metacentrum
 
 We need to execute all these commands on Metacentrum:
 

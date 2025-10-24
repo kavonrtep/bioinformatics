@@ -32,7 +32,7 @@ git pull
 cd ~/Desktop/Bioinformatics
 git pull
 ```
-## Recap of dotplot
+## Recap of dotplotb
  - [Excercise A1](./extra_tasks.md#exercise-a1)
 
 ## Dotplots - cont.
