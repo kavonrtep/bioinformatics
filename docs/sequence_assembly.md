@@ -70,6 +70,8 @@ conda activate assembly
 
 ### Quality control using FASTQC program
 
+[FASTQ format](https://github.com/kavonrtep/bioinformatics/blob/master/docs/data_formats.md#fastq-fastq-fq-usually-gz) 
+
 Run FASTQC program on Illumina reads:
 
 ```bash
@@ -193,7 +195,7 @@ The assembly graph can be inspected using the **Bandage** program.
 ### Paired-end data and QC:
 
 Now we will perform assembly of Illumina paired-end reads from
-*Staphylococcus aureus* USA300. Using paired-end reads usually improves assembly quality because the distance between the two reads is known and this information can be used to resolve repeats during assembly. Additionally we will use higher number of reads (coverage) which should also improve assembly quality.
+*Staphylococcus aureus* USA300. Using paired-end reads usually improves assembly quality because the distance between the two reads is known and this information can be used to resolve repeats during assembly. Additionally, we will use higher number of reads (coverage) which should also improve assembly quality.
 
 1.  Download from NCBI:
 
@@ -228,7 +230,7 @@ velvetg run_25_paired -ins_length 350
 
 ### Compare paired-end assembly with single-end assembly
 
--   Use the **Quast** program (<http://quast.sourceforge.net/quast>) to calculate basic statistics of the assembly and compare it to the previous assembly from single-end Illumina reads:
+- Use the **Quast** program (<http://quast.sourceforge.net/quast>) to calculate basic statistics of the assembly and compare it to the previous assembly from single-end Illumina reads:
 
     ```bash
     # quast can be run on multiple assemblies
@@ -237,7 +239,7 @@ velvetg run_25_paired -ins_length 350
     quast ngs_assembly/run_25/contigs.fa ngs_assembly2/run_25_paired/contigs.fa -o ngs_assembly2/quast
     ```
 
--   Use the **Bandage** program.
+- Use the **Bandage** program.
 Bandage can visualize assembly graphs. Open the file `ngs_assembly2/run_25_paired/LastGraph` in Bandage and compare it to the previous assembly graph from single-end reads.
 
 ### Align short paired reads to assembly:
@@ -262,9 +264,11 @@ Note all above commands can be run in single line using pipes to speed up the pr
 bowtie2 -p 8 -x run_25_paired/contigs.fa -1 SRR022852_1_trimmed.fastq -2 SRR022852_2_trimmed.fastq | samtools view -b - | samtools sort -o SRR022852_sorted.bam
 samtools index SRR022852_sorted.bam
 ```
-
+[SAM/BAM format](https://github.com/kavonrtep/bioinformatics/blob/master/docs/data_formats.md#sam--bam--cram--bai-for-bam-index-crai-for-cram-index)
 
 ### Visualization of assembly
+
+[IGV program](https://github.com/kavonrtep/bioinformatics/blob/master/docs/Integrative_Genomics_Viewer.org)
 
 Run IGV program to inspect the assembly. In IGV load the genome - select the `contigs.fa` file. Then load the read mapping from SRR022852_sorted.bam. Genome assembly is loaded using menu `Genomes -> Load Genome from File...` and the read mapping is loaded using menu `File -> Load from File...`
 

@@ -169,7 +169,388 @@ Paired-end sequencing produces two FASTQ files:
 ## Alignments & mappings
 
 ### SAM / BAM / CRAM (+ .bai for BAM index, .crai for CRAM index)
-    
+
+**SAM** (Sequence Alignment/Map), **BAM** (Binary Alignment/Map), and **CRAM** are formats for storing how sequencing reads align to a reference genome. They're essential for most genomics workflows including variant calling, RNA-seq analysis, and genome visualization.
+
+#### The three formats
+
+| Format | Type | Size | Use case |
+|--------|------|------|----------|
+| **SAM** | Text | Very large | Human-readable, rarely used for storage |
+| **BAM** | Binary (compressed SAM) | ~3-5× smaller than SAM | Standard format for most analyses |
+| **CRAM** | Binary (reference-based) | ~2× smaller than BAM | Long-term storage, requires reference genome |
+
+**In practice:** Almost everyone uses BAM. SAM is mainly for viewing/debugging, CRAM for archiving.
+
+---
+
+## SAM Format (Sequence Alignment/Map)
+
+SAM is a **tab-delimited text format** with two sections:
+1. **Header lines** (optional) — start with `@`, contain metadata
+2. **Alignment lines** — one line per aligned read
+
+#### Example SAM file
+```sam
+@HD	VN:1.6	SO:coordinate
+@SQ	SN:chr1	LN:248956422
+@PG	ID:bwa	PN:bwa	VN:0.7.17
+READ1	99	chr1	10000	60	76M	=	10200	276	ACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGT	IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII	NM:i:0	AS:i:76
+READ1	147	chr1	10200	60	76M	=	10000	-276	TGCATGCATGCATGCATGCATGCATGCATGCATGCATGCATGCATGCATGCATGCATGCATGCATGCATGCATGCA	IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII	NM:i:0	AS:i:76
+```
+
+#### Header lines (start with @)
+- `@HD` — file format version and sort order
+- `@SQ` — reference sequence (chromosome) names and lengths
+- `@PG` — programs used to create the file
+
+#### Alignment lines: 11 mandatory fields
+
+Each alignment has **11 required tab-separated fields**:
+
+| # | Field | Name | Example | Meaning |
+|---|-------|------|---------|---------|
+| 1 | QNAME | Query name | READ1 | Read identifier |
+| 2 | FLAG | Bitwise flag | 99 | Alignment properties (see below) |
+| 3 | RNAME | Reference name | chr1 | Chromosome/contig name |
+| 4 | POS | Position | 10000 | Leftmost mapping position (1-based) |
+| 5 | MAPQ | Mapping quality | 60 | Confidence score (0-60) |
+| 6 | CIGAR | CIGAR string | 76M | Alignment structure |
+| 7 | RNEXT | Mate reference | = | Mate's chromosome (= means same) |
+| 8 | PNEXT | Mate position | 10200 | Mate's mapping position |
+| 9 | TLEN | Template length | 276 | Insert size (for paired-end) |
+| 10 | SEQ | Sequence | ACGT... | Read sequence |
+| 11 | QUAL | Quality | IIII... | Base quality scores (Phred+33) |
+
+**Plus optional fields** (tags like `NM:i:0`, `AS:i:76`) with additional information.
+
+---
+
+#### Understanding FLAG (column 2)
+
+The **FLAG** is a number that encodes multiple properties as **binary bits**. Common flags:
+
+| Flag | Meaning |
+|------|---------|
+| 1 | Read is paired |
+| 2 | Read mapped in proper pair |
+| 4 | **Read unmapped** |
+| 8 | Mate unmapped |
+| 16 | **Read reverse strand** |
+| 32 | Mate reverse strand |
+| 64 | **First in pair** |
+| 128 | **Second in pair** |
+| 256 | Secondary alignment |
+| 512 | Failed quality checks |
+| 1024 | PCR duplicate |
+| 2048 | Supplementary alignment |
+
+**Example:** FLAG = 99
+- 99 = 1 + 2 + 32 + 64
+- Meaning: paired, proper pair, mate reverse strand, first in pair
+
+**Tip:** Use online FLAG explainers (search "SAM flag decoder") or `samtools flags 99`
+
+---
+
+#### Understanding CIGAR (column 6)
+
+**CIGAR** (Compact Idiosyncratic Gapped Alignment Report) describes how the read aligns to the reference.
+
+**Format:** number + operation letter
+
+| Operation | Letter | Meaning |
+|-----------|--------|---------|
+| Match/mismatch | M | Aligned bases (match or mismatch) |
+| Insertion | I | Bases in read, not in reference |
+| Deletion | D | Bases in reference, not in read |
+| Skipped | N | Skipped region (for RNA-seq splicing) |
+| Soft clip | S | Bases in read, not aligned |
+| Hard clip | H | Bases not in read sequence |
+| Padding | P | Silent deletion in padded alignment |
+
+**Examples:**
+- `76M` — 76 bases match/mismatch (simple perfect alignment)
+- `50M2I24M` — 50 matches, 2 inserted bases, 24 matches
+- `30M1000N46M` — 30 matches, 1000 bp skipped (intron), 46 matches (RNA-seq)
+- `5S71M` — 5 soft-clipped bases, 71 aligned bases
+
+---
+
+#### Mapping quality (MAPQ, column 5)
+
+**MAPQ** = -10 × log₁₀(P), where P = probability the mapping is wrong
+
+| MAPQ | Meaning |
+|------|---------|
+| 0 | Unreliable (read maps to multiple locations) |
+| 1-10 | Low confidence |
+| 20 | 1% error probability |
+| 30 | 0.1% error probability |
+| 40+ | High confidence (99.99%+ correct) |
+| 60 | Maximum quality (unique mapping) |
+
+**Filtering:** `samtools view -q 20` keeps only reads with MAPQ ≥ 20
+
+---
+
+## BAM Format (Binary Alignment/Map)
+
+BAM is a **binary compressed version of SAM**. It's much smaller and faster to process.
+
+#### Key features
+- **Binary format** — not human-readable, requires tools to view
+- **Compressed** with BGZF (blocked gzip) — typically 3-5× smaller than SAM
+- **Indexed** — allows fast random access to genomic regions
+- **Sorted** — usually sorted by coordinate for efficient processing
+
+#### Common operations
+
+**Convert SAM to BAM:**
+```bash
+samtools view -b file.sam > file.bam
+```
+
+**View BAM as SAM (first 10 reads):**
+```bash
+samtools view file.bam | head -10
+```
+
+**View BAM header:**
+```bash
+samtools view -H file.bam
+```
+
+**Sort BAM by coordinate:**
+```bash
+samtools sort file.bam -o sorted.bam
+```
+
+**Index BAM (creates .bai file):**
+```bash
+samtools index sorted.bam
+# Creates sorted.bam.bai
+```
+
+**Extract reads from specific region:**
+```bash
+samtools view sorted.bam chr1:1000000-2000000
+```
+
+**Count mapped reads:**
+```bash
+samtools view -c -F 4 file.bam
+```
+
+**Get alignment statistics:**
+```bash
+samtools flagstat file.bam
+samtools stats file.bam
+```
+
+**Filter by mapping quality:**
+```bash
+samtools view -q 20 -b file.bam > filtered.bam
+```
+
+---
+
+## BAM Index (.bai)
+
+A **BAM index** (`.bai` file) enables fast random access to specific genomic regions without reading the entire file.
+
+**Creating an index:**
+```bash
+samtools index sorted.bam
+# Creates sorted.bam.bai (or sorted.bai)
+```
+
+**Requirements:**
+- BAM must be **sorted by coordinate** (not by read name)
+- Both `.bam` and `.bai` files must be in the same directory
+- Most tools (IGV, GATK, variant callers) require indexed BAMs
+
+---
+
+## CRAM Format
+
+**CRAM** is a more compressed format that stores differences from a reference genome rather than full sequences.
+
+#### Advantages
+- **2× smaller** than BAM (sometimes more)
+- Lossless compression (can perfectly reconstruct original data)
+- Growing adoption for long-term storage
+
+#### Disadvantages
+- **Requires reference genome** to read/write
+- Slightly slower to process than BAM
+- Less universal tool support (though improving)
+
+#### Usage
+```bash
+# Convert BAM to CRAM
+samtools view -C -T reference.fa file.bam -o file.cram
+
+# Convert CRAM to BAM
+samtools view -b -T reference.fa file.cram -o file.bam
+
+# Index CRAM
+samtools index file.cram
+# Creates file.cram.crai
+```
+
+**When to use CRAM:**
+- Long-term archiving of alignment data
+- When storage space is critical
+- For submission to public databases (ENA/SRA prefer CRAM)
+
+---
+
+## Paired-end reads in SAM/BAM
+
+For paired-end sequencing, each read pair appears as **two separate lines** with:
+- Same **QNAME** (read identifier)
+- Matching **FLAG** bits (64 for first, 128 for second)
+- **RNEXT/PNEXT** pointing to mate's location
+- **TLEN** showing insert size
+
+**Example paired-end reads:**
+```
+READ1  99  chr1  10000  60  76M  =  10200  276  [sequence1]  [quality1]
+READ1 147  chr1  10200  60  76M  =  10000 -276  [sequence2]  [quality2]
+```
+- FLAG 99 (64+32+2+1): paired, proper pair, mate reverse, first in pair
+- FLAG 147 (128+16+2+1): paired, proper pair, reverse strand, second in pair
+
+---
+
+## Common workflows using SAM/BAM
+
+### 1. Read mapping workflow
+```bash
+# Map reads to reference genome
+bwa mem reference.fa reads_R1.fq.gz reads_R2.fq.gz > aligned.sam
+
+# Convert to BAM, sort, and index
+samtools view -b aligned.sam | samtools sort -o sorted.bam
+samtools index sorted.bam
+
+# Get alignment statistics
+samtools flagstat sorted.bam
+```
+
+### 2. Viewing in genome browser
+```bash
+# BAM must be sorted and indexed
+samtools sort file.bam -o sorted.bam
+samtools index sorted.bam
+
+# Open sorted.bam and sorted.bam.bai in IGV
+```
+
+### 3. Variant calling
+```bash
+# Most variant callers need sorted, indexed BAM
+bcftools mpileup -f reference.fa sorted.bam | bcftools call -mv -o variants.vcf
+```
+
+### 4. RNA-seq quantification
+```bash
+# Count reads per gene
+featureCounts -a genes.gtf -o counts.txt sorted.bam
+```
+
+---
+
+## Tools that use SAM/BAM/CRAM
+
+**Aligners (create SAM/BAM):**
+- **BWA, Bowtie2** — DNA alignment
+- **STAR, HISAT2** — RNA-seq alignment
+- **minimap2** — long-read alignment
+
+**Manipulation tools:**
+- **samtools** — Swiss Army knife (view, sort, index, filter)
+- **Picard** — Java tools for BAM manipulation
+- **sambamba** — faster alternative to samtools
+
+**Downstream analysis:**
+- **GATK, FreeBayes, bcftools** — variant calling
+- **featureCounts, HTSeq** — read counting for RNA-seq
+- **deepTools, bedtools** — coverage and enrichment analysis
+- **IGV, UCSC Genome Browser** — visualization
+
+---
+
+## File sizes
+
+**Example for 30× human genome sequencing:**
+- **FASTQ** (raw reads): ~100 GB
+- **SAM** (aligned): ~300 GB
+- **BAM** (aligned, compressed): ~50-70 GB
+- **CRAM** (aligned, reference-compressed): ~25-35 GB
+
+**Storage recommendation:** Keep BAM for active analysis, convert to CRAM for long-term storage.
+
+---
+
+## Important notes
+
+1. **Always sort BAM files by coordinate** before indexing or using with most tools
+2. **Always create an index** (.bai or .crai) for sorted alignment files
+3. **BAM is the standard** — most tools expect BAM, not SAM
+4. **Check alignment statistics** with `samtools flagstat` to verify mapping quality
+5. **Coordinate system:** SAM/BAM uses **1-based coordinates** (like GFF, unlike BED)
+6. **File names matter:** Keep `.bam` and `.bam.bai` together with matching names
+7. **CIGAR N vs D:** N is for long skips (introns in RNA-seq), D is for small deletions
+
+---
+
+## Quick reference: samtools commands
+
+```bash
+# View BAM as text
+samtools view file.bam
+
+# View header only
+samtools view -H file.bam
+
+# Convert SAM to BAM
+samtools view -b file.sam > file.bam
+
+# Sort BAM
+samtools sort file.bam -o sorted.bam
+
+# Index BAM
+samtools index sorted.bam
+
+# Extract region
+samtools view sorted.bam chr1:1000-2000
+
+# Count reads
+samtools view -c file.bam
+
+# Alignment statistics
+samtools flagstat file.bam
+samtools stats file.bam
+
+# Filter by quality
+samtools view -q 30 -b file.bam > filtered.bam
+
+# Extract mapped reads only
+samtools view -F 4 -b file.bam > mapped.bam
+
+# Extract unmapped reads
+samtools view -f 4 -b file.bam > unmapped.bam
+
+# Merge BAM files
+samtools merge output.bam input1.bam input2.bam
+
+# Convert to CRAM
+samtools view -C -T ref.fa file.bam -o file.cram
+```
+
+
 ### PAF (minimap2 pairwise mapping)
     
 ### PSL (BLAT alignments)
