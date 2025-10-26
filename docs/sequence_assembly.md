@@ -31,6 +31,7 @@ In this exercise you'll assemble the genome of *Staphylococcus aureus* using sho
 
 ### Installation of necessary programs
 
+Using mamba:
 ```bash
 # you will have to run it on VM as administrator
 su root   # enter administrator password
@@ -38,6 +39,15 @@ mamba create -n assembly -y -c bioconda jellyfish fastx_toolkit quast samtools f
 exit  # exit from root user
 conda activate assembly
 ```
+
+Alternative installation using conda:
+
+```bash
+conda config --set plugins.auto_accept_tos yes
+conda create -n assembly -y -c bioconda jellyfish fastx_toolkit quast samtools fastqc multiqc bowtie2 velvet hifiasm
+conda activate assembly
+```
+
 
 ### Single-end library
 
