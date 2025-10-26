@@ -3,12 +3,10 @@
 ## Practicals exercises 
 
 - [Week 1 - Dotplots and pairwise alignments](./docs/Practicals.md#week-1---dotplots-and-pairwise-alignments)
-
 - [Week 2 - Sequence alignment](./docs/Practicals.md#week-2)
-
 - [Week 3 - Sequences alignment - cont.](./docs/Practicals.md#week-3)
-
 - [Week 4 - NCBI BLAST](./docs/Practicals.md#week-4)
+- [Week 5 - Genome assembly](./docs/Practicals.md#week-5)
 - 
 ## Course Materials
 

@@ -23,9 +23,9 @@ Gap is the Genome Assembly Program – the program which actually assembles your
 
 Data for assembly are located in `~/Desktop/bioinformatics/data/sanger`
 
-# Exercise 2 - Assembly from short NGS reads using Velvet program
+# Exercise 2 - Genome Assembly from NGS data
 
-## Part 1 - Single End Reads:
+## Part 1 - Assembly using Single End Short Reads:
 
 ### Installation of necessary programs
 
@@ -186,7 +186,7 @@ The assembly graph can be inspected using the **Bandage** program.
     quast run_25/contigs.fa run_25/contigs.fa.0 --threads 7
     ```
 
-## Part 2 - Pair-End reads:
+## Part 2 - Assembly using Pair-End Short Reads:
 
 ### Paired-end data and QC:
 
@@ -299,7 +299,7 @@ busco -i contigs.fa -o busco_output -m genome -c 5 --lineage ??????
 
 Inspect the output files. Which assembly is more complete according to BUSCO statistics?
 
-## Part 3 - Assembly using long PacBio HIFI reads
+## Part 3 - Assembly using Long PacBio HIFI Reads
 Before starting this part, update data in your Bioinformatics repository:
 
 ```bash

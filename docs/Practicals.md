@@ -78,17 +78,17 @@ git pull
 - [Exercise 1.4 - Identification of coding sequence using BLASTX](./blast_search.md/#exercise-14---identification-of-coding-sequence-using-blastx-vs-blastn)
 - [Exercise 1.7 - Identification of mutations in gyrA gene](./blast_search.md/#exercise-17---identification-of-mutations-in-gyrA-gene)
 
-### Using BLAST from command line
+### Using BLAST from command line (optional)
  - [Exercise 2.1](./blast_search.md/#exercise-21)
  - [Exercise 2.2](./blast_search.md/#exercise-22---extract-hits-from-database-and-create-alignment-with-query)
 
-# Week 5
-- BLAST - cont.
-- Genome assembly
-- seqkit
+# Week 5 
+## Genome assembly
+- [Exercise 2 - Genome Assembly and QC](./sequence_assembly.md#exercise-2---assembly-from-short-ngs-reads-using-velvet-program)
+ 
 
 # Week 6 
-- Genome assembly - cont.
+- [Exercise 2 - Genome Assembly and QC - cont.](./sequence_assembly.md#exercise-2---assembly-from-short-ngs-reads-using-velvet-program)
 
 # Week 7 
  - Genome Annotation
