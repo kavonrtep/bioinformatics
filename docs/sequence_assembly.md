@@ -25,6 +25,8 @@ Data for assembly are located in `~/Desktop/bioinformatics/data/sanger`
 
 # Exercise 2 - Genome Assembly from NGS data
 
+In this exercise you’ll assemble the genome of *Staphylococcus aureus* using short reads, paired-end reads, and long reads to see how method choice affects contiguity and accuracy. Your main target is the USA300 methicillin-resistant strain (MRSA). You will build de novo assemblies and assess their quality and annotate the best candidade genom. Then compare your assembly to a methicillin-susceptible strain to spot structural differences and identify candidate resistance loci.
+
 ## Part 1 - Assembly using Single End Short Reads:
 
 ### Installation of necessary programs
@@ -357,12 +359,22 @@ quast contigs.fa --threads 4 -o quast_output
 - What is the total length of the assembly?
 - What is the N50 of the assembly?
 
+Resulting assembly contains one large contig of ~2.9 MB which likely represents the complete bacterial chromosome. Are there any other contigs? What could they represent? Extract individual contigs to separate files using seqkit program:
+
+```bash
+seqkit split -i contigs.fa
+````
+This will create directory `contigs.fa.split` with individual contig files. 
+
+Analyze the smaller contigs using BLASTN program against NCBI nt database (https://blast.ncbi.nlm.nih.gov/Blast.cgi) to identify their origin.
+
+What do they represent?
+
 ### Compare hifiasm assembly with Illumina paired-end assembly 
 
 - Use Gepard program to compare the two assemblies using dotplots
 - Alternatively, you can compare the two assemblies using D-Genies online tool: https://dgenies.toulouse.inra.fr/ - on resulting dotplot from D-genies try on options "Sort contigs" and "Hide noise" 
-
-
+- What are the major differences between the two assemblies according to the dotplot?
 
 ### Evaluate completeness of assembly using BUSCO program:
 
@@ -396,10 +408,17 @@ For genome annotation we will use the Bakta program. Bakta is a rapid and standa
 - upload the file `contigs.fa` to Galaxy
 - search for Bakta tool
 - run Bakta on the uploaded `contigs.fa` file, set Optional annotation -> Keep original contig header to "yes"
-- when the job is finished, download the resulting GFF3 annotation file.
+- when the job is finished, download the resulting GFF3 annotation file to `pacbio_assembly` directory - name it `Bakta_annotation.gff3`. Download also summary file - name it `Bakta_summary.csv`
 
-(run may take several minutes to finish)
+<details>
+<summary>💡 Does annoration run on Galaxy take too long?</summary>
+If the run on galaxy runs too long, you can use annotation files provided in the data directory. 
 
+```bash
+cp ~/Desktop/Bioinformatics/data/genome_assembly/Bakta_annotation.gff3 .
+cp ~/Desktop/Bioinformatics/data/genome_assembly/Bakta_summary.csv .
+```
+</details>
 
 ### Identification of genomic features present in USA300 assembly but absent in NCTC 8325 reference genome
 
@@ -434,14 +453,44 @@ cut -f 1,7,8 usa300_vs_nctc8325.blastn > usa300_vs_nctc8325.bed
 ```
 ### Visualize BLASTN results in IGV browser
 
-Start IGV program and load USA300 assembly contigs as genome and load the BED file with BLASTN results as annotation track.
+- Start IGV program and load USA300 assembly contigs as genome and load the BED file with BLASTN results as annotation track.
+- Track shows regions in USA300 genome that have significant similarity to NCTC 8325 genome, blank regions represent sequences that are unique to USA300 genome.
+- Load also the Bakta annotation GFF3 file as annotation track.
+- Can you identify regions in USA300 genome that are not present in NCTC 8325 genome?
+- Do these regions contain any genes according to Bakta annotation?
 
+### Exctract genome annotation for genes present in USA300 but absent in NCTC 8325 genome.
 
+For manipulation with BED and GFF3 files we will use the bedtools program (https://bedtools.readthedocs.io/en/latest/content/overview.html).
+
+First we will merge overlapping regions in the BED file using bedtools merge command (https://bedtools.readthedocs.io/en/latest/content/tools/merge.html)
 
 ```bash
+# coordinates in BED file must be sorted befor using merge command
+sort -k1,1 -k2,2n usa300_vs_nctc8325.bed > usa300_vs_nctc8325.sorted.bed
+# inspect the sorted file
+less usa300_vs_nctc8325.sorted.bed
+bedtools merge -i usa300_vs_nctc8325.sorted.bed > usa300_vs_nctc8325.merged.bed
+# inspect the resulting file
+less usa300_vs_nctc8325.merged.bed
+````
+
+Now we will create complement of the merged BED file using bedtools complement command (https://bedtools.readthedocs.io/en/latest/content/tools/complement.html). The complement will represent regions in USA300 genome that are not present in NCTC 8325 genome. Input for complement command is a BED file and also a genome file with lengths of individual contigs. We can create the genome file from the USA300 assembly FASTA file using `faidx` command from samtools program. Note, when you open the genome in IGV browser, this file is also created automatically by IGV.
+
+```bash
+seqkit faidx contigs.fa
+# this will create contigs.fa.fai file with contig lengths
+# inspect the file
+cat contigs.fa.fai
+bedtools complement -i usa300_vs_nctc8325.merged.bed -g contigs.fa.fai > usa300_unique_regions.bed
+````
 
 
+Now we can extract genome annotation for genes present in USA300 but absent in NCTC 8325 genome using bedtools intersect command (https://bedtools.readthedocs.io/en/latest/content/tools/intersect.html):
 
+```bash
+bedtools intersect -a Bakta_annotation.gff3 -b usa300_unique_regions.bed > usa300_unique_genes.gff3
+````
 
 
 ## How to make assembly on Metacentrum

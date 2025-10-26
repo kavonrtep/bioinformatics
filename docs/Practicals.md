@@ -91,7 +91,7 @@ git pull
 - [Exercise 2 - Genome Assembly - Long Reads](./sequence_assembly.md#part-3---assembly-using-long-pacbio-hifi-reads)
 
 # Week 7 
- - Genome Annotation
+- Genome Annotation
 
 # Week 8
 - Chip-Seq
