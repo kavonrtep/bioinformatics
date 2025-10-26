@@ -82,31 +82,30 @@ git pull
  - [Exercise 2.1](./blast_search.md/#exercise-21)
  - [Exercise 2.2](./blast_search.md/#exercise-22---extract-hits-from-database-and-create-alignment-with-query)
 
-# Week 5 
+# Week 5 (Oct. 27)
 ## Genome assembly
 - [Exercise 2 - Genome Assembly - Short Reads](./sequence_assembly.md#part-1---assembly-using-single-end-short-reads)
 - [Exercise 2 - Genome Assembly - Short Paired-End Reads](./sequence_assembly.md#part-2---assembly-using-pair-end-short-reads)
 
-# Week 6 
+# Week 6 (Nov 3)
 - [Exercise 2 - Genome Assembly - Long Reads](./sequence_assembly.md#part-3---assembly-using-long-pacbio-hifi-reads)
 
-# Week 7 
-- Genome Annotation
+# Week 7 (Nov 10)
+- Using Galaxy platform
+- Chip-Seq, Using IGV
 
-# Week 8
-- Chip-Seq
-
-
-# Week 9
-
+# Week 8 (Nov 24)
 - Variant calling
 - Amplicon sequencing
 
-# Week 10
-- Creating phylogenetic tree
+# Week 9 (Dec 1)
+Creating phylogenetic tree
   - Exercise 1 - Comparison of phylogenetic trees based on amino acid and nucleotide sequences of ubiquitin gene
-  - Exercise 2 -The case of the Florida dentist
+  - Exercise 2 - The case of the Florida dentist
   - Exercies 3 - Origin of HIV
 
-# Week 11
+# Week 10 (Dec 8)
 - Structural bioinformatics, AlphaFold
+
+# Week 11
+- Credit test
