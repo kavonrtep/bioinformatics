@@ -181,6 +181,12 @@ quast run_25/contigs.fa --threads 7
 
 The assembly graph can be inspected using the **Bandage** program.
 
+From command line run:
+
+```bash
+Bandage
+```
+
 1.  Optional:
 
     Results from the k-mer-based analysis suggest that the sequencing coverage is more than 10x and lower frequency k-mers are likely erroneous. Excluding such k-mers can improve the assembly. We will rerun velvetg with `-cov_cutoff 6` and `-exp_cov 14` command line options.
