@@ -25,14 +25,14 @@ Data for assembly are located in `~/Desktop/bioinformatics/data/sanger`
 
 # Exercise 2 - Genome Assembly from NGS data
 
-In this exercise you’ll assemble the genome of *Staphylococcus aureus* using short reads, paired-end reads, and long reads to see how method choice affects contiguity and accuracy. Your main target is the USA300 methicillin-resistant strain (MRSA). You will build de novo assemblies and assess their quality and annotate the best candidade genom. Then compare your assembly to a methicillin-susceptible strain to spot structural differences and identify candidate resistance loci.
+In this exercise you'll assemble the genome of *Staphylococcus aureus* using short reads, paired-end reads, and long reads to see how method choice affects contiguity and accuracy. Your main target is the USA300 methicillin-resistant strain (MRSA). You will build de novo assemblies and assess their quality and annotate the best candidate genome. Then compare your assembly to a methicillin-susceptible strain to spot structural differences and identify candidate resistance loci.
 
 ## Part 1 - Assembly using Single End Short Reads:
 
 ### Installation of necessary programs
 
 ```bash
-# you will have to run in on VM as administrator
+# you will have to run it on VM as administrator
 su root   # enter administrator password
 mamba create -n assembly -y -c bioconda jellyfish fastx_toolkit quast samtools fastqc multiqc bowtie2 velvet hifiasm
 exit  # exit from root user
@@ -193,7 +193,7 @@ The assembly graph can be inspected using the **Bandage** program.
 ### Paired-end data and QC:
 
 Now we will perform assembly of Illumina paired-end reads from
-*Staphylococcus aureus* USA300. Using paired-end reads usually improves assembly quality because the distance between the two reads is known and this information can be used to resolve repeats during assembly. Additionally will used higher number of reads (coverage) which should also improve assembly quality.
+*Staphylococcus aureus* USA300. Using paired-end reads usually improves assembly quality because the distance between the two reads is known and this information can be used to resolve repeats during assembly. Additionally we will use higher number of reads (coverage) which should also improve assembly quality.
 
 1.  Download from NCBI:
 
@@ -252,12 +252,12 @@ bowtie2-build run_25_paired/contigs.fa run_25_paired/contigs.fa
 bowtie2 -p 8 -x run_25_paired/contigs.fa -1 SRR022852_1_trimmed.fastq -2 SRR022852_2_trimmed.fastq > SRR022852.sam
 # convert SAM to BAM format (~1min):
 samtools view -b SRR022852.sam > SRR022852.bam
-# sorting according position (~1min)
+# sorting according to position (~1min)
 samtools sort SRR022852.bam > SRR022852_sorted.bam
 # create index:
 samtools index SRR022852_sorted.bam
 ```
-Note all above comands can be run in single line using pipes to speed up the process and save disk space:
+Note all above commands can be run in single line using pipes to speed up the process and save disk space:
 ```bash
 bowtie2 -p 8 -x run_25_paired/contigs.fa -1 SRR022852_1_trimmed.fastq -2 SRR022852_2_trimmed.fastq | samtools view -b - | samtools sort -o SRR022852_sorted.bam
 samtools index SRR022852_sorted.bam
@@ -275,7 +275,7 @@ Explanation of color coding (insert size):
 - Insert size: <http://software.broadinstitute.org/software/igv/interpreting_insert_size>
 - Pair orientation: <http://software.broadinstitute.org/software/igv/interpreting_pair_orientations>
 
-Inspect the begining and end of contigs in IGV. The color coding of mapper reads can also indicate mapping of the mates to different contigs. This can indicate possible mis-assemblies or unresolved repeats.
+Inspect the beginning and end of contigs in IGV. The color coding of mapper reads can also indicate mapping of the mates to different contigs. This can indicate possible mis-assemblies or unresolved repeats.
 
 
 ### Analyze completeness of assembly using the BUSCO program:
@@ -305,8 +305,8 @@ Inspect the output files. Which assembly is more complete according to BUSCO sta
 Before starting this part, update data in your Bioinformatics repository:
 
 ```bash
-`cd ~/Desktop/Bioinformatics
-git pull`
+cd ~/Desktop/Bioinformatics
+git pull
 ```
 
 
@@ -331,16 +331,16 @@ fastqc pacbio_hifi_reads25.fastq.gz
 
 ### Assembly using hifiasm program
 
-We will use the hifiasm program for assembly of PacBio HiFi reads. Hifiasm is a fast and efficient assembler specifically designed for high-fidelity long reads, such as PacBio HiFi data or Oxford Nanopore reads. More information can be found at https://github.com/chhylp123/hifiasm. By default hisiasm assemler focus on creating haplotype-resolved assemblies, which can be useful for diploid or polyploid organisms. However, for bacterial genomes, which is haploid, we can simplify the assembly process by using the `-l0` option to disable haplotype resolution.
+We will use the hifiasm program for assembly of PacBio HiFi reads. Hifiasm is a fast and efficient assembler specifically designed for high-fidelity long reads, such as PacBio HiFi data or Oxford Nanopore reads. More information can be found at https://github.com/chhylp123/hifiasm. By default hifiasm assembler focuses on creating haplotype-resolved assemblies, which can be useful for diploid or polyploid organisms. However, for bacterial genomes, which is haploid, we can simplify the assembly process by using the `-l0` option to disable haplotype resolution.
 
 
 ```bash
 hifiasm -f0  -o ams -t 4 -l0 pacbio_hifi_reads25.fastq.gz
 ```
 The above command will take ~ 3 minutes to finish.
-During assembly, hifiasm show simple histogram of k-mer frequencies. From the histogram you can see the average coverage of the genome. Is this in agreement with your previous estimation of genome coverage?
+During assembly, hifiasm shows simple histogram of k-mer frequencies. From the histogram you can see the average coverage of the genome. Is this in agreement with your previous estimation of genome coverage?
 
-The assmebler will produce .gfa files from which we can extract contigs in FASTA format:
+The assembler will produce .gfa files from which we can extract contigs in FASTA format:
 
 ```bash
 # this is command from hifiasm manual to extract contigs from gfa file
@@ -404,14 +404,14 @@ Use Gepard program to compare our USA300 assembly with the reference genome usin
 
 For genome annotation we will use the Bakta program. Bakta is a rapid and standardized annotation tool for bacterial genomes that provides consistent and comprehensive annotations by leveraging a curated database of known genes and proteins. It is designed to be user-friendly and efficient, making it suitable for both small-scale and large-scale bacterial genome projects. We will use an online version of Bakta available on Galaxy server: https://usegalaxy.eu/
 
-- gor to Galaxy server: https://usegalaxy.eu/
+- go to Galaxy server: https://usegalaxy.eu/
 - upload the file `contigs.fa` to Galaxy
 - search for Bakta tool
 - run Bakta on the uploaded `contigs.fa` file, set Optional annotation -> Keep original contig header to "yes"
 - when the job is finished, download the resulting GFF3 annotation file to `pacbio_assembly` directory - name it `Bakta_annotation.gff3`. Download also summary file - name it `Bakta_summary.csv`
 
 <details>
-<summary>💡 Does annoration run on Galaxy take too long?</summary>
+<summary>💡 Does annotation run on Galaxy take too long?</summary>
 If the run on galaxy runs too long, you can use annotation files provided in the data directory. 
 
 ```bash
@@ -459,14 +459,14 @@ cut -f 1,7,8 usa300_vs_nctc8325.blastn > usa300_vs_nctc8325.bed
 - Can you identify regions in USA300 genome that are not present in NCTC 8325 genome?
 - Do these regions contain any genes according to Bakta annotation?
 
-### Exctract genome annotation for genes present in USA300 but absent in NCTC 8325 genome.
+### Extract genome annotation for genes present in USA300 but absent in NCTC 8325 genome.
 
 For manipulation with BED and GFF3 files we will use the bedtools program (https://bedtools.readthedocs.io/en/latest/content/overview.html).
 
 First we will merge overlapping regions in the BED file using bedtools merge command (https://bedtools.readthedocs.io/en/latest/content/tools/merge.html)
 
 ```bash
-# coordinates in BED file must be sorted befor using merge command
+# coordinates in BED file must be sorted before using merge command
 sort -k1,1 -k2,2n usa300_vs_nctc8325.bed > usa300_vs_nctc8325.sorted.bed
 # inspect the sorted file
 less usa300_vs_nctc8325.sorted.bed
@@ -488,7 +488,7 @@ bedtools complement -i usa300_vs_nctc8325.merged.bed -g contigs.fa.fai > usa300_
 
 
 
-Now we can extract genome annotation for genes present in USA300 but absent in NCTC 8325 genome using bedtools intersect command (https://bedtools.readthedocs.io/en/latest/content/tools/intersect.html):q
+Now we can extract genome annotation for genes present in USA300 but absent in NCTC 8325 genome using bedtools intersect command (https://bedtools.readthedocs.io/en/latest/content/tools/intersect.html)
 
 ```bash
 # Bakta_annotation.gff3 file contains also sequence lines at the end of the file, we need to remove them first
@@ -500,32 +500,32 @@ bedtools intersect -f 1 -a Bakta_annotation_clean.gff3 -b usa300_unique_regions.
 Note: option -f 1 ensures that only features completely contained within the unique regions are selected.
 
 
-Count number of genes (CDS features) annotaded by Prodigal program in the resulting GFF3 file:
+Count number of genes (CDS features) annotated by Prodigal program in the resulting GFF3 file:
 
 ```bash
-`grep -c "Prodigal" usa300_unique_genes.gff3
-````
+grep -c "Prodigal" usa300_unique_genes.gff3
+```
 CDS from Bakta programs does structural annotation of genes using Prodigal program. Functional annotation is done using similarity to known proteins from various databases. Each protein can have assigned Id, Name, Gene ontology terms, Enzyme codes, etc.. We can search for specific functional annotation in the resulting GFF3 file using grep command. For example, to search for genes related to antibiotic resistance, we can search for Gene Ontology term `GO:0046677` which corresponds to "response to antibiotic" (https://amigo.geneontology.org/amigo/term/GO:0046677)
 
 ```bash
 grep "GO:0046677" usa300_unique_genes_go_0046677.gff3
 less -S usa300_unique_genes_go_0046677.gff3
 ```
-- How many gene possibly related to antibiotic resistance are present in USA300 genome but absent in NCTC 8325 genome?
+- How many genes possibly related to antibiotic resistance are present in USA300 genome but absent in NCTC 8325 genome?
 - Are all these genes on bacterial chromosome or are some located on plasmids (check contig names in GFF3 file)?
 
 <details>
 <summary>💡 Hint </summary>
 
-- there are genese located on plasmid but these are not related to methicillin resistance but to resistance to other antibiotic
-- for methicillin resistance look for gene with Name "mecA", mecR1"
+- there are genes located on plasmid but these are not related to methicillin resistance but to resistance to other antibiotic
+- for methicillin resistance look for gene with Name "mecA", "mecR1"
 - they are located on chromosome  in uniq locus in `ptg00002l:2824915-2836633`
 
 </details>
 
 
 
-## How to make assembly on Metacentrum
+# How to make assembly on Metacentrum
 
 We need to execute all these commands on Metacentrum:
 

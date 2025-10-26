@@ -23,7 +23,7 @@ To run *dotter*, open terminal window and  type "dotter" followed by two file na
 dotter file1.fasta file2.fasta
 ```
 - Sequences from dotter program must be provided in FASTA format
-- Dotter can be used for protein-proten, DNA-DNA or protein-DNA comparison
+- Dotter can be used for protein-protein, DNA-DNA or protein-DNA comparison
 
 #### Dotter keyboard shortcuts
 to navigate in `dotter` program use mouse click to select region
@@ -33,7 +33,7 @@ to navigate in `dotter` program use mouse click to select region
 
 #### Gepard 
 Gepard is Java based program, also available on Windows or MacOS. See https://cube.univie.ac.at/gepard
-Gepard can be run either of Desktop or using command line:
+Gepard can be run either on Desktop or using command line:
 To run gepard:
 ```
 conda biotools gepard
@@ -45,7 +45,7 @@ In Graphical user interface select pair of sequences you want to compare. Test d
 Make self comparison of the following sequences and identify repetitive sequences.
 - How long is repetitive element?
 - Is it in forward or reverse-complement orientation.
-- How many copies have repetitive element?
+- How many copies does the repetitive element have?
 - Draw schematic of sequence structure
 - What is the position (coordinates) of repetitive region(s)?
 
@@ -162,13 +162,13 @@ dotter tandem_repeat2.fasta tandem_repeat2.fasta
 ```
 
 ### Exercise 1.3 - Comparison of sequences with insertions, deletions, inversions
-Use dotter to visualize alignments and identify insertions or deletions in sequences AX02 and AX03 relative to AX01. Sequence are located in `/Desktop/Bioinformatics/data/dotter_sequences/` directory. 
+Use dotter to visualize alignments and identify insertions or deletions in sequences AX02 and AX03 relative to AX01. Sequences are located in `/Desktop/Bioinformatics/data/dotter_sequences/` directory. 
 To create dotplot use:
 ```bash
 dotter AX01.fasta AX02.fasta
 dotter AX01.fasta AX03.fasta
 ```
-- Examine the dot plots to identify any insertions or deletions (indels) or iversions in AX02 and AX03 with respect to the AX01 sequence. Describe the location and nature of these indels.
+- Examine the dot plots to identify any insertions or deletions (indels) or inversions in AX02 and AX03 with respect to the AX01 sequence. Describe the location and nature of these indels.
 - Based on what you see in the dot plots, answer the following:
   - When comparing AX01 and AX02, would you use local or global alignment? Justify your choice.
   - What type of alignment (local or global) would you use to compare AX01 with AX03? Explain your reasoning.
@@ -176,12 +176,12 @@ dotter AX01.fasta AX03.fasta
 - Performing Global and Local Alignments:
   - For global alignment use: https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastSearch&BLAST_SPEC=GlobalAln
     (change gap cost in algorithm parameter to 'Existence:5, extension: 2)
-  - For local alignemnt use: https://blast.ncbi.nlm.nih.gov/Blast.cgi?BLAST_SPEC=blast2seq&LINK_LOC=align2seq&PAGE_TYPE=BlastSearch 
+  - For local alignment use: https://blast.ncbi.nlm.nih.gov/Blast.cgi?BLAST_SPEC=blast2seq&LINK_LOC=align2seq&PAGE_TYPE=BlastSearch 
 -  Perform both types of alignments for:
   - AX01 vs AX02
   - AX01 vs AX03
 
- Compare the results of the dot plots with the global and local alignments. Which method (global or local) gave you a clearer understanding of the differences (e.g., indels) between the sequences? How the choice of alignment (local vs. global) impacts the interpretation of the sequence similarities and differences?
+ Compare the results of the dot plots with the global and local alignments. Which method (global or local) gave you a clearer understanding of the differences (e.g., indels) between the sequences? How does the choice of alignment (local vs. global) impact the interpretation of the sequence similarities and differences?
 
 <details>
 <summary>💡 FASTA sequences</summary>
@@ -242,7 +242,7 @@ CGGCATAAATGTAGTTGGCAACGATGGAGCTGAAGGCAAACAGAATAACCACAAG
 </details>
 
 ### Exercise 1.4 - Comparison of HER proteins using dotplot
-compare sequence of HER proteins - Human epidermal growth receptors using dotter program. 
+Compare sequences of HER proteins - Human epidermal growth receptors using dotter program. 
 - download protein sequences of receptor protein-tyrosine kinase from Uniprot:
 
 | accessions | name        |
@@ -253,7 +253,7 @@ compare sequence of HER proteins - Human epidermal growth receptors using dotter
 | O18735     | ERBB2 (Dog) |
 |------------|-------------|
 
-- data for this exercise could  be downloaded from directly from uniprot using the wget command:
+- data for this exercise could be downloaded directly from uniprot using the wget command:
 ```sh 
 mkdir -p ~/data/dotter_sequences
 cd ~/data/dotter_sequences
@@ -274,7 +274,7 @@ seqkit stat *.fasta
 - click on the line and then use arrows to find a good alignment.
 - when you identify match, move along diagonal.
 - compare *ErbB2* with *ErbB2-dog*. Do you see the same pattern? 
-- compare all proteins to all proteins (concatenate all four FASTA file into one sequence using `cat` command)
+- compare all proteins to all proteins (concatenate all four FASTA files into one sequence using `cat` command)
 
 ```sh 
 # selfcomparison:
@@ -294,7 +294,7 @@ Domain structure of *ERBB3* protein:
 ![ERBB3](../fig/ERBB3.png)
 
 ### Exercise 1.5 - comparison of HOX proteins using dotplot
-Download sequence for protein from uniprote, concatenate all HOX protein
+Download sequence for protein from uniprot, concatenate all HOX protein
 sequence into single FASTA file and make all-to-all comparison using dotplot.
 
 ```
@@ -371,11 +371,11 @@ Use a dot plot to compare two large genomic regions and identify structural vari
 cd ~/Desktop/Bioinformatics/data/dotter_sequences/
 dotter genomeA_part.fasta genomeB_part.fasta
 ```
-- How would characterize difference between genomes?
-- For larger sequences, the dot plot may appear "noisy" due to the presence of short repetitive sequences scattered throughout the genome. Identify regions in the dot plot that appear messy or contain many small dots. Zoom into this areas and identify what kind of sequences are causing these 'noise'
+- How would you characterize difference between genomes?
+- For larger sequences, the dot plot may appear "noisy" due to the presence of short repetitive sequences scattered throughout the genome. Identify regions in the dot plot that appear messy or contain many small dots. Zoom into these areas and identify what kind of sequences are causing these 'noise'
 
 ### Exercise 1.10 - Whole genome comparison with `Gepard` program
- *Mycoplasma hyopneumoniae* is a bacterial pathogen that primarily affects pigs, causing enzootic pneumonia, a chronic respiratory disease.The genome of Mycoplasma hyopneumoniae is relatively small can be analyzed using `Gepard` dotplot program. Download genomic sequences of two strains, characterize them with `seqkit` program  and compare them using `Gepard`. You will find shortcut to `Gepard` program on Desktop. 
+ *Mycoplasma hyopneumoniae* is a bacterial pathogen that primarily affects pigs, causing enzootic pneumonia, a chronic respiratory disease. The genome of Mycoplasma hyopneumoniae is relatively small and can be analyzed using `Gepard` dotplot program. Download genomic sequences of two strains, characterize them with `seqkit` program  and compare them using `Gepard`. You will find shortcut to `Gepard` program on Desktop. 
 
 ```txt
 https://zenodo.org/record/4485547/files/mycoplasma-232.fasta
@@ -403,7 +403,7 @@ seqkit stat *.fasta
 - Do you observe any diagonal lines in the dot plot other than the main diagonal? What do these lines indicate about the genomic organization (e.g., inversions, duplications)?
  - Recalculate dotplot with word length 100
  - Are there any regions of divergence (areas with no or few dots) between the two genomes? What could these regions represent (e.g., strain-specific genes, deletions, insertions)?
- - How many deletions in you can observe in strain 232?
+ - How many deletions can you observe in strain 232?
 
 ### Exercise 1.11 - Identification of problems in sequences from SRA database
 
@@ -448,7 +448,7 @@ https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastn&PAGE_TYPE=BlastSearch&LI
 -  `Unknown protein` : http://www.uniprot.org/uniprot/Q8SZW1.fasta
 (Receptor tyrosine-protein kinase erbB-2, Epidermal growth factor receptor)
 
-To download sequences use either web browser of try to use `wget` command in terminal:
+To download sequences use either web browser or try to use `wget` command in terminal:
 ```bash
 mkdir ~/data/erb
 cd ~/data/erb
@@ -465,7 +465,7 @@ wget http://www.uniprot.org/uniprot/Q8SZW1.fasta
 
 - Programs `needle` and `water` are available from command line or from EBI web interface: http://www.ebi.ac.uk/Tools/emboss/
 - Sequences for alignments are located in directory `~/Desktop/bioinformatics/data/alignment_sequences`
-- compare ERB2 (P04626.fasta) vs EGFR (P04412.fasta) using `needle` and then using `water` using command lne programs:
+- compare ERB2 (P04626.fasta) vs EGFR (P04412.fasta) using `needle` and then using `water` using command line programs:
 ```bash
 # command example:
 needle P04626.fasta P04412.fasta
@@ -478,7 +478,7 @@ same programs are also available from web interface:
 - compare ERB2 (P04626.fasta) vs Unknown protein (Q8SZW1.fasta) using `needle` and then using `water`
 - what is difference between local and global alignments?
 - what happened what gap penalty is increased to 20 and extend_penalty to 5 when using local alignment
-- what happened with global alignment if you change `end gap panalty` setting.
+- what happened with global alignment if you change `end gap penalty` setting.
 - by default BLOSUM62 scoring matrix is used, what happend when you use PAM10?
 - compare these protein sequence using `dotter`
 
@@ -500,14 +500,14 @@ Compare two sequences of human Hexokinase and yeast Hexokinase using NCBI blast 
 
 Compare sequences using global and local alignment:
 - For global alignment use: https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastSearch&BLAST_SPEC=GlobalAln
-- For local alignemnt use: https://blast.ncbi.nlm.nih.gov/Blast.cgi?BLAST_SPEC=blast2seq&LINK_LOC=align2seq&PAGE_TYPE=BlastSearch 
+- For local alignment use: https://blast.ncbi.nlm.nih.gov/Blast.cgi?BLAST_SPEC=blast2seq&LINK_LOC=align2seq&PAGE_TYPE=BlastSearch 
 
 Note: Switch to Protein tab!
 
 Describe results of BLAST and answer following questions:
 + Sequence Identity: What is the percent identity between human Hexokinase and yeast Hexokinase?
 + Alignment Coverage: What percentage of the human Hexokinase and yeast Hexokinase sequences is covered by the alignment
-+ Sequence of human Hexokinase is longer that yeast Hexokinase,  explain why is it so. Hint: explore Dot Plot tab in BLAST output.
++ Sequence of human Hexokinase is longer than yeast Hexokinase,  explain why is it so. Hint: explore Dot Plot tab in BLAST output.
 ```text
 >HXK1_HUMAN Hexokinase-1
 MIAAQLLAYYFTELKDDQVKKIDKYLYAMRLSDETLIDIMTRFRKEMKNGLSRDFNPTAT
