@@ -84,11 +84,11 @@ git pull
 
 # Week 5 
 ## Genome assembly
-- [Exercise 2 - Genome Assembly and QC](./sequence_assembly.md#exercise-2---assembly-from-short-ngs-reads-using-velvet-program)
- 
+- [Exercise 2 - Genome Assembly - Short Reads](./sequence_assembly.md#part-1---assembly-using-single-end-short-reads)
+- [Exercise 2 - Genome Assembly - Short Reads](./sequence_assembly.md#part-2---assembly-using-pair-end-short-reads)
 
 # Week 6 
-- [Exercise 2 - Genome Assembly and QC - cont.](./sequence_assembly.md#exercise-2---assembly-from-short-ngs-reads-using-velvet-program)
+- [Exercise 2 - Genome Assembly - Long Reads](./sequence_assembly.md#part-3---assembly-using-long-pacbio-hifi-reads)
 
 # Week 7 
  - Genome Annotation
