@@ -469,7 +469,7 @@ The most important blastp/blastn options:
 
 <details>
 <summary>Details</summary>
-show tabular output in libreoffice
+Tabular output can be easily viewed using spreadsheet software (LibreOffice Calc, MS Excel).
 </details>
 
 

@@ -78,9 +78,6 @@ git pull
 - [Exercise 1.4 - Identification of coding sequence using BLASTX](./blast_search.md/#exercise-14---identification-of-coding-sequence-using-blastx-vs-blastn)
 - [Exercise 1.7 - Identification of mutations in gyrA gene](./blast_search.md/#exercise-17---identification-of-mutations-in-gyrA-gene)
 
-### Using BLAST from command line (optional)
- - [Exercise 2.1](./blast_search.md/#exercise-21)
- - [Exercise 2.2](./blast_search.md/#exercise-22---extract-hits-from-database-and-create-alignment-with-query)
 
 # Week 5 (Oct. 27)
 ## Genome assembly
@@ -88,10 +85,19 @@ git pull
 - [Exercise 2 - Genome Assembly - Short Paired-End Reads](./sequence_assembly.md#part-2---assembly-using-pair-end-short-reads)
 
 # Week 6 (Nov 3)
+## Genome assembly - cont.
 - [Exercise 2 - Genome Assembly - Long Reads](./sequence_assembly.md#part-3---assembly-using-long-pacbio-hifi-reads)
 
+### Using BLAST from command line
+ - [Exercise 2.1](./blast_search.md/#exercise-21)
+ - [Exercise 2.2](./blast_search.md/#exercise-22---extract-hits-from-database-and-create-alignment-with-query)
+
+### Using Galaxy platform
+ - [Introduction to Galaxy](./Introduction_to_Galaxy.md)
+
+
 # Week 7 (Nov 10)
-- Using Galaxy platform
+
 - Chip-Seq, Using IGV
 
 # Week 8 (Nov 24)
