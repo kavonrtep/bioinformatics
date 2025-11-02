@@ -32,7 +32,7 @@ git pull
 cd ~/Desktop/Bioinformatics
 git pull
 ```
-## Recap of dotplotb
+## Recap of dotplot
  - [Excercise A1](./extra_tasks.md#exercise-a1)
 
 ## Dotplots - cont.
@@ -98,7 +98,8 @@ git pull
 
 # Week 7 (Nov 10)
 
-- Chip-Seq, Using IGV
+- [Integrative Genomics Viewer](./Integrative_Genomics_Viewer.org) 
+- [Chip-Seq analysis](./chip_seq_analysis.md)
 
 # Week 8 (Nov 24)
 - Variant calling

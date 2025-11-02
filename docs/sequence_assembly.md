@@ -427,7 +427,9 @@ For genome annotation we will use the Bakta program. Bakta is a rapid and standa
 - go to Galaxy server: https://usegalaxy.eu/
 - upload the file `contigs.fa` to Galaxy
 - search for Bakta tool
-- run Bakta on the uploaded `contigs.fa` file, set Optional annotation -> Keep original contig header to "yes"
+- run Bakta on the uploaded `contigs.fa` file.
+   - set Optional annotation -> Keep original contig header to "yes"
+   - in Selection of the output files select "CDS/sORF amino acid sequences as FASTA"
 - when the job is finished, download the resulting GFF3 annotation file to `pacbio_assembly` directory - name it `Bakta_annotation.gff3`. Download also summary file - name it `Bakta_summary.csv`
 
 <details>
@@ -525,10 +527,10 @@ Count number of genes (CDS features) annotated by Prodigal program in the result
 ```bash
 grep -c "Prodigal" usa300_unique_genes.gff3
 ```
-CDS from Bakta programs does structural annotation of genes using Prodigal program. Functional annotation is done using similarity to known proteins from various databases. Each protein can have assigned Id, Name, Gene ontology terms, Enzyme codes, etc.. We can search for specific functional annotation in the resulting GFF3 file using grep command. For example, to search for genes related to antibiotic resistance, we can search for Gene Ontology term `GO:0046677` which corresponds to "response to antibiotic" (https://amigo.geneontology.org/amigo/term/GO:0046677)
+CDS from Bakta programs does structural annotation of genes using Prodigal program. Functional annotation is done using similarity to known proteins from various databases. Each protein can have assigned Id, Name, Gene ontology terms, Enzyme codes, etc. We can search for specific functional annotation in the resulting GFF3 file using grep command. For example, to search for genes related to antibiotic resistance, we can search for Gene Ontology term `GO:0046677` which corresponds to "response to antibiotic" (https://amigo.geneontology.org/amigo/term/GO:0046677)
 
 ```bash
-grep "GO:0046677" usa300_unique_genes_go_0046677.gff3
+grep "GO:0046677" usa300_unique_genes_go_0046677.gff3 > usa300_unique_genes_go_0046677
 less -S usa300_unique_genes_go_0046677.gff3
 ```
 - How many genes possibly related to antibiotic resistance are present in USA300 genome but absent in NCTC 8325 genome?
