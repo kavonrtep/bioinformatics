@@ -405,18 +405,33 @@ Compare the BUSCO statistics with previous assemblies from Illumina reads. Is th
 
 
 ### Compare USA300 assembly with reference genome of *Staphylococcus aureus* NCTC 8325 strain 
-
-- NCTC 8325 is a well-studied laboratory strain of *Staphylococcus aureus* with a fully sequenced and annotated genome. The reference genome can be downloaded from NCBI at: https://www.ncbi.nlm.nih.gov/assembly/GCF_000013425.1/
-- NCTC 8325 genome file is located in `~/Desktop/Bioinformatics/data/genome_assembly/GCF_000013425.1_ASM1342v1_genomic.fna`
+- NCTC 8325 is a well-studied laboratory strain of *Staphylococcus aureus* with a fully sequenced and annotated genome.
 - USA300 strain is methicillin-resistant Staphylococcus aureus (MRSA) and is genetically distinct from other strains of Staphylococcus aureus. MRSA is responsible for several difficult-to-treat infections in humans.
 - The comparison of the two genomes can provide insights into genetic variations, virulence factors, and antibiotic resistance mechanisms specific to the USA300 strain.
+
+**Option 1** - Download reference genome from NCBI
+- Go to NCBI website: https://www.ncbi.nlm.nih.gov/
+- Search for *Staphylococcus aureus* NCTC 8325
+- In the Taxonomy section look for available genomes
+- Go to genome which is labeled as Reference
+- Inspect download options and download zip file with genomic FASTA file
+- extract the downloaded zip and inspect archive content
+- use `md5sum` program to verify integrity of downloaded files
+
+**Option 2** - Use the reference genome provided in the data directory
+ 
+- The reference genome can be downloaded from NCBI at: https://www.ncbi.nlm.nih.gov/assembly/GCF_000013425.1/
+- NCTC 8325 genome file is located in `~/Desktop/Bioinformatics/data/genome_assembly/GCF_000013425.1_ASM1342v1_genomic.fna`
 
 ```bash
 # make copy of reference genome in pacbio_assembly directory
 cp ~/Desktop/Bioinformatics/data/genome_assembly/GCF_000013425.1_ASM1342v1_genomic.fna .
 ```
+#### Use 
+
+
 Use Gepard program to compare our USA300 assembly with the reference genome using dotplots.
-- What are the major differences between the two genomes according to the dotplot?
+- What are the major differences between the two genomes, according to the dotplot?
 - What is your interpretation of these differences?
 - How can these differences relate to the pathogenicity of USA300 strain?
 

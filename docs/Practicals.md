@@ -92,16 +92,19 @@ git pull
  - [Exercise 2.1](./blast_search.md/#exercise-21)
  - [Exercise 2.2](./blast_search.md/#exercise-22---extract-hits-from-database-and-create-alignment-with-query)
 
+# Week 7 (Nov 10)
+
+## Genome assembly - cont.
+- [Exercise 2 - Genome Assembly - Long Reads](./sequence_assembly.md#part-3---assembly-using-long-pacbio-hifi-reads)
+
 ### Using Galaxy platform
  - [Introduction to Galaxy](./Introduction_to_Galaxy.md)
 
-
-# Week 7 (Nov 10)
-
-- [Integrative Genomics Viewer](./Integrative_Genomics_Viewer.org) 
-- [Chip-Seq analysis](./chip_seq_analysis.md)
+### IGV 
+ - [Integrative Genomics Viewer](./Integrative_Genomics_Viewer.org) 
 
 # Week 8 (Nov 24)
+- [Chip-Seq analysis](./chip_seq_analysis.md)
 - Variant calling
 - Amplicon sequencing
 
