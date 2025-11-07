@@ -8,7 +8,9 @@
 - [Week 4 - NCBI BLAST](./docs/Practicals.md#week-4)
 - [Week 5 - Genome assembly](./docs/Practicals.md#week-5)
 - [Week 6 - Genome assembly - cont.](./docs/Practicals.md#week-6-nov-3)
-- 
+- [Week 7 - Genome assembly - cont.](./docs/Practicals.md#week-8-nov-24)
+
+ 
 ## Course Materials
 
 - [Introduction to shell](./docs/shell_introduction.md)
