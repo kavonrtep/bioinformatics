@@ -533,7 +533,7 @@ Now we can extract genome annotation for genes present in USA300 but absent in N
 grep -E '^(#|ptg)' Bakta_annotation.gff3 > Bakta_annotation_clean.gff3
 
 bedtools intersect -f 1 -a Bakta_annotation_clean.gff3 -b usa300_unique_regions.bed > usa300_unique_genes.gff3
-````
+```
 Note: option -f 1 ensures that only features completely contained within the unique regions are selected.
 
 
@@ -542,10 +542,10 @@ Count number of genes (CDS features) annotated by Prodigal program in the result
 ```bash
 grep -c "Prodigal" usa300_unique_genes.gff3
 ```
-CDS from Bakta programs does structural annotation of genes using Prodigal program. Functional annotation is done using similarity to known proteins from various databases. Each protein can have assigned Id, Name, Gene ontology terms, Enzyme codes, etc. We can search for specific functional annotation in the resulting GFF3 file using grep command. For example, to search for genes related to antibiotic resistance, we can search for Gene Ontology term `GO:0046677` which corresponds to "response to antibiotic" (https://amigo.geneontology.org/amigo/term/GO:0046677)
+Bakta program does structural annotation of genes using Prodigal program. Functional annotation is done using similarity to known proteins from various databases. Each protein can have assigned Id, Name, Gene ontology terms, Enzyme codes, etc. We can search for specific functional annotation in the resulting GFF3 file using grep command. For example, to search for genes related to antibiotic resistance, we can search for Gene Ontology term `GO:0046677` which corresponds to "response to antibiotic" (https://amigo.geneontology.org/amigo/term/GO:0046677)
 
 ```bash
-grep "GO:0046677" usa300_unique_genes_go_0046677.gff3 > usa300_unique_genes_go_0046677
+grep "GO:0046677" usa300_unique_genes.gff3 > usa300_unique_genes_go_0046677.gff3
 less -S usa300_unique_genes_go_0046677.gff3
 ```
 - How many genes possibly related to antibiotic resistance are present in USA300 genome but absent in NCTC 8325 genome?
@@ -557,7 +557,7 @@ less -S usa300_unique_genes_go_0046677.gff3
 - there are genes located on plasmid but these are not related to methicillin resistance but to resistance to other antibiotic
 - for methicillin resistance look for gene with Name "mecA", "mecR1"
 - they are located on chromosome  in uniq locus in `ptg00002l:2824915-2836633`
-
+- Not all annotated genes have Gene Ontology terms assigned, so searching by GO terms may miss some relevant genes. More detailed analysis of gene functions may require additional annotation or literature review.
 </details>
 
 
