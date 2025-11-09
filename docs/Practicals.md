@@ -101,7 +101,7 @@ git pull
  - [Introduction to Galaxy](./Introduction_to_Galaxy.md)
 
 ### IGV 
- - [Integrative Genomics Viewer](./Integrative_Genomics_Viewer.org) 
+ - [Integrative Genomics Viewer](./Integrative_Genomics_Viewer.md) 
 
 # Week 8 (Nov 24)
 - [Chip-Seq analysis](./chip_seq_analysis.md)
