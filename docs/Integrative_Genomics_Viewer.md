@@ -104,6 +104,14 @@ Set bookmarks for interesting genomic regions by clicking on "Region" > "Region 
 
 Bookmarked regions can be exported and imported using BED format.
 
+### Exploring other IGV functions
+Try changing 
+- track colors
+- track density (collapsed, squished, expanded)
+- grouping by strand
+- zooming to nucleotide level, see translation of coding sequences
+- switching between forward and reverse strand
+
 # Create custom track for IGV using NCBI BLAST
 
 find region of interest in `genome.fa` which correspond to sequences:
@@ -144,3 +152,5 @@ blastn -query query.fasta -db genome.fa -outfmt '6 sseqid sstart send qseqid pid
 ```
 
 File `regions.bed` can be either loaded as track (`File/Load from File`) or from  `Regions` menu. Try both ways
+
+How many regions were found by BLAST for each query sequence?
