@@ -202,12 +202,11 @@ Your task will be to map ChIP and Input sequences to a genome assembly to identi
       - **Command:** Open Gepard and load the `enriched_sequences.fasta` file to generate the dot plot.
    3. **Generate more detailed dot plot with dotter:**
       - **Tool:** *Dotter*
-      - **Description:** Use Dotter to create a more detailed dot plot of the extracted sequences to visualize similarities and repetitive structures within enriched regions. Dotter does not handle large sequences well, so if needed, extract smaller regions from `enriched_sequences.fasta` using Seqkit.
+      - **Description:** Use Dotter to create a more detailed dot plot of the extracted sequences to visualize similarities and repetitive structures within enriched regions. Dotter does not handle large sequences well, so we need to extract smaller regions from `enriched_sequences.fasta` using Seqkit.
       ```bash
       seqkit subseq -r 1:5000 enriched_sequences.fasta -o enriched_region1.fasta  
       # the above command extracts first 5000 bases from the first sequence in enriched_sequences.fasta
       dotter enriched_region1.fasta enriched_region1.fasta
-      
       ```
    4. **Interpret the Dot Plots:**
    - What is your interpretation of the dot plot?
