@@ -143,13 +143,13 @@ Your task will be to map ChIP and Input sequences to a genome assembly to identi
 
 1. **Prepare Files for IGV:** Prepare all necessary files for loading into IGV, which will allow for visualization of ChIP-seq results alongside annotations.
 
-> Note : Files are downloaded automatically to your default download folder. Bevore using them in IGV make sure that they have proper names as described below. If needed, rename them.
+> Note : Files are downloaded automatically to your default download folder. Before using them in IGV make sure that they have proper names as described below. If needed, rename them. Alternatively, right click on downloaded icons in your browser and choose "Save as..." to save them with proper names directly to desired folder.
 
    - **Files to Load:**
      - **Genome Assembly:** FASTA file. Save it as `genome.fasta`
      - **BAM Files:** ChIP and Input sorted BAM files. 
-     > Note This step is optional but recommended for detailed inspection of read alignments. When downloading BAM files from Galaxy, ensure to also download the corresponding index files with the `.bai` extension. For correct visualization in IGV, both the BAM file and its index file must be present in the same directory and name the index files as `chip.bam.bai` and `input.bam.bai` respectively
-     - **bedGraph File:** Output from bamCompare.
+     > Note : This step is optional but recommended for detailed inspection of read alignments. When downloading BAM files from Galaxy, ensure to also download the corresponding index files with the `.bai` extension. For correct visualization in IGV, both the BAM file and its index file must be present in the same directory and name the index files as `chip.bam.bai` and `input.bam.bai` respectively
+     - **bedGraph File:** Output from bamCompare. Name it `chip_vs_input.bedGraph`
      - **BED File:** Output from MACS2 tool, save it as `enriched_regions.bed`
      - **Annotations:** Gene and tandem repeat annotation GFF files (already available in the folder described above).
 
@@ -190,7 +190,7 @@ Your task will be to map ChIP and Input sequences to a genome assembly to identi
 
    1. **Extract Sequences with Seqkit:**
       - **Tool:** *Seqkit*
-      - **Command:** Use the following command to extract sequences from the regions identified by MACS2:
+      - **Command:** Use the following command to extract sequences from the regions identified by MACS2. Run following command in directory where `genome.fasta` and `enriched_regions.bed` are located:
         ```bash
         seqkit subseq --bed enriched_regions.bed genome.fasta -o enriched_sequences.fasta
         ```
@@ -200,5 +200,19 @@ Your task will be to map ChIP and Input sequences to a genome assembly to identi
       - **Tool:** *Gepard*
       - **Description:** Use Gepard to create a dot plot of the extracted sequences to visualize similarities and repetitive structures within enriched regions.
       - **Command:** Open Gepard and load the `enriched_sequences.fasta` file to generate the dot plot.
-   3. **Interpret the Dot Plot:** What is your interpretation of the dot plot? Is there one type of satellite sequence or multiple types? What is the monomer size of tandem repeat(s) associated with the centromere?
+   3. **Generate more detailed dot plot with dotter:**
+      - **Tool:** *Dotter*
+      - **Description:** Use Dotter to create a more detailed dot plot of the extracted sequences to visualize similarities and repetitive structures within enriched regions. Dotter does not handle large sequences well, so if needed, extract smaller regions from `enriched_sequences.fasta` using Seqkit.
+      ```bash
+      seqkit subseq -r 1:5000 enriched_sequences.fasta -o enriched_region1.fasta  
+      # the above command extracts first 5000 bases from the first sequence in enriched_sequences.fasta
+      dotter enriched_region1.fasta enriched_region1.fasta
+      
+      ```
+   4. **Interpret the Dot Plots:**
+   - What is your interpretation of the dot plot?
+   - Is there one type of satellite sequence or multiple types?
+   - What is the monomer size of tandem repeat(s) associated with the centromere?
+   - Are all monomers identical, or is there sequence variation among them?
+   - Is orientation of monomers the same or different?
 
