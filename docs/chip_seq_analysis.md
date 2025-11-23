@@ -215,3 +215,5 @@ Your task will be to map ChIP and Input sequences to a genome assembly to identi
    - Are all monomers identical, or is there sequence variation among them?
    - Is orientation of monomers the same or different?
 
+
+> NOTE : Complete Galaxy history with all steps is available at https://usegalaxy.eu/u/petr_novak/h/chip-seq-cenh3-analysis-2025
