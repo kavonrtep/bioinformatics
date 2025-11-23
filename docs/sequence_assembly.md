@@ -463,6 +463,8 @@ We will compare two genome sequences using BLASTN program to identify genomic fe
 
 ![workflow](./interval_handling.webp)
 
+First we will run BLASTN of USA300 assembly contigs against NCTC 8325 genome to identify regions in USA300 genome that have significant similarity to NCTC 8325 genome.
+
 ```bash
 # create BLAST database from NCTC 8325 genome
 makeblastdb -in GCF_000013425.1_ASM1342v1_genomic.fna -dbtype nucl
@@ -561,8 +563,6 @@ less -S usa300_unique_genes_go_0046677.gff3
 - they are located on chromosome  in uniq locus in `ptg00002l:2824915-2836633`
 - Not all annotated genes have Gene Ontology terms assigned, so searching by GO terms may miss some relevant genes. More detailed analysis of gene functions may require additional annotation or literature review.
 </details>
-
-
 
 # How to make assembly on Metacentrum
 

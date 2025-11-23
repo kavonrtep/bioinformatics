@@ -16,7 +16,7 @@ Your task will be to map ChIP and Input sequences to a genome assembly to identi
   - **Genome Assembly (FASTA):** Partial assembly representing a 177.6 Mb region of chromosome 6 of *Pisum sativum*, including its 81.6 Mb centromere and adjacent chromosome arms.
   - **ChIP Sequences (FASTQ):** Sequenced reads obtained using CENH3 antibody.
   - **Input Sequences (FASTQ):** Control sequenced reads without antibody enrichment.
-- **Additional Resources (Available on Student Desktops):**
+- **Additional Resources (Available on `~/Desktop/Bioinformatics/data/chip_seq_cenh3`):**
   - **Gene Annotation (GFF):** `genes_jon_220520.gff`
   - **Tandem Repeat Annotation (GFF):** `tandem_repeats_curated_track_220419.gff`
 - **Visualization Tool:** **IGV** (Already installed on your computer)
@@ -112,7 +112,7 @@ Your task will be to map ChIP and Input sequences to a genome assembly to identi
 
 #### **Step 4: ChIP vs. Input Comparison**
 
-1. **Compare BAM Files with bamCompare:** bamCompare calculates the log2 ratio of ChIP and Input coverage, helping identify genomic regions enriched for CENH3 binding.
+1. **Compare BAM Files with bamCompare:** bamCompare calculates the log2 ratio of ChIP and Input coverage, helping identify genomic regions enriched for CENH3 binding. (https://deeptools.readthedocs.io/en/develop/content/tools/bamCompare.html)
 
    - **Tool:** *bamCompare* (from deepTools)
    - **Description:** This tool is used to compare two BAM files, typically a treatment and a control, by calculating the log2 ratio of their coverage. This allows visualization of regions enriched in the treatment compared to the control.
@@ -121,16 +121,11 @@ Your task will be to map ChIP and Input sequences to a genome assembly to identi
      - **Control File:** Input sorted BAM file.
      - **Bin Size:** **5000** bases.
      - **Operation:** **log2 ratio (ChIP/Input)**
-     - **Output Format:** BigWig file.
+     - **Output Format:** BedGraph file.
      - **Other Parameters:** Use defaults unless specified.
 
-2. **Convert BigWig to BedGraph:** This tool is used to convert BigWig format files to BedGraph format, which is a more accessible format for downstream analysis and visualization of coverage data.
 
-   - **Tool:** *bigWigToBedGraph*
-   - **Input:** BigWig file from bamCompare
-   - **Output:** BedGraph format file for further analysis
-
-3. **Select Enriched Regions with MACS2 Broadpeakcall:** MACS2 is used to call broad peaks in the data, identifying regions of significant enrichment that are likely associated with CENH3.
+2. **Select Enriched Regions with MACS2 Broadpeakcall:** MACS2 is used to call broad peaks in the data, identifying regions of significant enrichment that are likely associated with CENH3.
 
    - **Tool:** *MACS2 Broadpeakcall*
    - **Input:** BedGraph from previous step
@@ -148,10 +143,13 @@ Your task will be to map ChIP and Input sequences to a genome assembly to identi
 
 1. **Prepare Files for IGV:** Prepare all necessary files for loading into IGV, which will allow for visualization of ChIP-seq results alongside annotations.
 
+> Note : Files are downloaded automatically to your default download folder. Bevore using them in IGV make sure that they have proper names as described below. If needed, rename them.
+
    - **Files to Load:**
      - **Genome Assembly:** FASTA file. Save it as `genome.fasta`
-     - **BAM Files:** ChIP and Input sorted BAM files.
-     - **BigWig File:** Output from bamCompare.
+     - **BAM Files:** ChIP and Input sorted BAM files. 
+     > Note This step is optional but recommended for detailed inspection of read alignments. When downloading BAM files from Galaxy, ensure to also download the corresponding index files with the `.bai` extension. For correct visualization in IGV, both the BAM file and its index file must be present in the same directory and name the index files as `chip.bam.bai` and `input.bam.bai` respectively
+     - **bedGraph File:** Output from bamCompare.
      - **BED File:** Output from MACS2 tool, save it as `enriched_regions.bed`
      - **Annotations:** Gene and tandem repeat annotation GFF files (already available in the folder described above).
 
@@ -163,9 +161,9 @@ Your task will be to map ChIP and Input sequences to a genome assembly to identi
      - **Select:** The genome assembly FASTA file.
    - **Load Data Tracks:**
      - **Menu:** *File* > *Load from File...*
-     - **Select:** ChIP and Input BAM files.
-     - **Select:** BigWig file from bamCompare.
-     - **Select:** Gene annotation and tandem repeat GFF files.
+     - **Select:** ChIP and Input BAM files. (Optional)
+     - **Select:** bedGraph file from bamCompare.
+     - **Select:** Gene annotation and tandem repeat GFF files.  (Located in `~/Desktop/Bioinformatics/data/chip_seq_cenh3`)
 
 ---
 
