@@ -6,6 +6,7 @@ You will compare the identified CENH3-associated regions with existing gene anno
 
 Your task will be to map ChIP and Input sequences to a genome assembly to identify CENH3-associated regions. Explore the types of sequences associated with CENH3 regions in *Pisum sativum* and investigate their characteristics.
 
+[Slides](./chip-seq_cenh3.pdf)
 
 ---
 
