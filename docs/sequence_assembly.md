@@ -459,7 +459,9 @@ cp ~/Desktop/Bioinformatics/data/genome_assembly/Bakta_summary.csv .
 
 ### Identification of genomic features present in USA300 assembly but absent in NCTC 8325 reference genome
 
-We will compare two genome sequences using BLASTN program to identify genomic features present in USA300 assembly but absent in the NCTC 8325 reference genome.
+We will compare two genome sequences using BLASTN program to identify genomic features present in USA300 assembly but absent in the NCTC 8325 reference genome. Complete workflow is shown in the figure below:
+
+![workflow](./interval_handling.webp)
 
 ```bash
 # create BLAST database from NCTC 8325 genome
