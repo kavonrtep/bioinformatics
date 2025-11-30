@@ -14,14 +14,14 @@ Human Immunodeficiency Viruses (HIV-1 and HIV-2) are closely related to Simian I
 ### Step-by-Step Guide 
 
 #### 1. Sequence Alignment with MAFFT 
-**MAFFT**  is used to create a multiple sequence alignment of HIV and SIV DNA sequences. Data for alignment are located in `~/Desktop/Bioinformatics/data/phylogenetic
-/HIV_sequences.fasta`
-`
+**MAFFT**  is used to create a multiple sequence alignment of HIV and SIV DNA sequences. Data for alignment are located in `~/Desktop/Bioinformatics/data/phylogenetic/HIV_sequences.fasta`
+
 
 ```bash
 cd
-mkdir hiv_dentist
-cd hiv_dentist
+mkdir hiv_origin
+cd hiv_origin
+cp ~/Desktop/Bioinformatics/data/phylogenetic/HIV_sequences.fasta .
 mafft --auto HIV_sequences.fasta > HIV_sequences_aligned.fasta
 ```
 
