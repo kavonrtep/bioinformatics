@@ -107,6 +107,7 @@ Use Phyml-SMS program with default settings. This script runs SMS to select the 
 
 <details>
 <summary>PhyML-SMS results interpretation</summary>
+
 ## Interpreting the Smart Model Selection (SMS) Output
 
 The goal of SMS is to choose the substitution model that best fits your alignment. It compares many models and picks the one with the lowest AIC (Akaike Information Criterion). Lower AIC = better fit with fewer assumptions.
