@@ -106,10 +106,11 @@ git pull
 - Optional: [Integrative Genomics Viewer](./Integrative_Genomics_Viewer.md) 
 
 # Week 9 (Dec 1)
-Creating phylogenetic tree
-  - Exercise 1 - Comparison of phylogenetic trees based on amino acid and nucleotide sequences of ubiquitin gene
-  - Exercise 2 - The case of the Florida dentist
-  - Exercies 3 - Origin of HIV
+
+## Creating phylogenetic tree
+  - [Exercise 1 - Comparison of phylogenetic trees based on amino acid and nucleotide sequences of ubiquitin gene](./ubiquitin_tree_example.md#comparison-of-phylogenetic-trees-based-on-amino-acid-and-nucleotide-sequences-of-ubiquitin-gene)
+  - [Exercise 2 - The case of the Florida dentist](./florida_case_dentist.md#the-case-of-the-florida-dentist)
+  - [Exercies 3 - Origin of HIV](./origin_of_hiv.md)
 
 # Week 10 (Dec 8)
 - Structural bioinformatics, AlphaFold
