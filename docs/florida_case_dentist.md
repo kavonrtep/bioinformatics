@@ -85,12 +85,7 @@ This defines the “normal” genetic distance between unrelated HIV cases in Fl
 
 #### The key signal (Dentist vs Patients)
 
-Top-left corner shows the relevant comparisons: Dentist vs Patients A, B, C, E.
-
-Examples:
--   **Dentist–A:** 1.93
--   **Dentist–C:** 3.58
--   **Dentist–E:** 3.72
+Top-left corner shows the relevant comparisons: Dentist vs Patients A, B, C, E, G.
 
 These values are dramatically lower than background. The chance of seeing distances this small by coincidence is effectively zero. The data support a direct transmission link between the dentist and these patients.
 
@@ -99,12 +94,8 @@ These values are dramatically lower than background. The chance of seeing distan
 Patients D, F, and H show distances in the 11–15% range relative to the dentist—indistinguishable from random controls.  
 These infections are unrelated to the dentist despite the shared clinic visit.
 
-#### The borderline case (Patient G)
 
-Patient G sits around 10–12% distance from the dentist.  
-Not close enough to join the cluster, not far enough to dismiss outright. 
-
-Overall the matrix supports a coherent transmission cluster: Dentist + Patients A, B, C, E.
+Overall the matrix supports a coherent transmission cluster: Dentist + Patients A, B, C, E, G 
     
 </details>
 
