@@ -45,7 +45,7 @@ Ignores distances and only shows branching order. It may impose structure where 
 **Radial phylogram:**  
 For protein data, expect a star-like pattern—just another way of displaying a polytomy.
 
-### Summary for students
+### Summary
 
 **When to use DNA:**  
 For closely related species or highly conserved genes. Silent mutations provide the needed signal.
