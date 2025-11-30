@@ -39,12 +39,12 @@ Inspect the alignment using **Jalview** to ensure quality and make any necessary
   - Select and upload `HIV_sequences_aligned.fasta`.
   - In the tools panel, search for **PhyML-SMS** .
   - Select the **PhyML-SMS**  tool from the search results.
-  - Configure PhyML-SMS Parameters** : 
+  - **Configure PhyML-SMS Parameters** : 
      - **Alignment file** : `HIV_sequences_aligned.fasta`
      - **Data type** : DNA
      - Other parameters - default
  
-> Note : PhyML-SMS may take longer time to finish depending on the number of sequences. Backup of the precomputed results is avalable in Galaxy history: https://galaxy.pasteur.fr/u/petrnovak/h/origin-of-hiv
+> Note : PhyML-SMS may take longer time to finish depending on the number of sequences. Backup of the precomputed results is available in Galaxy history: https://galaxy.pasteur.fr/u/petrnovak/h/origin-of-hiv
  
 #### 4. Inspect output from PhyML-SMS
 
@@ -71,7 +71,7 @@ find searchtext='HIV-2' target=nodes regex=true;set labelcolor=#00AA00;deselect 
 
 
 
-<details>summary>Solution</summary>
+<details><summary>Solution</summary>
 
 ![hiv_tree_dendroscope](./img/hiv_origin.png)
 
