@@ -98,6 +98,8 @@ These infections are unrelated to the dentist despite the shared clinic visit.
 Overall the matrix supports a coherent transmission cluster: Dentist + Patients A, B, C, E, G 
     
 </details>
+<hr>
+
 
 5. Construct a phylogenetic tree using the MSA file. Use the PhyML program on Galaxy server. Server is available at https://galaxy.pasteur.fr
 
