@@ -59,7 +59,7 @@ distmat -sequence hiv_env_aligned_trimmed.fna -nucmethod 1 -outfile hiv_env_trim
 4. Import the distance matrix to LibreOffice Calc or Excel and visualize it as a heatmap using conditional formatting. Set conditional formatting to color cells based on value. What do you observe? Evaluate the distances between the dentist, patients, and control sequences and outgroup. What can you infer from the distance matrix?
 
 <details>
-<summary>Example of distance matrix</summary>
+<summary>Example of distance matrix and interpretation</summary>
 
 ![hiv_distance_matrix](./img/dist_matrix.png)
 
@@ -103,9 +103,55 @@ Overall the matrix supports a coherent transmission cluster: Dentist + Patients 
 
 5. Construct a phylogenetic tree using the MSA file. Use the PhyML program on Galaxy server. Server is available at https://galaxy.pasteur.fr
 
-Use Phyml-SMS program with default settings. This script runs SMS to select the substitution model which best fits the input data. It also runs PhyML with the selected model.
+Use Phyml-SMS program with default settings. This script runs SMS to select the substitution model which best fits the input data. Then is runs PhyML with the selected model.
 
-6. Download tree file in Newick format and visualize it using Dendroscopeprogram. Alternatively tree can be visualized using web-based Presto tool http://www.atgc-montpellier.fr/presto/
+<details>
+<summary>PhyML-SMS results interpretation</summary>
+## Interpreting the Smart Model Selection (SMS) Output
+
+The goal of SMS is to choose the substitution model that best fits your alignment. It compares many models and picks the one with the lowest AIC (Akaike Information Criterion). Lower AIC = better fit with fewer assumptions.
+
+### What SMS evaluated
+
+SMS tested different combinations of:
+-   **Substitution model** (e.g., GTR, TN93)
+-   **Rate variation** across sites (e.g., +G = gamma distribution, +I = invariant sites)
+-   **Other parameters** such as the number of rate categories K
+
+It then reports likelihood scores, AIC, and BIC for each tested model.
+
+### What SMS selected
+
+SMS chose:
+
+**Selected model: GTR + G**
+
+Meaning:
+
+-   **GTR (General Time Reversible)**: the most flexible DNA substitution model; each nucleotide substitution type can have its own rate.
+-   **+G (Gamma rate variation)**: different sites in the alignment evolve at different speeds. Gamma captures this heterogeneity.
+-   **Number of categories:** 4 (standard discretization)
+-   **Proportion of invariant sites:** fixed to 0 in SMS’s final evaluation (model simplification)
+-   **Gamma shape parameter:** ~0.855 (low values mean many slow sites and a few fast-evolving sites)
+    
+### Why GTR+G was chosen
+
+Looking at the table:
+
+| Model       | AIC                  |
+|-------------|----------------------|
+| **GTR + G** | **4289.97** (lowest) |
+| GTR + G + I | 4291.97              |
+| TN93 + G    | 4314.93              |
+| GTR         | 4357.38              |
+
+GTR+G has the **lowest AIC**, meaning it explains the alignment well without unnecessary complexity.  
+Models with +I didn't improve the fit enough to justify the extra parameter.
+
+</details>
+<hr>
+
+6. Download tree file in Newick format and visualize it using Dendroscope program. Alternatively tree can be visualized using web-based Presto tool http://www.atgc-montpellier.fr/presto/
 
 7. Use command tool to color dentist, patients, and control sequences in the tree. Use the following command:
 
