@@ -167,3 +167,41 @@ find searchtext='Control' target=nodes regex=true;set labelcolor=#0000AA;deselec
    - What can you infer from the phylogenetic tree about the origin of the HIV sequences in the dentist and patients?
    - Which patients are most likely to have contracted the virus from the dentist if any?
    - Is divergence in control sequences higher than in the dentist and patients?
+   - Compare the results with other information about the patients (if available). Do the results make sense in the context of the patients' demographics and epidemiological data?
+
+
+<details><summary>Example of phylogenetic tree and interpretation</summary>
+
+![hiv_phylogenetic_tree](./img/hiv_tree.png)
+
+#### Understanding the Anatomy of the Tree
+- The Horizontal Branch Lengths (Genetic Distance):
+   - The length of the horizontal lines represents the number of substitutions per site. 
+   - Long Branches: Look at the bottom line leading to isolate_ELI (the African outgroup). It is extremely long. This means the virus has accumulated a massive number of mutations separating it from the Florida cluster. This confirms it is a distant relative. 
+   - Short Branches: Look at the cluster containing Dentist_s2, Dentist_s3, and PatientE. The lines are very short. This implies very little evolution has occurred between these samples, suggesting the transmission event happened recently.
+
+- The Edge Values (aLRT Support):
+   - The numbers you see at the branching points (nodes) are not distances. They are statistical confidence values (specifically, approximate Likelihood Ratio Test values).
+   - Range: They range from 0 to 1 (or 0 to 100%).
+   - Interpretation: An aLRT value tells you: "How much better is this specific branching arrangement compared to other possible arrangements?"
+   - Example: Look at the node connecting PatientC and Dentist_s1. The value is 0.923. This means the statistical model is 92.3% confident that these two sequences cluster together to the exclusion of others. Values above 0.7 or 0.8 are generally considered "well-supported."
+
+#### The Forensic Conclusion: Monophyly vs. Polyphyly
+- The "Dental Clade" (The Monophyletic Group):
+   - Follow the branches for the Dentist isolates (Red). You will see that Dentist_s1, s2, and s3 form a tight cluster (a "clade") mixed specifically with Patients A, B, C, E, and G.
+   - This is called Monophyly. In forensic terms, this indicates a Single Source of Infection. The virus did not jump randomly; it radiated from a single origin point.
+
+
+- The "Community Infections" (The Polyphyletic Group):
+  - Look at Patients D, F, and H. They are not in the dentist's cluster.
+  - Patient H is way up at the top, branching off on their own near Control_8.
+  - Patient F is grouped near Control_6.
+
+This visualizes what we saw in the matrix: These patients acquired HIV from the general "background" population in Florida, not from the dentist.
+
+#### Summary
+This tree provides strong statistical evidence supporting the "Florida Dentist" hypothesis for specific patients.
+Topological Evidence: The grouping of the Dentist with Patients A, B, C, E, and G is distinct from the controls.
+Statistical Evidence: The high aLRT values (e.g., 0.923, 0.844, 0.768) confirm that this grouping is not a random artifact of the data.
+
+</details>
