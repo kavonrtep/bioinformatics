@@ -32,7 +32,7 @@ CT
 >  Note: AlphaFold predictions can take from minutes to hours depending on server load.It provide zip file with 5 best model in mmCIF. Some tools require PDB format. This can be obtained by conversion from mmCIF on https://project-gemmi.github.io/wasm/convert/cif2pdb.html 
 - Alternatively, you can download the structure directly from the link below:
   - https://drive.google.com/drive/folders/1tYiYlAWAtlc3gXz8w_WYushtdwatg1ZT?usp=sharing
-  - there are two files, one in PDB format and one in mmCIF format. Download both of themL
+  - There are two files, one in PDB format and one in mmCIF format. Download both of them:
      - `fold_glycp_nipav_model_0.cif`
      - `fold_glycp_nipav_model_0.pdb`
 
