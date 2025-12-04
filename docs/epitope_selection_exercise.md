@@ -6,7 +6,7 @@ A new strain of Nipah Virus has emerged. Your team needs to rapidly identify sur
 
 ---
 
-## Phase 1: Structure Prediction (The "What does it look like?" Step)
+## 1. Structure Prediction
 
 We need the 3D structure of the viral surface protein to understand where antibodies can bind. Since this is a "novel" strain, we assume no crystal structure exists yet.
 
@@ -44,7 +44,7 @@ CT
 
 Low pLDDT often correlates with natural disorder, not just "bad prediction."
 
-## Phase 2: Disorder Analysis (The "Where is it flexible?" Step)
+## 2. Disorder Analysis
 
 Antibodies often bind better to flexible loops on the protein surface (induced fit) rather than rigid, flat surfaces. We need to find these "wobbly" bits.
 
@@ -58,7 +58,7 @@ Antibodies often bind better to flexible loops on the protein surface (induced f
 
 ---
 
-## Phase 3: Identification of suitable Epitopes (The "Where can we target?" Step)
+## 3. Identification of suitable Epitopes 
 
 ### Guidelines for Selecting Epitopes for Antibody Generation
 **Best to Worst Structural Targets:**
@@ -70,7 +70,9 @@ Antibodies often bind better to flexible loops on the protein surface (induced f
 - **Avoid beta-sheets** – Beta-strands are stabilized by hydrogen bonding with neighboring strands. A single peptide extracted from a beta-sheet context will collapse or aggregate and won't represent the native structure.
 - Protruding geometry works better than flat surfaces – Antibodies bind more effectively to "bumps" or projecting features than to flat surfaces. Look for regions that stick out from the protein structure.
 
-To select potential epitop we will use D[DiscoTope 3.0]https://services.healthtech.dtu.dk/services/DiscoTope-3.0/, which predicts discontinuous B-cell epitopes from 3D structures.
+A suitable epitope length for antibody design is generally 10-20 amino acids, with 15 residues often recommended as a good starting point for linear peptides.
+
+To select potential epitop we will use [DiscoTope 3.0](https://services.healthtech.dtu.dk/services/DiscoTope-3.0/), which predicts discontinuous B-cell epitopes from 3D structures.
 
 
 - Go to DiscoTope 3.0: https://services.healthtech.dtu.dk/services/DiscoTope-3.0/
@@ -82,26 +84,30 @@ To select potential epitop we will use D[DiscoTope 3.0]https://services.healthte
 - Find a region that is:
   - **Red/High Score** in DiscoTope (Good epitope)
   - **Surface Exposed** (Visible on the outside)
-  - **Flexible** (Correlates with your IUPred peaks, low pLDDT from AlphaFold)
+  - Use guidelines above to pick the best candidate epitope (10-20 residues).
 
 ---
 
-## Phase 4: Glycosylation Site Analysis (The "Is it hidden by sugars?" Step)
+## 4. Glycosylation Site Analysis
 
 A great epitope is useless if it's covered in sugars (glycans) that block antibodies.
 
-**Tool:** NetNGlyc (Predicts N-linked glycosylation sites).
+- Use tools NetNGlyc to predict N-linked glycosylation sites on your selected epitope. [NetNGlyc](https://services.healthtech.dtu.dk/services/NetNGlyc-1.0/)
+- NetNGlyc predicts N-linked glycosylation sites in human proteins using artificial neural networks that examine the sequence context of Asn-Xaa-Ser/Thr motifs (where Xaa can be any amino acid except Proline).
+- Use the FASTA sequence of the Nipah Virus Glycoprotein (from Phase 1) as input.
+- Record any predicted N-glycosylation sites within your chosen epitope region.
+- Check if your chosen "best epitope" region(s) contains predicted glycosylation sites. If so, reconsider your choice and select an alternative epitope that is not glycosylated
+- Open csv file from DiscoTope output in spreadsheet software (Excel, LibreOffice Calc) and compare with glycosylation sites.
 
-### Task:
-
-Check if your chosen "best epitope" region contains an N-X-S/T motif. If it does, the virus might be using sugars to hide that spot from your antibody!
+> Note: Many pathogens, like the HIV virus, cover themselves with a dense layer of glycans to act as a shield, hiding their vulnerable parts from the immune system.
 
 ---
 
-## Final Output
+- When modeling structure with Alphafold, it is possible to add post-translational modifications including glycosylation. Model with glycosylated sites can be downloaded from: https://drive.google.com/drive/folders/1tYiYlAWAtlc3gXz8w_WYushtdwatg1ZT?usp=sharing
+- File name: `fold_nipav_with_glycosylated_model_0.cif`
+- Download and open it in Mol* Viewer (https://molstar.org/viewer) to visualize glycosylated sites on the structure.
 
-The student must propose a specific peptide sequence (e.g., "Residues 450-465") as the best candidate for a vaccine, justifying it with:
 
-- **Structural** (AlphaFold) evidence
-- **Dynamic** (IUPred) evidence
-- **Immunogenic** (DiscoTope) evidence
+## 5. Final Epitope Selection
+
+Based on your analyses from Phases 1-4, select the best epitope region for antibody or vaccine design. Justify your choice.
