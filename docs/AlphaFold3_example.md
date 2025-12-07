@@ -80,6 +80,8 @@ https://services.healthtech.dtu.dk/services/DeepTMHMM-1.0/
 
 [https://alphafoldserver.com/](https://alphafoldserver.com/)
 
+AlphaFold Server require Google account to login. The prediction can take from minutes to hours depending on server load. It provides a zip file with 5 best models in mmCIF format. Some tools require PDB format. This can be obtained by conversion from mmCIF on https://project-gemmi.github.io/wasm/convert/cif2pdb.html. The results from AlphaFold 3 are provided here for download to save time - see the links in each part below. These files can be opened directly in Mol* and contain pLDDT scores but not the PAE plot. The PAE plots are provided as images in each part.
+
 ---
 
 ### Learning Objectives
