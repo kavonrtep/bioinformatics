@@ -116,7 +116,7 @@ git pull
 - [Uniprot, PDB, AlphaFoldDB](./pdb_database.md)
 - [Mol* Viewer](./molstar.md)
 - [Using structure prediction](./epitope_selection_exercise.md)
-- [Example of using AlphaFold server]
+- [Example of using AlphaFold server](AlphaFold3_example.md)
 
 # Week 11
 - Credit test
