@@ -74,6 +74,9 @@ Antibodies often bind better to flexible loops on the protein surface (induced f
 
 A suitable epitope length for antibody design is generally 10-20 amino acids, with 15 residues often recommended as a good starting point for linear peptides.
 
+![epitope](./img/epitope.png)
+
+
 To select potential epitopes we will use [DiscoTope 3.0](https://services.healthtech.dtu.dk/services/DiscoTope-3.0/), which predicts discontinuous B-cell epitopes from 3D structures.
 
 

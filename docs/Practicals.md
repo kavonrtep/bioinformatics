@@ -113,7 +113,10 @@ git pull
   - [Exercies 3 - Origin of HIV](./origin_of_hiv.md)
 
 # Week 10 (Dec 8)
-- Structural bioinformatics, AlphaFold
+- [Uniprot, PDB, AlphaFoldDB](./pdb_database.md)
+- [Mol* Viewer](./molstar.md)
+- [Using structure prediction](./epitope_selection_exercise.md)
+- [Example of using AlphaFold server]
 
 # Week 11
 - Credit test

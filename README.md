@@ -11,6 +11,7 @@
 - [Week 7 - Genome assembly - cont.](./docs/Practicals.md#week-7-nov-10)
 - [Week 8 - ChiP Seq analysis](./docs/Practicals.md#week-8-nov-24)
 - [Week 9 - Molecular phylogenetics](./docs/Practicals.md#week-9-dec-1)
+- [Week 10 - Protein structure prediction](./docs/Practicals.md#week-10-dec-8)
 
  
 ## Course Materials

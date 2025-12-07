@@ -54,7 +54,7 @@ In the right control panel, you can hide/show components of the structure by cli
 - Click on residues in the 3D view or the Sequence Panel to select them.
 - To clear a selection, click on any empty white space in the background.
 - Select Specific Entities (e.g., chains, residues).
-- ![img1.png](img1.png)
+- ![img1.png](../data/img1.png)
 
 #### Example of styling:
 
@@ -64,7 +64,7 @@ In the right control panel, you can hide/show components of the structure by cli
 - Click "Create Component". This creates a new item in the Right Panel that you can control independently.
 - Change Color - with your new component created, click the Paintbrush icon in the Selection Menu.
 - Choose a color (e.g., Yellow) to apply it to your selection.
-![img2.png](img2.png)
+![img2.png](../data/img2.png)
 
 #### Coloring based on properties - example of coloring based on hydrophobicity:
 
@@ -76,7 +76,7 @@ which is the three-dots in a row.
 - In this rendering, the most hydrophobic amino acids (or residues) will be green, and the
 most hydrophilic amino acids will be red.
 
-![img3.png](img3.png)
+![img3.png](../data/img3.png)
 
 Test also other properties:
 - Molecule type
@@ -181,14 +181,14 @@ Visualizing a leucine zipper and highlighting its leucine and valine residues he
   - In the corresponding "Ball & Stick" representation, set color to "Miscellaneous/Uniform".
   - Then use three dots "Action" button to set the color to yellow.
 
-![img4.png](img4.png)
+![img4.png](../data/img4.png)
   - Adjust the View, Background, and Lighting:
     - Adjust the camera angle to get a clear view of the leucine zipper interface.
     - Set the background and lighting - use Settings / Controls Info.
 
-    ![img5.png](img5.png)
+    ![img5.png](../data/img5.png)
 
 - When you're satisfied with the view, export the image with Screenshot option.
 
-![img6.png](img6.png)
+![img6.png](../data/img6.png)
 
