@@ -102,7 +102,7 @@ Test also other properties:
 
 ### Viewing molecular surfaces
 
-Load crystal structure of the hexameric anti-microbial peptide channel dermcidin (PDB ID: `2Y5T`). Inspect the interior surface of the channel. Is the channel interior hydrophobic or hydrophilic? Is the interior hollow or filled with atoms?
+Load crystal structure of the hexameric anti-microbial peptide channel dermcidin (PDB ID: `2YMK`). Inspect the interior surface of the channel. Is the channel interior hydrophobic or hydrophilic? Is the interior hollow or filled with atoms?
 
 Go to the RCSB PDB (https://www.rcsb.org) and search for the PDB ID `2Y5T`.
 
