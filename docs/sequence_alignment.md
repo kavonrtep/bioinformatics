@@ -408,13 +408,19 @@ seqkit stat *.fasta
 ### Exercise 1.11 - Comparison of three related bacteriophage genomes
 Three bacteriophages infecting *Mycoplasma hyopneumoniae* were isolated from the same pig farm and their genomes were sequenced. All three genomes are about 32 kb long, which is typical for small phages. Bacteriophage genomes are known to be **mosaic**: functional gene modules (for example the DNA packaging module, the tail module or the lysis module) are exchanged between phages by recombination, while the remaining parts of the genomes diverge freely. As a result, related phages often share several blocks of genes, but the order and orientation of the blocks can differ.
 
-Sequences are located in `~/Desktop/Bioinformatics/data/phage_genomes`. Characterize them with `seqkit` and compare them with `Gepard`. Use `phage_A.fasta` as the reference and compare it with `phage_B.fasta` and `phage_C.fasta`, then compare `phage_B` with `phage_C`. Start with word length 10; if the background noise is too strong, try word length 12 or 15.
+Sequences are located in `~/Desktop/Bioinformatics/data/phage_genomes`. Characterize them with `seqkit` and compare them using a dotplot. Genomes of this size can be compared either with `dotter` or with `Gepard`. Use `phage_A.fasta` as the reference and compare it with `phage_B.fasta` and `phage_C.fasta`, then compare `phage_B` with `phage_C`.
 
 ```bash
 cd ~/Desktop/Bioinformatics/data/phage_genomes
 seqkit stat *.fasta
+# dotter
+dotter phage_A.fasta phage_B.fasta
+dotter phage_A.fasta phage_C.fasta
+dotter phage_B.fasta phage_C.fasta
+# or Gepard (shortcut on Desktop, or run gepard from terminal)
 gepard
 ```
+In `dotter`, use the *Greyramp tool* to adjust the contrast if the diagonals are not clearly visible. In `Gepard`, start with word length 10; if the background noise is too strong, try word length 12 or 15.
 
 - How many conserved blocks (syntenic regions) do the three phages share and what is their approximate length?
 - Determine the coordinates of the conserved blocks in `phage_A`.
