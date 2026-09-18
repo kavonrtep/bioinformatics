@@ -7,8 +7,8 @@ cd ~/Desktop/Bioinformatics
 git pull
 ```
 ## Dotplots
-- [Dotplot demo I](https://kavonrtep.github.io/games/dotplot-demo.html)
-- [Dotplot demo II](https://kavonrtep.github.io/games/dotplot-explorer.html)
+- [Dotplot Trainer](https://kavonrtep.github.io/games/dotplot.html) - interactive dotplot demo (repeats, inversions, indels)
+- [Dotplot Quiz](https://kavonrtep.github.io/games/dotplot-quiz.html) - self-assessment
 - [FASTA format](./data_formats.md/#fasta-fa-fna-faa-fasta)
 - [Sequence self-comparison](./sequence_alignment.md/#dotplots)
   - [Exercise 1.1](./sequence_alignment.md/#exercise-11---simple-self-comparison-using-dotplot)
@@ -16,6 +16,7 @@ git pull
   
 - Whole genome comparison
   - [Exercise 1.10](./sequence_alignment.md/#exercise-110---whole-genome-comparison-with-gepard-program)
+  - [Exercise 1.11](./sequence_alignment.md/#exercise-111---comparison-of-three-related-bacteriophage-genomes)
 
 - Optional exercises
   - Using dotter on protein sequences
@@ -76,7 +77,7 @@ git pull
 - [Exercise 1.3 - BLASTX - NCBI web interface](./blast_search.md/#exercise-13---blastx---ncbi-web-interface)
 - [Exercise 1.6 - Identification of species using NCBI BLAST](./blast_search.md/#exercise-16---identification-of-species-using-ncbi-blast)
 - [Exercise 1.4 - Identification of coding sequence using BLASTX](./blast_search.md/#exercise-14---identification-of-coding-sequence-using-blastx-vs-blastn)
-- [Exercise 1.7 - Identification of mutations in gyrA gene](./blast_search.md/#exercise-17---identification-of-mutations-in-gyrA-gene)
+- [Exercise 1.7 - Identification of mutations in gyrA gene](./blast_search.md/#exercise-17---identification-of-mutations-in-gyra-gene)
 
 
 # Week 5 (Oct. 27)

@@ -405,7 +405,42 @@ seqkit stat *.fasta
  - Are there any regions of divergence (areas with no or few dots) between the two genomes? What could these regions represent (e.g., strain-specific genes, deletions, insertions)?
  - How many deletions can you observe in strain 232?
 
-### Exercise 1.11 - Identification of problems in sequences from SRA database
+### Exercise 1.11 - Comparison of three related bacteriophage genomes
+Three bacteriophages infecting *Mycoplasma hyopneumoniae* were isolated from the same pig farm and their genomes were sequenced. All three genomes are about 32 kb long, which is typical for small phages. Bacteriophage genomes are known to be **mosaic**: functional gene modules (for example the DNA packaging module, the tail module or the lysis module) are exchanged between phages by recombination, while the remaining parts of the genomes diverge freely. As a result, related phages often share several blocks of genes, but the order and orientation of the blocks can differ.
+
+Sequences are located in `~/Desktop/Bioinformatics/data/phage_genomes`. Characterize them with `seqkit` and compare them with `Gepard`. Use `phage_A.fasta` as the reference and compare it with `phage_B.fasta` and `phage_C.fasta`, then compare `phage_B` with `phage_C`. Start with word length 10; if the background noise is too strong, try word length 12 or 15.
+
+```bash
+cd ~/Desktop/Bioinformatics/data/phage_genomes
+seqkit stat *.fasta
+gepard
+```
+
+- How many conserved blocks (syntenic regions) do the three phages share and what is their approximate length?
+- Determine the coordinates of the conserved blocks in `phage_A`.
+- Is the order of the blocks in `phage_B` the same as in `phage_A`? What kind of rearrangement explains the dotplot?
+- What is different in `phage_C`? Which block is affected and how can you recognize it in the dotplot?
+- Draw a schematic showing the organization of the three genomes (position, order and orientation of the conserved blocks).
+- The conserved blocks are similar but not identical - zoom in on one of the diagonals. Can you see mutations? Compare with the self-comparison of `phage_A`, where the diagonal is uninterrupted.
+- Are there any similarities between the genomes outside the conserved blocks? What does this tell you about the regions between the blocks?
+
+<details>
+<summary>Solution</summary>
+
+Organization of the genomes (coordinates are 1-based, `rc` = reverse complement):
+
+| genome | organization | block 1 | block 2 | block 3 |
+|---|---|---|---|---|
+| phage_A | 1 - 2 - 3 | 4501-8500 | 13501-17000 | 21001-26000 |
+| phage_B | 2 - 3 - 1 | 24494-28487 | 5501-8994 | 13495-18493 |
+| phage_C | 1 - 2 - rc(3) | 5001-9020 | 13021-16521 | 22022-27056 (inverted) |
+
+- `phage_A` vs `phage_B`: three diagonals off the main diagonal - the order of the blocks is changed (translocation / rearrangement).
+- `phage_A` vs `phage_C`: two diagonals on the main diagonal, the third one (block 3) is perpendicular to them - inversion.
+- The blocks in `phage_B` and `phage_C` differ from `phage_A` by about 3% of substitutions and a few short indels; the regions between the blocks are unrelated.
+</details>
+
+### Exercise 1.12 - Identification of problems in sequences from SRA database
 
 #### Illumina data : SRR2911427  (Migratory locust WGS)
 

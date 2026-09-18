@@ -1,6 +1,6 @@
 # BLAST
 
-## Exercise 1.1- BLASTN - NCBI web interface
+## Exercise 1.1 - BLASTN - NCBI web interface
 Make nucleotide blast  search against following sequence:
 ```
 >gi|202471|gb|M57671.1|OCOINS Octodon degus insulin mRNA, complete cds
@@ -96,7 +96,7 @@ blast link : https://blast.ncbi.nlm.nih.gov/Blast.cgi
   found in "chordata" taxonomy group? If no hits are found in Chordata, try to modify search
   parameters to identify similar sequence in Chordata group.
 
-## Exercies 1.3 - BLASTX - NCBI web interface
+## Exercise 1.3 - BLASTX - NCBI web interface
 The part of genomic sequence of Twort bacteriophage is bellow. Use BLAST to
 search protein database  (Non-redundant protein sequences  - nr) to find
 homologous protein from other bacteriophages and viruses.
