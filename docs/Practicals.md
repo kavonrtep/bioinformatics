@@ -10,6 +10,7 @@ git pull
 - [Dotplot Trainer](https://kavonrtep.github.io/games/dotplot.html) - interactive dotplot demo (repeats, inversions, indels)
 - [Dotplot Quiz](https://kavonrtep.github.io/games/dotplot-quiz.html) - self-assessment
 - [FASTA format](./data_formats.md/#fasta-fa-fna-faa-fasta)
+  - [FASTA format - warm-up](./sequence_alignment.md/#fasta-format---warm-up)
 - [Sequence self-comparison](./sequence_alignment.md/#dotplots)
   - [Exercise 1.1](./sequence_alignment.md/#exercise-11---simple-self-comparison-using-dotplot)
   - [Exercise 1.2](./sequence_alignment.md/#exercise-12---identification-of-repetitive-motifs-using-dotplot)

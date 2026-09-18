@@ -41,6 +41,37 @@ gepard
 ```
 In Graphical user interface select pair of sequences you want to compare. Test different word size settings
 
+### FASTA format - warm-up
+
+All sequences used in this course are stored in the [FASTA format](./data_formats.md/#fasta-fa-fna-faa-fasta). Before you start with dotplots, have a look at several FASTA files from different sources:
+
+```bash
+cd ~/Desktop/Bioinformatics/data/dotter_sequences
+# show the beginning of the file (first 5 lines)
+head -n 5 ../dotter_sequences2/seq1.fasta
+head -n 5 direct_repeat.fasta
+head -n 5 P00533.fasta
+head -n 5 tandem_repeat.fasta
+# show only header lines
+grep ">" dna_examples/overlaping_sequences.fasta
+# get basic statistics for all files at once
+seqkit stat ../dotter_sequences2/seq1.fasta direct_repeat.fasta P00533.fasta tandem_repeat.fasta dna_examples/overlaping_sequences.fasta
+```
+
+- Which line is the header and which part of it is the sequence identifier (ID)? Compare the header of `seq1.fasta` (bare ID), `direct_repeat.fasta` (NCBI accession with description) and `P00533.fasta` (UniProt).
+- Which of the files contains a protein sequence? How does `seqkit` recognize it?
+- How many sequences are in `overlaping_sequences.fasta`? What are their IDs and lengths?
+- The sequence lines in `direct_repeat.fasta`, `P00533.fasta` and `tandem_repeat.fasta` have different lengths (70, 60 and one single long line). Does it matter for the programs that read the file?
+
+<details>
+<summary>Solution</summary>
+
+- The header starts with `>`; the ID is the text up to the first space (`seq1`, `AF049230.1`, `sp|P00533|EGFR_HUMAN`), the rest of the line is an optional description that most programs ignore.
+- `P00533.fasta` is a protein (`type: Protein` in `seqkit stat`) - `seqkit` guesses the type from the letters in the sequence (more than A, C, G, T, N).
+- `overlaping_sequences.fasta` is a multi-FASTA with three sequences: `seqA` (629 bp), `seqB` (840 bp), `seqC` (700 bp).
+- Line width does not matter - the sequence is the concatenation of all lines until the next `>`.
+</details>
+
 ### Exercise 1.1 - Simple self-comparison using dotplot
 Make self comparison of the following sequences and identify repetitive sequences.
 - How long is repetitive element?
