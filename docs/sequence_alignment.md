@@ -193,7 +193,7 @@ dotter tandem_repeat2.fasta tandem_repeat2.fasta
 ```
 
 ### Exercise 1.3 - Comparison of sequences with insertions, deletions, inversions
-Use dotter to visualize alignments and identify insertions or deletions in sequences AX02 and AX03 relative to AX01. Sequences are located in `/Desktop/Bioinformatics/data/dotter_sequences/` directory. 
+Use dotter to visualize alignments and identify insertions or deletions in sequences AX02 and AX03 relative to AX01. Sequences are located in `~/Desktop/Bioinformatics/data/dotter_sequences/` directory. 
 To create dotplot use:
 ```bash
 dotter AX01.fasta AX02.fasta
@@ -678,7 +678,7 @@ mafft cdk.fasta > cdk_mafft_aligned.fasta
 muscle --help
 muscle -align cdk.fasta -output cdk_muscle_aligned.fasta
 # some muscle version have different options:
-# muscle -in cdk.fasta -out cdk_muscle_aligned.fast
+# muscle -in cdk.fasta -out cdk_muscle_aligned.fasta
 seqkit stat *.fasta
 
 # evaluate alignment using transitive consistency score
@@ -719,6 +719,60 @@ HSLPHFKPERFTLYSSKNLRQAWNKLSYVNHAEDLASKLLQCSPKNRLSAQAALSHEYFS
 DLPPRLWELTDMSSIFTVPNVRLQPEAGESMRAFGKNNSYGKSLSNSKH
 ```
 *Transitive consistency score* : TCS is an alignment evaluation score that makes it possible to identify in an MSA the most correct positions. It has been shown that these positions are the most likely to be structurally correct and also the most informative when estimating phylogenetic trees. The TCS evaluation and filtering procedure is implemented in the T-Coffee package and can be used to evaluate and filter any third party multiple sequence alignment  
+
+#### Motif hunt - what can the alignment tell us that a single sequence cannot?
+CDK2 is one of the best studied proteins, its key residues are known from 3D
+structures and mutagenesis experiments. Other CDKs (e.g. CDK20) are studied much
+less. With the alignment we can transfer knowledge from CDK2 to all other CDKs.
+
+Use the mafft alignment in Jalview. To find a motif, use `Search -> Find` (Ctrl+F)
+and type the motif (e.g. `PSTAIRE`), matching residues are highlighted. Selecting
+a column shows its position in the status bar at the bottom of the window.
+
+Known functional sites in CDK2 (numbering according to CDK2 sequence):
+
+| CDK2 position | Motif     | Function                                                          |
+|---------------|-----------|-------------------------------------------------------------------|
+| 11-16         | `GEGTYG`  | glycine-rich loop, holds ATP; T14 and Y15 are inhibitory phosphorylation sites (Wee1 kinase) |
+| 33            | `K`       | lysine binding ATP phosphates                                      |
+| 45-51         | `PSTAIRE` | helix which binds cyclin                                           |
+| 125-127       | `HRD`     | catalytic loop                                                     |
+| 145-147       | `DFG`     | binds Mg²⁺ ion, start of activation loop                           |
+
+- Find these motifs in the alignment. Are they aligned in one block of columns
+  in all sequences?
+- Which of these sites are identical in all CDKs? Which are variable?
+- Look at the `PSTAIRE` column block and write down the motif for every CDK. Some
+  CDKs are named after this motif - e.g. CDK16 and CDK17 were originally called
+  *PCTAIRE-1/2*, CDK9 *PITALRE*, CDK10 *PISSLRE* and CDK14 *PFTAIRE*. Can you
+  find these motifs in the alignment?
+  - These alternative names are listed in UniProt, section *Names & Taxonomy*:
+    [CDK16](https://www.uniprot.org/uniprotkb/Q00536/entry#names_and_taxonomy),
+    [CDK17](https://www.uniprot.org/uniprotkb/Q00537/entry#names_and_taxonomy),
+    [CDK9](https://www.uniprot.org/uniprotkb/P50750/entry#names_and_taxonomy),
+    [CDK10](https://www.uniprot.org/uniprotkb/Q15131/entry#names_and_taxonomy),
+    [CDK14](https://www.uniprot.org/uniprotkb/O94921/entry#names_and_taxonomy)
+  - More about CDK family and its nomenclature: Malumbres M. (2014) Cyclin-dependent kinases. *Genome Biology* 15:122, https://doi.org/10.1186/gb4184
+- Which CDKs have a motif very different from `PSTAIRE`? CDK7, CDK8 and CDK19
+  are not cell cycle kinases, they regulate transcription. Could this explain the
+  difference?
+- Which CDKs do not have `DFG` motif? What do they have instead?
+- Which CDKs lack the T14/Y15 inhibitory sites in the glycine-rich loop? What does
+  it mean for their regulation by Wee1 kinase?
+- CDK20 is a poorly characterized kinase. Based on the alignment only, would you
+  predict that it is an active kinase? Would you expect it to bind cyclin?
+
+<details>
+<summary>💡 Hint</summary>
+
+- `K33`, `HRD` are invariant in all sequences - they are essential for catalysis.
+- `DFG` is replaced by `DMG` in CDK8, CDK19 (and mouse CDK8).
+- CDK7 has `GEGQFA` instead of `GEGTYG`, so it cannot be inhibited by T14/Y15 phosphorylation.
+- CDK20 has all catalytic residues (K, HRD, DFG) and `PNQALRE` motif. It is
+  predicted to be an active kinase, although its cyclin partner is not well defined.
+
+</details>
+
 ### Exercise 3.2 - Multiple alignment from HSPB8 proteins
 Create MSA for set of orthologs of HSPB8 protein (Heat shock protein beta-8) and identify conserved regions.
 
@@ -726,7 +780,7 @@ Make copy of fasta file and then rename fasta headers:
 ```bash
 cd 
 mkdir -p data/hspb8
-cd data/hspb.8
+cd data/hspb8
 cp ~/Desktop/Bioinformatics/data/alignment_sequences/HSP8.fasta .
 
 ```
@@ -750,7 +804,7 @@ Investigate the alignment of 11 alternatively-spliced gene products from the hum
 
 Correct alignment of isoforms will contain only matches and gaps, no mismatches!
 
-- Sequences can be obtained from `../data/alignment_sequences/epb41.fasta`
+- Sequences can be obtained from `~/Desktop/Bioinformatics/data/alignment_sequences/epb41.fasta`
 - Open the JalView desktop application and load the unaligned sequences to visually inspect their similarities and differences.
 - Use the JalView web services menu to access the MAFFT, MUSCLE, and ClustalW alignment services. Perform an MSA with each program using the EPB41 isoform dataset.
 - Keep the results accessible for comparison, either by keeping the tabs/windows open or by saving the output files.
@@ -934,7 +988,7 @@ similarity matrices in order to distinguish among biologically expected and
 unexpected variability for each aligned character
 
 ```
-conda create -n bmge -c conda-forge -c biconda bmge
+conda create -n bmge -c conda-forge -c bioconda bmge
 conda activate bmge
 ```
 
@@ -984,7 +1038,7 @@ trypsin, chymotrypsin, and elastase.
 - Mouse Chymotrypsinogen B (Q9CR35)
 - Mouse Neutrophil Elastase (Q3UP87)
 - Drosophila melanogaster Serine proteinase stubble (Q05319)
--  Drosophila melanogaster Chymotrypsin (Q9VVA6)
+- Drosophila melanogaster Trypsin zeta (P42280)
 - Xenopus laevis Complement C3 (Q91701)
 - Manduca sexta Chymotrypsinogen (Q25503)
 
@@ -1086,7 +1140,7 @@ Cuscuta ([[https://en.wikipedia.org/wiki/Cuscuta]]), commonly known as dodder, i
  The ITS1 and ITS2 regions are highly variable, which makes them useful for distinguishing between closely related species, whereas the 18S, 5.8S, and 28S regions are more conserved, providing stable targets for primer design.
 ![rDNA](./rDNA.png)
 
-The set of rDNA sequences from Cuscuta species can be found in file `../data/alignment_sequences/5.8S_Cuscuta.fasta`. Your task is to identify conserved regions and design primers accordingly. The exercise will guide you through the following steps:
+The set of rDNA sequences from Cuscuta species can be found in file `~/Desktop/Bioinformatics/data/alignment_sequences/5.8S_Cuscuta.fasta`. Your task is to identify conserved regions and design primers accordingly. The exercise will guide you through the following steps:
 
 #### Sequence Alignment with Jalview
 
@@ -1122,6 +1176,90 @@ EMBOSS Cons: To create a consensus sequence from the alignment.
 Primer3: To design primers based on the consensus sequence.
 
 This exercise will give you hands-on experience in using bioinformatics tools to identify conserved regions and design primers, skills that are crucial for species identification and molecular biology research.
+
+### Exercise 3.9 - Is this mutation dangerous? Predicting the effect of p53 variants from MSA
+*Motivation*: Sequencing of a patient's genome reveals many missense variants
+(one amino acid is replaced by another). Most of them are harmless, but some
+destroy protein function. For most variants there is no experimental data, so
+we have to predict their effect. Programs such as SIFT or PolyPhen, which are
+used in clinical genetics, are based on a simple idea: **if a position is
+conserved during hundreds of millions of years of evolution, a change at this
+position is probably harmful. If other species naturally have a different amino
+acid at this position, the change is probably tolerated.** In this exercise you
+will make such prediction yourself using a multiple sequence alignment.
+
+p53 is a tumor suppressor, called "the guardian of the genome". It is mutated in
+about half of all human cancers, and inherited mutations cause Li-Fraumeni
+syndrome (high risk of cancer at young age). The central part of the protein
+(residues ~95-290) is the DNA-binding domain.
+
+Sequences of p53 from 11 species (mammals, bird, frog, fish and fruit fly) are in
+`~/Desktop/Bioinformatics/data/alignment_sequences/p53/p53_orthologs.fasta`
+
+```bash
+mkdir -p ~/data/p53
+cd ~/data/p53
+cp ~/Desktop/Bioinformatics/data/alignment_sequences/p53/p53_orthologs.fasta .
+seqkit stats p53_orthologs.fasta
+grep ">" p53_orthologs.fasta
+mafft p53_orthologs.fasta > p53_aln.fasta
+```
+
+Open `p53_aln.fasta` in Jalview and use `Colour -> Percentage Identity` or `Colour -> Clustal`.
+
+To find a residue of the human sequence in the alignment, move the mouse over the
+human sequence, the status bar at the bottom shows residue name and its position
+in the sequence (e.g. `ARG (175)`). Alternatively, use cursor mode (F2), click on
+the human sequence and type `175` then `P` to jump to residue 175.
+
+#### Tasks
+1. Look at the whole alignment (use overview window). Which part of p53 is
+   conserved from fish to human? Which part is conserved even in *Drosophila*?
+   Compare it with the domain annotation of human p53 in UniProt (https://www.uniprot.org/uniprotkb/P04637, section *Family & Domains*).
+2. Genetic testing found following variants in human p53 in six patients. For each
+   variant, find the position in the alignment and fill the table:
+
+| Variant | Human residue | Residues in other species at this position | Conserved? | Your prediction (harmful / tolerated / uncertain) |
+|---------|---------------|--------------------------------------------|------------|--------------------------------------------------|
+| R175H   |               |                                            |            |                                                  |
+| R248Q   |               |                                            |            |                                                  |
+| R273H   |               |                                            |            |                                                  |
+| R290H   |               |                                            |            |                                                  |
+| G360A   |               |                                            |            |                                                  |
+| V217M   |               |                                            |            |                                                  |
+
+   (`R175H` means that arginine (R) at position 175 is replaced by histidine (H).)
+3. For some variants, the "mutant" amino acid can be found at the same position
+   in a healthy animal. Which variants are these? What does it tell you?
+4. Now imagine you only have mammalian sequences. Hide non-mammalian sequences
+   (select them and press `Ctrl+H`, `View -> Show -> All Sequences` shows them
+   again). Would your predictions change? Why is it important to include
+   distantly related species in the alignment? (Is there any limit - what
+   happens in regions where *Drosophila* sequence is too different?)
+5. Check your predictions in the ClinVar database (https://www.ncbi.nlm.nih.gov/clinvar/),
+   search e.g. `TP53 R175H`, look at *Germline classification*. How many of
+   your predictions were correct?
+6. Optional: Open structure of p53 DNA-binding domain bound to DNA (PDB 1TSR) in
+   Mol* viewer (https://www.rcsb.org/3d-view/1TSR). Find residues R248 and R273
+   (chain B) - what is their role? Where is R175 located?
+
+<details>
+<summary>💡 Hint</summary>
+
+- R175, R248 and R273 are invariant in all vertebrates and R175, R248 even in
+  *Drosophila* - these are the most frequent "hotspot" mutations in human cancer.
+  They are classified as *Pathogenic* in ClinVar. R248 and R273 contact DNA directly,
+  R175 is needed for correct folding of the DNA binding domain.
+- R290H - dog has histidine at this position, G360A - rhesus macaque has alanine.
+  Both variants are classified as *Benign* in ClinVar.
+- V217M - valine in all mammals and chicken, but variable in frog and fish
+  (C, F, L). With mammals only, this position would look invariant. ClinVar
+  classification of this variant is *Conflicting* - conservation alone does not always give a clear answer.
+- MSA-based prediction is a good first guess, but it is not a proof. Some changes
+  at variable positions can still be harmful and alignment of very distant
+  sequences (e.g. *Drosophila* outside of DNA-binding domain) can be unreliable.
+
+</details>
 
 ## Amino Acid codes
 

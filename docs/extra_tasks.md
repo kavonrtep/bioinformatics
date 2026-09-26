@@ -24,7 +24,6 @@ ttcgagggcatggacactctgaaaggtctttagcaggggacgagaaaatcacgtgtattg
 gttgcgggttctgagcctaaccgtcctatggcatgcgttaatcacaagccggcatgtata
 atgcaacctcactacaccttggcttatacgcccggccagcccgtgcgcgttaattggcaa
 gctcaagcctattcgagggcatggacactctgaaaggtctttag
-EOF
 >selfB
 acagcaatcagtaaaggtacgattacatagatggtgccctgacgtcatggcccgattccg
 atacccaggcataattatcaaggctgggggtagcacatcccgggcgtggtaaaaagggaa
@@ -78,9 +77,9 @@ In terminal in the same directory where you saved the FASTA files run following 
 # first check the fasta files with seqkit
 seqkit stats *.fasta
 # then generate dotplots
-dotplot selfA.fasta selfA.fasta
-dotplot selfB.fasta selfB.fasta
-dotplot selfC.fasta selfC.fasta
+dotter selfA.fasta selfA.fasta
+dotter selfB.fasta selfB.fasta
+dotter selfC.fasta selfC.fasta
 ```
 
 Answer these questions:

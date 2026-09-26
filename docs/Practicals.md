@@ -44,17 +44,19 @@ git pull
 ## Pairwise sequence alignment
 - [Global alignment demo](https://kavonrtep.github.io/games/needleman-wunsch.html)
 - [Local alignment demo](https://kavonrtep.github.io/games/smith-waterman.html)
+- [Exercise 2.2 - Pairwise alignment using NCBI blast](./sequence_alignment.md/#exercise-22---pairwise-alignment-using-ncbi-blast)
 
 
 ## Multiple sequence alignment
 - [Exercise 3.1 - Cyclin-dependent kinase](./sequence_alignment.md/#exercise-31---multiple-sequence-alignment---cyclin-dependent-kinase)
+  - [Motif hunt - what can the alignment tell us?](./sequence_alignment.md/#motif-hunt---what-can-the-alignment-tell-us-that-a-single-sequence-cannot)
+- [Exercise 3.9 - Is this mutation dangerous? Predicting the effect of p53 variants](./sequence_alignment.md/#exercise-39---is-this-mutation-dangerous-predicting-the-effect-of-p53-variants-from-msa)
 - [Exercise 3.3 - Alignment of protein isoforms, alignment editing](./sequence_alignment.md/#exercise-33---alignment-of-protein-isoforms-alignment-editing)
 
 
 # Week 3
 
 ## Dotplot, local and global alignment
-  - [Exercise 2.2](./sequence_alignment.md/#exercise-22---pairwise-alignment-using-ncbi-blast)
   - [Excercise A2](./extra_tasks.md#exercise-a2)
 
 ## Multiple sequence alignment - cont.
