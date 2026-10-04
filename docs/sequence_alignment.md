@@ -1263,7 +1263,7 @@ the human sequence and type `175` then `P` to jump to residue 175.
 
 ## Amino Acid codes
 
-![Amino Acid Codes](../fig/aa_codes.png)
+![Amino Acid Codes](../fig/aa_codes.svg)
 
 ## Jalview
 

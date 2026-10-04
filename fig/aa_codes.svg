@@ -1,0 +1,137 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='1000' height='570' viewBox='0 0 1000 570'>
+<rect width='1000' height='570' fill='#ffffff'/>
+<text x='32' y='56' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='15' font-weight='bold' fill='#666'>AMINO ACID</text>
+<text x='220' y='56' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='15' font-weight='bold' fill='#666' text-anchor='middle'>CODE</text>
+<text x='292' y='56' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='15' font-weight='bold' fill='#666'>SIDE CHAIN</text>
+<rect x='20' y='70' width='470' height='68' rx='6' fill='#cfe5f7'/>
+<text x='32' y='93' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='17' fill='#222'>Aspartic acid</text>
+<text x='185' y='93' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='17' fill='#222'>Asp</text>
+<text x='260' y='93' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='19' font-weight='bold' fill='#1f5f99' text-anchor='middle'>D</text>
+<text x='292' y='93' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='16' fill='#1f5f99'>negatively charged</text>
+<line x1='28' x2='482' y1='104' y2='104' stroke='#ffffff' stroke-width='1.5'/>
+<text x='32' y='127' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='17' fill='#222'>Glutamic acid</text>
+<text x='185' y='127' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='17' fill='#222'>Glu</text>
+<text x='260' y='127' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='19' font-weight='bold' fill='#1f5f99' text-anchor='middle'>E</text>
+<text x='292' y='127' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='16' fill='#1f5f99'>negatively charged</text>
+<rect x='20' y='142' width='470' height='102' rx='6' fill='#f8d3d3'/>
+<text x='32' y='165' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='17' fill='#222'>Arginine</text>
+<text x='185' y='165' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='17' fill='#222'>Arg</text>
+<text x='260' y='165' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='19' font-weight='bold' fill='#a3282c' text-anchor='middle'>R</text>
+<text x='292' y='165' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='16' fill='#a3282c'>positively charged</text>
+<line x1='28' x2='482' y1='176' y2='176' stroke='#ffffff' stroke-width='1.5'/>
+<text x='32' y='199' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='17' fill='#222'>Lysine</text>
+<text x='185' y='199' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='17' fill='#222'>Lys</text>
+<text x='260' y='199' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='19' font-weight='bold' fill='#a3282c' text-anchor='middle'>K</text>
+<text x='292' y='199' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='16' fill='#a3282c'>positively charged</text>
+<line x1='28' x2='482' y1='210' y2='210' stroke='#ffffff' stroke-width='1.5'/>
+<text x='32' y='233' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='17' fill='#222'>Histidine</text>
+<text x='185' y='233' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='17' fill='#222'>His</text>
+<text x='260' y='233' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='19' font-weight='bold' fill='#a3282c' text-anchor='middle'>H</text>
+<text x='292' y='233' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='16' fill='#a3282c'>positively charged</text>
+<rect x='20' y='248' width='470' height='170' rx='6' fill='#fbefc4'/>
+<text x='32' y='271' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='17' fill='#222'>Asparagine</text>
+<text x='185' y='271' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='17' fill='#222'>Asn</text>
+<text x='260' y='271' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='19' font-weight='bold' fill='#8a6400' text-anchor='middle'>N</text>
+<text x='292' y='271' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='16' fill='#8a6400'>uncharged polar</text>
+<line x1='28' x2='482' y1='282' y2='282' stroke='#ffffff' stroke-width='1.5'/>
+<text x='32' y='305' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='17' fill='#222'>Glutamine</text>
+<text x='185' y='305' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='17' fill='#222'>Gln</text>
+<text x='260' y='305' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='19' font-weight='bold' fill='#8a6400' text-anchor='middle'>Q</text>
+<text x='292' y='305' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='16' fill='#8a6400'>uncharged polar</text>
+<line x1='28' x2='482' y1='316' y2='316' stroke='#ffffff' stroke-width='1.5'/>
+<text x='32' y='339' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='17' fill='#222'>Serine</text>
+<text x='185' y='339' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='17' fill='#222'>Ser</text>
+<text x='260' y='339' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='19' font-weight='bold' fill='#8a6400' text-anchor='middle'>S</text>
+<text x='292' y='339' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='16' fill='#8a6400'>uncharged polar</text>
+<line x1='28' x2='482' y1='350' y2='350' stroke='#ffffff' stroke-width='1.5'/>
+<text x='32' y='373' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='17' fill='#222'>Threonine</text>
+<text x='185' y='373' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='17' fill='#222'>Thr</text>
+<text x='260' y='373' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='19' font-weight='bold' fill='#8a6400' text-anchor='middle'>T</text>
+<text x='292' y='373' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='16' fill='#8a6400'>uncharged polar</text>
+<line x1='28' x2='482' y1='384' y2='384' stroke='#ffffff' stroke-width='1.5'/>
+<text x='32' y='407' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='17' fill='#222'>Tyrosine</text>
+<text x='185' y='407' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='17' fill='#222'>Tyr</text>
+<text x='260' y='407' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='19' font-weight='bold' fill='#8a6400' text-anchor='middle'>Y</text>
+<text x='292' y='407' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='16' fill='#8a6400'>uncharged polar</text>
+<path d='M22,428 v12 h466 v-12' fill='none' stroke='#444' stroke-width='1.5'/>
+<rect x='142.25' y='430' width='225.5' height='20' fill='#ffffff'/>
+<text x='255.0' y='446' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='16' font-weight='bold' fill='#444' text-anchor='middle' letter-spacing='1'>POLAR AMINO ACIDS</text>
+<text x='522' y='56' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='15' font-weight='bold' fill='#666'>AMINO ACID</text>
+<text x='710' y='56' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='15' font-weight='bold' fill='#666' text-anchor='middle'>CODE</text>
+<text x='782' y='56' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='15' font-weight='bold' fill='#666'>SIDE CHAIN</text>
+<rect x='510' y='70' width='470' height='340' rx='6' fill='#dcefd0'/>
+<text x='522' y='93' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='17' fill='#222'>Alanine</text>
+<text x='675' y='93' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='17' fill='#222'>Ala</text>
+<text x='750' y='93' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='19' font-weight='bold' fill='#3c6e1f' text-anchor='middle'>A</text>
+<text x='782' y='93' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='16' fill='#3c6e1f'>nonpolar</text>
+<line x1='518' x2='972' y1='104' y2='104' stroke='#ffffff' stroke-width='1.5'/>
+<text x='522' y='127' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='17' fill='#222'>Glycine</text>
+<text x='675' y='127' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='17' fill='#222'>Gly</text>
+<text x='750' y='127' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='19' font-weight='bold' fill='#3c6e1f' text-anchor='middle'>G</text>
+<text x='782' y='127' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='16' fill='#3c6e1f'>nonpolar</text>
+<line x1='518' x2='972' y1='138' y2='138' stroke='#ffffff' stroke-width='1.5'/>
+<text x='522' y='161' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='17' fill='#222'>Valine</text>
+<text x='675' y='161' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='17' fill='#222'>Val</text>
+<text x='750' y='161' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='19' font-weight='bold' fill='#3c6e1f' text-anchor='middle'>V</text>
+<text x='782' y='161' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='16' fill='#3c6e1f'>nonpolar</text>
+<line x1='518' x2='972' y1='172' y2='172' stroke='#ffffff' stroke-width='1.5'/>
+<text x='522' y='195' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='17' fill='#222'>Leucine</text>
+<text x='675' y='195' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='17' fill='#222'>Leu</text>
+<text x='750' y='195' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='19' font-weight='bold' fill='#3c6e1f' text-anchor='middle'>L</text>
+<text x='782' y='195' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='16' fill='#3c6e1f'>nonpolar</text>
+<line x1='518' x2='972' y1='206' y2='206' stroke='#ffffff' stroke-width='1.5'/>
+<text x='522' y='229' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='17' fill='#222'>Isoleucine</text>
+<text x='675' y='229' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='17' fill='#222'>Ile</text>
+<text x='750' y='229' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='19' font-weight='bold' fill='#3c6e1f' text-anchor='middle'>I</text>
+<text x='782' y='229' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='16' fill='#3c6e1f'>nonpolar</text>
+<line x1='518' x2='972' y1='240' y2='240' stroke='#ffffff' stroke-width='1.5'/>
+<text x='522' y='263' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='17' fill='#222'>Proline</text>
+<text x='675' y='263' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='17' fill='#222'>Pro</text>
+<text x='750' y='263' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='19' font-weight='bold' fill='#3c6e1f' text-anchor='middle'>P</text>
+<text x='782' y='263' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='16' fill='#3c6e1f'>nonpolar</text>
+<line x1='518' x2='972' y1='274' y2='274' stroke='#ffffff' stroke-width='1.5'/>
+<text x='522' y='297' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='17' fill='#222'>Phenylalanine</text>
+<text x='675' y='297' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='17' fill='#222'>Phe</text>
+<text x='750' y='297' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='19' font-weight='bold' fill='#3c6e1f' text-anchor='middle'>F</text>
+<text x='782' y='297' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='16' fill='#3c6e1f'>nonpolar</text>
+<line x1='518' x2='972' y1='308' y2='308' stroke='#ffffff' stroke-width='1.5'/>
+<text x='522' y='331' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='17' fill='#222'>Methionine</text>
+<text x='675' y='331' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='17' fill='#222'>Met</text>
+<text x='750' y='331' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='19' font-weight='bold' fill='#3c6e1f' text-anchor='middle'>M</text>
+<text x='782' y='331' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='16' fill='#3c6e1f'>nonpolar</text>
+<line x1='518' x2='972' y1='342' y2='342' stroke='#ffffff' stroke-width='1.5'/>
+<text x='522' y='365' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='17' fill='#222'>Tryptophan</text>
+<text x='675' y='365' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='17' fill='#222'>Trp</text>
+<text x='750' y='365' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='19' font-weight='bold' fill='#3c6e1f' text-anchor='middle'>W</text>
+<text x='782' y='365' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='16' fill='#3c6e1f'>nonpolar</text>
+<line x1='518' x2='972' y1='376' y2='376' stroke='#ffffff' stroke-width='1.5'/>
+<text x='522' y='399' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='17' fill='#222'>Cysteine</text>
+<text x='675' y='399' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='17' fill='#222'>Cys</text>
+<text x='750' y='399' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='19' font-weight='bold' fill='#3c6e1f' text-anchor='middle'>C</text>
+<text x='782' y='399' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='16' fill='#3c6e1f'>nonpolar</text>
+<path d='M512,428 v12 h466 v-12' fill='none' stroke='#444' stroke-width='1.5'/>
+<rect x='615.0' y='430' width='260.0' height='20' fill='#ffffff'/>
+<text x='745.0' y='446' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='16' font-weight='bold' fill='#444' text-anchor='middle' letter-spacing='1'>NONPOLAR AMINO ACIDS</text>
+<text x='20' y='480' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='15' font-weight='bold' fill='#666'>OTHER CODES USED IN SEQUENCES AND ALIGNMENTS</text>
+<rect x='20.0' y='492' width='232.0' height='28' rx='5' fill='#eeeeee'/>
+<text x='38.0' y='512' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='18' font-weight='bold' fill='#222' text-anchor='middle'>B</text>
+<text x='58.0' y='512' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='15' fill='#222'>Asx – Asp or Asn</text>
+<rect x='260.0' y='492' width='232.0' height='28' rx='5' fill='#eeeeee'/>
+<text x='278.0' y='512' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='18' font-weight='bold' fill='#222' text-anchor='middle'>Z</text>
+<text x='298.0' y='512' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='15' fill='#222'>Glx – Glu or Gln</text>
+<rect x='500.0' y='492' width='232.0' height='28' rx='5' fill='#eeeeee'/>
+<text x='518.0' y='512' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='18' font-weight='bold' fill='#222' text-anchor='middle'>X</text>
+<text x='538.0' y='512' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='15' fill='#222'>Xaa – any amino acid</text>
+<rect x='740.0' y='492' width='232.0' height='28' rx='5' fill='#eeeeee'/>
+<text x='758.0' y='512' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='18' font-weight='bold' fill='#222' text-anchor='middle'>U</text>
+<text x='778.0' y='512' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='15' fill='#222'>Sec – selenocysteine</text>
+<rect x='20.0' y='526' width='232.0' height='28' rx='5' fill='#eeeeee'/>
+<text x='38.0' y='546' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='18' font-weight='bold' fill='#222' text-anchor='middle'>O</text>
+<text x='58.0' y='546' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='15' fill='#222'>Pyl – pyrrolysine</text>
+<rect x='260.0' y='526' width='232.0' height='28' rx='5' fill='#eeeeee'/>
+<text x='278.0' y='546' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='18' font-weight='bold' fill='#222' text-anchor='middle'>*</text>
+<text x='298.0' y='546' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='15' fill='#222'>stop codon</text>
+<rect x='500.0' y='526' width='232.0' height='28' rx='5' fill='#eeeeee'/>
+<text x='518.0' y='546' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='18' font-weight='bold' fill='#222' text-anchor='middle'>-</text>
+<text x='538.0' y='546' font-family='DejaVu Sans, Arial, Helvetica, sans-serif' font-size='15' fill='#222'>gap</text>
+</svg>
