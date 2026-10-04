@@ -661,6 +661,9 @@ process called phosphorylation. They are activated by binding to regulatory
 proteins called cyclins, which undergo cyclic changes in abundance and activity
 throughout the cell cycle.
 
+Introduction slides - CDK function, regulation, 3D structure and active site:
+[cdk_intro.pdf](./slides/cdk_intro.pdf)
+
 Create multiple sequence alignment for group of CDKs from human and mouse. Use
 program `mafft`.  use default setting. Before running
 `mafft` check help documentation using `mafft --help`
