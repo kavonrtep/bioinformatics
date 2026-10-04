@@ -44,6 +44,7 @@ git pull
 ## Pairwise sequence alignment
 - [Global alignment demo](https://kavonrtep.github.io/games/needleman-wunsch.html)
 - [Local alignment demo](https://kavonrtep.github.io/games/smith-waterman.html)
+- [MSA workbench](https://kavonrtep.github.io/games/msa.html)
 - [Exercise 2.2 - Pairwise alignment using NCBI blast](./sequence_alignment.md/#exercise-22---pairwise-alignment-using-ncbi-blast)
 
 
