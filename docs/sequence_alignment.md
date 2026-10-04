@@ -1265,6 +1265,15 @@ the human sequence and type `175` then `P` to jump to residue 175.
 
 ![Amino Acid Codes](../fig/aa_codes.svg)
 
+## BLOSUM62 matrix
+
+Default substitution matrix for protein BLAST and most aligners. Positive scores
+mark substitutions observed in conserved protein blocks more often than expected
+by chance, negative scores less often. Amino acids are ordered by side-chain
+class, as in the table above.
+
+![BLOSUM62](../fig/blosum62.svg)
+
 ## Jalview
 
 - Jalview has *two navigation and editing modes*: _normal mode_, where editing and navigation is
