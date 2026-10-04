@@ -41,10 +41,12 @@ git pull
 - Compare two or more sequences
   - [Exercise 1.3](./sequence_alignment.md/#exercise-13---comparison-of-sequences-with-insertions-deletions-inversions)
 
-## Pairwise sequence alignment
+## Demos
 - [Global alignment demo](https://kavonrtep.github.io/games/needleman-wunsch.html)
 - [Local alignment demo](https://kavonrtep.github.io/games/smith-waterman.html)
 - [MSA workbench](https://kavonrtep.github.io/games/msa.html)
+
+## Pairwise sequence alignment
 - [Exercise 2.2 - Pairwise alignment using NCBI blast](./sequence_alignment.md/#exercise-22---pairwise-alignment-using-ncbi-blast)
 
 
