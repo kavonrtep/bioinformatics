@@ -1300,7 +1300,7 @@ seqkit locate -i -m 2 -p TCCGTAGGTGAACCTGCGG,GCTGCGTTCTTCATCGATGC,TCCTCCGCTTATTG
 
 #### Will the primers amplify the host plant?
 
-A dodder sample collected in the field is wrapped around its host, and haustoria grow inside host tissues. The extracted DNA is therefore always a mixture of parasite and host DNA. If the primers are "too universal", they amplify the host rDNA as well.
+A dodder sample collected in the field is wrapped around its host, and haustoria grow inside host tissues. The extracted DNA can therefore be a mixture of parasite and host DNA. If the primers are "too universal", they amplify the host rDNA as well.
 
 The file `~/Desktop/Bioinformatics/data/alignment_sequences/Medicago_sativa_ITS.fasta` contains the same rDNA region from alfalfa (*Medicago sativa*), a common host of *C. campestris*.
 
