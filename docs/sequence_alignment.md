@@ -1040,6 +1040,9 @@ peptide bonds in proteins. They play essential roles in digestion, blood
 clotting, and immune responses. Some well-known serine proteases include
 trypsin, chymotrypsin, and elastase.
 
+Introduction slides - catalytic triad, residue numbering, zymogen activation and the S1 pocket (slides 5-9):
+[week3_intro.pdf](./slides/week3_intro.pdf)
+
 - Human Trypsin-1 (P07477)
 - Human Chymotrypsinogen B (P17538)
 - Human Neutrophil Elastase (P08246)
@@ -1234,6 +1237,9 @@ gate used for reversible gas transport
 
 Your task is to design PCR primers that amplify a DNA region suitable for species identification (*DNA barcoding*). In plants and fungi, the most commonly used region is the internal transcribed spacer (ITS) of ribosomal DNA.
 
+Introduction slides - dodder, rDNA organization and host DNA contamination (slides 10-13):
+[week3_intro.pdf](./slides/week3_intro.pdf)
+
 #### Organization of rDNA
 Ribosomal DNA (rDNA) is organized as tandem arrays of units containing the 18S, 5.8S and 26S rRNA genes (28S in animals), separated by internal transcribed spacers ITS1 and ITS2. The rRNA genes are highly conserved because they form the ribosome, while the spacers are removed during rRNA processing and evolve much faster. The ITS1 and ITS2 regions are therefore highly variable, which makes them useful for distinguishing between closely related species, whereas the 18S, 5.8S, and 26S regions are conserved, providing stable targets for primer design. The strategy is to place primers in the conserved genes so that they amplify the variable spacer(s) between them.
 ![rDNA](./rDNA.png)
@@ -1309,7 +1315,7 @@ The file `~/Desktop/Bioinformatics/data/alignment_sequences/Medicago_sativa_ITS.
 
 A good barcode must be variable enough to tell the species apart.
 
-- Build a tree from your alignment in Jalview (`Calculate -> Calculate Tree or PCA -> Neighbour Joining, % identity`). How many main groups of species do you see? The genus *Cuscuta* is divided into subgenera *Cuscuta*, *Grammica* and *Monogynella* - can you assign the groups to them (use Wikipedia or the NCBI Taxonomy)?
+- Build a tree from your alignment in Jalview (`Calculate -> Calculate Tree or PCA -> Neighbour Joining, % identity`). How many main groups of species do you see? The species in this dataset belong to three of the four subgenera of *Cuscuta*: *Cuscuta*, *Grammica* and *Monogynella* - can you assign the groups to them (use Wikipedia or the NCBI Taxonomy)?
 - Which species pairs are so similar that the ITS sequence would hardly distinguish them?
 - The dataset contains two sequences labelled *Cuscuta epithymum* (MZ093402 and AY554400). Do they group together? What could explain the result? What does it tell you about using public databases as a reference for species identification?
 

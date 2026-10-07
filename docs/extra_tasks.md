@@ -94,6 +94,9 @@ Answer these questions:
 COL7A1 protein provides stability to skin and mucous membranes. The deletion in this protein is associated with the skin disorder dystrophic epidermolysis bullosa (DEB). Use dotter and BLAST to
 identify deletion in COL7A protein in the variant sequence below.
 
+Introduction slides - collagen VII, DEB and the Gly-X-Y triple helix (slides 1-4):
+[week3_intro.pdf](./slides/week3_intro.pdf)
+
 <details>
 <summary>COL7A1 sequences (click to expand)</summary>
 

@@ -59,6 +59,8 @@ git pull
 
 # Week 3
 
+Introduction slides for exercises A2, 3.6 and 3.8: [week3_intro.pdf](./slides/week3_intro.pdf)
+
 ## Dotplot, local and global alignment
   - [Excercise A2](./extra_tasks.md#exercise-a2)
 
