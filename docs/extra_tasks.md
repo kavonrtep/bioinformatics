@@ -168,10 +168,27 @@ CHPFVYGGCGGNANRFGTREACERRCPPRVVQSQGTGTAQD
 
 </details>
 
-Use progrem gedit to create two files named `COL7A1.fasta` and `COL7A1_variant.fasta` and copy the respective sequences above into these files.
+Use program gedit to create two files named `COL7A1.fasta` and `COL7A1_variant.fasta` and copy the respective sequences above into these files.
 Use dotter and also NCBI BLAST (https://blast.ncbi.nlm.nih.gov/Blast.cgi, use Protein BLAST, align two or more sequences) to identify the deletion in the variant sequence.
 
 - What does dotplot tell us about the protein sequence
+  - Compare the dotplot of the N-terminal part (approximately first 1250 aa) with the middle part of the protein. Why does the middle part look like a dense grid of short diagonals?
+  - Look at the sequence of the middle part. Which amino acid is repeated at every third position?
 - Which tools (dotter or BLAST) is better for identifying this deletions? Why?
 - What is the position of this deletion (relative to the full length protein)?
 - How many amino acids are deleted?
+- Is the position of the deletion unambiguous? Try to align the sequence around the deletion manually - can the gap be placed at more than one position with the same score?
+
+**Biology of the deletion**
+
+Collagen VII forms *anchoring fibrils* which attach the epidermis to the underlying dermis. The middle part of
+the protein is a *collagenous domain*, built from repeats of the tripeptide **Gly-X-Y** (X and Y are often Pro and
+hydroxyproline). Three collagen chains wind around each other into a triple helix. Glycine, the smallest amino acid,
+is the only residue that fits into the center of the helix, so it must be present at every third position.
+
+- Check the UniProt record of COL7A1 (https://www.uniprot.org/uniprotkb/Q02388, section *Family & Domains*). In which domain is the deletion located?
+- Write the sequence around the deletion as triplets (`G-X-Y | G-X-Y | ...`) for both the normal and the variant protein. Is the Gly-X-Y pattern preserved in the variant?
+- The most common cause of the dominant form of DEB is a **substitution** of a single glycine in the triple-helical domain (e.g. Gly→Arg). Why can a change of one amino acid in a protein of 2944 aa cause disease? Why can the mutated chain disturb the function of normal chains produced from the healthy allele (*dominant negative effect*)?
+- Compare a Gly substitution with the deletion you found. Which change would you expect to be more harmful for the triple helix, and why? (There is no single correct answer - discuss.)
+- Look at the *Disease & Variants* section of the UniProt record. How many disease-associated variants are glycine substitutions?
+

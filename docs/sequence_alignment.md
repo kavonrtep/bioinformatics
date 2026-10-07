@@ -779,7 +779,7 @@ Known functional sites in CDK2 (numbering according to CDK2 sequence):
 ### Exercise 3.2 - Multiple alignment from HSPB8 proteins
 Create MSA for set of orthologs of HSPB8 protein (Heat shock protein beta-8) and identify conserved regions.
 
-Make copy of fasta file and then rename fasta headers:
+Make a working copy of the FASTA file (headers are already named by species):
 ```bash
 cd 
 mkdir -p data/hspb8
@@ -800,7 +800,11 @@ Open resulting alignment in `Jalview` program.
   - Go to https://www.ncbi.nlm.nih.gov/protein/NP_055180.1
   - Select `analyze this sequence/identify conserved domains`
   - Will you be able to identify conserved domain if you use only mouse, cow, pig and human sequences?
-  - In Jalview. select subset of sequences(mammals) and create alignment again from 'Web Service -> Alignment -> mafft with defaults'. Is conserved domain still visible in the new alignment?
+  - Create an alignment of the mammalian sequences only and open it in Jalview. Is the conserved domain still visible in the new alignment?
+    ```bash
+    seqkit grep -r -p "Mus|Bos|Sus|Homo" HSP8.fasta > HSP8_mammals.fasta
+    mafft HSP8_mammals.fasta > HSP8_mammals_aln.fasta
+    ```
 
 ### Exercise 3.3 - Alignment of protein isoforms, alignment editing
 Investigate the alignment of 11 alternatively-spliced gene products from the human erythrocyte membrane protein band 4.1 (EPB41) gene, focusing on how different multiple sequence alignment (MSA) programs handle the dataset. The aim is to compare the performance of three popular MSA programs—MAFFT, MUSCLE, and ClustalW—when aligning sequences that differ only by deletions due to alternative splicing.
@@ -1018,6 +1022,8 @@ Protein Sequence Set: Select protein sequences from different organisms represen
 
 P69905; P68871; P02144; Q9NPG2; P01942; P02088; P04247; Q9ER97
 
+Fetch the sequences directly in Jalview (`File -> Fetch sequences`, database `UniProt`, paste the accession list above) and align them with `mafft` (save the sequences as FASTA and run `mafft globins.fasta > globins_aln.fasta`, then open the result in Jalview).
+
 1. Which regions of the aligned sequences are conserved across all the globin
    family members? What might be the functional significance of these conserved
    regions?
@@ -1042,14 +1048,22 @@ trypsin, chymotrypsin, and elastase.
 - Mouse Neutrophil Elastase (Q3UP87)
 - Drosophila melanogaster Serine proteinase stubble (Q05319)
 - Drosophila melanogaster Trypsin zeta (P42280)
-- Xenopus laevis Complement C3 (Q91701)
-- Manduca sexta Chymotrypsinogen (Q25503)
+- Xenopus laevis Chymotrypsin (Q91701)
+- Manduca sexta Chymotrypsin (Q25503)
 
 P07477; P17538; P08246; P07146; Q9CR35;Q3UP87;Q05319; P42280;Q91701;Q25503
 
 Sequences can be obtained either 
   - from UniProt database (https://www.uniprot.org/) using above accessions with 'list' option
   - or directly from Jalview program using 'Fetch sequences' command from File menu
+
+Most of the proteins are ~250 aa long, but *Drosophila* Stubble (787 aa) and the
+*Xenopus* chymotrypsin (745 aa) are much longer. Before you start, look at the
+domain composition of these two proteins in UniProt (section *Family & Domains*).
+Why do they create long gap blocks at the beginning of the alignment? Which part of
+these proteins aligns with trypsin?
+
+#### Part 1 - Catalytic triad
 
 Identify the conserved catalytic triad residues in the aligned sequences. The
 conserved catalytic triad residues in serine proteases are typically histidine (H),
@@ -1063,7 +1077,90 @@ are typically under negative selection, while surface loops and other flexible
 regions might be under positive selection, reflecting the adaptation to
 different substrates and physiological conditions.
 
-In the alignment, there are two conserved Serines, Two identify which one is part of the catalytic triad, you will need to check the function of Human Trypsin in Uniprot database - https://www.uniprot.org/uniprotkb/P07477
+In the alignment, there are two conserved serines. To identify which one is part of the catalytic triad, check the function of Human Trypsin in the UniProt database - https://www.uniprot.org/uniprotkb/P07477 (section *Function -> Features*).
+
+**Residue numbering.** In the literature, residues of serine proteases are numbered
+according to bovine chymotrypsinogen (*chymotrypsin numbering*): the catalytic triad is
+His57, Asp102 and Ser195. UniProt numbers residues from the first methionine of the
+precursor (including the signal peptide), so the same residues have different numbers in
+each protein. Use the table below to find the columns in your alignment:
+
+| Residue (chymotrypsin numbering) | Role | Human trypsin-1 (P07477, UniProt numbering) |
+|---|---|---|
+| Ile16 | N-terminus of the active enzyme | Ile24 |
+| His57 | catalytic triad | His63 |
+| Asp102 | catalytic triad | Asp107 |
+| Arg117 | autolysis site | Arg122 |
+| Asp189 | bottom of the substrate-binding (S1) pocket | Asp194 |
+| Ser195 | catalytic triad | Ser200 |
+
+- Is the triad conserved in all sequences, including insect and frog proteins?
+- Look at the sequence around the catalytic serine (`GDSGGP` motif). How conserved is the
+  neighbourhood of the active-site serine compared to the rest of the protein?
+
+#### Part 2 - Activation of the zymogen
+
+Serine proteases are synthesized as inactive precursors (zymogens), e.g. *trypsinogen*,
+*chymotrypsinogen*. They become active when a short N-terminal activation peptide is cut
+off. The new N-terminus (Ile16, starting the motif `IVGG`) then folds into the protein and
+creates a functional active site.
+
+- Find the `IVGG` motif in the alignment. Is it conserved?
+- Look at the residues just before `IVGG` in human and mouse trypsin. Trypsinogen is
+  activated in the gut by the enzyme enteropeptidase, which recognizes the sequence `DDDDK`.
+  Do you find it?
+- **Hereditary pancreatitis.** Mutation R122H in human trypsin-1 (Arg117 in chymotrypsin
+  numbering) is the most common cause of hereditary pancreatitis. Arg122 is a site where
+  trypsin cleaves (and inactivates) itself. Find this position in the alignment.
+  Why could a mutation that removes a self-destruction site lead to digestion of the
+  pancreas by its own enzymes? Check the *Disease & Variants* section of P07477 in UniProt.
+
+#### Part 3 - Predict substrate specificity from the alignment
+
+Trypsin, chymotrypsin and elastase use the same catalytic mechanism but cut proteins at
+different places. The specificity is determined by the shape and charge of the S1 pocket
+which accommodates the side chain of the substrate residue just before the cleaved bond.
+The key residue is at position 189 (chymotrypsin numbering, Asp194 in human trypsin-1):
+
+- trypsin: **Asp** at the bottom of the pocket - negatively charged, binds positively
+  charged Lys/Arg - cuts after **Lys/Arg**
+- chymotrypsin: **Ser** - deep, hydrophobic pocket - cuts after large aromatic residues
+  (**Phe, Tyr, Trp**)
+- elastase: small or blocked pocket - cuts after **small residues** (Ala, Val)
+
+Tasks:
+- Find the column corresponding to position 189 and write down the residue for each sequence.
+- Based on this residue, predict the specificity of the *Drosophila* trypsin zeta, *Drosophila*
+  Stubble and *Manduca sexta* chymotrypsin. Does the prediction agree with the protein names?
+- Why do you think insect genomes encode dozens to hundreds of serine proteases?
+
+#### Part 4 - Find the impostor
+
+Add the following two human proteins to your alignment (fetch them from UniProt in Jalview
+and realign):
+
+- Human Azurocidin (P20160)
+- Human Haptoglobin (P00738)
+
+Both proteins contain a serine protease domain (check the domain annotation in UniProt).
+
+- Check the three catalytic triad positions in these two proteins. What do you observe?
+- Would you expect these proteins to work as proteases? Read the *Function* section in
+  UniProt for both proteins. What is their function?
+- Proteins that keep the fold of an enzyme but lost the catalytic residues are called
+  *pseudoenzymes*. Why could evolution keep such proteins?
+
+<details>
+<summary>💡 Hint</summary>
+
+- Position 189: Asp in trypsins, trypsin zeta and Stubble (trypsin-like, cut after Lys/Arg); Ser in
+  chymotrypsins including *Manduca*; Gly in neutrophil elastases.
+- Azurocidin has His57→Ser and Ser195→Gly, haptoglobin has Ser195→Ala. Neither protein is
+  catalytically active. Azurocidin is an antimicrobial protein and a chemoattractant of
+  monocytes in neutrophil granules; haptoglobin binds free hemoglobin released from
+  red blood cells.
+
+</details>
 
 ### Exercise 3.7 - Identification of Bacterial Homologs of Human Neuroglobin and Analysis of Heme-Binding Pocket Conservation
 *Objective*:  In this assignment, you will identify bacterial homologs of human
@@ -1080,21 +1177,17 @@ the iron atom in the heme group, allowing the protein to reversibly bind oxygen
 or other small ligands.
 
 Some of the key functions of bacterial globins include:
-- Oxygen transport and storage: Bacterial globins maintain oxygen supply for
-  cellular respiration in microaerophilic or facultative anaerobic bacteria.
-- Oxygen sensing and regulation: They function as oxygen sensors, helping
-  bacteria adapt to changing oxygen levels and modulating gene expression.
-- Nitric oxide detoxification: Flavohemoglobins detoxify nitric oxide,
-  converting it to a less toxic form.
-- Oxidative stress protection: Bacterial globins scavenge reactive oxygen
-  species to protect cells from oxidative stress.
-- Terminal oxidases: Cytochrome bd-type oxidase globins act as terminal oxidases
-  in the respiratory chain, transferring electrons to oxygen.
-- Sulfide oxidation: Sulfide:quinone oxidoreductases (SQR) globins oxidize
-  hydrogen sulfide for energy in sulfur bacteria.
-- Sensing and signaling: Bacterial globins act as sensors and signal
-  transducers, detecting environmental changes and triggering cellular
-  responses.
+- Oxygen supply: e.g. *Vitreoscilla* hemoglobin helps this obligate aerobe to
+  maintain respiration under low oxygen conditions.
+- Nitric oxide detoxification: flavohemoglobins (globin domain fused to a
+  reductase domain) convert toxic nitric oxide (NO) to nitrate. This protects
+  pathogenic bacteria against NO produced by host immune cells.
+- Protection against nitrosative and oxidative stress: truncated hemoglobins
+  (e.g. trHbN of *Mycobacterium tuberculosis*) help bacteria survive inside
+  macrophages.
+- Oxygen sensing and signaling: globin-coupled sensors consist of a globin
+  domain linked to a signaling domain. Binding of O2 regulates e.g. aerotaxis
+  (movement towards or away from oxygen) or production of second messengers.
 
 #### Tasks:
 
@@ -1137,13 +1230,15 @@ gate used for reversible gas transport
 ### Exercise 3.8 - Alignment-Based Primer Design
 
 #### Motivation
-Cuscuta ([[https://en.wikipedia.org/wiki/Cuscuta]]), commonly known as dodder, is a parasitic plant that affects a wide range of host species. Proper identification of different Cuscuta species is important for understanding their ecological impacts and for managing affected plants. The 5.8 rDNA gene is part of the ribosomal DNA (rDNA) gene cluster, which includes the 18S, 5.8S, and 28S rDNA genes separated by internal transcribed spacers (ITS1 and ITS2). The 5.8 rDNA gene is commonly used for this type of task because it contains both conserved and variable regions, making it suitable for distinguishing between species while still being conserved enough for primer design. Your task is to design primers that could be used for species identification in further experiments. These primers will help amplify specific conserved regions, aiding in the confirmation of species identity.
+[Cuscuta](https://en.wikipedia.org/wiki/Cuscuta), commonly known as dodder, is a parasitic plant that affects a wide range of host species. It has almost no chlorophyll and no roots - it wraps around the host plant and takes water and nutrients through special organs (haustoria) that penetrate host tissues. Some species, such as *C. campestris*, are serious agricultural pests (e.g. in alfalfa or tomato fields). Proper identification of different Cuscuta species is important for understanding their ecological impacts and for managing affected plants, but the species are difficult to distinguish morphologically.
+
+Your task is to design PCR primers that amplify a DNA region suitable for species identification (*DNA barcoding*). In plants and fungi, the most commonly used region is the internal transcribed spacer (ITS) of ribosomal DNA.
 
 #### Organization of rDNA
- The ITS1 and ITS2 regions are highly variable, which makes them useful for distinguishing between closely related species, whereas the 18S, 5.8S, and 28S regions are more conserved, providing stable targets for primer design.
+Ribosomal DNA (rDNA) is organized as tandem arrays of units containing the 18S, 5.8S and 26S rRNA genes (28S in animals), separated by internal transcribed spacers ITS1 and ITS2. The rRNA genes are highly conserved because they form the ribosome, while the spacers are removed during rRNA processing and evolve much faster. The ITS1 and ITS2 regions are therefore highly variable, which makes them useful for distinguishing between closely related species, whereas the 18S, 5.8S, and 26S regions are conserved, providing stable targets for primer design. The strategy is to place primers in the conserved genes so that they amplify the variable spacer(s) between them.
 ![rDNA](./rDNA.png)
 
-The set of rDNA sequences from Cuscuta species can be found in file `~/Desktop/Bioinformatics/data/alignment_sequences/5.8S_Cuscuta.fasta`. Your task is to identify conserved regions and design primers accordingly. The exercise will guide you through the following steps:
+The set of rDNA sequences (end of 18S - ITS1 - 5.8S - ITS2 - beginning of 26S) from Cuscuta species can be found in file `~/Desktop/Bioinformatics/data/alignment_sequences/5.8S_Cuscuta.fasta`. Your task is to identify conserved regions and design primers accordingly. The exercise will guide you through the following steps:
 
 #### Sequence Alignment with Jalview
 
@@ -1151,13 +1246,20 @@ Open the provided set of sequences using Jalview.
 
 Perform a multiple sequence alignment to visualize conserved and variable regions among the different Cuscuta species. Use `mafft` program with L-INS-i setting.
 
+```bash
+mafft --localpair --maxiterate 1000 ~/Desktop/Bioinformatics/data/alignment_sequences/5.8S_Cuscuta.fasta > Cuscuta_aln.fasta
+```
+
 Inspect the alignment to identify suitable regions for primers, and save the alignment for use in the next step.
+
+- Can you locate the 5.8S gene and the two spacers in the alignment just by looking at the conservation?
+- Note that the sequences have different lengths at both ends. GenBank sequences often end at the primer sites used to obtain them (the primers themselves are frequently trimmed). How does this affect the consensus near the ends of the alignment?
 
 #### Generating a Consensus Sequence with EMBOSS Cons
 
 Use the EMBOSS Cons program available on the web to create a consensus sequence from your alignment. [Link to EMBOSS Cons](http://www.ebi.ac.uk/jdispatcher/msa/emboss_cons?stype=dna&matrix=EDNAFULL)
 
-The consensus sequence should highlight the regions that are conserved across all species, which will be key for primer design. Set a suitable identity threshold ( you have to unfold parameters setting). Here the identity parameter mean "The required number of identities at a site for it to give a consensus at that position".
+The consensus sequence should highlight the regions that are conserved across all species, which will be key for primer design. Set a suitable identity threshold ( you have to unfold parameters setting). Here the identity parameter mean "The required number of identities at a site for it to give a consensus at that position". Positions which do not reach the threshold are reported as `N` (or lowercase letters).
 
 #### Primer Design with Primer3
 
@@ -1165,10 +1267,51 @@ Use the consensus sequence as input for Primer3 (web version: [Primer3](https://
 
 Select a suitable product size range, aiming for as large a product as possible, and click on "Pick Primers."
 
-Do the suggested primers correspond to the conserved regions observed in the alignment from step 1?
+- Do the suggested primers correspond to the conserved regions observed in the alignment from step 1?
+- By default, Primer3 does not place primers over `N` positions. Why does this make the consensus sequence a convenient input for designing primers in conserved regions?
+- In which rDNA region (18S, 5.8S, 26S) did your primers end up? Which spacers will be amplified?
 
-#### Deliverable
-Once your primers are designed, they could potentially serve to confirm species identity in further experiments. 
+#### Compare with universal ITS primers
+
+Universal ITS primers (White et al. 1990) are widely used for barcoding of fungi and plants:
+
+| Primer | Sequence (5' -> 3') | Location |
+|---|---|---|
+| ITS1 | `TCCGTAGGTGAACCTGCGG` | end of 18S, forward |
+| ITS3 | `GCATCGATGAAGAACGCAGC` | 5.8S, forward |
+| ITS2 | `GCTGCGTTCTTCATCGATGC` | 5.8S, reverse |
+| ITS4 | `TCCTCCGCTTATTGATATGC` | beginning of 26S, reverse |
+
+Find the primer binding sites in the Cuscuta sequences with `seqkit locate` (both strands are searched, `-m 2` allows up to 2 mismatches):
+
+```bash
+seqkit locate -i -m 2 -p TCCGTAGGTGAACCTGCGG,GCTGCGTTCTTCATCGATGC,TCCTCCGCTTATTGATATGC \
+   ~/Desktop/Bioinformatics/data/alignment_sequences/5.8S_Cuscuta.fasta
+```
+
+- Are the binding sites of universal primers present in all sequences? If not, is it because of mutations, or because the sequence is too short?
+- Compare the position of your primers with the universal primers.
+
+#### Will the primers amplify the host plant?
+
+A dodder sample collected in the field is wrapped around its host, and haustoria grow inside host tissues. The extracted DNA is therefore always a mixture of parasite and host DNA. If the primers are "too universal", they amplify the host rDNA as well.
+
+The file `~/Desktop/Bioinformatics/data/alignment_sequences/Medicago_sativa_ITS.fasta` contains the same rDNA region from alfalfa (*Medicago sativa*), a common host of *C. campestris*.
+
+- Check whether your primers (and the universal primers) can bind to the alfalfa sequence. Replace `FORWARD` and `REVERSE` with your primer sequences:
+  ```bash
+  seqkit locate -i -m 2 -p FORWARD,REVERSE \
+     ~/Desktop/Bioinformatics/data/alignment_sequences/Medicago_sativa_ITS.fasta
+  ```
+- Add the alfalfa sequence to your alignment (Jalview: drag and drop the file to the alignment window, then realign). Are there regions that are conserved in all Cuscuta sequences but differ in alfalfa? Could you design a **Cuscuta-specific** primer there? Mismatches at the 3' end of a primer have the strongest effect on PCR.
+
+#### Can the amplicon distinguish the species?
+
+A good barcode must be variable enough to tell the species apart.
+
+- Build a tree from your alignment in Jalview (`Calculate -> Calculate Tree or PCA -> Neighbour Joining, % identity`). How many main groups of species do you see? The genus *Cuscuta* is divided into subgenera *Cuscuta*, *Grammica* and *Monogynella* - can you assign the groups to them (use Wikipedia or the NCBI Taxonomy)?
+- Which species pairs are so similar that the ITS sequence would hardly distinguish them?
+- The dataset contains two sequences labelled *Cuscuta epithymum* (MZ093402 and AY554400). Do they group together? What could explain the result? What does it tell you about using public databases as a reference for species identification?
 
 #### Tools Needed
 
@@ -1177,6 +1320,8 @@ Jalview: For sequence alignment.
 EMBOSS Cons: To create a consensus sequence from the alignment.
 
 Primer3: To design primers based on the consensus sequence.
+
+seqkit: To search for primer binding sites.
 
 This exercise will give you hands-on experience in using bioinformatics tools to identify conserved regions and design primers, skills that are crucial for species identification and molecular biology research.
 
