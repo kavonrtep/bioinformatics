@@ -1324,7 +1324,18 @@ Save the FASTA as `ITS_primers.fasta` and add the primers to your alignment with
 mafft --addfragments ITS_primers.fasta --keeplength Cuscuta_aln.fasta > Cuscuta_aln_primers.fasta
 ```
 
-Open `Cuscuta_aln_primers.fasta` in Jalview. You can also add your own Primer3 primers to the same file (the reverse primer as reverse complement - Primer3 reports the right primer 5' -> 3' on the opposite strand).
+Open `Cuscuta_aln_primers.fasta` in Jalview. You can also add your own Primer3 primers to the same file. Primer3 reports the right primer 5' -> 3' on the opposite strand, so add it as **reverse complement**:
+
+- on the web: [SMS Reverse Complement](https://www.bioinformatics.org/sms2/rev_comp.html) - paste the primer, keep the default `reverse-complement` option, press Submit and copy the result to the FASTA file
+- or in the terminal, without any extra tool (replace `LEFT` and `RIGHT` with your primer sequences):
+  ```bash
+  echo ">my_left" >> ITS_primers.fasta
+  echo "LEFT" >> ITS_primers.fasta
+  echo ">my_right_reverse_complement" >> ITS_primers.fasta
+  echo "RIGHT" | rev | tr ACGTacgt TGCAtgca >> ITS_primers.fasta
+  ```
+
+Then run the `mafft --addfragments` command again.
 
 Alternatively, in Jalview use `File -> Add Sequences -> from Textbox`, paste the FASTA above and realign (the primers are added unaligned at the beginning of the alignment).
 
