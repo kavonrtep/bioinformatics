@@ -1265,17 +1265,32 @@ Inspect the alignment to identify suitable regions for primers, and save the ali
 
 Use the EMBOSS Cons program available on the web to create a consensus sequence from your alignment. [Link to EMBOSS Cons](http://www.ebi.ac.uk/jdispatcher/msa/emboss_cons?stype=dna&matrix=EDNAFULL)
 
-The consensus sequence should highlight the regions that are conserved across all species, which will be key for primer design. Set a suitable identity threshold ( you have to unfold parameters setting). Here the identity parameter mean "The required number of identities at a site for it to give a consensus at that position". Positions which do not reach the threshold are reported as `N` (or lowercase letters).
+Upload the alignment `Cuscuta_aln.fasta` and unfold the parameter settings. The important parameter is **Identity**: "the required number of identities at a site for it to give a consensus at that position". It is a **number of sequences**, not a percentage. Positions which do not reach the threshold are reported as `N`.
+
+Choosing the identity value:
+
+- The alignment has 16 sequences, so `16` means "all sequences must agree". But the sequences have different lengths: near the ends of the alignment only some sequences have data (e.g. at the beginning of the 26S region only 14-15 of the 16 sequences reach). With identity 16, these regions become `N`, even if all the sequences that are present agree.
+- A good compromise for this dataset is **identity = 13**: a base is accepted if at least 13 sequences carry it, which tolerates a few missing (short) sequences and an occasional mutation.
+- If you leave the identity at its default (no identity threshold), the consensus contains the majority base at every position, also in the variable spacers - Primer3 will then happily place primers in ITS1/ITS2, where they will not work for all species. Try it and compare.
+
+Note that the consensus has the length of the **alignment** (807 columns), including the gap columns, so the product sizes reported by Primer3 are approximate.
 
 #### Primer Design with Primer3
 
-Use the consensus sequence as input for Primer3 (web version: [Primer3](https://primer3.ut.ee/)) to design primers.
+Use the consensus sequence as input for Primer3 (web version: [Primer3](https://primer3.ut.ee/)) to design primers. Paste the consensus (only the sequence, without the `>` header line) to the sequence box.
 
-Select a suitable product size range, aiming for as large a product as possible, and click on "Pick Primers."
+Settings:
+
+- Keep `Max #N's accepted` at `0` (default): primers will not be placed over `N` positions, i.e. only in the conserved regions of the consensus.
+- **Product Size Ranges**: the default list starts with `150-250`, and Primer3 returns the first range that works - you will get a short product. To amplify the whole ITS1-5.8S-ITS2 region, replace the list with a single range, e.g. `550-700`.
+- Keep the other settings at their defaults (primer length 18-23, Tm 57-62 °C) and click on "Pick Primers".
+
+Questions:
 
 - Do the suggested primers correspond to the conserved regions observed in the alignment from step 1?
-- By default, Primer3 does not place primers over `N` positions. Why does this make the consensus sequence a convenient input for designing primers in conserved regions?
+- Why does a consensus with `N` in the variable positions make a convenient input for designing primers in conserved regions?
 - In which rDNA region (18S, 5.8S, 26S) did your primers end up? Which spacers will be amplified?
+- What do you get with the default product size ranges? Which part of the rDNA would this shorter product cover?
 
 #### Compare with universal ITS primers
 
@@ -1288,7 +1303,32 @@ Universal ITS primers (White et al. 1990) are widely used for barcoding of fungi
 | ITS2 | `GCTGCGTTCTTCATCGATGC` | 5.8S, reverse |
 | ITS4 | `TCCTCCGCTTATTGATATGC` | beginning of 26S, reverse |
 
-Find the primer binding sites in the Cuscuta sequences with `seqkit locate` (both strands are searched, `-m 2` allows up to 2 mismatches):
+Reverse primers bind to the opposite strand, so to see them in the alignment they have to be written as **reverse complements**. The FASTA below already contains all four primers in the same orientation as the Cuscuta sequences:
+
+```fasta
+>ITS1_forward
+TCCGTAGGTGAACCTGCGG
+>ITS3_forward
+GCATCGATGAAGAACGCAGC
+>ITS2_reverse_complement
+GCATCGATGAAGAACGCAGC
+>ITS4_reverse_complement
+GCATATCAATAAGCGGAGGA
+```
+
+(ITS2 and ITS3 bind to the same place of the 5.8S gene, on opposite strands, so their sequences in this orientation are identical.)
+
+Save the FASTA as `ITS_primers.fasta` and add the primers to your alignment with `mafft --addfragments`; `--keeplength` keeps the columns of your alignment unchanged, so the primers are placed over their binding sites:
+
+```bash
+mafft --addfragments ITS_primers.fasta --keeplength Cuscuta_aln.fasta > Cuscuta_aln_primers.fasta
+```
+
+Open `Cuscuta_aln_primers.fasta` in Jalview. You can also add your own Primer3 primers to the same file (the reverse primer as reverse complement - Primer3 reports the right primer 5' -> 3' on the opposite strand).
+
+Alternatively, in Jalview use `File -> Add Sequences -> from Textbox`, paste the FASTA above and realign (the primers are added unaligned at the beginning of the alignment).
+
+You can also find the primer binding sites in the unaligned sequences with `seqkit locate` (both strands are searched, `-m 2` allows up to 2 mismatches):
 
 ```bash
 seqkit locate -i -m 2 -p TCCGTAGGTGAACCTGCGG,GCTGCGTTCTTCATCGATGC,TCCTCCGCTTATTGATATGC \
@@ -1296,6 +1336,7 @@ seqkit locate -i -m 2 -p TCCGTAGGTGAACCTGCGG,GCTGCGTTCTTCATCGATGC,TCCTCCGCTTATTG
 ```
 
 - Are the binding sites of universal primers present in all sequences? If not, is it because of mutations, or because the sequence is too short?
+- Look closely at the ITS3/ITS2 site in the 5.8S. Is there a mismatch between the universal primers and Cuscuta? Which of the two primers (ITS3 forward or ITS2 reverse) has the mismatch closer to its 3' end?
 - Compare the position of your primers with the universal primers.
 
 #### Will the primers amplify the host plant?
@@ -1309,7 +1350,12 @@ The file `~/Desktop/Bioinformatics/data/alignment_sequences/Medicago_sativa_ITS.
   seqkit locate -i -m 2 -p FORWARD,REVERSE \
      ~/Desktop/Bioinformatics/data/alignment_sequences/Medicago_sativa_ITS.fasta
   ```
-- Add the alfalfa sequence to your alignment (Jalview: drag and drop the file to the alignment window, then realign). Are there regions that are conserved in all Cuscuta sequences but differ in alfalfa? Could you design a **Cuscuta-specific** primer there? Mismatches at the 3' end of a primer have the strongest effect on PCR.
+- Add the alfalfa sequence to your alignment with primers:
+  ```bash
+  mafft --add ~/Desktop/Bioinformatics/data/alignment_sequences/Medicago_sativa_ITS.fasta --keeplength \
+     Cuscuta_aln_primers.fasta > Cuscuta_aln_primers_alfalfa.fasta
+  ```
+  Open the result in Jalview. Are there regions that are conserved in all Cuscuta sequences but differ in alfalfa? Could you design a **Cuscuta-specific** primer there? Mismatches at the 3' end of a primer have the strongest effect on PCR.
 
 #### Can the amplicon distinguish the species?
 
