@@ -1054,7 +1054,7 @@ Introduction slides - catalytic triad, residue numbering, zymogen activation and
 - Xenopus laevis Chymotrypsin (Q91701)
 - Manduca sexta Chymotrypsin (Q25503)
 
-P07477; P17538; P08246; P07146; Q9CR35;Q3UP87;Q05319; P42280;Q91701;Q25503
+P07477; P17538; P08246; P07146; Q9CR35; Q3UP87; Q05319; P42280; Q91701; Q25503
 
 Sequences can be obtained either 
   - from UniProt database (https://www.uniprot.org/) using above accessions with 'list' option
