@@ -86,6 +86,14 @@ Introduction slides for exercises A2, 3.6 and 3.8: [week3_intro.pdf](./slides/we
 - [Exercise 1.6 - Identification of species using NCBI BLAST](./blast_search.md/#exercise-16---identification-of-species-using-ncbi-blast)
 - [Exercise 1.4 - Identification of coding sequence using BLASTX](./blast_search.md/#exercise-14---identification-of-coding-sequence-using-blastx-vs-blastn)
 - [Exercise 1.7 - Identification of mutations in gyrA gene](./blast_search.md/#exercise-17---identification-of-mutations-in-gyra-gene)
+- [Exercise 1.8 - Spread of the colistin resistance gene mcr-1](./blast_search.md/#exercise-18---spread-of-the-colistin-resistance-gene-mcr-1)
+- [Exercise 1.9 - Where did SARS-CoV-2 come from?](./blast_search.md/#exercise-19---where-did-sars-cov-2-come-from)
+- [Exercise 1.10 - Syncytin: a viral gene that makes the placenta](./blast_search.md/#exercise-110---syncytin-a-viral-gene-that-makes-the-placenta)
+- [Exercise 1.11 - Is my genome assembly contaminated?](./blast_search.md/#exercise-111---is-my-genome-assembly-contaminated)
+
+If the NCBI BLAST service is not available, each of the exercises 1.7-1.11 has
+a *Backup* section with an alternative web service, local BLAST commands and
+pre-computed results.
 
 
 # Week 5 (Oct. 27)

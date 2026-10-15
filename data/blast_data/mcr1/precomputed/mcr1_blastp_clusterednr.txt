@@ -1,0 +1,1091 @@
+BLASTP 2.12.0+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for composition-based statistics: Alejandro A. Schaffer,
+L. Aravind, Thomas L. Madden, Sergei Shavirin, John L. Spouge, Yuri
+I. Wolf, Eugene V. Koonin, and Stephen F. Altschul (2001),
+"Improving the accuracy of PSI-BLAST protein database searches with
+composition-based statistics and other refinements", Nucleic Acids
+Res. 29:2994-3005.
+
+
+
+Database: clustered nr
+           357,442,162 sequences; 117,307,649,189 total letters
+
+
+
+Query= AKF16168.1 phosphoethanolamine transferase (plasmid) [Escherichia
+coli]
+
+Length=541
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+WP_065203556.1 MCR-1 family phosphoethanolamine--lipid A transfer...  1115    0.0   
+WP_459520946.1 phosphoethanolamine transferase [Escherichia coli]     942     0.0   
+WP_099982813.1 phosphoethanolamine--lipid A transferase MCR-6.1 [...  940     0.0   
+WP_188331889.1 phosphoethanolamine--lipid A transferase MCR-2.7 [...  927     0.0   
+WP_228172881.1 phosphoethanolamine transferase [Escherichia coli]     862     0.0   
+WP_252383302.1 phosphoethanolamine transferase [Escherichia coli]     800     0.0   
+UBZ25760.1 phosphoethanolamine--lipid A transferase MCR-1.1 [Kleb...  791     0.0   
+WP_419400070.1 MULTISPECIES: phosphoethanolamine transferase [unc...  723     0.0   
+MIN3546484.1 phosphoethanolamine transferase [Moraxella sp.]          722     0.0   
+WP_275579703.1 phosphoethanolamine transferase [Moraxella tetraod...  710     0.0   
+WP_258963944.1 phosphoethanolamine transferase [Klebsiella pneumo...  702     0.0   
+MGL5252039.1 phosphoethanolamine transferase [Moraxella sp.]          699     0.0   
+WP_374804514.1 phosphoethanolamine transferase [Hubeiibacter jixu...  679     0.0   
+MIN3566999.1 phosphoethanolamine transferase [Moraxella sp.]          674     0.0   
+WP_078317642.1 phosphoethanolamine transferase [Moraxella porci]      674     0.0   
+HHE4543106.1 TPA: phosphoethanolamine transferase [Escherichia coli]  669     0.0   
+WP_353681624.1 phosphoethanolamine transferase [Escherichia coli]     658     0.0   
+WP_373384739.1 phosphoethanolamine transferase [Escherichia coli]     656     0.0   
+WP_139246889.1 phosphoethanolamine transferase [Escherichia coli]     656     0.0   
+WP_152698663.1 phosphoethanolamine transferase [Moraxella catarrh...  643     0.0   
+WP_172695566.1 phosphoethanolamine transferase [Escherichia coli]     624     0.0   
+MBD3727803.1 phosphoethanolamine--lipid A transferase [Faucicola ...  622     0.0   
+6A7W_A Chain A, Putative integral membrane protein [Escherichia c...  605     0.0   
+WP_050707986.1 phosphoethanolamine transferase [Dichelobacter nod...  599     0.0   
+WP_079352150.1 phosphoethanolamine transferase [Faucicola atlantae]   594     0.0   
+MES4454103.1 phosphoethanolamine transferase domain-containing pr...  593     0.0   
+MIN9311317.1 phosphoethanolamine transferase [Moraxella sp.]          558     0.0   
+WP_406947463.1 phosphoethanolamine transferase [Psychrobacter aes...  557     0.0   
+WP_164875991.1 phosphoethanolamine transferase [Salmonella enterica]  550     0.0   
+WP_422305823.1 phosphoethanolamine transferase [Psychrobacter sp.]    542     0.0   
+WP_201555747.1 phosphoethanolamine transferase [Psychrobacter sp....  535     0.0   
+WP_149489696.1 phosphoethanolamine transferase [Psychrobacter sp....  534     0.0   
+WP_296403758.1 phosphoethanolamine transferase [Psychrobacter sp.]    533     0.0   
+WP_152923900.1 phosphoethanolamine transferase [Escherichia coli]     531     0.0   
+MEH9392500.1 phosphoethanolamine transferase domain-containing pr...  530     0.0   
+WP_464741826.1 phosphoethanolamine transferase [Psychrobacter sp....  530     1e-180
+WP_321155802.1 phosphoethanolamine transferase [Psychrobacter sp....  529     3e-180
+WP_084387252.1 MULTISPECIES: phosphoethanolamine transferase [Psy...  529     4e-180
+WP_227674144.1 phosphoethanolamine transferase [Psychrobacter pac...  528     9e-180
+WP_041757662.1 phosphoethanolamine transferase [Psychrobacter arc...  527     2e-179
+WP_413519823.1 phosphoethanolamine transferase [Psychrobacter gla...  527     2e-179
+WP_319051636.1 phosphoethanolamine transferase [Psychrobacter sp....  527     2e-179
+WP_299330566.1 phosphoethanolamine transferase [uncultured Psychr...  522     1e-177
+WP_486552191.1 phosphoethanolamine transferase [Psychrobacter sp....  522     1e-177
+WP_197175998.1 phosphoethanolamine transferase [Psychrobacter sp....  522     3e-177
+WP_394123889.1 phosphoethanolamine transferase [Psychrobacter niv...  519     3e-176
+WP_227535565.1 phosphoethanolamine transferase [Psychrobacter sp....  519     5e-176
+WP_474723725.1 MULTISPECIES: phosphoethanolamine transferase [Psy...  518     1e-175
+MFO1365964.1 phosphoethanolamine--lipid A transferase [Faucicola ...  508     3e-175
+WP_259365204.1 phosphoethanolamine transferase [Psychrobacter sp....  516     3e-175
+WP_490607512.1 phosphoethanolamine transferase [Psychrobacter cry...  515     9e-175
+WP_327193130.1 phosphoethanolamine transferase [Psychrobacter sp....  515     9e-175
+WP_435978997.1 phosphoethanolamine transferase [Psychrobacter sp....  514     2e-174
+WP_201561245.1 phosphoethanolamine transferase [Psychrobacter gla...  514     3e-174
+MDO5768677.1 phosphoethanolamine--lipid A transferase [Psychrobac...  513     5e-174
+WP_159137525.1 phosphoethanolamine transferase domain-containing ...  499     2e-173
+WP_201611434.1 phosphoethanolamine transferase [Psychrobacter sub...  510     6e-173
+WP_201598724.1 phosphoethanolamine transferase [Psychrobacter val...  510     1e-172
+WP_089555766.1 phosphoethanolamine transferase [Psychrobacter sp....  509     1e-172
+WP_325246508.1 phosphoethanolamine transferase [Psychrobacter sp.]    509     2e-172
+WP_201591790.1 phosphoethanolamine transferase [Psychrobacter sp....  509     2e-172
+WP_296245361.1 MULTISPECIES: phosphoethanolamine transferase [unc...  509     2e-172
+WP_147222968.1 phosphoethanolamine transferase [Psychrobacter fri...  508     2e-172
+WP_062533193.1 phosphoethanolamine transferase [Psychrobacter ura...  508     3e-172
+MCV5625150.1 sulfatase-like hydrolase/transferase [Escherichia coli]  496     3e-172
+WP_218688930.1 phosphoethanolamine transferase [Psychrobacter sp....  508     7e-172
+WP_194621182.1 phosphoethanolamine transferase [Psychrobacter sp....  508     9e-172
+WP_201537809.1 phosphoethanolamine transferase [Psychrobacter imm...  507     2e-171
+WP_183618103.1 phosphoethanolamine transferase [Psychrobacter luti]   506     3e-171
+WP_068327669.1 phosphoethanolamine transferase [Psychrobacter sp....  506     3e-171
+WP_305899951.1 phosphoethanolamine transferase [Psychrobacter sp....  506     5e-171
+WP_201532018.1 phosphoethanolamine transferase [Psychrobacter sp....  504     2e-170
+MCY5841774.1 sulfatase-like hydrolase/transferase [Salmonella ent...  491     3e-170
+WP_144295737.1 phosphoethanolamine transferase [Psychrobacter san...  503     7e-170
+WP_227674046.1 phosphoethanolamine transferase [Psychrobacter phe...  503     1e-169
+WP_265089701.1 phosphoethanolamine transferase [Psychrobacter okh...  499     2e-169
+WP_320158631.1 phosphoethanolamine transferase [Psychrobacter sp....  500     3e-169
+WP_109589350.1 phosphoethanolamine transferase [Psychrobacter imm...  500     1e-168
+QGF22272.1 MCR family phosphoethanolamine--lipid A transferase [E...  487     1e-168
+WP_296189595.1 MULTISPECIES: phosphoethanolamine transferase [unc...  499     2e-168
+WP_201582207.1 phosphoethanolamine transferase [Psychrobacter imm...  496     4e-167
+WP_406947256.1 phosphoethanolamine transferase [Psychrobacter are...  490     7e-165
+6BNE_A Chain A, Phosphoethanolamine transferase [Moraxella sp. HM...  473     2e-161
+WP_131667530.1 phosphoethanolamine transferase [Psychrobacter pyg...  480     4e-161
+WP_201618130.1 phosphoethanolamine transferase [Psychrobacter ura...  479     1e-160
+WP_252151172.1 phosphoethanolamine transferase [Escherichia coli]     464     1e-159
+WP_462625891.1 phosphoethanolamine transferase [Psychrobacter sp....  476     1e-159
+MBU1193195.1 phosphoethanolamine--lipid A transferase [Gammaprote...  475     2e-159
+WP_335582338.1 phosphoethanolamine transferase [Campylobacter spu...  475     2e-159
+WP_486548434.1 phosphoethanolamine transferase [Psychrobacter sp....  475     1e-158
+WP_159325338.1 phosphoethanolamine transferase [Klebsiella pneumo...  458     9e-158
+MDD5358904.1 phosphoethanolamine--lipid A transferase [Sulfurovac...  466     3e-156
+MFQ3198061.1 lipid A ethanolaminephosphotransferase [Paraglacieco...  464     8e-155
+CUV66120.1 Sulfatase [Sulfurovum sp. enrichment culture clone C5]     462     2e-154
+MHY3558071.1 phosphoethanolamine transferase [Myxococcota bacterium]  461     3e-154
+WP_076086654.1 phosphoethanolamine transferase [Poseidonibacter p...  460     1e-153
+WP_089189522.1 phosphoethanolamine transferase [Campylobacter spu...  460     2e-153
+KAF0190726.1 phosphoethanolamine transferase [Gammaproteobacteria...  458     8e-153
+WP_159310470.1 phosphoethanolamine transferase [Klebsiella pneumo...  446     9e-153
+MCB1718774.1 phosphoethanolamine--lipid A transferase [Candidatus...  457     1e-152
+MHS6961340.1 phosphoethanolamine transferase [Thiohalophilaceae b...  457     1e-152
+MER2163118.1 phosphoethanolamine--lipid A transferase [Psychrobac...  454     2e-152
+MIM8866737.1 phosphoethanolamine transferase [Sulfurovum sp.]         455     3e-152
+MCF6310156.1 phosphoethanolamine--lipid A transferase [Sulfurimon...  456     4e-152
+MFT4940381.1 lipid A ethanolaminephosphotransferase [Paraglacieco...  457     4e-152
+MFK5937431.1 phosphoethanolamine--lipid A transferase [Sulfurimon...  455     1e-151
+WP_412724742.1 phosphoethanolamine transferase [Arcobacter sp. 15-2]  455     2e-151
+MHS6791654.1 phosphoethanolamine transferase [Gammaproteobacteria...  454     2e-151
+MEY3002722.1 hypothetical protein [Pseudomonadota bacterium]          454     3e-151
+MFK5914039.1 phosphoethanolamine--lipid A transferase [Woeseiacea...  454     4e-151
+BHB24146.1 phosphoethanolamine--lipid A transferase [Psychrobacte...  450     2e-150
+MDY0116118.1 phosphoethanolamine--lipid A transferase [Sulfurimon...  451     4e-150
+MBP9616295.1 phosphoethanolamine--lipid A transferase [Aliarcobac...  451     7e-150
+MCF6206359.1 phosphoethanolamine--lipid A transferase [Sulfurovum...  451     1e-149
+TQV62110.1 phosphoethanolamine--lipid A transferase [Sulfurovum sp.]  450     1e-149
+MDD3770793.1 phosphoethanolamine--lipid A transferase [Sulfuricur...  449     2e-149
+WP_008250227.1 phosphoethanolamine transferase [Zhongshania aliph...  449     3e-149
+MFT7860129.1 phosphoethanolamine--lipid A transferase [Sulfurimon...  449     4e-149
+MFA5234513.1 phosphoethanolamine--lipid A transferase [Sulfurimon...  449     4e-149
+MBI5862728.1 phosphoethanolamine--lipid A transferase [Rhodocycla...  449     4e-149
+WP_372742247.1 phosphoethanolamine transferase [Neptunomonas sp.]     448     6e-149
+WP_489728956.1 phosphoethanolamine transferase [Paraglaciecola sp...  448     8e-149
+MEY3090522.1 hypothetical protein [Pseudomonadota bacterium]          447     9e-149
+WP_026808153.1 phosphoethanolamine transferase [Aliarcobacter lan...  447     1e-148
+WP_044838647.1 phosphoethanolamine transferase [Thalassomonas vir...  446     8e-148
+WP_369811213.1 phosphoethanolamine transferase [Sulfurimonas micr...  446     8e-148
+MEO1953530.1 phosphoethanolamine--lipid A transferase [Campylobac...  445     1e-147
+MHD8677862.1 phosphoethanolamine transferase [Sedimenticolaceae b...  445     1e-147
+WP_348617275.1 phosphoethanolamine transferase [Paraglaciecola sp...  445     2e-147
+WP_306022545.1 phosphoethanolamine transferase [Paraglaciecola sp.]   445     2e-147
+WP_329657360.1 phosphoethanolamine transferase [Sulfuricurvum sp.]    444     2e-147
+MHY1783115.1 phosphoethanolamine transferase [Gammaproteobacteria...  444     3e-147
+MER1973946.1 phosphoethanolamine--lipid A transferase [Psychrobac...  441     3e-147
+WP_321277535.1 phosphoethanolamine transferase [Thiomicrorhabdus ...  444     3e-147
+DAB33798.1 TPA: phosphoethanolamine transferase [Sulfurospirillum...  444     4e-147
+WP_106870669.1 phosphoethanolamine transferase [Campylobacter bla...  444     4e-147
+MDO9207439.1 phosphoethanolamine--lipid A transferase [Sulfuricur...  443     4e-147
+WP_024774280.1 phosphoethanolamine transferase [Aliarcobacter cib...  443     9e-147
+WP_198304662.1 phosphoethanolamine transferase [Arcobacter vandam...  442     1e-146
+WP_417567807.1 phosphoethanolamine transferase [Marinobacter sp.]     443     1e-146
+WP_052057037.1 phosphoethanolamine transferase [Colwellia psychre...  442     1e-146
+TAA75065.1 lipid A ethanolaminephosphotransferase [Candidatus Ele...  442     2e-146
+WP_146781855.1 phosphoethanolamine transferase [Colwellia demingiae]  442     2e-146
+WP_201341086.1 phosphoethanolamine transferase [Abyssogena phaseo...  441     3e-146
+MGI9339408.1 phosphoethanolamine transferase [Psychrobacter sp.]      439     3e-146
+WP_297916484.1 phosphoethanolamine transferase [uncultured Campyl...  441     4e-146
+WP_458701442.1 phosphoethanolamine transferase [Sulfurospirillum ...  441     4e-146
+WP_333802985.1 phosphoethanolamine transferase [Sulfurospirillum ...  441     4e-146
+WP_310442364.1 phosphoethanolamine transferase [Sulfurimonas sp.]     441     6e-146
+MGP1486133.1 phosphoethanolamine transferase [Campylobacter sp.]      440     8e-146
+WP_415242472.1 phosphoethanolamine transferase [Zhongshania sp.]      440     1e-145
+WP_205422244.1 phosphoethanolamine transferase [Marinobacter sp. ...  440     1e-145
+WP_428026470.1 phosphoethanolamine transferase [Arcobacter sp.]       439     1e-145
+MHN4235773.1 phosphoethanolamine transferase [Gammaproteobacteria...  439     2e-145
+WP_299997217.1 phosphoethanolamine transferase [Sulfuricurvum sp.]    439     2e-145
+MFT6899121.1 lipid A ethanolaminephosphotransferase [Paraglacieco...  439     2e-145
+MBE0497666.1 phosphoethanolamine--lipid A transferase [Campylobac...  439     2e-145
+MGW8169914.1 phosphoethanolamine transferase [Sulfurovaceae bacte...  439     3e-145
+MHY3660874.1 phosphoethanolamine transferase [Kangiellaceae bacte...  437     7e-145
+NPA60427.1 phosphoethanolamine--lipid A transferase [Campylobacte...  437     1e-144
+WP_151900420.1 phosphoethanolamine transferase [Sulfurimonas hydr...  437     1e-144
+DAB34872.1 TPA: phosphoethanolamine transferase [Sulfurospirillum...  437     1e-144
+MBN1957002.1 phosphoethanolamine--lipid A transferase [Desulfurom...  437     1e-144
+MCB1758617.1 phosphoethanolamine--lipid A transferase [Gammaprote...  437     2e-144
+WP_193111823.1 phosphoethanolamine transferase [Sulfurimonas para...  437     2e-144
+WP_373013613.1 phosphoethanolamine transferase [Sulfuricurvum sp.]    437     2e-144
+WP_484401604.1 phosphoethanolamine transferase [Sulfuricurvum sp.]    437     2e-144
+MBP6325204.1 phosphoethanolamine--lipid A transferase [Sulfurospi...  437     2e-144
+MCK5829735.1 phosphoethanolamine--lipid A transferase [Methylococ...  437     2e-144
+HIR6645143.1 TPA: phosphoethanolamine transferase [Pseudomonadale...  436     2e-144
+MCX6073205.1 phosphoethanolamine--lipid A transferase [Campylobac...  436     3e-144
+WP_048494397.1 phosphoethanolamine transferase [Marinobacter subt...  436     4e-144
+WP_304739295.1 phosphoethanolamine transferase [Sulfuricurvum sp.]    436     6e-144
+HFD14588.1 TPA: phosphoethanolamine--lipid A transferase [Campylo...  435     6e-144
+WP_216058830.1 MULTISPECIES: phosphoethanolamine transferase [Pos...  436     6e-144
+MHS8097218.1 phosphoethanolamine transferase [Sulfurimonadaceae b...  436     7e-144
+WP_182758452.1 phosphoethanolamine transferase [Pseudoalteromonas...  436     7e-144
+WP_085440454.1 phosphoethanolamine transferase [Magnetofaba austr...  436     7e-144
+MCQ8895565.1 phosphoethanolamine--lipid A transferase [Limnobacte...  435     8e-144
+HFB65963.1 TPA: phosphoethanolamine--lipid A transferase [Aeromon...  435     9e-144
+MIR5787248.1 phosphoethanolamine transferase [Limnobacter sp.]        435     1e-143
+MHE4016407.1 phosphoethanolamine transferase [Sedimenticolaceae b...  435     1e-143
+MHZ9508672.1 phosphoethanolamine transferase [Desulfosarcina sp.]     435     1e-143
+MCB1645838.1 phosphoethanolamine--lipid A transferase [Pseudomona...  435     1e-143
+MHD4636778.1 phosphoethanolamine transferase [Gammaproteobacteria...  434     2e-143
+WP_295043669.1 phosphoethanolamine transferase [Sulfuricurvum sp.]    434     2e-143
+MCF7688389.1 phosphoethanolamine--lipid A transferase [Cephalotic...  436     2e-143
+WP_464198268.1 phosphoethanolamine transferase [Campylobacter sp....  434     2e-143
+WP_422236288.1 phosphoethanolamine transferase [Sulfuricurvum sp.]    434     2e-143
+WP_320347808.1 phosphoethanolamine transferase [Sulfurovum sp.]       434     2e-143
+MBL1320725.1 phosphoethanolamine--lipid A transferase [Methylopha...  434     2e-143
+WP_024955175.1 phosphoethanolamine transferase [Sulfurospirillum ...  434     3e-143
+WP_152182992.1 phosphoethanolamine transferase [Sulfurimonas indica]  433     4e-143
+WP_152307863.1 phosphoethanolamine transferase [Sulfurimonas lith...  434     4e-143
+CAK8715391.1 Lipid A ethanolaminephosphotransferase [Candidatus E...  433     4e-143
+HHJ36177.1 TPA: phosphoethanolamine--lipid A transferase [Gammapr...  433     4e-143
+WP_480935089.1 sulfatase-like hydrolase/transferase [Salmonella e...  421     5e-143
+MHE6598077.1 phosphoethanolamine transferase [Gammaproteobacteria...  433     5e-143
+OHD84902.1 phosphoethanolamine transferase [Sulfuricurvum sp. RIF...  433     6e-143
+MHX9298931.1 phosphoethanolamine transferase [Sulfurospirillaceae...  432     8e-143
+NPA28549.1 phosphoethanolamine--lipid A transferase [Campylobacte...  432     8e-143
+MHN9574233.1 phosphoethanolamine transferase [Pseudohongiellaceae...  432     8e-143
+HUU73042.1 TPA: phosphoethanolamine--lipid A transferase [Burkhol...  433     1e-142
+MHE2693031.1 phosphoethanolamine transferase [Gammaproteobacteria...  433     1e-142
+WP_372815939.1 phosphoethanolamine transferase [Psychrobacter sp.]    430     2e-142
+WP_295009705.1 phosphoethanolamine transferase [Sulfurimonas sp.]     432     2e-142
+WP_431720310.1 phosphoethanolamine transferase [Zooshikella sp. R...  432     2e-142
+WP_484148219.1 phosphoethanolamine transferase [Limnobacter litor...  432     2e-142
+MHE0735082.1 phosphoethanolamine transferase [Gammaproteobacteria...  432     2e-142
+MHZ6232245.1 phosphoethanolamine transferase [Porticoccaceae bact...  431     2e-142
+MCD4758499.1 phosphoethanolamine--lipid A transferase [Arcobacter...  431     3e-142
+WP_299969122.1 phosphoethanolamine transferase [Sulfuricurvum sp.]    431     3e-142
+WP_418260837.1 phosphoethanolamine transferase [Haliea sp. E17]       431     3e-142
+MGB3750370.1 phosphoethanolamine--lipid A transferase [Arcobacter...  429     3e-142
+WP_296823707.1 phosphoethanolamine transferase [Sulfurovum sp.]       431     3e-142
+WP_261874979.1 phosphoethanolamine transferase [Vibrio rarus]         431     3e-142
+WP_419770943.1 phosphoethanolamine transferase [Marinarcus sedimi...  431     3e-142
+NOY63058.1 phosphoethanolamine--lipid A transferase [Gammaproteob...  431     4e-142
+WP_046996951.1 phosphoethanolamine transferase [Aliarcobacter but...  431     4e-142
+MHR4447472.1 phosphoethanolamine transferase [Gammaproteobacteria...  431     4e-142
+WP_310438812.1 phosphoethanolamine transferase [Sulfuricurvum sp.]    431     4e-142
+MGV6851769.1 phosphoethanolamine transferase [bacterium]              431     5e-142
+WP_108558106.1 phosphoethanolamine transferase [Arcobacter caeni]     431     5e-142
+MEW6288297.1 phosphoethanolamine--lipid A transferase [Thermodesu...  430     6e-142
+WP_037945904.1 MULTISPECIES: phosphoethanolamine transferase [unc...  430     6e-142
+MEO1937770.1 phosphoethanolamine--lipid A transferase [Sulfurimon...  429     7e-142
+MEY3017541.1 hypothetical protein [Pseudomonadota bacterium]          430     7e-142
+MDO4251310.1 sulfatase-like hydrolase/transferase [Moraxella sp.]     420     7e-142
+WP_223898502.1 phosphoethanolamine transferase [Sulfurovum sp. TSL1]  430     9e-142
+WP_291793847.1 phosphoethanolamine transferase [Candidatus Thiogl...  430     9e-142
+MCF6198626.1 phosphoethanolamine--lipid A transferase [Hyphomicro...  430     9e-142
+MET0067684.1 phosphoethanolamine--lipid A transferase [Candidatus...  430     1e-141
+WP_340676964.1 phosphoethanolamine transferase [Paraglaciecola sp.]   430     1e-141
+WP_344932349.1 phosphoethanolamine transferase [Zhongshania borea...  430     1e-141
+WP_172128401.1 phosphoethanolamine transferase [Arcobacter acticola]  429     1e-141
+MAC84770.1 phosphoethanolamine transferase [Arcobacter sp.]           429     1e-141
+MDD3591892.1 phosphoethanolamine--lipid A transferase [Sulfurovum...  429     2e-141
+WP_068373885.1 phosphoethanolamine transferase [Paraglaciecola hy...  430     2e-141
+WP_255417914.1 phosphoethanolamine transferase [Sulfuricurvum sp....  429     2e-141
+MIC2505489.1 phosphoethanolamine transferase [Gammaproteobacteria...  429     2e-141
+WP_295068047.1 phosphoethanolamine transferase [Sulfuricurvum sp.]    429     2e-141
+WP_129082655.1 phosphoethanolamine transferase [Halarcobacter ana...  429     2e-141
+MDP3743957.1 phosphoethanolamine--lipid A transferase [Methyloten...  429     2e-141
+MBP1681366.1 putative phosphatidylethanolamine transferase Mcr-1 ...  429     2e-141
+MHE4153195.1 phosphoethanolamine transferase [Gammaproteobacteria...  429     2e-141
+WP_078422633.1 phosphoethanolamine transferase [Campylobacter pin...  429     3e-141
+WP_346766573.1 phosphoethanolamine transferase [Paraglaciecola sp...  429     3e-141
+HIP30293.1 TPA: phosphoethanolamine--lipid A transferase [Sulfuro...  428     4e-141
+WP_248575655.1 phosphoethanolamine transferase [Sulfurovum sp. XG...  428     4e-141
+MEJ2693001.1 phosphoethanolamine--lipid A transferase [Candidatus...  428     4e-141
+
+
+>WP_065203556.1 MCR-1 family phosphoethanolamine--lipid A transferase [Escherichia 
+coli]
+Length=541
+
+ Score = 1115 bits (2885),  Expect = 0.0, Method: Compositional matrix adjust.
+ Identities = 538/541 (99%), Positives = 538/541 (99%), Gaps = 0/541 (0%)
+
+Query  1    MMQHTSVWYRRSVSPFVLVASVAVFLTATANLTFFDKISQTYPIADNLGFVLTIAVVLFG  60
+            MMQHTSVWYRRSVSPFVLVASVAVFLTATANLTFFDKISQTYPIADNLGFVLTIAVVLFG
+Sbjct  1    MMQHTSVWYRRSVSPFVLVASVAVFLTATANLTFFDKISQTYPIADNLGFVLTIAVVLFG  60
+
+Query  61   AMLLITTLLSSYRYVLKPVLILLLIMGAVTSYFTDTYGTVYDTTMLQNALQTDQAETKDL  120
+            AMLLITTLLSSYRYVLKPVLILLLIMGAVTSYFTDTYGTVYDTTMLQNALQTDQAETKDL
+Sbjct  61   AMLLITTLLSSYRYVLKPVLILLLIMGAVTSYFTDTYGTVYDTTMLQNALQTDQAETKDL  120
+
+Query  121  LNAAFIMRIIGLGVLPSLLVAFVKVDYPTWGKGLMRRLGLIVASLALILLPVVAFSSHYA  180
+            LNAAFIMRIIGLGVLPSLLVAFVKVDYPTWGKGLMRRLGLIVASLALILLPVVAFSSHYA
+Sbjct  121  LNAAFIMRIIGLGVLPSLLVAFVKVDYPTWGKGLMRRLGLIVASLALILLPVVAFSSHYA  180
+
+Query  181  SFFRVHKPLRSYVNPIMPIYSVGKLASIEYKKASAPKDTIYHAKDAVQATKPDMRKPRLV  240
+            SFFRVHKPLRSYVNPIMPIYSVGKLASIEYKKASAPKDTIYHAKDAVQATKPDMRKPRLV
+Sbjct  181  SFFRVHKPLRSYVNPIMPIYSVGKLASIEYKKASAPKDTIYHAKDAVQATKPDMRKPRLV  240
+
+Query  241  VFVVGETARADHVSFNGYERDTFPQLAKIDGVTNFSNVTSCGTSTAYSVPCMFSYLGADE  300
+            VFVVGETARADHVSFNGYERDTFPQLAKIDGVTNFSNVTSCGTSTAYSVPCMFSYLGADE
+Sbjct  241  VFVVGETARADHVSFNGYERDTFPQLAKIDGVTNFSNVTSCGTSTAYSVPCMFSYLGADE  300
+
+Query  301  YDVDTAKYQENVLDTLDRLGVSILWRDNNSDSKGVMDKLPKAQFADYKSATNNAICNTNP  360
+            YDVDTAKYQE VLDT DRLGVS LWRDNNSDSKGVMDKLPKAQFADYKSATNNAICNTNP
+Sbjct  301  YDVDTAKYQEKVLDTSDRLGVSFLWRDNNSDSKGVMDKLPKAQFADYKSATNNAICNTNP  360
+
+Query  361  YNECRDVGMLVGLDDFVAANNGKDMLIMLHQMGNHGPAYFKRYDEKFAKFTPVCEGNELA  420
+            YNECRDVGMLVGLDDFVAANNGKDMLIMLHQMGNHGPAYFKRYDEKFAKFTPVCEGNELA
+Sbjct  361  YNECRDVGMLVGLDDFVAANNGKDMLIMLHQMGNHGPAYFKRYDEKFAKFTPVCEGNELA  420
+
+Query  421  KCEHQSLINAYDNALLATDDFIAQSIQWLQTHSNAYDVSMLYVSDHGESLGENGVYLHGM  480
+            KCEHQSLINAYDNALLATDDFIAQSIQWLQTHSNAYDVSMLYVSDHGESLGENGVYLHGM
+Sbjct  421  KCEHQSLINAYDNALLATDDFIAQSIQWLQTHSNAYDVSMLYVSDHGESLGENGVYLHGM  480
+
+Query  481  PNAFAPKEQRSVPAFFWTDKQTGITPMATDTVLTHDAITPTLLKLFDVTADKVKDRTAFI  540
+            PNAFAPKEQRSVPAFFWTDKQTGITPMATDTVLTHDAITPTLLKLFDVTADKVKDRTAFI
+Sbjct  481  PNAFAPKEQRSVPAFFWTDKQTGITPMATDTVLTHDAITPTLLKLFDVTADKVKDRTAFI  540
+
+Query  541  R  541
+            R
+Sbjct  541  R  541
+
+
+>WP_459520946.1 phosphoethanolamine transferase, partial [Escherichia coli]
+Length=449
+
+ Score = 942 bits (2434),  Expect = 0.0, Method: Compositional matrix adjust.
+ Identities = 449/449 (100%), Positives = 449/449 (100%), Gaps = 0/449 (0%)
+
+Query  93   FTDTYGTVYDTTMLQNALQTDQAETKDLLNAAFIMRIIGLGVLPSLLVAFVKVDYPTWGK  152
+            FTDTYGTVYDTTMLQNALQTDQAETKDLLNAAFIMRIIGLGVLPSLLVAFVKVDYPTWGK
+Sbjct  1    FTDTYGTVYDTTMLQNALQTDQAETKDLLNAAFIMRIIGLGVLPSLLVAFVKVDYPTWGK  60
+
+Query  153  GLMRRLGLIVASLALILLPVVAFSSHYASFFRVHKPLRSYVNPIMPIYSVGKLASIEYKK  212
+            GLMRRLGLIVASLALILLPVVAFSSHYASFFRVHKPLRSYVNPIMPIYSVGKLASIEYKK
+Sbjct  61   GLMRRLGLIVASLALILLPVVAFSSHYASFFRVHKPLRSYVNPIMPIYSVGKLASIEYKK  120
+
+Query  213  ASAPKDTIYHAKDAVQATKPDMRKPRLVVFVVGETARADHVSFNGYERDTFPQLAKIDGV  272
+            ASAPKDTIYHAKDAVQATKPDMRKPRLVVFVVGETARADHVSFNGYERDTFPQLAKIDGV
+Sbjct  121  ASAPKDTIYHAKDAVQATKPDMRKPRLVVFVVGETARADHVSFNGYERDTFPQLAKIDGV  180
+
+Query  273  TNFSNVTSCGTSTAYSVPCMFSYLGADEYDVDTAKYQENVLDTLDRLGVSILWRDNNSDS  332
+            TNFSNVTSCGTSTAYSVPCMFSYLGADEYDVDTAKYQENVLDTLDRLGVSILWRDNNSDS
+Sbjct  181  TNFSNVTSCGTSTAYSVPCMFSYLGADEYDVDTAKYQENVLDTLDRLGVSILWRDNNSDS  240
+
+Query  333  KGVMDKLPKAQFADYKSATNNAICNTNPYNECRDVGMLVGLDDFVAANNGKDMLIMLHQM  392
+            KGVMDKLPKAQFADYKSATNNAICNTNPYNECRDVGMLVGLDDFVAANNGKDMLIMLHQM
+Sbjct  241  KGVMDKLPKAQFADYKSATNNAICNTNPYNECRDVGMLVGLDDFVAANNGKDMLIMLHQM  300
+
+Query  393  GNHGPAYFKRYDEKFAKFTPVCEGNELAKCEHQSLINAYDNALLATDDFIAQSIQWLQTH  452
+            GNHGPAYFKRYDEKFAKFTPVCEGNELAKCEHQSLINAYDNALLATDDFIAQSIQWLQTH
+Sbjct  301  GNHGPAYFKRYDEKFAKFTPVCEGNELAKCEHQSLINAYDNALLATDDFIAQSIQWLQTH  360
+
+Query  453  SNAYDVSMLYVSDHGESLGENGVYLHGMPNAFAPKEQRSVPAFFWTDKQTGITPMATDTV  512
+            SNAYDVSMLYVSDHGESLGENGVYLHGMPNAFAPKEQRSVPAFFWTDKQTGITPMATDTV
+Sbjct  361  SNAYDVSMLYVSDHGESLGENGVYLHGMPNAFAPKEQRSVPAFFWTDKQTGITPMATDTV  420
+
+Query  513  LTHDAITPTLLKLFDVTADKVKDRTAFIR  541
+            LTHDAITPTLLKLFDVTADKVKDRTAFIR
+Sbjct  421  LTHDAITPTLLKLFDVTADKVKDRTAFIR  449
+
+
+>WP_099982813.1 phosphoethanolamine--lipid A transferase MCR-6.1 [Moraxella sp. 
+MSG47-C17]
+Length=538
+
+ Score = 940 bits (2429),  Expect = 0.0, Method: Compositional matrix adjust.
+ Identities = 448/541 (83%), Positives = 492/541 (91%), Gaps = 3/541 (1%)
+
+Query  1    MMQHTSVWYRRSVSPFVLVASVAVFLTATANLTFFDKISQTYPIADNLGFVLTIAVVLFG  60
+            M QH S WYRR V+P++L++ VA+FL+ATANLTFFDKI+ TYP+A N GFV++ A+VLFG
+Sbjct  1    MTQH-SPWYRRPVNPYLLMSVVALFLSATANLTFFDKITNTYPMAQNAGFVISTALVLFG  59
+
+Query  61   AMLLITTLLSSYRYVLKPVLILLLIMGAVTSYFTDTYGTVYDTTMLQNALQTDQAETKDL  120
+            AMLLIT LLS YRYVLKPVLILLLIMGAVTSYFTDTYGTVYDTTMLQNALQTDQAE+KDL
+Sbjct  60   AMLLITVLLS-YRYVLKPVLILLLIMGAVTSYFTDTYGTVYDTTMLQNALQTDQAESKDL  118
+
+Query  121  LNAAFIMRIIGLGVLPSLLVAFVKVDYPTWGKGLMRRLGLIVASLALILLPVVAFSSHYA  180
+            +N AF +RIIGLGVLPS+LVA+VKVDYPT GK L++R      ++ + L+P++AFSSHYA
+Sbjct  119  MNMAFFVRIIGLGVLPSILVAWVKVDYPTLGKSLIQRAMTWGVAVVMALVPILAFSSHYA  178
+
+Query  181  SFFRVHKPLRSYVNPIMPIYSVGKLASIEYKKASAPKDTIYHAKDAVQATKPDMRKPRLV  240
+            SFFR HKPLRSYVNP+MPIYSVGKLASIEYKKA+APKDTIYHAKDAVQ T P  RKPRLV
+Sbjct  179  SFFREHKPLRSYVNPVMPIYSVGKLASIEYKKATAPKDTIYHAKDAVQTTTPAERKPRLV  238
+
+Query  241  VFVVGETARADHVSFNGYERDTFPQLAKIDGVTNFSNVTSCGTSTAYSVPCMFSYLGADE  300
+            VFVVGETARADHV FNGY R+TFPQLAKID + NFS VTSCGTSTAYSVPCMFSYLG D+
+Sbjct  239  VFVVGETARADHVQFNGYSRETFPQLAKIDNLANFSQVTSCGTSTAYSVPCMFSYLGQDD  298
+
+Query  301  YDVDTAKYQENVLDTLDRLGVSILWRDNNSDSKGVMDKLPKAQFADYKSATNNAICNTNP  360
+            YDVDTAKYQENVLDTLDRLGV ILWRDNNSDSKGVMDKLP +Q+ DYKSATNN ICNTNP
+Sbjct  299  YDVDTAKYQENVLDTLDRLGVGILWRDNNSDSKGVMDKLPASQYFDYKSATNNTICNTNP  358
+
+Query  361  YNECRDVGMLVGLDDFVAANNGKDMLIMLHQMGNHGPAYFKRYDEKFAKFTPVCEGNELA  420
+            YNECRDVGMLVGLDD+V+ N GKDMLIMLHQMGNHGPAYFKRYDE+FAK+TPVCEGNELA
+Sbjct  359  YNECRDVGMLVGLDDYVSTNQGKDMLIMLHQMGNHGPAYFKRYDEQFAKYTPVCEGNELA  418
+
+Query  421  KCEHQSLINAYDNALLATDDFIAQSIQWLQTHSNAYDVSMLYVSDHGESLGENGVYLHGM  480
+            KCEHQSLINAYDNALLATDDFIA+SI WL+TH   YDV+MLYVSDHGESLGENGVYLHGM
+Sbjct  419  KCEHQSLINAYDNALLATDDFIAKSIDWLKTHQANYDVAMLYVSDHGESLGENGVYLHGM  478
+
+Query  481  PNAFAPKEQRSVPAFFWTDKQTGITPMATDTVLTHDAITPTLLKLFDVTADKVKDRTAFI  540
+            PNAFAPKEQR+VPAFFW++  +  TP A+DTVLTHDAITPTLLKLFDVTADKVKDRTAFI
+Sbjct  479  PNAFAPKEQRAVPAFFWSNNPS-FTPTASDTVLTHDAITPTLLKLFDVTADKVKDRTAFI  537
+
+Query  541  R  541
+            R
+Sbjct  538  R  538
+
+
+>WP_188331889.1 phosphoethanolamine--lipid A transferase MCR-2.7 [uncultured 
+bacterium]
+Length=538
+
+ Score = 927 bits (2396),  Expect = 0.0, Method: Compositional matrix adjust.
+ Identities = 441/539 (82%), Positives = 483/539 (90%), Gaps = 4/539 (1%)
+
+Query  3    QHTSVWYRRSVSPFVLVASVAVFLTATANLTFFDKISQTYPIADNLGFVLTIAVVLFGAM  62
+            QH+  WYR S++PFVL+  VA FL ATANLTFF+K    YP++DNLGF++++AV L GAM
+Sbjct  4    QHS--WYRYSINPFVLMGLVAFFLAATANLTFFEKAMAVYPVSDNLGFIVSMAVALMGAM  61
+
+Query  63   LLITTLLSSYRYVLKPVLILLLIMGAVTSYFTDTYGTVYDTTMLQNALQTDQAETKDLLN  122
+            LLI  LLS YRYVLKPVLILLLIMGAVTSYFTDTYGTVYDTTMLQNA+QTDQAE+KDL+N
+Sbjct  62   LLIVVLLS-YRYVLKPVLILLLIMGAVTSYFTDTYGTVYDTTMLQNAMQTDQAESKDLMN  120
+
+Query  123  AAFIMRIIGLGVLPSLLVAFVKVDYPTWGKGLMRRLGLIVASLALILLPVVAFSSHYASF  182
+             AF +RIIGLGVLPS+LVA  KV+YPTWGKGL++R      SL L+L+P+  FSS YASF
+Sbjct  121  LAFFVRIIGLGVLPSVLVAVAKVNYPTWGKGLIQRAMTWGVSLVLLLVPIGLFSSQYASF  180
+
+Query  183  FRVHKPLRSYVNPIMPIYSVGKLASIEYKKASAPKDTIYHAKDAVQATKPDMRKPRLVVF  242
+            FRVHKP+R Y+NPI PIYSVGKLASIEYKKA+AP DTIYHAKDAVQ TKP  RKPRLVVF
+Sbjct  181  FRVHKPVRFYINPITPIYSVGKLASIEYKKATAPTDTIYHAKDAVQTTKPSERKPRLVVF  240
+
+Query  243  VVGETARADHVSFNGYERDTFPQLAKIDGVTNFSNVTSCGTSTAYSVPCMFSYLGADEYD  302
+            VVGETARADHV FNGY R+TFPQLAK+DG+ NFS VTSCGTSTAYSVPCMFSYLG D+YD
+Sbjct  241  VVGETARADHVQFNGYGRETFPQLAKVDGLANFSQVTSCGTSTAYSVPCMFSYLGQDDYD  300
+
+Query  303  VDTAKYQENVLDTLDRLGVSILWRDNNSDSKGVMDKLPKAQFADYKSATNNAICNTNPYN  362
+            VDTAKYQENVLDTLDRLGV ILWRDNNSDSKGVMDKLP  Q+ DYKSATNN IC+TNPYN
+Sbjct  301  VDTAKYQENVLDTLDRLGVGILWRDNNSDSKGVMDKLPATQYFDYKSATNNTICSTNPYN  360
+
+Query  363  ECRDVGMLVGLDDFVAANNGKDMLIMLHQMGNHGPAYFKRYDEKFAKFTPVCEGNELAKC  422
+            ECRDVGMLVGLDD+V+ANNGKDMLIMLHQMGNHGPAYFKRYDE+FAKFTPVCEGNELAKC
+Sbjct  361  ECRDVGMLVGLDDYVSANNGKDMLIMLHQMGNHGPAYFKRYDEQFAKFTPVCEGNELAKC  420
+
+Query  423  EHQSLINAYDNALLATDDFIAQSIQWLQTHSNAYDVSMLYVSDHGESLGENGVYLHGMPN  482
+            EHQSLINAYDNALLATDDFIA+SI WL+TH   YDV+MLYVSDHGESLGENGVYLHGMPN
+Sbjct  421  EHQSLINAYDNALLATDDFIAKSIDWLKTHEANYDVAMLYVSDHGESLGENGVYLHGMPN  480
+
+Query  483  AFAPKEQRSVPAFFWTDKQTGITPMATDTVLTHDAITPTLLKLFDVTADKVKDRTAFIR  541
+            AFAPKEQR+VPAFFW++  T   P A+DTVLTHDAITPTLLKLFDVTADKVKDRTAFI+
+Sbjct  481  AFAPKEQRAVPAFFWSN-NTSFKPTASDTVLTHDAITPTLLKLFDVTADKVKDRTAFIQ  538
+
+
+>WP_228172881.1 phosphoethanolamine transferase, partial [Escherichia coli]
+Length=417
+
+ Score = 862 bits (2228),  Expect = 0.0, Method: Compositional matrix adjust.
+ Identities = 417/417 (100%), Positives = 417/417 (100%), Gaps = 0/417 (0%)
+
+Query  1    MMQHTSVWYRRSVSPFVLVASVAVFLTATANLTFFDKISQTYPIADNLGFVLTIAVVLFG  60
+            MMQHTSVWYRRSVSPFVLVASVAVFLTATANLTFFDKISQTYPIADNLGFVLTIAVVLFG
+Sbjct  1    MMQHTSVWYRRSVSPFVLVASVAVFLTATANLTFFDKISQTYPIADNLGFVLTIAVVLFG  60
+
+Query  61   AMLLITTLLSSYRYVLKPVLILLLIMGAVTSYFTDTYGTVYDTTMLQNALQTDQAETKDL  120
+            AMLLITTLLSSYRYVLKPVLILLLIMGAVTSYFTDTYGTVYDTTMLQNALQTDQAETKDL
+Sbjct  61   AMLLITTLLSSYRYVLKPVLILLLIMGAVTSYFTDTYGTVYDTTMLQNALQTDQAETKDL  120
+
+Query  121  LNAAFIMRIIGLGVLPSLLVAFVKVDYPTWGKGLMRRLGLIVASLALILLPVVAFSSHYA  180
+            LNAAFIMRIIGLGVLPSLLVAFVKVDYPTWGKGLMRRLGLIVASLALILLPVVAFSSHYA
+Sbjct  121  LNAAFIMRIIGLGVLPSLLVAFVKVDYPTWGKGLMRRLGLIVASLALILLPVVAFSSHYA  180
+
+Query  181  SFFRVHKPLRSYVNPIMPIYSVGKLASIEYKKASAPKDTIYHAKDAVQATKPDMRKPRLV  240
+            SFFRVHKPLRSYVNPIMPIYSVGKLASIEYKKASAPKDTIYHAKDAVQATKPDMRKPRLV
+Sbjct  181  SFFRVHKPLRSYVNPIMPIYSVGKLASIEYKKASAPKDTIYHAKDAVQATKPDMRKPRLV  240
+
+Query  241  VFVVGETARADHVSFNGYERDTFPQLAKIDGVTNFSNVTSCGTSTAYSVPCMFSYLGADE  300
+            VFVVGETARADHVSFNGYERDTFPQLAKIDGVTNFSNVTSCGTSTAYSVPCMFSYLGADE
+Sbjct  241  VFVVGETARADHVSFNGYERDTFPQLAKIDGVTNFSNVTSCGTSTAYSVPCMFSYLGADE  300
+
+Query  301  YDVDTAKYQENVLDTLDRLGVSILWRDNNSDSKGVMDKLPKAQFADYKSATNNAICNTNP  360
+            YDVDTAKYQENVLDTLDRLGVSILWRDNNSDSKGVMDKLPKAQFADYKSATNNAICNTNP
+Sbjct  301  YDVDTAKYQENVLDTLDRLGVSILWRDNNSDSKGVMDKLPKAQFADYKSATNNAICNTNP  360
+
+Query  361  YNECRDVGMLVGLDDFVAANNGKDMLIMLHQMGNHGPAYFKRYDEKFAKFTPVCEGN  417
+            YNECRDVGMLVGLDDFVAANNGKDMLIMLHQMGNHGPAYFKRYDEKFAKFTPVCEGN
+Sbjct  361  YNECRDVGMLVGLDDFVAANNGKDMLIMLHQMGNHGPAYFKRYDEKFAKFTPVCEGN  417
+
+
+>WP_252383302.1 phosphoethanolamine transferase, partial [Escherichia coli]
+Length=406
+
+ Score = 800 bits (2067),  Expect = 0.0, Method: Compositional matrix adjust.
+ Identities = 381/382 (99%), Positives = 381/382 (99%), Gaps = 0/382 (0%)
+
+Query  160  LIVASLALILLPVVAFSSHYASFFRVHKPLRSYVNPIMPIYSVGKLASIEYKKASAPKDT  219
+             IVASLALILLPVVAFSSHYASFFRVHKPLRSYVNPIMPIYSVGKLASIEYKKASAPKDT
+Sbjct  25   FIVASLALILLPVVAFSSHYASFFRVHKPLRSYVNPIMPIYSVGKLASIEYKKASAPKDT  84
+
+Query  220  IYHAKDAVQATKPDMRKPRLVVFVVGETARADHVSFNGYERDTFPQLAKIDGVTNFSNVT  279
+            IYHAKDAVQATKPDMRKPRLVVFVVGETARADHVSFNGYERDTFPQLAKIDGVTNFSNVT
+Sbjct  85   IYHAKDAVQATKPDMRKPRLVVFVVGETARADHVSFNGYERDTFPQLAKIDGVTNFSNVT  144
+
+Query  280  SCGTSTAYSVPCMFSYLGADEYDVDTAKYQENVLDTLDRLGVSILWRDNNSDSKGVMDKL  339
+            SCGTSTAYSVPCMFSYLGADEYDVDTAKYQENVLDTLDRLGVSILWRDNNSDSKGVMDKL
+Sbjct  145  SCGTSTAYSVPCMFSYLGADEYDVDTAKYQENVLDTLDRLGVSILWRDNNSDSKGVMDKL  204
+
+Query  340  PKAQFADYKSATNNAICNTNPYNECRDVGMLVGLDDFVAANNGKDMLIMLHQMGNHGPAY  399
+            PKAQFADYKSATNNAICNTNPYNECRDVGMLVGLDDFVAANNGKDMLIMLHQMGNHGPAY
+Sbjct  205  PKAQFADYKSATNNAICNTNPYNECRDVGMLVGLDDFVAANNGKDMLIMLHQMGNHGPAY  264
+
+Query  400  FKRYDEKFAKFTPVCEGNELAKCEHQSLINAYDNALLATDDFIAQSIQWLQTHSNAYDVS  459
+            FKRYDEKFAKFTPVCEGNELAKCEHQSLINAYDNALLATDDFIAQSIQWLQTHSNAYDVS
+Sbjct  265  FKRYDEKFAKFTPVCEGNELAKCEHQSLINAYDNALLATDDFIAQSIQWLQTHSNAYDVS  324
+
+Query  460  MLYVSDHGESLGENGVYLHGMPNAFAPKEQRSVPAFFWTDKQTGITPMATDTVLTHDAIT  519
+            MLYVSDHGESLGENGVYLHGMPNAFAPKEQRSVPAFFWTDKQTGITPMATDTVLTHDAIT
+Sbjct  325  MLYVSDHGESLGENGVYLHGMPNAFAPKEQRSVPAFFWTDKQTGITPMATDTVLTHDAIT  384
+
+Query  520  PTLLKLFDVTADKVKDRTAFIR  541
+            PTLLKLFDVTADKVKDRTAFIR
+Sbjct  385  PTLLKLFDVTADKVKDRTAFIR  406
+
+
+>UBZ25760.1 phosphoethanolamine--lipid A transferase MCR-1.1, partial [Klebsiella 
+pneumoniae]
+Length=377
+
+ Score = 791 bits (2044),  Expect = 0.0, Method: Compositional matrix adjust.
+ Identities = 377/377 (100%), Positives = 377/377 (100%), Gaps = 0/377 (0%)
+
+Query  98   GTVYDTTMLQNALQTDQAETKDLLNAAFIMRIIGLGVLPSLLVAFVKVDYPTWGKGLMRR  157
+            GTVYDTTMLQNALQTDQAETKDLLNAAFIMRIIGLGVLPSLLVAFVKVDYPTWGKGLMRR
+Sbjct  1    GTVYDTTMLQNALQTDQAETKDLLNAAFIMRIIGLGVLPSLLVAFVKVDYPTWGKGLMRR  60
+
+Query  158  LGLIVASLALILLPVVAFSSHYASFFRVHKPLRSYVNPIMPIYSVGKLASIEYKKASAPK  217
+            LGLIVASLALILLPVVAFSSHYASFFRVHKPLRSYVNPIMPIYSVGKLASIEYKKASAPK
+Sbjct  61   LGLIVASLALILLPVVAFSSHYASFFRVHKPLRSYVNPIMPIYSVGKLASIEYKKASAPK  120
+
+Query  218  DTIYHAKDAVQATKPDMRKPRLVVFVVGETARADHVSFNGYERDTFPQLAKIDGVTNFSN  277
+            DTIYHAKDAVQATKPDMRKPRLVVFVVGETARADHVSFNGYERDTFPQLAKIDGVTNFSN
+Sbjct  121  DTIYHAKDAVQATKPDMRKPRLVVFVVGETARADHVSFNGYERDTFPQLAKIDGVTNFSN  180
+
+Query  278  VTSCGTSTAYSVPCMFSYLGADEYDVDTAKYQENVLDTLDRLGVSILWRDNNSDSKGVMD  337
+            VTSCGTSTAYSVPCMFSYLGADEYDVDTAKYQENVLDTLDRLGVSILWRDNNSDSKGVMD
+Sbjct  181  VTSCGTSTAYSVPCMFSYLGADEYDVDTAKYQENVLDTLDRLGVSILWRDNNSDSKGVMD  240
+
+Query  338  KLPKAQFADYKSATNNAICNTNPYNECRDVGMLVGLDDFVAANNGKDMLIMLHQMGNHGP  397
+            KLPKAQFADYKSATNNAICNTNPYNECRDVGMLVGLDDFVAANNGKDMLIMLHQMGNHGP
+Sbjct  241  KLPKAQFADYKSATNNAICNTNPYNECRDVGMLVGLDDFVAANNGKDMLIMLHQMGNHGP  300
+
+Query  398  AYFKRYDEKFAKFTPVCEGNELAKCEHQSLINAYDNALLATDDFIAQSIQWLQTHSNAYD  457
+            AYFKRYDEKFAKFTPVCEGNELAKCEHQSLINAYDNALLATDDFIAQSIQWLQTHSNAYD
+Sbjct  301  AYFKRYDEKFAKFTPVCEGNELAKCEHQSLINAYDNALLATDDFIAQSIQWLQTHSNAYD  360
+
+Query  458  VSMLYVSDHGESLGENG  474
+            VSMLYVSDHGESLGENG
+Sbjct  361  VSMLYVSDHGESLGENG  377
+
+
+>WP_419400070.1 MULTISPECIES: phosphoethanolamine transferase [unclassified Moraxella]
+Length=538
+
+ Score = 723 bits (1867),  Expect = 0.0, Method: Compositional matrix adjust.
+ Identities = 338/541 (62%), Positives = 427/541 (79%), Gaps = 3/541 (1%)
+
+Query  1    MMQHTSVWYRRSVSPFVLVASVAVFLTATANLTFFDKISQTYPIADNLGFVLTIAVVLFG  60
+            M+ H S   +R V+ + L+  VA+FL  T N  FF +I++ YPIA ++GF L++A+VLFG
+Sbjct  1    MLSHFS--QKRPVNAYWLLPIVALFLVFTGNDGFFAQINKVYPIASHIGFTLSVAMVLFG  58
+
+Query  61   AMLLITTLLSSYRYVLKPVLILLLIMGAVTSYFTDTYGTVYDTTMLQNALQTDQAETKDL  120
+             +LL+  L S YR+ LK VL+ LL++ ++T YFTDTYGTVYDTTMLQNA+QTD+AE+ DL
+Sbjct  59   VLLLLMWLFS-YRFTLKFVLVFLLMVASITGYFTDTYGTVYDTTMLQNAMQTDKAESSDL  117
+
+Query  121  LNAAFIMRIIGLGVLPSLLVAFVKVDYPTWGKGLMRRLGLIVASLALILLPVVAFSSHYA  180
+             N  F+MRI+ LGVLPS  +   KV +P +   +++RLG+ VASLALI LP+VA S  +A
+Sbjct  118  FNILFLMRILLLGVLPSWAILRQKVYFPRFKHAILQRLGVFVASLALIGLPIVAQSKQFA  177
+
+Query  181  SFFRVHKPLRSYVNPIMPIYSVGKLASIEYKKASAPKDTIYHAKDAVQATKPDMRKPRLV  240
+            SFFR HKP+R Y NP+ PIY+VGKLAS+EYKK + PKDTI HAKDA QAT P  RKP+LV
+Sbjct  178  SFFREHKPIRFYTNPVTPIYAVGKLASLEYKKLTIPKDTIMHAKDATQATSPTQRKPKLV  237
+
+Query  241  VFVVGETARADHVSFNGYERDTFPQLAKIDGVTNFSNVTSCGTSTAYSVPCMFSYLGADE  300
+            VFVVGETARADHV  NGY R+TFPQ++K  GVTNF+ VT+CGTSTAYSVPCMFSY+GA +
+Sbjct  238  VFVVGETARADHVGQNGYSRNTFPQMSKTAGVTNFAQVTACGTSTAYSVPCMFSYVGAKD  297
+
+Query  301  YDVDTAKYQENVLDTLDRLGVSILWRDNNSDSKGVMDKLPKAQFADYKSATNNAICNTNP  360
+            Y+VD A Y ENVL+TL+RL +++LWRDNNSDSKGVMD+LPK  + +YK A  N +CNTN 
+Sbjct  298  YEVDMANYNENVLETLNRLKINVLWRDNNSDSKGVMDRLPKNAYFNYKEAPTNTLCNTNE  357
+
+Query  361  YNECRDVGMLVGLDDFVAANNGKDMLIMLHQMGNHGPAYFKRYDEKFAKFTPVCEGNELA  420
+            + ECRDVGMLVGLD++V  + G+D+LI+LHQMGNHGPAYFKRYD+ F +FTPVC+ NELA
+Sbjct  358  FKECRDVGMLVGLDEYVKQHQGQDVLIVLHQMGNHGPAYFKRYDKAFEQFTPVCQTNELA  417
+
+Query  421  KCEHQSLINAYDNALLATDDFIAQSIQWLQTHSNAYDVSMLYVSDHGESLGENGVYLHGM  480
+            KC  Q +INAYDNALLATDDF+A+++ WL  +  ++ V+MLY SDHGESLGE GVYLHGM
+Sbjct  418  KCPPQHVINAYDNALLATDDFLAKTVNWLTGYDTSHQVAMLYASDHGESLGEKGVYLHGM  477
+
+Query  481  PNAFAPKEQRSVPAFFWTDKQTGITPMATDTVLTHDAITPTLLKLFDVTADKVKDRTAFI  540
+            PNA AP EQ+ + + FW  +Q+GI  +A+DT L+HDAITPTLLKLFDV A    ++  FI
+Sbjct  478  PNAIAPVEQKHIASMFWAGQQSGIQAVASDTELSHDAITPTLLKLFDVKATVADNKVLFI  537
+
+Query  541  R  541
+            +
+Sbjct  538  K  538
+
+
+>MIN3546484.1 phosphoethanolamine transferase [Moraxella sp.]
+Length=549
+
+ Score = 722 bits (1863),  Expect = 0.0, Method: Compositional matrix adjust.
+ Identities = 336/536 (63%), Positives = 417/536 (78%), Gaps = 3/536 (1%)
+
+Query  8    WYRRS--VSPFVLVASVAVFLTATANLTFFDKISQTYPIADNLGFVLTIAVVLFGAMLLI  65
+            W R +  ++ + L+  VA FL  T N  FF ++++ YP+A NL F L++ +VLFG +LLI
+Sbjct  15   WLRNNTPINAYWLLPIVAAFLVFTGNSGFFAQVAKVYPLAQNLLFTLSLGMVLFGLLLLI  74
+
+Query  66   TTLLSSYRYVLKPVLILLLIMGAVTSYFTDTYGTVYDTTMLQNALQTDQAETKDLLNAAF  125
+              L+S + + L  VLI LLI+ ++T YFTDTYGTVYDT MLQNALQTD+AET DL N  F
+Sbjct  75   MWLVS-FLFTLNSVLIFLLIVASITGYFTDTYGTVYDTNMLQNALQTDKAETSDLFNIMF  133
+
+Query  126  IMRIIGLGVLPSLLVAFVKVDYPTWGKGLMRRLGLIVASLALILLPVVAFSSHYASFFRV  185
+            I RI+ LG++PS LVA  KV +P     +++RLG+ V SL L+ LP++A S  +A+FFR 
+Sbjct  134  IARIVLLGLIPSFLVARQKVYFPKLKSAVLQRLGIFVLSLVLVALPILAQSKQFATFFRE  193
+
+Query  186  HKPLRSYVNPIMPIYSVGKLASIEYKKASAPKDTIYHAKDAVQATKPDMRKPRLVVFVVG  245
+            HKPLR Y NP+ PIY+VGKLAS++Y K  APKDTIYHA DA Q T    RKP LV+ V+G
+Sbjct  194  HKPLRLYTNPVTPIYAVGKLASVQYNKLKAPKDTIYHANDAKQTTSQTTRKPNLVIMVLG  253
+
+Query  246  ETARADHVSFNGYERDTFPQLAKIDGVTNFSNVTSCGTSTAYSVPCMFSYLGADEYDVDT  305
+            ETARADHV  NGYER+TFPQ+AK+ GVTNFS VT+CGTSTAYSVPCMFSY+GA EYDVDT
+Sbjct  254  ETARADHVPMNGYERNTFPQMAKMPGVTNFSQVTACGTSTAYSVPCMFSYVGAKEYDVDT  313
+
+Query  306  AKYQENVLDTLDRLGVSILWRDNNSDSKGVMDKLPKAQFADYKSATNNAICNTNPYNECR  365
+            A Y ENVL+TL+RL +++LWRDNNSDSKGVM +LP A FA+Y+ A  N ICNTNPYNECR
+Sbjct  314  ASYNENVLETLNRLKINVLWRDNNSDSKGVMTRLPAANFANYRDAPTNTICNTNPYNECR  373
+
+Query  366  DVGMLVGLDDFVAANNGKDMLIMLHQMGNHGPAYFKRYDEKFAKFTPVCEGNELAKCEHQ  425
+            DVG+LVGLDD+V  +  +DMLI+LHQMGNHGPAY+K YD+KF +FTPVC+ NELAKC+ Q
+Sbjct  374  DVGLLVGLDDYVKQHANQDMLIVLHQMGNHGPAYYKSYDKKFEQFTPVCQTNELAKCDRQ  433
+
+Query  426  SLINAYDNALLATDDFIAQSIQWLQTHSNAYDVSMLYVSDHGESLGENGVYLHGMPNAFA  485
+            ++INAYDNALLATDDF+A+++ WL  + N Y V+MLYVSDHGESLGE GVYLHGMPN+ A
+Sbjct  434  TVINAYDNALLATDDFLAKTVDWLNQYDNQYQVAMLYVSDHGESLGEKGVYLHGMPNSIA  493
+
+Query  486  PKEQRSVPAFFWTDKQTGITPMATDTVLTHDAITPTLLKLFDVTADKVKDRTAFIR  541
+            P EQ+ V A  W+ KQ+GI  +A ++ LTHD ITP LLKLFDVT    +++  FIR
+Sbjct  494  PTEQKHVAAMMWSGKQSGIQAVACNSELTHDDITPRLLKLFDVTTQATQNKALFIR  549
+
+
+>WP_275579703.1 phosphoethanolamine transferase [Moraxella tetraodonis]
+Length=558
+
+ Score = 710 bits (1832),  Expect = 0.0, Method: Compositional matrix adjust.
+ Identities = 337/536 (63%), Positives = 416/536 (78%), Gaps = 6/536 (1%)
+
+Query  11   RSVSPFVLVASVAVFLTATANLTFFDKISQTYPIADNLGFVLTIAVVLFGAMLLITTLLS  70
+            + V+ +V++  VA+FLT TAN+TFFDK +  YP A ++GF+ ++ +VL G MLL+  LLS
+Sbjct  24   QGVNAYVMMGIVALFLTLTANITFFDKATAVYPFAQHIGFIGSLPLVLCGVMLLVIVLLS  83
+
+Query  71   SYRYVLKPVLILLLIMGAVTSYFTDTYGTVYDTTMLQNALQTDQAETKDLLNAAFIMRII  130
+             YRY LK VLI LL+  AVT+YFTDTYGTVYD  MLQNALQTD+AE+ DL N  FI+RI+
+Sbjct  84   -YRYTLKVVLIFLLLTAAVTAYFTDTYGTVYDVNMLQNALQTDKAESADLFNVNFILRIL  142
+
+Query  131  GLGVLPSLLVAFVKVDYPTWGKGLMRRLGLIVASLALILLPVVAFSSHYASFFRVHKPLR  190
+             LGVLPS+ VA+ KV +P   + +++R    + S+ L++LP++A S +YASFFR HK LR
+Sbjct  143  LLGVLPSVWVAWQKVTFPPIKRSILQRGLTYLVSIGLVVLPILAMSKNYASFFREHKQLR  202
+
+Query  191  SYVNPIMPIYSVGKLASIEYKKASAPKDTIYHAKDAVQATKPDMRKPRLVVFVVGETARA  250
+            SY NP  P+Y++GKLASI+ K+A APK  I HA DAVQ + P  RKP+LVVFVVGETAR 
+Sbjct  203  SYTNPATPVYALGKLASIQLKQAQAPKTQIMHATDAVQVSNPTTRKPKLVVFVVGETARG  262
+
+Query  251  DHVSFNGYERDTFPQLAKIDGVTNFSNVTSCGTSTAYSVPCMFSYLGADEYDVDTAKYQE  310
+            DHV  NGY R TFPQ+A   GVTNF+ V +CGTSTAYSVPCMFSY+G  +YDVDTA YQE
+Sbjct  263  DHVQLNGYNRTTFPQMAATAGVTNFNQVIACGTSTAYSVPCMFSYVGMKDYDVDTANYQE  322
+
+Query  311  NVLDTLDRLGVSILWRDNNSDSKGVMDKLPKAQFADYKSATNNAICNTNPYNECRDVGML  370
+            NVLDTL RL V+ILWRDNNS SKGV ++LP A F DYK+A NN +CNTNPY ECRDVGML
+Sbjct  323  NVLDTLHRLKVNILWRDNNSSSKGVTNRLPAADFVDYKTARNNTMCNTNPYGECRDVGML  382
+
+Query  371  VGLDDFVA--ANN---GKDMLIMLHQMGNHGPAYFKRYDEKFAKFTPVCEGNELAKCEHQ  425
+            VGLDD+V   AN     +D LI+LHQMGNHGPAYFKRYD++F KFTPVC+ NELAKC+ Q
+Sbjct  383  VGLDDYVKQLANQNTLNQDTLIVLHQMGNHGPAYFKRYDKQFEKFTPVCQTNELAKCDPQ  442
+
+Query  426  SLINAYDNALLATDDFIAQSIQWLQTHSNAYDVSMLYVSDHGESLGENGVYLHGMPNAFA  485
+            S+INA+DNALLATDDF+A+++ WL  + + + V+MLYVSDHGESLGENG+YLHGMP   A
+Sbjct  443  SVINAFDNALLATDDFLAKTVNWLDKYDSTHQVAMLYVSDHGESLGENGIYLHGMPYKIA  502
+
+Query  486  PKEQRSVPAFFWTDKQTGITPMATDTVLTHDAITPTLLKLFDVTADKVKDRTAFIR  541
+            PK Q+ V + FW  K +GI  + ++T LTHDAITPTLLKLFDV A  V+ +  FI+
+Sbjct  503  PKAQKHVASMFWAGKHSGIQAVPSNTELTHDAITPTLLKLFDVRAQTVQGKPLFIK  558
+
+
+>WP_258963944.1 phosphoethanolamine transferase, partial [Klebsiella pneumoniae]
+Length=363
+
+ Score = 702 bits (1811),  Expect = 0.0, Method: Compositional matrix adjust.
+ Identities = 332/332 (100%), Positives = 332/332 (100%), Gaps = 0/332 (0%)
+
+Query  210  YKKASAPKDTIYHAKDAVQATKPDMRKPRLVVFVVGETARADHVSFNGYERDTFPQLAKI  269
+            YKKASAPKDTIYHAKDAVQATKPDMRKPRLVVFVVGETARADHVSFNGYERDTFPQLAKI
+Sbjct  32   YKKASAPKDTIYHAKDAVQATKPDMRKPRLVVFVVGETARADHVSFNGYERDTFPQLAKI  91
+
+Query  270  DGVTNFSNVTSCGTSTAYSVPCMFSYLGADEYDVDTAKYQENVLDTLDRLGVSILWRDNN  329
+            DGVTNFSNVTSCGTSTAYSVPCMFSYLGADEYDVDTAKYQENVLDTLDRLGVSILWRDNN
+Sbjct  92   DGVTNFSNVTSCGTSTAYSVPCMFSYLGADEYDVDTAKYQENVLDTLDRLGVSILWRDNN  151
+
+Query  330  SDSKGVMDKLPKAQFADYKSATNNAICNTNPYNECRDVGMLVGLDDFVAANNGKDMLIML  389
+            SDSKGVMDKLPKAQFADYKSATNNAICNTNPYNECRDVGMLVGLDDFVAANNGKDMLIML
+Sbjct  152  SDSKGVMDKLPKAQFADYKSATNNAICNTNPYNECRDVGMLVGLDDFVAANNGKDMLIML  211
+
+Query  390  HQMGNHGPAYFKRYDEKFAKFTPVCEGNELAKCEHQSLINAYDNALLATDDFIAQSIQWL  449
+            HQMGNHGPAYFKRYDEKFAKFTPVCEGNELAKCEHQSLINAYDNALLATDDFIAQSIQWL
+Sbjct  212  HQMGNHGPAYFKRYDEKFAKFTPVCEGNELAKCEHQSLINAYDNALLATDDFIAQSIQWL  271
+
+Query  450  QTHSNAYDVSMLYVSDHGESLGENGVYLHGMPNAFAPKEQRSVPAFFWTDKQTGITPMAT  509
+            QTHSNAYDVSMLYVSDHGESLGENGVYLHGMPNAFAPKEQRSVPAFFWTDKQTGITPMAT
+Sbjct  272  QTHSNAYDVSMLYVSDHGESLGENGVYLHGMPNAFAPKEQRSVPAFFWTDKQTGITPMAT  331
+
+Query  510  DTVLTHDAITPTLLKLFDVTADKVKDRTAFIR  541
+            DTVLTHDAITPTLLKLFDVTADKVKDRTAFIR
+Sbjct  332  DTVLTHDAITPTLLKLFDVTADKVKDRTAFIR  363
+
+
+>MGL5252039.1 phosphoethanolamine transferase [Moraxella sp.]
+Length=543
+
+ Score = 699 bits (1804),  Expect = 0.0, Method: Compositional matrix adjust.
+ Identities = 326/532 (61%), Positives = 413/532 (78%), Gaps = 1/532 (0%)
+
+Query  10   RRSVSPFVLVASVAVFLTATANLTFFDKISQTYPIADNLGFVLTIAVVLFGAMLLITTLL  69
+            ++ ++ +VL+A VA+FLT TAN+TFF +++  YP   ++GFVL++ VV+ G MLL+  +L
+Sbjct  11   QQGINAYVLMALVAIFLTLTANITFFSQVNAVYPFLQHVGFVLSLGVVVIGIMLLLM-VL  69
+
+Query  70   SSYRYVLKPVLILLLIMGAVTSYFTDTYGTVYDTTMLQNALQTDQAETKDLLNAAFIMRI  129
+            + YRY LK VLI LL+  AVT+YFTDTYGTVYD  MLQNALQTD+AE+ DL N  FIMR+
+Sbjct  70   TGYRYTLKAVLIFLLLSAAVTAYFTDTYGTVYDVNMLQNALQTDKAESADLFNLNFIMRV  129
+
+Query  130  IGLGVLPSLLVAFVKVDYPTWGKGLMRRLGLIVASLALILLPVVAFSSHYASFFRVHKPL  189
+            + LGVLPS+ VA+ K+++    + L +R   ++ SLAL+ LP+ A   +YASFFR HKPL
+Sbjct  130  LLLGVLPSVWVAWQKINFAPLKRSLWQRGLALLFSLALVGLPIFALGQNYASFFREHKPL  189
+
+Query  190  RSYVNPIMPIYSVGKLASIEYKKASAPKDTIYHAKDAVQATKPDMRKPRLVVFVVGETAR  249
+            RSY  P+ PIY++GKL S++  KA APK+ I HA DAVQ++ P  RKP+L+V VVGETAR
+Sbjct  190  RSYTTPLTPIYALGKLTSLQINKARAPKEQIMHATDAVQSSLPSSRKPKLMVMVVGETAR  249
+
+Query  250  ADHVSFNGYERDTFPQLAKIDGVTNFSNVTSCGTSTAYSVPCMFSYLGADEYDVDTAKYQ  309
+            ADHV  NGY+R TFPQ+A   GVTNFS V +CGTSTAYSVPCMFSY+G  EYDVDTA Y 
+Sbjct  250  ADHVQMNGYDRVTFPQMAATAGVTNFSQVIACGTSTAYSVPCMFSYVGMQEYDVDTAGYH  309
+
+Query  310  ENVLDTLDRLGVSILWRDNNSDSKGVMDKLPKAQFADYKSATNNAICNTNPYNECRDVGM  369
+            ENVLDTL RL V+ILWRDNNS +KGV D+LP + FADYK+  NN  C+TNPY ECRDVGM
+Sbjct  310  ENVLDTLHRLNVNILWRDNNSSAKGVTDRLPASVFADYKTDKNNPSCHTNPYGECRDVGM  369
+
+Query  370  LVGLDDFVAANNGKDMLIMLHQMGNHGPAYFKRYDEKFAKFTPVCEGNELAKCEHQSLIN  429
+            LVGLDD+V  +  +D+LI+LHQMGNHGPAYFKRYD+ F KFTPVC+ NELAKC+ +++IN
+Sbjct  370  LVGLDDYVKQHANQDILIVLHQMGNHGPAYFKRYDKPFEKFTPVCQSNELAKCDPKTVIN  429
+
+Query  430  AYDNALLATDDFIAQSIQWLQTHSNAYDVSMLYVSDHGESLGENGVYLHGMPNAFAPKEQ  489
+            A+DNALLATDDF+A+++ WL  + N + V+MLYVSDHGESLGENG+YLHGMP   APK Q
+Sbjct  430  AFDNALLATDDFLAKTVNWLNQYDNQHQVAMLYVSDHGESLGENGIYLHGMPYKIAPKAQ  489
+
+Query  490  RSVPAFFWTDKQTGITPMATDTVLTHDAITPTLLKLFDVTADKVKDRTAFIR  541
+            + V + FW  K +GI  + +DT LTHDAITPTLL LFDV    ++ +  +I+
+Sbjct  490  KHVASMFWAGKNSGIQSVPSDTSLTHDAITPTLLTLFDVRTQALQGKPLYIK  541
+
+
+>WP_374804514.1 phosphoethanolamine transferase [Hubeiibacter jixunmingi]
+Length=545
+
+ Score = 679 bits (1751),  Expect = 0.0, Method: Compositional matrix adjust.
+ Identities = 326/534 (61%), Positives = 417/534 (78%), Gaps = 3/534 (1%)
+
+Query  10   RRSVSPFVLVASVAVFLTATANLTFFDKISQTYPIADNLGFVLTIAVVLFGAMLLITTLL  69
+             + ++ +V++A VA FL  TANL+FF ++ + YP  ++L F ++ ++ + G +LL+  +L
+Sbjct  13   HKPINAYVMMAIVAAFLLVTANLSFFKQLLKVYPFTEHLAFFIS-SIFVLGGVLLLLIVL  71
+
+Query  70   SSYRYVLKPVLILLLIMGAVTSYFTDTYGTVYDTTMLQNALQTDQAETKDLLNAAFIMRI  129
+             SYR+ LK VL+LL+++ A TSYFTDTYGTVYDTTMLQNALQTD AE+KDL+NA F++R+
+Sbjct  72   LSYRFTLKAVLVLLILIAAATSYFTDTYGTVYDTTMLQNALQTDTAESKDLMNAVFLLRL  131
+
+Query  130  IGLGVLPSLLVAFVKVDYPTWGKGLMRRLGLIVASLALILLPVVAFSSHYASFFRVHKPL  189
+              LG++PS+ V   KV +P   K L++R+   + SL ++ +P+   S  YASFFR HKP+
+Sbjct  132  FFLGLVPSIWVISQKVVFPPLKKSLLQRMLTWLVSLLIVGVPIGLLSKQYASFFREHKPI  191
+
+Query  190  RSYVNPIMPIYSVGKLASIEYKKASAPKDTIYHAKDAVQATKPDMRKPRLVVFVVGETAR  249
+            R Y NPI P+Y++GKLASIEYKKA+APK+ I HA DA Q T P  RKP+L+V VVGETAR
+Sbjct  192  RFYTNPITPVYAMGKLASIEYKKATAPKEMIAHASDAAQTTLPSNRKPKLMVMVVGETAR  251
+
+Query  250  ADHVSFNGYERDTFPQLAKIDG--VTNFSNVTSCGTSTAYSVPCMFSYLGADEYDVDTAK  307
+            ADH S NGY R+T PQLAK+ G  +TNFS V SCGTSTAYSVPCMFSYLG  +YDVDTA+
+Sbjct  252  ADHSSLNGYPRETMPQLAKLQGAGLTNFSQVMSCGTSTAYSVPCMFSYLGEKDYDVDTAQ  311
+
+Query  308  YQENVLDTLDRLGVSILWRDNNSDSKGVMDKLPKAQFADYKSATNNAICNTNPYNECRDV  367
+            YQENV+DTL RLGV++LWRDNNSDSKGVM++LP  Q+ DYK A  N +CNTNPYNECRDV
+Sbjct  312  YQENVIDTLHRLGVNVLWRDNNSDSKGVMNRLPAEQYDDYKVAPTNTVCNTNPYNECRDV  371
+
+Query  368  GMLVGLDDFVAANNGKDMLIMLHQMGNHGPAYFKRYDEKFAKFTPVCEGNELAKCEHQSL  427
+            GMLVGLDD+V  + GKD+LI+LHQMGNHGPAY+KRYD +FAKFT VCE NELAKC+HQ+L
+Sbjct  372  GMLVGLDDYVKNHQGKDVLIVLHQMGNHGPAYYKRYDAEFAKFTTVCESNELAKCDHQAL  431
+
+Query  428  INAYDNALLATDDFIAQSIQWLQTHSNAYDVSMLYVSDHGESLGENGVYLHGMPNAFAPK  487
+            INA+DNA LATDDF+A+++ WL+ + +++ V+MLY SDHGESLGE G+YLHGMP A AP 
+Sbjct  432  INAFDNAFLATDDFLAKTVGWLKQYDDSHQVAMLYASDHGESLGEKGIYLHGMPKAIAPI  491
+
+Query  488  EQRSVPAFFWTDKQTGITPMATDTVLTHDAITPTLLKLFDVTADKVKDRTAFIR  541
+            EQR + A  W  K +GI  +  +  LTHDAITPTLL LFDV +  ++ +  FI+
+Sbjct  492  EQRHISAVMWVGKNSGIQTVDGNKPLTHDAITPTLLSLFDVHSTAIEGKAKFIQ  545
+
+
+>MIN3566999.1 phosphoethanolamine transferase [Moraxella sp.]
+Length=562
+
+ Score = 674 bits (1739),  Expect = 0.0, Method: Compositional matrix adjust.
+ Identities = 315/536 (59%), Positives = 402/536 (75%), Gaps = 7/536 (1%)
+
+Query  10   RRSVSPFVLVASVAVFLTATANLTFFDKISQTYPIADNLGFVLTIAVVLFGAMLLITTLL  69
+            R  ++ ++ +  VA+FL  TAN+TFF +++  YP A  +GF +++AVVLFG + L+  L 
+Sbjct  30   RHPINAYLFMGLVALFLLVTANVTFFTQVNAVYPFAQYMGFFISLAVVLFGIIWLLFALF  89
+
+Query  70   SSYRYVLKPVLILLLIMGAVTSYFTDTYGTVYDTTMLQNALQTDQAETKDLLNAAFIMRI  129
+              Y+Y LK VLIL +++ + TSYFTDTYGTVYDTTMLQNA+QTD+AE+ DLLNA FI+R+
+Sbjct  90   G-YKYTLKAVLILFILIASATSYFTDTYGTVYDTTMLQNAMQTDKAESADLLNAVFILRL  148
+
+Query  130  IGLGVLPSLLVAFVKVDYPTWGKGLMRRLGLIVASLALILLPVVAFSSHYASFFRVHKPL  189
+            + LG LP+ LVA  +V +    + LM+R   I+  LAL+ LP+VAFS  YASFFR HK +
+Sbjct  149  VLLGALPAFLVARQRVFFAPLKRSLMQRAITIIGCLALVGLPIVAFSKQYASFFREHKAV  208
+
+Query  190  RSYVNPIMPIYSVGKLASIEYKKASAPKDTIYHAKDAVQATKPDMRKPRLVVFVVGETAR  249
+            R Y NP+ PIY+VG L     K+ SAPKDTI HA DA Q T    RKP+L+V VVGETAR
+Sbjct  209  RFYTNPVTPIYAVGSLIGQAVKQNSAPKDTIMHASDATQTTLATTRKPKLMVMVVGETAR  268
+
+Query  250  ADHVSFNGYERDTFPQLAKID----GVTNFSNVTSCGTSTAYSVPCMFSYLGADEYDVDT  305
+            ADH S NGY RDT PQL  I     G +NF  VTSCGTSTAYSVPCMFSY+G  +YDVDT
+Sbjct  269  ADHSSLNGYARDTMPQLGAIGKSDTGFSNFPQVTSCGTSTAYSVPCMFSYVGEKKYDVDT  328
+
+Query  306  AKYQENVLDTLDRLGVSILWRDNNSDSKGVMDKLPKAQFADYKSATNNAICNTNPYNECR  365
+              + ENVL+TL+RL +++LWRDNNSDSKGVM++LPK  +  +K+   N +C +    ECR
+Sbjct  329  TGFNENVLETLNRLKINVLWRDNNSDSKGVMNRLPKEAYVSFKTKDTNTVCTSE--GECR  386
+
+Query  366  DVGMLVGLDDFVAANNGKDMLIMLHQMGNHGPAYFKRYDEKFAKFTPVCEGNELAKCEHQ  425
+            DVGMLVGLDD+V A+ G+D+L++LHQMGNHGPAY+KRYD++F KFTPVC+ NELAKC+ Q
+Sbjct  387  DVGMLVGLDDYVKAHQGQDILLVLHQMGNHGPAYYKRYDKQFEKFTPVCQSNELAKCDKQ  446
+
+Query  426  SLINAYDNALLATDDFIAQSIQWLQTHSNAYDVSMLYVSDHGESLGENGVYLHGMPNAFA  485
+            S+INA+DNA LATDDF+A++I WL+ +  ++ V+MLY+SDHGESLGE GVYLHGMPNAFA
+Sbjct  447  SVINAFDNAFLATDDFLAKTIGWLKPYDGSHQVAMLYMSDHGESLGEKGVYLHGMPNAFA  506
+
+Query  486  PKEQRSVPAFFWTDKQTGITPMATDTVLTHDAITPTLLKLFDVTADKVKDRTAFIR  541
+            P EQ+ VPA FW   Q+G+  +  +T LTHDAI PTLLKLFDV  + V  +  F+ 
+Sbjct  507  PPEQKHVPAVFWAGSQSGLKAVPANTALTHDAIAPTLLKLFDVKTEAVNGKATFVE  562
+
+
+>WP_078317642.1 phosphoethanolamine transferase [Moraxella porci]
+Length=540
+
+ Score = 674 bits (1739),  Expect = 0.0, Method: Compositional matrix adjust.
+ Identities = 338/535 (63%), Positives = 418/535 (78%), Gaps = 6/535 (1%)
+
+Query  10   RRSVSPFVLVASVAVFLTATANLTFFDKISQTYPIADNLGFVLTIAVVLFGAMLLITTLL  69
+             RS++P++L+  VAVFLT +AN+TFF ++   YPIAD+L FV ++ VVL G + L+  L 
+Sbjct  9    HRSINPYLLMLIVAVFLTISANVTFFKQVVLVYPIADHLLFVASLTVVLCGVLALVIGLF  68
+
+Query  70   SSYRYVLKPVLILLLIMGAVTSYFTDTYGTVYDTTMLQNALQTDQAETKDLLNAAFIMRI  129
+            S YRY LK VLI ++++ A+TSYFTDTYGTVYDT MLQNALQTD +ETKDLLN  F++RI
+Sbjct  69   S-YRYTLKFVLIFMIMVAAITSYFTDTYGTVYDTNMLQNALQTDSSETKDLLNLGFLVRI  127
+
+Query  130  IGLGVLPSLLVAFVKVDYPTWGKGLMRRLGLIVASLALILLPVVAFSSHYASFFRVHKPL  189
+            + LGVLPSLL+  + V +  +     +RLG ++ SL LIL+P+++FS  +ASFFR HKPL
+Sbjct  128  LLLGVLPSLLILKLPVHFANFKTNAFQRLGYLLLSLGLILVPILSFSEAFASFFREHKPL  187
+
+Query  190  RSYVNPIMPIYSVGKLASIEYKKASAPKDTIYHAKDAVQATKPDMRKPRLVVFVVGETAR  249
+            RSY NP MPIY+VGKLASIEYKKA+APKD  YHAKDA Q T    RKP+L+V VVGETAR
+Sbjct  188  RSYTNPAMPIYAVGKLASIEYKKATAPKDLTYHAKDAAQTTTSTQRKPKLIVMVVGETAR  247
+
+Query  250  ADHVSFNGYERDTFPQLAKIDGVTNFSNVTSCGTSTAYSVPCMFSYLGADEYDVDTAKYQ  309
+            ADHVS NGY +DTF QL+ +D +T+F NV SCGTSTAYSVPCMFSYLGAD+Y+VDTA Y 
+Sbjct  248  ADHVSLNGYSKDTFVQLSSMDHLTSFKNVISCGTSTAYSVPCMFSYLGADDYNVDTANYH  307
+
+Query  310  ENVLDTLDRLGVSILWRDNNSDSKGVMDKLPKAQFADYKSATNNAICNTNPYNECRDVGM  369
+            EN LDTL RLGV++LWRDNNSDSKGVMDKLP   + +YK++  N  C TN + ECRD+GM
+Sbjct  308  ENSLDTLHRLGVNVLWRDNNSDSKGVMDKLPADLYQNYKTSDLNHEC-TNAHQECRDIGM  366
+
+Query  370  LVGLDDFV---AANNGKDMLIMLHQMGNHGPAYFKRYDEKFAKFTPVCEGNELAKCEHQS  426
+            L+GLDD+V   A N+ +D+LI+LHQMGNHGPAY+KRY+E F KFTPVC  N+LAKC+   
+Sbjct  367  LIGLDDYVAQTAKNSNQDVLIVLHQMGNHGPAYYKRYNEAFEKFTPVCRDNDLAKCDTSH  426
+
+Query  427  LINAYDNALLATDDFIAQSIQWLQTHSNAYDVSMLYVSDHGESLGENGVYLHGMPNAFAP  486
+            +INAYDNAL+ATDDF+ Q+I WL+TH  ++DV++LYVSDHGESLGENGVYLHGMPN FAP
+Sbjct  427  VINAYDNALVATDDFLKQTIDWLKTHQASHDVTLLYVSDHGESLGENGVYLHGMPNTFAP  486
+
+Query  487  KEQRSVPAFFWTDKQTGITPMATDTVLTHDAITPTLLKLFDVTADKVKDRTAFIR  541
+            K Q+ V AF WT     I  ++    LTHDAITPTLL+LFDV     +++  FI 
+Sbjct  487  KAQKHVAAFLWT-ANPAIHAVSNQAPLTHDAITPTLLRLFDVKTKATENQAMFIE  540
+
+
+>HHE4543106.1 phosphoethanolamine transferase [Escherichia coli]
+Length=315
+
+ Score = 669 bits (1726),  Expect = 0.0, Method: Compositional matrix adjust.
+ Identities = 315/315 (100%), Positives = 315/315 (100%), Gaps = 0/315 (0%)
+
+Query  227  VQATKPDMRKPRLVVFVVGETARADHVSFNGYERDTFPQLAKIDGVTNFSNVTSCGTSTA  286
+            VQATKPDMRKPRLVVFVVGETARADHVSFNGYERDTFPQLAKIDGVTNFSNVTSCGTSTA
+Sbjct  1    VQATKPDMRKPRLVVFVVGETARADHVSFNGYERDTFPQLAKIDGVTNFSNVTSCGTSTA  60
+
+Query  287  YSVPCMFSYLGADEYDVDTAKYQENVLDTLDRLGVSILWRDNNSDSKGVMDKLPKAQFAD  346
+            YSVPCMFSYLGADEYDVDTAKYQENVLDTLDRLGVSILWRDNNSDSKGVMDKLPKAQFAD
+Sbjct  61   YSVPCMFSYLGADEYDVDTAKYQENVLDTLDRLGVSILWRDNNSDSKGVMDKLPKAQFAD  120
+
+Query  347  YKSATNNAICNTNPYNECRDVGMLVGLDDFVAANNGKDMLIMLHQMGNHGPAYFKRYDEK  406
+            YKSATNNAICNTNPYNECRDVGMLVGLDDFVAANNGKDMLIMLHQMGNHGPAYFKRYDEK
+Sbjct  121  YKSATNNAICNTNPYNECRDVGMLVGLDDFVAANNGKDMLIMLHQMGNHGPAYFKRYDEK  180
+
+Query  407  FAKFTPVCEGNELAKCEHQSLINAYDNALLATDDFIAQSIQWLQTHSNAYDVSMLYVSDH  466
+            FAKFTPVCEGNELAKCEHQSLINAYDNALLATDDFIAQSIQWLQTHSNAYDVSMLYVSDH
+Sbjct  181  FAKFTPVCEGNELAKCEHQSLINAYDNALLATDDFIAQSIQWLQTHSNAYDVSMLYVSDH  240
+
+Query  467  GESLGENGVYLHGMPNAFAPKEQRSVPAFFWTDKQTGITPMATDTVLTHDAITPTLLKLF  526
+            GESLGENGVYLHGMPNAFAPKEQRSVPAFFWTDKQTGITPMATDTVLTHDAITPTLLKLF
+Sbjct  241  GESLGENGVYLHGMPNAFAPKEQRSVPAFFWTDKQTGITPMATDTVLTHDAITPTLLKLF  300
+
+Query  527  DVTADKVKDRTAFIR  541
+            DVTADKVKDRTAFIR
+Sbjct  301  DVTADKVKDRTAFIR  315
+
+
+>WP_353681624.1 phosphoethanolamine transferase [Escherichia coli]
+Length=342
+
+ Score = 658 bits (1697),  Expect = 0.0, Method: Compositional matrix adjust.
+ Identities = 324/324 (100%), Positives = 324/324 (100%), Gaps = 0/324 (0%)
+
+Query  1    MMQHTSVWYRRSVSPFVLVASVAVFLTATANLTFFDKISQTYPIADNLGFVLTIAVVLFG  60
+            MMQHTSVWYRRSVSPFVLVASVAVFLTATANLTFFDKISQTYPIADNLGFVLTIAVVLFG
+Sbjct  1    MMQHTSVWYRRSVSPFVLVASVAVFLTATANLTFFDKISQTYPIADNLGFVLTIAVVLFG  60
+
+Query  61   AMLLITTLLSSYRYVLKPVLILLLIMGAVTSYFTDTYGTVYDTTMLQNALQTDQAETKDL  120
+            AMLLITTLLSSYRYVLKPVLILLLIMGAVTSYFTDTYGTVYDTTMLQNALQTDQAETKDL
+Sbjct  61   AMLLITTLLSSYRYVLKPVLILLLIMGAVTSYFTDTYGTVYDTTMLQNALQTDQAETKDL  120
+
+Query  121  LNAAFIMRIIGLGVLPSLLVAFVKVDYPTWGKGLMRRLGLIVASLALILLPVVAFSSHYA  180
+            LNAAFIMRIIGLGVLPSLLVAFVKVDYPTWGKGLMRRLGLIVASLALILLPVVAFSSHYA
+Sbjct  121  LNAAFIMRIIGLGVLPSLLVAFVKVDYPTWGKGLMRRLGLIVASLALILLPVVAFSSHYA  180
+
+Query  181  SFFRVHKPLRSYVNPIMPIYSVGKLASIEYKKASAPKDTIYHAKDAVQATKPDMRKPRLV  240
+            SFFRVHKPLRSYVNPIMPIYSVGKLASIEYKKASAPKDTIYHAKDAVQATKPDMRKPRLV
+Sbjct  181  SFFRVHKPLRSYVNPIMPIYSVGKLASIEYKKASAPKDTIYHAKDAVQATKPDMRKPRLV  240
+
+Query  241  VFVVGETARADHVSFNGYERDTFPQLAKIDGVTNFSNVTSCGTSTAYSVPCMFSYLGADE  300
+            VFVVGETARADHVSFNGYERDTFPQLAKIDGVTNFSNVTSCGTSTAYSVPCMFSYLGADE
+Sbjct  241  VFVVGETARADHVSFNGYERDTFPQLAKIDGVTNFSNVTSCGTSTAYSVPCMFSYLGADE  300
+
+Query  301  YDVDTAKYQENVLDTLDRLGVSIL  324
+            YDVDTAKYQENVLDTLDRLGVSIL
+Sbjct  301  YDVDTAKYQENVLDTLDRLGVSIL  324
+
+
+>WP_373384739.1 phosphoethanolamine transferase, partial [Escherichia coli]
+Length=309
+
+ Score = 656 bits (1693),  Expect = 0.0, Method: Compositional matrix adjust.
+ Identities = 309/309 (100%), Positives = 309/309 (100%), Gaps = 0/309 (0%)
+
+Query  233  DMRKPRLVVFVVGETARADHVSFNGYERDTFPQLAKIDGVTNFSNVTSCGTSTAYSVPCM  292
+            DMRKPRLVVFVVGETARADHVSFNGYERDTFPQLAKIDGVTNFSNVTSCGTSTAYSVPCM
+Sbjct  1    DMRKPRLVVFVVGETARADHVSFNGYERDTFPQLAKIDGVTNFSNVTSCGTSTAYSVPCM  60
+
+Query  293  FSYLGADEYDVDTAKYQENVLDTLDRLGVSILWRDNNSDSKGVMDKLPKAQFADYKSATN  352
+            FSYLGADEYDVDTAKYQENVLDTLDRLGVSILWRDNNSDSKGVMDKLPKAQFADYKSATN
+Sbjct  61   FSYLGADEYDVDTAKYQENVLDTLDRLGVSILWRDNNSDSKGVMDKLPKAQFADYKSATN  120
+
+Query  353  NAICNTNPYNECRDVGMLVGLDDFVAANNGKDMLIMLHQMGNHGPAYFKRYDEKFAKFTP  412
+            NAICNTNPYNECRDVGMLVGLDDFVAANNGKDMLIMLHQMGNHGPAYFKRYDEKFAKFTP
+Sbjct  121  NAICNTNPYNECRDVGMLVGLDDFVAANNGKDMLIMLHQMGNHGPAYFKRYDEKFAKFTP  180
+
+Query  413  VCEGNELAKCEHQSLINAYDNALLATDDFIAQSIQWLQTHSNAYDVSMLYVSDHGESLGE  472
+            VCEGNELAKCEHQSLINAYDNALLATDDFIAQSIQWLQTHSNAYDVSMLYVSDHGESLGE
+Sbjct  181  VCEGNELAKCEHQSLINAYDNALLATDDFIAQSIQWLQTHSNAYDVSMLYVSDHGESLGE  240
+
+Query  473  NGVYLHGMPNAFAPKEQRSVPAFFWTDKQTGITPMATDTVLTHDAITPTLLKLFDVTADK  532
+            NGVYLHGMPNAFAPKEQRSVPAFFWTDKQTGITPMATDTVLTHDAITPTLLKLFDVTADK
+Sbjct  241  NGVYLHGMPNAFAPKEQRSVPAFFWTDKQTGITPMATDTVLTHDAITPTLLKLFDVTADK  300
+
+Query  533  VKDRTAFIR  541
+            VKDRTAFIR
+Sbjct  301  VKDRTAFIR  309
+
+
+>WP_139246889.1 phosphoethanolamine transferase, partial [Escherichia coli]
+Length=310
+
+ Score = 656 bits (1692),  Expect = 0.0, Method: Compositional matrix adjust.
+ Identities = 310/310 (100%), Positives = 310/310 (100%), Gaps = 0/310 (0%)
+
+Query  150  WGKGLMRRLGLIVASLALILLPVVAFSSHYASFFRVHKPLRSYVNPIMPIYSVGKLASIE  209
+            WGKGLMRRLGLIVASLALILLPVVAFSSHYASFFRVHKPLRSYVNPIMPIYSVGKLASIE
+Sbjct  1    WGKGLMRRLGLIVASLALILLPVVAFSSHYASFFRVHKPLRSYVNPIMPIYSVGKLASIE  60
+
+Query  210  YKKASAPKDTIYHAKDAVQATKPDMRKPRLVVFVVGETARADHVSFNGYERDTFPQLAKI  269
+            YKKASAPKDTIYHAKDAVQATKPDMRKPRLVVFVVGETARADHVSFNGYERDTFPQLAKI
+Sbjct  61   YKKASAPKDTIYHAKDAVQATKPDMRKPRLVVFVVGETARADHVSFNGYERDTFPQLAKI  120
+
+Query  270  DGVTNFSNVTSCGTSTAYSVPCMFSYLGADEYDVDTAKYQENVLDTLDRLGVSILWRDNN  329
+            DGVTNFSNVTSCGTSTAYSVPCMFSYLGADEYDVDTAKYQENVLDTLDRLGVSILWRDNN
+Sbjct  121  DGVTNFSNVTSCGTSTAYSVPCMFSYLGADEYDVDTAKYQENVLDTLDRLGVSILWRDNN  180
+
+Query  330  SDSKGVMDKLPKAQFADYKSATNNAICNTNPYNECRDVGMLVGLDDFVAANNGKDMLIML  389
+            SDSKGVMDKLPKAQFADYKSATNNAICNTNPYNECRDVGMLVGLDDFVAANNGKDMLIML
+Sbjct  181  SDSKGVMDKLPKAQFADYKSATNNAICNTNPYNECRDVGMLVGLDDFVAANNGKDMLIML  240
+
+Query  390  HQMGNHGPAYFKRYDEKFAKFTPVCEGNELAKCEHQSLINAYDNALLATDDFIAQSIQWL  449
+            HQMGNHGPAYFKRYDEKFAKFTPVCEGNELAKCEHQSLINAYDNALLATDDFIAQSIQWL
+Sbjct  241  HQMGNHGPAYFKRYDEKFAKFTPVCEGNELAKCEHQSLINAYDNALLATDDFIAQSIQWL  300
+
+Query  450  QTHSNAYDVS  459
+            QTHSNAYDVS
+Sbjct  301  QTHSNAYDVS  310
+
+
+>WP_152698663.1 phosphoethanolamine transferase [Moraxella catarrhalis]
+Length=578
+
+ Score = 643 bits (1658),  Expect = 0.0, Method: Compositional matrix adjust.
+ Identities = 316/538 (59%), Positives = 397/538 (74%), Gaps = 10/538 (2%)
+
+Query  11   RSVSPFVLVASVAVFLTATANLTFFDKISQTYPIADNLGFVLTIAVVLFGAMLLITTLLS  70
+            + +  ++ +A VA+FLT TAN+TFF ++   YP+A N    +    V+   +LL+  +L 
+Sbjct  39   KGLDAYLFMAIVAIFLTTTANVTFFQQVMSVYPLA-NYALFIASLAVVLTGVLLLLLVLL  97
+
+Query  71   SYRYVLKPVLILLLIMGAVTSYFTDTYGTVYDTTMLQNALQTDQAETKDLLNAAFIMRII  130
+             YR+ LK V I  +++ A   +FTDTYGTVYDTTMLQNALQTD AETKDLL+   ++R++
+Sbjct  98   GYRHTLKTVAICFILIAAFAGHFTDTYGTVYDTTMLQNALQTDTAETKDLLSMKLLIRVV  157
+
+Query  131  GLGVLPSLLVAFVKVDYPTWGKGLMRRLGLIVASLALILLPVVAFSSHYASFFRVHKPLR  190
+             L  LP   +    + + T    LM+RL   + +LAL+ LP++AFSS YASFFR HKPLR
+Sbjct  158  LLAGLPICWIIGQPLSFGTLKASLMKRLVTYLVALALVGLPILAFSSQYASFFREHKPLR  217
+
+Query  191  SYVNPIMPIYSVGKLASIEYKKASAPKDTIYHAKDAVQATKPDMRKPRLVVFVVGETARA  250
+             + NP+  +YS GKLA++ YK A+ P +TI HA DA+Q T    RKPRLVV VVGETARA
+Sbjct  218  FFTNPVTVMYSAGKLANMSYKNATKPTETIMHANDAIQKTTASTRKPRLVVMVVGETARA  277
+
+Query  251  DHVSFNGYERDTFPQLAKIDG---VTNFSNVTSCGTSTAYSVPCMFSYLGADEYDVDTAK  307
+            DH SFNGY+R TFP + K+ G   V NF NVTSCGTSTAYSVPCMFSYLGA++YDVDTA 
+Sbjct  278  DHASFNGYQRATFPHMDKLIGLGQVHNFGNVTSCGTSTAYSVPCMFSYLGAEKYDVDTAD  337
+
+Query  308  YQENVLDTLDRLGVSILWRDNNSDSKGVMDKLPKAQFADYKSAT----NNAICNTNPYNE  363
+            Y ENV+DTLDRLGV+ILWRDNNSDSKGVM++LP  Q+ DYK++     NN IC+TNPY+E
+Sbjct  338  YHENVIDTLDRLGVAILWRDNNSDSKGVMNRLPAKQYQDYKNSPLQGGNNTICHTNPYDE  397
+
+Query  364  CRDVGMLVGLDDFVAANNGKDMLIMLHQMGNHGPAYFKRYDEKFAKFTPVCEGNELAKCE  423
+            CRDVGMLV LDD V A+  +D+LI+LHQMGNHGPAY+KRYD++FA+F PVC  +ELA+CE
+Sbjct  398  CRDVGMLVDLDDHVKAHANQDILIVLHQMGNHGPAYYKRYDDEFAQFLPVCTSSELAECE  457
+
+Query  424  HQSLINAYDNALLATDDFIAQSIQWLQTHSNAYDVSMLYVSDHGESLGENGVYLHGMPNA  483
+             Q++INAYDNALLATDDF+ Q+I WL   ++A D +MLY+SDHGESLGE GVYLHGMP A
+Sbjct  458  RQTVINAYDNALLATDDFLKQTIDWLAAQTHA-DTAMLYLSDHGESLGEKGVYLHGMPKA  516
+
+Query  484  FAPKEQRSVPAFFWTDKQTGITPMATDTV-LTHDAITPTLLKLFDVTADKVKDRTAFI  540
+            FAPKEQ S+PA  W    +      + T   +HDAITPTLL LFDV+     D+TAF+
+Sbjct  517  FAPKEQLSIPALLWLGVDSPFAVANSPTAGFSHDAITPTLLNLFDVSTQATADKTAFV  574
+
+
+
+Lambda      K        H
+   0.322    0.135    0.401 
+
+Gapped
+Lambda      K        H
+   0.267   0.0410    0.140 
+
+Effective search space used: 31431899466897
+
+
+  Database: clustered nr
+    Posted date:  Mar 9, 2024 12:10 AM
+  Number of letters in database: 117,307,649,189
+  Number of sequences in database:  357,442,162
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Window for multiple hits: 40

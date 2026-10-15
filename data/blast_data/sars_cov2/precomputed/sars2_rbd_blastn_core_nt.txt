@@ -1,0 +1,1982 @@
+BLASTN 2.12.0+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+
+Database: nt without eukaryotic nuclear assembly sequences
+           0 sequences; 0 total letters
+
+
+
+Query= SARS-CoV-2_RBD NC_045512.2:22517-23185 spike receptor-binding domain
+(aa 319-541)
+
+Length=669
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+MW289908.1 Reverse genetics vector pCCI-4K-SARS-CoV-2-ZsGreen, co...  1207    0.0   
+MT227009.1 Mutant Influenza A virus clone SRBD01 segment 8 RBD-NE...  1207    0.0   
+OZ204570.1 Severe acute respiratory syndrome-related coronavirus ...  1207    0.0   
+MW059026.1 Mutant Rotavirus A NSP3-P2A-SARS CoV-2/S1 gene, comple...  1207    0.0   
+HG994858.1 Severe acute respiratory syndrome-related coronavirus ...  1207    0.0   
+MW045214.1 Cloning vector p20020 BANCOVID SARS-CoV-2 surface glyc...  1207    0.0   
+HG994854.1 Severe acute respiratory syndrome-related coronavirus ...  1207    0.0   
+HG994853.1 Severe acute respiratory syndrome-related coronavirus ...  1207    0.0   
+MT926412.1 Reverse genetics vector pCCI-4K-SARS-CoV-2-NanoLuc, co...  1207    0.0   
+HG994855.1 Severe acute respiratory syndrome-related coronavirus ...  1207    0.0   
+MT655946.1 Mutant Rotavirus A NSP3-P2A-3XFLSARSCoV-2 spikeExRBD g...  1207    0.0   
+HG994859.1 Severe acute respiratory syndrome-related coronavirus ...  1207    0.0   
+MW045215.1 Cloning vector p20020, complete sequence                   1207    0.0   
+MT926411.1 Reverse genetics vector pCCI-4K-SARS-CoV-2-mCherry, co...  1207    0.0   
+MT926410.1 Reverse genetics vector pCCI-4K-SARS-CoV-2-Wuhan-Hu-1,...  1207    0.0   
+MT299805.1 Cloning vector pSF_lenti_SARS-CoV-2_partial-S/E/M/N, c...  1207    0.0   
+HG994856.1 Severe acute respiratory syndrome-related coronavirus ...  1207    0.0   
+HG994857.1 Severe acute respiratory syndrome-related coronavirus ...  1207    0.0   
+HG994852.1 Severe acute respiratory syndrome-related coronavirus ...  1207    0.0   
+ON755131.1 Cloning vector p20020.1, partial sequence                  1203    0.0   
+ON755132.1 Cloning vector p20020.2, partial sequence                  1194    0.0   
+HG994860.1 Severe acute respiratory syndrome-related coronavirus ...  1160    0.0   
+OM273295.1 Mammalian expression vector pVax1-IgEpLP-RBD CoV2, com...  1150    0.0   
+OY757873.1 Severe acute respiratory syndrome-related coronavirus ...  1104    0.0   
+OY757878.1 Severe acute respiratory syndrome-related coronavirus ...  1095    0.0   
+OY757875.1 Severe acute respiratory syndrome-related coronavirus ...  1095    0.0   
+OY757870.1 Severe acute respiratory syndrome-related coronavirus ...  1090    0.0   
+OY757872.1 Severe acute respiratory syndrome-related coronavirus ...  1090    0.0   
+MZ937001.1 Bat coronavirus isolate BANAL-20-103/Laos/2020, comple...  1027    0.0   
+MT655947.1 Mutant Rotavirus A NSP3-P2A-3XFLSARSCoV-2spikeRBD gene...  1025    0.0   
+MZ937000.1 Bat coronavirus isolate BANAL-20-52/Laos/2020, complet...  1022    0.0   
+PP856573.1 Mutant Bat coronavirus clone BANAL-52, complete genome     1022    0.0   
+PP856574.1 Mutant Bat coronavirus clone BANAL-236, complete genome    1022    0.0   
+MZ937003.2 Bat coronavirus isolate BANAL-20-236/Laos/2020, comple...  1022    0.0   
+OR233302.1 Horseshoe bat sarbecovirus isolate Rp22DB159, complete...  1022    0.0   
+OP963576.1 Bat SARS-like virus BtSY2 ORF1ab polyprotein (ORF1ab),...  1013    0.0   
+PZ113259.1 Severe acute respiratory syndrome-related coronavirus ...  986     0.0   
+PZ113262.1 Severe acute respiratory syndrome-related coronavirus ...  986     0.0   
+PZ113263.1 Severe acute respiratory syndrome-related coronavirus ...  986     0.0   
+PZ123560.1 Severe acute respiratory syndrome-related coronavirus ...  986     0.0   
+PZ123558.1 Severe acute respiratory syndrome-related coronavirus ...  986     0.0   
+PZ123557.1 Severe acute respiratory syndrome-related coronavirus ...  986     0.0   
+PZ123556.1 Severe acute respiratory syndrome-related coronavirus ...  982     0.0   
+PZ113264.1 Severe acute respiratory syndrome-related coronavirus ...  982     0.0   
+PZ123559.1 Severe acute respiratory syndrome-related coronavirus ...  982     0.0   
+PZ123555.1 Severe acute respiratory syndrome-related coronavirus ...  982     0.0   
+PZ123562.1 Severe acute respiratory syndrome-related coronavirus ...  982     0.0   
+PZ113260.1 Severe acute respiratory syndrome-related coronavirus ...  982     0.0   
+PZ487741.1 Bat coronavirus isolate RacSTT333, partial genome          946     0.0   
+PZ487745.1 Bat coronavirus isolate RacSTT345, partial genome          941     0.0   
+PZ487742.1 Bat coronavirus isolate RacSTT334, partial genome          941     0.0   
+PZ487746.1 Bat coronavirus isolate RacSTT347, partial genome          941     0.0   
+PZ487748.1 Bat coronavirus isolate RpuSTT361, partial genome          941     0.0   
+PZ487747.1 Bat coronavirus isolate RacSTT351, partial genome          941     0.0   
+MT799522.1 Pangolin coronavirus isolate cDNA9-S surface glycoprot...  810     0.0   
+MT799524.1 Pangolin coronavirus isolate cDNA18-S surface glycopro...  810     0.0   
+OQ297708.1 Pangolin coronavirus isolate GD/P79-9/2019, complete g...  810     0.0   
+MT799521.1 Pangolin coronavirus isolate cDNA8-S surface glycoprot...  810     0.0   
+MT799523.1 Pangolin coronavirus isolate cDNA16-S surface glycopro...  810     0.0   
+MT121216.1 Pangolin coronavirus isolate MP789, complete genome        806     0.0   
+OQ297700.1 Pangolin coronavirus isolate GD/M5-9/2019, partial genome  805     0.0   
+PV839357.1 Severe acute respiratory syndrome-related coronavirus ...  804     0.0   
+PV839359.1 Severe acute respiratory syndrome-related coronavirus ...  804     0.0   
+OQ297707.1 Pangolin coronavirus isolate GD/P44-9/2019, partial ge...  803     0.0   
+MT084071.1 Pangolin coronavirus isolate MP789 genomic sequence, s...  802     0.0   
+MN996532.2 Bat coronavirus RaTG13, complete genome                    795     0.0   
+PZ487738.1 Bat coronavirus isolate RshSTT314, partial genome          621     4e-173
+PZ487731.1 Bat coronavirus isolate RshSTT227, partial genome          621     4e-173
+PZ487751.1 Bat coronavirus isolate RshSTT419, partial genome          621     4e-173
+PZ487740.1 Bat coronavirus isolate RshSTT322, partial genome          621     4e-173
+PZ487736.1 Bat coronavirus isolate RshSTT268, partial genome          621     4e-173
+PZ487730.1 Bat coronavirus isolate RshSTT219, partial genome          621     4e-173
+PZ487739.1 Bat coronavirus isolate RshSTT317, partial genome          621     4e-173
+PZ487750.1 Bat coronavirus isolate RshSTT395, partial genome          621     4e-173
+PZ487755.1 Bat coronavirus isolate RmiSTT521, partial genome          621     4e-173
+PZ487735.1 Bat coronavirus isolate RmiSTT249, partial genome          621     4e-173
+PZ487754.1 Bat coronavirus isolate RshSTT515, partial genome          621     4e-173
+PZ487758.1 Bat coronavirus isolate RshSTT610, partial genome          621     4e-173
+PZ487752.1 Bat coronavirus isolate RshSTT494, partial genome          621     4e-173
+PZ487743.1 Bat coronavirus isolate RshSTT336, partial genome          621     4e-173
+PZ487734.1 Bat coronavirus isolate RshSTT245, partial genome          621     4e-173
+PZ487733.1 Bat coronavirus isolate RmiSTT243, partial genome          621     4e-173
+PZ487728.1 Bat coronavirus isolate RshSTT671, partial genome          621     4e-173
+PZ487737.1 Bat coronavirus isolate RshSTT287, partial genome          621     4e-173
+PZ487749.1 Bat coronavirus isolate RshSTT381, partial genome          621     4e-173
+PZ487729.1 Bat coronavirus isolate RshSTT779, partial genome          621     4e-173
+PZ487744.1 Bat coronavirus isolate RshSTT344, partial genome          621     4e-173
+PZ487732.1 Bat coronavirus isolate RshSTT241, partial genome          621     4e-173
+PZ487756.1 Bat coronavirus isolate RshSTT564, partial genome          617     2e-171
+PZ487757.1 Bat coronavirus isolate RshSTT570, partial genome          617     2e-171
+PV146379.1 Pangolin coronavirus isolate PCoV-GX/P11V-15, complete...  606     3e-168
+PQ675610.1 Pangolin coronavirus isolate PCoV-GX/P8V-P5, complete ...  601     4e-167
+MT040333.1 Pangolin coronavirus isolate PCoV_GX-P4L, complete genome  601     4e-167
+PQ675609.1 Pangolin coronavirus isolate PCoV-GX/P8V-P1, complete ...  601     4e-167
+MT040335.1 Pangolin coronavirus isolate PCoV_GX-P5L, complete genome  601     4e-167
+PV146378.1 Pangolin coronavirus isolate PCoV-GX/P11V-5, complete ...  601     4e-167
+MW532698.1 Pangolin coronavirus isolate GX_P2V, complete genome       601     4e-167
+PX802981.1 Pangolin coronavirus isolate PCoV-GX/P49T, complete ge...  601     4e-167
+PQ675611.1 Pangolin coronavirus isolate PCoV-GX/P8V-P15, complete...  601     4e-167
+PX802979.1 Pangolin coronavirus isolate PCoV-GX/P1T, complete genome  601     4e-167
+MT072864.1 Pangolin coronavirus isolate PCoV_GX-P2V, complete genome  598     4e-166
+PV146377.1 Pangolin coronavirus isolate PCoV-GX/P11V-1, complete ...  597     2e-165
+MT040336.1 Pangolin coronavirus isolate PCoV_GX-P5E, complete genome  597     2e-165
+MT040334.1 Pangolin coronavirus isolate PCoV_GX-P1E, complete genome  589     2e-163
+PZ487726.1 Bat coronavirus isolate RshSTT039, partial genome          583     1e-161
+PZ487727.1 Bat coronavirus isolate RshSTT334, partial genome          579     4e-160
+PV839353.1 Severe acute respiratory syndrome-related coronavirus ...  578     4e-160
+OR233323.1 Horseshoe bat sarbecovirus isolate Ra22QT135, complete...  574     5e-159
+OR233322.1 Horseshoe bat sarbecovirus isolate Ra22QT106, complete...  574     5e-159
+OR233324.1 Horseshoe bat sarbecovirus isolate Ra22QT77, complete ...  574     5e-159
+PX802980.1 Pangolin coronavirus isolate PCoV-GX/P5V, complete genome  522     3e-143
+PV839358.1 Severe acute respiratory syndrome-related coronavirus ...  505     8e-138
+OR995580.1 Mutant Vesicular stomatitis virus clone recombinant VS...  481     9e-131
+OP963575.1 Bat SARS-like virus BtSY1 ORF1ab polyprotein (ORF1ab),...  439     3e-118
+OQ503501.1 Severe acute respiratory syndrome-related coronavirus ...  432     4e-116
+KT444582.1 SARS-like coronavirus WIV16, complete genome               432     4e-116
+PZ810323.1 Mutant Severe acute respiratory syndrome coronavirus c...  432     4e-116
+OQ503500.1 Severe acute respiratory syndrome-related coronavirus ...  432     4e-116
+KF367457.1 Bat SARS-like coronavirus WIV1, complete genome            432     4e-116
+KC881007.1 Bat SARS-like coronavirus WIV1 spike protein (S) gene,...  432     4e-116
+KC881006.1 Bat SARS-like coronavirus Rs3367, complete genome          432     4e-116
+KY417150.1 Bat SARS-like coronavirus isolate Rs4874, complete genome  432     4e-116
+AY304489.1 SARS coronavirus SZ1, partial genome                       424     2e-113
+AY304486.1 SARS coronavirus SZ3, complete genome                      424     2e-113
+AY304488.1 SARS coronavirus SZ16, complete genome                     419     2e-112
+AY304487.1 SARS coronavirus SZ13, partial genome                      419     2e-112
+AY627045.1 SARS coronavirus PC4-137 spike glycoprotein gene, comp...  415     1e-110
+AY572036.1 SARS coronavirus civet014 spike glycoprotein gene, com...  415     1e-110
+AY395003.1 SARS coronavirus ZS-C, complete genome                     414     1e-110
+AY304490.1 SARS coronavirus GZ43, partial genome                      414     1e-110
+AY394981.1 SARS coronavirus HGZ8L1-A, partial genome                  414     1e-110
+AY390556.1 SARS coronavirus GZ02, complete genome                     414     1e-110
+AY394996.1 SARS coronavirus ZS-B, complete genome                     414     1e-110
+AY394988.1 SARS coronavirus JMD, partial genome                       414     1e-110
+AY304491.1 SARS coronavirus GZ60, partial genome                      414     1e-110
+AY545915.1 SARS coronavirus isolate HC/SZ/DM1/03, complete genome     410     1e-109
+AY613951.1 SARS coronavirus PC4-127 spike glycoprotein gene, comp...  410     1e-109
+AY687370.1 SARS coronavirus C025 spike glycoprotein gene, complet...  410     1e-109
+AY613952.1 SARS coronavirus PC4-205 spike glycoprotein gene, comp...  410     1e-109
+AY687355.1 SARS coronavirus A013 spike glycoprotein gene, complet...  410     1e-109
+AY545918.1 SARS coronavirus isolate HC/GZ/32/03, complete genome      410     1e-109
+AY572038.1 SARS coronavirus civet020, complete genome                 410     1e-109
+AY687372.1 SARS coronavirus C029 spike glycoprotein gene, complet...  410     1e-109
+AY687369.1 SARS coronavirus C019 spike glycoprotein gene, complet...  410     1e-109
+AY687368.1 SARS coronavirus C018 spike glycoprotein gene, complet...  410     1e-109
+AY687364.1 SARS coronavirus B040 spike glycoprotein gene, complet...  410     1e-109
+AY686864.1 SARS coronavirus B039, complete genome                     410     1e-109
+AY687363.1 SARS coronavirus B039 spike glycoprotein gene, complet...  410     1e-109
+AY687356.1 SARS coronavirus A021 spike glycoprotein gene, complet...  410     1e-109
+AY627047.1 SARS coronavirus PC4-199 spike glycoprotein gene, comp...  410     1e-109
+AY545916.1 SARS coronavirus isolate HC/SZ/266/03, complete genome     410     1e-109
+AY515512.1 SARS coronavirus HC/SZ/61/03, complete genome              410     1e-109
+AY613950.1 SARS coronavirus PC4-227, complete genome                  410     1e-109
+AY687359.1 SARS coronavirus B012 spike glycoprotein gene, complet...  410     1e-109
+AY687371.1 SARS coronavirus C028 spike glycoprotein gene, complet...  410     1e-109
+AY613949.1 SARS coronavirus PC4-136, complete genome                  410     1e-109
+AY627044.1 SARS coronavirus PC4-115 spike glycoprotein gene, comp...  410     1e-109
+AY627046.1 SARS coronavirus PC4-145 spike glycoprotein gene, comp...  410     1e-109
+DQ514530.1 SARS coronavirus ES260 spike glycoprotein gene, comple...  410     1e-109
+AY568539.1 SARS coronavirus GZ0401, complete genome                   410     1e-109
+AY545917.1 SARS coronavirus isolate HC/GZ/81/03, complete genome      410     1e-109
+AY687360.1 SARS coronavirus B024 spike glycoprotein gene, complet...  410     1e-109
+AY627048.1 SARS coronavirus PC4-241 spike glycoprotein gene, comp...  410     1e-109
+AY525636.1 SARS coronavirus GD03T0013 spike glycoprotein gene, co...  410     1e-109
+EU371559.1 SARS coronavirus ZJ02, complete genome                     409     4e-109
+EU371561.1 SARS coronavirus BJ182b, complete genome                   409     4e-109
+EU371562.1 SARS coronavirus BJ182-4, complete genome                  409     4e-109
+EU371564.1 SARS coronavirus BJ182-12, complete genome                 409     4e-109
+AY278489.2 SARS coronavirus GD01, complete genome                     409     4e-109
+EU371563.1 SARS coronavirus BJ182-8, complete genome                  409     4e-109
+EU371560.1 SARS coronavirus BJ182a, complete genome                   409     4e-109
+AY545919.1 SARS coronavirus isolate CFB/SZ/94/03, complete genome     407     2e-108
+AY572037.1 SARS coronavirus civet019 spike glycoprotein gene, com...  406     5e-108
+AY687365.1 SARS coronavirus C013 spike glycoprotein gene, complet...  406     5e-108
+AY687362.1 SARS coronavirus B033 spike glycoprotein gene, complet...  406     5e-108
+AY687361.1 SARS coronavirus B029 spike glycoprotein gene, complet...  406     5e-108
+FJ959407.1 SARS coronavirus isolate A001, complete genome             406     5e-108
+AY572034.1 SARS coronavirus civet007, complete genome                 406     5e-108
+DQ514528.1 SARS coronavirus WF188 spike glycoprotein gene, comple...  406     5e-108
+AY687357.1 SARS coronavirus A030 spike glycoprotein gene, complet...  406     5e-108
+AY545914.1 SARS coronavirus isolate HC/SZ/79/03, complete genome      406     5e-108
+AY686863.1 SARS coronavirus A022, complete genome                     406     5e-108
+AY572035.1 SARS coronavirus civet010, complete genome                 406     5e-108
+AY613947.1 SARS coronavirus GZ0402, complete genome                   406     5e-108
+MW560960.1 Expression vector SARSCoV2SD614G, complete sequence        405     5e-108
+OK272510.1 Recombinant vector AAV-COVID19-05, complete sequence       405     5e-108
+OK272511.1 Recombinant vector AAV-COVID19-06, complete sequence       405     5e-108
+MW560963.1 Expression vector SARSCoV2SGFP, complete sequence          405     5e-108
+MW560957.1 Expression vector SARSCoV2S, complete sequence             405     5e-108
+MW560962.1 Expression vector SARSCoV2S&SmBit, complete sequence       405     5e-108
+OK017849.1 Sarbecovirus sp. isolate YN2016C, complete genome          405     5e-108
+OQ503504.1 Severe acute respiratory syndrome-related coronavirus ...  405     5e-108
+MW560961.1 Expression vector SARSCoV2SP681H, complete sequence        405     5e-108
+AY687354.1 SARS coronavirus A001 spike glycoprotein gene, complet...  405     5e-108
+MW408786.1 Recombinant vector AAVCOVID19-3, complete sequence         405     5e-108
+MW408785.1 Recombinant vector AAVCOVID19-1, complete sequence         405     5e-108
+OQ503503.1 Severe acute respiratory syndrome-related coronavirus ...  405     5e-108
+MK211376.1 Coronavirus BtRs-BetaCoV/YN2018B, complete genome          405     5e-108
+OQ503505.1 Severe acute respiratory syndrome-related coronavirus ...  405     5e-108
+DQ514531.1 SARS coronavirus CS21 spike glycoprotein gene, complet...  401     7e-107
+DQ514529.1 SARS coronavirus ES191 spike glycoprotein gene, comple...  401     7e-107
+AY613948.1 SARS coronavirus PC4-13, complete genome                   401     7e-107
+OK272508.1 Recombinant vector AAV-COVID19-03, complete sequence       401     7e-107
+OK272507.1 Recombinant vector AAV-COVID19-02, complete sequence       401     7e-107
+OK272509.1 Recombinant vector AAV-COVID19-04, complete sequence       401     7e-107
+OK272506.1 Recombinant vector AAV-COVID19-01, complete sequence       401     7e-107
+KY417152.1 Bat SARS-like coronavirus isolate Rs9401, complete genome  400     2e-106
+MW598453.1 Expression vector SARS-CoV-2-S-N439K, complete sequence    400     2e-106
+OQ175345.1 Bat Coronavirus RsYN20 isolate BtRs-BetaCoV/YN2020-Q32...  400     2e-106
+OK017853.1 Sarbecovirus sp. isolate YN2020C, complete genome          400     2e-106
+OQ175347.1 Bat Coronavirus RsYN20 isolate BtRs-BetaCoV/YN2020-Q32...  400     2e-106
+OK017857.1 Sarbecovirus sp. isolate YN2020G, complete genome          400     2e-106
+OQ175344.1 Bat Coronavirus RsYN20 isolate BtRs-BetaCoV/YN2020-Q32...  400     2e-106
+MW598454.1 Expression vector SARS-CoV-2-S-E484K, complete sequence    400     2e-106
+OQ175346.1 Bat Coronavirus RsYN20 isolate BtRs-BetaCoV/YN2020-Q32...  400     2e-106
+OK017854.1 Sarbecovirus sp. isolate YN2020D, complete genome          400     2e-106
+OK017856.1 Sarbecovirus sp. isolate YN2020F, complete genome          400     2e-106
+MW560958.1 Expression vector SARSCoV2SY453F, complete sequence        400     2e-106
+OK017850.1 Sarbecovirus sp. isolate YN2016D, complete genome          400     2e-106
+OK017847.1 Sarbecovirus sp. isolate YN2016A, complete genome          400     2e-106
+OQ175348.1 Bat Coronavirus RsYN20 isolate BtRs-BetaCoV/YN2020-Q32...  400     2e-106
+OK017855.1 Sarbecovirus sp. isolate YN2020E, complete genome          400     2e-106
+KY417151.1 Bat SARS-like coronavirus isolate Rs7327, complete genome  400     2e-106
+OK017851.1 Sarbecovirus sp. isolate YN2016E, complete genome          400     2e-106
+MW560959.1 Expression vector SARSCoV2SN501Y, complete sequence        400     2e-106
+OK017848.1 Sarbecovirus sp. isolate YN2016B, complete genome          400     2e-106
+OK017852.1 Sarbecovirus sp. isolate YN2020B, complete genome          396     3e-105
+OK017858.1 Sarbecovirus sp. isolate YN2020H, complete genome          396     3e-105
+PV839355.1 Severe acute respiratory syndrome-related coronavirus ...  395     1e-104
+PV839354.1 Severe acute respiratory syndrome-related coronavirus ...  395     1e-104
+KY417146.1 Bat SARS-like coronavirus isolate Rs4231, complete genome  387     1e-102
+KC881005.1 Bat SARS-like coronavirus RsSHC014, complete genome        387     1e-102
+MT308984.1 Mutant SARS coronavirus Urbani clone SARS-Urbani-MA_SH...  387     1e-102
+KY417144.1 Bat SARS-like coronavirus isolate Rs4084, complete genome  382     6e-101
+MT613044.1 Cloning vector pCDNA3.1.2S, complete sequence              362     6e-95 
+LC663958.1 Sarbecovirus sp. Rc-os20 RNA, complete geneome             361     6e-95 
+PV648366.1 Bat coronavirus isolate CoV/Bat25-5, complete genome       349     4e-91 
+MW090971.1 Mutant Measles morbillivirus strain MeVvac2-SARS2-S(H)...  343     2e-89 
+OP697990.1 Mammalian expression vector pCMV-rRBD, complete sequence   332     1e-85 
+OP697991.1 Mammalian expression vector pCMV-rRBD-wtEBNA1, complet...  332     1e-85 
+OP697988.1 Mammalian expression vector pCAG-rRBD-xrepEBNA1, compl...  332     1e-85 
+OP697986.1 Mammalian expression vector pCAG-rRBD, complete sequence   332     1e-85 
+OP697989.1 Mammalian expression vector pCAG-rRBD-svEBNA1, complet...  332     1e-85 
+OP697992.1 Mammalian expression vector pCMV-rRBD-xrepEBNA1, compl...  332     1e-85 
+OP697985.1 Mammalian expression vector pSV40-rRBD, complete sequence  332     1e-85 
+OP697994.1 Mammalian expression vector pNeo-CAG-rRBD, complete se...  332     1e-85 
+OP697987.1 Mammalian expression vector pCAG-rRBD-wtEBNA1, complet...  332     1e-85 
+OP697993.1 Mammalian expression vector pCMV-rRBD-svEBNA1, complet...  332     1e-85 
+PP544446.1 Vector BNT162b2 clone Vacc_Batch_FP9359, complete sequ...  327     1e-84 
+PP544445.1 Vector BNT162b2 clone Vacc_Batch_FP8191, complete sequ...  324     1e-83 
+
+
+>MW289908.1 Reverse genetics vector pCCI-4K-SARS-CoV-2-ZsGreen, complete 
+sequence
+Length=36033
+
+ Score = 1207 bits (1338),  Expect = 0.0
+ Identities = 669/669 (100%), Gaps = 0/669 (0%)
+ Strand=Plus/Plus
+
+Query  1      AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAAACTTGTGCCCTTTT  60
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  23207  AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAAACTTGTGCCCTTTT  23266
+
+Query  61     GGTGAAGTTTTTAACGCCACCAGATTTGCATCTGTTTATGCTTGGAACAGGAAGAGAATC  120
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  23267  GGTGAAGTTTTTAACGCCACCAGATTTGCATCTGTTTATGCTTGGAACAGGAAGAGAATC  23326
+
+Query  121    AGCAACTGTGTTGCTGATTATTCTGTCCTATATAATTCCGCATCATTTTCCACTTTTAAG  180
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  23327  AGCAACTGTGTTGCTGATTATTCTGTCCTATATAATTCCGCATCATTTTCCACTTTTAAG  23386
+
+Query  181    TGTTATGGAGTGTCTCCTACTAAATTAAATGATCTCTGCTTTACTAATGTCTATGCAGAT  240
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  23387  TGTTATGGAGTGTCTCCTACTAAATTAAATGATCTCTGCTTTACTAATGTCTATGCAGAT  23446
+
+Query  241    TCATTTGTAATTAGAGGTGATGAAGTCAGACAAATCGCTCCAGGGCAAACTGGAAAGATT  300
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  23447  TCATTTGTAATTAGAGGTGATGAAGTCAGACAAATCGCTCCAGGGCAAACTGGAAAGATT  23506
+
+Query  301    GCTGATTATAATTATAAATTACCAGATGATTTTACAGGCTGCGTTATAGCTTGGAATTCT  360
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  23507  GCTGATTATAATTATAAATTACCAGATGATTTTACAGGCTGCGTTATAGCTTGGAATTCT  23566
+
+Query  361    AACAATCTTGATTCTAAGGTTGGTGGTAATTATAATTACCTGTATAGATTGTTTAGGAAG  420
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  23567  AACAATCTTGATTCTAAGGTTGGTGGTAATTATAATTACCTGTATAGATTGTTTAGGAAG  23626
+
+Query  421    TCTAATCTCAAACCTTTTGAGAGAGATATTTCAACTGAAATCTATCAGGCCGGTAGCACA  480
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  23627  TCTAATCTCAAACCTTTTGAGAGAGATATTTCAACTGAAATCTATCAGGCCGGTAGCACA  23686
+
+Query  481    CCTTGTAATGGTGTTGAAGGTTTTAATTGTTACTTTCCTTTACAATCATATGGTTTCCAA  540
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  23687  CCTTGTAATGGTGTTGAAGGTTTTAATTGTTACTTTCCTTTACAATCATATGGTTTCCAA  23746
+
+Query  541    CCCACTAATGGTGTTGGTTACCAACCATACAGAGTAGTAGTACTTTCTTTTGAACTTCTA  600
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  23747  CCCACTAATGGTGTTGGTTACCAACCATACAGAGTAGTAGTACTTTCTTTTGAACTTCTA  23806
+
+Query  601    CATGCACCAGCAACTGTTTGTGGACCTAAAAAGTCTACTAATTTGGTTAAAAACAAATGT  660
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  23807  CATGCACCAGCAACTGTTTGTGGACCTAAAAAGTCTACTAATTTGGTTAAAAACAAATGT  23866
+
+Query  661    GTCAATTTC  669
+              |||||||||
+Sbjct  23867  GTCAATTTC  23875
+
+
+>MT227009.1 Mutant Influenza A virus clone SRBD01 segment 8 RBD-NEP fusion 
+protein gene, complete cds
+Length=1406
+
+ Score = 1207 bits (1338),  Expect = 0.0
+ Identities = 669/669 (100%), Gaps = 0/669 (0%)
+ Strand=Plus/Plus
+
+Query  1    AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAAACTTGTGCCCTTTT  60
+            ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  151  AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAAACTTGTGCCCTTTT  210
+
+Query  61   GGTGAAGTTTTTAACGCCACCAGATTTGCATCTGTTTATGCTTGGAACAGGAAGAGAATC  120
+            ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  211  GGTGAAGTTTTTAACGCCACCAGATTTGCATCTGTTTATGCTTGGAACAGGAAGAGAATC  270
+
+Query  121  AGCAACTGTGTTGCTGATTATTCTGTCCTATATAATTCCGCATCATTTTCCACTTTTAAG  180
+            ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  271  AGCAACTGTGTTGCTGATTATTCTGTCCTATATAATTCCGCATCATTTTCCACTTTTAAG  330
+
+Query  181  TGTTATGGAGTGTCTCCTACTAAATTAAATGATCTCTGCTTTACTAATGTCTATGCAGAT  240
+            ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  331  TGTTATGGAGTGTCTCCTACTAAATTAAATGATCTCTGCTTTACTAATGTCTATGCAGAT  390
+
+Query  241  TCATTTGTAATTAGAGGTGATGAAGTCAGACAAATCGCTCCAGGGCAAACTGGAAAGATT  300
+            ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  391  TCATTTGTAATTAGAGGTGATGAAGTCAGACAAATCGCTCCAGGGCAAACTGGAAAGATT  450
+
+Query  301  GCTGATTATAATTATAAATTACCAGATGATTTTACAGGCTGCGTTATAGCTTGGAATTCT  360
+            ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  451  GCTGATTATAATTATAAATTACCAGATGATTTTACAGGCTGCGTTATAGCTTGGAATTCT  510
+
+Query  361  AACAATCTTGATTCTAAGGTTGGTGGTAATTATAATTACCTGTATAGATTGTTTAGGAAG  420
+            ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  511  AACAATCTTGATTCTAAGGTTGGTGGTAATTATAATTACCTGTATAGATTGTTTAGGAAG  570
+
+Query  421  TCTAATCTCAAACCTTTTGAGAGAGATATTTCAACTGAAATCTATCAGGCCGGTAGCACA  480
+            ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  571  TCTAATCTCAAACCTTTTGAGAGAGATATTTCAACTGAAATCTATCAGGCCGGTAGCACA  630
+
+Query  481  CCTTGTAATGGTGTTGAAGGTTTTAATTGTTACTTTCCTTTACAATCATATGGTTTCCAA  540
+            ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  631  CCTTGTAATGGTGTTGAAGGTTTTAATTGTTACTTTCCTTTACAATCATATGGTTTCCAA  690
+
+Query  541  CCCACTAATGGTGTTGGTTACCAACCATACAGAGTAGTAGTACTTTCTTTTGAACTTCTA  600
+            ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  691  CCCACTAATGGTGTTGGTTACCAACCATACAGAGTAGTAGTACTTTCTTTTGAACTTCTA  750
+
+Query  601  CATGCACCAGCAACTGTTTGTGGACCTAAAAAGTCTACTAATTTGGTTAAAAACAAATGT  660
+            ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  751  CATGCACCAGCAACTGTTTGTGGACCTAAAAAGTCTACTAATTTGGTTAAAAACAAATGT  810
+
+Query  661  GTCAATTTC  669
+            |||||||||
+Sbjct  811  GTCAATTTC  819
+
+
+>OZ204570.1 Severe acute respiratory syndrome-related coronavirus genome 
+assembly, chromosome: 1
+Length=29911
+
+ Score = 1207 bits (1338),  Expect = 0.0
+ Identities = 669/669 (100%), Gaps = 0/669 (0%)
+ Strand=Plus/Plus
+
+Query  1      AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAAACTTGTGCCCTTTT  60
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22525  AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAAACTTGTGCCCTTTT  22584
+
+Query  61     GGTGAAGTTTTTAACGCCACCAGATTTGCATCTGTTTATGCTTGGAACAGGAAGAGAATC  120
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22585  GGTGAAGTTTTTAACGCCACCAGATTTGCATCTGTTTATGCTTGGAACAGGAAGAGAATC  22644
+
+Query  121    AGCAACTGTGTTGCTGATTATTCTGTCCTATATAATTCCGCATCATTTTCCACTTTTAAG  180
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22645  AGCAACTGTGTTGCTGATTATTCTGTCCTATATAATTCCGCATCATTTTCCACTTTTAAG  22704
+
+Query  181    TGTTATGGAGTGTCTCCTACTAAATTAAATGATCTCTGCTTTACTAATGTCTATGCAGAT  240
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22705  TGTTATGGAGTGTCTCCTACTAAATTAAATGATCTCTGCTTTACTAATGTCTATGCAGAT  22764
+
+Query  241    TCATTTGTAATTAGAGGTGATGAAGTCAGACAAATCGCTCCAGGGCAAACTGGAAAGATT  300
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22765  TCATTTGTAATTAGAGGTGATGAAGTCAGACAAATCGCTCCAGGGCAAACTGGAAAGATT  22824
+
+Query  301    GCTGATTATAATTATAAATTACCAGATGATTTTACAGGCTGCGTTATAGCTTGGAATTCT  360
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22825  GCTGATTATAATTATAAATTACCAGATGATTTTACAGGCTGCGTTATAGCTTGGAATTCT  22884
+
+Query  361    AACAATCTTGATTCTAAGGTTGGTGGTAATTATAATTACCTGTATAGATTGTTTAGGAAG  420
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22885  AACAATCTTGATTCTAAGGTTGGTGGTAATTATAATTACCTGTATAGATTGTTTAGGAAG  22944
+
+Query  421    TCTAATCTCAAACCTTTTGAGAGAGATATTTCAACTGAAATCTATCAGGCCGGTAGCACA  480
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22945  TCTAATCTCAAACCTTTTGAGAGAGATATTTCAACTGAAATCTATCAGGCCGGTAGCACA  23004
+
+Query  481    CCTTGTAATGGTGTTGAAGGTTTTAATTGTTACTTTCCTTTACAATCATATGGTTTCCAA  540
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  23005  CCTTGTAATGGTGTTGAAGGTTTTAATTGTTACTTTCCTTTACAATCATATGGTTTCCAA  23064
+
+Query  541    CCCACTAATGGTGTTGGTTACCAACCATACAGAGTAGTAGTACTTTCTTTTGAACTTCTA  600
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  23065  CCCACTAATGGTGTTGGTTACCAACCATACAGAGTAGTAGTACTTTCTTTTGAACTTCTA  23124
+
+Query  601    CATGCACCAGCAACTGTTTGTGGACCTAAAAAGTCTACTAATTTGGTTAAAAACAAATGT  660
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  23125  CATGCACCAGCAACTGTTTGTGGACCTAAAAAGTCTACTAATTTGGTTAAAAACAAATGT  23184
+
+Query  661    GTCAATTTC  669
+              |||||||||
+Sbjct  23185  GTCAATTTC  23193
+
+
+>MW059026.1 Mutant Rotavirus A NSP3-P2A-SARS CoV-2/S1 gene, complete cds
+Length=3298
+
+ Score = 1207 bits (1338),  Expect = 0.0
+ Identities = 669/669 (100%), Gaps = 0/669 (0%)
+ Strand=Plus/Plus
+
+Query  1     AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAAACTTGTGCCCTTTT  60
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2063  AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAAACTTGTGCCCTTTT  2122
+
+Query  61    GGTGAAGTTTTTAACGCCACCAGATTTGCATCTGTTTATGCTTGGAACAGGAAGAGAATC  120
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2123  GGTGAAGTTTTTAACGCCACCAGATTTGCATCTGTTTATGCTTGGAACAGGAAGAGAATC  2182
+
+Query  121   AGCAACTGTGTTGCTGATTATTCTGTCCTATATAATTCCGCATCATTTTCCACTTTTAAG  180
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2183  AGCAACTGTGTTGCTGATTATTCTGTCCTATATAATTCCGCATCATTTTCCACTTTTAAG  2242
+
+Query  181   TGTTATGGAGTGTCTCCTACTAAATTAAATGATCTCTGCTTTACTAATGTCTATGCAGAT  240
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2243  TGTTATGGAGTGTCTCCTACTAAATTAAATGATCTCTGCTTTACTAATGTCTATGCAGAT  2302
+
+Query  241   TCATTTGTAATTAGAGGTGATGAAGTCAGACAAATCGCTCCAGGGCAAACTGGAAAGATT  300
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2303  TCATTTGTAATTAGAGGTGATGAAGTCAGACAAATCGCTCCAGGGCAAACTGGAAAGATT  2362
+
+Query  301   GCTGATTATAATTATAAATTACCAGATGATTTTACAGGCTGCGTTATAGCTTGGAATTCT  360
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2363  GCTGATTATAATTATAAATTACCAGATGATTTTACAGGCTGCGTTATAGCTTGGAATTCT  2422
+
+Query  361   AACAATCTTGATTCTAAGGTTGGTGGTAATTATAATTACCTGTATAGATTGTTTAGGAAG  420
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2423  AACAATCTTGATTCTAAGGTTGGTGGTAATTATAATTACCTGTATAGATTGTTTAGGAAG  2482
+
+Query  421   TCTAATCTCAAACCTTTTGAGAGAGATATTTCAACTGAAATCTATCAGGCCGGTAGCACA  480
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2483  TCTAATCTCAAACCTTTTGAGAGAGATATTTCAACTGAAATCTATCAGGCCGGTAGCACA  2542
+
+Query  481   CCTTGTAATGGTGTTGAAGGTTTTAATTGTTACTTTCCTTTACAATCATATGGTTTCCAA  540
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2543  CCTTGTAATGGTGTTGAAGGTTTTAATTGTTACTTTCCTTTACAATCATATGGTTTCCAA  2602
+
+Query  541   CCCACTAATGGTGTTGGTTACCAACCATACAGAGTAGTAGTACTTTCTTTTGAACTTCTA  600
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2603  CCCACTAATGGTGTTGGTTACCAACCATACAGAGTAGTAGTACTTTCTTTTGAACTTCTA  2662
+
+Query  601   CATGCACCAGCAACTGTTTGTGGACCTAAAAAGTCTACTAATTTGGTTAAAAACAAATGT  660
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2663  CATGCACCAGCAACTGTTTGTGGACCTAAAAAGTCTACTAATTTGGTTAAAAACAAATGT  2722
+
+Query  661   GTCAATTTC  669
+             |||||||||
+Sbjct  2723  GTCAATTTC  2731
+
+
+>HG994858.1 Severe acute respiratory syndrome-related coronavirus isolate 
+H_SC_09 genome assembly, complete genome: monopartite
+Length=29903
+
+ Score = 1207 bits (1338),  Expect = 0.0
+ Identities = 669/669 (100%), Gaps = 0/669 (0%)
+ Strand=Plus/Plus
+
+Query  1      AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAAACTTGTGCCCTTTT  60
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22517  AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAAACTTGTGCCCTTTT  22576
+
+Query  61     GGTGAAGTTTTTAACGCCACCAGATTTGCATCTGTTTATGCTTGGAACAGGAAGAGAATC  120
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22577  GGTGAAGTTTTTAACGCCACCAGATTTGCATCTGTTTATGCTTGGAACAGGAAGAGAATC  22636
+
+Query  121    AGCAACTGTGTTGCTGATTATTCTGTCCTATATAATTCCGCATCATTTTCCACTTTTAAG  180
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22637  AGCAACTGTGTTGCTGATTATTCTGTCCTATATAATTCCGCATCATTTTCCACTTTTAAG  22696
+
+Query  181    TGTTATGGAGTGTCTCCTACTAAATTAAATGATCTCTGCTTTACTAATGTCTATGCAGAT  240
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22697  TGTTATGGAGTGTCTCCTACTAAATTAAATGATCTCTGCTTTACTAATGTCTATGCAGAT  22756
+
+Query  241    TCATTTGTAATTAGAGGTGATGAAGTCAGACAAATCGCTCCAGGGCAAACTGGAAAGATT  300
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22757  TCATTTGTAATTAGAGGTGATGAAGTCAGACAAATCGCTCCAGGGCAAACTGGAAAGATT  22816
+
+Query  301    GCTGATTATAATTATAAATTACCAGATGATTTTACAGGCTGCGTTATAGCTTGGAATTCT  360
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22817  GCTGATTATAATTATAAATTACCAGATGATTTTACAGGCTGCGTTATAGCTTGGAATTCT  22876
+
+Query  361    AACAATCTTGATTCTAAGGTTGGTGGTAATTATAATTACCTGTATAGATTGTTTAGGAAG  420
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22877  AACAATCTTGATTCTAAGGTTGGTGGTAATTATAATTACCTGTATAGATTGTTTAGGAAG  22936
+
+Query  421    TCTAATCTCAAACCTTTTGAGAGAGATATTTCAACTGAAATCTATCAGGCCGGTAGCACA  480
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22937  TCTAATCTCAAACCTTTTGAGAGAGATATTTCAACTGAAATCTATCAGGCCGGTAGCACA  22996
+
+Query  481    CCTTGTAATGGTGTTGAAGGTTTTAATTGTTACTTTCCTTTACAATCATATGGTTTCCAA  540
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22997  CCTTGTAATGGTGTTGAAGGTTTTAATTGTTACTTTCCTTTACAATCATATGGTTTCCAA  23056
+
+Query  541    CCCACTAATGGTGTTGGTTACCAACCATACAGAGTAGTAGTACTTTCTTTTGAACTTCTA  600
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  23057  CCCACTAATGGTGTTGGTTACCAACCATACAGAGTAGTAGTACTTTCTTTTGAACTTCTA  23116
+
+Query  601    CATGCACCAGCAACTGTTTGTGGACCTAAAAAGTCTACTAATTTGGTTAAAAACAAATGT  660
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  23117  CATGCACCAGCAACTGTTTGTGGACCTAAAAAGTCTACTAATTTGGTTAAAAACAAATGT  23176
+
+Query  661    GTCAATTTC  669
+              |||||||||
+Sbjct  23177  GTCAATTTC  23185
+
+
+>MW045214.1 Cloning vector p20020 BANCOVID SARS-CoV-2 surface glycoprotein 
+gene, complete cds
+Length=4326
+
+ Score = 1207 bits (1338),  Expect = 0.0
+ Identities = 669/669 (100%), Gaps = 0/669 (0%)
+ Strand=Plus/Plus
+
+Query  1     AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAAACTTGTGCCCTTTT  60
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  1063  AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAAACTTGTGCCCTTTT  1122
+
+Query  61    GGTGAAGTTTTTAACGCCACCAGATTTGCATCTGTTTATGCTTGGAACAGGAAGAGAATC  120
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  1123  GGTGAAGTTTTTAACGCCACCAGATTTGCATCTGTTTATGCTTGGAACAGGAAGAGAATC  1182
+
+Query  121   AGCAACTGTGTTGCTGATTATTCTGTCCTATATAATTCCGCATCATTTTCCACTTTTAAG  180
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  1183  AGCAACTGTGTTGCTGATTATTCTGTCCTATATAATTCCGCATCATTTTCCACTTTTAAG  1242
+
+Query  181   TGTTATGGAGTGTCTCCTACTAAATTAAATGATCTCTGCTTTACTAATGTCTATGCAGAT  240
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  1243  TGTTATGGAGTGTCTCCTACTAAATTAAATGATCTCTGCTTTACTAATGTCTATGCAGAT  1302
+
+Query  241   TCATTTGTAATTAGAGGTGATGAAGTCAGACAAATCGCTCCAGGGCAAACTGGAAAGATT  300
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  1303  TCATTTGTAATTAGAGGTGATGAAGTCAGACAAATCGCTCCAGGGCAAACTGGAAAGATT  1362
+
+Query  301   GCTGATTATAATTATAAATTACCAGATGATTTTACAGGCTGCGTTATAGCTTGGAATTCT  360
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  1363  GCTGATTATAATTATAAATTACCAGATGATTTTACAGGCTGCGTTATAGCTTGGAATTCT  1422
+
+Query  361   AACAATCTTGATTCTAAGGTTGGTGGTAATTATAATTACCTGTATAGATTGTTTAGGAAG  420
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  1423  AACAATCTTGATTCTAAGGTTGGTGGTAATTATAATTACCTGTATAGATTGTTTAGGAAG  1482
+
+Query  421   TCTAATCTCAAACCTTTTGAGAGAGATATTTCAACTGAAATCTATCAGGCCGGTAGCACA  480
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  1483  TCTAATCTCAAACCTTTTGAGAGAGATATTTCAACTGAAATCTATCAGGCCGGTAGCACA  1542
+
+Query  481   CCTTGTAATGGTGTTGAAGGTTTTAATTGTTACTTTCCTTTACAATCATATGGTTTCCAA  540
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  1543  CCTTGTAATGGTGTTGAAGGTTTTAATTGTTACTTTCCTTTACAATCATATGGTTTCCAA  1602
+
+Query  541   CCCACTAATGGTGTTGGTTACCAACCATACAGAGTAGTAGTACTTTCTTTTGAACTTCTA  600
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  1603  CCCACTAATGGTGTTGGTTACCAACCATACAGAGTAGTAGTACTTTCTTTTGAACTTCTA  1662
+
+Query  601   CATGCACCAGCAACTGTTTGTGGACCTAAAAAGTCTACTAATTTGGTTAAAAACAAATGT  660
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  1663  CATGCACCAGCAACTGTTTGTGGACCTAAAAAGTCTACTAATTTGGTTAAAAACAAATGT  1722
+
+Query  661   GTCAATTTC  669
+             |||||||||
+Sbjct  1723  GTCAATTTC  1731
+
+
+>HG994854.1 Severe acute respiratory syndrome-related coronavirus isolate 
+H_SC_03 genome assembly, complete genome: monopartite
+Length=29903
+
+ Score = 1207 bits (1338),  Expect = 0.0
+ Identities = 669/669 (100%), Gaps = 0/669 (0%)
+ Strand=Plus/Plus
+
+Query  1      AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAAACTTGTGCCCTTTT  60
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22517  AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAAACTTGTGCCCTTTT  22576
+
+Query  61     GGTGAAGTTTTTAACGCCACCAGATTTGCATCTGTTTATGCTTGGAACAGGAAGAGAATC  120
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22577  GGTGAAGTTTTTAACGCCACCAGATTTGCATCTGTTTATGCTTGGAACAGGAAGAGAATC  22636
+
+Query  121    AGCAACTGTGTTGCTGATTATTCTGTCCTATATAATTCCGCATCATTTTCCACTTTTAAG  180
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22637  AGCAACTGTGTTGCTGATTATTCTGTCCTATATAATTCCGCATCATTTTCCACTTTTAAG  22696
+
+Query  181    TGTTATGGAGTGTCTCCTACTAAATTAAATGATCTCTGCTTTACTAATGTCTATGCAGAT  240
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22697  TGTTATGGAGTGTCTCCTACTAAATTAAATGATCTCTGCTTTACTAATGTCTATGCAGAT  22756
+
+Query  241    TCATTTGTAATTAGAGGTGATGAAGTCAGACAAATCGCTCCAGGGCAAACTGGAAAGATT  300
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22757  TCATTTGTAATTAGAGGTGATGAAGTCAGACAAATCGCTCCAGGGCAAACTGGAAAGATT  22816
+
+Query  301    GCTGATTATAATTATAAATTACCAGATGATTTTACAGGCTGCGTTATAGCTTGGAATTCT  360
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22817  GCTGATTATAATTATAAATTACCAGATGATTTTACAGGCTGCGTTATAGCTTGGAATTCT  22876
+
+Query  361    AACAATCTTGATTCTAAGGTTGGTGGTAATTATAATTACCTGTATAGATTGTTTAGGAAG  420
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22877  AACAATCTTGATTCTAAGGTTGGTGGTAATTATAATTACCTGTATAGATTGTTTAGGAAG  22936
+
+Query  421    TCTAATCTCAAACCTTTTGAGAGAGATATTTCAACTGAAATCTATCAGGCCGGTAGCACA  480
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22937  TCTAATCTCAAACCTTTTGAGAGAGATATTTCAACTGAAATCTATCAGGCCGGTAGCACA  22996
+
+Query  481    CCTTGTAATGGTGTTGAAGGTTTTAATTGTTACTTTCCTTTACAATCATATGGTTTCCAA  540
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22997  CCTTGTAATGGTGTTGAAGGTTTTAATTGTTACTTTCCTTTACAATCATATGGTTTCCAA  23056
+
+Query  541    CCCACTAATGGTGTTGGTTACCAACCATACAGAGTAGTAGTACTTTCTTTTGAACTTCTA  600
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  23057  CCCACTAATGGTGTTGGTTACCAACCATACAGAGTAGTAGTACTTTCTTTTGAACTTCTA  23116
+
+Query  601    CATGCACCAGCAACTGTTTGTGGACCTAAAAAGTCTACTAATTTGGTTAAAAACAAATGT  660
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  23117  CATGCACCAGCAACTGTTTGTGGACCTAAAAAGTCTACTAATTTGGTTAAAAACAAATGT  23176
+
+Query  661    GTCAATTTC  669
+              |||||||||
+Sbjct  23177  GTCAATTTC  23185
+
+
+>HG994853.1 Severe acute respiratory syndrome-related coronavirus isolate 
+H_SC_02 genome assembly, complete genome: monopartite
+Length=29901
+
+ Score = 1207 bits (1338),  Expect = 0.0
+ Identities = 669/669 (100%), Gaps = 0/669 (0%)
+ Strand=Plus/Plus
+
+Query  1      AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAAACTTGTGCCCTTTT  60
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22517  AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAAACTTGTGCCCTTTT  22576
+
+Query  61     GGTGAAGTTTTTAACGCCACCAGATTTGCATCTGTTTATGCTTGGAACAGGAAGAGAATC  120
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22577  GGTGAAGTTTTTAACGCCACCAGATTTGCATCTGTTTATGCTTGGAACAGGAAGAGAATC  22636
+
+Query  121    AGCAACTGTGTTGCTGATTATTCTGTCCTATATAATTCCGCATCATTTTCCACTTTTAAG  180
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22637  AGCAACTGTGTTGCTGATTATTCTGTCCTATATAATTCCGCATCATTTTCCACTTTTAAG  22696
+
+Query  181    TGTTATGGAGTGTCTCCTACTAAATTAAATGATCTCTGCTTTACTAATGTCTATGCAGAT  240
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22697  TGTTATGGAGTGTCTCCTACTAAATTAAATGATCTCTGCTTTACTAATGTCTATGCAGAT  22756
+
+Query  241    TCATTTGTAATTAGAGGTGATGAAGTCAGACAAATCGCTCCAGGGCAAACTGGAAAGATT  300
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22757  TCATTTGTAATTAGAGGTGATGAAGTCAGACAAATCGCTCCAGGGCAAACTGGAAAGATT  22816
+
+Query  301    GCTGATTATAATTATAAATTACCAGATGATTTTACAGGCTGCGTTATAGCTTGGAATTCT  360
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22817  GCTGATTATAATTATAAATTACCAGATGATTTTACAGGCTGCGTTATAGCTTGGAATTCT  22876
+
+Query  361    AACAATCTTGATTCTAAGGTTGGTGGTAATTATAATTACCTGTATAGATTGTTTAGGAAG  420
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22877  AACAATCTTGATTCTAAGGTTGGTGGTAATTATAATTACCTGTATAGATTGTTTAGGAAG  22936
+
+Query  421    TCTAATCTCAAACCTTTTGAGAGAGATATTTCAACTGAAATCTATCAGGCCGGTAGCACA  480
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22937  TCTAATCTCAAACCTTTTGAGAGAGATATTTCAACTGAAATCTATCAGGCCGGTAGCACA  22996
+
+Query  481    CCTTGTAATGGTGTTGAAGGTTTTAATTGTTACTTTCCTTTACAATCATATGGTTTCCAA  540
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22997  CCTTGTAATGGTGTTGAAGGTTTTAATTGTTACTTTCCTTTACAATCATATGGTTTCCAA  23056
+
+Query  541    CCCACTAATGGTGTTGGTTACCAACCATACAGAGTAGTAGTACTTTCTTTTGAACTTCTA  600
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  23057  CCCACTAATGGTGTTGGTTACCAACCATACAGAGTAGTAGTACTTTCTTTTGAACTTCTA  23116
+
+Query  601    CATGCACCAGCAACTGTTTGTGGACCTAAAAAGTCTACTAATTTGGTTAAAAACAAATGT  660
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  23117  CATGCACCAGCAACTGTTTGTGGACCTAAAAAGTCTACTAATTTGGTTAAAAACAAATGT  23176
+
+Query  661    GTCAATTTC  669
+              |||||||||
+Sbjct  23177  GTCAATTTC  23185
+
+
+>MT926412.1 Reverse genetics vector pCCI-4K-SARS-CoV-2-NanoLuc, complete 
+sequence
+Length=35853
+
+ Score = 1207 bits (1338),  Expect = 0.0
+ Identities = 669/669 (100%), Gaps = 0/669 (0%)
+ Strand=Plus/Plus
+
+Query  1      AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAAACTTGTGCCCTTTT  60
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  23207  AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAAACTTGTGCCCTTTT  23266
+
+Query  61     GGTGAAGTTTTTAACGCCACCAGATTTGCATCTGTTTATGCTTGGAACAGGAAGAGAATC  120
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  23267  GGTGAAGTTTTTAACGCCACCAGATTTGCATCTGTTTATGCTTGGAACAGGAAGAGAATC  23326
+
+Query  121    AGCAACTGTGTTGCTGATTATTCTGTCCTATATAATTCCGCATCATTTTCCACTTTTAAG  180
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  23327  AGCAACTGTGTTGCTGATTATTCTGTCCTATATAATTCCGCATCATTTTCCACTTTTAAG  23386
+
+Query  181    TGTTATGGAGTGTCTCCTACTAAATTAAATGATCTCTGCTTTACTAATGTCTATGCAGAT  240
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  23387  TGTTATGGAGTGTCTCCTACTAAATTAAATGATCTCTGCTTTACTAATGTCTATGCAGAT  23446
+
+Query  241    TCATTTGTAATTAGAGGTGATGAAGTCAGACAAATCGCTCCAGGGCAAACTGGAAAGATT  300
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  23447  TCATTTGTAATTAGAGGTGATGAAGTCAGACAAATCGCTCCAGGGCAAACTGGAAAGATT  23506
+
+Query  301    GCTGATTATAATTATAAATTACCAGATGATTTTACAGGCTGCGTTATAGCTTGGAATTCT  360
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  23507  GCTGATTATAATTATAAATTACCAGATGATTTTACAGGCTGCGTTATAGCTTGGAATTCT  23566
+
+Query  361    AACAATCTTGATTCTAAGGTTGGTGGTAATTATAATTACCTGTATAGATTGTTTAGGAAG  420
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  23567  AACAATCTTGATTCTAAGGTTGGTGGTAATTATAATTACCTGTATAGATTGTTTAGGAAG  23626
+
+Query  421    TCTAATCTCAAACCTTTTGAGAGAGATATTTCAACTGAAATCTATCAGGCCGGTAGCACA  480
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  23627  TCTAATCTCAAACCTTTTGAGAGAGATATTTCAACTGAAATCTATCAGGCCGGTAGCACA  23686
+
+Query  481    CCTTGTAATGGTGTTGAAGGTTTTAATTGTTACTTTCCTTTACAATCATATGGTTTCCAA  540
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  23687  CCTTGTAATGGTGTTGAAGGTTTTAATTGTTACTTTCCTTTACAATCATATGGTTTCCAA  23746
+
+Query  541    CCCACTAATGGTGTTGGTTACCAACCATACAGAGTAGTAGTACTTTCTTTTGAACTTCTA  600
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  23747  CCCACTAATGGTGTTGGTTACCAACCATACAGAGTAGTAGTACTTTCTTTTGAACTTCTA  23806
+
+Query  601    CATGCACCAGCAACTGTTTGTGGACCTAAAAAGTCTACTAATTTGGTTAAAAACAAATGT  660
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  23807  CATGCACCAGCAACTGTTTGTGGACCTAAAAAGTCTACTAATTTGGTTAAAAACAAATGT  23866
+
+Query  661    GTCAATTTC  669
+              |||||||||
+Sbjct  23867  GTCAATTTC  23875
+
+
+>HG994855.1 Severe acute respiratory syndrome-related coronavirus isolate 
+H_SC_06 genome assembly, complete genome: monopartite
+Length=29903
+
+ Score = 1207 bits (1338),  Expect = 0.0
+ Identities = 669/669 (100%), Gaps = 0/669 (0%)
+ Strand=Plus/Plus
+
+Query  1      AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAAACTTGTGCCCTTTT  60
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22517  AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAAACTTGTGCCCTTTT  22576
+
+Query  61     GGTGAAGTTTTTAACGCCACCAGATTTGCATCTGTTTATGCTTGGAACAGGAAGAGAATC  120
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22577  GGTGAAGTTTTTAACGCCACCAGATTTGCATCTGTTTATGCTTGGAACAGGAAGAGAATC  22636
+
+Query  121    AGCAACTGTGTTGCTGATTATTCTGTCCTATATAATTCCGCATCATTTTCCACTTTTAAG  180
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22637  AGCAACTGTGTTGCTGATTATTCTGTCCTATATAATTCCGCATCATTTTCCACTTTTAAG  22696
+
+Query  181    TGTTATGGAGTGTCTCCTACTAAATTAAATGATCTCTGCTTTACTAATGTCTATGCAGAT  240
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22697  TGTTATGGAGTGTCTCCTACTAAATTAAATGATCTCTGCTTTACTAATGTCTATGCAGAT  22756
+
+Query  241    TCATTTGTAATTAGAGGTGATGAAGTCAGACAAATCGCTCCAGGGCAAACTGGAAAGATT  300
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22757  TCATTTGTAATTAGAGGTGATGAAGTCAGACAAATCGCTCCAGGGCAAACTGGAAAGATT  22816
+
+Query  301    GCTGATTATAATTATAAATTACCAGATGATTTTACAGGCTGCGTTATAGCTTGGAATTCT  360
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22817  GCTGATTATAATTATAAATTACCAGATGATTTTACAGGCTGCGTTATAGCTTGGAATTCT  22876
+
+Query  361    AACAATCTTGATTCTAAGGTTGGTGGTAATTATAATTACCTGTATAGATTGTTTAGGAAG  420
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22877  AACAATCTTGATTCTAAGGTTGGTGGTAATTATAATTACCTGTATAGATTGTTTAGGAAG  22936
+
+Query  421    TCTAATCTCAAACCTTTTGAGAGAGATATTTCAACTGAAATCTATCAGGCCGGTAGCACA  480
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22937  TCTAATCTCAAACCTTTTGAGAGAGATATTTCAACTGAAATCTATCAGGCCGGTAGCACA  22996
+
+Query  481    CCTTGTAATGGTGTTGAAGGTTTTAATTGTTACTTTCCTTTACAATCATATGGTTTCCAA  540
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22997  CCTTGTAATGGTGTTGAAGGTTTTAATTGTTACTTTCCTTTACAATCATATGGTTTCCAA  23056
+
+Query  541    CCCACTAATGGTGTTGGTTACCAACCATACAGAGTAGTAGTACTTTCTTTTGAACTTCTA  600
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  23057  CCCACTAATGGTGTTGGTTACCAACCATACAGAGTAGTAGTACTTTCTTTTGAACTTCTA  23116
+
+Query  601    CATGCACCAGCAACTGTTTGTGGACCTAAAAAGTCTACTAATTTGGTTAAAAACAAATGT  660
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  23117  CATGCACCAGCAACTGTTTGTGGACCTAAAAAGTCTACTAATTTGGTTAAAAACAAATGT  23176
+
+Query  661    GTCAATTTC  669
+              |||||||||
+Sbjct  23177  GTCAATTTC  23185
+
+
+>MT655946.1 Mutant Rotavirus A NSP3-P2A-3XFLSARSCoV-2 spikeExRBD gene, complete 
+cds
+Length=2110
+
+ Score = 1207 bits (1338),  Expect = 0.0
+ Identities = 669/669 (100%), Gaps = 0/669 (0%)
+ Strand=Plus/Plus
+
+Query  1     AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAAACTTGTGCCCTTTT  60
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  1133  AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAAACTTGTGCCCTTTT  1192
+
+Query  61    GGTGAAGTTTTTAACGCCACCAGATTTGCATCTGTTTATGCTTGGAACAGGAAGAGAATC  120
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  1193  GGTGAAGTTTTTAACGCCACCAGATTTGCATCTGTTTATGCTTGGAACAGGAAGAGAATC  1252
+
+Query  121   AGCAACTGTGTTGCTGATTATTCTGTCCTATATAATTCCGCATCATTTTCCACTTTTAAG  180
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  1253  AGCAACTGTGTTGCTGATTATTCTGTCCTATATAATTCCGCATCATTTTCCACTTTTAAG  1312
+
+Query  181   TGTTATGGAGTGTCTCCTACTAAATTAAATGATCTCTGCTTTACTAATGTCTATGCAGAT  240
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  1313  TGTTATGGAGTGTCTCCTACTAAATTAAATGATCTCTGCTTTACTAATGTCTATGCAGAT  1372
+
+Query  241   TCATTTGTAATTAGAGGTGATGAAGTCAGACAAATCGCTCCAGGGCAAACTGGAAAGATT  300
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  1373  TCATTTGTAATTAGAGGTGATGAAGTCAGACAAATCGCTCCAGGGCAAACTGGAAAGATT  1432
+
+Query  301   GCTGATTATAATTATAAATTACCAGATGATTTTACAGGCTGCGTTATAGCTTGGAATTCT  360
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  1433  GCTGATTATAATTATAAATTACCAGATGATTTTACAGGCTGCGTTATAGCTTGGAATTCT  1492
+
+Query  361   AACAATCTTGATTCTAAGGTTGGTGGTAATTATAATTACCTGTATAGATTGTTTAGGAAG  420
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  1493  AACAATCTTGATTCTAAGGTTGGTGGTAATTATAATTACCTGTATAGATTGTTTAGGAAG  1552
+
+Query  421   TCTAATCTCAAACCTTTTGAGAGAGATATTTCAACTGAAATCTATCAGGCCGGTAGCACA  480
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  1553  TCTAATCTCAAACCTTTTGAGAGAGATATTTCAACTGAAATCTATCAGGCCGGTAGCACA  1612
+
+Query  481   CCTTGTAATGGTGTTGAAGGTTTTAATTGTTACTTTCCTTTACAATCATATGGTTTCCAA  540
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  1613  CCTTGTAATGGTGTTGAAGGTTTTAATTGTTACTTTCCTTTACAATCATATGGTTTCCAA  1672
+
+Query  541   CCCACTAATGGTGTTGGTTACCAACCATACAGAGTAGTAGTACTTTCTTTTGAACTTCTA  600
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  1673  CCCACTAATGGTGTTGGTTACCAACCATACAGAGTAGTAGTACTTTCTTTTGAACTTCTA  1732
+
+Query  601   CATGCACCAGCAACTGTTTGTGGACCTAAAAAGTCTACTAATTTGGTTAAAAACAAATGT  660
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  1733  CATGCACCAGCAACTGTTTGTGGACCTAAAAAGTCTACTAATTTGGTTAAAAACAAATGT  1792
+
+Query  661   GTCAATTTC  669
+             |||||||||
+Sbjct  1793  GTCAATTTC  1801
+
+
+>HG994859.1 Severe acute respiratory syndrome-related coronavirus isolate 
+H_SC_10 genome assembly, complete genome: monopartite
+Length=29903
+
+ Score = 1207 bits (1338),  Expect = 0.0
+ Identities = 669/669 (100%), Gaps = 0/669 (0%)
+ Strand=Plus/Plus
+
+Query  1      AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAAACTTGTGCCCTTTT  60
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22517  AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAAACTTGTGCCCTTTT  22576
+
+Query  61     GGTGAAGTTTTTAACGCCACCAGATTTGCATCTGTTTATGCTTGGAACAGGAAGAGAATC  120
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22577  GGTGAAGTTTTTAACGCCACCAGATTTGCATCTGTTTATGCTTGGAACAGGAAGAGAATC  22636
+
+Query  121    AGCAACTGTGTTGCTGATTATTCTGTCCTATATAATTCCGCATCATTTTCCACTTTTAAG  180
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22637  AGCAACTGTGTTGCTGATTATTCTGTCCTATATAATTCCGCATCATTTTCCACTTTTAAG  22696
+
+Query  181    TGTTATGGAGTGTCTCCTACTAAATTAAATGATCTCTGCTTTACTAATGTCTATGCAGAT  240
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22697  TGTTATGGAGTGTCTCCTACTAAATTAAATGATCTCTGCTTTACTAATGTCTATGCAGAT  22756
+
+Query  241    TCATTTGTAATTAGAGGTGATGAAGTCAGACAAATCGCTCCAGGGCAAACTGGAAAGATT  300
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22757  TCATTTGTAATTAGAGGTGATGAAGTCAGACAAATCGCTCCAGGGCAAACTGGAAAGATT  22816
+
+Query  301    GCTGATTATAATTATAAATTACCAGATGATTTTACAGGCTGCGTTATAGCTTGGAATTCT  360
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22817  GCTGATTATAATTATAAATTACCAGATGATTTTACAGGCTGCGTTATAGCTTGGAATTCT  22876
+
+Query  361    AACAATCTTGATTCTAAGGTTGGTGGTAATTATAATTACCTGTATAGATTGTTTAGGAAG  420
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22877  AACAATCTTGATTCTAAGGTTGGTGGTAATTATAATTACCTGTATAGATTGTTTAGGAAG  22936
+
+Query  421    TCTAATCTCAAACCTTTTGAGAGAGATATTTCAACTGAAATCTATCAGGCCGGTAGCACA  480
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22937  TCTAATCTCAAACCTTTTGAGAGAGATATTTCAACTGAAATCTATCAGGCCGGTAGCACA  22996
+
+Query  481    CCTTGTAATGGTGTTGAAGGTTTTAATTGTTACTTTCCTTTACAATCATATGGTTTCCAA  540
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22997  CCTTGTAATGGTGTTGAAGGTTTTAATTGTTACTTTCCTTTACAATCATATGGTTTCCAA  23056
+
+Query  541    CCCACTAATGGTGTTGGTTACCAACCATACAGAGTAGTAGTACTTTCTTTTGAACTTCTA  600
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  23057  CCCACTAATGGTGTTGGTTACCAACCATACAGAGTAGTAGTACTTTCTTTTGAACTTCTA  23116
+
+Query  601    CATGCACCAGCAACTGTTTGTGGACCTAAAAAGTCTACTAATTTGGTTAAAAACAAATGT  660
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  23117  CATGCACCAGCAACTGTTTGTGGACCTAAAAAGTCTACTAATTTGGTTAAAAACAAATGT  23176
+
+Query  661    GTCAATTTC  669
+              |||||||||
+Sbjct  23177  GTCAATTTC  23185
+
+
+>MW045215.1 Cloning vector p20020, complete sequence
+Length=9004
+
+ Score = 1207 bits (1338),  Expect = 0.0
+ Identities = 669/669 (100%), Gaps = 0/669 (0%)
+ Strand=Plus/Plus
+
+Query  1     AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAAACTTGTGCCCTTTT  60
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  1917  AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAAACTTGTGCCCTTTT  1976
+
+Query  61    GGTGAAGTTTTTAACGCCACCAGATTTGCATCTGTTTATGCTTGGAACAGGAAGAGAATC  120
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  1977  GGTGAAGTTTTTAACGCCACCAGATTTGCATCTGTTTATGCTTGGAACAGGAAGAGAATC  2036
+
+Query  121   AGCAACTGTGTTGCTGATTATTCTGTCCTATATAATTCCGCATCATTTTCCACTTTTAAG  180
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2037  AGCAACTGTGTTGCTGATTATTCTGTCCTATATAATTCCGCATCATTTTCCACTTTTAAG  2096
+
+Query  181   TGTTATGGAGTGTCTCCTACTAAATTAAATGATCTCTGCTTTACTAATGTCTATGCAGAT  240
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2097  TGTTATGGAGTGTCTCCTACTAAATTAAATGATCTCTGCTTTACTAATGTCTATGCAGAT  2156
+
+Query  241   TCATTTGTAATTAGAGGTGATGAAGTCAGACAAATCGCTCCAGGGCAAACTGGAAAGATT  300
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2157  TCATTTGTAATTAGAGGTGATGAAGTCAGACAAATCGCTCCAGGGCAAACTGGAAAGATT  2216
+
+Query  301   GCTGATTATAATTATAAATTACCAGATGATTTTACAGGCTGCGTTATAGCTTGGAATTCT  360
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2217  GCTGATTATAATTATAAATTACCAGATGATTTTACAGGCTGCGTTATAGCTTGGAATTCT  2276
+
+Query  361   AACAATCTTGATTCTAAGGTTGGTGGTAATTATAATTACCTGTATAGATTGTTTAGGAAG  420
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2277  AACAATCTTGATTCTAAGGTTGGTGGTAATTATAATTACCTGTATAGATTGTTTAGGAAG  2336
+
+Query  421   TCTAATCTCAAACCTTTTGAGAGAGATATTTCAACTGAAATCTATCAGGCCGGTAGCACA  480
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2337  TCTAATCTCAAACCTTTTGAGAGAGATATTTCAACTGAAATCTATCAGGCCGGTAGCACA  2396
+
+Query  481   CCTTGTAATGGTGTTGAAGGTTTTAATTGTTACTTTCCTTTACAATCATATGGTTTCCAA  540
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2397  CCTTGTAATGGTGTTGAAGGTTTTAATTGTTACTTTCCTTTACAATCATATGGTTTCCAA  2456
+
+Query  541   CCCACTAATGGTGTTGGTTACCAACCATACAGAGTAGTAGTACTTTCTTTTGAACTTCTA  600
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2457  CCCACTAATGGTGTTGGTTACCAACCATACAGAGTAGTAGTACTTTCTTTTGAACTTCTA  2516
+
+Query  601   CATGCACCAGCAACTGTTTGTGGACCTAAAAAGTCTACTAATTTGGTTAAAAACAAATGT  660
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2517  CATGCACCAGCAACTGTTTGTGGACCTAAAAAGTCTACTAATTTGGTTAAAAACAAATGT  2576
+
+Query  661   GTCAATTTC  669
+             |||||||||
+Sbjct  2577  GTCAATTTC  2585
+
+
+>MT926411.1 Reverse genetics vector pCCI-4K-SARS-CoV-2-mCherry, complete 
+sequence
+Length=36048
+
+ Score = 1207 bits (1338),  Expect = 0.0
+ Identities = 669/669 (100%), Gaps = 0/669 (0%)
+ Strand=Plus/Plus
+
+Query  1      AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAAACTTGTGCCCTTTT  60
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  23207  AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAAACTTGTGCCCTTTT  23266
+
+Query  61     GGTGAAGTTTTTAACGCCACCAGATTTGCATCTGTTTATGCTTGGAACAGGAAGAGAATC  120
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  23267  GGTGAAGTTTTTAACGCCACCAGATTTGCATCTGTTTATGCTTGGAACAGGAAGAGAATC  23326
+
+Query  121    AGCAACTGTGTTGCTGATTATTCTGTCCTATATAATTCCGCATCATTTTCCACTTTTAAG  180
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  23327  AGCAACTGTGTTGCTGATTATTCTGTCCTATATAATTCCGCATCATTTTCCACTTTTAAG  23386
+
+Query  181    TGTTATGGAGTGTCTCCTACTAAATTAAATGATCTCTGCTTTACTAATGTCTATGCAGAT  240
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  23387  TGTTATGGAGTGTCTCCTACTAAATTAAATGATCTCTGCTTTACTAATGTCTATGCAGAT  23446
+
+Query  241    TCATTTGTAATTAGAGGTGATGAAGTCAGACAAATCGCTCCAGGGCAAACTGGAAAGATT  300
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  23447  TCATTTGTAATTAGAGGTGATGAAGTCAGACAAATCGCTCCAGGGCAAACTGGAAAGATT  23506
+
+Query  301    GCTGATTATAATTATAAATTACCAGATGATTTTACAGGCTGCGTTATAGCTTGGAATTCT  360
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  23507  GCTGATTATAATTATAAATTACCAGATGATTTTACAGGCTGCGTTATAGCTTGGAATTCT  23566
+
+Query  361    AACAATCTTGATTCTAAGGTTGGTGGTAATTATAATTACCTGTATAGATTGTTTAGGAAG  420
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  23567  AACAATCTTGATTCTAAGGTTGGTGGTAATTATAATTACCTGTATAGATTGTTTAGGAAG  23626
+
+Query  421    TCTAATCTCAAACCTTTTGAGAGAGATATTTCAACTGAAATCTATCAGGCCGGTAGCACA  480
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  23627  TCTAATCTCAAACCTTTTGAGAGAGATATTTCAACTGAAATCTATCAGGCCGGTAGCACA  23686
+
+Query  481    CCTTGTAATGGTGTTGAAGGTTTTAATTGTTACTTTCCTTTACAATCATATGGTTTCCAA  540
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  23687  CCTTGTAATGGTGTTGAAGGTTTTAATTGTTACTTTCCTTTACAATCATATGGTTTCCAA  23746
+
+Query  541    CCCACTAATGGTGTTGGTTACCAACCATACAGAGTAGTAGTACTTTCTTTTGAACTTCTA  600
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  23747  CCCACTAATGGTGTTGGTTACCAACCATACAGAGTAGTAGTACTTTCTTTTGAACTTCTA  23806
+
+Query  601    CATGCACCAGCAACTGTTTGTGGACCTAAAAAGTCTACTAATTTGGTTAAAAACAAATGT  660
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  23807  CATGCACCAGCAACTGTTTGTGGACCTAAAAAGTCTACTAATTTGGTTAAAAACAAATGT  23866
+
+Query  661    GTCAATTTC  669
+              |||||||||
+Sbjct  23867  GTCAATTTC  23875
+
+
+>MT926410.1 Reverse genetics vector pCCI-4K-SARS-CoV-2-Wuhan-Hu-1, complete 
+sequence
+Length=35283
+
+ Score = 1207 bits (1338),  Expect = 0.0
+ Identities = 669/669 (100%), Gaps = 0/669 (0%)
+ Strand=Plus/Plus
+
+Query  1      AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAAACTTGTGCCCTTTT  60
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  23207  AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAAACTTGTGCCCTTTT  23266
+
+Query  61     GGTGAAGTTTTTAACGCCACCAGATTTGCATCTGTTTATGCTTGGAACAGGAAGAGAATC  120
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  23267  GGTGAAGTTTTTAACGCCACCAGATTTGCATCTGTTTATGCTTGGAACAGGAAGAGAATC  23326
+
+Query  121    AGCAACTGTGTTGCTGATTATTCTGTCCTATATAATTCCGCATCATTTTCCACTTTTAAG  180
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  23327  AGCAACTGTGTTGCTGATTATTCTGTCCTATATAATTCCGCATCATTTTCCACTTTTAAG  23386
+
+Query  181    TGTTATGGAGTGTCTCCTACTAAATTAAATGATCTCTGCTTTACTAATGTCTATGCAGAT  240
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  23387  TGTTATGGAGTGTCTCCTACTAAATTAAATGATCTCTGCTTTACTAATGTCTATGCAGAT  23446
+
+Query  241    TCATTTGTAATTAGAGGTGATGAAGTCAGACAAATCGCTCCAGGGCAAACTGGAAAGATT  300
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  23447  TCATTTGTAATTAGAGGTGATGAAGTCAGACAAATCGCTCCAGGGCAAACTGGAAAGATT  23506
+
+Query  301    GCTGATTATAATTATAAATTACCAGATGATTTTACAGGCTGCGTTATAGCTTGGAATTCT  360
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  23507  GCTGATTATAATTATAAATTACCAGATGATTTTACAGGCTGCGTTATAGCTTGGAATTCT  23566
+
+Query  361    AACAATCTTGATTCTAAGGTTGGTGGTAATTATAATTACCTGTATAGATTGTTTAGGAAG  420
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  23567  AACAATCTTGATTCTAAGGTTGGTGGTAATTATAATTACCTGTATAGATTGTTTAGGAAG  23626
+
+Query  421    TCTAATCTCAAACCTTTTGAGAGAGATATTTCAACTGAAATCTATCAGGCCGGTAGCACA  480
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  23627  TCTAATCTCAAACCTTTTGAGAGAGATATTTCAACTGAAATCTATCAGGCCGGTAGCACA  23686
+
+Query  481    CCTTGTAATGGTGTTGAAGGTTTTAATTGTTACTTTCCTTTACAATCATATGGTTTCCAA  540
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  23687  CCTTGTAATGGTGTTGAAGGTTTTAATTGTTACTTTCCTTTACAATCATATGGTTTCCAA  23746
+
+Query  541    CCCACTAATGGTGTTGGTTACCAACCATACAGAGTAGTAGTACTTTCTTTTGAACTTCTA  600
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  23747  CCCACTAATGGTGTTGGTTACCAACCATACAGAGTAGTAGTACTTTCTTTTGAACTTCTA  23806
+
+Query  601    CATGCACCAGCAACTGTTTGTGGACCTAAAAAGTCTACTAATTTGGTTAAAAACAAATGT  660
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  23807  CATGCACCAGCAACTGTTTGTGGACCTAAAAAGTCTACTAATTTGGTTAAAAACAAATGT  23866
+
+Query  661    GTCAATTTC  669
+              |||||||||
+Sbjct  23867  GTCAATTTC  23875
+
+
+>MT299805.1 Cloning vector pSF_lenti_SARS-CoV-2_partial-S/E/M/N, complete 
+sequence
+Length=13543
+
+ Score = 1207 bits (1338),  Expect = 0.0
+ Identities = 669/669 (100%), Gaps = 0/669 (0%)
+ Strand=Plus/Plus
+
+Query  1     AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAAACTTGTGCCCTTTT  60
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  3294  AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAAACTTGTGCCCTTTT  3353
+
+Query  61    GGTGAAGTTTTTAACGCCACCAGATTTGCATCTGTTTATGCTTGGAACAGGAAGAGAATC  120
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  3354  GGTGAAGTTTTTAACGCCACCAGATTTGCATCTGTTTATGCTTGGAACAGGAAGAGAATC  3413
+
+Query  121   AGCAACTGTGTTGCTGATTATTCTGTCCTATATAATTCCGCATCATTTTCCACTTTTAAG  180
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  3414  AGCAACTGTGTTGCTGATTATTCTGTCCTATATAATTCCGCATCATTTTCCACTTTTAAG  3473
+
+Query  181   TGTTATGGAGTGTCTCCTACTAAATTAAATGATCTCTGCTTTACTAATGTCTATGCAGAT  240
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  3474  TGTTATGGAGTGTCTCCTACTAAATTAAATGATCTCTGCTTTACTAATGTCTATGCAGAT  3533
+
+Query  241   TCATTTGTAATTAGAGGTGATGAAGTCAGACAAATCGCTCCAGGGCAAACTGGAAAGATT  300
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  3534  TCATTTGTAATTAGAGGTGATGAAGTCAGACAAATCGCTCCAGGGCAAACTGGAAAGATT  3593
+
+Query  301   GCTGATTATAATTATAAATTACCAGATGATTTTACAGGCTGCGTTATAGCTTGGAATTCT  360
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  3594  GCTGATTATAATTATAAATTACCAGATGATTTTACAGGCTGCGTTATAGCTTGGAATTCT  3653
+
+Query  361   AACAATCTTGATTCTAAGGTTGGTGGTAATTATAATTACCTGTATAGATTGTTTAGGAAG  420
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  3654  AACAATCTTGATTCTAAGGTTGGTGGTAATTATAATTACCTGTATAGATTGTTTAGGAAG  3713
+
+Query  421   TCTAATCTCAAACCTTTTGAGAGAGATATTTCAACTGAAATCTATCAGGCCGGTAGCACA  480
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  3714  TCTAATCTCAAACCTTTTGAGAGAGATATTTCAACTGAAATCTATCAGGCCGGTAGCACA  3773
+
+Query  481   CCTTGTAATGGTGTTGAAGGTTTTAATTGTTACTTTCCTTTACAATCATATGGTTTCCAA  540
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  3774  CCTTGTAATGGTGTTGAAGGTTTTAATTGTTACTTTCCTTTACAATCATATGGTTTCCAA  3833
+
+Query  541   CCCACTAATGGTGTTGGTTACCAACCATACAGAGTAGTAGTACTTTCTTTTGAACTTCTA  600
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  3834  CCCACTAATGGTGTTGGTTACCAACCATACAGAGTAGTAGTACTTTCTTTTGAACTTCTA  3893
+
+Query  601   CATGCACCAGCAACTGTTTGTGGACCTAAAAAGTCTACTAATTTGGTTAAAAACAAATGT  660
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  3894  CATGCACCAGCAACTGTTTGTGGACCTAAAAAGTCTACTAATTTGGTTAAAAACAAATGT  3953
+
+Query  661   GTCAATTTC  669
+             |||||||||
+Sbjct  3954  GTCAATTTC  3962
+
+
+>HG994856.1 Severe acute respiratory syndrome-related coronavirus isolate 
+H_SC_07 genome assembly, complete genome: monopartite
+Length=29903
+
+ Score = 1207 bits (1338),  Expect = 0.0
+ Identities = 669/669 (100%), Gaps = 0/669 (0%)
+ Strand=Plus/Plus
+
+Query  1      AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAAACTTGTGCCCTTTT  60
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22517  AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAAACTTGTGCCCTTTT  22576
+
+Query  61     GGTGAAGTTTTTAACGCCACCAGATTTGCATCTGTTTATGCTTGGAACAGGAAGAGAATC  120
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22577  GGTGAAGTTTTTAACGCCACCAGATTTGCATCTGTTTATGCTTGGAACAGGAAGAGAATC  22636
+
+Query  121    AGCAACTGTGTTGCTGATTATTCTGTCCTATATAATTCCGCATCATTTTCCACTTTTAAG  180
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22637  AGCAACTGTGTTGCTGATTATTCTGTCCTATATAATTCCGCATCATTTTCCACTTTTAAG  22696
+
+Query  181    TGTTATGGAGTGTCTCCTACTAAATTAAATGATCTCTGCTTTACTAATGTCTATGCAGAT  240
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22697  TGTTATGGAGTGTCTCCTACTAAATTAAATGATCTCTGCTTTACTAATGTCTATGCAGAT  22756
+
+Query  241    TCATTTGTAATTAGAGGTGATGAAGTCAGACAAATCGCTCCAGGGCAAACTGGAAAGATT  300
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22757  TCATTTGTAATTAGAGGTGATGAAGTCAGACAAATCGCTCCAGGGCAAACTGGAAAGATT  22816
+
+Query  301    GCTGATTATAATTATAAATTACCAGATGATTTTACAGGCTGCGTTATAGCTTGGAATTCT  360
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22817  GCTGATTATAATTATAAATTACCAGATGATTTTACAGGCTGCGTTATAGCTTGGAATTCT  22876
+
+Query  361    AACAATCTTGATTCTAAGGTTGGTGGTAATTATAATTACCTGTATAGATTGTTTAGGAAG  420
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22877  AACAATCTTGATTCTAAGGTTGGTGGTAATTATAATTACCTGTATAGATTGTTTAGGAAG  22936
+
+Query  421    TCTAATCTCAAACCTTTTGAGAGAGATATTTCAACTGAAATCTATCAGGCCGGTAGCACA  480
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22937  TCTAATCTCAAACCTTTTGAGAGAGATATTTCAACTGAAATCTATCAGGCCGGTAGCACA  22996
+
+Query  481    CCTTGTAATGGTGTTGAAGGTTTTAATTGTTACTTTCCTTTACAATCATATGGTTTCCAA  540
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22997  CCTTGTAATGGTGTTGAAGGTTTTAATTGTTACTTTCCTTTACAATCATATGGTTTCCAA  23056
+
+Query  541    CCCACTAATGGTGTTGGTTACCAACCATACAGAGTAGTAGTACTTTCTTTTGAACTTCTA  600
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  23057  CCCACTAATGGTGTTGGTTACCAACCATACAGAGTAGTAGTACTTTCTTTTGAACTTCTA  23116
+
+Query  601    CATGCACCAGCAACTGTTTGTGGACCTAAAAAGTCTACTAATTTGGTTAAAAACAAATGT  660
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  23117  CATGCACCAGCAACTGTTTGTGGACCTAAAAAGTCTACTAATTTGGTTAAAAACAAATGT  23176
+
+Query  661    GTCAATTTC  669
+              |||||||||
+Sbjct  23177  GTCAATTTC  23185
+
+
+>HG994857.1 Severe acute respiratory syndrome-related coronavirus isolate 
+H_SC_08 genome assembly, complete genome: monopartite
+Length=29903
+
+ Score = 1207 bits (1338),  Expect = 0.0
+ Identities = 669/669 (100%), Gaps = 0/669 (0%)
+ Strand=Plus/Plus
+
+Query  1      AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAAACTTGTGCCCTTTT  60
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22517  AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAAACTTGTGCCCTTTT  22576
+
+Query  61     GGTGAAGTTTTTAACGCCACCAGATTTGCATCTGTTTATGCTTGGAACAGGAAGAGAATC  120
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22577  GGTGAAGTTTTTAACGCCACCAGATTTGCATCTGTTTATGCTTGGAACAGGAAGAGAATC  22636
+
+Query  121    AGCAACTGTGTTGCTGATTATTCTGTCCTATATAATTCCGCATCATTTTCCACTTTTAAG  180
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22637  AGCAACTGTGTTGCTGATTATTCTGTCCTATATAATTCCGCATCATTTTCCACTTTTAAG  22696
+
+Query  181    TGTTATGGAGTGTCTCCTACTAAATTAAATGATCTCTGCTTTACTAATGTCTATGCAGAT  240
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22697  TGTTATGGAGTGTCTCCTACTAAATTAAATGATCTCTGCTTTACTAATGTCTATGCAGAT  22756
+
+Query  241    TCATTTGTAATTAGAGGTGATGAAGTCAGACAAATCGCTCCAGGGCAAACTGGAAAGATT  300
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22757  TCATTTGTAATTAGAGGTGATGAAGTCAGACAAATCGCTCCAGGGCAAACTGGAAAGATT  22816
+
+Query  301    GCTGATTATAATTATAAATTACCAGATGATTTTACAGGCTGCGTTATAGCTTGGAATTCT  360
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22817  GCTGATTATAATTATAAATTACCAGATGATTTTACAGGCTGCGTTATAGCTTGGAATTCT  22876
+
+Query  361    AACAATCTTGATTCTAAGGTTGGTGGTAATTATAATTACCTGTATAGATTGTTTAGGAAG  420
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22877  AACAATCTTGATTCTAAGGTTGGTGGTAATTATAATTACCTGTATAGATTGTTTAGGAAG  22936
+
+Query  421    TCTAATCTCAAACCTTTTGAGAGAGATATTTCAACTGAAATCTATCAGGCCGGTAGCACA  480
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22937  TCTAATCTCAAACCTTTTGAGAGAGATATTTCAACTGAAATCTATCAGGCCGGTAGCACA  22996
+
+Query  481    CCTTGTAATGGTGTTGAAGGTTTTAATTGTTACTTTCCTTTACAATCATATGGTTTCCAA  540
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22997  CCTTGTAATGGTGTTGAAGGTTTTAATTGTTACTTTCCTTTACAATCATATGGTTTCCAA  23056
+
+Query  541    CCCACTAATGGTGTTGGTTACCAACCATACAGAGTAGTAGTACTTTCTTTTGAACTTCTA  600
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  23057  CCCACTAATGGTGTTGGTTACCAACCATACAGAGTAGTAGTACTTTCTTTTGAACTTCTA  23116
+
+Query  601    CATGCACCAGCAACTGTTTGTGGACCTAAAAAGTCTACTAATTTGGTTAAAAACAAATGT  660
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  23117  CATGCACCAGCAACTGTTTGTGGACCTAAAAAGTCTACTAATTTGGTTAAAAACAAATGT  23176
+
+Query  661    GTCAATTTC  669
+              |||||||||
+Sbjct  23177  GTCAATTTC  23185
+
+
+>HG994852.1 Severe acute respiratory syndrome-related coronavirus isolate 
+H_SC_01 genome assembly, complete genome: monopartite
+Length=29900
+
+ Score = 1207 bits (1338),  Expect = 0.0
+ Identities = 669/669 (100%), Gaps = 0/669 (0%)
+ Strand=Plus/Plus
+
+Query  1      AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAAACTTGTGCCCTTTT  60
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22514  AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAAACTTGTGCCCTTTT  22573
+
+Query  61     GGTGAAGTTTTTAACGCCACCAGATTTGCATCTGTTTATGCTTGGAACAGGAAGAGAATC  120
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22574  GGTGAAGTTTTTAACGCCACCAGATTTGCATCTGTTTATGCTTGGAACAGGAAGAGAATC  22633
+
+Query  121    AGCAACTGTGTTGCTGATTATTCTGTCCTATATAATTCCGCATCATTTTCCACTTTTAAG  180
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22634  AGCAACTGTGTTGCTGATTATTCTGTCCTATATAATTCCGCATCATTTTCCACTTTTAAG  22693
+
+Query  181    TGTTATGGAGTGTCTCCTACTAAATTAAATGATCTCTGCTTTACTAATGTCTATGCAGAT  240
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22694  TGTTATGGAGTGTCTCCTACTAAATTAAATGATCTCTGCTTTACTAATGTCTATGCAGAT  22753
+
+Query  241    TCATTTGTAATTAGAGGTGATGAAGTCAGACAAATCGCTCCAGGGCAAACTGGAAAGATT  300
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22754  TCATTTGTAATTAGAGGTGATGAAGTCAGACAAATCGCTCCAGGGCAAACTGGAAAGATT  22813
+
+Query  301    GCTGATTATAATTATAAATTACCAGATGATTTTACAGGCTGCGTTATAGCTTGGAATTCT  360
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22814  GCTGATTATAATTATAAATTACCAGATGATTTTACAGGCTGCGTTATAGCTTGGAATTCT  22873
+
+Query  361    AACAATCTTGATTCTAAGGTTGGTGGTAATTATAATTACCTGTATAGATTGTTTAGGAAG  420
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22874  AACAATCTTGATTCTAAGGTTGGTGGTAATTATAATTACCTGTATAGATTGTTTAGGAAG  22933
+
+Query  421    TCTAATCTCAAACCTTTTGAGAGAGATATTTCAACTGAAATCTATCAGGCCGGTAGCACA  480
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22934  TCTAATCTCAAACCTTTTGAGAGAGATATTTCAACTGAAATCTATCAGGCCGGTAGCACA  22993
+
+Query  481    CCTTGTAATGGTGTTGAAGGTTTTAATTGTTACTTTCCTTTACAATCATATGGTTTCCAA  540
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22994  CCTTGTAATGGTGTTGAAGGTTTTAATTGTTACTTTCCTTTACAATCATATGGTTTCCAA  23053
+
+Query  541    CCCACTAATGGTGTTGGTTACCAACCATACAGAGTAGTAGTACTTTCTTTTGAACTTCTA  600
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  23054  CCCACTAATGGTGTTGGTTACCAACCATACAGAGTAGTAGTACTTTCTTTTGAACTTCTA  23113
+
+Query  601    CATGCACCAGCAACTGTTTGTGGACCTAAAAAGTCTACTAATTTGGTTAAAAACAAATGT  660
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  23114  CATGCACCAGCAACTGTTTGTGGACCTAAAAAGTCTACTAATTTGGTTAAAAACAAATGT  23173
+
+Query  661    GTCAATTTC  669
+              |||||||||
+Sbjct  23174  GTCAATTTC  23182
+
+
+>ON755131.1 Cloning vector p20020.1, partial sequence
+Length=4326
+
+ Score = 1203 bits (1333),  Expect = 0.0
+ Identities = 668/669 (99%), Gaps = 0/669 (0%)
+ Strand=Plus/Plus
+
+Query  1     AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAAACTTGTGCCCTTTT  60
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  1063  AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAAACTTGTGCCCTTTT  1122
+
+Query  61    GGTGAAGTTTTTAACGCCACCAGATTTGCATCTGTTTATGCTTGGAACAGGAAGAGAATC  120
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  1123  GGTGAAGTTTTTAACGCCACCAGATTTGCATCTGTTTATGCTTGGAACAGGAAGAGAATC  1182
+
+Query  121   AGCAACTGTGTTGCTGATTATTCTGTCCTATATAATTCCGCATCATTTTCCACTTTTAAG  180
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  1183  AGCAACTGTGTTGCTGATTATTCTGTCCTATATAATTCCGCATCATTTTCCACTTTTAAG  1242
+
+Query  181   TGTTATGGAGTGTCTCCTACTAAATTAAATGATCTCTGCTTTACTAATGTCTATGCAGAT  240
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  1243  TGTTATGGAGTGTCTCCTACTAAATTAAATGATCTCTGCTTTACTAATGTCTATGCAGAT  1302
+
+Query  241   TCATTTGTAATTAGAGGTGATGAAGTCAGACAAATCGCTCCAGGGCAAACTGGAAAGATT  300
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  1303  TCATTTGTAATTAGAGGTGATGAAGTCAGACAAATCGCTCCAGGGCAAACTGGAAAGATT  1362
+
+Query  301   GCTGATTATAATTATAAATTACCAGATGATTTTACAGGCTGCGTTATAGCTTGGAATTCT  360
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  1363  GCTGATTATAATTATAAATTACCAGATGATTTTACAGGCTGCGTTATAGCTTGGAATTCT  1422
+
+Query  361   AACAATCTTGATTCTAAGGTTGGTGGTAATTATAATTACCTGTATAGATTGTTTAGGAAG  420
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  1423  AACAATCTTGATTCTAAGGTTGGTGGTAATTATAATTACCTGTATAGATTGTTTAGGAAG  1482
+
+Query  421   TCTAATCTCAAACCTTTTGAGAGAGATATTTCAACTGAAATCTATCAGGCCGGTAGCACA  480
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  1483  TCTAATCTCAAACCTTTTGAGAGAGATATTTCAACTGAAATCTATCAGGCCGGTAGCACA  1542
+
+Query  481   CCTTGTAATGGTGTTGAAGGTTTTAATTGTTACTTTCCTTTACAATCATATGGTTTCCAA  540
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  1543  CCTTGTAATGGTGTTGAAGGTTTTAATTGTTACTTTCCTTTACAATCATATGGTTTCCAA  1602
+
+Query  541   CCCACTAATGGTGTTGGTTACCAACCATACAGAGTAGTAGTACTTTCTTTTGAACTTCTA  600
+             |||||| |||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  1603  CCCACTTATGGTGTTGGTTACCAACCATACAGAGTAGTAGTACTTTCTTTTGAACTTCTA  1662
+
+Query  601   CATGCACCAGCAACTGTTTGTGGACCTAAAAAGTCTACTAATTTGGTTAAAAACAAATGT  660
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  1663  CATGCACCAGCAACTGTTTGTGGACCTAAAAAGTCTACTAATTTGGTTAAAAACAAATGT  1722
+
+Query  661   GTCAATTTC  669
+             |||||||||
+Sbjct  1723  GTCAATTTC  1731
+
+
+>ON755132.1 Cloning vector p20020.2, partial sequence
+Length=4326
+
+ Score = 1194 bits (1323),  Expect = 0.0
+ Identities = 666/669 (99%), Gaps = 0/669 (0%)
+ Strand=Plus/Plus
+
+Query  1     AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAAACTTGTGCCCTTTT  60
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  1063  AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAAACTTGTGCCCTTTT  1122
+
+Query  61    GGTGAAGTTTTTAACGCCACCAGATTTGCATCTGTTTATGCTTGGAACAGGAAGAGAATC  120
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  1123  GGTGAAGTTTTTAACGCCACCAGATTTGCATCTGTTTATGCTTGGAACAGGAAGAGAATC  1182
+
+Query  121   AGCAACTGTGTTGCTGATTATTCTGTCCTATATAATTCCGCATCATTTTCCACTTTTAAG  180
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  1183  AGCAACTGTGTTGCTGATTATTCTGTCCTATATAATTCCGCATCATTTTCCACTTTTAAG  1242
+
+Query  181   TGTTATGGAGTGTCTCCTACTAAATTAAATGATCTCTGCTTTACTAATGTCTATGCAGAT  240
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  1243  TGTTATGGAGTGTCTCCTACTAAATTAAATGATCTCTGCTTTACTAATGTCTATGCAGAT  1302
+
+Query  241   TCATTTGTAATTAGAGGTGATGAAGTCAGACAAATCGCTCCAGGGCAAACTGGAAAGATT  300
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  1303  TCATTTGTAATTAGAGGTGATGAAGTCAGACAAATCGCTCCAGGGCAAACTGGAAAGATT  1362
+
+Query  301   GCTGATTATAATTATAAATTACCAGATGATTTTACAGGCTGCGTTATAGCTTGGAATTCT  360
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  1363  GCTGATTATAATTATAAATTACCAGATGATTTTACAGGCTGCGTTATAGCTTGGAATTCT  1422
+
+Query  361   AACAATCTTGATTCTAAGGTTGGTGGTAATTATAATTACCTGTATAGATTGTTTAGGAAG  420
+             |||||||||||||||||||||||||||||||||||||||  |||||||||||||||||||
+Sbjct  1423  AACAATCTTGATTCTAAGGTTGGTGGTAATTATAATTACAGGTATAGATTGTTTAGGAAG  1482
+
+Query  421   TCTAATCTCAAACCTTTTGAGAGAGATATTTCAACTGAAATCTATCAGGCCGGTAGCACA  480
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  1483  TCTAATCTCAAACCTTTTGAGAGAGATATTTCAACTGAAATCTATCAGGCCGGTAGCACA  1542
+
+Query  481   CCTTGTAATGGTGTTGAAGGTTTTAATTGTTACTTTCCTTTACAATCATATGGTTTCCAA  540
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  1543  CCTTGTAATGGTGTTGAAGGTTTTAATTGTTACTTTCCTTTACAATCATATGGTTTCCAA  1602
+
+Query  541   CCCACTAATGGTGTTGGTTACCAACCATACAGAGTAGTAGTACTTTCTTTTGAACTTCTA  600
+             |||||| |||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  1603  CCCACTTATGGTGTTGGTTACCAACCATACAGAGTAGTAGTACTTTCTTTTGAACTTCTA  1662
+
+Query  601   CATGCACCAGCAACTGTTTGTGGACCTAAAAAGTCTACTAATTTGGTTAAAAACAAATGT  660
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  1663  CATGCACCAGCAACTGTTTGTGGACCTAAAAAGTCTACTAATTTGGTTAAAAACAAATGT  1722
+
+Query  661   GTCAATTTC  669
+             |||||||||
+Sbjct  1723  GTCAATTTC  1731
+
+
+>HG994860.1 Severe acute respiratory syndrome-related coronavirus isolate 
+H_SC_11 genome assembly, complete genome: monopartite
+Length=29903
+
+ Score = 1160 bits (1286),  Expect = 0.0
+ Identities = 643/643 (100%), Gaps = 0/643 (0%)
+ Strand=Plus/Plus
+
+Query  27     TAGATTTCCTAATATTACAAACTTGTGCCCTTTTGGTGAAGTTTTTAACGCCACCAGATT  86
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22543  TAGATTTCCTAATATTACAAACTTGTGCCCTTTTGGTGAAGTTTTTAACGCCACCAGATT  22602
+
+Query  87     TGCATCTGTTTATGCTTGGAACAGGAAGAGAATCAGCAACTGTGTTGCTGATTATTCTGT  146
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22603  TGCATCTGTTTATGCTTGGAACAGGAAGAGAATCAGCAACTGTGTTGCTGATTATTCTGT  22662
+
+Query  147    CCTATATAATTCCGCATCATTTTCCACTTTTAAGTGTTATGGAGTGTCTCCTACTAAATT  206
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22663  CCTATATAATTCCGCATCATTTTCCACTTTTAAGTGTTATGGAGTGTCTCCTACTAAATT  22722
+
+Query  207    AAATGATCTCTGCTTTACTAATGTCTATGCAGATTCATTTGTAATTAGAGGTGATGAAGT  266
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22723  AAATGATCTCTGCTTTACTAATGTCTATGCAGATTCATTTGTAATTAGAGGTGATGAAGT  22782
+
+Query  267    CAGACAAATCGCTCCAGGGCAAACTGGAAAGATTGCTGATTATAATTATAAATTACCAGA  326
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22783  CAGACAAATCGCTCCAGGGCAAACTGGAAAGATTGCTGATTATAATTATAAATTACCAGA  22842
+
+Query  327    TGATTTTACAGGCTGCGTTATAGCTTGGAATTCTAACAATCTTGATTCTAAGGTTGGTGG  386
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22843  TGATTTTACAGGCTGCGTTATAGCTTGGAATTCTAACAATCTTGATTCTAAGGTTGGTGG  22902
+
+Query  387    TAATTATAATTACCTGTATAGATTGTTTAGGAAGTCTAATCTCAAACCTTTTGAGAGAGA  446
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22903  TAATTATAATTACCTGTATAGATTGTTTAGGAAGTCTAATCTCAAACCTTTTGAGAGAGA  22962
+
+Query  447    TATTTCAACTGAAATCTATCAGGCCGGTAGCACACCTTGTAATGGTGTTGAAGGTTTTAA  506
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22963  TATTTCAACTGAAATCTATCAGGCCGGTAGCACACCTTGTAATGGTGTTGAAGGTTTTAA  23022
+
+Query  507    TTGTTACTTTCCTTTACAATCATATGGTTTCCAACCCACTAATGGTGTTGGTTACCAACC  566
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  23023  TTGTTACTTTCCTTTACAATCATATGGTTTCCAACCCACTAATGGTGTTGGTTACCAACC  23082
+
+Query  567    ATACAGAGTAGTAGTACTTTCTTTTGAACTTCTACATGCACCAGCAACTGTTTGTGGACC  626
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  23083  ATACAGAGTAGTAGTACTTTCTTTTGAACTTCTACATGCACCAGCAACTGTTTGTGGACC  23142
+
+Query  627    TAAAAAGTCTACTAATTTGGTTAAAAACAAATGTGTCAATTTC  669
+              |||||||||||||||||||||||||||||||||||||||||||
+Sbjct  23143  TAAAAAGTCTACTAATTTGGTTAAAAACAAATGTGTCAATTTC  23185
+
+
+>OM273295.1 Mammalian expression vector pVax1-IgEpLP-RBD CoV2, complete sequence
+Length=3816
+
+ Score = 1150 bits (1274),  Expect = 0.0
+ Identities = 637/637 (100%), Gaps = 0/637 (0%)
+ Strand=Plus/Plus
+
+Query  33    TCCTAATATTACAAACTTGTGCCCTTTTGGTGAAGTTTTTAACGCCACCAGATTTGCATC  92
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  780   TCCTAATATTACAAACTTGTGCCCTTTTGGTGAAGTTTTTAACGCCACCAGATTTGCATC  839
+
+Query  93    TGTTTATGCTTGGAACAGGAAGAGAATCAGCAACTGTGTTGCTGATTATTCTGTCCTATA  152
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  840   TGTTTATGCTTGGAACAGGAAGAGAATCAGCAACTGTGTTGCTGATTATTCTGTCCTATA  899
+
+Query  153   TAATTCCGCATCATTTTCCACTTTTAAGTGTTATGGAGTGTCTCCTACTAAATTAAATGA  212
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  900   TAATTCCGCATCATTTTCCACTTTTAAGTGTTATGGAGTGTCTCCTACTAAATTAAATGA  959
+
+Query  213   TCTCTGCTTTACTAATGTCTATGCAGATTCATTTGTAATTAGAGGTGATGAAGTCAGACA  272
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  960   TCTCTGCTTTACTAATGTCTATGCAGATTCATTTGTAATTAGAGGTGATGAAGTCAGACA  1019
+
+Query  273   AATCGCTCCAGGGCAAACTGGAAAGATTGCTGATTATAATTATAAATTACCAGATGATTT  332
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  1020  AATCGCTCCAGGGCAAACTGGAAAGATTGCTGATTATAATTATAAATTACCAGATGATTT  1079
+
+Query  333   TACAGGCTGCGTTATAGCTTGGAATTCTAACAATCTTGATTCTAAGGTTGGTGGTAATTA  392
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  1080  TACAGGCTGCGTTATAGCTTGGAATTCTAACAATCTTGATTCTAAGGTTGGTGGTAATTA  1139
+
+Query  393   TAATTACCTGTATAGATTGTTTAGGAAGTCTAATCTCAAACCTTTTGAGAGAGATATTTC  452
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  1140  TAATTACCTGTATAGATTGTTTAGGAAGTCTAATCTCAAACCTTTTGAGAGAGATATTTC  1199
+
+Query  453   AACTGAAATCTATCAGGCCGGTAGCACACCTTGTAATGGTGTTGAAGGTTTTAATTGTTA  512
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  1200  AACTGAAATCTATCAGGCCGGTAGCACACCTTGTAATGGTGTTGAAGGTTTTAATTGTTA  1259
+
+Query  513   CTTTCCTTTACAATCATATGGTTTCCAACCCACTAATGGTGTTGGTTACCAACCATACAG  572
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  1260  CTTTCCTTTACAATCATATGGTTTCCAACCCACTAATGGTGTTGGTTACCAACCATACAG  1319
+
+Query  573   AGTAGTAGTACTTTCTTTTGAACTTCTACATGCACCAGCAACTGTTTGTGGACCTAAAAA  632
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  1320  AGTAGTAGTACTTTCTTTTGAACTTCTACATGCACCAGCAACTGTTTGTGGACCTAAAAA  1379
+
+Query  633   GTCTACTAATTTGGTTAAAAACAAATGTGTCAATTTC  669
+             |||||||||||||||||||||||||||||||||||||
+Sbjct  1380  GTCTACTAATTTGGTTAAAAACAAATGTGTCAATTTC  1416
+
+
+>OY757873.1 Severe acute respiratory syndrome-related coronavirus isolate 
+DW-RAT-192 genome assembly, chromosome: 1
+Length=29848
+
+ Score = 1104 bits (1223),  Expect = 0.0
+ Identities = 646/669 (97%), Gaps = 0/669 (0%)
+ Strand=Plus/Plus
+
+Query  1      AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAAACTTGTGCCCTTTT  60
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22497  AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAAACTTGTGCCCTTTT  22556
+
+Query  61     GGTGAAGTTTTTAACGCCACCAGATTTGCATCTGTTTATGCTTGGAACAGGAAGAGAATC  120
+                |||||||||||||||||||| |||||||||||||||||||||||||||||||||||||
+Sbjct  22557  CATGAAGTTTTTAACGCCACCACATTTGCATCTGTTTATGCTTGGAACAGGAAGAGAATC  22616
+
+Query  121    AGCAACTGTGTTGCTGATTATTCTGTCCTATATAATTCCGCATCATTTTCCACTTTTAAG  180
+              ||||||||||||||||||||||||||||||||||||| |||| |||||| | ||||||||
+Sbjct  22617  AGCAACTGTGTTGCTGATTATTCTGTCCTATATAATTTCGCACCATTTTTCGCTTTTAAG  22676
+
+Query  181    TGTTATGGAGTGTCTCCTACTAAATTAAATGATCTCTGCTTTACTAATGTCTATGCAGAT  240
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22677  TGTTATGGAGTGTCTCCTACTAAATTAAATGATCTCTGCTTTACTAATGTCTATGCAGAT  22736
+
+Query  241    TCATTTGTAATTAGAGGTGATGAAGTCAGACAAATCGCTCCAGGGCAAACTGGAAAGATT  300
+              |||||||||||||||||| |||||||||| |||||||||||||||||||||||||| |||
+Sbjct  22737  TCATTTGTAATTAGAGGTAATGAAGTCAGCCAAATCGCTCCAGGGCAAACTGGAAATATT  22796
+
+Query  301    GCTGATTATAATTATAAATTACCAGATGATTTTACAGGCTGCGTTATAGCTTGGAATTCT  360
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22797  GCTGATTATAATTATAAATTACCAGATGATTTTACAGGCTGCGTTATAGCTTGGAATTCT  22856
+
+Query  361    AACAATCTTGATTCTAAGGTTGGTGGTAATTATAATTACCTGTATAGATTGTTTAGGAAG  420
+              ||||| |||||||||| |||| |||||||||||||||||| |||||||||||||||||||
+Sbjct  22857  AACAAGCTTGATTCTACGGTTAGTGGTAATTATAATTACCGGTATAGATTGTTTAGGAAG  22916
+
+Query  421    TCTAATCTCAAACCTTTTGAGAGAGATATTTCAACTGAAATCTATCAGGCCGGTAGCACA  480
+              ||||| ||||||||||||||||||||||||||||||||||||||||||||||||| || |
+Sbjct  22917  TCTAAGCTCAAACCTTTTGAGAGAGATATTTCAACTGAAATCTATCAGGCCGGTAACAAA  22976
+
+Query  481    CCTTGTAATGGTGTTGAAGGTTTTAATTGTTACTTTCCTTTACAATCATATGGTTTCCAA  540
+              |||||||||||||||| ||||| ||||||||||||||||||||||||||||||||||| |
+Sbjct  22977  CCTTGTAATGGTGTTGCAGGTTCTAATTGTTACTTTCCTTTACAATCATATGGTTTCCGA  23036
+
+Query  541    CCCACTAATGGTGTTGGTTACCAACCATACAGAGTAGTAGTACTTTCTTTTGAACTTCTA  600
+              |||||| ||||||| ||| |||||||||||||||||||||||||||||||||||||||||
+Sbjct  23037  CCCACTTATGGTGTGGGTCACCAACCATACAGAGTAGTAGTACTTTCTTTTGAACTTCTA  23096
+
+Query  601    CATGCACCAGCAACTGTTTGTGGACCTAAAAAGTCTACTAATTTGGTTAAAAACAAATGT  660
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  23097  CATGCACCAGCAACTGTTTGTGGACCTAAAAAGTCTACTAATTTGGTTAAAAACAAATGT  23156
+
+Query  661    GTCAATTTC  669
+              |||||||||
+Sbjct  23157  GTCAATTTC  23165
+
+
+>OY757878.1 Severe acute respiratory syndrome-related coronavirus isolate 
+DW-RAT-195 genome assembly, chromosome: 1
+Length=29854
+
+ Score = 1095 bits (1213),  Expect = 0.0
+ Identities = 644/669 (96%), Gaps = 0/669 (0%)
+ Strand=Plus/Plus
+
+Query  1      AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAAACTTGTGCCCTTTT  60
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22496  AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAAACTTGTGCCCTTTT  22555
+
+Query  61     GGTGAAGTTTTTAACGCCACCAGATTTGCATCTGTTTATGCTTGGAACAGGAAGAGAATC  120
+                |||||||||||||||||||| |||||||||||||||||||||||||||||||||||||
+Sbjct  22556  CATGAAGTTTTTAACGCCACCACATTTGCATCTGTTTATGCTTGGAACAGGAAGAGAATC  22615
+
+Query  121    AGCAACTGTGTTGCTGATTATTCTGTCCTATATAATTCCGCATCATTTTCCACTTTTAAG  180
+              ||||||||||||||||||||||||||| ||||||||| |||| |||||| | ||||||||
+Sbjct  22616  AGCAACTGTGTTGCTGATTATTCTGTCATATATAATTTCGCACCATTTTTCGCTTTTAAG  22675
+
+Query  181    TGTTATGGAGTGTCTCCTACTAAATTAAATGATCTCTGCTTTACTAATGTCTATGCAGAT  240
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22676  TGTTATGGAGTGTCTCCTACTAAATTAAATGATCTCTGCTTTACTAATGTCTATGCAGAT  22735
+
+Query  241    TCATTTGTAATTAGAGGTGATGAAGTCAGACAAATCGCTCCAGGGCAAACTGGAAAGATT  300
+              |||||||||||||||||| |||||||||| |||||||||||||||||||||||||| |||
+Sbjct  22736  TCATTTGTAATTAGAGGTAATGAAGTCAGCCAAATCGCTCCAGGGCAAACTGGAAATATT  22795
+
+Query  301    GCTGATTATAATTATAAATTACCAGATGATTTTACAGGCTGCGTTATAGCTTGGAATTCT  360
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22796  GCTGATTATAATTATAAATTACCAGATGATTTTACAGGCTGCGTTATAGCTTGGAATTCT  22855
+
+Query  361    AACAATCTTGATTCTAAGGTTGGTGGTAATTATAATTACCTGTATAGATTGTTTAGGAAG  420
+              ||||| ||||||||||||  | ||||||||||||||||||||||||||||||||||||||
+Sbjct  22856  AACAAGCTTGATTCTAAGCCTAGTGGTAATTATAATTACCTGTATAGATTGTTTAGGAAG  22915
+
+Query  421    TCTAATCTCAAACCTTTTGAGAGAGATATTTCAACTGAAATCTATCAGGCCGGTAGCACA  480
+              ||||| ||||||||||||||||||||||||||||||||||||||||||||||||| || |
+Sbjct  22916  TCTAAGCTCAAACCTTTTGAGAGAGATATTTCAACTGAAATCTATCAGGCCGGTAACAAA  22975
+
+Query  481    CCTTGTAATGGTGTTGAAGGTTTTAATTGTTACTTTCCTTTACAATCATATGGTTTCCAA  540
+              |||||||||||||||| ||||  ||||||||||| ||||||||||||||||||||||| |
+Sbjct  22976  CCTTGTAATGGTGTTGCAGGTCCTAATTGTTACTCTCCTTTACAATCATATGGTTTCCGA  23035
+
+Query  541    CCCACTAATGGTGTTGGTTACCAACCATACAGAGTAGTAGTACTTTCTTTTGAACTTCTA  600
+              |||||| ||||||||||| |||||||||||||||||||||||||||||||||||||||||
+Sbjct  23036  CCCACTTATGGTGTTGGTCACCAACCATACAGAGTAGTAGTACTTTCTTTTGAACTTCTA  23095
+
+Query  601    CATGCACCAGCAACTGTTTGTGGACCTAAAAAGTCTACTAATTTGGTTAAAAACAAATGT  660
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  23096  CATGCACCAGCAACTGTTTGTGGACCTAAAAAGTCTACTAATTTGGTTAAAAACAAATGT  23155
+
+Query  661    GTCAATTTC  669
+              |||||||||
+Sbjct  23156  GTCAATTTC  23164
+
+
+>OY757875.1 Severe acute respiratory syndrome-related coronavirus isolate 
+DW-RAT-191 genome assembly, chromosome: 1
+Length=29849
+
+ Score = 1095 bits (1213),  Expect = 0.0
+ Identities = 644/669 (96%), Gaps = 0/669 (0%)
+ Strand=Plus/Plus
+
+Query  1      AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAAACTTGTGCCCTTTT  60
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22490  AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAAACTTGTGCCCTTTT  22549
+
+Query  61     GGTGAAGTTTTTAACGCCACCAGATTTGCATCTGTTTATGCTTGGAACAGGAAGAGAATC  120
+                |||||||||||||||||||| |||||||||||||||||||||||||||||||||||||
+Sbjct  22550  CATGAAGTTTTTAACGCCACCACATTTGCATCTGTTTATGCTTGGAACAGGAAGAGAATC  22609
+
+Query  121    AGCAACTGTGTTGCTGATTATTCTGTCCTATATAATTCCGCATCATTTTCCACTTTTAAG  180
+              ||||||||||||||||||||||||||| ||||||||| |||| |||||| | ||||||||
+Sbjct  22610  AGCAACTGTGTTGCTGATTATTCTGTCATATATAATTTCGCACCATTTTTCGCTTTTAAG  22669
+
+Query  181    TGTTATGGAGTGTCTCCTACTAAATTAAATGATCTCTGCTTTACTAATGTCTATGCAGAT  240
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22670  TGTTATGGAGTGTCTCCTACTAAATTAAATGATCTCTGCTTTACTAATGTCTATGCAGAT  22729
+
+Query  241    TCATTTGTAATTAGAGGTGATGAAGTCAGACAAATCGCTCCAGGGCAAACTGGAAAGATT  300
+              |||||||||||||||||| |||||||||| |||||||||||||||||||||||||| |||
+Sbjct  22730  TCATTTGTAATTAGAGGTAATGAAGTCAGCCAAATCGCTCCAGGGCAAACTGGAAATATT  22789
+
+Query  301    GCTGATTATAATTATAAATTACCAGATGATTTTACAGGCTGCGTTATAGCTTGGAATTCT  360
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22790  GCTGATTATAATTATAAATTACCAGATGATTTTACAGGCTGCGTTATAGCTTGGAATTCT  22849
+
+Query  361    AACAATCTTGATTCTAAGGTTGGTGGTAATTATAATTACCTGTATAGATTGTTTAGGAAG  420
+              ||||| ||||||||||||  | ||||||||||||||||||||||||||||||||||||||
+Sbjct  22850  AACAAGCTTGATTCTAAGCCTAGTGGTAATTATAATTACCTGTATAGATTGTTTAGGAAG  22909
+
+Query  421    TCTAATCTCAAACCTTTTGAGAGAGATATTTCAACTGAAATCTATCAGGCCGGTAGCACA  480
+              ||||| ||||||||||||||||||||||||||||||||||||||||||||||||| || |
+Sbjct  22910  TCTAAGCTCAAACCTTTTGAGAGAGATATTTCAACTGAAATCTATCAGGCCGGTAACAGA  22969
+
+Query  481    CCTTGTAATGGTGTTGAAGGTTTTAATTGTTACTTTCCTTTACAATCATATGGTTTCCAA  540
+              |||||||||||||||| ||||  ||||||||||| ||||||||||||||||||||||| |
+Sbjct  22970  CCTTGTAATGGTGTTGCAGGTCCTAATTGTTACTCTCCTTTACAATCATATGGTTTCCGA  23029
+
+Query  541    CCCACTAATGGTGTTGGTTACCAACCATACAGAGTAGTAGTACTTTCTTTTGAACTTCTA  600
+              |||||| ||||||||||| |||||||||||||||||||||||||||||||||||||||||
+Sbjct  23030  CCCACTTATGGTGTTGGTCACCAACCATACAGAGTAGTAGTACTTTCTTTTGAACTTCTA  23089
+
+Query  601    CATGCACCAGCAACTGTTTGTGGACCTAAAAAGTCTACTAATTTGGTTAAAAACAAATGT  660
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  23090  CATGCACCAGCAACTGTTTGTGGACCTAAAAAGTCTACTAATTTGGTTAAAAACAAATGT  23149
+
+Query  661    GTCAATTTC  669
+              |||||||||
+Sbjct  23150  GTCAATTTC  23158
+
+
+>OY757870.1 Severe acute respiratory syndrome-related coronavirus isolate 
+DW-RAT-194 genome assembly, chromosome: 1
+Length=29845
+
+ Score = 1090 bits (1208),  Expect = 0.0
+ Identities = 643/669 (96%), Gaps = 0/669 (0%)
+ Strand=Plus/Plus
+
+Query  1      AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAAACTTGTGCCCTTTT  60
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22494  AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAAACTTGTGCCCTTTT  22553
+
+Query  61     GGTGAAGTTTTTAACGCCACCAGATTTGCATCTGTTTATGCTTGGAACAGGAAGAGAATC  120
+                |||||||||||||||||||| |||||||||||||||||||||||||||||||||||||
+Sbjct  22554  CATGAAGTTTTTAACGCCACCACATTTGCATCTGTTTATGCTTGGAACAGGAAGAGAATC  22613
+
+Query  121    AGCAACTGTGTTGCTGATTATTCTGTCCTATATAATTCCGCATCATTTTCCACTTTTAAG  180
+              ||||||||||||||||||||||||||| ||||||||| |||| |||||| | ||||||||
+Sbjct  22614  AGCAACTGTGTTGCTGATTATTCTGTCATATATAATTTCGCACCATTTTTCGCTTTTAAG  22673
+
+Query  181    TGTTATGGAGTGTCTCCTACTAAATTAAATGATCTCTGCTTTACTAATGTCTATGCAGAT  240
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22674  TGTTATGGAGTGTCTCCTACTAAATTAAATGATCTCTGCTTTACTAATGTCTATGCAGAT  22733
+
+Query  241    TCATTTGTAATTAGAGGTGATGAAGTCAGACAAATCGCTCCAGGGCAAACTGGAAAGATT  300
+              |||||||||||||||||| |||||||||| |||||||||||||||||||||||||| |||
+Sbjct  22734  TCATTTGTAATTAGAGGTAATGAAGTCAGCCAAATCGCTCCAGGGCAAACTGGAAATATT  22793
+
+Query  301    GCTGATTATAATTATAAATTACCAGATGATTTTACAGGCTGCGTTATAGCTTGGAATTCT  360
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22794  GCTGATTATAATTATAAATTACCAGATGATTTTACAGGCTGCGTTATAGCTTGGAATTCT  22853
+
+Query  361    AACAATCTTGATTCTAAGGTTGGTGGTAATTATAATTACCTGTATAGATTGTTTAGGAAG  420
+              ||||| ||||||||||||  | ||||||||||||||||||||||||||||||| ||||||
+Sbjct  22854  AACAAGCTTGATTCTAAGCCTAGTGGTAATTATAATTACCTGTATAGATTGTTAAGGAAG  22913
+
+Query  421    TCTAATCTCAAACCTTTTGAGAGAGATATTTCAACTGAAATCTATCAGGCCGGTAGCACA  480
+              ||||| ||||||||||||||||||||||||||||||||||||||||||||||||| || |
+Sbjct  22914  TCTAAGCTCAAACCTTTTGAGAGAGATATTTCAACTGAAATCTATCAGGCCGGTAACAAA  22973
+
+Query  481    CCTTGTAATGGTGTTGAAGGTTTTAATTGTTACTTTCCTTTACAATCATATGGTTTCCAA  540
+              |||||||||||||||| ||||  ||||||||||| ||||||||||||||||||||||| |
+Sbjct  22974  CCTTGTAATGGTGTTGCAGGTCCTAATTGTTACTCTCCTTTACAATCATATGGTTTCCGA  23033
+
+Query  541    CCCACTAATGGTGTTGGTTACCAACCATACAGAGTAGTAGTACTTTCTTTTGAACTTCTA  600
+              |||||| ||||||||||| |||||||||||||||||||||||||||||||||||||||||
+Sbjct  23034  CCCACTTATGGTGTTGGTCACCAACCATACAGAGTAGTAGTACTTTCTTTTGAACTTCTA  23093
+
+Query  601    CATGCACCAGCAACTGTTTGTGGACCTAAAAAGTCTACTAATTTGGTTAAAAACAAATGT  660
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  23094  CATGCACCAGCAACTGTTTGTGGACCTAAAAAGTCTACTAATTTGGTTAAAAACAAATGT  23153
+
+Query  661    GTCAATTTC  669
+              |||||||||
+Sbjct  23154  GTCAATTTC  23162
+
+
+>OY757872.1 Severe acute respiratory syndrome-related coronavirus isolate 
+DW-RAT-193 genome assembly, chromosome: 1
+Length=29844
+
+ Score = 1090 bits (1208),  Expect = 0.0
+ Identities = 643/669 (96%), Gaps = 0/669 (0%)
+ Strand=Plus/Plus
+
+Query  1      AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAAACTTGTGCCCTTTT  60
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22493  AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAAACTTGTGCCCTTTT  22552
+
+Query  61     GGTGAAGTTTTTAACGCCACCAGATTTGCATCTGTTTATGCTTGGAACAGGAAGAGAATC  120
+                |||||||||||||||||||| |||||||||||||||||||||||||||||||||||||
+Sbjct  22553  CATGAAGTTTTTAACGCCACCACATTTGCATCTGTTTATGCTTGGAACAGGAAGAGAATC  22612
+
+Query  121    AGCAACTGTGTTGCTGATTATTCTGTCCTATATAATTCCGCATCATTTTCCACTTTTAAG  180
+              ||||||||||||||||||||||||||| ||||||||| |||| |||||| | ||||||||
+Sbjct  22613  AGCAACTGTGTTGCTGATTATTCTGTCATATATAATTTCGCACCATTTTTCGCTTTTAAG  22672
+
+Query  181    TGTTATGGAGTGTCTCCTACTAAATTAAATGATCTCTGCTTTACTAATGTCTATGCAGAT  240
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22673  TGTTATGGAGTGTCTCCTACTAAATTAAATGATCTCTGCTTTACTAATGTCTATGCAGAT  22732
+
+Query  241    TCATTTGTAATTAGAGGTGATGAAGTCAGACAAATCGCTCCAGGGCAAACTGGAAAGATT  300
+              |||||||||||||||||| |||||||||| |||||||||||||||||||||||||| |||
+Sbjct  22733  TCATTTGTAATTAGAGGTAATGAAGTCAGCCAAATCGCTCCAGGGCAAACTGGAAATATT  22792
+
+Query  301    GCTGATTATAATTATAAATTACCAGATGATTTTACAGGCTGCGTTATAGCTTGGAATTCT  360
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22793  GCTGATTATAATTATAAATTACCAGATGATTTTACAGGCTGCGTTATAGCTTGGAATTCT  22852
+
+Query  361    AACAATCTTGATTCTAAGGTTGGTGGTAATTATAATTACCTGTATAGATTGTTTAGGAAG  420
+              ||||| ||||||||||||  | ||||||||||||||||||||||||||||||||||||||
+Sbjct  22853  AACAAGCTTGATTCTAAGCCTAGTGGTAATTATAATTACCTGTATAGATTGTTTAGGAAG  22912
+
+Query  421    TCTAATCTCAAACCTTTTGAGAGAGATATTTCAACTGAAATCTATCAGGCCGGTAGCACA  480
+              ||||| || |||||||||||||||||||||||||||||||||||||||||||||| || |
+Sbjct  22913  TCTAAGCTTAAACCTTTTGAGAGAGATATTTCAACTGAAATCTATCAGGCCGGTAACAAA  22972
+
+Query  481    CCTTGTAATGGTGTTGAAGGTTTTAATTGTTACTTTCCTTTACAATCATATGGTTTCCAA  540
+              |||||||||||||||| ||||  ||||||||||| ||||||||||||||||||||||| |
+Sbjct  22973  CCTTGTAATGGTGTTGCAGGTCCTAATTGTTACTCTCCTTTACAATCATATGGTTTCCGA  23032
+
+Query  541    CCCACTAATGGTGTTGGTTACCAACCATACAGAGTAGTAGTACTTTCTTTTGAACTTCTA  600
+              |||||| ||||||||||| |||||||||||||||||||||||||||||||||||||||||
+Sbjct  23033  CCCACTTATGGTGTTGGTCACCAACCATACAGAGTAGTAGTACTTTCTTTTGAACTTCTA  23092
+
+Query  601    CATGCACCAGCAACTGTTTGTGGACCTAAAAAGTCTACTAATTTGGTTAAAAACAAATGT  660
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  23093  CATGCACCAGCAACTGTTTGTGGACCTAAAAAGTCTACTAATTTGGTTAAAAACAAATGT  23152
+
+Query  661    GTCAATTTC  669
+              |||||||||
+Sbjct  23153  GTCAATTTC  23161
+
+
+>MZ937001.1 Bat coronavirus isolate BANAL-20-103/Laos/2020, complete genome
+Length=29632
+
+ Score = 1027 bits (1138),  Expect = 0.0
+ Identities = 629/669 (94%), Gaps = 0/669 (0%)
+ Strand=Plus/Plus
+
+Query  1      AGAGTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAAACTTGTGCCCTTTT  60
+              ||||||||||||||||| |||||||||||||||||||||||||||||||| |||||||||
+Sbjct  22439  AGAGTCCAACCAACAGATTCTATTGTTAGATTTCCTAATATTACAAACTTATGCCCTTTT  22498
+
+Query  61     GGTGAAGTTTTTAACGCCACCAGATTTGCATCTGTTTATGCTTGGAACAGGAAGAGAATC  120
+              ||||||||||||||||||||||  || ||||| ||||||||||||||||| || ||||| 
+Sbjct  22499  GGTGAAGTTTTTAACGCCACCACGTTCGCATCAGTTTATGCTTGGAACAGAAAAAGAATT  22558
+
+Query  121    AGCAACTGTGTTGCTGATTATTCTGTCCTATATAATTCCGCATCATTTTCCACTTTTAAG  180
+              || |||||||||||||||||||||||||| ||||||||| | || |||||||||||||||
+Sbjct  22559  AGTAACTGTGTTGCTGATTATTCTGTCCTGTATAATTCCACTTCTTTTTCCACTTTTAAG  22618
+
+Query  181    TGTTATGGAGTGTCTCCTACTAAATTAAATGATCTCTGCTTTACTAATGTCTATGCAGAT  240
+              |||||||||||||||||||||||||||||||||||||||||||||||||| ||||| |||
+Sbjct  22619  TGTTATGGAGTGTCTCCTACTAAATTAAATGATCTCTGCTTTACTAATGTTTATGCTGAT  22678
+
+Query  241    TCATTTGTAATTAGAGGTGATGAAGTCAGACAAATCGCTCCAGGGCAAACTGGAAAGATT  300
+              ||||||||| ||||||||||||||||||||||||| |||||||| |||||||||||||||
+Sbjct  22679  TCATTTGTAGTTAGAGGTGATGAAGTCAGACAAATTGCTCCAGGACAAACTGGAAAGATT  22738
+
+Query  301    GCTGATTATAATTATAAATTACCAGATGATTTTACAGGCTGCGTTATAGCTTGGAATTCT  360
+              ||||||||||||||||||||||||||||||||||||||||| ||||||||||||||||||
+Sbjct  22739  GCTGATTATAATTATAAATTACCAGATGATTTTACAGGCTGTGTTATAGCTTGGAATTCT  22798
+
+Query  361    AACAATCTTGATTCTAAGGTTGGTGGTAATTATAATTACCTGTATAGATTGTTTAGGAAG  420
+              ||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22799  AACAACCTTGATTCTAAGGTTGGTGGTAATTATAATTACCTGTATAGATTGTTTAGGAAG  22858
+
+Query  421    TCTAATCTCAAACCTTTTGAGAGAGATATTTCAACTGAAATCTATCAGGCCGGTAGCACA  480
+              |||||||||||||||||||||||||| ||||||||||||||||||||||| || ||||||
+Sbjct  22859  TCTAATCTCAAACCTTTTGAGAGAGACATTTCAACTGAAATCTATCAGGCTGGCAGCACA  22918
+
+Query  481    CCTTGTAATGGTGTTGAAGGTTTTAATTGTTACTTTCCTTTACAATCATATGGTTTCCAA  540
+              |||||||||||||||||||||||||||||||||||||| |||||||| ||||||||||| 
+Sbjct  22919  CCTTGTAATGGTGTTGAAGGTTTTAATTGTTACTTTCCCTTACAATCTTATGGTTTCCAC  22978
+
+Query  541    CCCACTAATGGTGTTGGTTACCAACCATACAGAGTAGTAGTACTTTCTTTTGAACTTCTA  600
+              || || |||||||||||||| |||||||| || ||||||||||| |||||||| ||||||
+Sbjct  22979  CCTACAAATGGTGTTGGTTATCAACCATATAGGGTAGTAGTACTATCTTTTGAGCTTCTA  23038
+
+Query  601    CATGCACCAGCAACTGTTTGTGGACCTAAAAAGTCTACTAATTTGGTTAAAAACAAATGT  660
+               |||||||||| |||||||||||||||||||| |||||||| ||| ||||||| ||||||
+Sbjct  23039  AATGCACCAGCTACTGTTTGTGGACCTAAAAAATCTACTAACTTGATTAAAAATAAATGT  23098
+
+Query  661    GTCAATTTC  669
+              |||||||||
+Sbjct  23099  GTCAATTTC  23107
+
+
+>MT655947.1 Mutant Rotavirus A NSP3-P2A-3XFLSARSCoV-2spikeRBD gene, complete 
+cds
+Length=1810
+
+ Score = 1025 bits (1136),  Expect = 0.0
+ Identities = 568/568 (100%), Gaps = 0/568 (0%)
+ Strand=Plus/Plus
+
+Query  48    CTTGTGCCCTTTTGGTGAAGTTTTTAACGCCACCAGATTTGCATCTGTTTATGCTTGGAA  107
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  1108  CTTGTGCCCTTTTGGTGAAGTTTTTAACGCCACCAGATTTGCATCTGTTTATGCTTGGAA  1167
+
+Query  108   CAGGAAGAGAATCAGCAACTGTGTTGCTGATTATTCTGTCCTATATAATTCCGCATCATT  167
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  1168  CAGGAAGAGAATCAGCAACTGTGTTGCTGATTATTCTGTCCTATATAATTCCGCATCATT  1227
+
+Query  168   TTCCACTTTTAAGTGTTATGGAGTGTCTCCTACTAAATTAAATGATCTCTGCTTTACTAA  227
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  1228  TTCCACTTTTAAGTGTTATGGAGTGTCTCCTACTAAATTAAATGATCTCTGCTTTACTAA  1287
+
+Query  228   TGTCTATGCAGATTCATTTGTAATTAGAGGTGATGAAGTCAGACAAATCGCTCCAGGGCA  287
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  1288  TGTCTATGCAGATTCATTTGTAATTAGAGGTGATGAAGTCAGACAAATCGCTCCAGGGCA  1347
+
+Query  288   AACTGGAAAGATTGCTGATTATAATTATAAATTACCAGATGATTTTACAGGCTGCGTTAT  347
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  1348  AACTGGAAAGATTGCTGATTATAATTATAAATTACCAGATGATTTTACAGGCTGCGTTAT  1407
+
+Query  348   AGCTTGGAATTCTAACAATCTTGATTCTAAGGTTGGTGGTAATTATAATTACCTGTATAG  407
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  1408  AGCTTGGAATTCTAACAATCTTGATTCTAAGGTTGGTGGTAATTATAATTACCTGTATAG  1467
+
+Query  408   ATTGTTTAGGAAGTCTAATCTCAAACCTTTTGAGAGAGATATTTCAACTGAAATCTATCA  467
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  1468  ATTGTTTAGGAAGTCTAATCTCAAACCTTTTGAGAGAGATATTTCAACTGAAATCTATCA  1527
+
+Query  468   GGCCGGTAGCACACCTTGTAATGGTGTTGAAGGTTTTAATTGTTACTTTCCTTTACAATC  527
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  1528  GGCCGGTAGCACACCTTGTAATGGTGTTGAAGGTTTTAATTGTTACTTTCCTTTACAATC  1587
+
+Query  528   ATATGGTTTCCAACCCACTAATGGTGTTGGTTACCAACCATACAGAGTAGTAGTACTTTC  587
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  1588  ATATGGTTTCCAACCCACTAATGGTGTTGGTTACCAACCATACAGAGTAGTAGTACTTTC  1647
+
+Query  588   TTTTGAACTTCTACATGCACCAGCAACT  615
+             ||||||||||||||||||||||||||||
+Sbjct  1648  TTTTGAACTTCTACATGCACCAGCAACT  1675
+
+
+
+Lambda      K        H
+   0.634    0.408    0.912 
+
+Gapped
+Lambda      K        H
+   0.625    0.410    0.780 
+
+Effective search space used: 529770593265174
+
+
+  Database: nt without eukaryotic nuclear assembly sequences
+    Posted date:  Jun 17, 2024 09:01 AM
+  Number of letters in database: 0
+  Number of sequences in database:  0
+
+
+
+Matrix: blastn matrix 2 -3
+Gap Penalties: Existence: 5, Extension: 2

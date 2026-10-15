@@ -1,0 +1,1230 @@
+# NCBI BLAST search run on 2026-10-15 (RID D293S1HB014)
+# qseqid	saccver	pident	length	mismatch	gapopen	qstart	qend	sstart	send	evalue	bitscore	qcovs	staxids	stitle
+contig_01	OZ455847.1	100.000	7000	0	0	1	7000	681753	674754	0.0	12927	100	1280	Staphylococcus aureus isolate STAU120 genome assembly, chromosome: 1
+contig_01	OZ456475.1	100.000	7000	0	0	1	7000	2313513	2306514	0.0	12927	100	1280	Staphylococcus aureus isolate STAU426 genome assembly, chromosome: 2
+contig_01	CP181027.1	100.000	7000	0	0	1	7000	2370497	2377496	0.0	12927	100	1280	Staphylococcus aureus strain AMM20230615bbarcode03 chromosome, complete genome
+contig_01	AP046104.1	100.000	7000	0	0	1	7000	2654248	2661247	0.0	12927	100	1280	Staphylococcus aureus N1404 DNA, complete genome
+contig_01	CP180779.1	100.000	7000	0	0	1	7000	811519	804520	0.0	12927	100	1280	Staphylococcus aureus strain AMM20230606barcode03 chromosome, complete genome
+contig_01	CP180960.1	100.000	7000	0	0	1	7000	748708	741709	0.0	12927	100	1280	Staphylococcus aureus strain AMM202306bbarcode12 chromosome, complete genome
+contig_01	CP166528.1	100.000	7000	0	0	1	7000	1601177	1594178	0.0	12927	100	1280	Staphylococcus aureus strain MSHS_PS00018.1A chromosome, complete genome
+contig_01	CP166522.1	100.000	7000	0	0	1	7000	2519707	2526706	0.0	12927	100	1280	Staphylococcus aureus strain MSHS_PS00012.3A chromosome, complete genome
+contig_01	CP194232.1	100.000	7000	0	0	1	7000	2095163	2102162	0.0	12927	100	1280	Staphylococcus aureus strain LAC chromosome, complete genome
+contig_01	AP046106.1	100.000	7000	0	0	1	7000	2679183	2686182	0.0	12927	100	1280	Staphylococcus aureus THI2019-8 DNA, complete genome
+contig_01	OZ564533.1	100.000	7000	0	0	1	7000	2685247	2692246	0.0	12927	100	1280	Staphylococcus aureus isolate NCTC_14245 genome assembly, chromosome: 1
+contig_01	CP175899.1	100.000	7000	0	0	1	7000	731910	724911	0.0	12927	100	1280	Staphylococcus aureus strain AMM20230328barcode08 chromosome, complete genome
+contig_01	OZ455875.1	100.000	7000	0	0	1	7000	698970	691971	0.0	12927	100	1280	Staphylococcus aureus isolate STAU1043 genome assembly, chromosome: 1
+contig_01	OZ455658.1	100.000	7000	0	0	1	7000	2021696	2028695	0.0	12927	100	1280	Staphylococcus aureus isolate STAU1096 genome assembly, chromosome: 1
+contig_01	OZ457622.1	100.000	7000	0	0	1	7000	695079	688080	0.0	12927	100	1280	Staphylococcus aureus isolate STAU99 genome assembly, chromosome: 1
+contig_01	CP175895.1	100.000	7000	0	0	1	7000	2640648	2647647	0.0	12927	100	1280	Staphylococcus aureus strain AMM20230321barcode04 chromosome, complete genome
+contig_01	CP180774.1	100.000	7000	0	0	1	7000	770324	763325	0.0	12927	100	1280	Staphylococcus aureus strain AMM20230602abarcode03 chromosome, complete genome
+contig_01	CP180817.1	100.000	7000	0	0	1	7000	1712304	1719303	0.0	12927	100	1280	Staphylococcus aureus strain AMM20230615abarcode05 chromosome, complete genome
+contig_01	CP180801.1	100.000	7000	0	0	1	7000	358757	365756	0.0	12927	100	1280	Staphylococcus aureus strain AMM20230329barcode09 chromosome, complete genome
+contig_01	AP046101.1	100.000	7000	0	0	1	7000	2681920	2688919	0.0	12927	100	1280	Staphylococcus aureus TSI972 DNA, complete genome
+contig_02	L09137.2	100.000	2686	0	0	1	2686	1	2686	0.0	4961	100	174689	Cloning vector pUC19c, complete sequence
+contig_02	L09135.1	99.702	2686	2	3	1	2686	1	2680	0.0	4911	100	32630	pUC13c cloning vector (beta-galactosidase mRNA on complementary strand)
+contig_02	MF927778.1	99.368	2692	11	3	1	2686	1	2692	0.0	4872	100	2268895	Cloning vector pMDT7GX1, complete sequence
+contig_02	AF016541.1	99.294	2693	8	6	1	2686	1	2689	0.0	4857	100	65020	Cloning vector pUC-JK, complete sequence
+contig_02	JQ410188.1	99.112	2703	6	4	1	2686	1	2702	0.0	4843	100	1193153	Cloning vector pRL1, complete sequence
+contig_02	JQ768506.1	99.038	2704	7	8	1	2686	1	2703	0.0	4831	100	1193154	Cloning vector pRL2, complete sequence
+contig_02	L09133.1	99.181	2686	1	6	1	2686	1	2665	0.0	4819	100	32630	pUC9c cloning vector (beta-galactosidase mRNA on complementary strand)
+contig_02	KP700956.1	99.107	2687	9	9	1	2686	1	2673	0.0	4815	100	1676627	Cloning vector pUC19sy, complete sequence
+contig_02	L09131.1	99.069	2686	13	8	1	2686	1	2674	0.0	4811	100	32630	pUC7c cloning vector (beta-galactosidase mRNA on complementary strand)
+contig_02	U17499.1	98.959	2690	20	6	1	2686	1	2686	0.0	4806	100	37980	Cloning vector pUCSce, complete sequence
+contig_02	AJ009780.1	98.848	2692	19	6	1	2686	3126	5811	0.0	4789	100	32630	Synthetic construct Acetobacter europaeus-Acetobacter intermedius-Escherichia coli shuttle plasmid vector pJT2
+contig_02	AJ009780.1	100.000	186	0	0	1	186	1	186	5.29e-89	344	100	32630	Synthetic construct Acetobacter europaeus-Acetobacter intermedius-Escherichia coli shuttle plasmid vector pJT2
+contig_02	AJ009780.1	100.000	185	0	0	2502	2686	2941	3125	1.90e-88	342	100	32630	Synthetic construct Acetobacter europaeus-Acetobacter intermedius-Escherichia coli shuttle plasmid vector pJT2
+contig_02	AJ009780.1	100.000	60	0	0	396	455	3580	3521	5.85e-19	111	100	32630	Synthetic construct Acetobacter europaeus-Acetobacter intermedius-Escherichia coli shuttle plasmid vector pJT2
+contig_02	L09134.1	98.884	2688	20	6	1	2686	1	2680	0.0	4789	100	32630	pUC12c cloning vector (beta-galactosidase mRNA on complementary strand)
+contig_02	L09134.1	88.333	60	1	2	396	455	449	396	1.28e-05	67.6	100	32630	pUC12c cloning vector (beta-galactosidase mRNA on complementary strand)
+contig_02	L09136.1	98.848	2692	19	6	1	2686	1	2686	0.0	4789	100	32630	pUC18c cloning vector (beta-galactosidase mRNA on complementary strand)
+contig_02	L09136.1	100.000	60	0	0	396	455	455	396	5.85e-19	111	100	32630	pUC18c cloning vector (beta-galactosidase mRNA on complementary strand)
+contig_02	KT970628.1	98.780	2623	19	7	1	2616	1022	3638	0.0	4654	97	1824560	Cloning vector pSRGFP-18, complete sequence
+contig_02	KT970628.1	100.000	60	0	0	396	455	1477	1418	5.85e-19	111	97	1824560	Cloning vector pSRGFP-18, complete sequence
+contig_02	KP701018.1	98.780	2622	19	7	2	2616	1040	3655	0.0	4652	97	1663166	Cloning vector pR18GFP, complete sequence
+contig_02	KP701018.1	100.000	60	0	0	396	455	1494	1435	5.85e-19	111	97	1663166	Cloning vector pR18GFP, complete sequence
+contig_02	LC641778.1	100.000	2506	0	0	181	2686	2026	4531	0.0	4628	100	32630	Synthetic construct genes for integrase and Beta-lactamase, complete cds
+contig_02	LC641778.1	100.000	181	0	0	1	181	4532	4712	3.19e-86	335	100	32630	Synthetic construct genes for integrase and Beta-lactamase, complete cds
+contig_02	X53123.1	99.960	2504	1	0	1	2504	1	2504	0.0	4619	100	32630	Cloning vector pAST 19a for C. elegans
+contig_02	X53123.1	100.000	183	0	0	2504	2686	2870	3052	2.46e-87	339	100	32630	Cloning vector pAST 19a for C. elegans
+contig_02	X53124.1	99.960	2503	1	0	1	2503	1	2503	0.0	4617	100	32630	Cloning vector pAST 19b for C. elegans
+contig_02	X53124.1	100.000	184	0	0	2503	2686	2869	3052	6.85e-88	340	100	32630	Cloning vector pAST 19b for C. elegans
+contig_02	EU093094.1	99.960	2502	1	0	185	2686	4122	1621	0.0	4615	100	461527	Cloning vector pAW5, complete sequence
+contig_02	EU093094.1	100.000	186	0	0	1	186	1620	1435	5.29e-89	344	100	461527	Cloning vector pAW5, complete sequence
+contig_02	U34315.1	99.960	2502	1	0	185	2686	3960	6461	0.0	4615	100	42871	E.coli/Kluyveromyces lactis shuttle vector pCXJ12
+contig_02	U34315.1	100.000	186	0	0	1	186	1	186	5.29e-89	344	100	42871	E.coli/Kluyveromyces lactis shuttle vector pCXJ12
+contig_03	CP031670.1	100.000	9000	0	0	1	9000	1340719	1331720	0.0	16620	100	1280	Staphylococcus aureus strain 64 chromosome, complete genome
+contig_03	CP097114.1	100.000	9000	0	0	1	9000	1208997	1199998	0.0	16620	100	1280	Staphylococcus aureus strain JP18269 chromosome, complete genome
+contig_03	CP166544.1	100.000	9000	0	0	1	9000	1340739	1331740	0.0	16620	100	1280	Staphylococcus aureus strain MSHS PS00119.1A chromosome, complete genome
+contig_03	CP097113.1	100.000	9000	0	0	1	9000	1208997	1199998	0.0	16620	100	1280	Staphylococcus aureus strain JP1250 chromosome, complete genome
+contig_03	CP031667.1	100.000	9000	0	0	1	9000	1340719	1331720	0.0	16620	100	1280	Staphylococcus aureus strain 199 chromosome, complete genome
+contig_03	CP104476.1	100.000	9000	0	0	1	9000	1271174	1262175	0.0	16620	100	1280	Staphylococcus aureus strain DSM 20231-Res2 chromosome, complete genome
+contig_03	CP040998.1	100.000	9000	0	0	1	9000	449308	458307	0.0	16620	100	1280	Staphylococcus aureus strain FDAARGOS_773 chromosome, complete genome
+contig_03	LS483365.1	100.000	9000	0	0	1	9000	1217627	1208628	0.0	16620	100	93061	Staphylococcus aureus strain NCTC8325 genome assembly, chromosome: 1
+contig_03	CP059180.1	100.000	9000	0	0	1	9000	1217571	1208572	0.0	16620	100	1280	Staphylococcus aureus strain SH1000 chromosome, complete genome
+contig_03	CP090001.1	100.000	9000	0	0	1	9000	1260218	1251219	0.0	16620	100	1280	Staphylococcus aureus strain RN6390 chromosome, complete genome
+contig_03	CP026962.1	100.000	9000	0	0	1	9000	1359565	1350566	0.0	16620	100	1280	Staphylococcus aureus strain FDAARGOS_6 chromosome, complete genome
+contig_03	CP104477.1	100.000	9000	0	0	1	9000	1271174	1262175	0.0	16620	100	1280	Staphylococcus aureus strain DSM 20231-Res1 chromosome
+contig_03	CP104475.1	100.000	9000	0	0	1	9000	1271174	1262175	0.0	16620	100	1280	Staphylococcus aureus strain DSM 20231-Res3 chromosome
+contig_03	OZ495701.1	100.000	9000	0	0	1	9000	1270632	1261633	0.0	16620	100	1280	Staphylococcus aureus isolate NCTC_8532 genome assembly, chromosome: 1
+contig_03	CP104478.1	100.000	9000	0	0	1	9000	1271174	1262175	0.0	16620	100	1280	Staphylococcus aureus strain DSM 20231 chromosome, complete genome
+contig_03	CP064365.1	100.000	9000	0	0	1	9000	2521809	2530808	0.0	16620	100	1280	Staphylococcus aureus strain PartF-Saureus-RM8376 chromosome, complete genome
+contig_03	CP150127.1	100.000	9000	0	0	1	9000	1217639	1208640	0.0	16620	100	561307	Staphylococcus aureus subsp. aureus RN4220 chromosome, complete genome
+contig_03	CP076105.1	100.000	9000	0	0	1	9000	1217890	1208891	0.0	16620	100	561307	Staphylococcus aureus subsp. aureus RN4220 chromosome, complete genome
+contig_03	CP035101.1	100.000	9000	0	0	1	9000	1270631	1261632	0.0	16620	100	1280	Staphylococcus aureus strain ATCC 12600 chromosome, complete genome
+contig_03	CP097115.1	100.000	9000	0	0	1	9000	1252288	1243289	0.0	16620	100	1280	Staphylococcus aureus strain JP18270 chromosome, complete genome
+contig_04	AP040284.1	100.000	12000	0	0	1	12000	659044	671043	0.0	22160	100	1280	Staphylococcus aureus M-15-335 DNA, complete genome
+contig_04	AP040284.1	97.273	220	6	0	3777	3996	783543	783324	3.05e-97	374	100	1280	Staphylococcus aureus M-15-335 DNA, complete genome
+contig_04	AP040284.1	91.515	165	3	1	3785	3949	1968149	1967996	5.44e-50	217	100	1280	Staphylococcus aureus M-15-335 DNA, complete genome
+contig_04	AP040284.1	99.153	118	0	1	3772	3889	1055363	1055247	2.53e-48	211	100	1280	Staphylococcus aureus M-15-335 DNA, complete genome
+contig_04	AP040284.1	83.258	221	24	6	3785	4004	837994	837786	3.30e-42	191	100	1280	Staphylococcus aureus M-15-335 DNA, complete genome
+contig_04	AP040284.1	97.248	109	3	0	3888	3996	147507	147615	1.53e-40	185	100	1280	Staphylococcus aureus M-15-335 DNA, complete genome
+contig_04	AP040284.1	96.460	113	2	2	3892	4003	1364972	1365083	1.53e-40	185	100	1280	Staphylococcus aureus M-15-335 DNA, complete genome
+contig_04	AP040284.1	96.429	112	3	1	3892	4003	1454775	1454665	5.51e-40	183	100	1280	Staphylococcus aureus M-15-335 DNA, complete genome
+contig_04	AP040284.1	97.170	106	3	0	3892	3997	888832	888727	7.13e-39	180	100	1280	Staphylococcus aureus M-15-335 DNA, complete genome
+contig_04	AP040284.1	96.190	105	4	0	3892	3996	1082425	1082321	1.19e-36	172	100	1280	Staphylococcus aureus M-15-335 DNA, complete genome
+contig_04	AP040284.1	96.154	104	4	0	3786	3889	2811903	2811800	4.29e-36	171	100	1280	Staphylococcus aureus M-15-335 DNA, complete genome
+contig_04	AP040284.1	95.238	105	5	0	3892	3996	2500971	2500867	5.55e-35	167	100	1280	Staphylococcus aureus M-15-335 DNA, complete genome
+contig_04	AP040284.1	84.884	172	13	3	3781	3951	888989	888830	2.58e-33	161	100	1280	Staphylococcus aureus M-15-335 DNA, complete genome
+contig_04	AP040284.1	94.118	102	6	0	3778	3879	1364753	1364854	1.20e-31	156	100	1280	Staphylococcus aureus M-15-335 DNA, complete genome
+contig_04	AP040284.1	94.949	99	5	0	3781	3879	1454991	1454893	1.20e-31	156	100	1280	Staphylococcus aureus M-15-335 DNA, complete genome
+contig_04	AP040284.1	87.395	119	14	1	3771	3889	1813285	1813402	1.57e-25	135	100	1280	Staphylococcus aureus M-15-335 DNA, complete genome
+contig_04	AP040284.1	88.785	107	11	1	3891	3997	1634287	1634182	7.29e-24	130	100	1280	Staphylococcus aureus M-15-335 DNA, complete genome
+contig_04	AP040284.1	88.182	110	10	2	3771	3877	1977512	1977403	2.62e-23	128	100	1280	Staphylococcus aureus M-15-335 DNA, complete genome
+contig_04	AP040284.1	86.667	105	13	1	3892	3996	1967935	1967832	2.04e-19	115	100	1280	Staphylococcus aureus M-15-335 DNA, complete genome
+contig_04	AP040284.1	100.000	58	0	0	3892	3949	1967994	1967937	3.41e-17	108	100	1280	Staphylococcus aureus M-15-335 DNA, complete genome
+contig_04	AP040284.1	96.721	61	2	0	3936	3996	937708	937768	1.59e-15	102	100	1280	Staphylococcus aureus M-15-335 DNA, complete genome
+contig_04	AP040284.1	96.721	61	2	0	3936	3996	2775446	2775386	1.59e-15	102	100	1280	Staphylococcus aureus M-15-335 DNA, complete genome
+contig_04	AP040284.1	95.238	63	3	0	3883	3945	784323	784385	5.71e-15	100	100	1280	Staphylococcus aureus M-15-335 DNA, complete genome
+contig_04	AP040284.1	78.022	182	24	6	3773	3951	1156562	1156730	5.71e-15	100	100	1280	Staphylococcus aureus M-15-335 DNA, complete genome
+contig_04	AP040284.1	96.552	58	2	0	3888	3945	1156780	1156837	7.39e-14	97.1	100	1280	Staphylococcus aureus M-15-335 DNA, complete genome
+contig_04	AP040284.1	98.148	54	1	0	3892	3945	830749	830696	2.66e-13	95.3	100	1280	Staphylococcus aureus M-15-335 DNA, complete genome
+contig_04	AP040284.1	98.148	54	1	0	3944	3997	1055248	1055195	2.66e-13	95.3	100	1280	Staphylococcus aureus M-15-335 DNA, complete genome
+contig_04	AP040284.1	93.443	61	4	0	3891	3951	2090736	2090676	3.44e-12	91.6	100	1280	Staphylococcus aureus M-15-335 DNA, complete genome
+contig_04	CP122546.1	100.000	12000	0	0	1	12000	289865	301864	0.0	22160	100	1280	Staphylococcus aureus strain ER22416.3 chromosome, complete genome
+contig_04	CP122546.1	97.273	220	6	0	3777	3996	409927	409708	3.05e-97	374	100	1280	Staphylococcus aureus strain ER22416.3 chromosome, complete genome
+contig_04	CP122546.1	91.515	165	3	1	3785	3949	1625397	1625244	5.44e-50	217	100	1280	Staphylococcus aureus strain ER22416.3 chromosome, complete genome
+contig_04	CP122546.1	99.153	118	0	1	3772	3889	667056	666940	2.53e-48	211	100	1280	Staphylococcus aureus strain ER22416.3 chromosome, complete genome
+contig_04	CP122546.1	96.460	113	2	2	3892	4003	975571	975682	1.53e-40	185	100	1280	Staphylococcus aureus strain ER22416.3 chromosome, complete genome
+contig_04	CP122546.1	97.248	109	3	0	3888	3996	2651978	2652086	1.53e-40	185	100	1280	Staphylococcus aureus strain ER22416.3 chromosome, complete genome
+contig_04	CP122546.1	96.429	112	3	1	3892	4003	1064782	1064672	5.51e-40	183	100	1280	Staphylococcus aureus strain ER22416.3 chromosome, complete genome
+contig_04	CP122546.1	97.170	106	3	0	3892	3997	500486	500381	7.13e-39	180	100	1280	Staphylococcus aureus strain ER22416.3 chromosome, complete genome
+contig_04	CP122546.1	96.190	105	4	0	3892	3996	692849	692745	1.19e-36	172	100	1280	Staphylococcus aureus strain ER22416.3 chromosome, complete genome
+contig_04	CP122546.1	96.154	104	4	0	3786	3889	2497563	2497460	4.29e-36	171	100	1280	Staphylococcus aureus strain ER22416.3 chromosome, complete genome
+contig_04	CP122546.1	94.545	110	5	1	3771	3879	693018	692909	1.54e-35	169	100	1280	Staphylococcus aureus strain ER22416.3 chromosome, complete genome
+contig_04	CP122546.1	93.043	115	6	2	3891	4004	464393	464280	5.55e-35	167	100	1280	Staphylococcus aureus strain ER22416.3 chromosome, complete genome
+contig_04	CP122546.1	95.238	105	5	0	3892	3996	2191388	2191284	5.55e-35	167	100	1280	Staphylococcus aureus strain ER22416.3 chromosome, complete genome
+contig_04	CP122546.1	84.884	172	13	3	3781	3951	500643	500484	2.58e-33	161	100	1280	Staphylococcus aureus strain ER22416.3 chromosome, complete genome
+contig_04	CP122546.1	94.118	102	6	0	3778	3879	975352	975453	1.20e-31	156	100	1280	Staphylococcus aureus strain ER22416.3 chromosome, complete genome
+contig_04	CP122546.1	94.949	99	5	0	3781	3879	1064998	1064900	1.20e-31	156	100	1280	Staphylococcus aureus strain ER22416.3 chromosome, complete genome
+contig_04	CP122546.1	87.395	119	14	1	3771	3889	1466858	1466975	1.57e-25	135	100	1280	Staphylococcus aureus strain ER22416.3 chromosome, complete genome
+contig_04	CP122546.1	88.785	107	11	1	3891	3997	1288068	1287963	7.29e-24	130	100	1280	Staphylococcus aureus strain ER22416.3 chromosome, complete genome
+contig_04	CP122546.1	88.182	110	10	2	3771	3877	1634818	1634709	2.62e-23	128	100	1280	Staphylococcus aureus strain ER22416.3 chromosome, complete genome
+contig_04	CP122546.1	86.667	105	13	1	3892	3996	1625242	1625139	2.04e-19	115	100	1280	Staphylococcus aureus strain ER22416.3 chromosome, complete genome
+contig_04	CP122546.1	95.652	69	3	0	3883	3951	410707	410775	2.64e-18	111	100	1280	Staphylococcus aureus strain ER22416.3 chromosome, complete genome
+contig_04	CP122546.1	96.721	61	2	0	3936	3996	549407	549467	1.59e-15	102	100	1280	Staphylococcus aureus strain ER22416.3 chromosome, complete genome
+contig_04	CP122546.1	96.721	61	2	0	3936	3996	2460940	2460880	1.59e-15	102	100	1280	Staphylococcus aureus strain ER22416.3 chromosome, complete genome
+contig_04	CP122546.1	93.939	66	4	0	3888	3953	763464	763529	5.71e-15	100	100	1280	Staphylococcus aureus strain ER22416.3 chromosome, complete genome
+contig_04	CP122546.1	78.022	182	24	6	3773	3951	767214	767382	5.71e-15	100	100	1280	Staphylococcus aureus strain ER22416.3 chromosome, complete genome
+contig_04	CP122546.1	98.148	54	1	0	3892	3945	457243	457190	2.66e-13	95.3	100	1280	Staphylococcus aureus strain ER22416.3 chromosome, complete genome
+contig_04	CP122546.1	98.148	54	1	0	3944	3997	666941	666888	2.66e-13	95.3	100	1280	Staphylococcus aureus strain ER22416.3 chromosome, complete genome
+contig_04	CP122546.1	93.443	61	4	0	3891	3951	1781479	1781419	3.44e-12	91.6	100	1280	Staphylococcus aureus strain ER22416.3 chromosome, complete genome
+contig_04	CP165640.1	100.000	12000	0	0	1	12000	627838	639837	0.0	22160	100	1280	Staphylococcus aureus strain BSN02 chromosome, complete genome
+contig_04	CP165640.1	97.273	220	6	0	3777	3996	747897	747678	3.05e-97	374	100	1280	Staphylococcus aureus strain BSN02 chromosome, complete genome
+contig_04	CP165640.1	91.515	165	3	1	3785	3949	1957839	1957686	5.44e-50	217	100	1280	Staphylococcus aureus strain BSN02 chromosome, complete genome
+contig_04	CP165640.1	99.153	118	0	1	3772	3889	1004476	1004360	2.53e-48	211	100	1280	Staphylococcus aureus strain BSN02 chromosome, complete genome
+contig_04	CP165640.1	83.258	221	24	6	3785	4004	802235	802027	3.30e-42	191	100	1280	Staphylococcus aureus strain BSN02 chromosome, complete genome
+contig_04	CP165640.1	97.248	109	3	0	3888	3996	128577	128685	1.53e-40	185	100	1280	Staphylococcus aureus strain BSN02 chromosome, complete genome
+contig_04	CP165640.1	96.460	113	2	2	3892	4003	1312785	1312896	1.53e-40	185	100	1280	Staphylococcus aureus strain BSN02 chromosome, complete genome
+contig_04	CP165640.1	96.429	112	3	1	3892	4003	1401286	1401176	5.51e-40	183	100	1280	Staphylococcus aureus strain BSN02 chromosome, complete genome
+contig_04	CP165640.1	97.170	106	3	0	3892	3997	837941	837836	7.13e-39	180	100	1280	Staphylococcus aureus strain BSN02 chromosome, complete genome
+contig_04	CP165640.1	96.190	105	4	0	3892	3996	1030268	1030164	1.19e-36	172	100	1280	Staphylococcus aureus strain BSN02 chromosome, complete genome
+contig_04	CP165640.1	96.154	104	4	0	3786	3889	2799253	2799150	4.29e-36	171	100	1280	Staphylococcus aureus strain BSN02 chromosome, complete genome
+contig_04	CP165640.1	94.545	110	5	1	3771	3879	1030437	1030328	1.54e-35	169	100	1280	Staphylococcus aureus strain BSN02 chromosome, complete genome
+contig_04	CP165640.1	95.238	105	5	0	3892	3996	2489985	2489881	5.55e-35	167	100	1280	Staphylococcus aureus strain BSN02 chromosome, complete genome
+contig_04	CP165640.1	84.884	172	13	3	3781	3951	838098	837939	2.58e-33	161	100	1280	Staphylococcus aureus strain BSN02 chromosome, complete genome
+contig_04	CP165640.1	94.118	102	6	0	3778	3879	1312566	1312667	1.20e-31	156	100	1280	Staphylococcus aureus strain BSN02 chromosome, complete genome
+contig_04	CP165640.1	94.949	99	5	0	3781	3879	1401502	1401404	1.20e-31	156	100	1280	Staphylococcus aureus strain BSN02 chromosome, complete genome
+contig_04	CP165640.1	83.815	173	16	2	3773	3945	795155	794995	4.32e-31	154	100	1280	Staphylococcus aureus strain BSN02 chromosome, complete genome
+contig_04	CP165640.1	87.395	119	14	1	3771	3889	1758439	1758556	1.57e-25	135	100	1280	Staphylococcus aureus strain BSN02 chromosome, complete genome
+contig_04	CP165640.1	88.785	107	11	1	3891	3997	1579432	1579327	7.29e-24	130	100	1280	Staphylococcus aureus strain BSN02 chromosome, complete genome
+contig_04	CP165640.1	88.182	110	10	2	3771	3877	1967202	1967093	2.62e-23	128	100	1280	Staphylococcus aureus strain BSN02 chromosome, complete genome
+contig_04	CP165640.1	86.667	105	13	1	3892	3996	1957684	1957581	2.04e-19	115	100	1280	Staphylococcus aureus strain BSN02 chromosome, complete genome
+contig_04	CP165640.1	96.721	61	2	0	3936	3996	886816	886876	1.59e-15	102	100	1280	Staphylococcus aureus strain BSN02 chromosome, complete genome
+contig_04	CP165640.1	96.721	61	2	0	3936	3996	2764444	2764384	1.59e-15	102	100	1280	Staphylococcus aureus strain BSN02 chromosome, complete genome
+contig_04	CP165640.1	95.238	63	3	0	3883	3945	748677	748739	5.71e-15	100	100	1280	Staphylococcus aureus strain BSN02 chromosome, complete genome
+contig_04	CP165640.1	93.939	66	4	0	3888	3953	1100656	1100721	5.71e-15	100	100	1280	Staphylococcus aureus strain BSN02 chromosome, complete genome
+contig_04	CP165640.1	78.022	182	24	6	3773	3951	1104406	1104574	5.71e-15	100	100	1280	Staphylococcus aureus strain BSN02 chromosome, complete genome
+contig_04	CP165640.1	98.148	54	1	0	3944	3997	1004361	1004308	2.66e-13	95.3	100	1280	Staphylococcus aureus strain BSN02 chromosome, complete genome
+contig_04	CP165640.1	93.443	61	4	0	3891	3951	2080422	2080362	3.44e-12	91.6	100	1280	Staphylococcus aureus strain BSN02 chromosome, complete genome
+contig_04	CP166528.1	100.000	12000	0	0	1	12000	768153	756154	0.0	22160	100	1280	Staphylococcus aureus strain MSHS_PS00018.1A chromosome, complete genome
+contig_04	CP166528.1	97.273	220	6	0	3777	3996	648090	648309	3.05e-97	374	100	1280	Staphylococcus aureus strain MSHS_PS00018.1A chromosome, complete genome
+contig_04	CP166528.1	89.831	177	7	1	3773	3949	2235318	2235483	5.44e-50	217	100	1280	Staphylococcus aureus strain MSHS_PS00018.1A chromosome, complete genome
+contig_04	CP166528.1	99.153	118	0	1	3772	3889	390806	390922	2.53e-48	211	100	1280	Staphylococcus aureus strain MSHS_PS00018.1A chromosome, complete genome
+contig_04	CP166528.1	97.248	109	3	0	3888	3996	1264598	1264490	1.53e-40	185	100	1280	Staphylococcus aureus strain MSHS_PS00018.1A chromosome, complete genome
+contig_04	CP166528.1	96.429	112	3	1	3892	4003	2750670	2750780	5.51e-40	183	100	1280	Staphylococcus aureus strain MSHS_PS00018.1A chromosome, complete genome
+contig_04	CP166528.1	97.170	106	3	0	3892	3997	557444	557549	7.13e-39	180	100	1280	Staphylococcus aureus strain MSHS_PS00018.1A chromosome, complete genome
+contig_04	CP166528.1	96.190	105	4	0	3892	3996	365076	365180	1.19e-36	172	100	1280	Staphylococcus aureus strain MSHS_PS00018.1A chromosome, complete genome
+contig_04	CP166528.1	97.030	101	3	0	3786	3886	1385512	1385612	4.29e-36	171	100	1280	Staphylococcus aureus strain MSHS_PS00018.1A chromosome, complete genome
+contig_04	CP166528.1	94.545	110	5	1	3771	3879	364907	365016	1.54e-35	169	100	1280	Staphylococcus aureus strain MSHS_PS00018.1A chromosome, complete genome
+contig_04	CP166528.1	95.238	105	5	0	3892	3996	1711839	1711943	5.55e-35	167	100	1280	Staphylococcus aureus strain MSHS_PS00018.1A chromosome, complete genome
+contig_04	CP166528.1	84.571	175	14	3	3778	3951	557284	557446	2.58e-33	161	100	1280	Staphylococcus aureus strain MSHS_PS00018.1A chromosome, complete genome
+contig_04	CP166528.1	94.949	99	5	0	3781	3879	81752	81654	1.20e-31	156	100	1280	Staphylococcus aureus strain MSHS_PS00018.1A chromosome, complete genome
+contig_04	CP166528.1	94.118	102	6	0	3778	3879	2750451	2750552	1.20e-31	156	100	1280	Staphylococcus aureus strain MSHS_PS00018.1A chromosome, complete genome
+contig_04	CP166528.1	89.167	120	9	3	3888	4004	593448	593566	7.24e-29	147	100	1280	Staphylococcus aureus strain MSHS_PS00018.1A chromosome, complete genome
+contig_04	CP166528.1	87.395	119	14	1	3771	3889	2392522	2392405	1.57e-25	135	100	1280	Staphylococcus aureus strain MSHS_PS00018.1A chromosome, complete genome
+contig_04	CP166528.1	88.182	110	12	1	3888	3997	2571312	2571420	7.29e-24	130	100	1280	Staphylococcus aureus strain MSHS_PS00018.1A chromosome, complete genome
+contig_04	CP166528.1	88.182	110	10	2	3771	3877	2225909	2226018	2.62e-23	128	100	1280	Staphylococcus aureus strain MSHS_PS00018.1A chromosome, complete genome
+contig_04	CP166528.1	86.667	105	13	1	3892	3996	2235544	2235647	2.04e-19	115	100	1280	Staphylococcus aureus strain MSHS_PS00018.1A chromosome, complete genome
+contig_04	CP166528.1	100.000	58	0	0	3892	3949	2235485	2235542	3.41e-17	108	100	1280	Staphylococcus aureus strain MSHS_PS00018.1A chromosome, complete genome
+contig_04	CP166528.1	94.203	69	2	2	3936	4003	81550	81483	4.42e-16	104	100	1280	Staphylococcus aureus strain MSHS_PS00018.1A chromosome, complete genome
+contig_04	CP166528.1	96.721	61	2	0	3936	3996	508454	508394	1.59e-15	102	100	1280	Staphylococcus aureus strain MSHS_PS00018.1A chromosome, complete genome
+contig_04	CP166528.1	96.721	61	2	0	3936	3996	1422080	1422140	1.59e-15	102	100	1280	Staphylococcus aureus strain MSHS_PS00018.1A chromosome, complete genome
+contig_04	CP166528.1	78.212	179	23	6	3776	3951	290710	290545	5.71e-15	100	100	1280	Staphylococcus aureus strain MSHS_PS00018.1A chromosome, complete genome
+contig_04	CP166528.1	93.939	66	4	0	3888	3953	294463	294398	5.71e-15	100	100	1280	Staphylococcus aureus strain MSHS_PS00018.1A chromosome, complete genome
+contig_04	CP166528.1	98.246	57	1	0	3889	3945	647304	647248	5.71e-15	100	100	1280	Staphylococcus aureus strain MSHS_PS00018.1A chromosome, complete genome
+contig_04	CP166528.1	96.552	58	2	0	3888	3945	290495	290438	7.39e-14	97.1	100	1280	Staphylococcus aureus strain MSHS_PS00018.1A chromosome, complete genome
+contig_04	CP166528.1	93.750	64	4	0	3888	3951	647249	647186	7.39e-14	97.1	100	1280	Staphylococcus aureus strain MSHS_PS00018.1A chromosome, complete genome
+contig_04	CP166528.1	98.148	54	1	0	3944	3997	390921	390974	2.66e-13	95.3	100	1280	Staphylococcus aureus strain MSHS_PS00018.1A chromosome, complete genome
+contig_04	CP166528.1	98.148	54	1	0	3892	3945	600604	600657	2.66e-13	95.3	100	1280	Staphylococcus aureus strain MSHS_PS00018.1A chromosome, complete genome
+contig_04	CP166528.1	93.443	61	4	0	3891	3951	2121937	2121997	3.44e-12	91.6	100	1280	Staphylococcus aureus strain MSHS_PS00018.1A chromosome, complete genome
+contig_04	CP166522.1	100.000	12000	0	0	1	12000	608152	620151	0.0	22160	100	1280	Staphylococcus aureus strain MSHS_PS00012.3A chromosome, complete genome
+contig_04	CP166522.1	97.273	220	6	0	3777	3996	728008	727789	3.05e-97	374	100	1280	Staphylococcus aureus strain MSHS_PS00012.3A chromosome, complete genome
+contig_04	CP166522.1	91.515	165	3	1	3785	3949	1898259	1898106	5.44e-50	217	100	1280	Staphylococcus aureus strain MSHS_PS00012.3A chromosome, complete genome
+contig_04	CP166522.1	99.153	118	0	1	3772	3889	985191	985075	2.53e-48	211	100	1280	Staphylococcus aureus strain MSHS_PS00012.3A chromosome, complete genome
+contig_04	CP166522.1	97.248	109	3	0	3888	3996	114780	114888	1.53e-40	185	100	1280	Staphylococcus aureus strain MSHS_PS00012.3A chromosome, complete genome
+contig_04	CP166522.1	96.460	113	2	2	3892	4003	1293652	1293763	1.53e-40	185	100	1280	Staphylococcus aureus strain MSHS_PS00012.3A chromosome, complete genome
+contig_04	CP166522.1	96.429	112	3	1	3892	4003	1382873	1382763	5.51e-40	183	100	1280	Staphylococcus aureus strain MSHS_PS00012.3A chromosome, complete genome
+contig_04	CP166522.1	97.170	106	3	0	3892	3997	818565	818460	7.13e-39	180	100	1280	Staphylococcus aureus strain MSHS_PS00012.3A chromosome, complete genome
+contig_04	CP166522.1	96.190	105	4	0	3892	3996	1010983	1010879	1.19e-36	172	100	1280	Staphylococcus aureus strain MSHS_PS00012.3A chromosome, complete genome
+contig_04	CP166522.1	96.154	104	4	0	3786	3889	2735655	2735552	4.29e-36	171	100	1280	Staphylococcus aureus strain MSHS_PS00012.3A chromosome, complete genome
+contig_04	CP166522.1	94.545	110	5	1	3771	3879	1011152	1011043	1.54e-35	169	100	1280	Staphylococcus aureus strain MSHS_PS00012.3A chromosome, complete genome
+contig_04	CP166522.1	95.238	105	5	0	3892	3996	2423579	2423475	5.55e-35	167	100	1280	Staphylococcus aureus strain MSHS_PS00012.3A chromosome, complete genome
+contig_04	CP166522.1	84.884	172	13	3	3781	3951	818722	818563	2.58e-33	161	100	1280	Staphylococcus aureus strain MSHS_PS00012.3A chromosome, complete genome
+contig_04	CP166522.1	94.118	102	6	0	3778	3879	1293433	1293534	1.20e-31	156	100	1280	Staphylococcus aureus strain MSHS_PS00012.3A chromosome, complete genome
+contig_04	CP166522.1	94.949	99	5	0	3781	3879	1383089	1382991	1.20e-31	156	100	1280	Staphylococcus aureus strain MSHS_PS00012.3A chromosome, complete genome
+contig_04	CP166522.1	80.090	221	30	4	3785	4004	782796	782589	1.56e-30	152	100	1280	Staphylococcus aureus strain MSHS_PS00012.3A chromosome, complete genome
+contig_04	CP166522.1	87.395	119	14	1	3771	3889	1740317	1740434	1.57e-25	135	100	1280	Staphylococcus aureus strain MSHS_PS00012.3A chromosome, complete genome
+contig_04	CP166522.1	88.785	107	11	1	3891	3997	1561472	1561367	7.29e-24	130	100	1280	Staphylococcus aureus strain MSHS_PS00012.3A chromosome, complete genome
+contig_04	CP166522.1	88.182	110	10	2	3771	3877	1907622	1907513	2.62e-23	128	100	1280	Staphylococcus aureus strain MSHS_PS00012.3A chromosome, complete genome
+contig_04	CP166522.1	86.667	105	13	1	3892	3996	1898104	1898001	2.04e-19	115	100	1280	Staphylococcus aureus strain MSHS_PS00012.3A chromosome, complete genome
+contig_04	CP166522.1	96.721	61	2	0	3936	3996	867543	867603	1.59e-15	102	100	1280	Staphylococcus aureus strain MSHS_PS00012.3A chromosome, complete genome
+contig_04	CP166522.1	96.721	61	2	0	3936	3996	2698538	2698478	1.59e-15	102	100	1280	Staphylococcus aureus strain MSHS_PS00012.3A chromosome, complete genome
+contig_04	CP166522.1	95.238	63	3	0	3883	3945	728788	728850	5.71e-15	100	100	1280	Staphylococcus aureus strain MSHS_PS00012.3A chromosome, complete genome
+contig_04	CP166522.1	78.022	182	24	6	3773	3951	1085234	1085402	5.71e-15	100	100	1280	Staphylococcus aureus strain MSHS_PS00012.3A chromosome, complete genome
+contig_04	CP166522.1	93.750	64	4	0	3888	3951	728849	728912	7.39e-14	97.1	100	1280	Staphylococcus aureus strain MSHS_PS00012.3A chromosome, complete genome
+contig_04	CP166522.1	96.552	58	2	0	3888	3945	1085452	1085509	7.39e-14	97.1	100	1280	Staphylococcus aureus strain MSHS_PS00012.3A chromosome, complete genome
+contig_04	CP166522.1	98.148	54	1	0	3892	3945	775494	775441	2.66e-13	95.3	100	1280	Staphylococcus aureus strain MSHS_PS00012.3A chromosome, complete genome
+contig_04	CP166522.1	98.148	54	1	0	3944	3997	985076	985023	2.66e-13	95.3	100	1280	Staphylococcus aureus strain MSHS_PS00012.3A chromosome, complete genome
+contig_04	CP166522.1	93.443	61	4	0	3891	3951	2013582	2013522	3.44e-12	91.6	100	1280	Staphylococcus aureus strain MSHS_PS00012.3A chromosome, complete genome
+contig_04	CP162478.1	100.000	12000	0	0	1	12000	2705117	2693118	0.0	22160	100	1280	Staphylococcus aureus strain TUM20816 chromosome, complete genome
+contig_04	CP162478.1	97.273	220	6	0	3777	3996	2573888	2574107	3.05e-97	374	100	1280	Staphylococcus aureus strain TUM20816 chromosome, complete genome
+contig_04	CP162478.1	89.831	177	7	1	3773	3949	1375743	1375908	5.44e-50	217	100	1280	Staphylococcus aureus strain TUM20816 chromosome, complete genome
+contig_04	CP162478.1	99.153	118	0	1	3772	3889	2298067	2298183	2.53e-48	211	100	1280	Staphylococcus aureus strain TUM20816 chromosome, complete genome
+contig_04	CP162478.1	83.258	221	24	6	3785	4004	2519437	2519645	3.30e-42	191	100	1280	Staphylococcus aureus strain TUM20816 chromosome, complete genome
+contig_04	CP162478.1	97.248	109	3	0	3888	3996	365478	365370	1.53e-40	185	100	1280	Staphylococcus aureus strain TUM20816 chromosome, complete genome
+contig_04	CP162478.1	96.460	113	2	2	3892	4003	1984574	1984463	1.53e-40	185	100	1280	Staphylococcus aureus strain TUM20816 chromosome, complete genome
+contig_04	CP162478.1	96.429	112	3	1	3892	4003	1896103	1896213	5.51e-40	183	100	1280	Staphylococcus aureus strain TUM20816 chromosome, complete genome
+contig_04	CP162478.1	97.170	106	3	0	3892	3997	2465930	2466035	7.13e-39	180	100	1280	Staphylococcus aureus strain TUM20816 chromosome, complete genome
+contig_04	CP162478.1	96.190	105	4	0	3892	3996	2272337	2272441	1.19e-36	172	100	1280	Staphylococcus aureus strain TUM20816 chromosome, complete genome
+contig_04	CP162478.1	97.030	101	3	0	3786	3886	515936	516036	4.29e-36	171	100	1280	Staphylococcus aureus strain TUM20816 chromosome, complete genome
+contig_04	CP162478.1	95.238	105	5	0	3892	3996	829554	829658	5.55e-35	167	100	1280	Staphylococcus aureus strain TUM20816 chromosome, complete genome
+contig_04	CP162478.1	84.571	175	14	3	3778	3951	2465770	2465932	2.58e-33	161	100	1280	Staphylococcus aureus strain TUM20816 chromosome, complete genome
+contig_04	CP162478.1	94.118	102	6	0	3778	3879	1895884	1895985	1.20e-31	156	100	1280	Staphylococcus aureus strain TUM20816 chromosome, complete genome
+contig_04	CP162478.1	94.949	99	5	0	3781	3879	1984790	1984692	1.20e-31	156	100	1280	Staphylococcus aureus strain TUM20816 chromosome, complete genome
+contig_04	CP162478.1	87.395	119	14	1	3771	3889	1531946	1531829	1.57e-25	135	100	1280	Staphylococcus aureus strain TUM20816 chromosome, complete genome
+contig_04	CP162478.1	88.182	110	12	1	3888	3997	1712217	1712325	7.29e-24	130	100	1280	Staphylococcus aureus strain TUM20816 chromosome, complete genome
+contig_04	CP162478.1	88.182	110	10	2	3771	3877	1366392	1366501	2.62e-23	128	100	1280	Staphylococcus aureus strain TUM20816 chromosome, complete genome
+contig_04	CP162478.1	86.667	105	13	1	3892	3996	1375910	1376013	2.04e-19	115	100	1280	Staphylococcus aureus strain TUM20816 chromosome, complete genome
+contig_04	CP162478.1	96.721	61	2	0	3936	3996	552391	552451	1.59e-15	102	100	1280	Staphylococcus aureus strain TUM20816 chromosome, complete genome
+contig_04	CP162478.1	96.721	61	2	0	3936	3996	2417054	2416994	1.59e-15	102	100	1280	Staphylococcus aureus strain TUM20816 chromosome, complete genome
+contig_04	CP162478.1	78.212	179	23	6	3776	3951	2196865	2196700	5.71e-15	100	100	1280	Staphylococcus aureus strain TUM20816 chromosome, complete genome
+contig_04	CP162478.1	98.246	57	1	0	3889	3945	2573102	2573046	5.71e-15	100	100	1280	Staphylococcus aureus strain TUM20816 chromosome, complete genome
+contig_04	CP162478.1	98.148	54	1	0	3944	3997	2298182	2298235	2.66e-13	95.3	100	1280	Staphylococcus aureus strain TUM20816 chromosome, complete genome
+contig_04	CP162478.1	98.148	54	1	0	3892	3945	2526682	2526735	2.66e-13	95.3	100	1280	Staphylococcus aureus strain TUM20816 chromosome, complete genome
+contig_04	CP162478.1	93.443	61	4	0	3891	3951	1245177	1245237	3.44e-12	91.6	100	1280	Staphylococcus aureus strain TUM20816 chromosome, complete genome
+contig_04	OZ456199.1	100.000	12000	0	0	1	12000	155213	167212	0.0	22160	100	1280	Staphylococcus aureus isolate STAU382 genome assembly, chromosome: 1
+contig_04	OZ456199.1	97.273	220	6	0	3777	3996	275143	274924	3.05e-97	374	100	1280	Staphylococcus aureus isolate STAU382 genome assembly, chromosome: 1
+contig_04	OZ456199.1	91.515	165	3	1	3785	3949	1468901	1468748	5.44e-50	217	100	1280	Staphylococcus aureus isolate STAU382 genome assembly, chromosome: 1
+contig_04	OZ456199.1	99.153	118	0	1	3772	3889	532154	532038	2.53e-48	211	100	1280	Staphylococcus aureus isolate STAU382 genome assembly, chromosome: 1
+contig_04	OZ456199.1	83.258	221	24	6	3785	4004	329704	329496	3.30e-42	191	100	1280	Staphylococcus aureus isolate STAU382 genome assembly, chromosome: 1
+contig_04	OZ456199.1	96.460	113	2	2	3892	4003	840521	840632	1.53e-40	185	100	1280	Staphylococcus aureus isolate STAU382 genome assembly, chromosome: 1
+contig_04	OZ456199.1	97.248	109	3	0	3888	3996	2433984	2434092	1.53e-40	185	100	1280	Staphylococcus aureus isolate STAU382 genome assembly, chromosome: 1
+contig_04	OZ456199.1	96.429	112	3	1	3892	4003	928992	928882	5.51e-40	183	100	1280	Staphylococcus aureus isolate STAU382 genome assembly, chromosome: 1
+contig_04	OZ456199.1	98.095	105	2	0	3892	3996	1468746	1468642	5.51e-40	183	100	1280	Staphylococcus aureus isolate STAU382 genome assembly, chromosome: 1
+contig_04	OZ456199.1	97.170	106	3	0	3892	3997	365503	365398	7.13e-39	180	100	1280	Staphylococcus aureus isolate STAU382 genome assembly, chromosome: 1
+contig_04	OZ456199.1	96.190	105	4	0	3892	3996	557947	557843	1.19e-36	172	100	1280	Staphylococcus aureus isolate STAU382 genome assembly, chromosome: 1
+contig_04	OZ456199.1	96.154	104	4	0	3786	3889	2312609	2312506	4.29e-36	171	100	1280	Staphylococcus aureus isolate STAU382 genome assembly, chromosome: 1
+contig_04	OZ456199.1	94.545	110	5	1	3771	3879	558116	558007	1.54e-35	169	100	1280	Staphylococcus aureus isolate STAU382 genome assembly, chromosome: 1
+contig_04	OZ456199.1	95.238	105	5	0	3892	3996	2001717	2001613	5.55e-35	167	100	1280	Staphylococcus aureus isolate STAU382 genome assembly, chromosome: 1
+contig_04	OZ456199.1	84.884	172	13	3	3781	3951	365660	365501	2.58e-33	161	100	1280	Staphylococcus aureus isolate STAU382 genome assembly, chromosome: 1
+contig_04	OZ456199.1	94.118	102	6	0	3778	3879	840302	840403	1.20e-31	156	100	1280	Staphylococcus aureus isolate STAU382 genome assembly, chromosome: 1
+contig_04	OZ456199.1	94.949	99	5	0	3781	3879	929208	929110	1.20e-31	156	100	1280	Staphylococcus aureus isolate STAU382 genome assembly, chromosome: 1
+contig_04	OZ456199.1	88.785	107	11	1	3891	3997	1108505	1108400	7.29e-24	130	100	1280	Staphylococcus aureus isolate STAU382 genome assembly, chromosome: 1
+contig_04	OZ456199.1	86.555	119	15	1	3771	3889	1287347	1287464	7.29e-24	130	100	1280	Staphylococcus aureus isolate STAU382 genome assembly, chromosome: 1
+contig_04	OZ456199.1	88.182	110	10	2	3771	3877	1478264	1478155	2.62e-23	128	100	1280	Staphylococcus aureus isolate STAU382 genome assembly, chromosome: 1
+contig_04	OZ456199.1	96.721	61	2	0	3936	3996	414493	414553	1.59e-15	102	100	1280	Staphylococcus aureus isolate STAU382 genome assembly, chromosome: 1
+contig_04	OZ456199.1	96.721	61	2	0	3936	3996	2276039	2275979	1.59e-15	102	100	1280	Staphylococcus aureus isolate STAU382 genome assembly, chromosome: 1
+contig_04	OZ456199.1	95.238	63	3	0	3883	3945	275923	275985	5.71e-15	100	100	1280	Staphylococcus aureus isolate STAU382 genome assembly, chromosome: 1
+contig_04	OZ456199.1	93.939	66	4	0	3888	3953	628447	628512	5.71e-15	100	100	1280	Staphylococcus aureus isolate STAU382 genome assembly, chromosome: 1
+contig_04	OZ456199.1	78.022	182	24	6	3773	3951	632197	632365	5.71e-15	100	100	1280	Staphylococcus aureus isolate STAU382 genome assembly, chromosome: 1
+contig_04	OZ456199.1	98.148	54	1	0	3892	3945	322459	322406	2.66e-13	95.3	100	1280	Staphylococcus aureus isolate STAU382 genome assembly, chromosome: 1
+contig_04	OZ456199.1	98.148	54	1	0	3944	3997	532039	531986	2.66e-13	95.3	100	1280	Staphylococcus aureus isolate STAU382 genome assembly, chromosome: 1
+contig_04	OZ456199.1	93.443	61	4	0	3891	3951	1591485	1591425	3.44e-12	91.6	100	1280	Staphylococcus aureus isolate STAU382 genome assembly, chromosome: 1
+contig_04	CP186898.1	100.000	12000	0	0	1	12000	112228	124227	0.0	22160	100	1280	Staphylococcus aureus strain A_SAU75 chromosome
+contig_04	CP186898.1	96.818	220	7	0	3777	3996	232165	231946	1.42e-95	368	100	1280	Staphylococcus aureus strain A_SAU75 chromosome
+contig_04	CP186898.1	91.515	165	3	1	3785	3949	1417867	1417714	5.44e-50	217	100	1280	Staphylococcus aureus strain A_SAU75 chromosome
+contig_04	CP186898.1	99.153	118	0	1	3772	3889	502793	502677	2.53e-48	211	100	1280	Staphylococcus aureus strain A_SAU75 chromosome
+contig_04	CP186898.1	96.460	113	2	2	3892	4003	811248	811359	1.53e-40	185	100	1280	Staphylococcus aureus strain A_SAU75 chromosome
+contig_04	CP186898.1	97.248	109	3	0	3888	3996	2360933	2361041	1.53e-40	185	100	1280	Staphylococcus aureus strain A_SAU75 chromosome
+contig_04	CP186898.1	96.429	112	3	1	3892	4003	901947	901837	5.51e-40	183	100	1280	Staphylococcus aureus strain A_SAU75 chromosome
+contig_04	CP186898.1	97.170	106	3	0	3892	3997	322810	322705	7.13e-39	180	100	1280	Staphylococcus aureus strain A_SAU75 chromosome
+contig_04	CP186898.1	96.190	105	4	0	3892	3996	528586	528482	1.19e-36	172	100	1280	Staphylococcus aureus strain A_SAU75 chromosome
+contig_04	CP186898.1	96.154	104	4	0	3786	3889	2209641	2209538	4.29e-36	171	100	1280	Staphylococcus aureus strain A_SAU75 chromosome
+contig_04	CP186898.1	94.545	110	5	1	3771	3879	528755	528646	1.54e-35	169	100	1280	Staphylococcus aureus strain A_SAU75 chromosome
+contig_04	CP186898.1	95.238	105	5	0	3892	3996	1898722	1898618	5.55e-35	167	100	1280	Staphylococcus aureus strain A_SAU75 chromosome
+contig_04	CP186898.1	92.174	115	7	2	3891	4004	286801	286688	2.58e-33	161	100	1280	Staphylococcus aureus strain A_SAU75 chromosome
+contig_04	CP186898.1	84.884	172	13	3	3781	3951	323025	322866	2.58e-33	161	100	1280	Staphylococcus aureus strain A_SAU75 chromosome
+contig_04	CP186898.1	94.118	102	6	0	3778	3879	811029	811130	1.20e-31	156	100	1280	Staphylococcus aureus strain A_SAU75 chromosome
+contig_04	CP186898.1	94.949	99	5	0	3781	3879	902163	902065	1.20e-31	156	100	1280	Staphylococcus aureus strain A_SAU75 chromosome
+contig_04	CP186898.1	87.395	119	14	1	3771	3889	1260044	1260161	1.57e-25	135	100	1280	Staphylococcus aureus strain A_SAU75 chromosome
+contig_04	CP186898.1	88.785	107	11	1	3891	3997	1080509	1080404	7.29e-24	130	100	1280	Staphylococcus aureus strain A_SAU75 chromosome
+contig_04	CP186898.1	88.182	110	10	2	3771	3877	1427288	1427179	2.62e-23	128	100	1280	Staphylococcus aureus strain A_SAU75 chromosome
+contig_04	CP186898.1	86.667	105	13	1	3892	3996	1417712	1417609	2.04e-19	115	100	1280	Staphylococcus aureus strain A_SAU75 chromosome
+contig_04	CP186898.1	96.721	61	2	0	3936	3996	371790	371850	1.59e-15	102	100	1280	Staphylococcus aureus strain A_SAU75 chromosome
+contig_04	CP186898.1	96.721	61	2	0	3936	3996	2173073	2173013	1.59e-15	102	100	1280	Staphylococcus aureus strain A_SAU75 chromosome
+contig_04	CP186898.1	96.721	61	1	1	3892	3951	322868	322808	5.71e-15	100	100	1280	Staphylococcus aureus strain A_SAU75 chromosome
+contig_04	CP186898.1	93.939	66	4	0	3888	3953	599087	599152	5.71e-15	100	100	1280	Staphylococcus aureus strain A_SAU75 chromosome
+contig_04	CP186898.1	78.022	182	24	6	3773	3951	602837	603005	5.71e-15	100	100	1280	Staphylococcus aureus strain A_SAU75 chromosome
+contig_04	CP186898.1	96.552	58	2	0	3888	3945	603055	603112	7.39e-14	97.1	100	1280	Staphylococcus aureus strain A_SAU75 chromosome
+contig_04	CP186898.1	91.304	69	6	0	3883	3951	232945	233013	2.66e-13	95.3	100	1280	Staphylococcus aureus strain A_SAU75 chromosome
+contig_04	CP186898.1	98.148	54	1	0	3892	3945	279536	279483	2.66e-13	95.3	100	1280	Staphylococcus aureus strain A_SAU75 chromosome
+contig_04	CP186898.1	98.148	54	1	0	3944	3997	502678	502625	2.66e-13	95.3	100	1280	Staphylococcus aureus strain A_SAU75 chromosome
+contig_04	CP186898.1	93.443	61	4	0	3891	3951	1488645	1488585	3.44e-12	91.6	100	1280	Staphylococcus aureus strain A_SAU75 chromosome
+contig_04	CP162467.1	100.000	12000	0	0	1	12000	1798035	1810034	0.0	22160	100	1280	Staphylococcus aureus strain TUM20823 chromosome, complete genome
+contig_04	CP162467.1	97.273	220	6	0	3777	3996	1918899	1918680	3.05e-97	374	100	1280	Staphylococcus aureus strain TUM20823 chromosome, complete genome
+contig_04	CP162467.1	86.784	227	16	4	3778	4003	2490261	2490474	3.23e-57	241	100	1280	Staphylococcus aureus strain TUM20823 chromosome, complete genome
+contig_04	CP162467.1	91.515	165	3	1	3785	3949	277781	277628	5.44e-50	217	100	1280	Staphylococcus aureus strain TUM20823 chromosome, complete genome
+contig_04	CP162467.1	99.153	118	0	1	3772	3889	2182109	2181993	2.53e-48	211	100	1280	Staphylococcus aureus strain TUM20823 chromosome, complete genome
+contig_04	CP162467.1	83.258	221	24	6	3785	4004	1973405	1973197	3.30e-42	191	100	1280	Staphylococcus aureus strain TUM20823 chromosome, complete genome
+contig_04	CP162467.1	97.248	109	3	0	3888	3996	1284764	1284872	1.53e-40	185	100	1280	Staphylococcus aureus strain TUM20823 chromosome, complete genome
+contig_04	CP162467.1	96.429	112	3	1	3892	4003	2581065	2580955	5.51e-40	183	100	1280	Staphylococcus aureus strain TUM20823 chromosome, complete genome
+contig_04	CP162467.1	97.170	106	3	0	3892	3997	2015630	2015525	7.13e-39	180	100	1280	Staphylococcus aureus strain TUM20823 chromosome, complete genome
+contig_04	CP162467.1	96.190	105	4	0	3892	3996	2207902	2207798	1.19e-36	172	100	1280	Staphylococcus aureus strain TUM20823 chromosome, complete genome
+contig_04	CP162467.1	96.154	104	4	0	3786	3889	1141040	1140937	4.29e-36	171	100	1280	Staphylococcus aureus strain TUM20823 chromosome, complete genome
+contig_04	CP162467.1	94.545	110	5	1	3771	3879	2208071	2207962	1.54e-35	169	100	1280	Staphylococcus aureus strain TUM20823 chromosome, complete genome
+contig_04	CP162467.1	95.238	105	5	0	3892	3996	824858	824754	5.55e-35	167	100	1280	Staphylococcus aureus strain TUM20823 chromosome, complete genome
+contig_04	CP162467.1	84.884	172	13	3	3781	3951	2015787	2015628	2.58e-33	161	100	1280	Staphylococcus aureus strain TUM20823 chromosome, complete genome
+contig_04	CP162467.1	94.949	99	5	0	3781	3879	2581281	2581183	1.20e-31	156	100	1280	Staphylococcus aureus strain TUM20823 chromosome, complete genome
+contig_04	CP162467.1	87.395	119	14	1	3771	3889	120438	120555	1.57e-25	135	100	1280	Staphylococcus aureus strain TUM20823 chromosome, complete genome
+contig_04	CP162467.1	88.785	107	11	1	3891	3997	2760562	2760457	7.29e-24	130	100	1280	Staphylococcus aureus strain TUM20823 chromosome, complete genome
+contig_04	CP162467.1	88.182	110	10	2	3771	3877	287144	287035	2.62e-23	128	100	1280	Staphylococcus aureus strain TUM20823 chromosome, complete genome
+contig_04	CP162467.1	86.667	105	13	1	3892	3996	277626	277523	2.04e-19	115	100	1280	Staphylococcus aureus strain TUM20823 chromosome, complete genome
+contig_04	CP162467.1	96.721	61	2	0	3936	3996	1104532	1104472	1.59e-15	102	100	1280	Staphylococcus aureus strain TUM20823 chromosome, complete genome
+contig_04	CP162467.1	96.721	61	2	0	3936	3996	2064449	2064509	1.59e-15	102	100	1280	Staphylococcus aureus strain TUM20823 chromosome, complete genome
+contig_04	CP162467.1	95.238	63	3	0	3883	3945	1919679	1919741	5.71e-15	100	100	1280	Staphylococcus aureus strain TUM20823 chromosome, complete genome
+contig_04	CP162467.1	93.939	66	4	0	3888	3953	2278402	2278467	5.71e-15	100	100	1280	Staphylococcus aureus strain TUM20823 chromosome, complete genome
+contig_04	CP162467.1	78.022	182	24	6	3773	3951	2282152	2282320	5.71e-15	100	100	1280	Staphylococcus aureus strain TUM20823 chromosome, complete genome
+contig_04	CP162467.1	98.148	54	1	0	3892	3945	1966160	1966107	2.66e-13	95.3	100	1280	Staphylococcus aureus strain TUM20823 chromosome, complete genome
+contig_04	CP162467.1	98.148	54	1	0	3944	3997	2181994	2181941	2.66e-13	95.3	100	1280	Staphylococcus aureus strain TUM20823 chromosome, complete genome
+contig_04	CP162467.1	93.443	61	4	0	3891	3951	414566	414506	3.44e-12	91.6	100	1280	Staphylococcus aureus strain TUM20823 chromosome, complete genome
+contig_04	CP180986.1	100.000	12000	0	0	1	12000	1765988	1753989	0.0	22160	100	1280	Staphylococcus aureus strain AMM20230329barcode02 chromosome, complete genome
+contig_04	CP180986.1	97.273	220	6	0	3777	3996	1643396	1643615	3.05e-97	374	100	1280	Staphylococcus aureus strain AMM20230329barcode02 chromosome, complete genome
+contig_04	CP180986.1	89.831	177	7	1	3773	3949	333669	333834	5.44e-50	217	100	1280	Staphylococcus aureus strain AMM20230329barcode02 chromosome, complete genome
+contig_04	CP180986.1	99.153	118	0	1	3772	3889	1345043	1345159	2.53e-48	211	100	1280	Staphylococcus aureus strain AMM20230329barcode02 chromosome, complete genome
+contig_04	CP180986.1	96.460	113	2	2	3892	4003	998942	998831	1.53e-40	185	100	1280	Staphylococcus aureus strain AMM20230329barcode02 chromosome, complete genome
+contig_04	CP180986.1	97.248	109	3	0	3888	3996	2535722	2535830	1.53e-40	185	100	1280	Staphylococcus aureus strain AMM20230329barcode02 chromosome, complete genome
+contig_04	CP180986.1	96.429	112	3	1	3892	4003	909726	909836	5.51e-40	183	100	1280	Staphylococcus aureus strain AMM20230329barcode02 chromosome, complete genome
+contig_04	CP180986.1	96.226	106	4	0	3892	3997	1531547	1531652	3.32e-37	174	100	1280	Staphylococcus aureus strain AMM20230329barcode02 chromosome, complete genome
+contig_04	CP180986.1	96.190	105	4	0	3892	3996	1319250	1319354	1.19e-36	172	100	1280	Staphylococcus aureus strain AMM20230329barcode02 chromosome, complete genome
+contig_04	CP180986.1	96.154	104	4	0	3786	3889	2379748	2379645	4.29e-36	171	100	1280	Staphylococcus aureus strain AMM20230329barcode02 chromosome, complete genome
+contig_04	CP180986.1	94.545	110	5	1	3771	3879	1319081	1319190	1.54e-35	169	100	1280	Staphylococcus aureus strain AMM20230329barcode02 chromosome, complete genome
+contig_04	CP180986.1	92.373	118	7	2	3888	4004	1584734	1584850	5.55e-35	167	100	1280	Staphylococcus aureus strain AMM20230329barcode02 chromosome, complete genome
+contig_04	CP180986.1	95.238	105	5	0	3892	3996	2070442	2070338	5.55e-35	167	100	1280	Staphylococcus aureus strain AMM20230329barcode02 chromosome, complete genome
+contig_04	CP180986.1	84.571	175	14	3	3778	3951	1531387	1531549	2.58e-33	161	100	1280	Staphylococcus aureus strain AMM20230329barcode02 chromosome, complete genome
+contig_04	CP180986.1	94.118	102	6	0	3778	3879	909507	909608	1.20e-31	156	100	1280	Staphylococcus aureus strain AMM20230329barcode02 chromosome, complete genome
+contig_04	CP180986.1	94.949	99	5	0	3781	3879	999158	999060	1.20e-31	156	100	1280	Staphylococcus aureus strain AMM20230329barcode02 chromosome, complete genome
+contig_04	CP180986.1	87.395	119	14	1	3771	3889	501717	501600	1.57e-25	135	100	1280	Staphylococcus aureus strain AMM20230329barcode02 chromosome, complete genome
+contig_04	CP180986.1	88.182	110	10	2	3771	3877	324259	324368	2.62e-23	128	100	1280	Staphylococcus aureus strain AMM20230329barcode02 chromosome, complete genome
+contig_04	CP180986.1	86.667	105	13	1	3892	3996	333836	333939	2.04e-19	115	100	1280	Staphylococcus aureus strain AMM20230329barcode02 chromosome, complete genome
+contig_04	CP180986.1	96.774	62	2	0	3936	3997	680547	680608	4.42e-16	104	100	1280	Staphylococcus aureus strain AMM20230329barcode02 chromosome, complete genome
+contig_04	CP180986.1	96.721	61	2	0	3936	3996	1466687	1466627	1.59e-15	102	100	1280	Staphylococcus aureus strain AMM20230329barcode02 chromosome, complete genome
+contig_04	CP180986.1	96.721	61	2	0	3936	3996	2343237	2343177	1.59e-15	102	100	1280	Staphylococcus aureus strain AMM20230329barcode02 chromosome, complete genome
+contig_04	CP180986.1	78.212	179	23	6	3776	3951	1199186	1199021	5.71e-15	100	100	1280	Staphylococcus aureus strain AMM20230329barcode02 chromosome, complete genome
+contig_04	CP180986.1	93.939	66	4	0	3888	3953	1202939	1202874	5.71e-15	100	100	1280	Staphylococcus aureus strain AMM20230329barcode02 chromosome, complete genome
+contig_04	CP180986.1	98.246	57	1	0	3889	3945	1642610	1642554	5.71e-15	100	100	1280	Staphylococcus aureus strain AMM20230329barcode02 chromosome, complete genome
+contig_04	CP180986.1	93.750	64	4	0	3888	3951	1642555	1642492	7.39e-14	97.1	100	1280	Staphylococcus aureus strain AMM20230329barcode02 chromosome, complete genome
+contig_04	CP180986.1	98.148	54	1	0	3944	3997	1345158	1345211	2.66e-13	95.3	100	1280	Staphylococcus aureus strain AMM20230329barcode02 chromosome, complete genome
+contig_04	CP180986.1	98.148	54	1	0	3892	3945	1593218	1593271	2.66e-13	95.3	100	1280	Staphylococcus aureus strain AMM20230329barcode02 chromosome, complete genome
+contig_04	CP180986.1	93.443	61	4	0	3891	3951	218588	218648	3.44e-12	91.6	100	1280	Staphylococcus aureus strain AMM20230329barcode02 chromosome, complete genome
+contig_04	CP166520.1	100.000	12000	0	0	1	12000	608153	620152	0.0	22160	100	1280	Staphylococcus aureus strain MSHS_PS00037.1A chromosome, complete genome
+contig_04	CP166520.1	97.273	220	6	0	3777	3996	728009	727790	3.05e-97	374	100	1280	Staphylococcus aureus strain MSHS_PS00037.1A chromosome, complete genome
+contig_04	CP166520.1	91.515	165	3	1	3785	3949	1898262	1898109	5.44e-50	217	100	1280	Staphylococcus aureus strain MSHS_PS00037.1A chromosome, complete genome
+contig_04	CP166520.1	99.153	118	0	1	3772	3889	985192	985076	2.53e-48	211	100	1280	Staphylococcus aureus strain MSHS_PS00037.1A chromosome, complete genome
+contig_04	CP166520.1	97.248	109	3	0	3888	3996	114780	114888	1.53e-40	185	100	1280	Staphylococcus aureus strain MSHS_PS00037.1A chromosome, complete genome
+contig_04	CP166520.1	96.460	113	2	2	3892	4003	1293653	1293764	1.53e-40	185	100	1280	Staphylococcus aureus strain MSHS_PS00037.1A chromosome, complete genome
+contig_04	CP166520.1	96.429	112	3	1	3892	4003	1382874	1382764	5.51e-40	183	100	1280	Staphylococcus aureus strain MSHS_PS00037.1A chromosome, complete genome
+contig_04	CP166520.1	97.170	106	3	0	3892	3997	818566	818461	7.13e-39	180	100	1280	Staphylococcus aureus strain MSHS_PS00037.1A chromosome, complete genome
+contig_04	CP166520.1	96.190	105	4	0	3892	3996	1010984	1010880	1.19e-36	172	100	1280	Staphylococcus aureus strain MSHS_PS00037.1A chromosome, complete genome
+contig_04	CP166520.1	96.154	104	4	0	3786	3889	2735111	2735008	4.29e-36	171	100	1280	Staphylococcus aureus strain MSHS_PS00037.1A chromosome, complete genome
+contig_04	CP166520.1	94.545	110	5	1	3771	3879	1011153	1011044	1.54e-35	169	100	1280	Staphylococcus aureus strain MSHS_PS00037.1A chromosome, complete genome
+contig_04	CP166520.1	95.238	105	5	0	3892	3996	2423584	2423480	5.55e-35	167	100	1280	Staphylococcus aureus strain MSHS_PS00037.1A chromosome, complete genome
+contig_04	CP166520.1	84.884	172	13	3	3781	3951	818723	818564	2.58e-33	161	100	1280	Staphylococcus aureus strain MSHS_PS00037.1A chromosome, complete genome
+contig_04	CP166520.1	94.118	102	6	0	3778	3879	1293434	1293535	1.20e-31	156	100	1280	Staphylococcus aureus strain MSHS_PS00037.1A chromosome, complete genome
+contig_04	CP166520.1	94.949	99	5	0	3781	3879	1383090	1382992	1.20e-31	156	100	1280	Staphylococcus aureus strain MSHS_PS00037.1A chromosome, complete genome
+contig_04	CP166520.1	80.090	221	30	4	3785	4004	782797	782590	1.56e-30	152	100	1280	Staphylococcus aureus strain MSHS_PS00037.1A chromosome, complete genome
+contig_04	CP166520.1	87.395	119	14	1	3771	3889	1740318	1740435	1.57e-25	135	100	1280	Staphylococcus aureus strain MSHS_PS00037.1A chromosome, complete genome
+contig_04	CP166520.1	88.785	107	11	1	3891	3997	1561473	1561368	7.29e-24	130	100	1280	Staphylococcus aureus strain MSHS_PS00037.1A chromosome, complete genome
+contig_04	CP166520.1	88.182	110	10	2	3771	3877	1907625	1907516	2.62e-23	128	100	1280	Staphylococcus aureus strain MSHS_PS00037.1A chromosome, complete genome
+contig_04	CP166520.1	86.667	105	13	1	3892	3996	1898107	1898004	2.04e-19	115	100	1280	Staphylococcus aureus strain MSHS_PS00037.1A chromosome, complete genome
+contig_04	CP166520.1	96.721	61	2	0	3936	3996	867544	867604	1.59e-15	102	100	1280	Staphylococcus aureus strain MSHS_PS00037.1A chromosome, complete genome
+contig_04	CP166520.1	96.721	61	2	0	3936	3996	2698543	2698483	1.59e-15	102	100	1280	Staphylococcus aureus strain MSHS_PS00037.1A chromosome, complete genome
+contig_04	CP166520.1	95.238	63	3	0	3883	3945	728789	728851	5.71e-15	100	100	1280	Staphylococcus aureus strain MSHS_PS00037.1A chromosome, complete genome
+contig_04	CP166520.1	78.022	182	24	6	3773	3951	1085235	1085403	5.71e-15	100	100	1280	Staphylococcus aureus strain MSHS_PS00037.1A chromosome, complete genome
+contig_04	CP166520.1	93.750	64	4	0	3888	3951	728850	728913	7.39e-14	97.1	100	1280	Staphylococcus aureus strain MSHS_PS00037.1A chromosome, complete genome
+contig_04	CP166520.1	96.552	58	2	0	3888	3945	1085453	1085510	7.39e-14	97.1	100	1280	Staphylococcus aureus strain MSHS_PS00037.1A chromosome, complete genome
+contig_04	CP166520.1	98.148	54	1	0	3892	3945	775495	775442	2.66e-13	95.3	100	1280	Staphylococcus aureus strain MSHS_PS00037.1A chromosome, complete genome
+contig_04	CP166520.1	98.148	54	1	0	3944	3997	985077	985024	2.66e-13	95.3	100	1280	Staphylococcus aureus strain MSHS_PS00037.1A chromosome, complete genome
+contig_04	CP166520.1	93.443	61	4	0	3891	3951	2013585	2013525	3.44e-12	91.6	100	1280	Staphylococcus aureus strain MSHS_PS00037.1A chromosome, complete genome
+contig_04	CP162453.1	100.000	12000	0	0	1	12000	1460781	1448782	0.0	22160	100	1280	Staphylococcus aureus strain TUM20929 chromosome, complete genome
+contig_04	CP162453.1	97.273	220	6	0	3777	3996	1340648	1340867	3.05e-97	374	100	1280	Staphylococcus aureus strain TUM20929 chromosome, complete genome
+contig_04	CP162453.1	89.831	177	7	1	3773	3949	158596	158761	5.44e-50	217	100	1280	Staphylococcus aureus strain TUM20929 chromosome, complete genome
+contig_04	CP162453.1	99.153	118	0	1	3772	3889	1068777	1068893	2.53e-48	211	100	1280	Staphylococcus aureus strain TUM20929 chromosome, complete genome
+contig_04	CP162453.1	83.258	221	24	6	3785	4004	1286197	1286405	3.30e-42	191	100	1280	Staphylococcus aureus strain TUM20929 chromosome, complete genome
+contig_04	CP162453.1	96.460	113	2	2	3892	4003	760500	760389	1.53e-40	185	100	1280	Staphylococcus aureus strain TUM20929 chromosome, complete genome
+contig_04	CP162453.1	97.248	109	3	0	3888	3996	1960461	1960353	1.53e-40	185	100	1280	Staphylococcus aureus strain TUM20929 chromosome, complete genome
+contig_04	CP162453.1	96.429	112	3	1	3892	4003	672029	672139	5.51e-40	183	100	1280	Staphylococcus aureus strain TUM20929 chromosome, complete genome
+contig_04	CP162453.1	97.170	106	3	0	3892	3997	1235316	1235421	7.13e-39	180	100	1280	Staphylococcus aureus strain TUM20929 chromosome, complete genome
+contig_04	CP162453.1	96.190	105	4	0	3892	3996	1043047	1043151	1.19e-36	172	100	1280	Staphylococcus aureus strain TUM20929 chromosome, complete genome
+contig_04	CP162453.1	97.030	101	3	0	3786	3886	2113395	2113495	4.29e-36	171	100	1280	Staphylococcus aureus strain TUM20929 chromosome, complete genome
+contig_04	CP162453.1	95.238	105	5	0	3892	3996	2437679	2437783	5.55e-35	167	100	1280	Staphylococcus aureus strain TUM20929 chromosome, complete genome
+contig_04	CP162453.1	84.571	175	14	3	3778	3951	1235156	1235318	2.58e-33	161	100	1280	Staphylococcus aureus strain TUM20929 chromosome, complete genome
+contig_04	CP162453.1	94.118	102	6	0	3778	3879	671810	671911	1.20e-31	156	100	1280	Staphylococcus aureus strain TUM20929 chromosome, complete genome
+contig_04	CP162453.1	94.949	99	5	0	3781	3879	760716	760618	1.20e-31	156	100	1280	Staphylococcus aureus strain TUM20929 chromosome, complete genome
+contig_04	CP162453.1	87.395	119	14	1	3771	3889	313520	313403	1.57e-25	135	100	1280	Staphylococcus aureus strain TUM20929 chromosome, complete genome
+contig_04	CP162453.1	88.182	110	12	1	3888	3997	492513	492621	7.29e-24	130	100	1280	Staphylococcus aureus strain TUM20929 chromosome, complete genome
+contig_04	CP162453.1	88.182	110	10	2	3771	3877	149245	149354	2.62e-23	128	100	1280	Staphylococcus aureus strain TUM20929 chromosome, complete genome
+contig_04	CP162453.1	86.667	105	13	1	3892	3996	158822	158925	2.04e-19	115	100	1280	Staphylococcus aureus strain TUM20929 chromosome, complete genome
+contig_04	CP162453.1	100.000	58	0	0	3892	3949	158763	158820	3.41e-17	108	100	1280	Staphylococcus aureus strain TUM20929 chromosome, complete genome
+contig_04	CP162453.1	96.721	61	2	0	3936	3996	1186440	1186380	1.59e-15	102	100	1280	Staphylococcus aureus strain TUM20929 chromosome, complete genome
+contig_04	CP162453.1	96.721	61	2	0	3936	3996	2149852	2149912	1.59e-15	102	100	1280	Staphylococcus aureus strain TUM20929 chromosome, complete genome
+contig_04	CP162453.1	78.212	179	23	6	3776	3951	968907	968742	5.71e-15	100	100	1280	Staphylococcus aureus strain TUM20929 chromosome, complete genome
+contig_04	CP162453.1	98.246	57	1	0	3889	3945	1339862	1339806	5.71e-15	100	100	1280	Staphylococcus aureus strain TUM20929 chromosome, complete genome
+contig_04	CP162453.1	96.552	58	2	0	3888	3945	968692	968635	7.39e-14	97.1	100	1280	Staphylococcus aureus strain TUM20929 chromosome, complete genome
+contig_04	CP162453.1	98.148	54	1	0	3944	3997	1068892	1068945	2.66e-13	95.3	100	1280	Staphylococcus aureus strain TUM20929 chromosome, complete genome
+contig_04	CP162453.1	98.148	54	1	0	3892	3945	1293442	1293495	2.66e-13	95.3	100	1280	Staphylococcus aureus strain TUM20929 chromosome, complete genome
+contig_04	CP162453.1	93.443	61	4	0	3891	3951	36059	36119	3.44e-12	91.6	100	1280	Staphylococcus aureus strain TUM20929 chromosome, complete genome
+contig_04	OZ495701.1	100.000	12000	0	0	1	12000	618625	630624	0.0	22160	100	1280	Staphylococcus aureus isolate NCTC_8532 genome assembly, chromosome: 1
+contig_04	OZ495701.1	97.273	220	6	0	3777	3996	738618	738399	3.05e-97	374	100	1280	Staphylococcus aureus isolate NCTC_8532 genome assembly, chromosome: 1
+contig_04	OZ495701.1	91.515	165	3	1	3785	3949	1953190	1953037	5.44e-50	217	100	1280	Staphylococcus aureus isolate NCTC_8532 genome assembly, chromosome: 1
+contig_04	OZ495701.1	99.153	118	0	1	3772	3889	1039848	1039732	2.53e-48	211	100	1280	Staphylococcus aureus isolate NCTC_8532 genome assembly, chromosome: 1
+contig_04	OZ495701.1	97.248	109	3	0	3888	3996	114053	114161	1.53e-40	185	100	1280	Staphylococcus aureus isolate NCTC_8532 genome assembly, chromosome: 1
+contig_04	OZ495701.1	96.460	113	2	2	3892	4003	1348387	1348498	1.53e-40	185	100	1280	Staphylococcus aureus isolate NCTC_8532 genome assembly, chromosome: 1
+contig_04	OZ495701.1	96.429	112	3	1	3892	4003	1436763	1436653	5.51e-40	183	100	1280	Staphylococcus aureus isolate NCTC_8532 genome assembly, chromosome: 1
+contig_04	OZ495701.1	97.170	106	3	0	3892	3997	829021	828916	7.13e-39	180	100	1280	Staphylococcus aureus isolate NCTC_8532 genome assembly, chromosome: 1
+contig_04	OZ495701.1	96.190	105	4	0	3892	3996	1065641	1065537	1.19e-36	172	100	1280	Staphylococcus aureus isolate NCTC_8532 genome assembly, chromosome: 1
+contig_04	OZ495701.1	96.154	104	4	0	3786	3889	2748541	2748438	4.29e-36	171	100	1280	Staphylococcus aureus isolate NCTC_8532 genome assembly, chromosome: 1
+contig_04	OZ495701.1	94.545	110	5	1	3771	3879	1065810	1065701	1.54e-35	169	100	1280	Staphylococcus aureus isolate NCTC_8532 genome assembly, chromosome: 1
+contig_04	OZ495701.1	95.238	105	5	0	3892	3996	2436300	2436196	5.55e-35	167	100	1280	Staphylococcus aureus isolate NCTC_8532 genome assembly, chromosome: 1
+contig_04	OZ495701.1	84.884	172	13	3	3781	3951	829178	829019	2.58e-33	161	100	1280	Staphylococcus aureus isolate NCTC_8532 genome assembly, chromosome: 1
+contig_04	OZ495701.1	94.118	102	6	0	3778	3879	1348168	1348269	1.20e-31	156	100	1280	Staphylococcus aureus isolate NCTC_8532 genome assembly, chromosome: 1
+contig_04	OZ495701.1	94.949	99	5	0	3781	3879	1436979	1436881	1.20e-31	156	100	1280	Staphylococcus aureus isolate NCTC_8532 genome assembly, chromosome: 1
+contig_04	OZ495701.1	79.638	221	31	4	3785	4004	793295	793088	7.24e-29	147	100	1280	Staphylococcus aureus isolate NCTC_8532 genome assembly, chromosome: 1
+contig_04	OZ495701.1	87.395	119	14	1	3771	3889	1795067	1795184	1.57e-25	135	100	1280	Staphylococcus aureus isolate NCTC_8532 genome assembly, chromosome: 1
+contig_04	OZ495701.1	88.785	107	11	1	3891	3997	1616509	1616404	7.29e-24	130	100	1280	Staphylococcus aureus isolate NCTC_8532 genome assembly, chromosome: 1
+contig_04	OZ495701.1	88.182	110	10	2	3771	3877	1962611	1962502	2.62e-23	128	100	1280	Staphylococcus aureus isolate NCTC_8532 genome assembly, chromosome: 1
+contig_04	OZ495701.1	86.667	105	13	1	3892	3996	1952976	1952873	2.04e-19	115	100	1280	Staphylococcus aureus isolate NCTC_8532 genome assembly, chromosome: 1
+contig_04	OZ495701.1	100.000	58	0	0	3892	3949	1953035	1952978	3.41e-17	108	100	1280	Staphylococcus aureus isolate NCTC_8532 genome assembly, chromosome: 1
+contig_04	OZ495701.1	96.721	61	2	0	3936	3996	922189	922249	1.59e-15	102	100	1280	Staphylococcus aureus isolate NCTC_8532 genome assembly, chromosome: 1
+contig_04	OZ495701.1	96.721	61	2	0	3936	3996	2711972	2711912	1.59e-15	102	100	1280	Staphylococcus aureus isolate NCTC_8532 genome assembly, chromosome: 1
+contig_04	OZ495701.1	93.939	66	4	0	3888	3953	1136200	1136265	5.71e-15	100	100	1280	Staphylococcus aureus isolate NCTC_8532 genome assembly, chromosome: 1
+contig_04	OZ495701.1	78.022	182	24	6	3773	3951	1139950	1140118	5.71e-15	100	100	1280	Staphylococcus aureus isolate NCTC_8532 genome assembly, chromosome: 1
+contig_04	OZ495701.1	96.552	58	2	0	3888	3945	1140168	1140225	7.39e-14	97.1	100	1280	Staphylococcus aureus isolate NCTC_8532 genome assembly, chromosome: 1
+contig_04	OZ495701.1	91.304	69	6	0	3883	3951	739398	739466	2.66e-13	95.3	100	1280	Staphylococcus aureus isolate NCTC_8532 genome assembly, chromosome: 1
+contig_04	OZ495701.1	98.148	54	1	0	3892	3945	785993	785940	2.66e-13	95.3	100	1280	Staphylococcus aureus isolate NCTC_8532 genome assembly, chromosome: 1
+contig_04	OZ495701.1	98.148	54	1	0	3944	3997	1039733	1039680	2.66e-13	95.3	100	1280	Staphylococcus aureus isolate NCTC_8532 genome assembly, chromosome: 1
+contig_04	OZ495701.1	93.443	61	4	0	3891	3951	2023964	2023904	3.44e-12	91.6	100	1280	Staphylococcus aureus isolate NCTC_8532 genome assembly, chromosome: 1
+contig_04	CP123486.1	100.000	12000	0	0	1	12000	1111476	1099477	0.0	22160	100	1280	Staphylococcus aureus strain ER25504.4 chromosome
+contig_04	CP123486.1	97.273	220	6	0	3777	3996	991326	991545	3.05e-97	374	100	1280	Staphylococcus aureus strain ER25504.4 chromosome
+contig_04	CP123486.1	89.831	177	7	1	3773	3949	2603095	2603260	5.44e-50	217	100	1280	Staphylococcus aureus strain ER25504.4 chromosome
+contig_04	CP123486.1	99.153	118	0	1	3772	3889	734363	734479	2.53e-48	211	100	1280	Staphylococcus aureus strain ER25504.4 chromosome
+contig_04	CP123486.1	96.460	113	2	2	3892	4003	425849	425738	1.53e-40	185	100	1280	Staphylococcus aureus strain ER25504.4 chromosome
+contig_04	CP123486.1	97.248	109	3	0	3888	3996	1616010	1615902	1.53e-40	185	100	1280	Staphylococcus aureus strain ER25504.4 chromosome
+contig_04	CP123486.1	96.429	112	3	1	3892	4003	336635	336745	5.51e-40	183	100	1280	Staphylococcus aureus strain ER25504.4 chromosome
+contig_04	CP123486.1	97.170	106	3	0	3892	3997	900820	900925	7.13e-39	180	100	1280	Staphylococcus aureus strain ER25504.4 chromosome
+contig_04	CP123486.1	96.190	105	4	0	3892	3996	708570	708674	1.19e-36	172	100	1280	Staphylococcus aureus strain ER25504.4 chromosome
+contig_04	CP123486.1	97.030	101	3	0	3786	3886	1768815	1768915	4.29e-36	171	100	1280	Staphylococcus aureus strain ER25504.4 chromosome
+contig_04	CP123486.1	94.545	110	5	1	3771	3879	708401	708510	1.54e-35	169	100	1280	Staphylococcus aureus strain ER25504.4 chromosome
+contig_04	CP123486.1	95.238	105	5	0	3892	3996	2079155	2079259	5.55e-35	167	100	1280	Staphylococcus aureus strain ER25504.4 chromosome
+contig_04	CP123486.1	84.571	175	14	3	3778	3951	900660	900822	2.58e-33	161	100	1280	Staphylococcus aureus strain ER25504.4 chromosome
+contig_04	CP123486.1	94.118	102	6	0	3778	3879	336416	336517	1.20e-31	156	100	1280	Staphylococcus aureus strain ER25504.4 chromosome
+contig_04	CP123486.1	94.949	99	5	0	3781	3879	426065	425967	1.20e-31	156	100	1280	Staphylococcus aureus strain ER25504.4 chromosome
+contig_04	CP123486.1	90.000	120	8	3	3888	4004	936741	936859	1.56e-30	152	100	1280	Staphylococcus aureus strain ER25504.4 chromosome
+contig_04	CP123486.1	87.395	119	14	1	3771	3889	2804097	2803980	1.57e-25	135	100	1280	Staphylococcus aureus strain ER25504.4 chromosome
+contig_04	CP123486.1	88.182	110	12	1	3888	3997	113364	113472	7.29e-24	130	100	1280	Staphylococcus aureus strain ER25504.4 chromosome
+contig_04	CP123486.1	88.182	110	10	2	3771	3877	2593686	2593795	2.62e-23	128	100	1280	Staphylococcus aureus strain ER25504.4 chromosome
+contig_04	CP123486.1	86.667	105	13	1	3892	3996	2603262	2603365	2.04e-19	115	100	1280	Staphylococcus aureus strain ER25504.4 chromosome
+contig_04	CP123486.1	96.721	61	2	0	3936	3996	852013	851953	1.59e-15	102	100	1280	Staphylococcus aureus strain ER25504.4 chromosome
+contig_04	CP123486.1	96.721	61	2	0	3936	3996	1805438	1805498	1.59e-15	102	100	1280	Staphylococcus aureus strain ER25504.4 chromosome
+contig_04	CP123486.1	78.212	179	23	6	3776	3951	634202	634037	5.71e-15	100	100	1280	Staphylococcus aureus strain ER25504.4 chromosome
+contig_04	CP123486.1	93.939	66	4	0	3888	3953	637955	637890	5.71e-15	100	100	1280	Staphylococcus aureus strain ER25504.4 chromosome
+contig_04	CP123486.1	98.246	57	1	0	3889	3945	990540	990484	5.71e-15	100	100	1280	Staphylococcus aureus strain ER25504.4 chromosome
+contig_04	CP123486.1	93.750	64	4	0	3888	3951	990485	990422	7.39e-14	97.1	100	1280	Staphylococcus aureus strain ER25504.4 chromosome
+contig_04	CP123486.1	98.148	54	1	0	3944	3997	734478	734531	2.66e-13	95.3	100	1280	Staphylococcus aureus strain ER25504.4 chromosome
+contig_04	CP123486.1	98.148	54	1	0	3892	3945	943954	944007	2.66e-13	95.3	100	1280	Staphylococcus aureus strain ER25504.4 chromosome
+contig_04	CP123486.1	93.443	61	4	0	3891	3951	2489280	2489340	3.44e-12	91.6	100	1280	Staphylococcus aureus strain ER25504.4 chromosome
+contig_04	CP123095.1	100.000	12000	0	0	1	12000	1497824	1485825	0.0	22160	100	1280	Staphylococcus aureus strain MRSA-COL chromosome, complete genome
+contig_04	CP123095.1	97.273	220	6	0	3777	3996	1377693	1377912	3.05e-97	374	100	1280	Staphylococcus aureus strain MRSA-COL chromosome, complete genome
+contig_04	CP123095.1	91.515	165	3	1	3785	3949	1685754	1685601	5.44e-50	217	100	1280	Staphylococcus aureus strain MRSA-COL chromosome, complete genome
+contig_04	CP123095.1	98.305	118	1	1	3772	3889	1104692	1104808	1.18e-46	206	100	1280	Staphylococcus aureus strain MRSA-COL chromosome, complete genome
+contig_04	CP123095.1	96.460	113	2	2	3892	4003	796027	795916	1.53e-40	185	100	1280	Staphylococcus aureus strain MRSA-COL chromosome, complete genome
+contig_04	CP123095.1	97.248	109	3	0	3888	3996	2633412	2633520	1.53e-40	185	100	1280	Staphylococcus aureus strain MRSA-COL chromosome, complete genome
+contig_04	CP123095.1	96.429	112	3	1	3892	4003	707554	707664	5.51e-40	183	100	1280	Staphylococcus aureus strain MRSA-COL chromosome, complete genome
+contig_04	CP123095.1	97.170	106	3	0	3892	3997	1287268	1287373	7.13e-39	180	100	1280	Staphylococcus aureus strain MRSA-COL chromosome, complete genome
+contig_04	CP123095.1	96.190	105	4	0	3892	3996	1078836	1078940	1.19e-36	172	100	1280	Staphylococcus aureus strain MRSA-COL chromosome, complete genome
+contig_04	CP123095.1	96.154	104	4	0	3786	3889	2478859	2478756	4.29e-36	171	100	1280	Staphylococcus aureus strain MRSA-COL chromosome, complete genome
+contig_04	CP123095.1	94.545	110	5	1	3771	3879	1078667	1078776	1.54e-35	169	100	1280	Staphylococcus aureus strain MRSA-COL chromosome, complete genome
+contig_04	CP123095.1	95.238	105	5	0	3892	3996	2166867	2166763	5.55e-35	167	100	1280	Staphylococcus aureus strain MRSA-COL chromosome, complete genome
+contig_04	CP123095.1	84.571	175	14	3	3778	3951	1287108	1287270	2.58e-33	161	100	1280	Staphylococcus aureus strain MRSA-COL chromosome, complete genome
+contig_04	CP123095.1	91.525	118	8	2	3888	4004	1323276	1323392	2.58e-33	161	100	1280	Staphylococcus aureus strain MRSA-COL chromosome, complete genome
+contig_04	CP123095.1	94.118	102	6	0	3778	3879	707335	707436	1.20e-31	156	100	1280	Staphylococcus aureus strain MRSA-COL chromosome, complete genome
+contig_04	CP123095.1	94.949	99	5	0	3781	3879	796243	796145	1.20e-31	156	100	1280	Staphylococcus aureus strain MRSA-COL chromosome, complete genome
+contig_04	CP123095.1	87.395	119	14	1	3771	3889	335737	335620	1.57e-25	135	100	1280	Staphylococcus aureus strain MRSA-COL chromosome, complete genome
+contig_04	CP123095.1	88.182	110	12	1	3888	3997	514853	514961	7.29e-24	130	100	1280	Staphylococcus aureus strain MRSA-COL chromosome, complete genome
+contig_04	CP123095.1	88.182	110	10	2	3771	3877	1695175	1695066	2.62e-23	128	100	1280	Staphylococcus aureus strain MRSA-COL chromosome, complete genome
+contig_04	CP123095.1	86.667	105	13	1	3892	3996	1685599	1685496	2.04e-19	115	100	1280	Staphylococcus aureus strain MRSA-COL chromosome, complete genome
+contig_04	CP123095.1	96.721	61	2	0	3936	3996	1222343	1222283	1.59e-15	102	100	1280	Staphylococcus aureus strain MRSA-COL chromosome, complete genome
+contig_04	CP123095.1	96.721	61	2	0	3936	3996	2442347	2442287	1.59e-15	102	100	1280	Staphylococcus aureus strain MRSA-COL chromosome, complete genome
+contig_04	CP123095.1	78.212	179	23	6	3776	3951	1004469	1004304	5.71e-15	100	100	1280	Staphylococcus aureus strain MRSA-COL chromosome, complete genome
+contig_04	CP123095.1	93.939	66	4	0	3888	3953	1008222	1008157	5.71e-15	100	100	1280	Staphylococcus aureus strain MRSA-COL chromosome, complete genome
+contig_04	CP123095.1	98.246	57	1	0	3889	3945	1376907	1376851	5.71e-15	100	100	1280	Staphylococcus aureus strain MRSA-COL chromosome, complete genome
+contig_04	CP123095.1	96.552	58	2	0	3888	3945	1004254	1004197	7.39e-14	97.1	100	1280	Staphylococcus aureus strain MRSA-COL chromosome, complete genome
+contig_04	CP123095.1	93.750	64	4	0	3888	3951	1376852	1376789	7.39e-14	97.1	100	1280	Staphylococcus aureus strain MRSA-COL chromosome, complete genome
+contig_04	CP123095.1	98.148	54	1	0	3944	3997	1104807	1104860	2.66e-13	95.3	100	1280	Staphylococcus aureus strain MRSA-COL chromosome, complete genome
+contig_04	CP123095.1	93.443	61	4	0	3891	3951	1756457	1756397	3.44e-12	91.6	100	1280	Staphylococcus aureus strain MRSA-COL chromosome, complete genome
+contig_04	CP175895.1	100.000	12000	0	0	1	12000	672617	684616	0.0	22160	100	1280	Staphylococcus aureus strain AMM20230321barcode04 chromosome, complete genome
+contig_04	CP175895.1	97.273	220	6	0	3777	3996	792414	792195	3.05e-97	374	100	1280	Staphylococcus aureus strain AMM20230321barcode04 chromosome, complete genome
+contig_04	CP175895.1	91.515	165	3	1	3785	3949	2061555	2061402	5.44e-50	217	100	1280	Staphylococcus aureus strain AMM20230321barcode04 chromosome, complete genome
+contig_04	CP175895.1	99.153	118	0	1	3772	3889	1074161	1074045	2.53e-48	211	100	1280	Staphylococcus aureus strain AMM20230321barcode04 chromosome, complete genome
+contig_04	CP175895.1	96.460	113	2	2	3892	4003	1429297	1429408	1.53e-40	185	100	1280	Staphylococcus aureus strain AMM20230321barcode04 chromosome, complete genome
+contig_04	CP175895.1	98.095	105	2	0	3892	3996	170705	170809	5.51e-40	183	100	1280	Staphylococcus aureus strain AMM20230321barcode04 chromosome, complete genome
+contig_04	CP175895.1	96.429	112	3	1	3892	4003	1517706	1517596	5.51e-40	183	100	1280	Staphylococcus aureus strain AMM20230321barcode04 chromosome, complete genome
+contig_04	CP175895.1	97.170	106	3	0	3892	3997	884697	884592	7.13e-39	180	100	1280	Staphylococcus aureus strain AMM20230321barcode04 chromosome, complete genome
+contig_04	CP175895.1	96.190	105	4	0	3892	3996	1099955	1099851	1.19e-36	172	100	1280	Staphylococcus aureus strain AMM20230321barcode04 chromosome, complete genome
+contig_04	CP175895.1	96.154	104	4	0	3786	3889	2854377	2854274	4.29e-36	171	100	1280	Staphylococcus aureus strain AMM20230321barcode04 chromosome, complete genome
+contig_04	CP175895.1	94.545	110	5	1	3771	3879	1100124	1100015	1.54e-35	169	100	1280	Staphylococcus aureus strain AMM20230321barcode04 chromosome, complete genome
+contig_04	CP175895.1	95.238	105	5	0	3892	3996	2544137	2544033	5.55e-35	167	100	1280	Staphylococcus aureus strain AMM20230321barcode04 chromosome, complete genome
+contig_04	CP175895.1	84.571	175	14	3	3778	3951	170545	170707	2.58e-33	161	100	1280	Staphylococcus aureus strain AMM20230321barcode04 chromosome, complete genome
+contig_04	CP175895.1	84.884	172	13	3	3781	3951	884854	884695	2.58e-33	161	100	1280	Staphylococcus aureus strain AMM20230321barcode04 chromosome, complete genome
+contig_04	CP175895.1	94.118	102	6	0	3778	3879	1429078	1429179	1.20e-31	156	100	1280	Staphylococcus aureus strain AMM20230321barcode04 chromosome, complete genome
+contig_04	CP175895.1	94.949	99	5	0	3781	3879	1517922	1517824	1.20e-31	156	100	1280	Staphylococcus aureus strain AMM20230321barcode04 chromosome, complete genome
+contig_04	CP175895.1	87.395	119	14	1	3771	3889	1902881	1902998	1.57e-25	135	100	1280	Staphylococcus aureus strain AMM20230321barcode04 chromosome, complete genome
+contig_04	CP175895.1	88.785	107	11	1	3891	3997	1710575	1710470	7.29e-24	130	100	1280	Staphylococcus aureus strain AMM20230321barcode04 chromosome, complete genome
+contig_04	CP175895.1	88.182	110	10	2	3771	3877	2070977	2070868	2.62e-23	128	100	1280	Staphylococcus aureus strain AMM20230321barcode04 chromosome, complete genome
+contig_04	CP175895.1	86.667	105	13	1	3892	3996	2061400	2061297	2.04e-19	115	100	1280	Staphylococcus aureus strain AMM20230321barcode04 chromosome, complete genome
+contig_04	CP175895.1	96.721	61	2	0	3936	3996	949948	950008	1.59e-15	102	100	1280	Staphylococcus aureus strain AMM20230321barcode04 chromosome, complete genome
+contig_04	CP175895.1	96.721	61	2	0	3936	3996	2819565	2819505	1.59e-15	102	100	1280	Staphylococcus aureus strain AMM20230321barcode04 chromosome, complete genome
+contig_04	CP175895.1	95.238	63	3	0	3883	3945	793194	793256	5.71e-15	100	100	1280	Staphylococcus aureus strain AMM20230321barcode04 chromosome, complete genome
+contig_04	CP175895.1	93.939	66	4	0	3888	3953	1170569	1170634	5.71e-15	100	100	1280	Staphylococcus aureus strain AMM20230321barcode04 chromosome, complete genome
+contig_04	CP175895.1	78.022	182	24	6	3773	3951	1174319	1174487	5.71e-15	100	100	1280	Staphylococcus aureus strain AMM20230321barcode04 chromosome, complete genome
+contig_04	CP175895.1	93.750	64	4	0	3888	3951	793255	793318	7.39e-14	97.1	100	1280	Staphylococcus aureus strain AMM20230321barcode04 chromosome, complete genome
+contig_04	CP175895.1	96.552	58	2	0	3888	3945	1174537	1174594	7.39e-14	97.1	100	1280	Staphylococcus aureus strain AMM20230321barcode04 chromosome, complete genome
+contig_04	CP175895.1	98.148	54	1	0	3892	3945	839900	839847	2.66e-13	95.3	100	1280	Staphylococcus aureus strain AMM20230321barcode04 chromosome, complete genome
+contig_04	CP175895.1	98.148	54	1	0	3944	3997	1074046	1073993	2.66e-13	95.3	100	1280	Staphylococcus aureus strain AMM20230321barcode04 chromosome, complete genome
+contig_04	CP175895.1	93.443	61	4	0	3891	3951	2132331	2132271	3.44e-12	91.6	100	1280	Staphylococcus aureus strain AMM20230321barcode04 chromosome, complete genome
+contig_04	CP166526.1	100.000	12000	0	0	1	12000	610836	622835	0.0	22160	100	1280	Staphylococcus aureus strain MSHS_PS00043.1A chromosome, complete genome
+contig_04	CP166526.1	97.273	220	6	0	3777	3996	730898	730679	3.05e-97	374	100	1280	Staphylococcus aureus strain MSHS_PS00043.1A chromosome, complete genome
+contig_04	CP166526.1	91.515	165	3	1	3785	3949	1901949	1901796	5.44e-50	217	100	1280	Staphylococcus aureus strain MSHS_PS00043.1A chromosome, complete genome
+contig_04	CP166526.1	99.153	118	0	1	3772	3889	988182	988066	2.53e-48	211	100	1280	Staphylococcus aureus strain MSHS_PS00043.1A chromosome, complete genome
+contig_04	CP166526.1	97.248	109	3	0	3888	3996	114384	114492	1.53e-40	185	100	1280	Staphylococcus aureus strain MSHS_PS00043.1A chromosome, complete genome
+contig_04	CP166526.1	96.429	112	3	1	3892	4003	1386608	1386498	5.51e-40	183	100	1280	Staphylococcus aureus strain MSHS_PS00043.1A chromosome, complete genome
+contig_04	CP166526.1	97.170	106	3	0	3892	3997	821544	821439	7.13e-39	180	100	1280	Staphylococcus aureus strain MSHS_PS00043.1A chromosome, complete genome
+contig_04	CP166526.1	96.190	105	4	0	3892	3996	1013912	1013808	1.19e-36	172	100	1280	Staphylococcus aureus strain MSHS_PS00043.1A chromosome, complete genome
+contig_04	CP166526.1	96.154	104	4	0	3786	3889	2751777	2751674	4.29e-36	171	100	1280	Staphylococcus aureus strain MSHS_PS00043.1A chromosome, complete genome
+contig_04	CP166526.1	94.545	110	5	1	3771	3879	1014081	1013972	1.54e-35	169	100	1280	Staphylococcus aureus strain MSHS_PS00043.1A chromosome, complete genome
+contig_04	CP166526.1	95.238	105	5	0	3892	3996	2425450	2425346	5.55e-35	167	100	1280	Staphylococcus aureus strain MSHS_PS00043.1A chromosome, complete genome
+contig_04	CP166526.1	84.884	172	13	3	3781	3951	821701	821542	2.58e-33	161	100	1280	Staphylococcus aureus strain MSHS_PS00043.1A chromosome, complete genome
+contig_04	CP166526.1	94.118	102	6	0	3778	3879	1297233	1297334	1.20e-31	156	100	1280	Staphylococcus aureus strain MSHS_PS00043.1A chromosome, complete genome
+contig_04	CP166526.1	94.949	99	5	0	3781	3879	1386824	1386726	1.20e-31	156	100	1280	Staphylococcus aureus strain MSHS_PS00043.1A chromosome, complete genome
+contig_04	CP166526.1	89.744	117	8	3	3891	4004	785537	785422	7.24e-29	147	100	1280	Staphylococcus aureus strain MSHS_PS00043.1A chromosome, complete genome
+contig_04	CP166526.1	87.395	119	14	1	3771	3889	1744755	1744872	1.57e-25	135	100	1280	Staphylococcus aureus strain MSHS_PS00043.1A chromosome, complete genome
+contig_04	CP166526.1	88.785	107	11	1	3891	3997	1565962	1565857	7.29e-24	130	100	1280	Staphylococcus aureus strain MSHS_PS00043.1A chromosome, complete genome
+contig_04	CP166526.1	88.182	110	10	2	3771	3877	1911370	1911261	2.62e-23	128	100	1280	Staphylococcus aureus strain MSHS_PS00043.1A chromosome, complete genome
+contig_04	CP166526.1	86.667	105	13	1	3892	3996	1901735	1901632	2.04e-19	115	100	1280	Staphylococcus aureus strain MSHS_PS00043.1A chromosome, complete genome
+contig_04	CP166526.1	100.000	58	0	0	3892	3949	1901794	1901737	3.41e-17	108	100	1280	Staphylococcus aureus strain MSHS_PS00043.1A chromosome, complete genome
+contig_04	CP166526.1	94.203	69	2	2	3936	4003	1297438	1297505	4.42e-16	104	100	1280	Staphylococcus aureus strain MSHS_PS00043.1A chromosome, complete genome
+contig_04	CP166526.1	96.721	61	2	0	3936	3996	870534	870594	1.59e-15	102	100	1280	Staphylococcus aureus strain MSHS_PS00043.1A chromosome, complete genome
+contig_04	CP166526.1	96.721	61	2	0	3936	3996	2715209	2715149	1.59e-15	102	100	1280	Staphylococcus aureus strain MSHS_PS00043.1A chromosome, complete genome
+contig_04	CP166526.1	95.238	63	3	0	3883	3945	731678	731740	5.71e-15	100	100	1280	Staphylococcus aureus strain MSHS_PS00043.1A chromosome, complete genome
+contig_04	CP166526.1	93.939	66	4	0	3888	3953	1084525	1084590	5.71e-15	100	100	1280	Staphylococcus aureus strain MSHS_PS00043.1A chromosome, complete genome
+contig_04	CP166526.1	78.022	182	24	6	3773	3951	1088275	1088443	5.71e-15	100	100	1280	Staphylococcus aureus strain MSHS_PS00043.1A chromosome, complete genome
+contig_04	CP166526.1	93.750	64	4	0	3888	3951	731739	731802	7.39e-14	97.1	100	1280	Staphylococcus aureus strain MSHS_PS00043.1A chromosome, complete genome
+contig_04	CP166526.1	96.552	58	2	0	3888	3945	1088493	1088550	7.39e-14	97.1	100	1280	Staphylococcus aureus strain MSHS_PS00043.1A chromosome, complete genome
+contig_04	CP166526.1	98.148	54	1	0	3892	3945	778384	778331	2.66e-13	95.3	100	1280	Staphylococcus aureus strain MSHS_PS00043.1A chromosome, complete genome
+contig_04	CP166526.1	98.148	54	1	0	3944	3997	988067	988014	2.66e-13	95.3	100	1280	Staphylococcus aureus strain MSHS_PS00043.1A chromosome, complete genome
+contig_04	CP166526.1	93.443	61	4	0	3891	3951	2015342	2015282	3.44e-12	91.6	100	1280	Staphylococcus aureus strain MSHS_PS00043.1A chromosome, complete genome
+contig_04	CP162475.1	100.000	12000	0	0	1	12000	116095	128094	0.0	22160	100	1280	Staphylococcus aureus strain TUM20817 chromosome, complete genome
+contig_04	CP162475.1	97.273	220	6	0	3777	3996	236890	236671	3.05e-97	374	100	1280	Staphylococcus aureus strain TUM20817 chromosome, complete genome
+contig_04	CP162475.1	86.784	227	16	4	3778	4003	808311	808524	3.23e-57	241	100	1280	Staphylococcus aureus strain TUM20817 chromosome, complete genome
+contig_04	CP162475.1	91.515	165	3	1	3785	3949	1421530	1421377	5.44e-50	217	100	1280	Staphylococcus aureus strain TUM20817 chromosome, complete genome
+contig_04	CP162475.1	99.153	118	0	1	3772	3889	500046	499930	2.53e-48	211	100	1280	Staphylococcus aureus strain TUM20817 chromosome, complete genome
+contig_04	CP162475.1	83.258	221	24	6	3785	4004	291341	291133	3.30e-42	191	100	1280	Staphylococcus aureus strain TUM20817 chromosome, complete genome
+contig_04	CP162475.1	97.248	109	3	0	3888	3996	2427514	2427622	1.53e-40	185	100	1280	Staphylococcus aureus strain TUM20817 chromosome, complete genome
+contig_04	CP162475.1	96.429	112	3	1	3892	4003	899115	899005	5.51e-40	183	100	1280	Staphylococcus aureus strain TUM20817 chromosome, complete genome
+contig_04	CP162475.1	97.170	106	3	0	3892	3997	333566	333461	7.13e-39	180	100	1280	Staphylococcus aureus strain TUM20817 chromosome, complete genome
+contig_04	CP162475.1	96.190	105	4	0	3892	3996	525839	525735	1.19e-36	172	100	1280	Staphylococcus aureus strain TUM20817 chromosome, complete genome
+contig_04	CP162475.1	96.154	104	4	0	3786	3889	2283790	2283687	4.29e-36	171	100	1280	Staphylococcus aureus strain TUM20817 chromosome, complete genome
+contig_04	CP162475.1	94.545	110	5	1	3771	3879	526008	525899	1.54e-35	169	100	1280	Staphylococcus aureus strain TUM20817 chromosome, complete genome
+contig_04	CP162475.1	95.238	105	5	0	3892	3996	1968608	1968504	5.55e-35	167	100	1280	Staphylococcus aureus strain TUM20817 chromosome, complete genome
+contig_04	CP162475.1	84.884	172	13	3	3781	3951	333723	333564	2.58e-33	161	100	1280	Staphylococcus aureus strain TUM20817 chromosome, complete genome
+contig_04	CP162475.1	94.949	99	5	0	3781	3879	899331	899233	1.20e-31	156	100	1280	Staphylococcus aureus strain TUM20817 chromosome, complete genome
+contig_04	CP162475.1	87.395	119	14	1	3771	3889	1264188	1264305	1.57e-25	135	100	1280	Staphylococcus aureus strain TUM20817 chromosome, complete genome
+contig_04	CP162475.1	88.785	107	11	1	3891	3997	1078612	1078507	7.29e-24	130	100	1280	Staphylococcus aureus strain TUM20817 chromosome, complete genome
+contig_04	CP162475.1	88.182	110	10	2	3771	3877	1430893	1430784	2.62e-23	128	100	1280	Staphylococcus aureus strain TUM20817 chromosome, complete genome
+contig_04	CP162475.1	86.667	105	13	1	3892	3996	1421375	1421272	2.04e-19	115	100	1280	Staphylococcus aureus strain TUM20817 chromosome, complete genome
+contig_04	CP162475.1	96.721	61	2	0	3936	3996	382386	382446	1.59e-15	102	100	1280	Staphylococcus aureus strain TUM20817 chromosome, complete genome
+contig_04	CP162475.1	96.721	61	2	0	3936	3996	2247282	2247222	1.59e-15	102	100	1280	Staphylococcus aureus strain TUM20817 chromosome, complete genome
+contig_04	CP162475.1	95.238	63	3	0	3883	3945	237670	237732	5.71e-15	100	100	1280	Staphylococcus aureus strain TUM20817 chromosome, complete genome
+contig_04	CP162475.1	93.939	66	4	0	3888	3953	596340	596405	5.71e-15	100	100	1280	Staphylococcus aureus strain TUM20817 chromosome, complete genome
+contig_04	CP162475.1	78.022	182	24	6	3773	3951	600090	600258	5.71e-15	100	100	1280	Staphylococcus aureus strain TUM20817 chromosome, complete genome
+contig_04	CP162475.1	96.552	58	2	0	3888	3945	600308	600365	7.39e-14	97.1	100	1280	Staphylococcus aureus strain TUM20817 chromosome, complete genome
+contig_04	CP162475.1	98.148	54	1	0	3892	3945	284096	284043	2.66e-13	95.3	100	1280	Staphylococcus aureus strain TUM20817 chromosome, complete genome
+contig_04	CP162475.1	98.148	54	1	0	3944	3997	499931	499878	2.66e-13	95.3	100	1280	Staphylococcus aureus strain TUM20817 chromosome, complete genome
+contig_04	CP162475.1	93.443	61	4	0	3891	3951	1558315	1558255	3.44e-12	91.6	100	1280	Staphylococcus aureus strain TUM20817 chromosome, complete genome
+contig_04	AP041610.1	100.000	12000	0	0	1	12000	662384	674383	0.0	22160	100	1280	Staphylococcus aureus JARB-OU1302 DNA, complete genome
+contig_04	AP041610.1	97.273	220	6	0	3777	3996	787090	786871	3.05e-97	374	100	1280	Staphylococcus aureus JARB-OU1302 DNA, complete genome
+contig_04	AP041610.1	91.515	165	3	1	3785	3949	1974850	1974697	5.44e-50	217	100	1280	Staphylococcus aureus JARB-OU1302 DNA, complete genome
+contig_04	AP041610.1	99.153	118	0	1	3772	3889	1058959	1058843	2.53e-48	211	100	1280	Staphylococcus aureus JARB-OU1302 DNA, complete genome
+contig_04	AP041610.1	83.258	221	24	6	3785	4004	841577	841369	3.30e-42	191	100	1280	Staphylococcus aureus JARB-OU1302 DNA, complete genome
+contig_04	AP041610.1	97.248	109	3	0	3888	3996	147369	147477	1.53e-40	185	100	1280	Staphylococcus aureus JARB-OU1302 DNA, complete genome
+contig_04	AP041610.1	96.460	113	2	2	3892	4003	1369900	1370011	1.53e-40	185	100	1280	Staphylococcus aureus JARB-OU1302 DNA, complete genome
+contig_04	AP041610.1	96.429	112	3	1	3892	4003	1458371	1458261	5.51e-40	183	100	1280	Staphylococcus aureus JARB-OU1302 DNA, complete genome
+contig_04	AP041610.1	97.170	106	3	0	3892	3997	892421	892316	7.13e-39	180	100	1280	Staphylococcus aureus JARB-OU1302 DNA, complete genome
+contig_04	AP041610.1	96.190	105	4	0	3892	3996	1086021	1085917	1.19e-36	172	100	1280	Staphylococcus aureus JARB-OU1302 DNA, complete genome
+contig_04	AP041610.1	96.154	104	4	0	3786	3889	2819951	2819848	4.29e-36	171	100	1280	Staphylococcus aureus JARB-OU1302 DNA, complete genome
+contig_04	AP041610.1	95.238	105	5	0	3892	3996	2508996	2508892	5.55e-35	167	100	1280	Staphylococcus aureus JARB-OU1302 DNA, complete genome
+contig_04	AP041610.1	84.884	172	13	3	3781	3951	892578	892419	2.58e-33	161	100	1280	Staphylococcus aureus JARB-OU1302 DNA, complete genome
+contig_04	AP041610.1	94.118	102	6	0	3778	3879	1369681	1369782	1.20e-31	156	100	1280	Staphylococcus aureus JARB-OU1302 DNA, complete genome
+contig_04	AP041610.1	94.949	99	5	0	3781	3879	1458587	1458489	1.20e-31	156	100	1280	Staphylococcus aureus JARB-OU1302 DNA, complete genome
+contig_04	AP041610.1	87.395	119	14	1	3771	3889	1818590	1818707	1.57e-25	135	100	1280	Staphylococcus aureus JARB-OU1302 DNA, complete genome
+contig_04	AP041610.1	88.785	107	11	1	3891	3997	1638261	1638156	7.29e-24	130	100	1280	Staphylococcus aureus JARB-OU1302 DNA, complete genome
+contig_04	AP041610.1	88.182	110	10	2	3771	3877	1984213	1984104	2.62e-23	128	100	1280	Staphylococcus aureus JARB-OU1302 DNA, complete genome
+contig_04	AP041610.1	86.667	105	13	1	3892	3996	1974636	1974533	2.04e-19	115	100	1280	Staphylococcus aureus JARB-OU1302 DNA, complete genome
+contig_04	AP041610.1	100.000	58	0	0	3892	3949	1974695	1974638	3.41e-17	108	100	1280	Staphylococcus aureus JARB-OU1302 DNA, complete genome
+contig_04	AP041610.1	96.721	61	2	0	3936	3996	941297	941357	1.59e-15	102	100	1280	Staphylococcus aureus JARB-OU1302 DNA, complete genome
+contig_04	AP041610.1	96.721	61	2	0	3936	3996	2783494	2783434	1.59e-15	102	100	1280	Staphylococcus aureus JARB-OU1302 DNA, complete genome
+contig_04	AP041610.1	95.238	63	3	0	3883	3945	787870	787932	5.71e-15	100	100	1280	Staphylococcus aureus JARB-OU1302 DNA, complete genome
+contig_04	AP041610.1	78.022	182	24	6	3773	3951	1161490	1161658	5.71e-15	100	100	1280	Staphylococcus aureus JARB-OU1302 DNA, complete genome
+contig_04	AP041610.1	96.552	58	2	0	3888	3945	1161708	1161765	7.39e-14	97.1	100	1280	Staphylococcus aureus JARB-OU1302 DNA, complete genome
+contig_04	AP041610.1	98.148	54	1	0	3892	3945	834332	834279	2.66e-13	95.3	100	1280	Staphylococcus aureus JARB-OU1302 DNA, complete genome
+contig_04	AP041610.1	98.148	54	1	0	3944	3997	1058844	1058791	2.66e-13	95.3	100	1280	Staphylococcus aureus JARB-OU1302 DNA, complete genome
+contig_04	AP041610.1	93.443	61	4	0	3891	3951	2097438	2097378	3.44e-12	91.6	100	1280	Staphylococcus aureus JARB-OU1302 DNA, complete genome
+contig_04	OZ456687.1	100.000	12000	0	0	1	12000	1514743	1502744	0.0	22160	100	1280	Staphylococcus aureus isolate STAU609 genome assembly, chromosome: 1
+contig_04	OZ456687.1	97.273	220	6	0	3777	3996	1394813	1395032	3.05e-97	374	100	1280	Staphylococcus aureus isolate STAU609 genome assembly, chromosome: 1
+contig_04	OZ456687.1	89.831	177	7	1	3773	3949	157346	157511	5.44e-50	217	100	1280	Staphylococcus aureus isolate STAU609 genome assembly, chromosome: 1
+contig_04	OZ456687.1	99.153	118	0	1	3772	3889	1137802	1137918	2.53e-48	211	100	1280	Staphylococcus aureus isolate STAU609 genome assembly, chromosome: 1
+contig_04	OZ456687.1	83.258	221	24	6	3785	4004	1340252	1340460	3.30e-42	191	100	1280	Staphylococcus aureus isolate STAU609 genome assembly, chromosome: 1
+contig_04	OZ456687.1	96.460	113	2	2	3892	4003	829435	829324	1.53e-40	185	100	1280	Staphylococcus aureus isolate STAU609 genome assembly, chromosome: 1
+contig_04	OZ456687.1	97.248	109	3	0	3888	3996	2009112	2009004	1.53e-40	185	100	1280	Staphylococcus aureus isolate STAU609 genome assembly, chromosome: 1
+contig_04	OZ456687.1	98.095	105	2	0	3892	3996	157513	157617	5.51e-40	183	100	1280	Staphylococcus aureus isolate STAU609 genome assembly, chromosome: 1
+contig_04	OZ456687.1	96.429	112	3	1	3892	4003	740964	741074	5.51e-40	183	100	1280	Staphylococcus aureus isolate STAU609 genome assembly, chromosome: 1
+contig_04	OZ456687.1	97.170	106	3	0	3892	3997	1304453	1304558	7.13e-39	180	100	1280	Staphylococcus aureus isolate STAU609 genome assembly, chromosome: 1
+contig_04	OZ456687.1	96.190	105	4	0	3892	3996	1112009	1112113	1.19e-36	172	100	1280	Staphylococcus aureus isolate STAU609 genome assembly, chromosome: 1
+contig_04	OZ456687.1	97.030	101	3	0	3786	3886	2130486	2130586	4.29e-36	171	100	1280	Staphylococcus aureus isolate STAU609 genome assembly, chromosome: 1
+contig_04	OZ456687.1	94.545	110	5	1	3771	3879	1111840	1111949	1.54e-35	169	100	1280	Staphylococcus aureus isolate STAU609 genome assembly, chromosome: 1
+contig_04	OZ456687.1	95.238	105	5	0	3892	3996	2441358	2441462	5.55e-35	167	100	1280	Staphylococcus aureus isolate STAU609 genome assembly, chromosome: 1
+contig_04	OZ456687.1	84.571	175	14	3	3778	3951	1304293	1304455	2.58e-33	161	100	1280	Staphylococcus aureus isolate STAU609 genome assembly, chromosome: 1
+contig_04	OZ456687.1	94.118	102	6	0	3778	3879	740745	740846	1.20e-31	156	100	1280	Staphylococcus aureus isolate STAU609 genome assembly, chromosome: 1
+contig_04	OZ456687.1	94.949	99	5	0	3781	3879	829651	829553	1.20e-31	156	100	1280	Staphylococcus aureus isolate STAU609 genome assembly, chromosome: 1
+contig_04	OZ456687.1	86.555	119	15	1	3771	3889	382609	382492	7.29e-24	130	100	1280	Staphylococcus aureus isolate STAU609 genome assembly, chromosome: 1
+contig_04	OZ456687.1	88.182	110	12	1	3888	3997	561448	561556	7.29e-24	130	100	1280	Staphylococcus aureus isolate STAU609 genome assembly, chromosome: 1
+contig_04	OZ456687.1	88.182	110	10	2	3771	3877	147995	148104	2.62e-23	128	100	1280	Staphylococcus aureus isolate STAU609 genome assembly, chromosome: 1
+contig_04	OZ456687.1	96.721	61	2	0	3936	3996	1255463	1255403	1.59e-15	102	100	1280	Staphylococcus aureus isolate STAU609 genome assembly, chromosome: 1
+contig_04	OZ456687.1	96.721	61	2	0	3936	3996	2167056	2167116	1.59e-15	102	100	1280	Staphylococcus aureus isolate STAU609 genome assembly, chromosome: 1
+contig_04	OZ456687.1	78.212	179	23	6	3776	3951	1037756	1037591	5.71e-15	100	100	1280	Staphylococcus aureus isolate STAU609 genome assembly, chromosome: 1
+contig_04	OZ456687.1	93.939	66	4	0	3888	3953	1041509	1041444	5.71e-15	100	100	1280	Staphylococcus aureus isolate STAU609 genome assembly, chromosome: 1
+contig_04	OZ456687.1	98.246	57	1	0	3889	3945	1394027	1393971	5.71e-15	100	100	1280	Staphylococcus aureus isolate STAU609 genome assembly, chromosome: 1
+contig_04	OZ456687.1	98.148	54	1	0	3944	3997	1137917	1137970	2.66e-13	95.3	100	1280	Staphylococcus aureus isolate STAU609 genome assembly, chromosome: 1
+contig_04	OZ456687.1	98.148	54	1	0	3892	3945	1347497	1347550	2.66e-13	95.3	100	1280	Staphylococcus aureus isolate STAU609 genome assembly, chromosome: 1
+contig_04	OZ456687.1	93.443	61	4	0	3891	3951	36057	36117	3.44e-12	91.6	100	1280	Staphylococcus aureus isolate STAU609 genome assembly, chromosome: 1
+contig_05	CP018205.1	99.925	4012	1	2	1	4010	1498795	1502806	0.0	7391	53	1280	Staphylococcus aureus subsp. aureus strain HG001, complete genome
+contig_05	CP018205.1	88.144	194	23	0	2225	2418	1959422	1959615	1.21e-54	231	53	1280	Staphylococcus aureus subsp. aureus strain HG001, complete genome
+contig_05	CP018205.1	87.047	193	24	1	2242	2434	2066670	2066861	3.39e-50	217	53	1280	Staphylococcus aureus subsp. aureus strain HG001, complete genome
+contig_05	CP018205.1	98.246	57	0	1	2930	2985	2068998	2069054	1.28e-14	99.0	53	1280	Staphylococcus aureus subsp. aureus strain HG001, complete genome
+contig_05	LS483365.1	99.925	4012	1	2	1	4010	1508624	1512635	0.0	7391	53	93061	Staphylococcus aureus strain NCTC8325 genome assembly, chromosome: 1
+contig_05	LS483365.1	88.144	194	23	0	2225	2418	1969250	1969443	1.21e-54	231	53	93061	Staphylococcus aureus strain NCTC8325 genome assembly, chromosome: 1
+contig_05	LS483365.1	87.047	193	24	1	2242	2434	2076498	2076689	3.39e-50	217	53	93061	Staphylococcus aureus strain NCTC8325 genome assembly, chromosome: 1
+contig_05	LS483365.1	98.246	57	0	1	2930	2985	2078826	2078882	1.28e-14	99.0	53	93061	Staphylococcus aureus strain NCTC8325 genome assembly, chromosome: 1
+contig_05	NC_004616.1	99.925	4012	1	2	1	4010	8580	4569	0.0	7391	53	2905946	Staphylococcus prophage phi 12, complete genome
+contig_05	CP026961.1	99.925	4012	1	2	1	4010	2399610	2395599	0.0	7391	53	1280	Staphylococcus aureus strain FDAARGOS_10 chromosome, complete genome
+contig_05	CP026961.1	88.144	194	23	0	2225	2418	21179	21372	1.21e-54	231	53	1280	Staphylococcus aureus strain FDAARGOS_10 chromosome, complete genome
+contig_05	CP026961.1	87.047	193	24	1	2242	2434	128427	128618	3.39e-50	217	53	1280	Staphylococcus aureus strain FDAARGOS_10 chromosome, complete genome
+contig_05	CP026961.1	98.246	57	0	1	2930	2985	130755	130811	1.28e-14	99.0	53	1280	Staphylococcus aureus strain FDAARGOS_10 chromosome, complete genome
+contig_05	CP026961.1	100.000	41	0	0	2924	2964	1938106	1938066	6.01e-08	76.8	53	1280	Staphylococcus aureus strain FDAARGOS_10 chromosome, complete genome
+contig_05	AC090967.4	99.925	4012	1	2	1	4010	2239	6250	0.0	7391	53	93061	Staphylococcus aureus subsp. aureus NCTC 8325 clone sabac-125, complete sequence
+contig_05	CP120909.1	99.925	4012	1	2	1	4010	1499834	1503845	0.0	7391	53	1280	Staphylococcus aureus strain PD005 chromosome, complete genome
+contig_05	CP120909.1	88.144	194	23	0	2225	2418	1960452	1960645	1.21e-54	231	53	1280	Staphylococcus aureus strain PD005 chromosome, complete genome
+contig_05	CP120909.1	87.047	193	24	1	2242	2434	2067694	2067885	3.39e-50	217	53	1280	Staphylococcus aureus strain PD005 chromosome, complete genome
+contig_05	CP120909.1	98.246	57	0	1	2930	2985	2070022	2070078	1.28e-14	99.0	53	1280	Staphylococcus aureus strain PD005 chromosome, complete genome
+contig_05	CP000253.1	99.925	4012	1	2	1	4010	1500001	1504012	0.0	7391	53	93061	Staphylococcus aureus subsp. aureus NCTC 8325, complete genome
+contig_05	CP000253.1	88.144	194	23	0	2225	2418	1960626	1960819	1.21e-54	231	53	93061	Staphylococcus aureus subsp. aureus NCTC 8325, complete genome
+contig_05	CP000253.1	87.047	193	24	1	2242	2434	2067874	2068065	3.39e-50	217	53	93061	Staphylococcus aureus subsp. aureus NCTC 8325, complete genome
+contig_05	CP000253.1	98.246	57	0	1	2930	2985	2070202	2070258	1.28e-14	99.0	53	93061	Staphylococcus aureus subsp. aureus NCTC 8325, complete genome
+contig_05	CP097090.1	98.156	4012	72	2	1	4010	1500954	1504965	0.0	6998	53	1280	Staphylococcus aureus strain 22 chromosome
+contig_05	CP097090.1	88.688	221	22	3	2216	2434	2069137	2069356	3.32e-65	267	53	1280	Staphylococcus aureus strain 22 chromosome
+contig_05	CP097090.1	90.547	201	18	1	2219	2418	1961821	1962021	1.19e-64	265	53	1280	Staphylococcus aureus strain 22 chromosome
+contig_05	CP097091.1	97.607	4012	94	2	1	4010	1500657	1504668	0.0	6924	53	1280	Staphylococcus aureus strain 23 chromosome
+contig_05	CP097091.1	90.674	193	17	1	2242	2434	2068860	2069051	2.00e-62	257	53	1280	Staphylococcus aureus strain 23 chromosome
+contig_05	CP097091.1	89.231	195	21	0	2224	2418	1961524	1961718	3.34e-60	250	53	1280	Staphylococcus aureus strain 23 chromosome
+contig_05	CP122484.1	97.409	4014	100	4	1	4010	2310100	2314113	0.0	6833	53	1280	Staphylococcus aureus strain SW-MSSA63 chromosome, complete genome
+contig_05	NC_007054.1	99.833	3595	6	0	1	3595	32827	29233	0.0	6606	48	2936812	Staphylococcus phage 47, complete genome
+contig_05	NC_055049.1	96.389	4016	135	10	1	4010	8303	4292	0.0	6604	53	2060948	Staphylococcus phage phiSa2wa_st121mssa, complete genome
+contig_05	CP038021.1	99.499	3593	17	1	1	3592	1580656	1584248	0.0	6534	48	1280	Staphylococcus aureus strain 04-002 chromosome, complete genome
+contig_05	CP038021.1	98.246	57	0	1	2930	2985	2107302	2107358	1.28e-14	99.0	48	1280	Staphylococcus aureus strain 04-002 chromosome, complete genome
+contig_05	CP038021.1	95.349	43	2	0	2943	2985	2105924	2105966	1.01e-05	69.4	48	1280	Staphylococcus aureus strain 04-002 chromosome, complete genome
+contig_05	OZ554474.1	100.000	3501	0	0	4001	7501	3859421	3855921	0.0	6466	47	562	Escherichia coli isolate AF468 genome assembly, chromosome: 1
+contig_05	OZ554474.1	90.226	133	10	3	5948	6078	1189450	1189581	2.68e-36	171	47	562	Escherichia coli isolate AF468 genome assembly, chromosome: 1
+contig_05	OZ554474.1	86.000	150	18	3	5944	6091	3511840	3511988	2.09e-32	158	47	562	Escherichia coli isolate AF468 genome assembly, chromosome: 1
+contig_05	OZ554474.1	86.525	141	16	3	5952	6090	250397	250536	9.70e-31	152	47	562	Escherichia coli isolate AF468 genome assembly, chromosome: 1
+contig_05	OZ554474.1	90.566	106	7	3	5968	6073	390383	390281	2.72e-26	137	47	562	Escherichia coli isolate AF468 genome assembly, chromosome: 1
+contig_05	OZ554474.1	89.381	113	7	4	5968	6078	3443867	3443758	2.72e-26	137	47	562	Escherichia coli isolate AF468 genome assembly, chromosome: 1
+contig_05	OZ554474.1	89.524	105	11	0	5968	6072	1450359	1450463	3.51e-25	134	47	562	Escherichia coli isolate AF468 genome assembly, chromosome: 1
+contig_05	OZ554474.1	90.196	102	9	1	5968	6069	4912773	4912873	1.26e-24	132	47	562	Escherichia coli isolate AF468 genome assembly, chromosome: 1
+contig_05	OZ554474.1	82.781	151	21	5	5944	6091	1947560	1947708	4.55e-24	130	47	562	Escherichia coli isolate AF468 genome assembly, chromosome: 1
+contig_05	OZ554474.1	85.833	120	11	4	5956	6072	1601701	1601585	7.61e-22	122	47	562	Escherichia coli isolate AF468 genome assembly, chromosome: 1
+contig_05	OZ554474.1	86.792	106	10	3	5968	6071	2269972	2269869	1.27e-19	115	47	562	Escherichia coli isolate AF468 genome assembly, chromosome: 1
+contig_05	OZ554474.1	86.538	104	12	2	5968	6070	1456292	1456190	4.58e-19	113	47	562	Escherichia coli isolate AF468 genome assembly, chromosome: 1
+contig_05	OZ554474.1	81.538	130	17	6	5944	6070	4406664	4406539	3.56e-15	100	47	562	Escherichia coli isolate AF468 genome assembly, chromosome: 1
+contig_05	OZ554474.1	93.651	63	4	0	5967	6029	1850298	1850360	1.66e-13	95.3	47	562	Escherichia coli isolate AF468 genome assembly, chromosome: 1
+contig_05	OZ554474.1	96.364	55	1	1	5967	6020	2754787	2754733	7.72e-12	89.8	47	562	Escherichia coli isolate AF468 genome assembly, chromosome: 1
+contig_05	OZ554474.1	88.235	68	4	3	5967	6032	4847082	4847147	1.67e-08	78.7	47	562	Escherichia coli isolate AF468 genome assembly, chromosome: 1
+contig_05	OZ554474.1	100.000	38	0	0	5968	6005	2180886	2180849	2.79e-06	71.3	47	562	Escherichia coli isolate AF468 genome assembly, chromosome: 1
+contig_05	OZ554474.1	100.000	38	0	0	5965	6002	2188733	2188770	2.79e-06	71.3	47	562	Escherichia coli isolate AF468 genome assembly, chromosome: 1
+contig_05	OZ554474.1	100.000	38	0	0	5965	6002	2188933	2188970	2.79e-06	71.3	47	562	Escherichia coli isolate AF468 genome assembly, chromosome: 1
+contig_05	OZ554474.1	100.000	37	0	0	5966	6002	35385	35349	1.01e-05	69.4	47	562	Escherichia coli isolate AF468 genome assembly, chromosome: 1
+contig_05	OZ554474.1	100.000	37	0	0	5967	6003	550425	550389	1.01e-05	69.4	47	562	Escherichia coli isolate AF468 genome assembly, chromosome: 1
+contig_05	OZ554474.1	100.000	37	0	0	5966	6002	2189034	2189070	1.01e-05	69.4	47	562	Escherichia coli isolate AF468 genome assembly, chromosome: 1
+contig_05	OZ554474.1	100.000	36	0	0	5967	6002	11869	11904	3.62e-05	67.6	47	562	Escherichia coli isolate AF468 genome assembly, chromosome: 1
+contig_05	OZ554474.1	100.000	36	0	0	5967	6002	1893527	1893492	3.62e-05	67.6	47	562	Escherichia coli isolate AF468 genome assembly, chromosome: 1
+contig_05	OZ554474.1	97.436	39	1	0	5968	6006	1919581	1919543	3.62e-05	67.6	47	562	Escherichia coli isolate AF468 genome assembly, chromosome: 1
+contig_05	OZ554474.1	100.000	36	0	0	5967	6002	2188835	2188870	3.62e-05	67.6	47	562	Escherichia coli isolate AF468 genome assembly, chromosome: 1
+contig_05	OZ554474.1	100.000	36	0	0	5968	6003	2363683	2363648	3.62e-05	67.6	47	562	Escherichia coli isolate AF468 genome assembly, chromosome: 1
+contig_05	OZ554474.1	100.000	36	0	0	5967	6002	2569697	2569662	3.62e-05	67.6	47	562	Escherichia coli isolate AF468 genome assembly, chromosome: 1
+contig_05	OZ554474.1	100.000	36	0	0	5968	6003	2583173	2583208	3.62e-05	67.6	47	562	Escherichia coli isolate AF468 genome assembly, chromosome: 1
+contig_05	OZ554474.1	97.436	39	1	0	5968	6006	2896492	2896530	3.62e-05	67.6	47	562	Escherichia coli isolate AF468 genome assembly, chromosome: 1
+contig_05	OZ554474.1	100.000	36	0	0	5967	6002	3139955	3139920	3.62e-05	67.6	47	562	Escherichia coli isolate AF468 genome assembly, chromosome: 1
+contig_05	OZ554474.1	97.500	40	0	1	5963	6002	3374522	3374484	3.62e-05	67.6	47	562	Escherichia coli isolate AF468 genome assembly, chromosome: 1
+contig_05	OZ554474.1	100.000	35	0	0	5968	6002	42147	42181	1.30e-04	65.8	47	562	Escherichia coli isolate AF468 genome assembly, chromosome: 1
+contig_05	OZ554474.1	100.000	35	0	0	5968	6002	1090654	1090620	1.30e-04	65.8	47	562	Escherichia coli isolate AF468 genome assembly, chromosome: 1
+contig_05	OZ554474.1	100.000	35	0	0	5968	6002	1929611	1929577	1.30e-04	65.8	47	562	Escherichia coli isolate AF468 genome assembly, chromosome: 1
+contig_05	OZ554474.1	100.000	35	0	0	5968	6002	2514418	2514384	1.30e-04	65.8	47	562	Escherichia coli isolate AF468 genome assembly, chromosome: 1
+contig_05	OZ554474.1	100.000	35	0	0	5968	6002	2964668	2964702	1.30e-04	65.8	47	562	Escherichia coli isolate AF468 genome assembly, chromosome: 1
+contig_05	OZ554474.1	100.000	35	0	0	5968	6002	3097012	3096978	1.30e-04	65.8	47	562	Escherichia coli isolate AF468 genome assembly, chromosome: 1
+contig_05	OZ554474.1	97.368	38	1	0	5966	6003	4315638	4315601	1.30e-04	65.8	47	562	Escherichia coli isolate AF468 genome assembly, chromosome: 1
+contig_05	OZ554474.1	95.000	40	1	1	5964	6003	1058292	1058330	0.002	62.1	47	562	Escherichia coli isolate AF468 genome assembly, chromosome: 1
+contig_05	OZ554474.1	97.222	36	1	0	5967	6002	2087452	2087417	0.002	62.1	47	562	Escherichia coli isolate AF468 genome assembly, chromosome: 1
+contig_05	OZ554474.1	97.143	35	1	0	5968	6002	11984	12018	0.006	60.2	47	562	Escherichia coli isolate AF468 genome assembly, chromosome: 1
+contig_05	OZ554474.1	97.143	35	1	0	5968	6002	1250913	1250947	0.006	60.2	47	562	Escherichia coli isolate AF468 genome assembly, chromosome: 1
+contig_05	OZ554474.1	94.737	38	2	0	5968	6005	1971024	1971061	0.006	60.2	47	562	Escherichia coli isolate AF468 genome assembly, chromosome: 1
+contig_05	OZ554474.1	100.000	32	0	0	5968	5999	2112419	2112388	0.006	60.2	47	562	Escherichia coli isolate AF468 genome assembly, chromosome: 1
+contig_05	OZ554474.1	97.059	34	1	0	5969	6002	1533839	1533872	0.022	58.4	47	562	Escherichia coli isolate AF468 genome assembly, chromosome: 1
+contig_05	OZ554474.1	100.000	29	0	0	6039	6067	2518171	2518143	0.28	54.7	47	562	Escherichia coli isolate AF468 genome assembly, chromosome: 1
+contig_05	OZ554474.1	100.000	29	0	0	5967	5995	2578801	2578773	0.28	54.7	47	562	Escherichia coli isolate AF468 genome assembly, chromosome: 1
+contig_05	OZ554474.1	100.000	29	0	0	6039	6067	3327198	3327226	0.28	54.7	47	562	Escherichia coli isolate AF468 genome assembly, chromosome: 1
+contig_05	CP194060.1	100.000	3501	0	0	4001	7501	1773995	1777495	0.0	6466	47	562	Escherichia coli strain BW25113 chromosome
+contig_05	CP194060.1	90.226	133	10	3	5948	6078	3105092	3105223	2.68e-36	171	47	562	Escherichia coli strain BW25113 chromosome
+contig_05	CP194060.1	86.000	150	18	3	5944	6091	675459	675607	2.09e-32	158	47	562	Escherichia coli strain BW25113 chromosome
+contig_05	CP194060.1	86.525	141	16	3	5952	6090	2312390	2312529	9.70e-31	152	47	562	Escherichia coli strain BW25113 chromosome
+contig_05	CP194060.1	89.381	113	7	4	5968	6078	608176	608067	2.72e-26	137	47	562	Escherichia coli strain BW25113 chromosome
+contig_05	CP194060.1	90.566	106	7	3	5968	6073	2428940	2428838	2.72e-26	137	47	562	Escherichia coli strain BW25113 chromosome
+contig_05	CP194060.1	89.524	105	11	0	5968	6072	3367218	3367322	3.51e-25	134	47	562	Escherichia coli strain BW25113 chromosome
+contig_05	CP194060.1	90.196	102	9	1	5968	6069	844241	844141	1.26e-24	132	47	562	Escherichia coli strain BW25113 chromosome
+contig_05	CP194060.1	82.781	151	21	5	5944	6091	3854650	3854798	4.55e-24	130	47	562	Escherichia coli strain BW25113 chromosome
+contig_05	CP194060.1	85.833	120	11	4	5956	6072	3515730	3515614	7.61e-22	122	47	562	Escherichia coli strain BW25113 chromosome
+contig_05	CP194060.1	86.792	106	10	3	5968	6071	4144409	4144306	1.27e-19	115	47	562	Escherichia coli strain BW25113 chromosome
+contig_05	CP194060.1	86.538	104	12	2	5968	6070	3373151	3373049	4.58e-19	113	47	562	Escherichia coli strain BW25113 chromosome
+contig_05	CP194060.1	81.538	130	17	6	5944	6070	1466318	1466193	3.56e-15	100	47	562	Escherichia coli strain BW25113 chromosome
+contig_05	CP194060.1	93.651	63	4	0	5967	6029	3758873	3758935	1.66e-13	95.3	47	562	Escherichia coli strain BW25113 chromosome
+contig_05	CP194060.1	96.364	55	1	1	5967	6020	4625342	4625288	7.72e-12	89.8	47	562	Escherichia coli strain BW25113 chromosome
+contig_05	CP194060.1	88.235	68	4	3	5967	6032	910655	910590	1.67e-08	78.7	47	562	Escherichia coli strain BW25113 chromosome
+contig_05	CP194060.1	100.000	38	0	0	5968	6005	4089113	4089076	2.79e-06	71.3	47	562	Escherichia coli strain BW25113 chromosome
+contig_05	CP194060.1	100.000	38	0	0	5965	6002	4096960	4096997	2.79e-06	71.3	47	562	Escherichia coli strain BW25113 chromosome
+contig_05	CP194060.1	100.000	38	0	0	5965	6002	4097260	4097297	2.79e-06	71.3	47	562	Escherichia coli strain BW25113 chromosome
+contig_05	CP194060.1	100.000	37	0	0	5966	6002	2114390	2114354	1.01e-05	69.4	47	562	Escherichia coli strain BW25113 chromosome
+contig_05	CP194060.1	100.000	37	0	0	5967	6003	2609027	2608991	1.01e-05	69.4	47	562	Escherichia coli strain BW25113 chromosome
+contig_05	CP194060.1	100.000	37	0	0	5967	6003	4056561	4056525	1.01e-05	69.4	47	562	Escherichia coli strain BW25113 chromosome
+contig_05	CP194060.1	100.000	37	0	0	5966	6002	4097161	4097197	1.01e-05	69.4	47	562	Escherichia coli strain BW25113 chromosome
+contig_05	CP194060.1	100.000	37	0	0	5966	6002	4097361	4097397	1.01e-05	69.4	47	562	Escherichia coli strain BW25113 chromosome
+contig_05	CP194060.1	97.436	39	1	0	5968	6006	23960	23922	3.62e-05	67.6	47	562	Escherichia coli strain BW25113 chromosome
+contig_05	CP194060.1	100.000	36	0	0	5967	6002	327301	327266	3.62e-05	67.6	47	562	Escherichia coli strain BW25113 chromosome
+contig_05	CP194060.1	97.500	40	0	1	5963	6002	581775	581737	3.62e-05	67.6	47	562	Escherichia coli strain BW25113 chromosome
+contig_05	CP194060.1	100.000	36	0	0	5967	6002	2090874	2090909	3.62e-05	67.6	47	562	Escherichia coli strain BW25113 chromosome
+contig_05	CP194060.1	100.000	36	0	0	5967	6002	3802062	3802027	3.62e-05	67.6	47	562	Escherichia coli strain BW25113 chromosome
+contig_05	CP194060.1	100.000	36	0	0	5967	6002	3802160	3802125	3.62e-05	67.6	47	562	Escherichia coli strain BW25113 chromosome
+contig_05	CP194060.1	97.436	39	1	0	5968	6006	3828220	3828182	3.62e-05	67.6	47	562	Escherichia coli strain BW25113 chromosome
+contig_05	CP194060.1	100.000	36	0	0	5968	6003	4020670	4020635	3.62e-05	67.6	47	562	Escherichia coli strain BW25113 chromosome
+contig_05	CP194060.1	100.000	36	0	0	5967	6002	4097062	4097097	3.62e-05	67.6	47	562	Escherichia coli strain BW25113 chromosome
+contig_05	CP194060.1	100.000	36	0	0	5968	6003	4231612	4231577	3.62e-05	67.6	47	562	Escherichia coli strain BW25113 chromosome
+contig_05	CP194060.1	100.000	36	0	0	5967	6002	4438562	4438527	3.62e-05	67.6	47	562	Escherichia coli strain BW25113 chromosome
+contig_05	CP194060.1	100.000	35	0	0	5968	6002	151021	151055	1.30e-04	65.8	47	562	Escherichia coli strain BW25113 chromosome
+contig_05	CP194060.1	100.000	35	0	0	5968	6002	284506	284472	1.30e-04	65.8	47	562	Escherichia coli strain BW25113 chromosome
+contig_05	CP194060.1	100.000	35	0	0	5968	6002	284607	284573	1.30e-04	65.8	47	562	Escherichia coli strain BW25113 chromosome
+contig_05	CP194060.1	97.368	38	1	0	5965	6002	613413	613450	1.30e-04	65.8	47	562	Escherichia coli strain BW25113 chromosome
+contig_05	CP194060.1	97.368	38	1	0	5966	6003	1309651	1309688	1.30e-04	65.8	47	562	Escherichia coli strain BW25113 chromosome
+contig_05	CP194060.1	100.000	35	0	0	5968	6002	2121152	2121186	1.30e-04	65.8	47	562	Escherichia coli strain BW25113 chromosome
+contig_05	CP194060.1	100.000	35	0	0	5968	6002	3009378	3009344	1.30e-04	65.8	47	562	Escherichia coli strain BW25113 chromosome
+contig_05	CP194060.1	100.000	35	0	0	5968	6002	3838250	3838216	1.30e-04	65.8	47	562	Escherichia coli strain BW25113 chromosome
+contig_05	CP194060.1	95.000	40	1	1	5964	6003	2977793	2977831	0.002	62.1	47	562	Escherichia coli strain BW25113 chromosome
+contig_05	CP194060.1	97.222	36	1	0	5967	6002	3989793	3989758	0.002	62.1	47	562	Escherichia coli strain BW25113 chromosome
+contig_05	CP194060.1	100.000	32	0	0	6037	6068	53365	53396	0.006	60.2	47	562	Escherichia coli strain BW25113 chromosome
+contig_05	CP194060.1	97.143	35	1	0	5968	6002	2090989	2091023	0.006	60.2	47	562	Escherichia coli strain BW25113 chromosome
+contig_05	CP194060.1	97.143	35	1	0	5968	6002	3166912	3166946	0.006	60.2	47	562	Escherichia coli strain BW25113 chromosome
+contig_05	CP194060.1	94.737	38	2	0	5968	6005	3874780	3874817	0.006	60.2	47	562	Escherichia coli strain BW25113 chromosome
+contig_05	CP194060.1	97.059	34	1	0	5969	6002	3449036	3449069	0.022	58.4	47	562	Escherichia coli strain BW25113 chromosome
+contig_05	CP194060.1	100.000	29	0	0	6039	6067	534287	534315	0.28	54.7	47	562	Escherichia coli strain BW25113 chromosome
+contig_05	CP194060.1	100.000	29	0	0	6039	6067	4389258	4389230	0.28	54.7	47	562	Escherichia coli strain BW25113 chromosome
+contig_05	CP071124.1	100.000	3501	0	0	4001	7501	2000000	2003500	0.0	6466	47	562	Escherichia coli strain PS200 chromosome, complete genome
+contig_05	CP071124.1	90.226	133	10	3	5948	6078	3330438	3330569	2.68e-36	171	47	562	Escherichia coli strain PS200 chromosome, complete genome
+contig_05	CP071124.1	86.000	150	18	3	5944	6091	899670	899818	2.09e-32	158	47	562	Escherichia coli strain PS200 chromosome, complete genome
+contig_05	CP071124.1	86.525	141	16	3	5952	6090	2538517	2538656	9.70e-31	152	47	562	Escherichia coli strain PS200 chromosome, complete genome
+contig_05	CP071124.1	89.381	113	7	4	5968	6078	832387	832278	2.72e-26	137	47	562	Escherichia coli strain PS200 chromosome, complete genome
+contig_05	CP071124.1	90.566	106	7	3	5968	6073	2655067	2654965	2.72e-26	137	47	562	Escherichia coli strain PS200 chromosome, complete genome
+contig_05	CP071124.1	89.524	105	11	0	5968	6072	3590723	3590827	3.51e-25	134	47	562	Escherichia coli strain PS200 chromosome, complete genome
+contig_05	CP071124.1	90.196	102	9	1	5968	6069	1068452	1068352	1.26e-24	132	47	562	Escherichia coli strain PS200 chromosome, complete genome
+contig_05	CP071124.1	82.781	151	21	5	5944	6091	4078154	4078302	4.55e-24	130	47	562	Escherichia coli strain PS200 chromosome, complete genome
+contig_05	CP071124.1	85.833	120	11	4	5956	6072	3739235	3739119	7.61e-22	122	47	562	Escherichia coli strain PS200 chromosome, complete genome
+contig_05	CP071124.1	86.792	106	10	3	5968	6071	4371456	4371353	1.27e-19	115	47	562	Escherichia coli strain PS200 chromosome, complete genome
+contig_05	CP071124.1	86.538	104	12	2	5968	6070	3596656	3596554	4.58e-19	113	47	562	Escherichia coli strain PS200 chromosome, complete genome
+contig_05	CP071124.1	81.538	130	17	6	5944	6070	1691547	1691422	3.56e-15	100	47	562	Escherichia coli strain PS200 chromosome, complete genome
+contig_05	CP071124.1	93.651	63	4	0	5967	6029	3982378	3982440	1.66e-13	95.3	47	562	Escherichia coli strain PS200 chromosome, complete genome
+contig_05	CP071124.1	96.364	55	1	1	5967	6020	216090	216036	7.72e-12	89.8	47	562	Escherichia coli strain PS200 chromosome, complete genome
+contig_05	CP071124.1	88.235	68	4	3	5967	6032	1134685	1134620	1.67e-08	78.7	47	562	Escherichia coli strain PS200 chromosome, complete genome
+contig_05	CP071124.1	100.000	38	0	0	5968	6005	4316160	4316123	2.79e-06	71.3	47	562	Escherichia coli strain PS200 chromosome, complete genome
+contig_05	CP071124.1	100.000	38	0	0	5965	6002	4324007	4324044	2.79e-06	71.3	47	562	Escherichia coli strain PS200 chromosome, complete genome
+contig_05	CP071124.1	100.000	38	0	0	5965	6002	4324307	4324344	2.79e-06	71.3	47	562	Escherichia coli strain PS200 chromosome, complete genome
+contig_05	CP071124.1	100.000	37	0	0	5966	6002	2340397	2340361	1.01e-05	69.4	47	562	Escherichia coli strain PS200 chromosome, complete genome
+contig_05	CP071124.1	100.000	37	0	0	5967	6003	2835150	2835114	1.01e-05	69.4	47	562	Escherichia coli strain PS200 chromosome, complete genome
+contig_05	CP071124.1	100.000	37	0	0	5967	6003	4283497	4283461	1.01e-05	69.4	47	562	Escherichia coli strain PS200 chromosome, complete genome
+contig_05	CP071124.1	100.000	37	0	0	5966	6002	4324208	4324244	1.01e-05	69.4	47	562	Escherichia coli strain PS200 chromosome, complete genome
+contig_05	CP071124.1	100.000	37	0	0	5966	6002	4324408	4324444	1.01e-05	69.4	47	562	Escherichia coli strain PS200 chromosome, complete genome
+contig_05	CP071124.1	100.000	36	0	0	5967	6002	25797	25762	3.62e-05	67.6	47	562	Escherichia coli strain PS200 chromosome, complete genome
+contig_05	CP071124.1	97.436	39	1	0	5968	6006	247492	247454	3.62e-05	67.6	47	562	Escherichia coli strain PS200 chromosome, complete genome
+contig_05	CP071124.1	100.000	36	0	0	5967	6002	551512	551477	3.62e-05	67.6	47	562	Escherichia coli strain PS200 chromosome, complete genome
+contig_05	CP071124.1	97.500	40	0	1	5963	6002	805986	805948	3.62e-05	67.6	47	562	Escherichia coli strain PS200 chromosome, complete genome
+contig_05	CP071124.1	100.000	36	0	0	5967	6002	2316881	2316916	3.62e-05	67.6	47	562	Escherichia coli strain PS200 chromosome, complete genome
+contig_05	CP071124.1	100.000	36	0	0	5967	6002	4025567	4025532	3.62e-05	67.6	47	562	Escherichia coli strain PS200 chromosome, complete genome
+contig_05	CP071124.1	100.000	36	0	0	5967	6002	4025665	4025630	3.62e-05	67.6	47	562	Escherichia coli strain PS200 chromosome, complete genome
+contig_05	CP071124.1	97.436	39	1	0	5968	6006	4051724	4051686	3.62e-05	67.6	47	562	Escherichia coli strain PS200 chromosome, complete genome
+contig_05	CP071124.1	100.000	36	0	0	5968	6003	4247606	4247571	3.62e-05	67.6	47	562	Escherichia coli strain PS200 chromosome, complete genome
+contig_05	CP071124.1	100.000	36	0	0	5967	6002	4324109	4324144	3.62e-05	67.6	47	562	Escherichia coli strain PS200 chromosome, complete genome
+contig_05	CP071124.1	100.000	36	0	0	5968	6003	4458659	4458624	3.62e-05	67.6	47	562	Escherichia coli strain PS200 chromosome, complete genome
+contig_05	CP071124.1	100.000	35	0	0	5968	6002	375232	375266	1.30e-04	65.8	47	562	Escherichia coli strain PS200 chromosome, complete genome
+contig_05	CP071124.1	100.000	35	0	0	5968	6002	508717	508683	1.30e-04	65.8	47	562	Escherichia coli strain PS200 chromosome, complete genome
+contig_05	CP071124.1	100.000	35	0	0	5968	6002	508818	508784	1.30e-04	65.8	47	562	Escherichia coli strain PS200 chromosome, complete genome
+contig_05	CP071124.1	97.368	38	1	0	5965	6002	837624	837661	1.30e-04	65.8	47	562	Escherichia coli strain PS200 chromosome, complete genome
+contig_05	CP071124.1	97.368	38	1	0	5966	6003	1534880	1534917	1.30e-04	65.8	47	562	Escherichia coli strain PS200 chromosome, complete genome
+contig_05	CP071124.1	100.000	35	0	0	5968	6002	2347159	2347193	1.30e-04	65.8	47	562	Escherichia coli strain PS200 chromosome, complete genome
+contig_05	CP071124.1	100.000	35	0	0	5968	6002	3234724	3234690	1.30e-04	65.8	47	562	Escherichia coli strain PS200 chromosome, complete genome
+contig_05	CP071124.1	100.000	35	0	0	5968	6002	4061754	4061720	1.30e-04	65.8	47	562	Escherichia coli strain PS200 chromosome, complete genome
+contig_05	CP071124.1	95.000	40	1	1	5964	6003	3203139	3203177	0.002	62.1	47	562	Escherichia coli strain PS200 chromosome, complete genome
+contig_05	CP071124.1	97.222	36	1	0	5967	6002	4216729	4216694	0.002	62.1	47	562	Escherichia coli strain PS200 chromosome, complete genome
+contig_05	CP071124.1	100.000	32	0	0	6037	6068	277673	277704	0.006	60.2	47	562	Escherichia coli strain PS200 chromosome, complete genome
+contig_05	CP071124.1	97.143	35	1	0	5968	6002	2316996	2317030	0.006	60.2	47	562	Escherichia coli strain PS200 chromosome, complete genome
+contig_05	CP071124.1	97.143	35	1	0	5968	6002	3392258	3392292	0.006	60.2	47	562	Escherichia coli strain PS200 chromosome, complete genome
+contig_05	CP071124.1	94.737	38	2	0	5968	6005	4101716	4101753	0.006	60.2	47	562	Escherichia coli strain PS200 chromosome, complete genome
+contig_05	CP071124.1	97.059	34	1	0	5969	6002	3672541	3672574	0.022	58.4	47	562	Escherichia coli strain PS200 chromosome, complete genome
+contig_05	CP071124.1	100.000	29	0	0	6039	6067	758498	758526	0.28	54.7	47	562	Escherichia coli strain PS200 chromosome, complete genome
+contig_05	CP071124.1	100.000	29	0	0	6039	6067	4616305	4616277	0.28	54.7	47	562	Escherichia coli strain PS200 chromosome, complete genome
+contig_05	CP192525.1	100.000	3501	0	0	4001	7501	1879298	1875798	0.0	6466	47	562	Escherichia coli strain TUM22760 chromosome, complete genome
+contig_05	CP192525.1	90.226	133	10	3	5948	6078	554630	554499	2.68e-36	171	47	562	Escherichia coli strain TUM22760 chromosome, complete genome
+contig_05	CP192525.1	86.000	150	18	3	5944	6091	3031847	3031699	2.09e-32	158	47	562	Escherichia coli strain TUM22760 chromosome, complete genome
+contig_05	CP192525.1	86.525	141	16	3	5952	6090	1339698	1339559	9.70e-31	152	47	562	Escherichia coli strain TUM22760 chromosome, complete genome
+contig_05	CP192525.1	90.566	106	7	3	5968	6073	1229938	1230040	2.72e-26	137	47	562	Escherichia coli strain TUM22760 chromosome, complete genome
+contig_05	CP192525.1	89.381	113	7	4	5968	6078	3099130	3099239	2.72e-26	137	47	562	Escherichia coli strain TUM22760 chromosome, complete genome
+contig_05	CP192525.1	89.524	105	11	0	5968	6072	292504	292400	3.51e-25	134	47	562	Escherichia coli strain TUM22760 chromosome, complete genome
+contig_05	CP192525.1	90.196	102	9	1	5968	6069	2863065	2863165	1.26e-24	132	47	562	Escherichia coli strain TUM22760 chromosome, complete genome
+contig_05	CP192525.1	82.781	151	21	5	5944	6091	4387339	4387191	4.55e-24	130	47	562	Escherichia coli strain TUM22760 chromosome, complete genome
+contig_05	CP192525.1	85.833	120	11	4	5956	6072	142656	142772	7.61e-22	122	47	562	Escherichia coli strain TUM22760 chromosome, complete genome
+contig_05	CP192525.1	86.792	106	10	3	5968	6071	4094148	4094251	1.27e-19	115	47	562	Escherichia coli strain TUM22760 chromosome, complete genome
+contig_05	CP192525.1	86.538	104	12	2	5968	6070	286571	286673	4.58e-19	113	47	562	Escherichia coli strain TUM22760 chromosome, complete genome
+contig_05	CP192525.1	81.538	130	17	6	5944	6070	2188174	2188299	3.56e-15	100	47	562	Escherichia coli strain TUM22760 chromosome, complete genome
+contig_05	CP192525.1	93.651	63	4	0	5967	6029	4483115	4483053	1.66e-13	95.3	47	562	Escherichia coli strain TUM22760 chromosome, complete genome
+contig_05	CP192525.1	96.364	55	1	1	5967	6020	3609200	3609254	7.72e-12	89.8	47	562	Escherichia coli strain TUM22760 chromosome, complete genome
+contig_05	CP192525.1	88.235	68	4	3	5967	6032	2795452	2795517	1.67e-08	78.7	47	562	Escherichia coli strain TUM22760 chromosome, complete genome
+contig_05	CP192525.1	100.000	38	0	0	5965	6002	4141297	4141260	2.79e-06	71.3	47	562	Escherichia coli strain TUM22760 chromosome, complete genome
+contig_05	CP192525.1	100.000	38	0	0	5965	6002	4141597	4141560	2.79e-06	71.3	47	562	Escherichia coli strain TUM22760 chromosome, complete genome
+contig_05	CP192525.1	100.000	38	0	0	5968	6005	4149444	4149481	2.79e-06	71.3	47	562	Escherichia coli strain TUM22760 chromosome, complete genome
+contig_05	CP192525.1	100.000	37	0	0	5967	6003	1049856	1049892	1.01e-05	69.4	47	562	Escherichia coli strain TUM22760 chromosome, complete genome
+contig_05	CP192525.1	100.000	37	0	0	5966	6002	1537818	1537854	1.01e-05	69.4	47	562	Escherichia coli strain TUM22760 chromosome, complete genome
+contig_05	CP192525.1	100.000	37	0	0	5966	6002	4141196	4141160	1.01e-05	69.4	47	562	Escherichia coli strain TUM22760 chromosome, complete genome
+contig_05	CP192525.1	100.000	37	0	0	5966	6002	4141396	4141360	1.01e-05	69.4	47	562	Escherichia coli strain TUM22760 chromosome, complete genome
+contig_05	CP192525.1	100.000	37	0	0	5967	6003	4181996	4182032	1.01e-05	69.4	47	562	Escherichia coli strain TUM22760 chromosome, complete genome
+contig_05	CP192525.1	100.000	36	0	0	5967	6002	1561334	1561299	3.62e-05	67.6	47	562	Escherichia coli strain TUM22760 chromosome, complete genome
+contig_05	CP192525.1	97.500	40	0	1	5963	6002	3125531	3125569	3.62e-05	67.6	47	562	Escherichia coli strain TUM22760 chromosome, complete genome
+contig_05	CP192525.1	100.000	36	0	0	5967	6002	3369841	3369876	3.62e-05	67.6	47	562	Escherichia coli strain TUM22760 chromosome, complete genome
+contig_05	CP192525.1	97.436	39	1	0	5968	6006	3577798	3577836	3.62e-05	67.6	47	562	Escherichia coli strain TUM22760 chromosome, complete genome
+contig_05	CP192525.1	100.000	36	0	0	5967	6002	3799493	3799528	3.62e-05	67.6	47	562	Escherichia coli strain TUM22760 chromosome, complete genome
+contig_05	CP192525.1	100.000	36	0	0	5968	6003	4007219	4007254	3.62e-05	67.6	47	562	Escherichia coli strain TUM22760 chromosome, complete genome
+contig_05	CP192525.1	100.000	36	0	0	5967	6002	4141495	4141460	3.62e-05	67.6	47	562	Escherichia coli strain TUM22760 chromosome, complete genome
+contig_05	CP192525.1	100.000	36	0	0	5968	6003	4217887	4217922	3.62e-05	67.6	47	562	Escherichia coli strain TUM22760 chromosome, complete genome
+contig_05	CP192525.1	97.436	39	1	0	5968	6006	4413769	4413807	3.62e-05	67.6	47	562	Escherichia coli strain TUM22760 chromosome, complete genome
+contig_05	CP192525.1	100.000	36	0	0	5967	6002	4439828	4439863	3.62e-05	67.6	47	562	Escherichia coli strain TUM22760 chromosome, complete genome
+contig_05	CP192525.1	100.000	36	0	0	5967	6002	4439926	4439961	3.62e-05	67.6	47	562	Escherichia coli strain TUM22760 chromosome, complete genome
+contig_05	CP192525.1	100.000	35	0	0	5968	6002	650344	650378	1.30e-04	65.8	47	562	Escherichia coli strain TUM22760 chromosome, complete genome
+contig_05	CP192525.1	100.000	35	0	0	5968	6002	1531056	1531022	1.30e-04	65.8	47	562	Escherichia coli strain TUM22760 chromosome, complete genome
+contig_05	CP192525.1	97.368	38	1	0	5966	6003	2344841	2344804	1.30e-04	65.8	47	562	Escherichia coli strain TUM22760 chromosome, complete genome
+contig_05	CP192525.1	95.122	41	2	0	5965	6005	3093893	3093853	1.30e-04	65.8	47	562	Escherichia coli strain TUM22760 chromosome, complete genome
+contig_05	CP192525.1	100.000	35	0	0	5968	6002	3412535	3412569	1.30e-04	65.8	47	562	Escherichia coli strain TUM22760 chromosome, complete genome
+contig_05	CP192525.1	100.000	35	0	0	5968	6002	3412636	3412670	1.30e-04	65.8	47	562	Escherichia coli strain TUM22760 chromosome, complete genome
+contig_05	CP192525.1	100.000	35	0	0	5968	6002	3545398	3545364	1.30e-04	65.8	47	562	Escherichia coli strain TUM22760 chromosome, complete genome
+contig_05	CP192525.1	100.000	35	0	0	5968	6002	4403739	4403773	1.30e-04	65.8	47	562	Escherichia coli strain TUM22760 chromosome, complete genome
+contig_05	CP192525.1	97.297	37	0	1	5967	6003	681925	681890	0.002	62.1	47	562	Escherichia coli strain TUM22760 chromosome, complete genome
+contig_05	CP192525.1	97.222	36	1	0	5967	6002	4248764	4248799	0.002	62.1	47	562	Escherichia coli strain TUM22760 chromosome, complete genome
+contig_05	CP192525.1	97.143	35	1	0	5968	6002	492810	492776	0.006	60.2	47	562	Escherichia coli strain TUM22760 chromosome, complete genome
+contig_05	CP192525.1	94.737	38	2	0	5968	6005	1561219	1561182	0.006	60.2	47	562	Escherichia coli strain TUM22760 chromosome, complete genome
+contig_05	CP192525.1	94.737	38	2	0	5968	6005	4363777	4363740	0.006	60.2	47	562	Escherichia coli strain TUM22760 chromosome, complete genome
+contig_05	CP192525.1	97.059	34	1	0	5969	6002	210686	210653	0.022	58.4	47	562	Escherichia coli strain TUM22760 chromosome, complete genome
+contig_05	CP192525.1	100.000	29	0	0	6039	6067	3173019	3172991	0.28	54.7	47	562	Escherichia coli strain TUM22760 chromosome, complete genome
+contig_05	CP192525.1	96.875	32	1	0	6036	6067	3848794	3848825	0.28	54.7	47	562	Escherichia coli strain TUM22760 chromosome, complete genome
+contig_05	CP195190.1	100.000	3501	0	0	4001	7501	1883609	1880109	0.0	6466	47	562	Escherichia coli strain BW25113 (VHB17) chromosome, complete genome
+contig_05	CP195190.1	90.226	133	10	3	5948	6078	553293	553162	2.68e-36	171	47	562	Escherichia coli strain BW25113 (VHB17) chromosome, complete genome
+contig_05	CP195190.1	86.000	150	18	3	5944	6091	2983344	2983196	2.09e-32	158	47	562	Escherichia coli strain BW25113 (VHB17) chromosome, complete genome
+contig_05	CP195190.1	86.525	141	16	3	5952	6090	1345214	1345075	9.70e-31	152	47	562	Escherichia coli strain BW25113 (VHB17) chromosome, complete genome
+contig_05	CP195190.1	90.566	106	7	3	5968	6073	1228664	1228766	2.72e-26	137	47	562	Escherichia coli strain BW25113 (VHB17) chromosome, complete genome
+contig_05	CP195190.1	89.381	113	7	4	5968	6078	3050627	3050736	2.72e-26	137	47	562	Escherichia coli strain BW25113 (VHB17) chromosome, complete genome
+contig_05	CP195190.1	89.524	105	11	0	5968	6072	291167	291063	3.51e-25	134	47	562	Escherichia coli strain BW25113 (VHB17) chromosome, complete genome
+contig_05	CP195190.1	90.196	102	9	1	5968	6069	2814562	2814662	1.26e-24	132	47	562	Escherichia coli strain BW25113 (VHB17) chromosome, complete genome
+contig_05	CP195190.1	82.781	151	21	5	5944	6091	4436951	4436803	4.55e-24	130	47	562	Escherichia coli strain BW25113 (VHB17) chromosome, complete genome
+contig_05	CP195190.1	85.833	120	11	4	5956	6072	142655	142771	7.61e-22	122	47	562	Escherichia coli strain BW25113 (VHB17) chromosome, complete genome
+contig_05	CP195190.1	86.792	106	10	3	5968	6071	4147192	4147295	1.27e-19	115	47	562	Escherichia coli strain BW25113 (VHB17) chromosome, complete genome
+contig_05	CP195190.1	86.538	104	12	2	5968	6070	285234	285336	4.58e-19	113	47	562	Escherichia coli strain BW25113 (VHB17) chromosome, complete genome
+contig_05	CP195190.1	81.538	130	17	6	5944	6070	2192485	2192610	3.56e-15	100	47	562	Escherichia coli strain BW25113 (VHB17) chromosome, complete genome
+contig_05	CP195190.1	93.651	63	4	0	5967	6029	4532727	4532665	1.66e-13	95.3	47	562	Escherichia coli strain BW25113 (VHB17) chromosome, complete genome
+contig_05	CP195190.1	96.364	55	1	1	5967	6020	3666259	3666313	7.72e-12	89.8	47	562	Escherichia coli strain BW25113 (VHB17) chromosome, complete genome
+contig_05	CP195190.1	88.235	68	4	3	5967	6032	2748148	2748213	1.67e-08	78.7	47	562	Escherichia coli strain BW25113 (VHB17) chromosome, complete genome
+contig_05	CP195190.1	100.000	38	0	0	5965	6002	4194341	4194304	2.79e-06	71.3	47	562	Escherichia coli strain BW25113 (VHB17) chromosome, complete genome
+contig_05	CP195190.1	100.000	38	0	0	5965	6002	4194641	4194604	2.79e-06	71.3	47	562	Escherichia coli strain BW25113 (VHB17) chromosome, complete genome
+contig_05	CP195190.1	100.000	38	0	0	5968	6005	4202488	4202525	2.79e-06	71.3	47	562	Escherichia coli strain BW25113 (VHB17) chromosome, complete genome
+contig_05	CP195190.1	100.000	37	0	0	5967	6003	1048581	1048617	1.01e-05	69.4	47	562	Escherichia coli strain BW25113 (VHB17) chromosome, complete genome
+contig_05	CP195190.1	100.000	37	0	0	5966	6002	1543214	1543250	1.01e-05	69.4	47	562	Escherichia coli strain BW25113 (VHB17) chromosome, complete genome
+contig_05	CP195190.1	100.000	37	0	0	5966	6002	4194240	4194204	1.01e-05	69.4	47	562	Escherichia coli strain BW25113 (VHB17) chromosome, complete genome
+contig_05	CP195190.1	100.000	37	0	0	5966	6002	4194440	4194404	1.01e-05	69.4	47	562	Escherichia coli strain BW25113 (VHB17) chromosome, complete genome
+contig_05	CP195190.1	100.000	37	0	0	5967	6003	4235040	4235076	1.01e-05	69.4	47	562	Escherichia coli strain BW25113 (VHB17) chromosome, complete genome
+contig_05	CP195190.1	100.000	36	0	0	5967	6002	1566730	1566695	3.62e-05	67.6	47	562	Escherichia coli strain BW25113 (VHB17) chromosome, complete genome
+contig_05	CP195190.1	97.500	40	0	1	5963	6002	3077028	3077066	3.62e-05	67.6	47	562	Escherichia coli strain BW25113 (VHB17) chromosome, complete genome
+contig_05	CP195190.1	100.000	36	0	0	5967	6002	3331502	3331537	3.62e-05	67.6	47	562	Escherichia coli strain BW25113 (VHB17) chromosome, complete genome
+contig_05	CP195190.1	97.436	39	1	0	5968	6006	3634857	3634895	3.62e-05	67.6	47	562	Escherichia coli strain BW25113 (VHB17) chromosome, complete genome
+contig_05	CP195190.1	100.000	36	0	0	5967	6002	3853039	3853074	3.62e-05	67.6	47	562	Escherichia coli strain BW25113 (VHB17) chromosome, complete genome
+contig_05	CP195190.1	100.000	36	0	0	5968	6003	4059989	4060024	3.62e-05	67.6	47	562	Escherichia coli strain BW25113 (VHB17) chromosome, complete genome
+contig_05	CP195190.1	100.000	36	0	0	5967	6002	4194539	4194504	3.62e-05	67.6	47	562	Escherichia coli strain BW25113 (VHB17) chromosome, complete genome
+contig_05	CP195190.1	100.000	36	0	0	5968	6003	4270931	4270966	3.62e-05	67.6	47	562	Escherichia coli strain BW25113 (VHB17) chromosome, complete genome
+contig_05	CP195190.1	97.436	39	1	0	5968	6006	4463381	4463419	3.62e-05	67.6	47	562	Escherichia coli strain BW25113 (VHB17) chromosome, complete genome
+contig_05	CP195190.1	100.000	36	0	0	5967	6002	4489440	4489475	3.62e-05	67.6	47	562	Escherichia coli strain BW25113 (VHB17) chromosome, complete genome
+contig_05	CP195190.1	100.000	36	0	0	5967	6002	4489538	4489573	3.62e-05	67.6	47	562	Escherichia coli strain BW25113 (VHB17) chromosome, complete genome
+contig_05	CP195190.1	100.000	35	0	0	5968	6002	649007	649041	1.30e-04	65.8	47	562	Escherichia coli strain BW25113 (VHB17) chromosome, complete genome
+contig_05	CP195190.1	100.000	35	0	0	5968	6002	1536452	1536418	1.30e-04	65.8	47	562	Escherichia coli strain BW25113 (VHB17) chromosome, complete genome
+contig_05	CP195190.1	97.368	38	1	0	5966	6003	2349152	2349115	1.30e-04	65.8	47	562	Escherichia coli strain BW25113 (VHB17) chromosome, complete genome
+contig_05	CP195190.1	95.122	41	2	0	5965	6005	3045390	3045350	1.30e-04	65.8	47	562	Escherichia coli strain BW25113 (VHB17) chromosome, complete genome
+contig_05	CP195190.1	100.000	35	0	0	5968	6002	3374196	3374230	1.30e-04	65.8	47	562	Escherichia coli strain BW25113 (VHB17) chromosome, complete genome
+contig_05	CP195190.1	100.000	35	0	0	5968	6002	3374297	3374331	1.30e-04	65.8	47	562	Escherichia coli strain BW25113 (VHB17) chromosome, complete genome
+contig_05	CP195190.1	100.000	35	0	0	5968	6002	3507782	3507748	1.30e-04	65.8	47	562	Escherichia coli strain BW25113 (VHB17) chromosome, complete genome
+contig_05	CP195190.1	100.000	35	0	0	5968	6002	4453351	4453385	1.30e-04	65.8	47	562	Escherichia coli strain BW25113 (VHB17) chromosome, complete genome
+contig_05	CP195190.1	97.297	37	0	1	5967	6003	680589	680554	0.002	62.1	47	562	Escherichia coli strain BW25113 (VHB17) chromosome, complete genome
+contig_05	CP195190.1	97.222	36	1	0	5967	6002	4301808	4301843	0.002	62.1	47	562	Escherichia coli strain BW25113 (VHB17) chromosome, complete genome
+contig_05	CP195190.1	97.143	35	1	0	5968	6002	491473	491439	0.006	60.2	47	562	Escherichia coli strain BW25113 (VHB17) chromosome, complete genome
+contig_05	CP195190.1	94.737	38	2	0	5968	6005	1566615	1566578	0.006	60.2	47	562	Escherichia coli strain BW25113 (VHB17) chromosome, complete genome
+contig_05	CP195190.1	100.000	32	0	0	6037	6068	3605452	3605421	0.006	60.2	47	562	Escherichia coli strain BW25113 (VHB17) chromosome, complete genome
+contig_05	CP195190.1	94.737	38	2	0	5968	6005	4416821	4416784	0.006	60.2	47	562	Escherichia coli strain BW25113 (VHB17) chromosome, complete genome
+contig_05	CP195190.1	97.059	34	1	0	5969	6002	209349	209316	0.022	58.4	47	562	Escherichia coli strain BW25113 (VHB17) chromosome, complete genome
+contig_05	CP195190.1	100.000	29	0	0	6039	6067	3124516	3124488	0.28	54.7	47	562	Escherichia coli strain BW25113 (VHB17) chromosome, complete genome
+contig_05	CP195190.1	96.875	32	1	0	6036	6067	3902340	3902371	0.28	54.7	47	562	Escherichia coli strain BW25113 (VHB17) chromosome, complete genome
+contig_05	CP188149.1	100.000	3501	0	0	4001	7501	1879298	1875798	0.0	6466	47	562	Escherichia coli strain TUM23339 chromosome, complete genome
+contig_05	CP188149.1	90.226	133	10	3	5948	6078	554630	554499	2.68e-36	171	47	562	Escherichia coli strain TUM23339 chromosome, complete genome
+contig_05	CP188149.1	86.000	150	18	3	5944	6091	3031847	3031699	2.09e-32	158	47	562	Escherichia coli strain TUM23339 chromosome, complete genome
+contig_05	CP188149.1	86.525	141	16	3	5952	6090	1339698	1339559	9.70e-31	152	47	562	Escherichia coli strain TUM23339 chromosome, complete genome
+contig_05	CP188149.1	90.566	106	7	3	5968	6073	1229938	1230040	2.72e-26	137	47	562	Escherichia coli strain TUM23339 chromosome, complete genome
+contig_05	CP188149.1	89.381	113	7	4	5968	6078	3099130	3099239	2.72e-26	137	47	562	Escherichia coli strain TUM23339 chromosome, complete genome
+contig_05	CP188149.1	89.524	105	11	0	5968	6072	292504	292400	3.51e-25	134	47	562	Escherichia coli strain TUM23339 chromosome, complete genome
+contig_05	CP188149.1	90.196	102	9	1	5968	6069	2863065	2863165	1.26e-24	132	47	562	Escherichia coli strain TUM23339 chromosome, complete genome
+contig_05	CP188149.1	82.781	151	21	5	5944	6091	4387339	4387191	4.55e-24	130	47	562	Escherichia coli strain TUM23339 chromosome, complete genome
+contig_05	CP188149.1	85.833	120	11	4	5956	6072	142656	142772	7.61e-22	122	47	562	Escherichia coli strain TUM23339 chromosome, complete genome
+contig_05	CP188149.1	86.792	106	10	3	5968	6071	4094148	4094251	1.27e-19	115	47	562	Escherichia coli strain TUM23339 chromosome, complete genome
+contig_05	CP188149.1	86.538	104	12	2	5968	6070	286571	286673	4.58e-19	113	47	562	Escherichia coli strain TUM23339 chromosome, complete genome
+contig_05	CP188149.1	81.538	130	17	6	5944	6070	2188174	2188299	3.56e-15	100	47	562	Escherichia coli strain TUM23339 chromosome, complete genome
+contig_05	CP188149.1	93.651	63	4	0	5967	6029	4483115	4483053	1.66e-13	95.3	47	562	Escherichia coli strain TUM23339 chromosome, complete genome
+contig_05	CP188149.1	96.364	55	1	1	5967	6020	3609200	3609254	7.72e-12	89.8	47	562	Escherichia coli strain TUM23339 chromosome, complete genome
+contig_05	CP188149.1	88.235	68	4	3	5967	6032	2795452	2795517	1.67e-08	78.7	47	562	Escherichia coli strain TUM23339 chromosome, complete genome
+contig_05	CP188149.1	100.000	38	0	0	5965	6002	4141297	4141260	2.79e-06	71.3	47	562	Escherichia coli strain TUM23339 chromosome, complete genome
+contig_05	CP188149.1	100.000	38	0	0	5965	6002	4141597	4141560	2.79e-06	71.3	47	562	Escherichia coli strain TUM23339 chromosome, complete genome
+contig_05	CP188149.1	100.000	38	0	0	5968	6005	4149444	4149481	2.79e-06	71.3	47	562	Escherichia coli strain TUM23339 chromosome, complete genome
+contig_05	CP188149.1	100.000	37	0	0	5967	6003	1049856	1049892	1.01e-05	69.4	47	562	Escherichia coli strain TUM23339 chromosome, complete genome
+contig_05	CP188149.1	100.000	37	0	0	5966	6002	1537818	1537854	1.01e-05	69.4	47	562	Escherichia coli strain TUM23339 chromosome, complete genome
+contig_05	CP188149.1	100.000	37	0	0	5966	6002	4141196	4141160	1.01e-05	69.4	47	562	Escherichia coli strain TUM23339 chromosome, complete genome
+contig_05	CP188149.1	100.000	37	0	0	5966	6002	4141396	4141360	1.01e-05	69.4	47	562	Escherichia coli strain TUM23339 chromosome, complete genome
+contig_05	CP188149.1	100.000	37	0	0	5967	6003	4181996	4182032	1.01e-05	69.4	47	562	Escherichia coli strain TUM23339 chromosome, complete genome
+contig_05	CP188149.1	100.000	36	0	0	5967	6002	1561334	1561299	3.62e-05	67.6	47	562	Escherichia coli strain TUM23339 chromosome, complete genome
+contig_05	CP188149.1	97.500	40	0	1	5963	6002	3125531	3125569	3.62e-05	67.6	47	562	Escherichia coli strain TUM23339 chromosome, complete genome
+contig_05	CP188149.1	100.000	36	0	0	5967	6002	3369841	3369876	3.62e-05	67.6	47	562	Escherichia coli strain TUM23339 chromosome, complete genome
+contig_05	CP188149.1	97.436	39	1	0	5968	6006	3577798	3577836	3.62e-05	67.6	47	562	Escherichia coli strain TUM23339 chromosome, complete genome
+contig_05	CP188149.1	100.000	36	0	0	5967	6002	3799493	3799528	3.62e-05	67.6	47	562	Escherichia coli strain TUM23339 chromosome, complete genome
+contig_05	CP188149.1	100.000	36	0	0	5968	6003	4007219	4007254	3.62e-05	67.6	47	562	Escherichia coli strain TUM23339 chromosome, complete genome
+contig_05	CP188149.1	100.000	36	0	0	5967	6002	4141495	4141460	3.62e-05	67.6	47	562	Escherichia coli strain TUM23339 chromosome, complete genome
+contig_05	CP188149.1	100.000	36	0	0	5968	6003	4217887	4217922	3.62e-05	67.6	47	562	Escherichia coli strain TUM23339 chromosome, complete genome
+contig_05	CP188149.1	97.436	39	1	0	5968	6006	4413769	4413807	3.62e-05	67.6	47	562	Escherichia coli strain TUM23339 chromosome, complete genome
+contig_05	CP188149.1	100.000	36	0	0	5967	6002	4439828	4439863	3.62e-05	67.6	47	562	Escherichia coli strain TUM23339 chromosome, complete genome
+contig_05	CP188149.1	100.000	36	0	0	5967	6002	4439926	4439961	3.62e-05	67.6	47	562	Escherichia coli strain TUM23339 chromosome, complete genome
+contig_05	CP188149.1	100.000	35	0	0	5968	6002	650344	650378	1.30e-04	65.8	47	562	Escherichia coli strain TUM23339 chromosome, complete genome
+contig_05	CP188149.1	100.000	35	0	0	5968	6002	1531056	1531022	1.30e-04	65.8	47	562	Escherichia coli strain TUM23339 chromosome, complete genome
+contig_05	CP188149.1	97.368	38	1	0	5966	6003	2344841	2344804	1.30e-04	65.8	47	562	Escherichia coli strain TUM23339 chromosome, complete genome
+contig_05	CP188149.1	95.122	41	2	0	5965	6005	3093893	3093853	1.30e-04	65.8	47	562	Escherichia coli strain TUM23339 chromosome, complete genome
+contig_05	CP188149.1	100.000	35	0	0	5968	6002	3412535	3412569	1.30e-04	65.8	47	562	Escherichia coli strain TUM23339 chromosome, complete genome
+contig_05	CP188149.1	100.000	35	0	0	5968	6002	3412636	3412670	1.30e-04	65.8	47	562	Escherichia coli strain TUM23339 chromosome, complete genome
+contig_05	CP188149.1	100.000	35	0	0	5968	6002	3545398	3545364	1.30e-04	65.8	47	562	Escherichia coli strain TUM23339 chromosome, complete genome
+contig_05	CP188149.1	100.000	35	0	0	5968	6002	4403739	4403773	1.30e-04	65.8	47	562	Escherichia coli strain TUM23339 chromosome, complete genome
+contig_05	CP188149.1	97.297	37	0	1	5967	6003	681925	681890	0.002	62.1	47	562	Escherichia coli strain TUM23339 chromosome, complete genome
+contig_05	CP188149.1	97.222	36	1	0	5967	6002	4248764	4248799	0.002	62.1	47	562	Escherichia coli strain TUM23339 chromosome, complete genome
+contig_05	CP188149.1	97.143	35	1	0	5968	6002	492810	492776	0.006	60.2	47	562	Escherichia coli strain TUM23339 chromosome, complete genome
+contig_05	CP188149.1	94.737	38	2	0	5968	6005	1561219	1561182	0.006	60.2	47	562	Escherichia coli strain TUM23339 chromosome, complete genome
+contig_05	CP188149.1	94.737	38	2	0	5968	6005	4363777	4363740	0.006	60.2	47	562	Escherichia coli strain TUM23339 chromosome, complete genome
+contig_05	CP188149.1	97.059	34	1	0	5969	6002	210686	210653	0.022	58.4	47	562	Escherichia coli strain TUM23339 chromosome, complete genome
+contig_05	CP188149.1	100.000	29	0	0	6039	6067	3173019	3172991	0.28	54.7	47	562	Escherichia coli strain TUM23339 chromosome, complete genome
+contig_05	CP188149.1	96.875	32	1	0	6036	6067	3848794	3848825	0.28	54.7	47	562	Escherichia coli strain TUM23339 chromosome, complete genome
+contig_05	CP173712.1	100.000	3501	0	0	4001	7501	711133	707633	0.0	6466	47	562	Escherichia coli strain Ochre chromosome, complete genome
+contig_05	CP173712.1	90.000	130	10	3	5951	6078	3893283	3893155	1.25e-34	165	47	562	Escherichia coli strain Ochre chromosome, complete genome
+contig_05	CP173712.1	86.000	150	18	3	5944	6091	1766478	1766330	2.09e-32	158	47	562	Escherichia coli strain Ochre chromosome, complete genome
+contig_05	CP173712.1	86.525	141	16	3	5952	6090	186548	186409	9.70e-31	152	47	562	Escherichia coli strain Ochre chromosome, complete genome
+contig_05	CP173712.1	90.566	106	7	3	5968	6073	76419	76521	2.72e-26	137	47	562	Escherichia coli strain Ochre chromosome, complete genome
+contig_05	CP173712.1	89.381	113	7	4	5968	6078	1834543	1834652	2.72e-26	137	47	562	Escherichia coli strain Ochre chromosome, complete genome
+contig_05	CP173712.1	89.524	105	11	0	5968	6072	3636595	3636491	3.51e-25	134	47	562	Escherichia coli strain Ochre chromosome, complete genome
+contig_05	CP173712.1	90.196	102	9	1	5968	6069	1597657	1597757	1.26e-24	132	47	562	Escherichia coli strain Ochre chromosome, complete genome
+contig_05	CP173712.1	82.781	151	21	5	5944	6091	3154315	3154167	4.55e-24	130	47	562	Escherichia coli strain Ochre chromosome, complete genome
+contig_05	CP173712.1	85.833	120	11	4	5956	6072	3494589	3494705	7.61e-22	122	47	562	Escherichia coli strain Ochre chromosome, complete genome
+contig_05	CP173712.1	86.792	106	10	3	5968	6071	2861296	2861399	1.27e-19	115	47	562	Escherichia coli strain Ochre chromosome, complete genome
+contig_05	CP173712.1	86.538	104	12	2	5968	6070	3630656	3630758	4.58e-19	113	47	562	Escherichia coli strain Ochre chromosome, complete genome
+contig_05	CP173712.1	81.538	130	17	6	5944	6070	1018588	1018713	3.56e-15	100	47	562	Escherichia coli strain Ochre chromosome, complete genome
+contig_05	CP173712.1	93.651	63	4	0	5967	6029	3250106	3250044	1.66e-13	95.3	47	562	Escherichia coli strain Ochre chromosome, complete genome
+contig_05	CP173712.1	96.364	55	1	1	5967	6020	2395324	2395378	7.72e-12	89.8	47	562	Escherichia coli strain Ochre chromosome, complete genome
+contig_05	CP173712.1	88.235	68	4	3	5967	6032	1531240	1531305	1.67e-08	78.7	47	562	Escherichia coli strain Ochre chromosome, complete genome
+contig_05	CP173712.1	100.000	38	0	0	5965	6002	2908454	2908417	2.79e-06	71.3	47	562	Escherichia coli strain Ochre chromosome, complete genome
+contig_05	CP173712.1	100.000	38	0	0	5965	6002	2908754	2908717	2.79e-06	71.3	47	562	Escherichia coli strain Ochre chromosome, complete genome
+contig_05	CP173712.1	100.000	38	0	0	5968	6005	2916606	2916643	2.79e-06	71.3	47	562	Escherichia coli strain Ochre chromosome, complete genome
+contig_05	CP173712.1	100.000	37	0	0	5966	6002	374557	374593	1.01e-05	69.4	47	562	Escherichia coli strain Ochre chromosome, complete genome
+contig_05	CP173712.1	100.000	37	0	0	5966	6002	2908353	2908317	1.01e-05	69.4	47	562	Escherichia coli strain Ochre chromosome, complete genome
+contig_05	CP173712.1	100.000	37	0	0	5966	6002	2908553	2908517	1.01e-05	69.4	47	562	Escherichia coli strain Ochre chromosome, complete genome
+contig_05	CP173712.1	100.000	37	0	0	5967	6003	2948946	2948982	1.01e-05	69.4	47	562	Escherichia coli strain Ochre chromosome, complete genome
+contig_05	CP173712.1	100.000	37	0	0	5967	6003	4389606	4389642	1.01e-05	69.4	47	562	Escherichia coli strain Ochre chromosome, complete genome
+contig_05	CP173712.1	100.000	36	0	0	5967	6002	398085	398050	3.62e-05	67.6	47	562	Escherichia coli strain Ochre chromosome, complete genome
+contig_05	CP173712.1	97.500	40	0	1	5963	6002	1860949	1860987	3.62e-05	67.6	47	562	Escherichia coli strain Ochre chromosome, complete genome
+contig_05	CP173712.1	100.000	36	0	0	5967	6002	2094444	2094479	3.62e-05	67.6	47	562	Escherichia coli strain Ochre chromosome, complete genome
+contig_05	CP173712.1	100.000	36	0	0	5967	6002	2585479	2585514	3.62e-05	67.6	47	562	Escherichia coli strain Ochre chromosome, complete genome
+contig_05	CP173712.1	100.000	36	0	0	5968	6003	2774092	2774127	3.62e-05	67.6	47	562	Escherichia coli strain Ochre chromosome, complete genome
+contig_05	CP173712.1	100.000	36	0	0	5967	6002	2908652	2908617	3.62e-05	67.6	47	562	Escherichia coli strain Ochre chromosome, complete genome
+contig_05	CP173712.1	100.000	36	0	0	5968	6003	2984841	2984876	3.62e-05	67.6	47	562	Escherichia coli strain Ochre chromosome, complete genome
+contig_05	CP173712.1	97.436	39	1	0	5968	6006	3180751	3180789	3.62e-05	67.6	47	562	Escherichia coli strain Ochre chromosome, complete genome
+contig_05	CP173712.1	100.000	36	0	0	5967	6002	3206807	3206842	3.62e-05	67.6	47	562	Escherichia coli strain Ochre chromosome, complete genome
+contig_05	CP173712.1	100.000	36	0	0	5967	6002	3206905	3206940	3.62e-05	67.6	47	562	Escherichia coli strain Ochre chromosome, complete genome
+contig_05	CP173712.1	100.000	35	0	0	5968	6002	367795	367761	1.30e-04	65.8	47	562	Escherichia coli strain Ochre chromosome, complete genome
+contig_05	CP173712.1	97.368	38	1	0	5966	6003	1167336	1167299	1.30e-04	65.8	47	562	Escherichia coli strain Ochre chromosome, complete genome
+contig_05	CP173712.1	95.122	41	2	0	5965	6005	1829306	1829266	1.30e-04	65.8	47	562	Escherichia coli strain Ochre chromosome, complete genome
+contig_05	CP173712.1	100.000	35	0	0	5968	6002	2137150	2137184	1.30e-04	65.8	47	562	Escherichia coli strain Ochre chromosome, complete genome
+contig_05	CP173712.1	100.000	35	0	0	5968	6002	2137251	2137285	1.30e-04	65.8	47	562	Escherichia coli strain Ochre chromosome, complete genome
+contig_05	CP173712.1	100.000	35	0	0	5968	6002	2270736	2270702	1.30e-04	65.8	47	562	Escherichia coli strain Ochre chromosome, complete genome
+contig_05	CP173712.1	100.000	35	0	0	5968	6002	3170721	3170755	1.30e-04	65.8	47	562	Escherichia coli strain Ochre chromosome, complete genome
+contig_05	CP173712.1	100.000	35	0	0	5968	6002	3989002	3989036	1.30e-04	65.8	47	562	Escherichia coli strain Ochre chromosome, complete genome
+contig_05	CP173712.1	97.222	36	1	0	5967	6002	3015721	3015756	0.002	62.1	47	562	Escherichia coli strain Ochre chromosome, complete genome
+contig_05	CP173712.1	97.297	37	0	1	5967	6003	4021793	4021758	0.002	62.1	47	562	Escherichia coli strain Ochre chromosome, complete genome
+contig_05	CP173712.1	94.737	38	2	0	5968	6005	3130747	3130710	0.006	60.2	47	562	Escherichia coli strain Ochre chromosome, complete genome
+contig_05	CP173712.1	97.143	35	1	0	5968	6002	3836932	3836898	0.006	60.2	47	562	Escherichia coli strain Ochre chromosome, complete genome
+contig_05	CP173712.1	97.059	34	1	0	5969	6002	3561303	3561270	0.022	58.4	47	562	Escherichia coli strain Ochre chromosome, complete genome
+contig_05	CP173712.1	92.105	38	3	0	5968	6005	397970	397933	0.28	54.7	47	562	Escherichia coli strain Ochre chromosome, complete genome
+contig_05	CP173712.1	100.000	29	0	0	6039	6067	1906989	1906961	0.28	54.7	47	562	Escherichia coli strain Ochre chromosome, complete genome
+contig_05	CP173712.1	96.875	32	1	0	6036	6067	2629595	2629626	0.28	54.7	47	562	Escherichia coli strain Ochre chromosome, complete genome
+contig_06	CP084897.2	100.000	8001	0	0	1	8001	360224	368224	0.0	14776	100	562	Escherichia coli strain gb37 chromosome, complete genome
+contig_06	CP084897.2	100.000	32	0	0	887	918	1948793	1948762	0.006	60.2	100	562	Escherichia coli strain gb37 chromosome, complete genome
+contig_06	CP129523.1	100.000	8001	0	0	1	8001	3527558	3519558	0.0	14776	100	562	Escherichia coli strain YJX chromosome, complete genome
+contig_06	CP129523.1	97.143	35	1	0	884	918	1942013	1942047	0.006	60.2	100	562	Escherichia coli strain YJX chromosome, complete genome
+contig_06	CP169632.1	100.000	8001	0	0	1	8001	360995	368995	0.0	14776	100	562	Escherichia coli strain L-formLTE chromosome, complete genome
+contig_06	CP169632.1	100.000	32	0	0	887	918	1909934	1909903	0.006	60.2	100	562	Escherichia coli strain L-formLTE chromosome, complete genome
+contig_06	CP084894.2	100.000	8001	0	0	1	8001	360224	368224	0.0	14776	100	562	Escherichia coli strain g83 chromosome, complete genome
+contig_06	CP084894.2	100.000	32	0	0	887	918	1948793	1948762	0.006	60.2	100	562	Escherichia coli strain g83 chromosome, complete genome
+contig_06	CP071124.1	100.000	8001	0	0	1	8001	361000	369000	0.0	14776	100	562	Escherichia coli strain PS200 chromosome, complete genome
+contig_06	CP071124.1	100.000	32	0	0	887	918	1944249	1944218	0.006	60.2	100	562	Escherichia coli strain PS200 chromosome, complete genome
+contig_06	CP084895.2	100.000	8001	0	0	1	8001	360224	368224	0.0	14776	100	562	Escherichia coli strain g74 chromosome, complete genome
+contig_06	CP084895.2	100.000	32	0	0	887	918	1948793	1948762	0.006	60.2	100	562	Escherichia coli strain g74 chromosome, complete genome
+contig_06	CP193717.1	100.000	8001	0	0	1	8001	1248670	1256670	0.0	14776	100	562	Escherichia coli strain DSM 498 chromosome, complete genome
+contig_06	CP193717.1	100.000	32	0	0	887	918	2832198	2832167	0.006	60.2	100	562	Escherichia coli strain DSM 498 chromosome, complete genome
+contig_06	CP157729.1	100.000	8001	0	0	1	8001	3025651	3017651	0.0	14776	100	562	Mutant Escherichia coli isolate FELIX_MS238, complete sequence
+contig_06	CP157729.1	97.143	35	1	0	884	918	1688542	1688576	0.006	60.2	100	562	Mutant Escherichia coli isolate FELIX_MS238, complete sequence
+contig_06	CP178206.1	100.000	8001	0	0	1	8001	3525839	3517839	0.0	14776	100	562	Escherichia coli strain K-12 chromosome, complete genome
+contig_06	CP178206.1	97.143	35	1	0	884	918	1941490	1941524	0.006	60.2	100	562	Escherichia coli strain K-12 chromosome, complete genome
+contig_06	CP169294.1	100.000	8001	0	0	1	8001	3481948	3473948	0.0	14776	100	562	Escherichia coli strain MG1655-pvir chromosome, complete genome
+contig_06	CP169294.1	99.586	1448	4	2	5142	6589	4574665	4576110	0.0	2639	100	562	Escherichia coli strain MG1655-pvir chromosome, complete genome
+contig_06	CP169294.1	97.143	35	1	0	884	918	1938180	1938214	0.006	60.2	100	562	Escherichia coli strain MG1655-pvir chromosome, complete genome
+contig_06	CP184743.1	100.000	8001	0	0	1	8001	361001	369001	0.0	14776	100	562	Escherichia coli strain LTE0 chromosome, complete genome
+contig_06	CP184743.1	100.000	32	0	0	887	918	1930654	1930623	0.006	60.2	100	562	Escherichia coli strain LTE0 chromosome, complete genome
+contig_06	CP160823.1	100.000	8001	0	0	1	8001	1224041	1232041	0.0	14776	100	562	Escherichia coli strain MG-phbCAB-3-5 chromosome, complete genome
+contig_06	CP160823.1	100.000	70	0	0	5220	5289	155998	155929	4.85e-24	130	100	562	Escherichia coli strain MG-phbCAB-3-5 chromosome, complete genome
+contig_06	CP160823.1	100.000	70	0	0	5220	5289	268746	268677	4.85e-24	130	100	562	Escherichia coli strain MG-phbCAB-3-5 chromosome, complete genome
+contig_06	CP160823.1	100.000	70	0	0	5220	5289	2061606	2061675	4.85e-24	130	100	562	Escherichia coli strain MG-phbCAB-3-5 chromosome, complete genome
+contig_06	CP160823.1	100.000	70	0	0	5220	5289	4489199	4489268	4.85e-24	130	100	562	Escherichia coli strain MG-phbCAB-3-5 chromosome, complete genome
+contig_06	CP160823.1	100.000	70	0	0	5220	5289	4592483	4592414	4.85e-24	130	100	562	Escherichia coli strain MG-phbCAB-3-5 chromosome, complete genome
+contig_06	CP160823.1	100.000	70	0	0	5220	5289	4604074	4604005	4.85e-24	130	100	562	Escherichia coli strain MG-phbCAB-3-5 chromosome, complete genome
+contig_06	CP160823.1	100.000	32	0	0	887	918	2810595	2810564	0.006	60.2	100	562	Escherichia coli strain MG-phbCAB-3-5 chromosome, complete genome
+contig_06	CP152466.1	100.000	8001	0	0	1	8001	360224	368224	0.0	14776	100	562	Escherichia coli strain Sel(eng_pnp-mut) chromosome, complete genome
+contig_06	CP152466.1	100.000	32	0	0	887	918	1943653	1943622	0.006	60.2	100	562	Escherichia coli strain Sel(eng_pnp-mut) chromosome, complete genome
+contig_06	CP152468.1	100.000	8001	0	0	1	8001	360224	368224	0.0	14776	100	562	Escherichia coli strain Sel(hit) chromosome, complete genome
+contig_06	CP152468.1	100.000	32	0	0	887	918	1943653	1943622	0.006	60.2	100	562	Escherichia coli strain Sel(hit) chromosome, complete genome
+contig_06	CP152469.1	100.000	8001	0	0	1	8001	360224	368224	0.0	14776	100	562	Escherichia coli strain Sel(aux) chromosome, complete genome
+contig_06	CP152469.1	100.000	32	0	0	887	918	1943654	1943623	0.006	60.2	100	562	Escherichia coli strain Sel(aux) chromosome, complete genome
+contig_06	CP184740.1	100.000	8001	0	0	1	8001	360999	368999	0.0	14776	100	562	Escherichia coli strain LTE950 chromosome, complete genome
+contig_06	CP184740.1	100.000	32	0	0	887	918	1918204	1918173	0.006	60.2	100	562	Escherichia coli strain LTE950 chromosome, complete genome
+contig_06	CP107553.1	100.000	8001	0	0	1	8001	3563151	3555151	0.0	14776	100	562	Escherichia coli strain MG1655_insertion chromosome, complete genome
+contig_06	CP107553.1	100.000	230	0	0	5292	5521	21948	21719	5.52e-113	425	100	562	Escherichia coli strain MG1655_insertion chromosome, complete genome
+contig_06	CP107553.1	100.000	230	0	0	5292	5521	3878260	3878489	5.52e-113	425	100	562	Escherichia coli strain MG1655_insertion chromosome, complete genome
+contig_06	CP107553.1	100.000	164	0	0	5127	5290	19123	18960	2.70e-76	303	100	562	Escherichia coli strain MG1655_insertion chromosome, complete genome
+contig_06	CP107553.1	100.000	164	0	0	5127	5290	3881084	3881247	2.70e-76	303	100	562	Escherichia coli strain MG1655_insertion chromosome, complete genome
+contig_06	CP107553.1	97.143	35	1	0	884	918	1931078	1931112	0.006	60.2	100	562	Escherichia coli strain MG1655_insertion chromosome, complete genome
+contig_06	CP178310.1	100.000	8001	0	0	1	8001	356950	364950	0.0	14776	100	562	Escherichia coli strain ECBU1123 chromosome, complete genome
+contig_06	CP170509.1	100.000	8001	0	0	1	8001	3520935	3512935	0.0	14776	100	562	Escherichia coli strain 30088 chromosome, complete genome
+contig_06	CP170509.1	97.143	35	1	0	884	918	1938701	1938735	0.006	60.2	100	562	Escherichia coli strain 30088 chromosome, complete genome
+contig_06	CP084896.2	100.000	8001	0	0	1	8001	360224	368224	0.0	14776	100	562	Escherichia coli strain g62 chromosome, complete genome
+contig_06	CP084896.2	100.000	32	0	0	887	918	1948793	1948762	0.006	60.2	100	562	Escherichia coli strain g62 chromosome, complete genome
+contig_07	CP026077.1	100.000	10000	0	0	1	10000	839586	849585	0.0	18467	100	1280	Staphylococcus aureus strain NRS107 chromosome, complete genome
+contig_07	CP026077.1	98.160	652	11	1	4529	5180	120937	120287	0.0	1136	100	1280	Staphylococcus aureus strain NRS107 chromosome, complete genome
+contig_07	CP026077.1	86.842	76	8	2	1237	1311	2479389	2479463	4.79e-10	84.2	100	1280	Staphylococcus aureus strain NRS107 chromosome, complete genome
+contig_07	CP018205.1	100.000	10000	0	0	1	10000	100000	109999	0.0	18467	100	1280	Staphylococcus aureus subsp. aureus strain HG001, complete genome
+contig_07	CP018205.1	98.160	652	11	1	4529	5180	2200637	2199987	0.0	1136	100	1280	Staphylococcus aureus subsp. aureus strain HG001, complete genome
+contig_07	CP018205.1	86.842	76	8	2	1237	1311	1775617	1775691	4.79e-10	84.2	100	1280	Staphylococcus aureus subsp. aureus strain HG001, complete genome
+contig_07	CP101124.1	100.000	10000	0	0	1	10000	99484	109483	0.0	18467	100	561307	Staphylococcus aureus subsp. aureus RN4220 chromosome, complete genome
+contig_07	CP101124.1	98.160	652	11	1	4529	5180	2078093	2077443	0.0	1136	100	561307	Staphylococcus aureus subsp. aureus RN4220 chromosome, complete genome
+contig_07	CP101124.1	86.842	76	8	2	1237	1311	1739422	1739496	4.79e-10	84.2	100	561307	Staphylococcus aureus subsp. aureus RN4220 chromosome, complete genome
+contig_07	CP097114.1	100.000	10000	0	0	1	10000	100000	109999	0.0	18467	100	1280	Staphylococcus aureus strain JP18269 chromosome, complete genome
+contig_07	CP097114.1	98.160	652	11	1	4529	5180	2113070	2112420	0.0	1136	100	1280	Staphylococcus aureus strain JP18269 chromosome, complete genome
+contig_07	CP097114.1	86.842	76	8	2	1237	1311	1730785	1730859	4.79e-10	84.2	100	1280	Staphylococcus aureus strain JP18269 chromosome, complete genome
+contig_07	CP097113.1	100.000	10000	0	0	1	10000	100000	109999	0.0	18467	100	1280	Staphylococcus aureus strain JP1250 chromosome, complete genome
+contig_07	CP097113.1	98.160	652	11	1	4529	5180	2069455	2068805	0.0	1136	100	1280	Staphylococcus aureus strain JP1250 chromosome, complete genome
+contig_07	CP097113.1	86.842	76	8	2	1237	1311	1730785	1730859	4.79e-10	84.2	100	1280	Staphylococcus aureus strain JP1250 chromosome, complete genome
+contig_07	LS483365.1	100.000	10000	0	0	1	10000	99478	109477	0.0	18467	100	93061	Staphylococcus aureus strain NCTC8325 genome assembly, chromosome: 1
+contig_07	LS483365.1	98.160	652	11	1	4529	5180	2210453	2209803	0.0	1136	100	93061	Staphylococcus aureus strain NCTC8325 genome assembly, chromosome: 1
+contig_07	LS483365.1	86.842	76	8	2	1237	1311	1785446	1785520	4.79e-10	84.2	100	93061	Staphylococcus aureus strain NCTC8325 genome assembly, chromosome: 1
+contig_07	CP059180.1	100.000	10000	0	0	1	10000	99421	109420	0.0	18467	100	1280	Staphylococcus aureus strain SH1000 chromosome, complete genome
+contig_07	CP059180.1	98.160	652	11	1	4529	5180	2078041	2077391	0.0	1136	100	1280	Staphylococcus aureus strain SH1000 chromosome, complete genome
+contig_07	CP059180.1	86.842	76	8	2	1237	1311	1739359	1739433	4.79e-10	84.2	100	1280	Staphylococcus aureus strain SH1000 chromosome, complete genome
+contig_07	CP090001.1	100.000	10000	0	0	1	10000	99484	109483	0.0	18467	100	1280	Staphylococcus aureus strain RN6390 chromosome, complete genome
+contig_07	CP090001.1	98.160	652	11	1	4529	5180	2120676	2120026	0.0	1136	100	1280	Staphylococcus aureus strain RN6390 chromosome, complete genome
+contig_07	CP090001.1	86.842	76	8	2	1237	1311	1782006	1782080	4.79e-10	84.2	100	1280	Staphylococcus aureus strain RN6390 chromosome, complete genome
+contig_07	CP026962.1	100.000	10000	0	0	1	10000	241415	251414	0.0	18467	100	1280	Staphylococcus aureus strain FDAARGOS_6 chromosome, complete genome
+contig_07	CP026962.1	98.160	652	11	1	4529	5180	2220024	2219374	0.0	1136	100	1280	Staphylococcus aureus strain FDAARGOS_6 chromosome, complete genome
+contig_07	CP026962.1	86.842	76	8	2	1237	1311	1881353	1881427	4.79e-10	84.2	100	1280	Staphylococcus aureus strain FDAARGOS_6 chromosome, complete genome
+contig_07	CP026960.1	100.000	10000	0	0	1	10000	2261762	2271761	0.0	18467	100	1280	Staphylococcus aureus strain FDAARGOS_15 chromosome, complete genome
+contig_07	CP026960.1	98.160	652	11	1	4529	5180	1542731	1542081	0.0	1136	100	1280	Staphylococcus aureus strain FDAARGOS_15 chromosome, complete genome
+contig_07	CP026960.1	86.842	76	8	2	1237	1311	1161951	1162025	4.79e-10	84.2	100	1280	Staphylococcus aureus strain FDAARGOS_15 chromosome, complete genome
+contig_07	CP026961.1	100.000	10000	0	0	1	10000	981415	991414	0.0	18467	100	1280	Staphylococcus aureus strain FDAARGOS_10 chromosome, complete genome
+contig_07	CP026961.1	98.160	652	11	1	4529	5180	262382	261732	0.0	1136	100	1280	Staphylococcus aureus strain FDAARGOS_10 chromosome, complete genome
+contig_07	CP026961.1	94.444	54	3	0	1258	1311	2122772	2122719	4.79e-10	84.2	100	1280	Staphylococcus aureus strain FDAARGOS_10 chromosome, complete genome
+contig_07	CP150127.1	100.000	10000	0	0	1	10000	99484	109483	0.0	18467	100	561307	Staphylococcus aureus subsp. aureus RN4220 chromosome, complete genome
+contig_07	CP150127.1	98.160	652	11	1	4529	5180	2078098	2077448	0.0	1136	100	561307	Staphylococcus aureus subsp. aureus RN4220 chromosome, complete genome
+contig_07	CP150127.1	86.842	76	8	2	1237	1311	1739427	1739501	4.79e-10	84.2	100	561307	Staphylococcus aureus subsp. aureus RN4220 chromosome, complete genome
+contig_07	CP076105.1	100.000	10000	0	0	1	10000	99484	109483	0.0	18467	100	561307	Staphylococcus aureus subsp. aureus RN4220 chromosome, complete genome
+contig_07	CP076105.1	98.160	652	11	1	4529	5180	2077583	2076933	0.0	1136	100	561307	Staphylococcus aureus subsp. aureus RN4220 chromosome, complete genome
+contig_07	CP076105.1	86.842	76	8	2	1237	1311	1738900	1738974	4.79e-10	84.2	100	561307	Staphylococcus aureus subsp. aureus RN4220 chromosome, complete genome
+contig_07	CP026080.1	100.000	10000	0	0	1	10000	1904755	1894756	0.0	18467	100	1280	Staphylococcus aureus strain NRS137 chromosome, complete genome
+contig_07	CP026080.1	97.731	661	14	1	4520	5180	2623779	2624438	0.0	1136	100	1280	Staphylococcus aureus strain NRS137 chromosome, complete genome
+contig_07	CP026080.1	94.444	54	3	0	1258	1311	264797	264744	4.79e-10	84.2	100	1280	Staphylococcus aureus strain NRS137 chromosome, complete genome
+contig_07	CP097115.1	100.000	10000	0	0	1	10000	100000	109999	0.0	18467	100	1280	Staphylococcus aureus strain JP18270 chromosome, complete genome
+contig_07	CP097115.1	98.160	652	11	1	4529	5180	2112747	2112097	0.0	1136	100	1280	Staphylococcus aureus strain JP18270 chromosome, complete genome
+contig_07	CP097115.1	86.842	76	8	2	1237	1311	1774076	1774150	4.79e-10	84.2	100	1280	Staphylococcus aureus strain JP18270 chromosome, complete genome
+contig_07	CP026070.1	100.000	10000	0	0	1	10000	936254	926255	0.0	18467	100	1280	Staphylococcus aureus strain NRS133 chromosome, complete genome
+contig_07	CP026070.1	97.731	661	14	1	4520	5180	1655278	1655937	0.0	1136	100	1280	Staphylococcus aureus strain NRS133 chromosome, complete genome
+contig_07	CP026070.1	94.444	54	3	0	1258	1311	2036658	2036605	4.79e-10	84.2	100	1280	Staphylococcus aureus strain NRS133 chromosome, complete genome
+contig_07	CP068247.1	100.000	10000	0	0	1	10000	2299582	2309581	0.0	18467	100	2799681	Staphylococcus sp. T93 chromosome, complete genome
+contig_07	CP068247.1	98.160	652	11	1	4529	5180	1580541	1579891	0.0	1136	100	2799681	Staphylococcus sp. T93 chromosome, complete genome
+contig_07	CP068247.1	86.842	76	8	2	1237	1311	1241850	1241924	4.79e-10	84.2	100	2799681	Staphylococcus sp. T93 chromosome, complete genome
+contig_07	CP026068.1	100.000	10000	0	0	1	10000	2297616	2307615	0.0	18467	100	1280	Staphylococcus aureus strain NRS146 chromosome, complete genome
+contig_07	CP026068.1	98.620	652	8	1	4529	5180	1578583	1577933	0.0	1153	100	1280	Staphylococcus aureus strain NRS146 chromosome, complete genome
+contig_07	CP026068.1	86.842	76	8	2	1237	1311	1240000	1240074	4.79e-10	84.2	100	1280	Staphylococcus aureus strain NRS146 chromosome, complete genome
+contig_07	CP000253.1	100.000	10000	0	0	1	10000	100001	110000	0.0	18467	100	93061	Staphylococcus aureus subsp. aureus NCTC 8325, complete genome
+contig_07	CP000253.1	98.160	652	11	1	4529	5180	2201829	2201179	0.0	1136	100	93061	Staphylococcus aureus subsp. aureus NCTC 8325, complete genome
+contig_07	CP000253.1	86.842	76	8	2	1237	1311	1776823	1776897	4.79e-10	84.2	100	93061	Staphylococcus aureus subsp. aureus NCTC 8325, complete genome
+contig_07	CP003033.1	99.990	10000	1	0	1	10000	99999	109998	0.0	18462	100	1028799	Staphylococcus aureus subsp. aureus VC40, complete genome
+contig_07	CP003033.1	98.160	652	11	1	4529	5180	2073123	2072473	0.0	1136	100	1028799	Staphylococcus aureus subsp. aureus VC40, complete genome
+contig_07	CP003033.1	86.842	76	8	2	1237	1311	1734452	1734526	4.79e-10	84.2	100	1028799	Staphylococcus aureus subsp. aureus VC40, complete genome
+contig_08	NC_001422.1	100.000	5386	0	0	1	5386	1	5386	0.0	9947	100	10847;2886930	Escherichia phage phiX174, complete genome
+contig_08	GU385905.1	99.907	5386	5	0	1	5386	1	5386	0.0	9919	100	2886930	Enterobacteria phage phiX174 isolate JACSK, complete genome
+contig_08	AF176034.1	99.907	5386	5	0	1	5386	1	5386	0.0	9919	100	2886930	Coliphage phiX174 isolate Anc, complete genome
+contig_08	FJ849058.1	99.870	5386	7	0	1	5386	1	5386	0.0	9908	100	2886930	Enterobacteria phage phiX174 isolate JACS, complete genome
+contig_08	HM753662.1	99.870	5386	7	0	1	5386	1	5386	0.0	9908	100	2886930	Enterobacteria phage phiX174 isolate XC+Mad06im6, complete genome
+contig_08	HM753659.1	99.851	5386	8	0	1	5386	1	5386	0.0	9902	100	2886930	Enterobacteria phage phiX174 isolate XC+Mad06ic5, complete genome
+contig_08	HM753663.1	99.833	5386	9	0	1	5386	1	5386	0.0	9897	100	2886930	Enterobacteria phage phiX174 isolate XC+Mad06im7, complete genome
+contig_08	HM753660.1	99.833	5386	9	0	1	5386	1	5386	0.0	9897	100	2886930	Enterobacteria phage phiX174 isolate XC+Mad06im1, complete genome
+contig_08	HM753666.1	99.833	5386	9	0	1	5386	1	5386	0.0	9897	100	2886930	Enterobacteria phage phiX174 isolate XC+Mad10ic6, complete genome
+contig_08	AF299302.1	99.833	5386	9	0	1	5386	1	5386	0.0	9897	100	2886930	Coliphage phiX174 isolate C, complete genome
+contig_08	HM753706.1	99.833	5386	9	0	1	5386	1	5386	0.0	9897	100	2886930	Enterobacteria phage phiX174 isolate XC+mbD10im2, complete genome
+contig_08	HM753673.1	99.814	5386	10	0	1	5386	1	5386	0.0	9891	100	2886930	Enterobacteria phage phiX174 isolate XC+Mad10im6, complete genome
+contig_08	HM753703.1	99.814	5386	10	0	1	5386	1	5386	0.0	9891	100	2886930	Enterobacteria phage phiX174 isolate XC+Mbd10ic1, complete genome
+contig_08	HM753705.1	99.814	5386	10	0	1	5386	1	5386	0.0	9891	100	2886930	Enterobacteria phage phiX174 isolate XC+Mbd10im1, complete genome
+contig_08	HM753658.1	99.814	5386	10	0	1	5386	1	5386	0.0	9891	100	2886930	Enterobacteria phage phiX174 isolate XC+Mad06ic3, complete genome
+contig_08	HM753669.1	99.814	5386	10	0	1	5386	1	5386	0.0	9891	100	2886930	Enterobacteria phage phiX174 isolate XC+Mad10im1, complete genome
+contig_08	HM753704.1	99.796	5386	11	0	1	5386	1	5386	0.0	9886	100	2886930	Enterobacteria phage phiX174 isolate XC+Mbd10ic2, complete genome
+contig_08	HM753668.1	99.796	5386	11	0	1	5386	1	5386	0.0	9886	100	2886930	Enterobacteria phage phiX174 isolate XC+Mad10ic8, complete genome
+contig_08	HM753675.1	99.796	5386	11	0	1	5386	1	5386	0.0	9886	100	2886930	Enterobacteria phage phiX174 isolate XC+Mad10im8, complete genome
+contig_08	MF426915.1	99.796	5386	11	0	1	5386	1	5386	0.0	9886	100	2026680	Synthetic Enterobacteria phage CryptX174, complete genome
+contig_09	KU686673.1	100.000	6001	0	0	1	6001	3002	9002	0.0	11079	100	9606	Homo sapiens isolate GMA95 mitochondrion, complete genome
+contig_09	KU686655.1	100.000	6001	0	0	1	6001	3002	9002	0.0	11079	100	9606	Homo sapiens isolate GMA77 mitochondrion, complete genome
+contig_09	KU686633.1	100.000	6001	0	0	1	6001	3003	9003	0.0	11079	100	9606	Homo sapiens isolate GMA53 mitochondrion, complete genome
+contig_09	KU686664.1	100.000	6001	0	0	1	6001	3002	9002	0.0	11079	100	9606	Homo sapiens isolate GMA86 mitochondrion, complete genome
+contig_09	KU686628.1	100.000	6001	0	0	1	6001	3002	9002	0.0	11079	100	9606	Homo sapiens isolate GMA47 mitochondrion, complete genome
+contig_09	KU686651.1	100.000	6001	0	0	1	6001	3002	9002	0.0	11079	100	9606	Homo sapiens isolate GMA73 mitochondrion, complete genome
+contig_09	KU686649.1	100.000	6001	0	0	1	6001	3004	9004	0.0	11079	100	9606	Homo sapiens isolate GMA71 mitochondrion, complete genome
+contig_09	KU686646.1	100.000	6001	0	0	1	6001	3003	9003	0.0	11079	100	9606	Homo sapiens isolate GMA68 mitochondrion, complete genome
+contig_09	KU686653.1	100.000	6001	0	0	1	6001	3001	9001	0.0	11079	100	9606	Homo sapiens isolate GMA75 mitochondrion, complete genome
+contig_09	KU686652.1	100.000	6001	0	0	1	6001	3003	9003	0.0	11079	100	9606	Homo sapiens isolate GMA74 mitochondrion, complete genome
+contig_09	KU686645.1	100.000	6001	0	0	1	6001	3003	9003	0.0	11079	100	9606	Homo sapiens isolate GMA66 mitochondrion, complete genome
+contig_09	KU686662.1	100.000	6001	0	0	1	6001	3002	9002	0.0	11079	100	9606	Homo sapiens isolate GMA84 mitochondrion, complete genome
+contig_09	KU686641.1	100.000	6001	0	0	1	6001	3003	9003	0.0	11079	100	9606	Homo sapiens isolate GMA62 mitochondrion, complete genome
+contig_09	KU686674.1	100.000	6001	0	0	1	6001	3001	9001	0.0	11079	100	9606	Homo sapiens isolate GMA97 mitochondrion, complete genome
+contig_09	KU686663.1	100.000	6001	0	0	1	6001	3003	9003	0.0	11079	100	9606	Homo sapiens isolate GMA85 mitochondrion, complete genome
+contig_09	KU686642.1	100.000	6001	0	0	1	6001	3002	9002	0.0	11079	100	9606	Homo sapiens isolate GMA63 mitochondrion, complete genome
+contig_09	MK617223.1	99.983	6001	1	0	1	6001	3000	9000	0.0	11079	100	9606	Homo sapiens isolate 205_Sb haplogroup H2a2a mitochondrion, complete genome
+contig_09	LS998722.1	100.000	6001	0	0	1	6001	2999	8999	0.0	11079	100	9606	Homo sapiens genome assembly, organelle: mitochondrion
+contig_09	KU686665.1	100.000	6001	0	0	1	6001	3002	9002	0.0	11079	100	9606	Homo sapiens isolate GMA87 mitochondrion, complete genome
+contig_09	KU686644.1	100.000	6001	0	0	1	6001	3003	9003	0.0	11079	100	9606	Homo sapiens isolate GMA65 mitochondrion, complete genome
+contig_10	AE017283.1	100.000	6001	0	0	1	6001	1200000	1206000	0.0	11082	100	267747	Propionibacterium acnes KPA171202, complete genome
+contig_10	CP114011.1	100.000	6001	0	0	1	6001	1207005	1201005	0.0	11082	100	1747	Cutibacterium acnes strain CBS-BPNBT19195 chromosome, complete genome
+contig_10	CP012351.1	100.000	6001	0	0	1	6001	1200117	1206117	0.0	11082	100	1747	Cutibacterium acnes strain PA_21_1_L1 chromosome, complete genome
+contig_10	CP129003.1	100.000	6001	0	0	1	6001	1207586	1201586	0.0	11082	100	1747	Cutibacterium acnes strain EASDk81A chromosome, complete genome
+contig_10	CP002815.1	99.983	6001	1	0	1	6001	1200002	1206002	0.0	11077	100	1031709	Propionibacterium acnes 6609, complete genome
+contig_10	CP031442.1	99.967	6001	2	0	1	6001	378944	372944	0.0	11071	100	1747	Cutibacterium acnes strain KCOM 1315 chromosome, complete genome
+contig_10	CP126744.1	99.933	6001	3	1	1	6001	1199302	1205301	0.0	11058	100	1747	Cutibacterium acnes strain W81 chromosome, complete genome
+contig_10	CP126745.1	99.933	6001	3	1	1	6001	1207924	1201925	0.0	11058	100	1747	Cutibacterium acnes strain W80 chromosome, complete genome
+contig_10	CP084017.1	99.917	6001	5	0	1	6001	1452155	1458155	0.0	11055	100	1734925	Cutibacterium acnes subsp. acnes strain NBRC 113869 chromosome, complete genome
+contig_10	CP025935.1	99.751	6016	0	1	1	6001	1200111	1206126	0.0	11012	100	267747	Cutibacterium acnes KPA171202 chromosome, complete genome
+contig_10	CP059593.1	99.650	6002	20	1	1	6001	1081068	1087069	0.0	10966	100	1747	Cutibacterium acnes strain HKGB4 chromosome
+contig_10	CP003196.1	99.650	6002	20	1	1	6001	1175067	1181068	0.0	10966	100	1114967	Propionibacterium acnes TypeIA2 P.acn17, complete genome
+contig_10	CP003197.1	99.650	6002	20	1	1	6001	1175696	1181697	0.0	10966	100	1114969	Propionibacterium acnes TypeIA2 P.acn31, complete genome
+contig_10	CP096602.1	99.650	6001	20	1	2	6001	1389554	1383554	0.0	10964	100	1747	Cutibacterium acnes strain SB207 chromosome, complete genome
+contig_10	AP026712.1	99.650	6001	20	1	2	6001	1166613	1172613	0.0	10964	100	1747	Cutibacterium acnes TP-CU426 DNA, complete genome
+contig_10	CP003195.1	99.650	6001	20	1	2	6001	1166514	1172514	0.0	10964	100	1114966	Propionibacterium acnes TypeIA2 P.acn33, complete genome
+contig_10	CP190765.1	99.633	6002	21	1	1	6001	1174436	1180437	0.0	10960	100	1747	Cutibacterium acnes strain LaCa_53 chromosome, complete genome
+contig_10	CP190903.1	99.633	6002	21	1	1	6001	1175856	1181857	0.0	10960	100	1747	Cutibacterium acnes strain LaCa_74 chromosome, complete genome
+contig_10	CP190766.1	99.633	6002	21	1	1	6001	1175107	1181108	0.0	10960	100	1747	Cutibacterium acnes strain LaCa_52 chromosome, complete genome
+contig_10	CP190767.1	99.633	6002	21	1	1	6001	1175191	1169190	0.0	10960	100	1747	Cutibacterium acnes strain LaCa_51 chromosome, complete genome
+contig_11	CP169267.1	100.000	15000	0	0	1	15000	895853	880854	0.0	27700	100	1280	Staphylococcus aureus strain CBC240 chromosome, complete genome
+contig_11	CP031670.1	100.000	15000	0	0	1	15000	2089837	2104836	0.0	27700	100	1280	Staphylococcus aureus strain 64 chromosome, complete genome
+contig_11	CP123478.1	100.000	15000	0	0	1	15000	1999975	2014974	0.0	27700	100	1280	Staphylococcus aureus strain ER24184.3 chromosome, complete genome
+contig_11	CP097114.1	100.000	15000	0	0	1	15000	1953963	1968962	0.0	27700	100	1280	Staphylococcus aureus strain JP18269 chromosome, complete genome
+contig_11	CP166544.1	100.000	15000	0	0	1	15000	2089853	2104852	0.0	27700	100	1280	Staphylococcus aureus strain MSHS PS00119.1A chromosome, complete genome
+contig_11	CP097113.1	100.000	15000	0	0	1	15000	1910348	1925347	0.0	27700	100	1280	Staphylococcus aureus strain JP1250 chromosome, complete genome
+contig_11	OZ455539.1	100.000	15000	0	0	1	15000	1318476	1303477	0.0	27700	100	1280	Staphylococcus aureus isolate STAU194 genome assembly, chromosome: 1
+contig_11	CP031667.1	100.000	15000	0	0	1	15000	2089837	2104836	0.0	27700	100	1280	Staphylococcus aureus strain 199 chromosome, complete genome
+contig_11	LS483365.1	100.000	15000	0	0	1	15000	2008625	2023624	0.0	27700	100	93061	Staphylococcus aureus strain NCTC8325 genome assembly, chromosome: 1
+contig_11	CP058615.1	100.000	15000	0	0	1	15000	918240	903241	0.0	27700	100	1280	Staphylococcus aureus strain 110900 chromosome, complete genome
+contig_11	CP059180.1	100.000	15000	0	0	1	15000	1918923	1933922	0.0	27700	100	1280	Staphylococcus aureus strain SH1000 chromosome, complete genome
+contig_11	CP090001.1	100.000	15000	0	0	1	15000	1961570	1976569	0.0	27700	100	1280	Staphylococcus aureus strain RN6390 chromosome, complete genome
+contig_11	CP047809.1	100.000	15000	0	0	1	15000	1143708	1158707	0.0	27700	100	1280	Staphylococcus aureus strain UP_1591 chromosome, complete genome
+contig_11	CP169266.1	100.000	15000	0	0	1	15000	895853	880854	0.0	27700	100	1280	Staphylococcus aureus strain CBC235 chromosome, complete genome
+contig_11	CP026961.1	100.000	15000	0	0	1	15000	60554	75553	0.0	27700	100	1280	Staphylococcus aureus strain FDAARGOS_10 chromosome, complete genome
+contig_11	CP169265.1	100.000	15000	0	0	1	15000	895853	880854	0.0	27700	100	1280	Staphylococcus aureus strain CBC226 chromosome, complete genome
+contig_11	CP097115.1	100.000	15000	0	0	1	15000	1953640	1968639	0.0	27700	100	1280	Staphylococcus aureus strain JP18270 chromosome, complete genome
+contig_11	CP071350.1	100.000	15000	0	0	1	15000	1898732	1913731	0.0	27700	100	1280	Staphylococcus aureus strain Laus385 chromosome
+contig_11	CP123162.1	100.000	15000	0	0	1	15000	1939168	1954167	0.0	27700	100	1280	Staphylococcus aureus strain BE-MSSA7 chromosome, complete genome
+contig_11	CP122554.1	100.000	15000	0	0	1	15000	1785508	1800507	0.0	27700	100	1280	Staphylococcus aureus strain ER24380.3 chromosome, complete genome

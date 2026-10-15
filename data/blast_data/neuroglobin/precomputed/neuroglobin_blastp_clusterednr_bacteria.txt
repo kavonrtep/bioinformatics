@@ -1,0 +1,292 @@
+BLASTP 2.12.0+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for composition-based statistics: Alejandro A. Schaffer,
+L. Aravind, Thomas L. Madden, Sergei Shavirin, John L. Spouge, Yuri
+I. Wolf, Eugene V. Koonin, and Stephen F. Altschul (2001),
+"Improving the accuracy of PSI-BLAST protein database searches with
+composition-based statistics and other refinements", Nucleic Acids
+Res. 29:2994-3005.
+
+
+
+Database: clustered nr
+           357,442,162 sequences; 117,307,649,189 total letters
+
+
+
+Query= Q9NPG2.1 RecName: Full=Neuroglobin; AltName: Full=Nitrite reductase
+
+Length=151
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+MHB1586906.1 globin family protein [Acidiferrobacteraceae bacterium]  101     6e-24
+HJR70033.1 TPA: globin family protein [Gammaproteobacteria bacter...  94.0    3e-21
+WP_058720464.1 globin family protein [Paucibacter sp. KCTC 42545]     92.8    7e-21
+MIA0087663.1 globin family protein [Sulfurifustaceae bacterium]       92.4    8e-21
+MEW6158472.1 globin family protein [Verrucomicrobiota bacterium]      92.8    9e-21
+WP_422189453.1 globin family protein [Aquabacterium sp.]              92.0    1e-20
+MIR6517430.1 globin family protein [Aquabacterium sp.]                91.7    2e-20
+GAB5560577.1 globin family protein [Actomonas sp.]                    91.3    2e-20
+MHS3022157.1 globin family protein [Nevskia sp.]                      90.9    3e-20
+MHT7251146.1 globin family protein [Candidatus Rariloculaceae bac...  91.3    4e-20
+MGE3308409.1 globin family protein [Limisphaerales bacterium]         90.1    1e-19
+MCE7989920.1 hemin receptor [Caldilinea sp. CFX5]                     89.7    2e-19
+WP_341903677.1 globin family protein [Polaromonas sp. YR568]          89.0    2e-19
+WP_379720859.1 globin family protein [Ferrovibrio xuzhouensis]        89.0    2e-19
+RRS05853.1 hemin receptor [Aquabacterium soli]                        89.0    2e-19
+MBI3562704.1 hemin receptor [Gammaproteobacteria bacterium]           88.6    3e-19
+MBL8093189.1 hypothetical protein [Anaerolineales bacterium]          88.2    5e-19
+MBK8972214.1 hemin receptor [Hahellaceae bacterium]                   87.8    6e-19
+MIB6216183.1 globin family protein [Hylemonella sp. GW821-FHT11C04]   87.8    6e-19
+MHK0098261.1 globin family protein [Pseudomonadota bacterium]         87.8    6e-19
+MHS2071822.1 globin family protein [Vicinamibacterales bacterium]     87.8    6e-19
+MCB1994752.1 hemin receptor [Rhodoferax sp.]                          87.8    6e-19
+HTI84284.1 TPA: globin family protein [Acetobacteraceae bacterium]    87.8    7e-19
+MHY1025524.1 globin family protein [Gammaproteobacteria bacterium]    87.8    7e-19
+MHY3634925.1 globin family protein [Gammaproteobacteria bacterium]    87.8    7e-19
+MIT2050299.1 globin family protein [Limisphaerales bacterium]         87.8    7e-19
+MEQ1686764.1 globin family protein [Burkholderiaceae bacterium]       87.8    8e-19
+MCC5025559.1 hypothetical protein [Candidatus Synoicihabitans pal...  87.4    9e-19
+MGB1800799.1 globin family protein [Gammaproteobacteria bacterium]    87.4    9e-19
+MEM9059437.1 globin family protein [Pseudomonadota bacterium]         87.4    1e-18
+HEX6591847.1 TPA: globin family protein [Moraxellaceae bacterium]     86.7    2e-18
+WP_101068399.1 globin domain-containing protein [Roseovarius sali...  86.7    2e-18
+WP_131449200.1 globin family protein [Parasulfuritortus cantonensis]  86.7    2e-18
+HET8715627.1 TPA: globin family protein [Holophagaceae bacterium]     86.7    2e-18
+NOQ64044.1 hemin receptor [Methyloprofundus sp.]                      86.7    2e-18
+MIA1121754.1 globin family protein [Alphaproteobacteria bacterium]    86.7    2e-18
+HIV73121.1 TPA: hemin receptor [Candidatus Aquabacterium excremen...  86.3    3e-18
+MCX7218433.1 globin domain-containing protein [Burkholderiales ba...  89.4    3e-18
+WP_372658281.1 globin family protein [Hydrogenophaga sp.]             85.9    3e-18
+WP_374436780.1 globin family protein [Inhella sp.]                    86.3    3e-18
+HKE58387.1 TPA: globin family protein [Pyrinomonadaceae bacterium]    86.3    3e-18
+MHY2287727.1 globin family protein [Gammaproteobacteria bacterium]    85.9    4e-18
+MHE9131102.1 globin family protein [Rubripirellula sp.]               85.9    4e-18
+MEW6304263.1 globin family protein [Verrucomicrobiota bacterium]      85.5    5e-18
+KAF0176387.1 globin [Limisphaerales bacterium]                        85.5    6e-18
+MHS2036695.1 globin family protein [Pyrinomonadaceae bacterium]       85.5    6e-18
+MHS0751868.1 globin family protein [Alcanivoracaceae bacterium]       85.5    6e-18
+HKG90784.1 TPA: globin family protein [Gemmatimonadaceae bacterium]   85.1    7e-18
+MHZ0786415.1 globin family protein [Sulfurifustaceae bacterium]       85.1    7e-18
+MHY9844568.1 globin family protein [Alphaproteobacteria bacterium]    85.1    8e-18
+
+
+>MHB1586906.1 globin family protein [Acidiferrobacteraceae bacterium]
+Length=155
+
+ Score = 101 bits (251),  Expect = 6e-24, Method: Compositional matrix adjust.
+ Identities = 54/145 (37%), Positives = 77/145 (53%), Gaps = 15/145 (10%)
+
+Query  1    MERPEPELIRQSWRAVSRSPLEHGTVLFARLFALEPDLLPLFQYNCRQFSSPEDCLSSPE  60
+            M   E  LIR +W  V     E G + +ARLF L P L  LFQ + R             
+Sbjct  1    MTDDEITLIRDTWNKVLPHAEEAGDLFYARLFVLNPKLKSLFQDDIR-------------  47
+
+Query  61   FLDHIRKVMLVIDAAVTNVEDLSSLEEYLASLGRKHRAVGVKLSSFSTVGESLLYMLEKC  120
+              D  RK+M++ID AV ++E L ++   +  LG++H   GV+   + TVG++LL+ L + 
+Sbjct  48   --DQGRKLMVMIDVAVAHLERLDTIRPAIEDLGQRHVHYGVRSEDYDTVGQALLWTLTQA  105
+
+Query  121  LGPAFTPATRAAWSQLYGAVVQAMS  145
+            LGP FTP  RAAWS++Y  +   M 
+Sbjct  106  LGPRFTPGARAAWSKIYTTLASIMD  130
+
+
+>HJR70033.1 globin family protein [Gammaproteobacteria bacterium]
+Length=138
+
+ Score = 94.0 bits (232),  Expect = 3e-21, Method: Compositional matrix adjust.
+ Identities = 49/138 (36%), Positives = 75/138 (54%), Gaps = 15/138 (11%)
+
+Query  8    LIRQSWRAVSRSPLEHGTVLFARLFALEPDLLPLFQYNCRQFSSPEDCLSSPEFLDHIRK  67
+            L+++SW+ V         + + +LF L+PDL  LF+ +  +                 RK
+Sbjct  8    LVQESWKKVVPIKETAAELFYGKLFELDPDLRGLFKGDMNE---------------QGRK  52
+
+Query  68   VMLVIDAAVTNVEDLSSLEEYLASLGRKHRAVGVKLSSFSTVGESLLYMLEKCLGPAFTP  127
+            +M +I+AA+  +  L  L   + +LGR+H   GVK S ++TV  +LL+ LEK LGPAFTP
+Sbjct  53   LMAMINAAINGLTRLDELVPTVENLGRRHATYGVKASDYNTVANALLWTLEKGLGPAFTP  112
+
+Query  128  ATRAAWSQLYGAVVQAMS  145
+             TR AW + YG + + M 
+Sbjct  113  PTRTAWVKAYGVLAETMQ  130
+
+
+>WP_058720464.1 globin family protein [Paucibacter sp. KCTC 42545]
+Length=137
+
+ Score = 92.8 bits (229),  Expect = 7e-21, Method: Compositional matrix adjust.
+ Identities = 51/144 (35%), Positives = 78/144 (54%), Gaps = 15/144 (10%)
+
+Query  1    MERPEPELIRQSWRAVSRSPLEHGTVLFARLFALEPDLLPLFQYNCRQFSSPEDCLSSPE  60
+            M++    L++ SW  V       G + +A LF  +P L  LF+ +  Q +S         
+Sbjct  1    MDQQTITLVQDSWAKVIPIAPAAGALFYANLFEADPSLKALFKGDMTQQAS---------  51
+
+Query  61   FLDHIRKVMLVIDAAVTNVEDLSSLEEYLASLGRKHRAVGVKLSSFSTVGESLLYMLEKC  120
+                  K+M +I+AAV  ++DL SL   L  LG++H   GV+ + + TVG +LL  +E+ 
+Sbjct  52   ------KLMQMINAAVAKLDDLDSLVPVLQQLGQRHSTYGVQPAHYDTVGAALLKTIEQG  105
+
+Query  121  LGPAFTPATRAAWSQLYGAVVQAM  144
+            LGPAFTPAT+ AW+ +YG +   M
+Sbjct  106  LGPAFTPATKEAWASVYGLIASVM  129
+
+
+>MIA0087663.1 globin family protein [Sulfurifustaceae bacterium]
+Length=131
+
+ Score = 92.4 bits (228),  Expect = 8e-21, Method: Compositional matrix adjust.
+ Identities = 49/140 (35%), Positives = 77/140 (55%), Gaps = 15/140 (11%)
+
+Query  7    ELIRQSWRAVSRSPLEHGTVLFARLFALEPDLLPLFQYNCRQFSSPEDCLSSPEFLDHIR  66
+            EL++ SW+ V     +   + +A+LF L+P L PLF+ +  +                 +
+Sbjct  7    ELVQSSWQKVLPIKDQAAQMFYAKLFDLDPQLKPLFKSDIDE---------------QGK  51
+
+Query  67   KVMLVIDAAVTNVEDLSSLEEYLASLGRKHRAVGVKLSSFSTVGESLLYMLEKCLGPAFT  126
+            K+M +I+ AVT++  + S+ + L  LG++H A GVK + + TV  +LL  LE  LGP FT
+Sbjct  52   KLMAMINVAVTSLNRMDSITDALRDLGKRHNAYGVKEADYGTVATALLATLEAGLGPNFT  111
+
+Query  127  PATRAAWSQLYGAVVQAMSR  146
+            P TR AW+  Y A+V  M +
+Sbjct  112  PETREAWTATYKALVGVMQQ  131
+
+
+>MEW6158472.1 globin family protein [Verrucomicrobiota bacterium]
+Length=142
+
+ Score = 92.8 bits (229),  Expect = 9e-21, Method: Compositional matrix adjust.
+ Identities = 49/147 (33%), Positives = 79/147 (54%), Gaps = 15/147 (10%)
+
+Query  1    MERPEPELIRQSWRAVSRSPLEHGTVLFARLFALEPDLLPLFQYNCRQFSSPEDCLSSPE  60
+            M   + +L++ +W  V+    E   + + RLFAL+P L PLF+ + ++            
+Sbjct  1    MTARQIQLVQTTWEQVTPMADEAAAIFYGRLFALDPTLKPLFKTDIQE------------  48
+
+Query  61   FLDHIRKVMLVIDAAVTNVEDLSSLEEYLASLGRKHRAVGVKLSSFSTVGESLLYMLEKC  120
+                 RK+  +I  AV  + DL+ L   +  LGR+H A GV+   ++TVG +LL+ LE+ 
+Sbjct  49   ---QGRKLTTMITVAVRGLNDLARLVPAVEDLGRRHVAYGVEDEHYATVGSALLWTLEQG  105
+
+Query  121  LGPAFTPATRAAWSQLYGAVVQAMSRG  147
+            LG AFTP  + AW+ +YGA+   M + 
+Sbjct  106  LGAAFTPEVKEAWATVYGALADTMKKA  132
+
+
+>WP_422189453.1 globin family protein [Aquabacterium sp.]
+Length=136
+
+ Score = 92.0 bits (227),  Expect = 1e-20, Method: Compositional matrix adjust.
+ Identities = 48/137 (35%), Positives = 74/137 (54%), Gaps = 15/137 (11%)
+
+Query  8    LIRQSWRAVSRSPLEHGTVLFARLFALEPDLLPLFQYNCRQFSSPEDCLSSPEFLDHIRK  67
+            L++QSW  V+    +   + +  LF  +P L PLF+ N     +               K
+Sbjct  8    LVQQSWTQVAAIAPQAAALFYQNLFTADPSLKPLFKGNMEAQGA---------------K  52
+
+Query  68   VMLVIDAAVTNVEDLSSLEEYLASLGRKHRAVGVKLSSFSTVGESLLYMLEKCLGPAFTP  127
+            +M +I AAV  ++DL +L   L  LG++H   GV+ + + TVG +LL  L++ LG  FTP
+Sbjct  53   LMQMIGAAVGKLDDLGTLAPILQGLGKRHAGYGVQDAHYDTVGGALLQTLDQGLGAGFTP  112
+
+Query  128  ATRAAWSQLYGAVVQAM  144
+            A +AAWS++YG + Q M
+Sbjct  113  AVKAAWSEVYGVMAQVM  129
+
+
+>MIR6517430.1 globin family protein [Aquabacterium sp.]
+Length=136
+
+ Score = 91.7 bits (226),  Expect = 2e-20, Method: Compositional matrix adjust.
+ Identities = 50/138 (36%), Positives = 74/138 (54%), Gaps = 15/138 (11%)
+
+Query  8    LIRQSWRAVSRSPLEHGTVLFARLFALEPDLLPLFQYNCRQFSSPEDCLSSPEFLDHIRK  67
+            L++QSW  V+    +   + +  LFA +P L PLF+ +                    RK
+Sbjct  8    LVQQSWTQVAAIAPQAAALFYQNLFAADPSLQPLFKGDMEA---------------QGRK  52
+
+Query  68   VMLVIDAAVTNVEDLSSLEEYLASLGRKHRAVGVKLSSFSTVGESLLYMLEKCLGPAFTP  127
+            +M +I AAV  ++DL +L   L  LGR+H   GV+ + + TVG +LL  L + LG AFTP
+Sbjct  53   LMQMIGAAVGKLDDLDTLVPILQGLGRRHGDYGVRDAHYDTVGGALLLTLSQGLGDAFTP  112
+
+Query  128  ATRAAWSQLYGAVVQAMS  145
+              RAAW+++YG + Q M 
+Sbjct  113  QVRAAWTEVYGVMAQVMK  130
+
+
+>GAB5560577.1 MAG: globin family protein [Actomonas sp.]
+Length=138
+
+ Score = 91.3 bits (225),  Expect = 2e-20, Method: Compositional matrix adjust.
+ Identities = 54/147 (37%), Positives = 75/147 (51%), Gaps = 15/147 (10%)
+
+Query  1    MERPEPELIRQSWRAVSRSPLEHGTVLFARLFALEPDLLPLFQYNCRQFSSPEDCLSSPE  60
+            M   E   ++ SW  V        T+ + RLF ++PDL PLF         PED ++   
+Sbjct  1    MTATEISHVQSSWAKVVPIADTAATLFYQRLFEIDPDLRPLF---------PEDMVAQK-  50
+
+Query  61   FLDHIRKVMLVIDAAVTNVEDLSSLEEYLASLGRKHRAVGVKLSSFSTVGESLLYMLEKC  120
+                 RK+M  I AAV  ++DL SL   L  +G +H   GVK   +STVG +LL+ LE+ 
+Sbjct  51   -----RKLMTAIGAAVRGLDDLKSLVPILQQMGARHVNYGVKPEHYSTVGSALLWTLEQG  105
+
+Query  121  LGPAFTPATRAAWSQLYGAVVQAMSRG  147
+            LG  FT   + AWS +YG + + M  G
+Sbjct  106  LGVDFTAEVKDAWSAVYGVIAETMQAG  132
+
+
+>MHS3022157.1 globin family protein [Nevskia sp.]
+Length=135
+
+ Score = 90.9 bits (224),  Expect = 3e-20, Method: Compositional matrix adjust.
+ Identities = 49/146 (34%), Positives = 78/146 (53%), Gaps = 15/146 (10%)
+
+Query  1    MERPEPELIRQSWRAVSRSPLEHGTVLFARLFALEPDLLPLFQYNCRQFSSPEDCLSSPE  60
+            M++    L++ SW+ V+        + +  LF  +P L PLF+                +
+Sbjct  1    MDQNTITLVQDSWKQVAPIAPTAAKLFYDNLFTADPGLKPLFK---------------GD  45
+
+Query  61   FLDHIRKVMLVIDAAVTNVEDLSSLEEYLASLGRKHRAVGVKLSSFSTVGESLLYMLEKC  120
+             +    K+M +I AAV  + DL +L   L  LG++H A GV  S ++TVG +LL  LE+ 
+Sbjct  46   MVAQGAKLMQMIGAAVGKLNDLGTLVPILQGLGKRHVAYGVADSHYATVGGALLKTLEQG  105
+
+Query  121  LGPAFTPATRAAWSQLYGAVVQAMSR  146
+            LGPAFTPA ++AW+++YG +   M +
+Sbjct  106  LGPAFTPAVKSAWTEVYGVMADVMIK  131
+
+
+>MHT7251146.1 globin family protein [Candidatus Rariloculaceae bacterium]
+Length=147
+
+ Score = 91.3 bits (225),  Expect = 4e-20, Method: Compositional matrix adjust.
+ Identities = 49/149 (33%), Positives = 79/149 (53%), Gaps = 15/149 (10%)
+
+Query  1    MERPEPELIRQSWRAVSRSPLEHGTVLFARLFALEPDLLPLFQYNCRQFSSPEDCLSSPE  60
+            M   + +L++ SW+ V     +   + + RLF L+P L PLF+ + +             
+Sbjct  1    MTPADIQLVKDSWQKVVPIADQAAALFYNRLFELDPALKPLFKGDMKS------------  48
+
+Query  61   FLDHIRKVMLVIDAAVTNVEDLSSLEEYLASLGRKHRAVGVKLSSFSTVGESLLYMLEKC  120
+                 RK+  +I+ AV N+ +LS++   +  LGR+H   GVK + + TVG +LL+ LE+ 
+Sbjct  49   ---QGRKLTAMINTAVVNLSNLSAIIGPVEDLGRRHVDYGVKAADYDTVGAALLWTLEQG  105
+
+Query  121  LGPAFTPATRAAWSQLYGAVVQAMSRGWD  149
+            LG AFTP T+AAW++ Y  +   M    D
+Sbjct  106  LGDAFTPQTKAAWAETYATLAAVMQTAAD  134
+
+
+
+Lambda      K        H
+   0.320    0.134    0.404 
+
+Gapped
+Lambda      K        H
+   0.267   0.0410    0.140 
+
+Effective search space used: 3335069657840
+
+
+  Database: clustered nr
+    Posted date:  Mar 9, 2024 12:10 AM
+  Number of letters in database: 117,307,649,189
+  Number of sequences in database:  357,442,162
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Window for multiple hits: 40

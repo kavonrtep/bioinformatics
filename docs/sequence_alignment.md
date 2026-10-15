@@ -1198,20 +1198,46 @@ Some of the key functions of bacterial globins include:
    UniProt or NCBI Protein.
 2. Use a sequence similarity search tool  BLASTP, to identify bacterial homologs
    of human neuroglobin.
-   - limit search to 50 sequences and e-value threshold to 1e-5
+   - Database: keep the default "ClusteredNR" (one representative per cluster
+     of very similar proteins). A search of the full "nr" database restricted
+     to bacteria is too large and fails on the NCBI server with "CPU usage
+     limit was exceeded".
+   - Organism: type "Bacteria" and select "Bacteria (taxid:2)" - without this
+     restriction, all hits would be animal globins
+   - in "Algorithm parameters", set "Max target sequences" to 50 and "Expect
+     threshold" (E-value) to 1e-5
 3. Retrieve FASTA sequence for the 10 best bacterial hits based on E-value,
-   sequence identity, and query coverage.
+   sequence identity, and query coverage. Select the hits with checkboxes and
+   use "Download" → "FASTA (complete sequence)". Check the length of the
+   downloaded proteins: some bacterial globins are fused to other domains
+   (e.g. flavohemoglobins carry a reductase domain), these extra domains will
+   appear as long gapped regions in the alignment.
 4. Import FASTA with bacterial globins to Jalview program. 
 5. Collect the amino acid sequences of human and mouse globin homologs
    (hemoglobin, myoglobin, and neuroglobin) from UniProt directly from Jalview
    program. Use following accessions: P69905; P68871; P02144; Q9NPG2; P01942;
-   P02088; P04247; Q9ER97 (use Fetch sequences command from FIle menu)
+   P02088; P04247; Q9ER97 (use Fetch sequences command from File menu)
 6. Create a multiple sequence alignment (MSA) using the Jalview program with
    bacterial, human and mouse sequences.
 7. Analyze the MSA to assess the conservation of the two histidine residues in
    the heme-binding pocket among the bacterial globin sequences.
 8. Clearly describe your observations and conclusions regarding the conservation
    of the two histidine residues in the heme-binding pocket.
+
+<details>
+<summary>Backup - if NCBI BLAST is not available</summary>
+
+- **UniProt BLAST** (https://www.uniprot.org/blast): query `Q9NPG2`, target
+  database "UniProtKB", "Restrict by taxonomy": `Bacteria`, E-threshold
+  `1e-5`, max hits 50. In the results, select the 10 best hits and download
+  them in FASTA format.
+- **Pre-computed results**: the result of the NCBI search (ClusteredNR,
+  Bacteria, run in October 2026) is in
+  `~/Desktop/Bioinformatics/data/blast_data/neuroglobin/precomputed/`. The file
+  `~/Desktop/Bioinformatics/data/blast_data/neuroglobin/bacterial_globins_top10.fasta`
+  contains the 10 best bacterial hits - import it into Jalview and continue
+  with step 5.
+</details>
 
 #### Example of bacterial globin with known 3D structure:
 - https://www.rcsb.org/3d-sequence/1TU9

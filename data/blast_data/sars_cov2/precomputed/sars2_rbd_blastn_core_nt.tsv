@@ -1,0 +1,253 @@
+# NCBI BLAST search run on 2026-10-15 (RID D29EJFM6014)
+# qseqid	saccver	pident	length	mismatch	gapopen	qstart	qend	sstart	send	evalue	bitscore	qcovs	staxids	stitle
+SARS-CoV-2_RBD	MW289908.1	100.000	669	0	0	1	669	23207	23875	0.0	1207	100	2797845	Reverse genetics vector pCCI-4K-SARS-CoV-2-ZsGreen, complete sequence
+SARS-CoV-2_RBD	MT227009.1	100.000	669	0	0	1	669	151	819	0.0	1207	100	11320	Mutant Influenza A virus clone SRBD01 segment 8 RBD-NEP fusion protein gene, complete cds
+SARS-CoV-2_RBD	OZ204570.1	100.000	669	0	0	1	669	22525	23193	0.0	1207	100	694009	Severe acute respiratory syndrome-related coronavirus genome assembly, chromosome: 1
+SARS-CoV-2_RBD	MW059026.1	100.000	669	0	0	1	669	2063	2731	0.0	1207	100	28875	Mutant Rotavirus A NSP3-P2A-SARS CoV-2/S1 gene, complete cds
+SARS-CoV-2_RBD	HG994858.1	100.000	669	0	0	1	669	22517	23185	0.0	1207	100	694009	Severe acute respiratory syndrome-related coronavirus isolate H_SC_09 genome assembly, complete genome: monopartite
+SARS-CoV-2_RBD	MW045214.1	100.000	669	0	0	1	669	1063	1731	0.0	1207	100	2922310	Cloning vector p20020 BANCOVID SARS-CoV-2 surface glycoprotein gene, complete cds
+SARS-CoV-2_RBD	HG994854.1	100.000	669	0	0	1	669	22517	23185	0.0	1207	100	694009	Severe acute respiratory syndrome-related coronavirus isolate H_SC_03 genome assembly, complete genome: monopartite
+SARS-CoV-2_RBD	HG994853.1	100.000	669	0	0	1	669	22517	23185	0.0	1207	100	694009	Severe acute respiratory syndrome-related coronavirus isolate H_SC_02 genome assembly, complete genome: monopartite
+SARS-CoV-2_RBD	MT926412.1	100.000	669	0	0	1	669	23207	23875	0.0	1207	100	2767257	Reverse genetics vector pCCI-4K-SARS-CoV-2-NanoLuc, complete sequence
+SARS-CoV-2_RBD	HG994855.1	100.000	669	0	0	1	669	22517	23185	0.0	1207	100	694009	Severe acute respiratory syndrome-related coronavirus isolate H_SC_06 genome assembly, complete genome: monopartite
+SARS-CoV-2_RBD	MT655946.1	100.000	669	0	0	1	669	1133	1801	0.0	1207	100	28875	Mutant Rotavirus A NSP3-P2A-3XFLSARSCoV-2 spikeExRBD gene, complete cds
+SARS-CoV-2_RBD	HG994859.1	100.000	669	0	0	1	669	22517	23185	0.0	1207	100	694009	Severe acute respiratory syndrome-related coronavirus isolate H_SC_10 genome assembly, complete genome: monopartite
+SARS-CoV-2_RBD	MW045215.1	100.000	669	0	0	1	669	1917	2585	0.0	1207	100	2922310	Cloning vector p20020, complete sequence
+SARS-CoV-2_RBD	MT926411.1	100.000	669	0	0	1	669	23207	23875	0.0	1207	100	2767256	Reverse genetics vector pCCI-4K-SARS-CoV-2-mCherry, complete sequence
+SARS-CoV-2_RBD	MT926410.1	100.000	669	0	0	1	669	23207	23875	0.0	1207	100	2767255	Reverse genetics vector pCCI-4K-SARS-CoV-2-Wuhan-Hu-1, complete sequence
+SARS-CoV-2_RBD	MT299805.1	100.000	669	0	0	1	669	3294	3962	0.0	1207	100	2724904	Cloning vector pSF_lenti_SARS-CoV-2_partial-S/E/M/N, complete sequence
+SARS-CoV-2_RBD	HG994856.1	100.000	669	0	0	1	669	22517	23185	0.0	1207	100	694009	Severe acute respiratory syndrome-related coronavirus isolate H_SC_07 genome assembly, complete genome: monopartite
+SARS-CoV-2_RBD	HG994857.1	100.000	669	0	0	1	669	22517	23185	0.0	1207	100	694009	Severe acute respiratory syndrome-related coronavirus isolate H_SC_08 genome assembly, complete genome: monopartite
+SARS-CoV-2_RBD	HG994852.1	100.000	669	0	0	1	669	22514	23182	0.0	1207	100	694009	Severe acute respiratory syndrome-related coronavirus isolate H_SC_01 genome assembly, complete genome: monopartite
+SARS-CoV-2_RBD	ON755131.1	99.851	669	1	0	1	669	1063	1731	0.0	1203	100	3031060	Cloning vector p20020.1, partial sequence
+SARS-CoV-2_RBD	ON755132.1	99.552	669	3	0	1	669	1063	1731	0.0	1194	100	3031061	Cloning vector p20020.2, partial sequence
+SARS-CoV-2_RBD	HG994860.1	100.000	643	0	0	27	669	22543	23185	0.0	1160	96	694009	Severe acute respiratory syndrome-related coronavirus isolate H_SC_11 genome assembly, complete genome: monopartite
+SARS-CoV-2_RBD	OM273295.1	100.000	637	0	0	33	669	780	1416	0.0	1150	95	2969104	Mammalian expression vector pVax1-IgEpLP-RBD CoV2, complete sequence
+SARS-CoV-2_RBD	OY757873.1	96.562	669	23	0	1	669	22497	23165	0.0	1104	100	694009	Severe acute respiratory syndrome-related coronavirus isolate DW-RAT-192 genome assembly, chromosome: 1
+SARS-CoV-2_RBD	OY757878.1	96.263	669	25	0	1	669	22496	23164	0.0	1095	100	694009	Severe acute respiratory syndrome-related coronavirus isolate DW-RAT-195 genome assembly, chromosome: 1
+SARS-CoV-2_RBD	OY757875.1	96.263	669	25	0	1	669	22490	23158	0.0	1095	100	694009	Severe acute respiratory syndrome-related coronavirus isolate DW-RAT-191 genome assembly, chromosome: 1
+SARS-CoV-2_RBD	OY757870.1	96.114	669	26	0	1	669	22494	23162	0.0	1090	100	694009	Severe acute respiratory syndrome-related coronavirus isolate DW-RAT-194 genome assembly, chromosome: 1
+SARS-CoV-2_RBD	OY757872.1	96.114	669	26	0	1	669	22493	23161	0.0	1090	100	694009	Severe acute respiratory syndrome-related coronavirus isolate DW-RAT-193 genome assembly, chromosome: 1
+SARS-CoV-2_RBD	MZ937001.1	94.021	669	40	0	1	669	22439	23107	0.0	1027	100	1508220	Bat coronavirus isolate BANAL-20-103/Laos/2020, complete genome
+SARS-CoV-2_RBD	MT655947.1	100.000	568	0	0	48	615	1108	1675	0.0	1025	85	28875	Mutant Rotavirus A NSP3-P2A-3XFLSARSCoV-2spikeRBD gene, complete cds
+SARS-CoV-2_RBD	MZ937000.1	93.871	669	41	0	1	669	22466	23134	0.0	1022	100	1508220	Bat coronavirus isolate BANAL-20-52/Laos/2020, complete genome
+SARS-CoV-2_RBD	PP856573.1	93.871	669	41	0	1	669	22490	23158	0.0	1022	100	1508220	Mutant Bat coronavirus clone BANAL-52, complete genome
+SARS-CoV-2_RBD	PP856574.1	93.871	669	41	0	1	669	22480	23148	0.0	1022	100	1508220	Mutant Bat coronavirus clone BANAL-236, complete genome
+SARS-CoV-2_RBD	MZ937003.2	93.871	669	41	0	1	669	22479	23147	0.0	1022	100	1508220	Bat coronavirus isolate BANAL-20-236/Laos/2020, complete genome
+SARS-CoV-2_RBD	OR233302.1	93.871	669	41	0	1	669	22487	23155	0.0	1022	100	3068538	Horseshoe bat sarbecovirus isolate Rp22DB159, complete genome
+SARS-CoV-2_RBD	OP963576.1	93.572	669	43	0	1	669	22514	23182	0.0	1013	100	3020201	Bat SARS-like virus BtSY2 ORF1ab polyprotein (ORF1ab), ORF1a polyprotein (ORF1ab), surface glycoprotein, ORF3a protein, ORF3b protein, envelope protein, membrane protein M, ORF6 protein, ORF7a protein, ORF7b protein, ORF8 protein, nucleocapsid phosphoprotein, and ORF10 protein genes, complete cds
+SARS-CoV-2_RBD	PZ113259.1	92.676	669	49	0	1	669	22465	23133	0.0	986	100	694009	Severe acute respiratory syndrome-related coronavirus isolate RacCS20583.RSL, partial genome
+SARS-CoV-2_RBD	PZ113262.1	92.676	669	49	0	1	669	22465	23133	0.0	986	100	694009	Severe acute respiratory syndrome-related coronavirus isolate RacCS20600b.RSL, partial genome
+SARS-CoV-2_RBD	PZ113263.1	92.676	669	49	0	1	669	22460	23128	0.0	986	100	694009	Severe acute respiratory syndrome-related coronavirus isolate RacCS20605.RSL, partial genome
+SARS-CoV-2_RBD	PZ123560.1	92.676	669	49	0	1	669	894	1562	0.0	986	100	694009	Severe acute respiratory syndrome-related coronavirus isolate RacCS20620.RSL surface glycoprotein (S) gene, partial cds
+SARS-CoV-2_RBD	PZ123558.1	92.676	669	49	0	1	669	853	1521	0.0	986	100	694009	Severe acute respiratory syndrome-related coronavirus isolate RacCS20597.RSL surface glycoprotein (S) gene, partial cds
+SARS-CoV-2_RBD	PZ123557.1	92.676	669	49	0	1	669	887	1555	0.0	986	100	694009	Severe acute respiratory syndrome-related coronavirus isolate RacCS20587.RSL surface glycoprotein (S) gene, partial cds
+SARS-CoV-2_RBD	PZ123556.1	92.526	669	50	0	1	669	831	1499	0.0	982	100	694009	Severe acute respiratory syndrome-related coronavirus isolate RacCS20574.RSL surface glycoprotein (S) gene, partial cds
+SARS-CoV-2_RBD	PZ113264.1	92.526	669	50	0	1	669	22465	23133	0.0	982	100	694009	Severe acute respiratory syndrome-related coronavirus isolate RacCS20637.RSL, partial genome
+SARS-CoV-2_RBD	PZ123559.1	92.526	669	50	0	1	669	894	1562	0.0	982	100	694009	Severe acute respiratory syndrome-related coronavirus isolate RacCS20601.RSL surface glycoprotein (S) gene, partial cds
+SARS-CoV-2_RBD	PZ123555.1	92.526	669	50	0	1	669	924	1592	0.0	982	100	694009	Severe acute respiratory syndrome-related coronavirus isolate RacCS20552.RSL surface glycoprotein (S) gene, partial cds
+SARS-CoV-2_RBD	PZ123562.1	92.526	669	50	0	1	669	898	1566	0.0	982	100	694009	Severe acute respiratory syndrome-related coronavirus isolate RacCS20636.RSL surface glycoprotein (S) gene, partial cds
+SARS-CoV-2_RBD	PZ113260.1	92.526	669	50	0	1	669	22465	23133	0.0	982	100	694009	Severe acute respiratory syndrome-related coronavirus isolate RacCS20588.RSL, partial genome
+SARS-CoV-2_RBD	PZ487741.1	91.330	669	58	0	1	669	22436	23104	0.0	946	100	1508220	Bat coronavirus isolate RacSTT333, partial genome
+SARS-CoV-2_RBD	PZ487745.1	91.181	669	59	0	1	669	22518	23186	0.0	941	100	1508220	Bat coronavirus isolate RacSTT345, partial genome
+SARS-CoV-2_RBD	PZ487742.1	91.181	669	59	0	1	669	22436	23104	0.0	941	100	1508220	Bat coronavirus isolate RacSTT334, partial genome
+SARS-CoV-2_RBD	PZ487746.1	91.181	669	59	0	1	669	22433	23101	0.0	941	100	1508220	Bat coronavirus isolate RacSTT347, partial genome
+SARS-CoV-2_RBD	PZ487748.1	91.181	669	59	0	1	669	22439	23107	0.0	941	100	1508220	Bat coronavirus isolate RpuSTT361, partial genome
+SARS-CoV-2_RBD	PZ487747.1	91.181	669	59	0	1	669	22492	23160	0.0	941	100	1508220	Bat coronavirus isolate RacSTT351, partial genome
+SARS-CoV-2_RBD	MT799522.1	86.846	669	88	0	1	669	943	1611	0.0	810	100	2708335	Pangolin coronavirus isolate cDNA9-S surface glycoprotein (S) gene, complete cds
+SARS-CoV-2_RBD	MT799524.1	86.846	669	88	0	1	669	943	1611	0.0	810	100	2708335	Pangolin coronavirus isolate cDNA18-S surface glycoprotein (S) gene, complete cds
+SARS-CoV-2_RBD	OQ297708.1	86.846	669	88	0	1	669	22452	23120	0.0	810	100	2708335	MAG: Pangolin coronavirus isolate GD/P79-9/2019, complete genome
+SARS-CoV-2_RBD	MT799521.1	86.846	669	88	0	1	669	943	1611	0.0	810	100	2708335	Pangolin coronavirus isolate cDNA8-S surface glycoprotein (S) gene, complete cds
+SARS-CoV-2_RBD	MT799523.1	86.846	669	88	0	1	669	943	1611	0.0	810	100	2708335	Pangolin coronavirus isolate cDNA16-S surface glycoprotein (S) gene, complete cds
+SARS-CoV-2_RBD	MT121216.1	86.697	669	89	0	1	669	22363	23031	0.0	806	100	2708335	Pangolin coronavirus isolate MP789, complete genome
+SARS-CoV-2_RBD	OQ297700.1	86.547	669	90	0	1	669	22445	23113	0.0	805	100	2708335	MAG: Pangolin coronavirus isolate GD/M5-9/2019, partial genome
+SARS-CoV-2_RBD	PV839357.1	86.736	671	85	2	1	669	22457	23125	0.0	804	100	694009	Severe acute respiratory syndrome-related coronavirus isolate RpuRB21012.RSL, partial genome
+SARS-CoV-2_RBD	PV839359.1	86.736	671	85	2	1	669	22475	23143	0.0	804	100	694009	Severe acute respiratory syndrome-related coronavirus isolate RpuRB21065.RSL, partial genome
+SARS-CoV-2_RBD	OQ297707.1	86.547	669	90	0	1	669	22363	23031	0.0	803	100	2708335	MAG: Pangolin coronavirus isolate GD/P44-9/2019, partial genome
+SARS-CoV-2_RBD	MT084071.1	86.547	669	90	0	1	669	20646	21314	0.0	802	100	2708335	Pangolin coronavirus isolate MP789 genomic sequence, sequence
+SARS-CoV-2_RBD	MN996532.2	86.438	671	87	2	1	669	22514	23182	0.0	795	100	2709072	Bat coronavirus RaTG13, complete genome
+SARS-CoV-2_RBD	PZ487738.1	81.327	648	104	4	23	669	22428	23059	3.92e-173	621	97	1508220	Bat coronavirus isolate RshSTT314, partial genome
+SARS-CoV-2_RBD	PZ487731.1	81.327	648	104	4	23	669	22428	23059	3.92e-173	621	97	1508220	Bat coronavirus isolate RshSTT227, partial genome
+SARS-CoV-2_RBD	PZ487751.1	81.327	648	104	4	23	669	22428	23059	3.92e-173	621	97	1508220	Bat coronavirus isolate RshSTT419, partial genome
+SARS-CoV-2_RBD	PZ487740.1	81.327	648	104	4	23	669	22428	23059	3.92e-173	621	97	1508220	Bat coronavirus isolate RshSTT322, partial genome
+SARS-CoV-2_RBD	PZ487736.1	81.327	648	104	4	23	669	22428	23059	3.92e-173	621	97	1508220	Bat coronavirus isolate RshSTT268, partial genome
+SARS-CoV-2_RBD	PZ487730.1	81.327	648	104	4	23	669	22428	23059	3.92e-173	621	97	1508220	Bat coronavirus isolate RshSTT219, partial genome
+SARS-CoV-2_RBD	PZ487739.1	81.327	648	104	4	23	669	22428	23059	3.92e-173	621	97	1508220	Bat coronavirus isolate RshSTT317, partial genome
+SARS-CoV-2_RBD	PZ487750.1	81.327	648	104	4	23	669	22428	23059	3.92e-173	621	97	1508220	Bat coronavirus isolate RshSTT395, partial genome
+SARS-CoV-2_RBD	PZ487755.1	81.327	648	104	4	23	669	22428	23059	3.92e-173	621	97	1508220	Bat coronavirus isolate RmiSTT521, partial genome
+SARS-CoV-2_RBD	PZ487735.1	81.327	648	104	4	23	669	22428	23059	3.92e-173	621	97	1508220	Bat coronavirus isolate RmiSTT249, partial genome
+SARS-CoV-2_RBD	PZ487754.1	81.327	648	104	4	23	669	22428	23059	3.92e-173	621	97	1508220	Bat coronavirus isolate RshSTT515, partial genome
+SARS-CoV-2_RBD	PZ487758.1	81.327	648	104	4	23	669	22428	23059	3.92e-173	621	97	1508220	Bat coronavirus isolate RshSTT610, partial genome
+SARS-CoV-2_RBD	PZ487752.1	81.327	648	104	4	23	669	22428	23059	3.92e-173	621	97	1508220	Bat coronavirus isolate RshSTT494, partial genome
+SARS-CoV-2_RBD	PZ487743.1	81.327	648	104	4	23	669	22428	23059	3.92e-173	621	97	1508220	Bat coronavirus isolate RshSTT336, partial genome
+SARS-CoV-2_RBD	PZ487734.1	81.327	648	104	4	23	669	22428	23059	3.92e-173	621	97	1508220	Bat coronavirus isolate RshSTT245, partial genome
+SARS-CoV-2_RBD	PZ487733.1	81.327	648	104	4	23	669	22428	23059	3.92e-173	621	97	1508220	Bat coronavirus isolate RmiSTT243, partial genome
+SARS-CoV-2_RBD	PZ487728.1	81.327	648	104	4	23	669	22428	23059	3.92e-173	621	97	1508220	Bat coronavirus isolate RshSTT671, partial genome
+SARS-CoV-2_RBD	PZ487737.1	81.327	648	104	4	23	669	22428	23059	3.92e-173	621	97	1508220	Bat coronavirus isolate RshSTT287, partial genome
+SARS-CoV-2_RBD	PZ487749.1	81.327	648	104	4	23	669	22428	23059	3.92e-173	621	97	1508220	Bat coronavirus isolate RshSTT381, partial genome
+SARS-CoV-2_RBD	PZ487729.1	81.327	648	104	4	23	669	22428	23059	3.92e-173	621	97	1508220	Bat coronavirus isolate RshSTT779, partial genome
+SARS-CoV-2_RBD	PZ487744.1	81.327	648	104	4	23	669	22428	23059	3.92e-173	621	97	1508220	Bat coronavirus isolate RshSTT344, partial genome
+SARS-CoV-2_RBD	PZ487732.1	81.327	648	104	4	23	669	22428	23059	3.92e-173	621	97	1508220	Bat coronavirus isolate RshSTT241, partial genome
+SARS-CoV-2_RBD	PZ487756.1	81.173	648	105	4	23	669	22428	23059	1.66e-171	617	97	1508220	Bat coronavirus isolate RshSTT564, partial genome
+SARS-CoV-2_RBD	PZ487757.1	81.173	648	105	4	23	669	22525	23156	1.66e-171	617	97	1508220	Bat coronavirus isolate RshSTT570, partial genome
+SARS-CoV-2_RBD	PV146379.1	80.179	671	129	2	1	669	22476	23144	3.01e-168	606	100	2708335	Pangolin coronavirus isolate PCoV-GX/P11V-15, complete genome
+SARS-CoV-2_RBD	PQ675610.1	80.030	671	130	2	1	669	22484	23152	3.67e-167	601	100	2708335	Pangolin coronavirus isolate PCoV-GX/P8V-P5, complete genome
+SARS-CoV-2_RBD	MT040333.1	80.030	671	130	2	1	669	22488	23156	3.67e-167	601	100	2708335	Pangolin coronavirus isolate PCoV_GX-P4L, complete genome
+SARS-CoV-2_RBD	PQ675609.1	80.030	671	130	2	1	669	22477	23145	3.67e-167	601	100	2708335	Pangolin coronavirus isolate PCoV-GX/P8V-P1, complete genome
+SARS-CoV-2_RBD	MT040335.1	80.030	671	130	2	1	669	22488	23156	3.67e-167	601	100	2708335	Pangolin coronavirus isolate PCoV_GX-P5L, complete genome
+SARS-CoV-2_RBD	PV146378.1	80.030	671	130	2	1	669	22476	23144	3.67e-167	601	100	2708335	Pangolin coronavirus isolate PCoV-GX/P11V-5, complete genome
+SARS-CoV-2_RBD	MW532698.1	80.030	671	130	2	1	669	22493	23161	3.67e-167	601	100	2708335	Pangolin coronavirus isolate GX_P2V, complete genome
+SARS-CoV-2_RBD	PX802981.1	80.030	671	130	2	1	669	22470	23138	3.67e-167	601	100	2708335	Pangolin coronavirus isolate PCoV-GX/P49T, complete genome
+SARS-CoV-2_RBD	PQ675611.1	80.030	671	130	2	1	669	22484	23152	3.67e-167	601	100	2708335	Pangolin coronavirus isolate PCoV-GX/P8V-P15, complete genome
+SARS-CoV-2_RBD	PX802979.1	80.030	671	130	2	1	669	22458	23126	3.67e-167	601	100	2708335	Pangolin coronavirus isolate PCoV-GX/P1T, complete genome
+SARS-CoV-2_RBD	MT072864.1	79.881	671	131	2	1	669	22476	23144	4.47e-166	598	100	2708335	Pangolin coronavirus isolate PCoV_GX-P2V, complete genome
+SARS-CoV-2_RBD	PV146377.1	79.881	671	131	2	1	669	22462	23130	1.56e-165	597	100	2708335	Pangolin coronavirus isolate PCoV-GX/P11V-1, complete genome
+SARS-CoV-2_RBD	MT040336.1	79.881	671	131	2	1	669	22488	23156	1.56e-165	597	100	2708335	Pangolin coronavirus isolate PCoV_GX-P5E, complete genome
+SARS-CoV-2_RBD	MT040334.1	79.583	671	127	3	1	669	22488	23150	2.31e-163	589	100	2708335	Pangolin coronavirus isolate PCoV_GX-P1E, complete genome
+SARS-CoV-2_RBD	PZ487726.1	80.062	647	112	4	23	668	22472	23102	9.84e-162	583	97	1508220	Bat coronavirus isolate RshSTT039, partial genome
+SARS-CoV-2_RBD	PZ487727.1	79.907	647	113	4	23	668	22526	23156	4.18e-160	579	97	1508220	Bat coronavirus isolate RshSTT334, partial genome
+SARS-CoV-2_RBD	PV839353.1	78.909	678	134	2	1	669	22447	23124	4.18e-160	578	100	694009	Severe acute respiratory syndrome-related coronavirus isolate RpuRB22384.RSL, partial genome
+SARS-CoV-2_RBD	OR233323.1	79.753	647	114	4	23	668	22456	23086	5.10e-159	574	97	3068538	Horseshoe bat sarbecovirus isolate Ra22QT135, complete genome
+SARS-CoV-2_RBD	OR233322.1	79.753	647	114	4	23	668	22456	23086	5.10e-159	574	97	3068538	Horseshoe bat sarbecovirus isolate Ra22QT106, complete genome
+SARS-CoV-2_RBD	OR233324.1	79.753	647	114	4	23	668	22456	23086	5.10e-159	574	97	3068538	Horseshoe bat sarbecovirus isolate Ra22QT77, complete genome
+SARS-CoV-2_RBD	PX802980.1	77.059	680	143	3	1	669	22470	23147	2.82e-143	522	100	2708335	Pangolin coronavirus isolate PCoV-GX/P5V, complete genome
+SARS-CoV-2_RBD	PV839358.1	91.317	357	31	0	1	357	22454	22810	7.57e-138	505	70	694009	Severe acute respiratory syndrome-related coronavirus isolate RpuRB21054.RSL, partial genome
+SARS-CoV-2_RBD	PV839358.1	93.519	108	7	0	562	669	23015	23122	3.03e-35	164	70	694009	Severe acute respiratory syndrome-related coronavirus isolate RpuRB21054.RSL, partial genome
+SARS-CoV-2_RBD	OR995580.1	75.934	669	161	0	1	669	4641	5309	8.64e-131	481	100	11276	Mutant Vesicular stomatitis virus clone recombinant VSVdM51-RBD, complete genome
+SARS-CoV-2_RBD	OP963575.1	75.538	650	148	6	23	668	22429	23071	2.65e-118	439	97	3020200	Bat SARS-like virus BtSY1 ORF1ab polyprotein (ORF1ab), ORF1a protein (ORF1ab), spike glycoprotein, ORF3a protein, ORF3b protein, envelope protein, membrane glycoprotein M, ORF6 protein, ORF7a protein, ORF7b protein, ORF8 protein, nucleocapsid protein, and ORF10 protein genes, complete cds
+SARS-CoV-2_RBD	OQ503501.1	75.309	648	153	5	23	668	22409	23051	3.93e-116	432	97	694009	Severe acute respiratory syndrome-related coronavirus isolate 4230, complete genome
+SARS-CoV-2_RBD	KT444582.1	75.309	648	153	5	23	668	22429	23071	3.93e-116	432	97	1739625	SARS-like coronavirus WIV16, complete genome
+SARS-CoV-2_RBD	PZ810323.1	75.309	648	153	5	23	668	22425	23067	3.93e-116	432	97	2901879	Mutant Severe acute respiratory syndrome coronavirus clone WIV1-MA15, complete genome
+SARS-CoV-2_RBD	OQ503500.1	75.309	648	153	5	23	668	22522	23164	3.93e-116	432	97	694009	Severe acute respiratory syndrome-related coronavirus isolate 4105, complete genome
+SARS-CoV-2_RBD	KF367457.1	75.309	648	153	5	23	668	22432	23074	3.93e-116	432	97	1415852	Bat SARS-like coronavirus WIV1, complete genome
+SARS-CoV-2_RBD	KC881007.1	75.309	648	153	5	23	668	941	1583	3.93e-116	432	97	1415852	Bat SARS-like coronavirus WIV1 spike protein (S) gene, complete cds
+SARS-CoV-2_RBD	KC881006.1	75.309	648	153	5	23	668	22432	23074	3.93e-116	432	97	1415834	Bat SARS-like coronavirus Rs3367, complete genome
+SARS-CoV-2_RBD	KY417150.1	75.309	648	153	5	23	668	22430	23072	3.93e-116	432	97	1508227	Bat SARS-like coronavirus isolate Rs4874, complete genome
+SARS-CoV-2_RBD	AY304489.1	74.807	647	158	3	23	668	1270	1912	2.03e-113	424	97	231516	SARS coronavirus SZ1, partial genome
+SARS-CoV-2_RBD	AY304486.1	74.807	647	158	3	23	668	22414	23056	2.03e-113	424	97	231513	SARS coronavirus SZ3, complete genome
+SARS-CoV-2_RBD	AY304488.1	74.652	647	159	3	23	668	22414	23056	2.48e-112	419	97	231515	SARS coronavirus SZ16, complete genome
+SARS-CoV-2_RBD	AY304487.1	74.652	647	159	3	23	668	1264	1906	2.48e-112	419	97	231514	SARS coronavirus SZ13, partial genome
+SARS-CoV-2_RBD	AY627045.1	74.498	647	160	3	23	668	938	1580	1.05e-110	415	97	296838	SARS coronavirus PC4-137 spike glycoprotein gene, complete cds
+SARS-CoV-2_RBD	AY572036.1	74.498	647	160	3	23	668	938	1580	1.05e-110	415	97	285947	SARS coronavirus civet014 spike glycoprotein gene, complete cds
+SARS-CoV-2_RBD	AY395003.1	74.691	648	157	5	23	668	22378	23020	1.05e-110	414	97	249088	SARS coronavirus ZS-C, complete genome
+SARS-CoV-2_RBD	AY304490.1	74.691	648	157	5	23	668	6165	6807	1.05e-110	414	97	231517	SARS coronavirus GZ43, partial genome
+SARS-CoV-2_RBD	AY394981.1	74.691	648	157	5	23	668	22375	23017	1.05e-110	414	97	249066	SARS coronavirus HGZ8L1-A, partial genome
+SARS-CoV-2_RBD	AY390556.1	74.691	648	157	5	23	668	22429	23071	1.05e-110	414	97	256753	SARS coronavirus GZ02, complete genome
+SARS-CoV-2_RBD	AY394996.1	74.691	648	157	5	23	668	22414	23056	1.05e-110	414	97	249081;249082	SARS coronavirus ZS-B, complete genome
+SARS-CoV-2_RBD	AY394988.1	74.691	648	157	5	23	668	22343	22985	1.05e-110	414	97	249073	SARS coronavirus JMD, partial genome
+SARS-CoV-2_RBD	AY304491.1	74.691	648	157	5	23	668	3701	4343	1.05e-110	414	97	231518	SARS coronavirus GZ60, partial genome
+SARS-CoV-2_RBD	AY545915.1	74.343	647	161	3	23	668	22397	23039	1.28e-109	410	97	2901879	SARS coronavirus isolate HC/SZ/DM1/03, complete genome
+SARS-CoV-2_RBD	AY613951.1	74.343	647	161	3	23	668	938	1580	1.28e-109	410	97	293319	SARS coronavirus PC4-127 spike glycoprotein gene, complete cds
+SARS-CoV-2_RBD	AY687370.1	74.343	647	161	3	23	668	938	1580	1.28e-109	410	97	305416	SARS coronavirus C025 spike glycoprotein gene, complete cds
+SARS-CoV-2_RBD	AY613952.1	74.343	647	161	3	23	668	938	1580	1.28e-109	410	97	293320	SARS coronavirus PC4-205 spike glycoprotein gene, complete cds
+SARS-CoV-2_RBD	AY687355.1	74.343	647	161	3	23	668	938	1580	1.28e-109	410	97	305402	SARS coronavirus A013 spike glycoprotein gene, complete cds
+SARS-CoV-2_RBD	AY545918.1	74.343	647	161	3	23	668	22395	23037	1.28e-109	410	97	2901879	SARS coronavirus isolate HC/GZ/32/03, complete genome
+SARS-CoV-2_RBD	AY572038.1	74.343	647	161	3	23	668	22358	23000	1.28e-109	410	97	285949	SARS coronavirus civet020, complete genome
+SARS-CoV-2_RBD	AY687372.1	74.343	647	161	3	23	668	938	1580	1.28e-109	410	97	305418	SARS coronavirus C029 spike glycoprotein gene, complete cds
+SARS-CoV-2_RBD	AY687369.1	74.343	647	161	3	23	668	938	1580	1.28e-109	410	97	305415	SARS coronavirus C019 spike glycoprotein gene, complete cds
+SARS-CoV-2_RBD	AY687368.1	74.343	647	161	3	23	668	938	1580	1.28e-109	410	97	305414	SARS coronavirus C018 spike glycoprotein gene, complete cds
+SARS-CoV-2_RBD	AY687364.1	74.343	647	161	3	23	668	938	1580	1.28e-109	410	97	305410;305412;305413	SARS coronavirus B040 spike glycoprotein gene, complete cds
+SARS-CoV-2_RBD	AY686864.1	74.343	647	161	3	23	668	22388	23030	1.28e-109	410	97	299335	SARS coronavirus B039, complete genome
+SARS-CoV-2_RBD	AY687363.1	74.343	647	161	3	23	668	938	1580	1.28e-109	410	97	299335	SARS coronavirus B039 spike glycoprotein gene, complete cds
+SARS-CoV-2_RBD	AY687356.1	74.343	647	161	3	23	668	938	1580	1.28e-109	410	97	305403	SARS coronavirus A021 spike glycoprotein gene, complete cds
+SARS-CoV-2_RBD	AY627047.1	74.343	647	161	3	23	668	938	1580	1.28e-109	410	97	296840	SARS coronavirus PC4-199 spike glycoprotein gene, complete cds
+SARS-CoV-2_RBD	AY545916.1	74.343	647	161	3	23	668	22395	23037	1.28e-109	410	97	2901879	SARS coronavirus isolate HC/SZ/266/03, complete genome
+SARS-CoV-2_RBD	AY515512.1	74.343	647	161	3	23	668	22406	23048	1.28e-109	410	97	260069	SARS coronavirus HC/SZ/61/03, complete genome
+SARS-CoV-2_RBD	AY613950.1	74.343	647	161	3	23	668	22379	23021	1.28e-109	410	97	293936	SARS coronavirus PC4-227, complete genome
+SARS-CoV-2_RBD	AY687359.1	74.343	647	161	3	23	668	938	1580	1.28e-109	410	97	305406	SARS coronavirus B012 spike glycoprotein gene, complete cds
+SARS-CoV-2_RBD	AY687371.1	74.343	647	161	3	23	668	938	1580	1.28e-109	410	97	305417	SARS coronavirus C028 spike glycoprotein gene, complete cds
+SARS-CoV-2_RBD	AY613949.1	74.343	647	161	3	23	668	22379	23021	1.28e-109	410	97	293935	SARS coronavirus PC4-136, complete genome
+SARS-CoV-2_RBD	AY627044.1	74.343	647	161	3	23	668	938	1580	1.28e-109	410	97	296837	SARS coronavirus PC4-115 spike glycoprotein gene, complete cds
+SARS-CoV-2_RBD	AY627046.1	74.343	647	161	3	23	668	938	1580	1.28e-109	410	97	296839	SARS coronavirus PC4-145 spike glycoprotein gene, complete cds
+SARS-CoV-2_RBD	DQ514530.1	74.343	647	161	3	23	668	1319	1961	1.28e-109	410	97	385686	SARS coronavirus ES260 spike glycoprotein gene, complete cds
+SARS-CoV-2_RBD	AY568539.1	74.343	647	161	3	23	668	22379	23021	1.28e-109	410	97	281976	SARS coronavirus GZ0401, complete genome
+SARS-CoV-2_RBD	AY545917.1	74.343	647	161	3	23	668	22393	23035	1.28e-109	410	97	2901879	SARS coronavirus isolate HC/GZ/81/03, complete genome
+SARS-CoV-2_RBD	AY687360.1	74.343	647	161	3	23	668	938	1580	1.28e-109	410	97	305407	SARS coronavirus B024 spike glycoprotein gene, complete cds
+SARS-CoV-2_RBD	AY627048.1	74.343	647	161	3	23	668	938	1580	1.28e-109	410	97	296841	SARS coronavirus PC4-241 spike glycoprotein gene, complete cds
+SARS-CoV-2_RBD	AY525636.1	74.343	647	161	3	23	668	938	1580	1.28e-109	410	97	262338	SARS coronavirus GD03T0013 spike glycoprotein gene, complete cds
+SARS-CoV-2_RBD	EU371559.1	74.537	648	158	5	23	668	22429	23071	4.48e-109	409	97	353145	SARS coronavirus ZJ02, complete genome
+SARS-CoV-2_RBD	EU371561.1	74.537	648	158	5	23	668	22429	23071	4.48e-109	409	97	511433	SARS coronavirus BJ182b, complete genome
+SARS-CoV-2_RBD	EU371562.1	74.537	648	158	5	23	668	22429	23071	4.48e-109	409	97	511430	SARS coronavirus BJ182-4, complete genome
+SARS-CoV-2_RBD	EU371564.1	74.537	648	158	5	23	668	22429	23071	4.48e-109	409	97	511429	SARS coronavirus BJ182-12, complete genome
+SARS-CoV-2_RBD	AY278489.2	74.537	648	158	5	23	668	22413	23055	4.48e-109	409	97	233044	SARS coronavirus GD01, complete genome
+SARS-CoV-2_RBD	EU371563.1	74.537	648	158	5	23	668	22429	23071	4.48e-109	409	97	511431	SARS coronavirus BJ182-8, complete genome
+SARS-CoV-2_RBD	EU371560.1	74.537	648	158	5	23	668	22429	23071	4.48e-109	409	97	511432	SARS coronavirus BJ182a, complete genome
+SARS-CoV-2_RBD	AY545919.1	73.994	646	165	1	23	668	22408	23050	1.56e-108	407	97	2901879	SARS coronavirus isolate CFB/SZ/94/03, complete genome
+SARS-CoV-2_RBD	AY572037.1	74.189	647	162	3	23	668	938	1580	5.46e-108	406	97	285948	SARS coronavirus civet019 spike glycoprotein gene, complete cds
+SARS-CoV-2_RBD	AY687365.1	74.189	647	162	3	23	668	938	1580	5.46e-108	406	97	305411	SARS coronavirus C013 spike glycoprotein gene, complete cds
+SARS-CoV-2_RBD	AY687362.1	74.189	647	162	3	23	668	938	1580	5.46e-108	406	97	305409	SARS coronavirus B033 spike glycoprotein gene, complete cds
+SARS-CoV-2_RBD	AY687361.1	74.189	647	162	3	23	668	938	1580	5.46e-108	406	97	305408	SARS coronavirus B029 spike glycoprotein gene, complete cds
+SARS-CoV-2_RBD	FJ959407.1	74.189	647	162	3	23	668	22358	23000	5.46e-108	406	97	694009	SARS coronavirus isolate A001, complete genome
+SARS-CoV-2_RBD	AY572034.1	74.189	647	162	3	23	668	22403	23045	5.46e-108	406	97	285945	SARS coronavirus civet007, complete genome
+SARS-CoV-2_RBD	DQ514528.1	74.189	647	162	3	23	668	1331	1973	5.46e-108	406	97	385687	SARS coronavirus WF188 spike glycoprotein gene, complete cds
+SARS-CoV-2_RBD	AY687357.1	74.189	647	162	3	23	668	938	1580	5.46e-108	406	97	304858;305404;305405	SARS coronavirus A030 spike glycoprotein gene, complete cds
+SARS-CoV-2_RBD	AY545914.1	74.189	647	162	3	23	668	22406	23048	5.46e-108	406	97	2901879	SARS coronavirus isolate HC/SZ/79/03, complete genome
+SARS-CoV-2_RBD	AY686863.1	74.189	647	162	3	23	668	22378	23020	5.46e-108	406	97	304858	SARS coronavirus A022, complete genome
+SARS-CoV-2_RBD	AY572035.1	74.189	647	162	3	23	668	22381	23023	5.46e-108	406	97	285946	SARS coronavirus civet010, complete genome
+SARS-CoV-2_RBD	AY613947.1	74.189	647	162	3	23	668	22379	23021	5.46e-108	406	97	293933	SARS coronavirus GZ0402, complete genome
+SARS-CoV-2_RBD	MW560960.1	73.393	669	178	0	1	669	5012	5680	5.46e-108	405	100	2819199	Expression vector SARSCoV2SD614G, complete sequence
+SARS-CoV-2_RBD	OK272510.1	73.393	669	178	0	1	669	1870	2538	5.46e-108	405	100	2878343	Recombinant vector AAV-COVID19-05, complete sequence
+SARS-CoV-2_RBD	OK272511.1	73.393	669	178	0	1	669	1870	2538	5.46e-108	405	100	2878344	Recombinant vector AAV-COVID19-06, complete sequence
+SARS-CoV-2_RBD	MW560963.1	73.393	669	178	0	1	669	7085	7753	5.46e-108	405	100	2819200	Expression vector SARSCoV2SGFP, complete sequence
+SARS-CoV-2_RBD	MW560957.1	73.393	669	178	0	1	669	5012	5680	5.46e-108	405	100	2819197	Expression vector SARSCoV2S, complete sequence
+SARS-CoV-2_RBD	MW560962.1	73.393	669	178	0	1	669	7085	7753	5.46e-108	405	100	2819198	Expression vector SARSCoV2S&SmBit, complete sequence
+SARS-CoV-2_RBD	OK017849.1	74.383	648	159	5	23	668	22294	22936	5.46e-108	405	97	2833184	Sarbecovirus sp. isolate YN2016C, complete genome
+SARS-CoV-2_RBD	OQ503504.1	74.383	648	159	5	23	668	22418	23060	5.46e-108	405	97	694009	Severe acute respiratory syndrome-related coronavirus isolate 162173, complete genome
+SARS-CoV-2_RBD	MW560961.1	73.393	669	178	0	1	669	5012	5680	5.46e-108	405	100	2819202	Expression vector SARSCoV2SP681H, complete sequence
+SARS-CoV-2_RBD	AY687354.1	74.034	647	163	3	23	668	938	1580	5.46e-108	405	97	305401	SARS coronavirus A001 spike glycoprotein gene, complete cds
+SARS-CoV-2_RBD	MW408786.1	73.393	669	178	0	1	669	1976	2644	5.46e-108	405	100	2800400	Recombinant vector AAVCOVID19-3, complete sequence
+SARS-CoV-2_RBD	MW408785.1	73.393	669	178	0	1	669	1513	2181	5.46e-108	405	100	2800399	Recombinant vector AAVCOVID19-1, complete sequence
+SARS-CoV-2_RBD	OQ503503.1	74.383	648	159	5	23	668	22423	23065	5.46e-108	405	97	694009	Severe acute respiratory syndrome-related coronavirus isolate 162171, complete genome
+SARS-CoV-2_RBD	MK211376.1	74.383	648	159	5	23	668	22431	23073	5.46e-108	405	97	2591235	Coronavirus BtRs-BetaCoV/YN2018B, complete genome
+SARS-CoV-2_RBD	OQ503505.1	74.383	648	159	5	23	668	22436	23078	5.46e-108	405	97	694009	Severe acute respiratory syndrome-related coronavirus isolate 162181, complete genome
+SARS-CoV-2_RBD	DQ514531.1	74.034	647	163	3	23	668	1331	1973	6.65e-107	401	97	385683	SARS coronavirus CS21 spike glycoprotein gene, complete cds
+SARS-CoV-2_RBD	DQ514529.1	74.034	647	163	3	23	668	1332	1974	6.65e-107	401	97	385685	SARS coronavirus ES191 spike glycoprotein gene, complete cds
+SARS-CoV-2_RBD	AY613948.1	74.034	647	163	3	23	668	22379	23021	6.65e-107	401	97	293934	SARS coronavirus PC4-13, complete genome
+SARS-CoV-2_RBD	OK272508.1	73.414	662	176	0	1	662	961	1622	6.65e-107	401	99	2878341	Recombinant vector AAV-COVID19-03, complete sequence
+SARS-CoV-2_RBD	OK272507.1	73.414	662	176	0	1	662	962	1623	6.65e-107	401	99	2878340	Recombinant vector AAV-COVID19-02, complete sequence
+SARS-CoV-2_RBD	OK272509.1	73.414	662	176	0	1	662	961	1622	6.65e-107	401	99	2878342	Recombinant vector AAV-COVID19-04, complete sequence
+SARS-CoV-2_RBD	OK272506.1	73.414	662	176	0	1	662	962	1623	6.65e-107	401	99	2878339	Recombinant vector AAV-COVID19-01, complete sequence
+SARS-CoV-2_RBD	KY417152.1	74.228	648	160	5	23	668	22432	23074	2.32e-106	400	97	1508227	Bat SARS-like coronavirus isolate Rs9401, complete genome
+SARS-CoV-2_RBD	MW598453.1	73.244	669	179	0	1	669	5012	5680	2.32e-106	400	100	2813845	Expression vector SARS-CoV-2-S-N439K, complete sequence
+SARS-CoV-2_RBD	OQ175345.1	74.074	648	161	4	23	668	22428	23070	2.32e-106	400	97	3018909	Bat Coronavirus RsYN20 isolate BtRs-BetaCoV/YN2020-Q325, complete genome
+SARS-CoV-2_RBD	OK017853.1	74.074	648	161	4	23	668	22221	22863	2.32e-106	400	97	2833184	Sarbecovirus sp. isolate YN2020C, complete genome
+SARS-CoV-2_RBD	OQ175347.1	74.074	648	161	4	23	668	22428	23070	2.32e-106	400	97	3018909	Bat Coronavirus RsYN20 isolate BtRs-BetaCoV/YN2020-Q327, complete genome
+SARS-CoV-2_RBD	OK017857.1	74.074	648	161	4	23	668	22214	22856	2.32e-106	400	97	2833184	Sarbecovirus sp. isolate YN2020G, complete genome
+SARS-CoV-2_RBD	OQ175344.1	74.074	648	161	4	23	668	22428	23070	2.32e-106	400	97	3018909	Bat Coronavirus RsYN20 isolate BtRs-BetaCoV/YN2020-Q324, complete genome
+SARS-CoV-2_RBD	MW598454.1	73.244	669	179	0	1	669	5012	5680	2.32e-106	400	100	2813846	Expression vector SARS-CoV-2-S-E484K, complete sequence
+SARS-CoV-2_RBD	OQ175346.1	74.074	648	161	4	23	668	22428	23070	2.32e-106	400	97	3018909	Bat Coronavirus RsYN20 isolate BtRs-BetaCoV/YN2020-Q326, complete genome
+SARS-CoV-2_RBD	OK017854.1	74.074	648	161	4	23	668	22220	22862	2.32e-106	400	97	2833184	Sarbecovirus sp. isolate YN2020D, complete genome
+SARS-CoV-2_RBD	OK017856.1	74.074	648	161	4	23	668	22165	22807	2.32e-106	400	97	2833184	Sarbecovirus sp. isolate YN2020F, complete genome
+SARS-CoV-2_RBD	MW560958.1	73.244	669	179	0	1	669	5012	5680	2.32e-106	400	100	2819203	Expression vector SARSCoV2SY453F, complete sequence
+SARS-CoV-2_RBD	OK017850.1	74.228	648	160	5	23	668	22294	22936	2.32e-106	400	97	2833184	Sarbecovirus sp. isolate YN2016D, complete genome
+SARS-CoV-2_RBD	OK017847.1	74.228	648	160	5	23	668	22294	22936	2.32e-106	400	97	2833184	Sarbecovirus sp. isolate YN2016A, complete genome
+SARS-CoV-2_RBD	OQ175348.1	74.074	648	161	4	23	668	22428	23070	2.32e-106	400	97	3018909	Bat Coronavirus RsYN20 isolate BtRs-BetaCoV/YN2020-Q328, complete genome
+SARS-CoV-2_RBD	OK017855.1	74.074	648	161	4	23	668	22221	22863	2.32e-106	400	97	2833184	Sarbecovirus sp. isolate YN2020E, complete genome
+SARS-CoV-2_RBD	KY417151.1	74.228	648	160	5	23	668	22432	23074	2.32e-106	400	97	1508227	Bat SARS-like coronavirus isolate Rs7327, complete genome
+SARS-CoV-2_RBD	OK017851.1	74.228	648	160	5	23	668	22294	22936	2.32e-106	400	97	2833184	Sarbecovirus sp. isolate YN2016E, complete genome
+SARS-CoV-2_RBD	MW560959.1	73.244	669	179	0	1	669	5012	5680	2.32e-106	400	100	2819201	Expression vector SARSCoV2SN501Y, complete sequence
+SARS-CoV-2_RBD	OK017848.1	74.228	648	160	5	23	668	22185	22827	2.32e-106	400	97	2833184	Sarbecovirus sp. isolate YN2016B, complete genome
+SARS-CoV-2_RBD	OK017852.1	73.920	648	162	4	23	668	22217	22859	2.83e-105	396	97	2833184	Sarbecovirus sp. isolate YN2020B, complete genome
+SARS-CoV-2_RBD	OK017858.1	73.920	648	162	4	23	668	22221	22863	2.83e-105	396	97	2833184	Sarbecovirus sp. isolate YN2020H, complete genome
+SARS-CoV-2_RBD	PV839355.1	73.032	686	155	8	1	665	22436	23112	9.87e-105	395	99	694009	Severe acute respiratory syndrome-related coronavirus isolate RpuRB21122.RSL, partial genome
+SARS-CoV-2_RBD	PV839354.1	73.032	686	155	8	1	665	22447	23123	9.87e-105	395	99	694009	Severe acute respiratory syndrome-related coronavirus isolate RpuRB21105.RSL, partial genome
+SARS-CoV-2_RBD	KY417146.1	73.611	648	164	4	23	668	22430	23072	1.46e-102	387	97	1508227	Bat SARS-like coronavirus isolate Rs4231, complete genome
+SARS-CoV-2_RBD	KC881005.1	73.611	648	164	4	23	668	22432	23074	1.46e-102	387	97	1415851	Bat SARS-like coronavirus RsSHC014, complete genome
+SARS-CoV-2_RBD	MT308984.1	73.611	648	164	4	23	668	22432	23074	1.46e-102	387	97	228330	Mutant SARS coronavirus Urbani clone SARS-Urbani-MA_SHC014-spike, complete genome
+SARS-CoV-2_RBD	KY417144.1	73.457	648	165	4	23	668	22432	23074	6.23e-101	382	97	1508227	Bat SARS-like coronavirus isolate Rs4084, complete genome
+SARS-CoV-2_RBD	MT613044.1	72.131	671	183	2	1	669	1895	2563	5.83e-95	362	100	2777782	Cloning vector pCDNA3.1.2S, complete sequence
+SARS-CoV-2_RBD	LC663958.1	72.006	668	158	6	2	668	22428	23067	5.83e-95	361	100	2833184	Sarbecovirus sp. Rc-os20 RNA, complete geneome
+SARS-CoV-2_RBD	PV648366.1	71.856	668	158	8	1	668	22413	23050	3.68e-91	349	100	1508220	Bat coronavirus isolate CoV/Bat25-5, complete genome
+SARS-CoV-2_RBD	MW090971.1	71.557	668	186	2	4	669	10206	10871	1.56e-89	343	100	11234	Mutant Measles morbillivirus strain MeVvac2-SARS2-S(H), complete genome
+SARS-CoV-2_RBD	OP697990.1	71.021	666	193	0	4	669	157	822	9.88e-86	332	100	3034781	Mammalian expression vector pCMV-rRBD, complete sequence
+SARS-CoV-2_RBD	OP697991.1	71.021	666	193	0	4	669	817	1482	9.88e-86	332	100	3034783	Mammalian expression vector pCMV-rRBD-wtEBNA1, complete sequence
+SARS-CoV-2_RBD	OP697988.1	71.021	666	193	0	4	669	1836	2501	9.88e-86	332	100	3034780	Mammalian expression vector pCAG-rRBD-xrepEBNA1, complete sequence
+SARS-CoV-2_RBD	OP697986.1	71.021	666	193	0	4	669	1836	2501	9.88e-86	332	100	3034777	Mammalian expression vector pCAG-rRBD, complete sequence
+SARS-CoV-2_RBD	OP697989.1	71.021	666	193	0	4	669	1836	2501	9.88e-86	332	100	3034778	Mammalian expression vector pCAG-rRBD-svEBNA1, complete sequence
+SARS-CoV-2_RBD	OP697992.1	71.021	666	193	0	4	669	817	1482	9.88e-86	332	100	3034784	Mammalian expression vector pCMV-rRBD-xrepEBNA1, complete sequence
+SARS-CoV-2_RBD	OP697985.1	71.021	666	193	0	4	669	475	1140	9.88e-86	332	100	3034786	Mammalian expression vector pSV40-rRBD, complete sequence
+SARS-CoV-2_RBD	OP697994.1	71.021	666	193	0	4	669	5348	6013	9.88e-86	332	100	3034785	Mammalian expression vector pNeo-CAG-rRBD, complete sequence
+SARS-CoV-2_RBD	OP697987.1	71.021	666	193	0	4	669	3793	4458	9.88e-86	332	100	3034779	Mammalian expression vector pCAG-rRBD-wtEBNA1, complete sequence
+SARS-CoV-2_RBD	OP697993.1	71.021	666	193	0	4	669	817	1482	9.88e-86	332	100	3034782	Mammalian expression vector pCMV-rRBD-svEBNA1, complete sequence
+SARS-CoV-2_RBD	PP544446.1	70.958	668	190	2	4	669	4535	5200	1.20e-84	327	100	3135594	Vector BNT162b2 clone Vacc_Batch_FP9359, complete sequence
+SARS-CoV-2_RBD	PP544445.1	70.808	668	191	2	4	669	4536	5201	1.47e-83	324	100	3135594	Vector BNT162b2 clone Vacc_Batch_FP8191, complete sequence

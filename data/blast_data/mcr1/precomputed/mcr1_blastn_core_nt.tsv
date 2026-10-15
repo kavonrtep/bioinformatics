@@ -1,0 +1,507 @@
+# NCBI BLAST search run on 2026-10-15 (RID D290VNY0014)
+# qseqid	saccver	pident	length	mismatch	gapopen	qstart	qend	sstart	send	evalue	bitscore	qcovs	staxids	stitle
+mcr-1	PX833628.1	100.000	1626	0	0	1	1626	112783	111158	0.0	3003	100	28901	Salmonella enterica plasmid p26FS14, complete sequence
+mcr-1	CP184144.1	100.000	1626	0	0	1	1626	54479	56104	0.0	3003	100	562	Escherichia coli strain F11 plasmid pF11-1, complete sequence
+mcr-1	CP142796.1	100.000	1626	0	0	1	1626	21880	23505	0.0	3003	100	562	Escherichia coli strain SX48 plasmid pSX48-5, complete sequence
+mcr-1	CP119184.2	100.000	1626	0	0	1	1626	27905	26280	0.0	3003	100	573	Klebsiella pneumoniae strain SC-KP169 plasmid pSC-KP169-1, complete sequence
+mcr-1	CP138481.1	100.000	1626	0	0	1	1626	210437	212062	0.0	3003	100	573	Klebsiella pneumoniae strain KP045 plasmid pMCR-1_KP045, complete sequence
+mcr-1	CP125678.1	100.000	1626	0	0	1	1626	9847	11472	0.0	3003	100	562	Escherichia coli strain DH5-alpha-pD25466-pBACpAK-COL-FM1-C1-10-1-1 plasmid pBACpAK-COL
+mcr-1	OQ078086.1	100.000	1626	0	0	1	1626	62896	64521	0.0	3003	100	562	Escherichia coli strain 4281_EMB plasmid p4281_EMB, complete sequence
+mcr-1	CP126511.1	100.000	1626	0	0	1	1626	22433	24058	0.0	3003	100	562	Escherichia coli strain AH20CE39 plasmid pYUAHC39-MCR, complete sequence
+mcr-1	CP171867.1	100.000	1626	0	0	1	1626	21031	22656	0.0	3003	100	562	Escherichia coli strain YZ22PE106 plasmid pYUYZPE106-3, complete sequence
+mcr-1	CP158452.1	100.000	1626	0	0	1	1626	46326	44701	0.0	3003	100	562	Escherichia coli strain CS9F plasmid pCS9F-mcr, complete sequence
+mcr-1	AP027410.1	100.000	1626	0	0	1	1626	18135	19760	0.0	3003	100	562	Escherichia coli EC521 plasmid pEC521_1 DNA, complete sequence
+mcr-1	ON960348.1	100.000	1626	0	0	1	1626	183671	185296	0.0	3003	100	599	Salmonella sp. strain 16ESS0300 plasmid pSI_16ESS0300, complete sequence
+mcr-1	AP026790.1	100.000	1626	0	0	1	1626	19206	20831	0.0	3003	100	562	Escherichia coli IPCEC42 plasmid pIPCEC42_2 DNA, complete sequence
+mcr-1	OM038692.1	100.000	1626	0	0	1	1626	1	1626	0.0	3003	100	562	Escherichia coli strain EC1266 plasmid pEC1266-mcr, complete sequence
+mcr-1	OZ497446.1	100.000	1626	0	0	1	1626	7165	5540	0.0	3003	100	32630	RS1_1.8_CRO_320_3_ISKpn25
+mcr-1	OZ497399.1	100.000	1626	0	0	1	1626	6437	4812	0.0	3003	100	32630	RS1_1_1.9_CRO_0_32_IS5
+mcr-1	CP142786.1	100.000	1626	0	0	1	1626	7047	5422	0.0	3003	100	562	Escherichia coli strain SX12 plasmid pSX12-5-mcr-1, complete sequence
+mcr-1	CP101372.1	100.000	1626	0	0	1	1626	1044438	1042813	0.0	3003	100	28901	Salmonella enterica strain SC2016025 chromosome, complete genome
+mcr-1	CP079887.1	100.000	1626	0	0	1	1626	15105	13480	0.0	3003	100	564	Escherichia fergusonii strain 6S41-1 plasmid p6S41-1, complete sequence
+mcr-1	ON960341.1	100.000	1626	0	0	1	1626	46928	48553	0.0	3003	100	562	Escherichia coli strain CBJ3C plasmid pEC_CBJ3C, complete sequence
+mcr-1	CP080130.1	100.000	1626	0	0	1	1626	18730	20355	0.0	3003	100	562	Escherichia coli strain PK8568 plasmid pPK8568-MCR1, complete sequence
+mcr-1	CP107047.1	100.000	1626	0	0	1	1626	26759	25134	0.0	3003	100	573	Klebsiella pneumoniae strain KPTA-2108 plasmid pMJ4-4-MCR, complete sequence
+mcr-1	CP069680.1	100.000	1626	0	0	1	1626	16925	15300	0.0	3003	100	2810407	Escherichia coli O126:H45 strain MIN10 plasmid pMUB-MIN10-MCR, complete sequence
+mcr-1	PX833610.1	100.000	1626	0	0	1	1626	71971	70346	0.0	3003	100	28901	Salmonella enterica plasmid p15E175, complete sequence
+mcr-1	MN200943.1	100.000	1626	0	0	1	1626	4762	3137	0.0	3003	100	562	Escherichia coli strain E648 plasmid pE648MCR-1, complete sequence
+mcr-1	MW264507.1	100.000	1626	0	0	1	1626	28417	30042	0.0	3003	100	90371	Salmonella enterica subsp. enterica serovar Typhimurium strain S60 plasmid pS60, complete sequence
+mcr-1	CP118604.1	100.000	1626	0	0	1	1626	18730	20355	0.0	3003	100	562	Escherichia coli strain NB4833 plasmid pNB4833-NDM-13, complete sequence
+mcr-1	CP159770.1	100.000	1626	0	0	1	1626	115462	113837	0.0	3003	100	28901	Salmonella enterica strain 18S452 plasmid p2018S452-1, complete sequence
+mcr-1	CP049356.1	100.000	1626	0	0	1	1626	21620	23245	0.0	3003	100	562	Escherichia coli strain T28R plasmid pT28R-3, complete sequence
+mcr-1	CP142568.1	100.000	1626	0	0	1	1626	2932814	2931189	0.0	3003	100	562	Escherichia coli strain ExPEC_A320 chromosome, complete genome
+mcr-1	CP142568.1	99.938	1626	0	1	1	1626	2929138	2927514	0.0	2996	100	562	Escherichia coli strain ExPEC_A320 chromosome, complete genome
+mcr-1	CP090534.1	100.000	1626	0	0	1	1626	174511	172886	0.0	3003	100	28901	Salmonella enterica strain 2017005-SE plasmid p2017005-292, complete sequence
+mcr-1	LC511660.1	100.000	1626	0	0	1	1626	20964	19339	0.0	3003	100	562	Escherichia coli 2017.19.01CC plasmid p2017.19.01CC DNA, complete genome
+mcr-1	MK940857.1	100.000	1626	0	0	1	1626	27184	28809	0.0	3003	100	562	Escherichia coli strain 11 plasmid unnamed, complete sequence
+mcr-1	AP027552.1	100.000	1626	0	0	1	1626	186	1811	0.0	3003	100	562	Escherichia coli LR-51 plasmid pLR-51_2 DNA, complete sequence
+mcr-1	CP104622.1	100.000	1626	0	0	1	1626	23441	25066	0.0	3003	100	562	Escherichia coli strain AHM9C68I plasmid pHNAH968-3, complete sequence
+mcr-1	CP047664.1	100.000	1626	0	0	1	1626	11208	9583	0.0	3003	100	562	Escherichia coli strain LD93-1 plasmid pLD93-1-MCR1, complete sequence
+mcr-1	OZ497407.1	100.000	1626	0	0	1	1626	7165	5540	0.0	3003	100	32630	RS1_1.11_CRO_32_5_Tn2
+mcr-1	OZ497406.1	100.000	1626	0	0	1	1626	8165	6540	0.0	3003	100	32630	RS1_1.11_CRO_32_22_Tn2
+mcr-1	CP047594.1	100.000	1626	0	0	1	1626	1786352	1784727	0.0	3003	100	562	Escherichia coli strain LD27-1 chromosome, complete genome
+mcr-1	CP121150.1	100.000	1626	0	0	1	1626	107982	106357	0.0	3003	100	562	Escherichia coli strain E14 plasmid pE14-1, complete sequence
+mcr-1	CP067343.1	100.000	1626	0	0	1	1626	19925	21550	0.0	3003	100	562	Escherichia coli strain ECJXMCRH7 plasmid pTBH7P1, complete sequence
+mcr-1	MK869758.1	100.000	1626	0	0	1	1626	29173	27548	0.0	3003	100	562	Escherichia coli strain MFDS2254 plasmid pMFDS2254.1
+mcr-1	AP027844.1	100.000	1626	0	0	1	1626	4309431	4311056	0.0	3003	100	562	Escherichia coli 2017.18.02CC DNA, complete genome
+mcr-1	MN232211.1	100.000	1626	0	0	1	1626	19217	20842	0.0	3003	100	562	Escherichia coli plasmid pHLJ179-167, complete sequence
+mcr-1	CP065423.1	100.000	1626	0	0	1	1626	7136	8761	0.0	3003	100	90371	Salmonella enterica subsp. enterica serovar Typhimurium strain K18JST013 plasmid pK18JST013, complete sequence
+mcr-1	CP117721.1	100.000	1626	0	0	1	1626	13027	11402	0.0	3003	100	562	Escherichia coli strain B1W1 plasmid pB1W1-p1, complete sequence
+mcr-1	AP027886.1	100.000	1626	0	0	1	1626	4429170	4430795	0.0	3003	100	562	Escherichia coli 2018-05-5CC DNA, complete genome
+mcr-1	MN232201.1	100.000	1626	0	0	1	1626	19280	20905	0.0	3003	100	562	Escherichia coli plasmid pHLJ109-70, complete sequence
+mcr-1	MN232196.1	100.000	1626	0	0	1	1626	19217	20842	0.0	3003	100	562	Escherichia coli plasmid pHLJ109-11, complete sequence
+mcr-1	MH522416.1	100.000	1626	0	0	1	1626	11570	9945	0.0	3003	100	90371	Salmonella enterica subsp. enterica serovar Typhimurium strain SH15G1531 plasmid pSH15G1531, complete sequence
+mcr-1	MH522409.1	100.000	1626	0	0	1	1626	21195	22820	0.0	3003	100	90371	Salmonella enterica subsp. enterica serovar Typhimurium strain SH12G402 plasmid pSH12G402, complete sequence
+mcr-1	MK477617.1	100.000	1626	0	0	1	1626	149243	150868	0.0	3003	100	28901	Salmonella enterica strain SH16G4466 plasmid pSH16G4466, complete sequence
+mcr-1	MN232189.1	100.000	1626	0	0	1	1626	53696	52071	0.0	3003	100	562	Escherichia coli plasmid pGD27-124, complete sequence
+mcr-1	OZ497496.1	100.000	1626	0	0	1	1626	7165	5540	0.0	3003	100	32630	RS1_1.9_CRO_320_95_Tn1000
+mcr-1	CP053730.1	100.000	1626	0	0	1	1626	716957	718582	0.0	3003	100	562	Escherichia coli strain CP61_Sichuan chromosome, complete genome
+mcr-1	MK477605.1	100.000	1626	0	0	1	1626	153024	154649	0.0	3003	100	28901	Salmonella enterica strain SH15G1428 plasmid pSH15G1428, complete sequence
+mcr-1	CP150077.1	100.000	1626	0	0	1	1626	23867	25492	0.0	3003	100	562	Escherichia coli strain ECSD228 plasmid pE228-MCR-66K, complete sequence
+mcr-1	CP158431.1	100.000	1626	0	0	1	1626	159604	157979	0.0	3003	100	562	Escherichia coli strain CDF6 plasmid pCDF6_1, complete sequence
+mcr-1	CP034400.1	100.000	1626	0	0	1	1626	39325	40950	0.0	3003	100	562	Escherichia coli strain CRE1 plasmid pCRE1.3, complete sequence
+mcr-1	CP041997.1	100.000	1626	0	0	1	1626	100718	102343	0.0	3003	100	562	Escherichia coli strain AR Bank #0349 plasmid pAR349, complete sequence
+mcr-1	MN232209.1	100.000	1626	0	0	1	1626	18630	20255	0.0	3003	100	562	Escherichia coli plasmid pHLJ111-9, complete sequence
+mcr-1	AP023312.1	100.000	1626	0	0	1	1626	204680	206305	0.0	3003	100	440524	Salmonella enterica subsp. enterica serovar 4,[5],12:i:- L-4596 plasmid pSAL4596-1 DNA, complete sequence
+mcr-1	CP104329.1	100.000	1626	0	0	1	1626	81774	83399	0.0	3003	100	562	Escherichia coli strain THB42-F2 plasmid pHB42-F2, complete sequence
+mcr-1	CP033224.2	100.000	1626	0	0	1	1626	153998	155623	0.0	3003	100	59201	Salmonella enterica subsp. enterica strain CFSA122 plasmid pCFSA122-1, complete sequence
+mcr-1	OZ249100.1	100.000	1626	0	0	1	1626	4535	6160	0.0	3003	100	562	Escherichia coli strain PE53 genome assembly, plasmid: pPE53_3
+mcr-1	AP027788.1	100.000	1626	0	0	1	1626	760816	762441	0.0	3003	100	562	Escherichia coli 2017.04.02CC DNA, complete genome
+mcr-1	LR882925.1	100.000	1626	0	0	1	1626	27692	29317	0.0	3003	100	562	Escherichia coli genome assembly, plasmid: 1
+mcr-1	CP119578.1	100.000	1626	0	0	1	1626	70564	68939	0.0	3003	100	562	Escherichia coli strain C012_chr plasmid pEC012-1, complete sequence
+mcr-1	MN232187.1	100.000	1626	0	0	1	1626	19397	21022	0.0	3003	100	562	Escherichia coli plasmid pGD16-131, complete sequence
+mcr-1	MN232210.1	100.000	1626	0	0	1	1626	19217	20842	0.0	3003	100	562	Escherichia coli plasmid pHLJ179-141, complete sequence
+mcr-1	LR882917.1	100.000	1626	0	0	1	1626	5769	4144	0.0	3003	100	562	Escherichia coli genome assembly, plasmid: 1
+mcr-1	MK112270.1	100.000	1626	0	0	1	1626	6926	8551	0.0	3003	100	573	Klebsiella pneumoniae strain KLB34 plasmid genomic sequence
+mcr-1	MH522419.1	100.000	1626	0	0	1	1626	200398	198773	0.0	3003	100	90371	Salmonella enterica subsp. enterica serovar Typhimurium strain SH16G1369 plasmid pSH16G1369, complete sequence
+mcr-1	LC424782.1	100.000	1626	0	0	1	1626	1288	2913	0.0	3003	100	562	Escherichia coli 2017-02.04CC DNA, genomic structure surrounding mcr-1 gene
+mcr-1	AP027406.1	100.000	1626	0	0	1	1626	18297	19922	0.0	3003	100	562	Escherichia coli EC507 plasmid pEC507_2 DNA, complete sequence
+mcr-1	CP101387.1	100.000	1626	0	0	1	1626	83836	82211	0.0	3003	100	28901	Salmonella enterica strain SC2017100 plasmid pSC2017100-mcr-218k, complete sequence
+mcr-1	CP027202.2	100.000	1626	0	0	1	1626	57874	59499	0.0	3003	100	562	Escherichia coli strain WCHEC025943 plasmid pMCR1_025943, complete sequence
+mcr-1	CP092239.1	100.000	1626	0	0	1	1626	20418	22043	0.0	3003	100	562	Escherichia coli strain M37H plasmid pMCR_M37H, complete sequence
+mcr-1	MH733011.1	100.000	1626	0	0	1	1626	1119	2744	0.0	3003	100	573	Klebsiella pneumoniae strain KP16103 plasmid pKP16103-MCR-1, complete sequence
+mcr-1	OQ646738.1	100.000	1626	0	0	1	1626	19137	20762	0.0	3003	100	562	Escherichia coli strain 1-10_C9-1_JQ plasmid p1-10_C9-1_JQ-mcr-1, complete sequence
+mcr-1	CP154596.1	100.000	1626	0	0	1	1626	1141612	1139987	0.0	3003	100	562	Escherichia coli strain SEV4 chromosome, complete genome
+mcr-1	CP079769.1	100.000	1626	0	0	1	1626	261363	259738	0.0	3003	100	562	Escherichia coli strain HL15 plasmid pHL15EC-1, complete sequence
+mcr-1	MH395740.1	100.000	1626	0	0	1	1626	40	1665	0.0	3003	100	562	Escherichia coli plasmid pRMCR55 phosphoethanolamine transferase MCR-1 (mcr-1) gene, complete cds
+mcr-1	MH602240.1	100.000	1626	0	0	1	1626	33	1658	0.0	3003	100	562	Escherichia coli strain TA007 isolate R50 plasmid phosphoethanolamine transferase MCR-1 (mcr-1) gene, complete cds
+mcr-1	LC424781.1	100.000	1626	0	0	1	1626	1713	3338	0.0	3003	100	562	Escherichia coli 2017-02.03CC DNA, genomic structure surrounding mcr-1 gene
+mcr-1	OZ497457.1	100.000	1626	0	0	1	1626	7165	5540	0.0	3003	100	32630	RS1_1.9_CRO_0_19_Tn1000
+mcr-1	CP195072.1	100.000	1626	0	0	1	1626	54966	53341	0.0	3003	100	562	Escherichia coli strain J53 plasmid p_transconjugant_mcr
+mcr-1	AP027497.1	100.000	1626	0	0	1	1626	18135	19760	0.0	3003	100	562	Escherichia coli LR-24 plasmid pLR-24_3 DNA, complete sequence
+mcr-1	MH143576.1	100.000	1626	0	0	1	1626	7921	9546	0.0	3003	100	29474	Salmonella enterica subsp. enterica serovar California strain SL01 plasmid pMCR-1, complete sequence
+mcr-1	MG594800.1	100.000	1626	0	0	1	1626	13315	14940	0.0	3003	100	562	Escherichia coli isolate 1724 plasmid p1724, complete sequence
+mcr-1	MG591702.1	100.000	1626	0	0	1	1626	132099	133724	0.0	3003	100	562	Escherichia coli strain EC36 plasmid pMCR-EC36, complete sequence
+mcr-1	MH043624.1	100.000	1626	0	0	1	1626	2154	3779	0.0	3003	100	562	Escherichia coli strain GDZJ003 plasmid pGDZJ003-1-MCR-1, complete sequence
+mcr-1	CP063069.1	100.000	1626	0	0	1	1626	20358	21983	0.0	3003	100	562	Escherichia coli strain I2 plasmid unnamed1, complete sequence
+mcr-1	MT667260.1	100.000	1626	0	0	1	1626	28817	27192	0.0	3003	100	562	Escherichia coli strain GDE6P124 plasmid pHNEP124, complete sequence
+mcr-1	MT929275.1	100.000	1626	0	0	1	1626	3436	5061	0.0	3003	100	562	Escherichia coli strain 1413_17_E1 plasmid pMCR_1413_E1, complete sequence
+mcr-1	MN232214.1	100.000	1626	0	0	1	1626	19701	21326	0.0	3003	100	564	Escherichia fergusonii plasmid pHLJ179-85, complete sequence
+mcr-1	CP125675.1	100.000	1626	0	0	1	1626	2213	588	0.0	3003	100	562	Escherichia coli strain DH5-alpha-pD25466-pBACpAK-COL-FM1-C1-10-1-2 plasmid pBACpAK-COL
+mcr-1	CP028174.1	100.000	1626	0	0	1	1626	12588	10963	0.0	3003	100	28901	Salmonella enterica strain CFSAN064033 plasmid pGMI17-001_2, complete sequence
+mcr-1	AP027689.1	100.000	1626	0	0	1	1626	10110	8485	0.0	3003	100	562	Escherichia coli PSS-10 plasmid pPSS-10_4 DNA, complete sequence
+mcr-1	CP101366.1	100.000	1626	0	0	1	1626	18599	20224	0.0	3003	100	28901	Salmonella enterica strain SC2014107 plasmid pSC2014107-mcr-62k, complete sequence
+mcr-1	CP084535.1	100.000	1626	0	0	1	1626	103186	101561	0.0	3003	100	562	Escherichia coli strain EC-YC1908-399 plasmid p399-1, complete sequence
+mcr-1	CP047116.1	100.000	1626	0	0	1	1626	59337	60962	0.0	3003	100	59201	Salmonella enterica subsp. enterica strain SCSM4.1 plasmid plas4.1.1, complete sequence
+mcr-1	MW010024.1	100.000	1626	0	0	1	1626	4762	3137	0.0	3003	100	562	Escherichia coli strain EC1281 plasmid pEC1281, complete sequence
+mcr-1	CP029215.1	100.000	1626	0	0	1	1626	83836	82211	0.0	3003	100	562	Escherichia coli strain H8Ecoli plasmid pMCR-H8
+mcr-1	MH844525.1	100.000	1626	0	0	1	1626	48105	46480	0.0	3003	100	562	Escherichia coli strain SCEC128 plasmid pSCEC128, complete sequence
+mcr-1	MN232177.1	100.000	1626	0	0	1	1626	196734	198359	0.0	3003	100	562	Escherichia coli GD27-36Chr1 genomic sequence
+mcr-1	CP179921.1	100.000	1626	0	0	1	1626	2773114	2774739	0.0	3003	100	573	Klebsiella pneumoniae strain Klebsiella chromosome
+mcr-1	CP063492.1	100.000	1626	0	0	1	1626	5139971	5138346	0.0	3003	100	562	Escherichia coli strain EF5-18-41 chromosome, complete genome
+mcr-1	MN232179.1	100.000	1626	0	0	1	1626	19272	20897	0.0	3003	100	562	Escherichia coli plasmid pAH59-106, complete sequence
+mcr-1	AP027565.1	100.000	1626	0	0	1	1626	19721	21346	0.0	3003	100	562	Escherichia coli LR-58-2 plasmid pLR-58-2_2 DNA, complete sequence
+mcr-1	AP027502.1	100.000	1626	0	0	1	1626	25452	27077	0.0	3003	100	562	Escherichia coli LR-25 plasmid pLR-25_2 DNA, complete sequence
+mcr-1	MW836072.1	100.000	1626	0	0	1	1626	27493	29118	0.0	3003	100	562	Escherichia coli strain EW827 plasmid pEW827-MCR-1, complete sequence
+mcr-1	MH522410.1	100.000	1626	0	0	1	1626	51795	53420	0.0	3003	100	90371	Salmonella enterica subsp. enterica serovar Typhimurium strain SH12G950 plasmid pSH12G950, complete sequence
+mcr-1	CP034785.1	100.000	1626	0	0	1	1626	17277	15652	0.0	3003	100	562	Escherichia coli strain ECZP248 plasmid pTBMCR401, complete sequence
+mcr-1	CP126505.1	100.000	1626	0	0	1	1626	18487	20112	0.0	3003	100	562	Escherichia coli strain YZ19MCE28 plasmid pYUYZMC28-MCR, complete sequence
+mcr-1	LR882928.1	100.000	1626	0	0	1	1626	21085	22710	0.0	3003	100	562	Escherichia coli genome assembly, plasmid: 1
+mcr-1	CP034788.1	100.000	1626	0	0	1	1626	167897	166272	0.0	3003	100	562	Escherichia coli strain ECCNB20-2 plasmid pTBMCR421, complete sequence
+mcr-1	AP027748.1	100.000	1626	0	0	1	1626	3345106	3343481	0.0	3003	100	562	Escherichia coli 2017.02.03CC DNA, complete genome
+mcr-1	CP186491.1	100.000	1626	0	0	1	1626	18243	16618	0.0	3003	100	573	Klebsiella pneumoniae strain 45 plasmid unnamed4, complete sequence
+mcr-1	CP142571.1	100.000	1626	0	0	1	1626	94327	95952	0.0	3003	100	562	Escherichia coli strain ExPEC_A251 plasmid pA251_p0, complete sequence
+mcr-1	MN232180.1	100.000	1626	0	0	1	1626	16274	17899	0.0	3003	100	562	Escherichia coli plasmid pAH59-40, complete sequence
+mcr-1	MT316509.1	100.000	1626	0	0	1	1626	25066	26691	0.0	3003	100	573	Klebsiella pneumoniae strain 16BU137 plasmid 16BU137_mcr-1.1, complete sequence
+mcr-1	CP027257.1	100.000	1626	0	0	1	1626	5896	4271	0.0	3003	100	562	Escherichia coli strain EC11 plasmid unnamed2, complete sequence
+mcr-1	OZ497431.1	100.000	1626	0	0	1	1626	8165	6540	0.0	3003	100	32630	RS1_1.14_CRO_0_6_Tn2
+mcr-1	MG372114.1	100.000	1626	0	0	1	1626	170881	169256	0.0	3003	100	90371	Salmonella enterica subsp. enterica serovar Typhimurium strain JZ26 plasmid pJZ26, complete sequence
+mcr-1	MF784460.1	100.000	1626	0	0	1	1626	150044	148419	0.0	3003	100	562	Escherichia coli strain SHP41 plasmid pHNSHP41
+mcr-1	MF774185.1	100.000	1626	0	0	1	1626	93910	92285	0.0	3003	100	562	Escherichia coli strain SHP26 plasmid pHNSHP26
+mcr-1	OR724985.1	100.000	1626	0	0	1	1626	144278	142653	0.0	3003	100	562	Escherichia coli strain Vet7 plasmid pVet7, complete sequence
+mcr-1	CP063518.1	100.000	1626	0	0	1	1626	3947869	3946244	0.0	3003	100	562	Escherichia coli strain EH01-18-02 chromosome, complete genome
+mcr-1	MG591698.1	100.000	1626	0	0	1	1626	116944	115319	0.0	3003	100	562	Escherichia coli strain PN43 plasmid unnamed, complete sequence
+mcr-1	MG557851.1	100.000	1626	0	0	1	1626	1130	2755	0.0	3003	100	562	Escherichia coli plasmid PN21, complete sequence
+mcr-1	CP081337.1	100.000	1626	0	0	1	1626	21147	22772	0.0	3003	100	573	Klebsiella pneumoniae strain RIVM_C019752 plasmid pRIVM_C019752_2, complete sequence
+mcr-1	CP060967.1	100.000	1626	0	0	1	1626	20965	19340	0.0	3003	100	562	Escherichia coli strain EC7 plasmid pEC7-mcr-1, complete sequence
+mcr-1	CP101391.1	100.000	1626	0	0	1	1626	107311	105686	0.0	3003	100	28901	Salmonella enterica strain SC2017297 plasmid pSC2017297-mcr-249k, complete sequence
+mcr-1	LT159976.1	100.000	1626	0	0	1	1626	3598	5223	0.0	3003	100	562	Escherichia coli mcr-1 resistance cassette, isolate V163
+mcr-1	CP075373.1	100.000	1626	0	0	1	1626	152206	153831	0.0	3003	100	28901	Salmonella enterica strain no75 plasmid unnamed, complete sequence
+mcr-1	AP027770.1	100.000	1626	0	0	1	1626	145632	147257	0.0	3003	100	562	Escherichia coli 2017.03.02CC plasmid p2017.03.02CC_1 DNA, complete sequence
+mcr-1	LC424791.1	100.000	1626	0	0	1	1626	1808	3433	0.0	3003	100	562	Escherichia coli 2017-18.02CC DNA, genomic structure surrounding mcr-1 gene
+mcr-1	MT929286.1	100.000	1626	0	0	1	1626	203108	204733	0.0	3003	100	562	Escherichia coli strain 1085_17_C1 plasmid pMCR_1085_C1, complete sequence
+mcr-1	MK656522.1	100.000	1626	0	0	1	1626	60620	62245	0.0	3003	100	90371	Salmonella enterica subsp. enterica serovar Typhimurium strain Sa11291 plasmid pSa11291, complete sequence
+mcr-1	CP080094.1	100.000	1626	0	0	1	1626	26749	25124	0.0	3003	100	28901	Salmonella enterica strain SLR1_8245 plasmid pS8245-3, complete sequence
+mcr-1	LT159974.1	100.000	1626	0	0	1	1626	2218	3843	0.0	3003	100	562	Escherichia coli mcr-1 resistance cassette, isolate NRZ14408
+mcr-1	MH522415.1	100.000	1626	0	0	1	1626	15041	13416	0.0	3003	100	90371	Salmonella enterica subsp. enterica serovar Typhimurium strain SH15G1527 plasmid pSH15G1527, complete sequence
+mcr-1	MF978388.1	100.000	1626	0	0	1	1626	13057	11432	0.0	3003	100	562	Escherichia coli strain GDT6F93 plasmid pHNGDF93, complete sequence
+mcr-1	MK477609.1	100.000	1626	0	0	1	1626	75307	76932	0.0	3003	100	28901	Salmonella enterica strain SH15G1598 plasmid pSH15G1598, complete sequence
+mcr-1	CP058303.1	100.000	1626	0	0	1	1626	18730	20355	0.0	3003	100	562	Escherichia coli strain AH65 plasmid pAH65-1
+mcr-1	MN232193.1	100.000	1626	0	0	1	1626	19408	21033	0.0	3003	100	562	Escherichia coli plasmid pGD27-63, complete sequence
+mcr-1	CP080148.1	100.000	1626	0	0	1	1626	18748	20373	0.0	3003	100	562	Escherichia coli strain PK8276 plasmid pPK8276-MCR1, complete sequence
+mcr-1	MT929279.1	100.000	1626	0	0	1	1626	3436	5061	0.0	3003	100	562	Escherichia coli strain 1449_17_C1 plasmid pMCR_1449_C1, complete sequence
+mcr-1	CP178554.1	100.000	1626	0	0	1	1626	76512	78137	0.0	3003	100	562	Escherichia coli strain WWCOL-236 plasmid pCOL236-2, complete sequence
+mcr-1	AP027902.1	100.000	1626	0	0	1	1626	1245241	1243616	0.0	3003	100	562	Escherichia coli 2018-11-1BCC DNA, complete genome
+mcr-1	MN232203.1	100.000	1626	0	0	1	1626	19217	20842	0.0	3003	100	562	Escherichia coli plasmid pHLJ109-92, complete sequence
+mcr-1	CP024135.1	100.000	1626	0	0	1	1626	42271	40646	0.0	3003	100	562	Escherichia coli strain 14EC017 plasmid p14EC017a, complete sequence
+mcr-1	MW356909.1	100.000	1626	0	0	1	1626	150894	152519	0.0	3003	100	90371	Salmonella enterica subsp. enterica serovar Typhimurium strain S51 plasmid pS51, complete sequence
+mcr-1	LC424784.1	100.000	1626	0	0	1	1626	1275	2900	0.0	3003	100	562	Escherichia coli 2017-04.01CC DNA, genomic structure surrounding mcr-1 gene, clone: 2017-04.01CC-2
+mcr-1	KY657476.1	100.000	1626	0	0	1	1626	21279	22904	0.0	3003	100	562	Escherichia coli plasmid pCREC-527_4, complete sequence
+mcr-1	CP092330.1	100.000	1626	0	0	1	1626	13185	14810	0.0	3003	100	28901	Salmonella enterica strain PNUSAS006351 plasmid PNUSAS006351_1, complete sequence
+mcr-1	LC424785.1	100.000	1626	0	0	1	1626	2059	3684	0.0	3003	100	562	Escherichia coli 2017-04.02CC DNA, genomic structure surrounding mcr-1 gene
+mcr-1	MF774184.1	100.000	1626	0	0	1	1626	5728	4103	0.0	3003	100	562	Escherichia coli strain SHP23 plasmid pHNSHP23, complete sequence
+mcr-1	MW714390.1	100.000	1626	0	0	1	1626	1626	1	0.0	3003	100	562	Escherichia coli phosphoethanolamine--lipid A transferase MCR-1.1 gene, complete cds
+mcr-1	AP027754.1	100.000	1626	0	0	1	1626	4139459	4141084	0.0	3003	100	562	Escherichia coli 2017.02.04CC DNA, complete genome
+mcr-1	OR724975.1	100.000	1626	0	0	1	1626	180362	178737	0.0	3003	100	562	Escherichia coli strain Hum3b plasmid pHum3b, complete sequence
+mcr-1	CP022169.1	100.000	1626	0	0	1	1626	48541	46916	0.0	3003	100	90371	Salmonella enterica subsp. enterica serovar Typhimurium strain WW012 plasmid pWW012, complete sequence
+mcr-1	MZ666125.1	100.000	1626	0	0	1	1626	3432	5057	0.0	3003	100	2895798	Salmonella enterica subsp. enterica serovar Typhimurium var. monophasic plasmid p70_2_15, complete sequence
+mcr-1	MW010025.1	100.000	1626	0	0	1	1626	4762	3137	0.0	3003	100	562	Escherichia coli strain EC1279 plasmid pEC1279, complete sequence
+mcr-1	OM839890.1	100.000	1626	0	0	1	1626	1	1626	0.0	3003	100	562	Escherichia coli strain EC1271 plasmid pEC1271-mcr, complete sequence
+mcr-1	MF175188.1	100.000	1626	0	0	1	1626	18761	20386	0.0	3003	100	562	Escherichia coli strain ColR644SK1 plasmid pColR644SK1, complete sequence
+mcr-1	KY657478.1	100.000	1626	0	0	1	1626	49494	47869	0.0	3003	100	562	Escherichia coli plasmid pUSU-ECO-12704_4, complete sequence
+mcr-1	OZ497402.1	100.000	1626	0	0	1	1626	7165	5540	0.0	3003	100	32630	RS1_1_1.9_CRO_3200_37_IS10R
+mcr-1	CP070915.1	100.000	1626	0	0	1	1626	103004	101379	0.0	3003	100	562	Escherichia coli strain 65COLEC plasmid p65COLEC-1
+mcr-1	CP033349.2	100.000	1626	0	0	1	1626	27255	28880	0.0	3003	100	59201	Salmonella enterica subsp. enterica strain CFSA231 plasmid pCFSA231, complete sequence
+mcr-1	CP091545.1	100.000	1626	0	0	1	1626	83836	82211	0.0	3003	100	28901	Salmonella enterica strain 1618 plasmid p1618-mcr, complete sequence
+mcr-1	CP110172.1	100.000	1626	0	0	1	1626	21025	22650	0.0	3003	100	573	Klebsiella pneumoniae strain YZ22PK089 plasmid unnamed2, complete sequence
+mcr-1	MH522422.1	100.000	1626	0	0	1	1626	27678	29303	0.0	3003	100	90371	Salmonella enterica subsp. enterica serovar Typhimurium strain SH16G2543 plasmid pSH16G2543, complete sequence
+mcr-1	CP034109.1	100.000	1626	0	0	1	1626	58533	56908	0.0	3003	100	562	Escherichia coli strain RCAD0514 plasmid pRCAD0514EC-3, complete sequence
+mcr-1	CP042587.1	100.000	1626	0	0	1	1626	58946	60571	0.0	3003	100	562	Escherichia coli strain LD91-1 plasmid pLD91-1-MCR1, complete sequence
+mcr-1	LC184269.1	100.000	1626	0	0	1	1626	12768	14393	0.0	3003	100	562	Escherichia coli plasmid pMRY15-125_1 DNA, partial sequence, note: contig: pMRY15-125_1_contig2
+mcr-1	CP128645.1	100.000	1626	0	0	1	1626	18730	20355	0.0	3003	100	562	Escherichia coli strain WL164 plasmid pWL164-3, complete sequence
+mcr-1	MW557326.1	100.000	1626	0	0	1	1626	4762	3137	0.0	3003	100	90371	Salmonella enterica subsp. enterica serovar Typhimurium strain 16062 plasmid p16062-MCR, complete sequence
+mcr-1	MK962305.1	100.000	1626	0	0	1	1626	86237	87862	0.0	3003	100	562	Escherichia coli strain YZUC2624 plasmid pYZUC2624.1, complete sequence
+mcr-1	KY689635.1	100.000	1626	0	0	1	1626	3214	1589	0.0	3003	100	562	Escherichia coli strain Mbl536 plasmid pMbl536, complete sequence
+mcr-1	MK875283.1	100.000	1626	0	0	1	1626	5896	4271	0.0	3003	100	562	Escherichia coli strain MFDS1316 plasmid pMFDS1316.1, complete sequence
+mcr-1	CP080141.1	100.000	1626	0	0	1	1626	18730	20355	0.0	3003	100	562	Escherichia coli strain PK8241 plasmid pPK8241-MCR1, complete sequence
+mcr-1	OZ497450.1	100.000	1626	0	0	1	1626	8165	6540	0.0	3003	100	32630	RS1_1.8_CRO_320_36_Tn2
+mcr-1	OP434482.1	100.000	1626	0	0	1	1626	18135	19760	0.0	3003	100	562	Escherichia coli strain 53288 plasmid pMCR1-53288, complete sequence
+mcr-1	KY990887.1	100.000	1626	0	0	1	1626	180711	179086	0.0	3003	100	562	Escherichia coli strain XG-E1 plasmid pXGE1mcr, complete sequence
+mcr-1	CP029184.1	100.000	1626	0	0	1	1626	18712	20337	0.0	3003	100	562	Escherichia coli strain H9Ecoli plasmid pMCR-H9, complete sequence
+mcr-1	MG210940.1	100.000	1626	0	0	1	1626	19334	20959	0.0	3003	100	562	Escherichia coli strain GZ49273 plasmid pGZ49273, complete sequence
+mcr-1	CP091543.1	100.000	1626	0	0	1	1626	59337	60962	0.0	3003	100	90371	Salmonella enterica subsp. enterica serovar Typhimurium strain S58L2 plasmid pMCR_S58L2, complete sequence
+mcr-1	CP101389.1	100.000	1626	0	0	1	1626	57873	59498	0.0	3003	100	28901	Salmonella enterica strain SC2017167 plasmid pSC2017167-mcr-256k, complete sequence
+mcr-1	CP033094.1	100.000	1626	0	0	1	1626	85873	87498	0.0	3003	100	562	Escherichia coli strain CP53 plasmid pCP53-mcr, complete sequence
+mcr-1	LC807788.1	100.000	1626	0	0	1	1626	101414	103039	0.0	3003	100	562	Escherichia coli EC24 plasmid pEC24-NDM-5 DNA, complete sequence
+mcr-1	OR724974.1	100.000	1626	0	0	1	1626	63083	64708	0.0	3003	100	562	Escherichia coli strain Hum3a plasmid pHum3a, complete sequence
+mcr-1	AP027847.1	100.000	1626	0	0	1	1626	121742	123367	0.0	3003	100	562	Escherichia coli 2017.18.03CC plasmid p2017.18.03CC_1 DNA, complete sequence
+mcr-1	CP019052.1	100.000	1626	0	0	1	1626	23936	25561	0.0	3003	100	562	Escherichia coli strain CRE1540 plasmid p1540-1, complete sequence
+mcr-1	CP053720.1	100.000	1626	0	0	1	1626	3660727	3662352	0.0	3003	100	562	Escherichia coli strain CP131_Sichuan chromosome, complete genome
+mcr-1	OK323956.1	100.000	1626	0	0	1	1626	22402	24027	0.0	3003	100	562	Escherichia coli strain ECP81 plasmid pJS021, partial sequence
+mcr-1	CP024148.1	100.000	1626	0	0	1	1626	44294	42669	0.0	3003	100	562	Escherichia coli strain 14EC033 plasmid p14EC033a, complete sequence
+mcr-1	KY795978.1	100.000	1626	0	0	1	1626	19217	20842	0.0	3003	100	562	Escherichia coli strain JIE3685 plasmid pJIE3685-1, complete sequence
+mcr-1	OZ497438.1	100.000	1626	0	0	1	1626	8166	6541	0.0	3003	100	32630	RS1_1.3_CRO-320-2-25_Tn2
+mcr-1	KY363995.1	100.000	1626	0	0	1	1626	18630	20255	0.0	3003	100	624	Shigella sonnei strain SH13Sh069 plasmid pSh069-m6, complete sequence
+mcr-1	OR724987.1	100.000	1626	0	0	1	1626	173962	172337	0.0	3003	100	562	Escherichia coli strain Vet9 plasmid pVet9, complete sequence
+mcr-1	LT838201.1	100.000	1626	0	0	1	1626	25111	26736	0.0	3003	100	562	Escherichia coli isolate WI2 isolate genome assembly, plasmid: pWI2-mcr
+mcr-1	MG515249.1	100.000	1626	0	0	1	1626	23440	25065	0.0	3003	100	562	Escherichia coli strain EC16-50 plasmid pEC16-50-MCR, complete sequence
+mcr-1	CP127003.1	100.000	1626	0	0	1	1626	41891	43516	0.0	3003	100	562	Escherichia coli strain YZ3-11 plasmid p-mcr-1, complete sequence
+mcr-1	AP027649.1	100.000	1626	0	0	1	1626	166381	168006	0.0	3003	100	562	Escherichia coli PSJ-36 plasmid pPSJ-36_1 DNA, complete sequence
+mcr-1	CP061123.1	100.000	1626	0	0	1	1626	83836	82211	0.0	3003	100	90371	Salmonella enterica subsp. enterica serovar Typhimurium strain S441 plasmid pS441, complete sequence
+mcr-1	CP100687.1	100.000	1626	0	0	1	1626	17802	19427	0.0	3003	100	260678	Salmonella enterica subsp. enterica serovar Goldcoast strain R18.1297 plasmid pR18.1297_62k, complete sequence
+mcr-1	MH602238.1	100.000	1626	0	0	1	1626	33	1658	0.0	3003	100	562	Escherichia coli strain TA007 isolate R48 plasmid phosphoethanolamine transferase MCR-1 (mcr-1) gene, complete cds
+mcr-1	CP091559.1	100.000	1626	0	0	1	1626	168496	166871	0.0	3003	100	28901	Salmonella enterica strain 418 plasmid p418-mcr, complete sequence
+mcr-1	CP029748.1	100.000	1626	0	0	1	1626	83313	84938	0.0	3003	100	562	Escherichia coli strain 2016C-3878 plasmid pMCR1-PA, complete sequence
+mcr-1	OZ497408.1	100.000	1626	0	0	1	1626	6437	4812	0.0	3003	100	32630	RS1_1.11_CRO_320_1_IS1A
+mcr-1	KY624633.1	100.000	1626	0	0	1	1626	20436	22061	0.0	3003	100	57706	Citrobacter braakii strain CA-26 plasmid pCA-26, complete sequence
+mcr-1	KY363999.1	100.000	1626	0	0	1	1626	21090	22715	0.0	3003	100	624	Shigella sonnei strain SH10Sh016 plasmid pSh016-m1, complete sequence
+mcr-1	MN476094.1	100.000	1626	0	0	1	1626	61064	62689	0.0	3003	100	562	Escherichia coli plasmid pHZ003, complete sequence
+mcr-1	MT070409.1	100.000	1626	0	0	1	1626	1	1626	0.0	3003	100	562	Escherichia coli strain L39 phosphoethanolamine--lipid A transferase MCR-1.1 (mcr-1) gene, mcr-1.1 allele, complete cds
+mcr-1	LC511658.1	100.000	1626	0	0	1	1626	60562	62187	0.0	3003	100	562	Escherichia coli 2017.03.03CC plasmid p2017_03_03CC DNA, complete genome
+mcr-1	AP027636.1	100.000	1626	0	0	1	1626	18135	19760	0.0	3003	100	562	Escherichia coli PSJ-22 plasmid pPSJ-22_2 DNA, complete sequence
+mcr-1	MG257881.1	100.000	1626	0	0	1	1626	4762	3137	0.0	3003	100	562	Escherichia coli strain P744T plasmid pP744T-MCR1, complete sequence
+mcr-1	KY075652.1	100.000	1626	0	0	1	1626	4762	3137	0.0	3003	100	562	Escherichia coli strain GD46 plasmid pGD46-3, complete sequence
+mcr-1	OZ497439.1	100.000	1626	0	0	1	1626	7165	5540	0.0	3003	100	32630	RS1_1.7_CRO_32_11_IS10R
+mcr-1	OP950836.1	100.000	1626	0	0	1	1626	104454	102829	0.0	3003	100	573	Klebsiella pneumoniae strain 59496 plasmid pMCR1-59496, complete sequence
+mcr-1	KY075650.1	100.000	1626	0	0	1	1626	22198	23823	0.0	3003	100	562	Escherichia coli strain GD17 plasmid pGD17-2, complete sequence
+mcr-1	CP125709.1	100.000	1626	0	0	1	1626	1788	3413	0.0	3003	100	562	Escherichia coli strain DH5-alpha-pD25466-pBACpAK-COL-FM1-C2-10-1-PPY plasmid pBACpAK-COL
+mcr-1	CP044386.1	100.000	1626	0	0	1	1626	295221	293596	0.0	3003	100	573	Klebsiella pneumoniae strain 2018C01-239 plasmid p2018C01-239-1_MCR1, complete sequence
+mcr-1	MK477604.1	100.000	1626	0	0	1	1626	4762	3137	0.0	3003	100	28901	Salmonella enterica strain SH15G1397 plasmid pSH15G1397, complete sequence
+mcr-1	CP071135.1	100.000	1626	0	0	1	1626	12655	14280	0.0	3003	100	562	Escherichia coli strain ECONC427 plasmid p1_ECONC427, complete sequence
+mcr-1	OR965476.1	100.000	1626	0	0	1	1626	19953	21578	0.0	3003	100	562	Escherichia coli strain 12.27GPP10-2 plasmid pGPP10_2, complete sequence
+mcr-1	KX434879.1	100.000	1626	0	0	1	1626	34415	32790	0.0	3003	100	573	Klebsiella pneumoniae strain KP2442 plasmid pKP2442_1c330, complete sequence
+mcr-1	CP141901.1	100.000	1626	0	0	1	1626	325402	327027	0.0	3003	100	208962	Escherichia albertii strain 6S-65-1 chromosome, complete genome
+mcr-1	CP141901.1	100.000	1626	0	0	1	1626	2881871	2880246	0.0	3003	100	208962	Escherichia albertii strain 6S-65-1 chromosome, complete genome
+mcr-1	CP030156.1	100.000	1626	0	0	1	1626	36769	38394	0.0	3003	100	562	Escherichia coli strain JSMCR1 plasmid pJSMCR1_4, complete sequence
+mcr-1	MH202956.1	100.000	1626	0	0	1	1626	48708	50333	0.0	3003	100	562	Escherichia coli strain HXH-5 plasmid pHXH-5, complete sequence
+mcr-1	LC712329.1	100.000	1626	0	0	1	1626	6412	8037	0.0	3003	100	562	Escherichia coli C10-2 plasmid pC10-2 DNA, complete sequence
+mcr-1	OZ282457.1	100.000	1626	0	0	1	1626	4762	3137	0.0	3003	100	562	Escherichia coli isolate GPT24-02 genome assembly, plasmid: pGPT24-02-D
+mcr-1	CP018773.2	100.000	1626	0	0	1	1626	27860	26235	0.0	3003	100	562;149539	Escherichia coli strain 2016C-3936C1 plasmid pMCR-1-CT, complete sequence
+mcr-1	LC424783.1	100.000	1626	0	0	1	1626	1858	3483	0.0	3003	100	562	Escherichia coli 2017-04.01CC DNA, genomic structure surrounding mcr-1 gene, clone: 2017-04.01CC-1
+mcr-1	KY075659.1	100.000	1626	0	0	1	1626	168295	166670	0.0	3003	100	562	Escherichia coli strain GD80 plasmid pGD80-2, complete sequence
+mcr-1	MT929285.1	100.000	1626	0	0	1	1626	197591	199216	0.0	3003	100	562	Escherichia coli strain 915_17_E1 plasmid pMCR_915_E1, complete sequence
+mcr-1	CP069685.1	100.000	1626	0	0	1	1626	30724	29099	0.0	3003	100	2810408	Escherichia coli O176:H45 strain MIN9 plasmid pMUB-MIN9-MCR, complete sequence
+mcr-1	LC424787.1	100.000	1626	0	0	1	1626	1300	2925	0.0	3003	100	562	Escherichia coli 2017-10.02CC DNA, genomic structure surrounding mcr-1 gene
+mcr-1	CP069650.1	100.000	1626	0	0	1	1626	2721	1096	0.0	3003	100	2810404	Escherichia coli O7:H4 strain MIN14 plasmid pMUB-MIN14-MCR, complete sequence
+mcr-1	CP125358.1	100.000	1626	0	0	1	1626	5728	4103	0.0	3003	100	564	Escherichia fergusonii strain XJ19MCE1 plasmid pYUXJMC1, complete sequence
+mcr-1	OK605084.1	100.000	1626	0	0	1	1626	22870	24495	0.0	3003	100	149539	Salmonella enterica subsp. enterica serovar Enteritidis strain 61/4/9 plasmid p61/4/9, complete sequence
+mcr-1	CP070952.1	100.000	1626	0	0	1	1626	53427	55052	0.0	3003	100	564	Escherichia fergusonii strain EF31 plasmid pTB31P1, complete sequence
+mcr-1	CP021209.1	100.000	1626	0	0	1	1626	142652	144277	0.0	3003	100	562	Escherichia coli strain strain Z247 plasmid p2474-MCR1, complete sequence
+mcr-1	MF693349.1	100.000	1626	0	0	1	1626	11558	9933	0.0	3003	100	562	Escherichia coli strain 3216 plasmid pG3216, complete sequence
+mcr-1	AP027521.1	100.000	1626	0	0	1	1626	19721	21346	0.0	3003	100	562	Escherichia coli LR-31 plasmid pLR-31_1 DNA, complete sequence
+mcr-1	MN106912.1	100.000	1626	0	0	1	1626	33063	34688	0.0	3003	100	562	Escherichia coli strain TA9 plasmid pTA9
+mcr-1	CP125692.1	100.000	1626	0	0	1	1626	14722	13097	0.0	3003	100	562	Escherichia coli strain DH5-alpha-pD25466-pBACpAK-COL-FM3-C3-16hr-CCT-25-7 plasmid pBACpAK-COL
+mcr-1	CP125700.1	100.000	1626	0	0	1	1626	4192	5817	0.0	3003	100	562	Escherichia coli strain DH5-alpha-pBACpAK-COL plasmid pBACpAK-COL
+mcr-1	MK574669.1	100.000	1626	0	0	1	1626	19219	20844	0.0	3003	100	562	Escherichia coli strain LSECO-1 plasmid pLSECO-1, complete sequence
+mcr-1	CP032076.1	100.000	1626	0	0	1	1626	25461	27086	0.0	3003	100	562	Escherichia coli strain CT29 plasmid p.CT29-P3, complete sequence
+mcr-1	KY550359.1	100.000	1626	0	0	1	1626	2022	3647	0.0	3003	100	562	Escherichia coli ParA (parA), hypothetical protein (pCF132_02), hypothetical protein (pCF132_03), Mcr1 (mcr1), and Pap2 (pap2) genes, complete cds
+mcr-1	CP091541.1	100.000	1626	0	0	1	1626	59337	60962	0.0	3003	100	90371	Salmonella enterica subsp. enterica serovar Typhimurium strain S46L1 plasmid pMCR_S46L1, complete sequence
+mcr-1	OZ497441.1	100.000	1626	0	0	1	1626	7165	5540	0.0	3003	100	32630	RS1_1.7_CRO_320_3_ISKpn25
+mcr-1	AP023286.1	100.000	1626	0	0	1	1626	3157364	3155739	0.0	3003	100	562	Escherichia coli 2018-18.25PC DNA, complete genome
+mcr-1	CP072803.1	100.000	1626	0	0	1	1626	59223	60848	0.0	3003	100	562	Escherichia coli strain PK5074 plasmid pPK5074-MCR1, complete sequence
+mcr-1	MW815279.1	100.000	1626	0	0	1	1626	57874	59499	0.0	3003	100	562	Escherichia coli strain LWY6 plasmid pLWY6J-MC, complete sequence
+mcr-1	OZ497411.1	100.000	1626	0	0	1	1626	7165	5540	0.0	3003	100	32630	RS1_1.11_CRO_320_2_Tn2
+mcr-1	MN232184.1	100.000	1626	0	0	1	1626	19261	20886	0.0	3003	100	562	Escherichia coli plasmid pAH81-109, complete sequence
+mcr-1	KY012275.1	100.000	1626	0	0	1	1626	24225	25850	0.0	3003	100	562	Escherichia coli strain 27COE18 plasmid pEc_27COE18, complete sequence
+mcr-1	MF069152.1	100.000	1626	0	0	1	1626	19701	21326	0.0	3003	100	562	Escherichia coli strain E249 plasmid pE249, complete sequence
+mcr-1	MG825373.1	100.000	1626	0	0	1	1626	231	1856	0.0	3003	100	562	Escherichia coli strain 1106 plasmid p1106-IncHI2, complete sequence
+mcr-1	CP035918.1	100.000	1626	0	0	1	1626	85149	83524	0.0	3003	100	28901	Salmonella enterica strain S44712 plasmid pLS44712-MCR, complete sequence
+mcr-1	MN476098.1	100.000	1626	0	0	1	1626	28235	29860	0.0	3003	100	562	Escherichia coli plasmid pHZ028, complete sequence
+mcr-1	CP026933.2	100.000	1626	0	0	1	1626	65195	66820	0.0	3003	100	562	Escherichia coli strain CFS3273 plasmid pCFS3273-1, complete sequence
+mcr-1	MW495059.1	100.000	1626	0	0	1	1626	203808	202183	0.0	3003	100	562	Escherichia coli strain S802 plasmid pS802-MCR, complete sequence
+mcr-1	CP158310.1	100.000	1626	0	0	1	1626	8979	10604	0.0	3003	100	562	Escherichia coli strain CM2 plasmid pCM2-mcr, complete sequence
+mcr-1	CP141585.1	100.000	1626	0	0	1	1626	5306	6931	0.0	3003	100	562	Escherichia coli strain ECO-104 plasmid p-4
+mcr-1	CP141795.1	100.000	1626	0	0	1	1626	5811	7436	0.0	3003	100	562	Escherichia coli strain BHD6 plasmid pmcr1.1, complete sequence
+mcr-1	OP428973.1	100.000	1626	0	0	1	1626	3436	5061	0.0	3003	100	72407	Klebsiella pneumoniae subsp. pneumoniae strain 40331 plasmid pMCR1-40331, complete sequence
+mcr-1	MW082015.1	100.000	1626	0	0	1	1626	26740	28365	0.0	3003	100	562	Escherichia coli strain D1-EC25 plasmid pD1-contig4_33kb_mcr-1, complete sequence
+mcr-1	CP050131.1	100.000	1626	0	0	1	1626	174510	172885	0.0	3003	100	90371	Salmonella enterica subsp. enterica serovar Typhimurium strain GSJ/2017-Sal-008 plasmid unnamed, complete sequence
+mcr-1	MH602237.1	100.000	1626	0	0	1	1626	1	1626	0.0	3003	100	562	Escherichia coli strain TA007 isolate R45 plasmid phosphoethanolamine transferase MCR-1 (mcr-1) gene, complete cds
+mcr-1	OZ497433.1	100.000	1626	0	0	1	1626	6437	4812	0.0	3003	100	32630	RS1_1.14_CRO_320_5_IS5
+mcr-1	LC511662.1	100.000	1626	0	0	1	1626	18730	20355	0.0	3003	100	562	Escherichia coli 2018-10-2CC plasmid p2018-10-2CC DNA, complete genome
+mcr-1	CP102707.1	100.000	1626	0	0	1	1626	43910	45535	0.0	3003	100	562	Escherichia coli strain 9A-3-9 plasmid pE2899, complete sequence
+mcr-1	CP159773.1	100.000	1626	0	0	1	1626	135286	136911	0.0	3003	100	28901	Salmonella enterica strain 18S425 plasmid p2018S425-1, complete sequence
+mcr-1	CP021418.1	100.000	1626	0	0	1	1626	25188	26813	0.0	3003	100	562	Escherichia coli strain ICBEC171S plasmid pICBEC171Smcr, complete sequence
+mcr-1	CP125711.1	100.000	1626	0	0	1	1626	1997	3622	0.0	3003	100	562	Escherichia coli strain DH5-alpha-pD25466-pBACpAK-COL-FM1-C2-10-1-1 plasmid pBACpAK-COL
+mcr-1	PV764931.1	100.000	1626	0	0	1	1626	4756	3131	0.0	3003	100	562	Escherichia coli strain S466 plasmid pIncX4_S466, complete sequence
+mcr-1	MT773671.1	100.000	1626	0	0	1	1626	22962	24587	0.0	3003	100	562	Escherichia coli strain 4972 plasmid pM-132-4972, complete sequence
+mcr-1	AP027477.1	100.000	1626	0	0	1	1626	1028166	1026541	0.0	3003	100	562	Escherichia coli LR-13 DNA, complete genome
+mcr-1	CP019356.1	100.000	1626	0	0	1	1626	229594	231219	0.0	3003	100	562	Escherichia coli strain XH990 plasmid pXH990_1, complete sequence
+mcr-1	OY754830.1	100.000	1626	0	0	1	1626	134940	136565	0.0	3003	100	90371	Salmonella enterica subsp. enterica serovar Typhimurium isolate Reference genome assembly, plasmid: pGPT21-001_1
+mcr-1	MT070405.1	100.000	1626	0	0	1	1626	1	1626	0.0	3003	100	562	Escherichia coli strain L26 phosphoethanolamine--lipid A transferase MCR-1.1 (mcr-1) gene, mcr-1.1 allele, complete cds
+mcr-1	AP026796.1	100.000	1626	0	0	1	1626	19206	20831	0.0	3003	100	562	Escherichia coli IPCEC48 plasmid pIPCEC48_2 DNA, complete sequence
+mcr-1	OR724972.1	100.000	1626	0	0	1	1626	6276	4651	0.0	3003	100	562	Escherichia coli strain Hum1 plasmid pHum1, complete sequence
+mcr-1	AP027443.1	100.000	1626	0	0	1	1626	35968	34343	0.0	3003	100	562	Escherichia coli EC291 plasmid pEC291_2 DNA, complete sequence
+mcr-1	LR882921.1	100.000	1626	0	0	1	1626	25005	23380	0.0	3003	100	562	Escherichia coli genome assembly, plasmid: 1
+mcr-1	PX833618.1	100.000	1626	0	0	1	1626	156073	157698	0.0	3003	100	28901	Salmonella enterica plasmid p17E047, complete sequence
+mcr-1	PP626394.1	100.000	1626	0	0	1	1626	61388	63013	0.0	3003	100	546	Citrobacter freundii strain L-1-79-3 plasmid pMCR-1793, complete sequence
+mcr-1	KY075655.1	100.000	1626	0	0	1	1626	4761	3136	0.0	3003	100	562	Escherichia coli strain WH03 plasmid pWH03-3, complete sequence
+mcr-1	MG299136.1	100.000	1626	0	0	1	1626	21008	22633	0.0	3003	100	624	Shigella sonnei strain SH274-1 plasmid pSH274-1, complete sequence
+mcr-1	KX856068.1	100.000	1626	0	0	1	1626	19195	20820	0.0	3003	100	149539	Salmonella enterica subsp. enterica serovar Enteritidis plasmid pHSSH23-MCR1, complete sequence
+mcr-1	CP159776.1	100.000	1626	0	0	1	1626	117526	119151	0.0	3003	100	28901	Salmonella enterica strain 18S246 plasmid p2018S246, complete sequence
+mcr-1	KY471309.1	100.000	1626	0	0	1	1626	18135	19760	0.0	3003	100	562	Escherichia coli strain M15224 plasmid pMCR-M15224, complete sequence
+mcr-1	CP024142.1	100.000	1626	0	0	1	1626	23006	24631	0.0	3003	100	562	Escherichia coli strain 14EC029 plasmid p14EC029a, complete sequence
+mcr-1	CP090448.1	100.000	1626	0	0	1	1626	2044004	2042379	0.0	3003	100	562	Escherichia coli strain PT62 chromosome, complete genome
+mcr-1	CP092291.1	100.000	1626	0	0	1	1626	18468	16843	0.0	3003	100	28901	Salmonella enterica strain 2016AM-3354 plasmid p2016AM-3354_1, complete sequence
+mcr-1	CP022165.1	100.000	1626	0	0	1	1626	188727	187102	0.0	3003	100	562	Escherichia coli strain M160133 plasmid pM160133_p1, complete sequence
+mcr-1	MW264509.1	100.000	1626	0	0	1	1626	28417	30042	0.0	3003	100	90371	Salmonella enterica subsp. enterica serovar Typhimurium strain S69 plasmid pS69, complete sequence
+mcr-1	MK836307.1	100.000	1626	0	0	1	1626	28282	26657	0.0	3003	100	562	Escherichia coli strain NMG38 plasmid pMCR-NMG38, complete sequence
+mcr-1	OZ497452.1	100.000	1626	0	0	1	1626	7165	5540	0.0	3003	100	32630	RS1_1.8_CRO_320_38_ISKpn25
+mcr-1	AP027557.1	100.000	1626	0	0	1	1626	19721	21346	0.0	3003	100	562	Escherichia coli LR-58-1 plasmid pLR-58-1_4 DNA, complete sequence
+mcr-1	MW553858.1	100.000	1626	0	0	1	1626	122582	124207	0.0	3003	100	28901	Salmonella enterica strain 15E444 plasmid p15E444, complete sequence
+mcr-1	CP016182.2	100.000	1626	0	0	1	1626	4225688	4227313	0.0	3003	100	562	Escherichia coli strain EC590, complete genome
+mcr-1	CP016182.2	100.000	1626	0	0	1	1626	4229367	4230992	0.0	3003	100	562	Escherichia coli strain EC590, complete genome
+mcr-1	CP016182.2	100.000	1626	0	0	1	1626	4233046	4234671	0.0	3003	100	562	Escherichia coli strain EC590, complete genome
+mcr-1	MK256965.1	100.000	1626	0	0	1	1626	39418	41043	0.0	3003	100	562	Escherichia coli strain R15 plasmid pR15_MCR-1, complete sequence
+mcr-1	MN232197.1	100.000	1626	0	0	1	1626	19162	20787	0.0	3003	100	562	Escherichia coli plasmid pHLJ109-16, complete sequence
+mcr-1	CP060519.1	100.000	1626	0	0	1	1626	18393	20018	0.0	3003	100	28901	Salmonella enterica strain SLR1_7627 plasmid pS7627-2, complete sequence
+mcr-1	CP044025.1	100.000	1626	0	0	1	1626	6407	8032	0.0	3003	100	562	Escherichia coli strain 2492 plasmid p2492-4-MCR-1, complete sequence
+mcr-1	KY550357.1	100.000	1626	0	0	1	1626	2022	3647	0.0	3003	100	562	Escherichia coli ParA (parA), hypothetical protein (pCF131_02), hypothetical protein (pCF131_03), Mcr1 (mcr1), and Pap2 (pap2) genes, complete cds
+mcr-1	KY784668.1	100.000	1626	0	0	1	1626	48562	46937	0.0	3003	100	424720	Shigella flexneri Y strain C960 plasmid pRC960-2, complete sequence
+mcr-1	CP190040.1	100.000	1626	0	0	1	1626	25122	26747	0.0	3003	100	562	Escherichia coli strain EC17CM12 plasmid pEC17CM12_MCR, complete sequence
+mcr-1	MF774188.1	100.000	1626	0	0	1	1626	5728	4103	0.0	3003	100	562	Escherichia coli strain SHP49 plasmid pHNSHP49, complete sequence
+mcr-1	MZ557408.1	100.000	1626	0	0	1	1626	1	1626	0.0	3003	100	562	Escherichia coli strain AF7 phosphoethanolamine--lipid A transferase MCR-1.1 (mcr-1) gene, mcr-1.1 allele, complete cds
+mcr-1	PP721192.1	100.000	1626	0	0	1	1626	19213	20838	0.0	3003	100	562	Escherichia coli strain ECO-POL-29 plasmid pECO-POL-29_mcr1, complete sequence
+mcr-1	MT505391.1	100.000	1626	0	0	1	1626	18252	19877	0.0	3003	100	573	Klebsiella pneumoniae strain COL17 plasmid pKpCol17mcr, complete sequence
+mcr-1	KY421937.1	100.000	1626	0	0	1	1626	162664	161039	0.0	3003	100	562	Escherichia coli strain FS13Z2S plasmid pFS13Z2S, complete sequence
+mcr-1	MH715960.1	100.000	1626	0	0	1	1626	120126	118501	0.0	3003	100	573	Klebsiella pneumoniae strain KP14052 plasmid pKP14052-MCR-1, complete sequence
+mcr-1	CP175679.1	100.000	1626	0	0	1	1626	22735	24360	0.0	3003	100	573	Klebsiella pneumoniae strain L5151 plasmid pL5151_MCR, complete sequence
+mcr-1	LC511659.1	100.000	1626	0	0	1	1626	39308	40933	0.0	3003	100	562	Escherichia coli 2017.15.03CC plasmid p2017.15.03CC DNA, complete genome
+mcr-1	CP061128.1	100.000	1626	0	0	1	1626	18640	20265	0.0	3003	100	90371	Salmonella enterica subsp. enterica serovar Typhimurium strain S304 plasmid pS304_2, complete sequence
+mcr-1	KY689638.1	100.000	1626	0	0	1	1626	21012	22637	0.0	3003	100	562	Escherichia coli strain Mbl506 putrescine ABC transporter permease PotI (potI), membrane protein (ybjO), 23S rRNA (uracil(747)-C(5))-methyltransferase (rlmC; rumB), arginine ABC transporter substrate-binding protein (artJ), arginine transporter permease subunit ArtM (artM), arginine transporter permease subunit ArtQ (artQ), arginine ABC transporter substrate-binding protein (artI), arginine ABC transporter ATP-binding protein (artP), lipoprotein (ybjP), hypothetical protein, N-acetylmuramoyl-L-alanine amidase (amiD), putative NAD(P)H-dependentoxidoreductase with NAD(P)-binding Rossmann-fold domainprotein (ybjS), NAD(P)-dependent oxidoreductase (ybjT), low-specificity L-threonine aldolase (ltaE), pyruvate dehydrogenase (poxB), HCP oxidoreductase, NADH-dependent (hcr), hydroxylamine reductase (hcp), membrane protein (ybjE), aquaporin Z (aqpZ), and hypothetical protein genes, complete cds; insertion sequence ISApl1-mcr-1 transposase (tnpA) and MCR-1 family phosphoethanolamine--lipid A transferase (mcr-1) genes, complete cds; and putative PAP family transmembrane protein, ATP-dependent endonuclease (ybjD, partial), hypothetical protein, macrolide transporter subunit MacA (macA), macrolide ABC transporter permease/ATP-binding protein MacB (macB), DNA replication inhibitor (cspD), ATP-dependent Clp protease adapter ClpS (clpS), ATP-dependent Clp protease ATP-binding subunit ClpA (clpA), translation initiation factor IF-1 (infA), leucyl/phenylalanyl-tRNA--protein transferase (aat), cysteine/glutathione ABC transporter ATP-bindingprotein/permease CydC (cydC), cysteine/glutathione ABC transporter permease/ATP-binding protein CydD (cydD), thioredoxin-disulfide reductase (trxB), and leucine-responsive transcriptional regulator (lrp) genes, complete cds
+mcr-1	OZ497422.1	100.000	1626	0	0	1	1626	7165	5540	0.0	3003	100	32630	RS1_1.14_CRO_0_27_Tn2
+mcr-1	AP027794.1	100.000	1626	0	0	1	1626	24413	26038	0.0	3003	100	562	Escherichia coli 2017.06.05CC plasmid p2017.06.05CC_4 DNA, complete sequence
+mcr-1	MG773376.1	100.000	1626	0	0	1	1626	153073	154698	0.0	3003	100	562	Escherichia coli strain LSB54 plasmid pLSB54-mcr-1, complete sequence
+mcr-1	AP027711.1	100.000	1626	0	0	1	1626	18730	20355	0.0	3003	100	562	Escherichia coli PSS-15 plasmid pPSS-15_2 DNA, complete sequence
+mcr-1	LT599829.1	100.000	1626	0	0	1	1626	63997	65622	0.0	3003	100	562	Escherichia coli isolate E. coli NRZ14408 genome assembly, plasmid: p14408_M1
+mcr-1	CP047014.1	100.000	1626	0	0	1	1626	18136	19761	0.0	3003	100	562	Escherichia coli strain 19-5 plasmid pmcr-1, complete sequence
+mcr-1	CP059836.1	100.000	1626	0	0	1	1626	247090	248715	0.0	3003	100	562	Escherichia coli strain tcmA_3 plasmid pMCR_A3_2, complete sequence
+mcr-1	CP077663.1	100.000	1626	0	0	1	1626	26772	28397	0.0	3003	100	28901	Salmonella enterica strain S146 plasmid unnamed1, complete sequence
+mcr-1	CP190018.1	100.000	1626	0	0	1	1626	790942	792567	0.0	3003	100	562	Escherichia coli strain EC17CM6 chromosome, complete genome
+mcr-1	CP190018.1	100.000	1626	0	0	1	1626	4196855	4195230	0.0	3003	100	562	Escherichia coli strain EC17CM6 chromosome, complete genome
+mcr-1	CP032081.1	100.000	1626	0	0	1	1626	13394	15019	0.0	3003	100	562	Escherichia coli strain CT30 plasmid p.CT30-P3, complete sequence
+mcr-1	CP101213.1	100.000	1626	0	0	1	1626	18730	20355	0.0	3003	100	562	Escherichia coli strain EC21Z-147 plasmid pEC21Z147-62K-mcr1, complete sequence
+mcr-1	CP032940.1	100.000	1626	0	0	1	1626	19206	20831	0.0	3003	100	562	Escherichia coli strain CHL5009T plasmid pCHL5009T-61.8k-mcr1, complete sequence
+mcr-1	CP158449.1	100.000	1626	0	0	1	1626	25518	23893	0.0	3003	100	562	Escherichia coli strain CS6L plasmid pCS6L-mcr, complete sequence
+mcr-1	MF774183.1	100.000	1626	0	0	1	1626	48942	50567	0.0	3003	100	562	Escherichia coli strain SHP16 plasmid pHNSHP16
+mcr-1	AP027655.1	100.000	1626	0	0	1	1626	18055	19680	0.0	3003	100	562	Escherichia coli PSJ-42 plasmid pPSJ-42_3 DNA, complete sequence
+mcr-1	KX580717.1	100.000	1626	0	0	1	1626	9045	10670	0.0	3003	100	562	Escherichia coli strain ZJ2922 plasmid, partial sequence
+mcr-1	MK477610.1	100.000	1626	0	0	1	1626	4762	3137	0.0	3003	100	28901	Salmonella enterica strain SH15G2167 plasmid pSH15G2167, complete sequence
+mcr-1	LC193130.1	100.000	1626	0	0	1	1626	1261	2886	0.0	3003	100	562	Escherichia coli tnpA, mcr-1 genes for transposase, phosphoethanolamine transferase, hypothetical protein, complete cds, strain: NCGM-EC88
+mcr-1	KY689632.1	100.000	1626	0	0	1	1626	75881	74256	0.0	3003	100	562	Escherichia coli strain 19-M12 plasmid p19M12, complete sequence
+mcr-1	CP069716.1	100.000	1626	0	0	1	1626	21025	22650	0.0	3003	100	562	Escherichia coli strain EA13 plasmid pTA13-4, complete sequence
+mcr-1	CP041921.1	100.000	1626	0	0	1	1626	57224	58849	0.0	3003	100	562	Escherichia coli strain Ec40743 plasmid unnamed2, complete sequence
+mcr-1	KY012274.1	100.000	1626	0	0	1	1626	19211	20836	0.0	3003	100	562	Escherichia coli strain 20COE13 plasmid pEc_20COE13, complete sequence
+mcr-1	CP030284.1	100.000	1626	0	0	1	1626	31644	30019	0.0	3003	100	562	Escherichia coli strain E308 plasmid pLKSZ03, complete sequence
+mcr-1	MN232181.1	100.000	1626	0	0	1	1626	18918	20543	0.0	3003	100	562	Escherichia coli plasmid pAH59-47, complete sequence
+mcr-1	OR724978.1	100.000	1626	0	0	1	1626	144788	143163	0.0	3003	100	562	Escherichia coli strain Hum4c plasmid pHum4c, complete sequence
+mcr-1	CP102678.1	100.000	1626	0	0	1	1626	19288	20913	0.0	3003	100	562	Escherichia coli strain XH989 plasmid pXH989-MCR, complete sequence
+mcr-1	CP091561.1	100.000	1626	0	0	1	1626	83836	82211	0.0	3003	100	28901	Salmonella enterica strain 179 plasmid p179-mcr, complete sequence
+mcr-1	MN232195.1	100.000	1626	0	0	1	1626	52829	51204	0.0	3003	100	562	Escherichia coli plasmid pGD27-70, complete sequence
+mcr-1	CP041641.1	100.000	1626	0	0	1	1626	130926	129301	0.0	3003	100	573	Klebsiella pneumoniae strain PIMB15ND2KP27 plasmid pKP27-MCR1, complete sequence
+mcr-1	OZ497460.1	100.000	1626	0	0	1	1626	6437	4812	0.0	3003	100	32630	RS1_1.9_CRO_0_71_ISKpn25
+mcr-1	CP025679.1	100.000	1626	0	0	1	1626	10734	9109	0.0	3003	100	208962	Escherichia albertii strain ChinaSP140150 plasmid pEA-3, complete sequence
+mcr-1	CP082794.1	100.000	1626	0	0	1	1626	13827	15452	0.0	3003	100	573	Klebsiella pneumoniae strain KP4823 plasmid pKP4823_mcr, complete sequence
+mcr-1	MF978389.1	100.000	1626	0	0	1	1626	6461	4836	0.0	3003	100	562	Escherichia coli strain GDT6F36 plasmid pHNGDF36-1, complete sequence
+mcr-1	MF678350.1	100.000	1626	0	0	1	1626	186961	185336	0.0	3003	100	562	Escherichia coli strain WCHEC-LL123 plasmid pMCR1_WCHEC-LL123, complete sequence
+mcr-1	LC473131.1	100.000	1626	0	0	1	1626	18135	19760	0.0	3003	100	562	Escherichia coli C2 plasmid pC2 DNA, complete sequence
+mcr-1	KY471307.1	100.000	1626	0	0	1	1626	22280	23905	0.0	3003	100	562	Escherichia coli strain GN775 plasmid pMCR-GN775, complete sequence
+mcr-1	CP119737.1	100.000	1626	0	0	1	1626	22506	24131	0.0	3003	100	562	Escherichia coli strain E92 plasmid pE92-3, complete sequence
+mcr-1	LC424786.1	100.000	1626	0	0	1	1626	2065	3690	0.0	3003	100	562	Escherichia coli 2017-08.03CC DNA, genomic structure surrounding mcr-1 gene
+mcr-1	AP017622.1	100.000	1626	0	0	1	1626	19701	21326	0.0	3003	100	562	Escherichia coli plasmid pMRY15-131_2 DNA, complete genome, strain: MRY15-131
+mcr-1	CP041113.1	100.000	1626	0	0	1	1626	19206	20831	0.0	3003	100	562	Escherichia coli strain ECCTRSRTH03 plasmid unnamed3, complete sequence
+mcr-1	KX856067.1	100.000	1626	0	0	1	1626	18433	20058	0.0	3003	100	90371	Salmonella enterica subsp. enterica serovar Typhimurium plasmid pHSSH22-MCR1, complete sequence
+mcr-1	MH733010.1	100.000	1626	0	0	1	1626	81967	83592	0.0	3003	100	573	Klebsiella pneumoniae strain KP14812 plasmid pKP14812-MCR-1, complete sequence
+mcr-1	AP027573.1	100.000	1626	0	0	1	1626	18252	19877	0.0	3003	100	562	Escherichia coli LR-60 plasmid pLR-60_3 DNA, complete sequence
+mcr-1	OZ497481.1	100.000	1626	0	0	1	1626	7165	5540	0.0	3003	100	32630	RS1_1.9_CRO_320_31_Tn1000
+mcr-1	CP122512.1	100.000	1626	0	0	1	1626	55125	53500	0.0	3003	100	562	Escherichia coli strain W444 plasmid unnamed5, complete sequence
+mcr-1	MT929289.1	100.000	1626	0	0	1	1626	8399	10024	0.0	3003	100	562	Escherichia coli strain 1138_17_A1 plasmid pMCR_1138_A1, complete sequence
+mcr-1	OP950835.1	100.000	1626	0	0	1	1626	65068	66693	0.0	3003	100	562	Escherichia coli strain 51133 plasmid pMCR1-51133, complete sequence
+mcr-1	CP092245.1	100.000	1626	0	0	1	1626	58667	60292	0.0	3003	100	562	Escherichia coli strain COL60J plasmid pmcr_COL60J, complete sequence
+mcr-1	KX555452.1	100.000	1626	0	0	1	1626	5618	3993	0.0	3003	100	562	Escherichia coli plasmid pMCR-13EC-C962A, complete sequence
+mcr-1	OZ497491.1	100.000	1626	0	0	1	1626	7165	5540	0.0	3003	100	32630	RS1_1.9_CRO_320_72_ISKpn25
+mcr-1	OZ497417.1	100.000	1626	0	0	1	1626	7165	5540	0.0	3003	100	32630	RS1_1.14_CRO_0_14_Tn2
+mcr-1	CP021419.1	100.000	1626	0	0	1	1626	27184	28809	0.0	3003	100	562	Escherichia coli strain ICBEC12-3F plasmid pICBEC12-3mcr, complete sequence
+mcr-1	MT929290.1	100.000	1626	0	0	1	1626	58247	59872	0.0	3003	100	57706	Citrobacter braakii strain 1884_17_C3 plasmid pMCR_1884_C3, complete sequence
+mcr-1	AP027677.1	100.000	1626	0	0	1	1626	196194	197819	0.0	3003	100	562	Escherichia coli PSS-08-1 plasmid pPSS-08-1_1 DNA, complete sequence
+mcr-1	CP029059.1	100.000	1626	0	0	1	1626	32080	33705	0.0	3003	100	562	Escherichia coli strain FORC_081 plasmid pFORC_081_2, complete sequence
+mcr-1	CP042644.1	100.000	1626	0	0	1	1626	17545	15920	0.0	3003	100	562	Escherichia coli strain NCYU-24-74 plasmid pNCYU-24-74-6_MCR1, complete sequence
+mcr-1	LC477138.1	100.000	1626	0	0	1	1626	4762	3137	0.0	3003	100	562	Escherichia coli A1 plasmid pA1 DNA, complete sequence
+mcr-1	OR724976.1	100.000	1626	0	0	1	1626	61219	62844	0.0	3003	100	562	Escherichia coli strain Hum4a plasmid pHum4a, complete sequence
+mcr-1	CP021176.1	100.000	1626	0	0	1	1626	24552	26177	0.0	3003	100	562	Escherichia coli strain 5CRE51 plasmid p5CRE51-MCR-1, complete sequence
+mcr-1	CP070957.1	100.000	1626	0	0	1	1626	17742	16117	0.0	3003	100	564	Escherichia fergusonii strain EF44 plasmid pTB44P3, complete sequence
+mcr-1	CP139890.1	100.000	1626	0	0	1	1626	20390	22015	0.0	3003	100	562	Escherichia coli strain ECO21 plasmid pMCR, complete sequence
+mcr-1	OZ497489.1	100.000	1626	0	0	1	1626	6437	4812	0.0	3003	100	32630	RS1_1.9_CRO_320_70_ISKpn25
+mcr-1	CP042970.1	100.000	1626	0	0	1	1626	4160	5785	0.0	3003	100	562	Escherichia coli strain CFSAN061769 plasmid pCFSAN061769_01, complete sequence
+mcr-1	MT499886.1	100.000	1626	0	0	1	1626	27189	28814	0.0	3003	100	562	Escherichia coli strain EGY8 plasmid pEGYMCR_IncX4, complete sequence
+mcr-1	MN232200.1	100.000	1626	0	0	1	1626	20722	22347	0.0	3003	100	562	Escherichia coli plasmid pHLJ109-34, complete sequence
+mcr-1	CP047877.1	100.000	1626	0	0	1	1626	58946	60571	0.0	3003	100	562	Escherichia coli strain LD22-1 plasmid pLD22-1-MCR1, complete sequence
+mcr-1	KY693674.1	100.000	1626	0	0	1	1626	19217	20842	0.0	3003	100	562	Escherichia coli strain OM97 plasmid pOM97-mcr, complete sequence
+mcr-1	CP055260.1	100.000	1626	0	0	1	1626	18730	20355	0.0	3003	100	562	Escherichia coli strain AH62 plasmid pAH62-1, complete sequence
+mcr-1	MW218147.1	100.000	1626	0	0	1	1626	23248	24873	0.0	3003	100	573	Klebsiella pneumoniae strain C35 plasmid pM-199-C35, complete sequence
+mcr-1	MK574668.1	100.000	1626	0	0	1	1626	24551	26176	0.0	3003	100	562	Escherichia coli strain HAB-6 plasmid pHAB-6, complete sequence
+mcr-1	CP031291.1	100.000	1626	0	0	1	1626	5549	3924	0.0	3003	100	353569	Salmonella enterica subsp. enterica serovar 4,12:i:- strain N17-0346 plasmid pN17-0346, complete sequence
+mcr-1	MK542639.1	100.000	1626	0	0	1	1626	17826	19451	0.0	3003	100	562	Escherichia coli strain DR164 plasmid pDR164, complete sequence
+mcr-1	MN232182.1	100.000	1626	0	0	1	1626	19294	20919	0.0	3003	100	562	Escherichia coli plasmid pAH59-57, complete sequence
+mcr-1	CP127302.1	100.000	1626	0	0	1	1626	47507	45882	0.0	3003	100	562	Escherichia coli strain APEC37 plasmid pAPEC3702, complete sequence
+mcr-1	KY421935.1	100.000	1626	0	0	1	1626	8635	7010	0.0	3003	100	562	Escherichia coli FS13Z2S contig 2 genomic sequence
+mcr-1	CP063474.1	100.000	1626	0	0	1	1626	49525	47900	0.0	3003	100	562	Escherichia coli strain EM18-18-42 plasmid pEM18-18-42_1, complete sequence
+mcr-1	MH522424.1	100.000	1626	0	0	1	1626	259884	258259	0.0	3003	100	90371	Salmonella enterica subsp. enterica serovar Typhimurium strain SH16G4525 plasmid pSH16G4525, complete sequence
+mcr-1	AP027955.1	100.000	1626	0	0	1	1626	4762	3137	0.0	3003	100	562	Escherichia coli VE-F5 plasmid pVE-F5_2 DNA, complete sequence
+mcr-1	KY463452.1	100.000	1626	0	0	1	1626	48640	47015	0.0	3003	100	562	Escherichia coli strain WCHEC1622 plasmid pMCR_WCHEC1622, complete sequence
+mcr-1	KY463454.1	100.000	1626	0	0	1	1626	3444	5069	0.0	3003	100	562	Escherichia coli strain WCHEC1618 plasmid pMCR_WCHEC1618, complete sequence
+mcr-1	KX711706.1	100.000	1626	0	0	1	1626	4762	3137	0.0	3003	100	562	Escherichia coli strain CSZ4 plasmid pCSZ4, complete sequence
+mcr-1	CP016405.1	100.000	1626	0	0	1	1626	18136	19761	0.0	3003	100	562	Escherichia coli strain 210221272 plasmid pSLy21, complete sequence
+mcr-1	CP038181.1	100.000	1626	0	0	1	1626	19411	21036	0.0	3003	100	562	Escherichia coli strain 2 HS-C plasmid p2HS-C-1, complete sequence
+mcr-1	OZ497440.1	100.000	1626	0	0	1	1626	9423	7798	0.0	3003	100	32630	RS1_1.7_CRO_320_1_IS186B
+mcr-1	OP950834.1	100.000	1626	0	0	1	1626	51253	49628	0.0	3003	100	562	Escherichia coli strain 43934 plasmid pMCR1-43934, complete sequence
+mcr-1	OZ497502.1	100.000	1626	0	0	1	1626	7165	5540	0.0	3003	100	32630	RS1_1.9_CRO_3200_63_Tn1000
+mcr-1	PX833613.1	100.000	1626	0	0	1	1626	156046	157671	0.0	3003	100	28901	Salmonella enterica plasmid p15E556, complete sequence
+mcr-1	CP142544.1	100.000	1626	0	0	1	1626	24760	26385	0.0	3003	100	562	Escherichia coli strain ExPEC_A412 plasmid pA412_p0, complete sequence
+mcr-1	CP031296.1	100.000	1626	0	0	1	1626	18792	20417	0.0	3003	100	562	Escherichia coli strain EC17GD31 plasmid pGD31-MCR, complete sequence
+mcr-1	AP021895.1	100.000	1626	0	0	1	1626	2408765	2407140	0.0	3003	100	562	Escherichia coli 2018-11-3CC DNA, complete genome
+mcr-1	CP031550.1	100.000	1626	0	0	1	1626	8833	7208	0.0	3003	100	562	Escherichia coli strain cq9 plasmid unnamed4, complete sequence
+mcr-1	AP027777.1	100.000	1626	0	0	1	1626	20894	22519	0.0	3003	100	562	Escherichia coli 2017.03.04CC plasmid p2017.03.04CC_2 DNA, complete sequence
+mcr-1	KY550358.1	100.000	1626	0	0	1	1626	2022	3647	0.0	3003	100	562	Escherichia coli ParA (parA), hypothetical protein (pCF1-2_02), hypothetical protein (pCF1-2_03), Mcr1 (mcr1), and Pap2 (pap2) genes, complete cds
+mcr-1	KY471145.1	100.000	1626	0	0	1	1626	20067	21692	0.0	3003	100	562	Escherichia coli strain EC019 plasmid pEC019, complete sequence
+mcr-1	MG825369.1	100.000	1626	0	0	1	1626	50438	52063	0.0	3003	100	562	Escherichia coli strain 974 plasmid p974-MCR, complete sequence
+mcr-1	CP026492.1	100.000	1626	0	0	1	1626	112228	110603	0.0	3003	100	562	Escherichia coli strain HS13-1 plasmid pHS13-1-IncHI2, complete sequence
+mcr-1	MH484519.1	100.000	1626	0	0	1	1626	1412	3037	0.0	3003	100	562	Escherichia coli strain P0001 plasmid pP0001 insertion sequence ISApl1 transposase (tnpA) gene, complete cds; and phosphoethanolamine--lipid A transferase MCR-1.1 (mcr-1) gene, mcr-1.1 allele and hypothetical protein gene, complete cds
+mcr-1	KY689637.1	100.000	1626	0	0	1	1626	19379	21004	0.0	3003	100	562	Escherichia coli strain Mbl506 hypothetical protein, thymidylate synthase, transposase (insF1_1; insF1_2; insF1_5; insF1_6; insF1_7; insF1_8), ShlA/HecA/FhaA exofamily protein, arginine deiminase (arcA), carbamate kinase (arcC), ornithine carbamoyltransferase (arcB), arginine/ornithine antiporter (arcD), putative arginine repressor (argR), hypothetical protein, hemolysin activator HlyB (cdiB_1; cdiB_2), hypothetical protein, DNA-binding protein, hypothetical protein, phage regulatory protein, and hypothetical protein genes, complete cds; insertion sequence ISApl1-mcr-1 transposase (tnpA) and MCR-1 family phosphoethanolamine--lipid A transferase (mcr-1) genes, complete cds; and putative PAP family transmembrane protein, hypothetical protein, transposase (yfjJ), hypothetical protein, GTPase, uncharacterized protein (yfjQ_1; yfjQ_2; yfjQ_3; yfjQ_4), phage antirestriction protein (yfjX_1; yfjX_2; yfjX_3), putative DNA repair protein (yeeS_1; yeeS_2; yeeS_3; yeeS_4), uncharacterized protein (yeeT_1; yeeT_2; yeeT_3; yeeT_4), antitoxin of the YeeV-YeeU toxin-antitoxin system (yeeU), antitoxin (cbeA_1; cbeA_3), toxin (cbtA_1; cbtA_2; cbtA_4), hypothetical protein, restriction methylase, addiction module antitoxin, toxin RelE, general secretion pathway protein, type II secretion system protein GspL, type II secretion system protein, type II secretion system protein GspJ, type II secretion system protein GspI, and type II secretion system protein GspH genes, complete cds
+mcr-1	OZ497426.1	100.000	1626	0	0	1	1626	7165	5540	0.0	3003	100	32630	RS1_1.14_CRO_0_34_Tn2
+mcr-1	CP092225.1	100.000	1626	0	0	1	1626	11357	9732	0.0	3003	100	562	Escherichia coli strain M36H plasmid pMCR_M36H
+mcr-1	MW999360.1	100.000	1626	0	0	1	1626	4510	2885	0.0	3003	100	562	Escherichia coli strain EC04 plasmid pEC04 DNA topoisomerase 3 (topB), Modulating protein YmoA (ymoA), hypothetical protein (JIFABKAM_00061), hypothetical protein (JIFABKAM_00062), phosphoethanolamine--lipid A transferase MCR-1.1 (mcr-1.1), and hypothetical protein (JIFABKAM_00064) genes, complete cds
+mcr-1	LC469775.1	100.000	1626	0	0	1	1626	18135	19760	0.0	3003	100	562	Escherichia coli C1 plasmid pC1 DNA, complete sequence
+mcr-1	CP139894.1	100.000	1626	0	0	1	1626	20390	22015	0.0	3003	100	562	Escherichia coli strain ECO20 plasmid pMCR, complete sequence
+mcr-1	CP070924.1	100.000	1626	0	0	1	1626	18730	20355	0.0	3003	100	562	Escherichia coli strain 40EC plasmid p40EC-4
+mcr-1	AP027715.1	100.000	1626	0	0	1	1626	18730	20355	0.0	3003	100	562	Escherichia coli PSS-16 plasmid pPSS-16_2 DNA, complete sequence
+mcr-1	KX254343.1	100.000	1626	0	0	1	1626	2061	3686	0.0	3003	100	562	Escherichia coli strain GD-8 plasmid pECGD-8-33, complete sequence
+mcr-1	AP027547.1	100.000	1626	0	0	1	1626	18252	19877	0.0	3003	100	562	Escherichia coli LR-48 plasmid pLR-48_4 DNA, complete sequence
+mcr-1	CP047002.1	100.000	1626	0	0	1	1626	565774	567399	0.0	3003	100	562	Escherichia coli strain J-8 chromosome, complete genome
+mcr-1	CP090574.1	100.000	1626	0	0	1	1626	30781	32406	0.0	3003	100	562	Escherichia coli strain BY63 plasmid pBY63-4, complete sequence
+mcr-1	CP110516.1	100.000	1626	0	0	1	1626	59868	61493	0.0	3003	100	573	Klebsiella pneumoniae strain WS_29-1 plasmid pRWS291.s2, complete sequence
+mcr-1	MN732922.1	100.000	1626	0	0	1	1626	54150	52525	0.0	3003	100	562	Escherichia coli strain 49K plasmid unnamed, complete sequence
+mcr-1	ON960340.1	100.000	1626	0	0	1	1626	171597	169972	0.0	3003	100	562	Escherichia coli strain B65R1 plasmid pEC_B65R1, complete sequence
+mcr-1	CP029493.1	100.000	1626	0	0	1	1626	93347	91722	0.0	3003	100	562	Escherichia coli strain HS30-1 plasmid pHS30-1, complete sequence
+mcr-1	AP021894.1	100.000	1626	0	0	1	1626	3004771	3003146	0.0	3003	100	562	Escherichia coli 2018-10-1CC DNA, complete genome
+mcr-1	CP133920.1	100.000	1626	0	0	1	1626	203164	204789	0.0	3003	100	562	Escherichia coli strain M21170 plasmid pEco_M21170_247, complete sequence
+mcr-1	MK112268.1	100.000	1626	0	0	1	1626	13708	12083	0.0	3003	100	573	Klebsiella pneumoniae strain KLB08 plasmid genomic sequence
+mcr-1	KY471314.1	100.000	1626	0	0	1	1626	18603	20228	0.0	3003	100	562	Escherichia coli strain M19736 plasmid pMCR-M19736, complete sequence
+mcr-1	CP136002.1	100.000	1626	0	0	1	1626	25504	23879	0.0	3003	100	573	Klebsiella pneumoniae strain OHT45-2A plasmid pOHT45-2A_3, complete sequence
+mcr-1	MG489944.1	100.000	1626	0	0	1	1626	1130	2755	0.0	3003	100	562	Escherichia coli strain PN16 plasmid unnamed, complete sequence
+mcr-1	AP027539.1	100.000	1626	0	0	1	1626	18055	19680	0.0	3003	100	562	Escherichia coli LR-46 plasmid pLR-46_2 DNA, complete sequence
+mcr-1	OR724988.1	100.000	1626	0	0	1	1626	10539	12164	0.0	3003	100	562	Escherichia coli strain Vet10 plasmid pVet10, complete sequence
+mcr-1	AP018412.1	100.000	1626	0	0	1	1626	18134	19759	0.0	3003	100	562	Escherichia coli plasmid pRYU2912C-1 RYU 2912 DNA, complete sequence
+mcr-1	OZ497469.1	100.000	1626	0	0	1	1626	6437	4812	0.0	3003	100	32630	RS1_1.9_CRO_32_43_ISKpn25
+mcr-1	CP098832.1	100.000	1626	0	0	1	1626	15026	16651	0.0	3003	100	286783	Salmonella enterica subsp. enterica serovar Indiana strain YZ20MCS14 plasmid pYUYZMCS14-1, complete sequence
+mcr-1	CP116975.1	100.000	1626	0	0	1	1626	19206	20831	0.0	3003	100	562	Escherichia coli strain CUVM3 plasmid pCUVM3.5, complete sequence
+mcr-1	CP032987.1	100.000	1626	0	0	1	1626	17493	15868	0.0	3003	100	562	Escherichia coli strain BE2-5 plasmid pMCR_BE2-5, complete sequence
+mcr-1	MF774182.1	100.000	1626	0	0	1	1626	5728	4103	0.0	3003	100	562	Escherichia coli strain SHP10 plasmid pHNSHP10, complete sequence
+mcr-1	LR882918.1	100.000	1626	0	0	1	1626	25005	23380	0.0	3003	100	562	Escherichia coli genome assembly, plasmid: 1
+mcr-1	KY075662.1	100.000	1626	0	0	1	1626	19624	21249	0.0	3003	100	562	Escherichia coli strain GD53 plasmid pGD53-3, complete sequence
+mcr-1	CP079765.1	100.000	1626	0	0	1	1626	100886	99261	0.0	3003	100	562	Escherichia coli strain SF10 plasmid pSF10EC-1, complete sequence
+mcr-1	CP174485.1	100.000	1626	0	0	1	1626	18730	20355	0.0	3003	100	192955	Salmonella enterica subsp. enterica serovar Kentucky strain HBRJ22050 plasmid pHBRJ22050-2, complete sequence
+mcr-1	AP027852.1	100.000	1626	0	0	1	1626	19206	20831	0.0	3003	100	562	Escherichia coli 2017.18.04CC plasmid p2017.18.04CC_2 DNA, complete sequence
+mcr-1	MT929282.1	100.000	1626	0	0	1	1626	3432	5057	0.0	3003	100	562	Escherichia coli strain 1525_17_D1 plasmid pMCR_1525_D1, complete sequence
+mcr-1	CP091564.1	100.000	1626	0	0	1	1626	172650	171025	0.0	3003	100	28901	Salmonella enterica strain 143 plasmid p143-mcr, complete sequence
+mcr-1	KX254342.1	100.000	1626	0	0	1	1626	20630	22255	0.0	3003	100	562	Escherichia coli strain JS-61 plasmid pECJS-61-63, complete sequence
+mcr-1	CP080122.1	100.000	1626	0	0	1	1626	59224	60849	0.0	3003	100	562	Escherichia coli strain PK8217 plasmid pPK8217-MCR1, complete sequence
+mcr-1	MT929283.1	100.000	1626	0	0	1	1626	58726	60351	0.0	3003	100	562	Escherichia coli strain 1884_17_B3 plasmid pMCR_1884_B3, complete sequence
+mcr-1	OZ497434.1	100.000	1626	0	0	1	1626	7164	5539	0.0	3003	100	32630	RS1_1.3_CRO_320_2-26_ISKpn25
+mcr-1	MF774181.1	100.000	1626	0	0	1	1626	10546	8921	0.0	3003	100	562	Escherichia coli strain SHP8 plasmid pHNSHP8
+mcr-1	CP042471.2	100.000	1626	0	0	1	1626	12327	10702	0.0	3003	100	562	Escherichia coli strain A50 plasmid pC2, complete sequence
+mcr-1	KY405001.1	100.000	1626	0	0	1	1626	21444	23069	0.0	3003	100	562	Escherichia coli strain Ec28 plasmid pEC28, complete sequence
+mcr-1	CP066368.1	100.000	1626	0	0	1	1626	23493	25118	0.0	3003	100	562	Escherichia coli strain AR Bank #0346 plasmid unnamed2, complete sequence
+mcr-1	CP101861.1	100.000	1626	0	0	1	1626	12943	14568	0.0	3003	100	562	Escherichia coli strain LP50-1 plasmid pLP50-1-MCR1, complete sequence
+mcr-1	CP101866.1	100.000	1626	0	0	1	1626	2044004	2042379	0.0	3003	100	562	Escherichia coli strain LP5-1 chromosome, complete genome
+mcr-1	CP061125.1	100.000	1626	0	0	1	1626	83836	82211	0.0	3003	100	90371	Salmonella enterica subsp. enterica serovar Typhimurium strain S438 plasmid pS438, complete sequence
+mcr-1	KY421936.1	100.000	1626	0	0	1	1626	3066	4691	0.0	3003	100	562	Escherichia coli strain FS13Z2S clone contig 3
+mcr-1	KY471312.1	100.000	1626	0	0	1	1626	19041	20666	0.0	3003	100	562	Escherichia coli strain M19242 plasmid pMCR-M19242, complete sequence
+mcr-1	AP038232.1	100.000	1626	0	0	1	1626	20433	22058	0.0	3003	100	562	Escherichia coli HCM-22C-2 plasmid pH222-4 DNA, complete sequence
+mcr-1	OZ497480.1	100.000	1626	0	0	1	1626	6437	4812	0.0	3003	100	32630	RS1_1.9_CRO_320_30_ISKpn25
+mcr-1	OM069355.1	100.000	1626	0	0	1	1626	1	1626	0.0	3003	100	562	Escherichia coli strain EC1268 plasmid pEC1268-mcr, complete sequence
+mcr-1	MF136779.1	100.000	1626	0	0	1	1626	27187	28812	0.0	3003	100	562	Escherichia coli strain HKSHmcr1_P2_EC plasmid pHKSHmcr1_P2_p2, complete sequence
+mcr-1	CP053723.1	100.000	1626	0	0	1	1626	734717	736342	0.0	3003	100	562	Escherichia coli strain CP66-6_Sichuan chromosome, complete genome
+mcr-1	CP126504.1	100.000	1626	0	0	1	1626	17030	18655	0.0	3003	100	562	Escherichia coli strain YZ19MCE13 plasmid pYUYZMC13-MCR, complete sequence
+mcr-1	AP027959.1	100.000	1626	0	0	1	1626	4761	3136	0.0	3003	100	562	Escherichia coli VE-T10 plasmid pVE-T10_2 DNA, complete sequence
+mcr-1	KX886345.1	100.000	1626	0	0	1	1626	2433	4058	0.0	3003	100	562	Escherichia coli transposase (tnpA), MCR-1 (mcr-1), hypothetical protein, and transcriptional regulator (ydfA) genes, complete cds
+mcr-1	MH522420.1	100.000	1626	0	0	1	1626	216764	218389	0.0	3003	100	90371	Salmonella enterica subsp. enterica serovar Typhimurium strain SH16G1508 plasmid pSH16G1508, complete sequence
+mcr-1	MG385063.1	100.000	1626	0	0	1	1626	322067	320442	0.0	3003	100	562	Escherichia coli strain WF5-29 plasmid pWF5-29, complete sequence
+mcr-1	CP104081.1	100.000	1626	0	0	1	1626	19217	20842	0.0	3003	100	562	Escherichia coli strain HB42 plasmid pHB42-4, complete sequence
+mcr-1	OP428976.1	100.000	1626	0	0	1	1626	3436	5061	0.0	3003	100	562	Escherichia coli strain 44653 plasmid pMCR1-44653, complete sequence
+mcr-1	CP061186.1	100.000	1626	0	0	1	1626	22656	24281	0.0	3003	100	562	Escherichia coli strain LD67-1 plasmid pLD67-1-MCR1, complete sequence
+mcr-1	MK172815.1	100.000	1626	0	0	1	1626	29740	28115	0.0	3003	100	562	Escherichia coli plasmid pMCR-1_Msc, complete sequence
+mcr-1	AP027638.1	100.000	1626	0	0	1	1626	196194	197819	0.0	3003	100	562	Escherichia coli PSJ-23 plasmid pPSJ-23_1 DNA, complete sequence
+mcr-1	CP119747.1	100.000	1626	0	0	1	1626	180579	182204	0.0	3003	100	562	Escherichia coli strain E15 plasmid pE15-1, complete sequence
+mcr-1	CP141654.1	100.000	1626	0	0	1	1626	35806	37431	0.0	3003	100	562	Escherichia coli strain UTA-62A plasmid p1_62A
+mcr-1	AP027613.1	100.000	1626	0	0	1	1626	20419	22044	0.0	3003	100	562	Escherichia coli LR-72 plasmid pLR-72_1 DNA, complete sequence
+mcr-1	CP191554.1	100.000	1626	0	0	1	1626	57174	55549	0.0	3003	100	562	Escherichia coli strain CDE6306 plasmid pCREC6306-2, complete sequence
+mcr-1	CP048826.1	100.000	1626	0	0	1	1626	30781	32406	0.0	3003	100	562	Escherichia coli strain QEC11-421 plasmid pEcQE11-421-5, complete sequence
+mcr-1	MK574667.1	100.000	1626	0	0	1	1626	18767	20392	0.0	3003	100	562	Escherichia coli strain DRC-3 plasmid pDRC-3, complete sequence
+mcr-1	KX580718.1	100.000	1626	0	0	1	1626	19096	17471	0.0	3003	100	562	Escherichia coli strain ZJ3951, partial sequence
+mcr-1	LC567843.1	100.000	1626	0	0	1	1626	56217	57842	0.0	3003	100	562	Escherichia coli 2018-18.25CC plamisd p2018-18.25CC DNA, complete sequence
+mcr-1	OQ658823.1	100.000	1626	0	0	1	1626	98570	100195	0.0	3003	100	1461749	Salmonella enterica subsp. enterica serovar Typhimurium var. monophasic 4,[5],12:i:- strain 01_0907 plasmid p10907_1 clone BAPS-4, complete sequence
+mcr-1	CP033347.2	100.000	1626	0	0	1	1626	81364	82989	0.0	3003	100	59201	Salmonella enterica subsp. enterica strain CFSA1096 plasmid pCFSA1096, complete sequence
+mcr-1	CP089138.1	100.000	1626	0	0	1	1626	25066	26691	0.0	3003	100	562	Escherichia coli strain XD35 plasmid pXD35005, complete sequence
+mcr-1	AP027699.1	100.000	1626	0	0	1	1626	18730	20355	0.0	3003	100	562	Escherichia coli PSS-12 plasmid pPSS-12_2 DNA, complete sequence
+mcr-1	KX580711.1	100.000	1626	0	0	1	1626	1177	2802	0.0	3003	100	562	Escherichia coli strain ZJ276 plasmid transposase, phosphoethanolamine transferase (mcr-1), and hypothetical protein genes, complete cds
+mcr-1	CP142402.1	100.000	1626	0	0	1	1626	20433	22058	0.0	3003	100	562	Escherichia coli strain SX4 plasmid pSX4-5-mcr-1, complete sequence

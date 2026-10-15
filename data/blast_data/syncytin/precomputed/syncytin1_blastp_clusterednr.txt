@@ -1,0 +1,1109 @@
+BLASTP 2.12.0+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for composition-based statistics: Alejandro A. Schaffer,
+L. Aravind, Thomas L. Madden, Sergei Shavirin, John L. Spouge, Yuri
+I. Wolf, Eugene V. Koonin, and Stephen F. Altschul (2001),
+"Improving the accuracy of PSI-BLAST protein database searches with
+composition-based statistics and other refinements", Nucleic Acids
+Res. 29:2994-3005.
+
+
+
+Database: clustered nr
+           357,442,162 sequences; 117,307,649,189 total letters
+
+
+
+Query= sp|Q9UQF0|SYCY1_HUMAN Syncytin-1 OS=Homo sapiens OX=9606 GN=ERVW-1
+PE=1 SV=1
+
+Length=538
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NP_001291472.1 syncytin-1 precursor [Pongo abelii]                    1071    0.0   
+AAK18189.1 recombinant envelope protein [Multiple sclerosis assoc...  961     0.0   
+XP_055089226.1 LOW QUALITY PROTEIN: syncytin-1-like [Symphalangus...  950     0.0   
+XP_054298799.1 LOW QUALITY PROTEIN: syncytin-1-like [Pongo pygmaeus]  945     0.0   
+XP_073851949.1 LOW QUALITY PROTEIN: syncytin-1-like [Macaca fasci...  918     0.0   
+XP_058289587.1 LOW QUALITY PROTEIN: syncytin-1-like [Hylobates mo...  910     0.0   
+XP_050641298.1 syncytin-1 [Macaca thibetana thibetana]                907     0.0   
+XP_021788190.2 LOW QUALITY PROTEIN: syncytin-1-like [Papio anubis]    885     0.0   
+XP_063459663.1 syncytin-1-like [Pan paniscus]                         882     0.0   
+8OUH_D Chain D, Syncytin-1 [Homo sapiens]                             871     0.0   
+AAD14545.1 envelope protein [Homo sapiens]                            843     0.0   
+XP_063658889.1 LOW QUALITY PROTEIN: syncytin-1-like [Pan troglody...  838     0.0   
+XP_063660068.1 syncytin-1-like [Pan troglodytes]                      835     0.0   
+XP_063495487.1 protein PIGBOS1 isoform X1 [Symphalangus syndactylus]  691     0.0   
+XP_054409599.1 syncytin-1-like [Pongo abelii]                         653     0.0   
+AAL11494.1 envelope protein [Homo sapiens]                            631     0.0   
+XP_063565306.1 LOW QUALITY PROTEIN: uncharacterized protein [Gori...  592     0.0   
+XP_055153865.1 LOW QUALITY PROTEIN: syncytin-1-like [Symphalangus...  579     0.0   
+XP_063663143.1 LOW QUALITY PROTEIN: syncytin-1-like [Pan troglody...  574     0.0   
+XP_050662900.1 LOW QUALITY PROTEIN: syncytin-1-like [Macaca thibe...  566     0.0   
+XP_054404207.1 LOW QUALITY PROTEIN: syncytin-1-like [Pongo abelii]    558     0.0   
+AAD14548.1 envelope protein [Homo sapiens]                            492     1e-170
+CBL29057.1 endogenous retroviral family W, env, member 2 [Homo sa...  404     2e-136
+XP_058291702.1 syncytin-1 [Hylobates moloch]                          374     2e-123
+XP_055240923.2 syncytin-1-like [Gorilla gorilla gorilla]              363     6e-120
+BAB47560.1 envelope protein [Homo sapiens]                            324     1e-105
+XP_059036171.1 syncytin-1-like [Mustela lutreola]                     337     6e-105
+BAB47557.1 envelope protein [Homo sapiens]                            314     9e-102
+KAB0362921.1 hypothetical protein FD754_007077 [Muntiacus muntjak]    322     2e-100
+XP_038532073.1 syncytin-1-like [Canis lupus familiaris]               323     1e-99 
+KAN3784980.1 syncytin-1 [Rhinopoma microphyllum]                      318     1e-99 
+BAB47556.1 envelope protein [Homo sapiens]                            304     7e-98 
+XP_044085985.1 syncytin-1-like [Neogale vison]                        306     9e-95 
+XP_032991353.1 syncytin-1-like [Rhinolophus ferrumequinum]            304     9e-94 
+BAB47561.1 envelope protein [Homo sapiens]                            293     1e-93 
+XP_088696600.1 syncytin-1-like [Moschus berezovskii]                  304     4e-93 
+BAB47555.1 envelope protein [Homo sapiens]                            292     5e-93 
+KAB0380441.1 hypothetical protein FD755_008225 [Muntiacus reevesi]    300     8e-92 
+AYN72245.1 envelope protein [Crocuta crocuta]                         298     3e-91 
+XP_039093020.1 syncytin-1-like [Hyaena hyaena]                        298     5e-90 
+KAF0880361.1 SYCY1 protein [Crocuta crocuta]                          291     8e-90 
+EFB26814.1 hypothetical protein PANDA_016307 [Ailuropoda melanole...  286     1e-87 
+KAG5207680.1 hypothetical protein JEQ12_017444 [Ovis aries]           284     2e-87 
+XP_038391394.1 syncytin-1-like [Canis lupus familiaris]               285     3e-87 
+XP_034504940.1 syncytin-1-like [Ailuropoda melanoleuca]               288     8e-87 
+XP_053303827.1 LOW QUALITY PROTEIN: syncytin-2 [Lutra lutra]          289     1e-86 
+XP_047598762.1 LOW QUALITY PROTEIN: syncytin-1-like [Lutra lutra]     287     2e-86 
+XP_035568195.1 syncytin-1-like [Canis lupus dingo]                    282     6e-86 
+XP_088690393.1 syncytin-1-like [Moschus berezovskii]                  281     6e-85 
+XP_045850726.1 syncytin-1-like [Meles meles]                          275     2e-83 
+XP_088685831.1 syncytin-1-like [Moschus berezovskii]                  268     8e-81 
+XP_055260577.2 syncytin-1-like [Moschus berezovskii]                  268     9e-80 
+XP_088687775.1 syncytin-1-like [Moschus berezovskii]                  261     6e-79 
+XP_045853346.1 syncytin-1-like [Meles meles]                          262     3e-78 
+XP_057172610.1 syncytin-1 [Ursus arctos]                              260     7e-78 
+KAB0367448.1 hypothetical protein FD755_020772 [Muntiacus reevesi]    263     1e-77 
+KAN3821305.1 syncytin-1-like [Rhinopoma microphyllum]                 259     5e-76 
+XP_044794985.1 syncytin-1 [Bubalus bubalis]                           252     7e-76 
+KAB0345925.1 hypothetical protein FD755_024420 [Muntiacus reevesi]    254     1e-75 
+XP_088700700.1 syncytin-1-like [Moschus berezovskii]                  244     2e-73 
+XP_040481447.1 syncytin-1-like [Ursus maritimus]                      249     2e-72 
+XP_037382523.1 syncytin-1-like [Talpa occidentalis]                   248     9e-72 
+KAB0383306.1 hypothetical protein FD755_005223 [Muntiacus reevesi]    241     1e-70 
+KAB0369036.1 hypothetical protein FD755_019041 [Muntiacus reevesi]    241     4e-70 
+XP_054554500.1 syncytin-1-like isoform X1 [Talpa occidentalis]        246     5e-70 
+XP_032949190.1 syncytin-1-like [Rhinolophus ferrumequinum]            235     9e-70 
+KAB0377941.1 hypothetical protein FD755_009519 [Muntiacus reevesi]    237     2e-69 
+KAN3689001.1 syncytin-1-like [Rhinolophus yonghoiseni]                239     6e-69 
+XP_030674929.1 syncytin-1 [Nomascus leucogenys]                       220     8e-65 
+CAD7672868.1 unnamed protein product [Nyctereutes procyonoides]       222     2e-63 
+KAF6390415.1 hypothetical protein mRhiFer1_007971 [Rhinolophus fe...  223     2e-63 
+KAF6302986.1 hypothetical protein mRhiFer1_008723 [Rhinolophus fe...  215     2e-62 
+XP_088648630.1 syncytin-1-like [Rhinolophus sinicus]                  215     1e-61 
+XP_055290368.2 syncytin-1-like [Moschus berezovskii]                  212     1e-60 
+XP_023058772.1 RNA-binding protein 41 isoform X1 [Piliocolobus te...  220     2e-60 
+XP_037844927.1 RNA-binding protein 41 isoform X5 [Chlorocebus sab...  220     8e-60 
+XP_054952046.1 syncytin-1-like [Pan paniscus]                         204     1e-59 
+XP_037367520.1 endogenous retrovirus group FC1 Env polyprotein [T...  214     2e-59 
+XP_047577991.1 LOW QUALITY PROTEIN: syncytin-1-like [Lutra lutra]     214     2e-59 
+XP_045705488.1 syncytin-1-like [Phyllostomus hastatus]                211     3e-59 
+XP_037372495.1 syncytin-1-like [Talpa occidentalis]                   212     5e-59 
+XP_087685583.1 syncytin-1-like [Miniopterus natalensis]               207     2e-58 
+XP_043336469.1 syncytin-1-like [Cervus canadensis]                    215     2e-58 
+XP_088685846.1 syncytin-1-like [Moschus berezovskii]                  207     2e-58 
+XP_088698950.1 syncytin-1-like [Moschus berezovskii]                  206     4e-58 
+6RX1_A Chain A, Syncytin-1 [Homo sapiens]                             199     5e-58 
+XP_014388567.1 PREDICTED: syncytin-1-like [Myotis brandtii]           205     7e-58 
+CAD7668945.1 unnamed protein product [Nyctereutes procyonoides]       207     1e-57 
+KAK7820664.1 hypothetical protein U0070_026208 [Myodes glareolus]     212     2e-57 
+XP_058133969.1 syncytin-1-like [Dasypus novemcinctus]                 212     2e-57 
+XP_073086572.1 LOW QUALITY PROTEIN: syncytin-1-like [Manis javanica]  210     2e-57 
+NP_001292312.1 syncytin b precursor [Nannospalax galili]              212     4e-57 
+XP_054551870.1 syncytin-1-like [Talpa occidentalis]                   211     5e-57 
+XP_047575767.1 LOW QUALITY PROTEIN: syncytin-1-like [Lutra lutra]     204     5e-57 
+XP_036157207.1 syncytin-1-like [Myotis myotis]                        211     8e-57 
+XP_045683214.1 syncytin-1-like [Phyllostomus hastatus]                207     9e-57 
+KAF0882007.1 SYNB protein [Crocuta crocuta]                           199     1e-56 
+XP_086212887.1 syncytin-1-like [Bos grunniens]                        204     3e-56 
+XP_036611367.1 syncytin-1-like [Trichosurus vulpecula]                209     5e-56 
+5HA6_A Chain A, Syncytin-1 [Homo sapiens]                             192     2e-55 
+XP_036167464.1 syncytin-1-like [Myotis myotis]                        204     2e-55 
+XP_064219835.1 syncytin-1-like [Aotus nancymaae]                      206     3e-55 
+NP_001292311.1 syncytin b precursor [Microtus ochrogaster]            207     4e-55 
+XP_088692780.1 syncytin-1-like [Moschus berezovskii]                  195     8e-55 
+XP_017655699.1 syncytin-1-like [Nannospalax galili]                   199     7e-54 
+KAN3806497.1 syncytin-1-like [Rhinopoma microphyllum]                 201     7e-54 
+XP_036105683.1 syncytin-1-like [Molossus molossus]                    202     9e-54 
+XP_055462011.1 syncytin-A-like [Psammomys obesus]                     202     1e-53 
+XP_033717519.2 syncytin-1-like [Tursiops truncatus]                   201     2e-53 
+NP_041262.1 envelope glycoprotein [Squirrel monkey retrovirus]        201     3e-53 
+XP_029794316.1 LOW QUALITY PROTEIN: syncytin-1-like [Suricata sur...  196     3e-53 
+XP_017706409.1 syncytin-1-like [Rhinopithecus bieti]                  200     4e-53 
+XP_029410361.1 syncytin-1-like isoform X1 [Nannospalax galili]        197     4e-53 
+XP_005692971.1 PREDICTED: syncytin-1-like [Capra hircus]              196     4e-53 
+BAN16590.1 envelope protein [Simian retrovirus Y]                     200     5e-53 
+XP_064219833.1 syncytin-1-like [Aotus nancymaae]                      203     6e-53 
+URH24923.1 envelope glycoprotein [Fowlpox virus]                      197     7e-53 
+XP_054578324.1 LOW QUALITY PROTEIN: syncytin-1-like [Eptesicus fu...  200     1e-52 
+NP_001292318.1 syncytin a precursor [Peromyscus maniculatus bairdii]  200     1e-52 
+MBZ3883767.1 Syncytin-1 [Sciurus carolinensis]                        190     2e-52 
+XP_029411576.1 syncytin-1-like isoform X1 [Nannospalax galili]        198     2e-52 
+NP_056894.1 gp70 SU [Mason-Pfizer monkey virus]                       198     2e-52 
+XP_031298347.2 syncytin-1 [Camelus dromedarius]                       194     3e-52 
+XP_058152465.1 syncytin-1-like [Dasypus novemcinctus]                 196     3e-52 
+P04027.1 RecName: Full=Envelope glycoprotein; AltName: Full=Env p...  198     4e-52 
+KAN3679861.1 syncytin-1-like [Doryrhina cyclops]                      197     5e-52 
+XP_064219830.1 uncharacterized protein LOC135269633 [Aotus nancym...  203     6e-52 
+XP_064219831.1 uncharacterized protein LOC135269634 [Aotus nancym...  203     7e-52 
+NP_001292582.1 syncytin a precursor [Nannospalax galili]              198     7e-52 
+CAA61093.1 envelope protein [RD114 retrovirus]                        196     8e-52 
+XP_037382546.1 syncytin-1-like [Talpa occidentalis]                   191     1e-51 
+XP_082697206.1 syncytin-1-like [Leucopleurus acutus]                  193     2e-51 
+XP_051018098.1 syncytin-A-like [Acomys russatus]                      197     2e-51 
+AAA47563.1 envelope protein [Simian retrovirus 2]                     196     2e-51 
+XP_064219843.1 LOW QUALITY PROTEIN: intraflagellar transport prot...  201     2e-51 
+KAN3679863.1 syncytin-1-like [Doryrhina cyclops]                      192     3e-51 
+KAN3679860.1 syncytin-1-like [Doryrhina cyclops]                      190     3e-51 
+XP_047579177.1 LOW QUALITY PROTEIN: syncytin-1-like [Lutra lutra]     186     4e-51 
+XP_068849263.1 syncytin-1-like [Capricornis sumatraensis]             190     7e-51 
+NP_001292320.1 syncytin a precursor [Mesocricetus auratus]            194     1e-50 
+XP_060247736.1 syncytin-B [Meriones unguiculatus]                     194     2e-50 
+XP_061248441.1 syncytin-1-like [Bos javanicus]                        187     2e-50 
+XP_071074475.1 syncytin-1-like [Dasypus novemcinctus]                 192     2e-50 
+YP_009109691.1 polyprotein [Baboon endogenous virus strain M7]        192     3e-50 
+XP_030706016.1 syncytin-1-like [Globicephala melas]                   191     3e-50 
+XP_027713288.1 syncytin-1-like [Vombatus ursinus]                     195     3e-50 
+XP_077657608.1 syncytin-1-like [Urocitellus parryii]                  188     4e-50 
+XP_087049148.1 syncytin-1-like [Heterocephalus glaber]                186     4e-50 
+XP_062940767.1 syncytin-1-like [Cynocephalus volans]                  192     6e-50 
+XP_032449992.1 syncytin-1-like [Lynx canadensis]                      189     7e-50 
+XP_078203843.1 syncytin-1-like isoform X1 [Callithrix jacchus]        191     7e-50 
+KAL0622769.1 Syncytin-1 [Plecturocebus cupreus]                       186     1e-49 
+AIU56264.1 envelope protein syncytin-A [Myospalax myospalax]          192     1e-49 
+XP_044889467.1 syncytin-1-like [Felis catus]                          186     2e-49 
+XP_023579322.1 syncytin-1-like [Octodon degus]                        188     2e-49 
+XP_059985062.1 syncytin-1-like [Lagenorhynchus albirostris]           188     3e-49 
+XP_080782882.1 syncytin-B [Micromys minutus]                          189     4e-49 
+CAB94193.2 envelope protein [HERV-H/env60]                            189     4e-49 
+NP_001292155.1 syncytin b precursor [Mesocricetus auratus]            190     5e-49 
+XP_084623657.1 syncytin-B [Acomys minous]                             190     5e-49 
+XP_029421645.1 syncytin-2-like [Nannospalax galili]                   181     6e-49 
+XP_017655634.1 syncytin-1-like [Nannospalax galili]                   187     7e-49 
+KAN3880028.1 syncytin-1-like [Megaderma spasma]                       188     7e-49 
+XP_043753372.1 syncytin-1-like [Cervus elaphus]                       187     7e-49 
+KAL0612331.1 envelope glycoprotein [Plecturocebus cupreus]            188     1e-48 
+XP_041524945.1 syncytin-1-like [Microtus oregoni]                     186     2e-48 
+KAN3769554.1 syncytin-1-like [Tadarida brasiliensis]                  187     2e-48 
+XP_032467210.1 syncytin-1-like [Phocoena sinus]                       186     2e-48 
+XP_048200268.1 syncytin-1-like [Perognathus longimembris pacificus]   183     2e-48 
+NP_001014771.1 envelope glycoprotein syncytin-A precursor [Rattus...  188     2e-48 
+XP_058427112.1 LOW QUALITY PROTEIN: syncytin-1-like [Marmota monax]   187     2e-48 
+XP_059859241.2 syncytin-1-like [Delphinus delphis]                    183     3e-48 
+XP_032465601.1 LOW QUALITY PROTEIN: uncharacterized protein LOC11...  192     3e-48 
+NP_001292168.1 syncytin b precursor [Peromyscus maniculatus bairdii]  187     4e-48 
+XP_032465040.1 uncharacterized protein LOC116741954 [Phocoena sinus]  192     5e-48 
+XP_078201508.1 syncytin-1-like [Callithrix jacchus]                   186     5e-48 
+XP_027705647.1 syncytin-1-like [Vombatus ursinus]                     187     6e-48 
+ADA68442.1 envelope glycoprotein [Reticuloendotheliosis virus]        186     7e-48 
+XP_058432670.1 syncytin-1-like [Marmota monax]                        187     8e-48 
+XP_043449069.1 LOW QUALITY PROTEIN: uncharacterized protein LOC12...  191     8e-48 
+NP_001375420.1 syncytin-B precursor [Mus musculus]                    187     8e-48 
+XP_032474864.1 uncharacterized protein LOC116747182 [Phocoena sinus]  191     1e-47 
+XP_042556747.1 syncytin-1-like [Dipodomys spectabilis]                185     1e-47 
+XP_029410363.1 syncytin-2-like isoform X2 [Nannospalax galili]        176     2e-47 
+XP_029785903.1 LOW QUALITY PROTEIN: syncytin-1-like [Suricata sur...  185     2e-47 
+XP_077659075.1 syncytin-1-like [Urocitellus parryii]                  185     2e-47 
+XP_065736231.1 syncytin-1-like [Phocoena phocoena]                    180     3e-47 
+KAN6931637.1 syncytin-B [Peromyscus maniculatus sonoriensis]          188     3e-47 
+XP_045393188.1 syncytin-1-like isoform X2 [Lemur catta]               182     3e-47 
+XP_023447347.1 syncytin-1-like [Dasypus novemcinctus]                 183     3e-47 
+XP_045350559.1 syncytin-1-like [Leopardus geoffroyi]                  184     4e-47 
+XP_042783247.1 syncytin-1-like [Panthera leo]                         184     4e-47 
+XP_036735449.2 LOW QUALITY PROTEIN: syncytin-1-like [Manis pentad...  183     4e-47 
+XP_080936907.1 syncytin-1-like [Rhinolophus hipposideros]             184     5e-47 
+XP_045410734.1 syncytin-1-like [Lemur catta]                          184     5e-47 
+XP_023569241.1 LOW QUALITY PROTEIN: syncytin-1-like [Octodon degus]   184     6e-47 
+XP_045386462.1 syncytin-1-like [Lemur catta]                          178     6e-47 
+KAM7074832.1 syncytin-1-like [Molossus nigricans]                     181     7e-47 
+YP_009305202.1 envelope protein [Simian retrovirus 8]                 183     9e-47 
+XP_015339112.1 syncytin-1-like isoform X1 [Marmota marmota marmota]   182     1e-46 
+XP_073856234.1 syncytin-1-like [Macaca fascicularis]                  183     2e-46 
+XP_066203031.1 syncytin-1-like [Saccopteryx leptura]                  180     2e-46 
+KAL6087641.1 hypothetical protein STEG23_035385 [Scotinomys teguina]  179     1e-45 
+XP_036130979.1 syncytin-1-like [Molossus molossus]                    179     1e-45 
+XP_010639751.1 LOW QUALITY PROTEIN: syncytin-1-like [Fukomys dama...  180     1e-45 
+XP_067563430.1 serine hydrolase RBBP9 isoform X1 [Pseudorca crass...  182     1e-45 
+KAM7040621.1 syncytin-1-like [Molossus nigricans]                     180     2e-45 
+XP_073077521.1 LOW QUALITY PROTEIN: syncytin-2-like [Manis javanica]  172     3e-45 
+XP_053435353.1 syncytin-1-like [Nycticebus coucang]                   177     3e-45 
+P03399.1 RecName: Full=Envelope glycoprotein; AltName: Full=Env p...  179     4e-45 
+XP_036620969.1 syncytin-1-like [Trichosurus vulpecula]                178     5e-45 
+XP_015985456.2 syncytin-1-like [Rousettus aegyptiacus]                178     5e-45 
+XP_020836593.1 syncytin-1-like [Phascolarctos cinereus]               179     6e-45 
+KAO2644924.1 syncytin-1-like isoform 1-T1 [Mops condylurus]           178     7e-45 
+ADC52785.1 envelope protein [Simian retrovirus 4]                     178     8e-45 
+XP_044908254.1 syncytin-1-like [Felis catus]                          173     8e-45 
+ACC77593.1 envelope glycoprotein [Reticuloendotheliosis virus]        174     9e-45 
+XP_020854903.1 syncytin-1-like [Phascolarctos cinereus]               179     9e-45 
+QKU38059.1 Env [Gunnison's prairie dog retrovirus]                    178     9e-45 
+XP_017656423.1 LOW QUALITY PROTEIN: syncytin-1-like [Nannospalax ...  176     1e-44 
+XP_073090473.1 syncytin-1-like [Manis javanica]                       177     1e-44 
+XP_063114817.1 uncharacterized protein LOC134478244 [Cavia porcel...  181     1e-44 
+XP_058159056.1 syncytin-1-like [Dasypus novemcinctus]                 175     1e-44 
+XP_058517337.1 syncytin-1-like [Ochotona princeps]                    177     2e-44 
+NP_001013773.1 syncytin-A precursor [Mus musculus]                    177     2e-44 
+XP_023051236.1 syncytin-1-like [Piliocolobus tephrosceles]            176     3e-44 
+KAN6875736.1 syncytin-1-like isoform 1-T1 [Corynorhinus townsendii]   178     3e-44 
+KAN3572468.1 syncytin-1-like [Doryrhina cyclops]                      172     3e-44 
+KAO2667240.1 syncytin-1-like [Mops condylurus]                        173     4e-44 
+XP_036735379.2 LOW QUALITY PROTEIN: syncytin-1-like [Manis pentad...  176     4e-44 
+XP_066213948.1 syncytin-1-like [Saccopteryx leptura]                  172     4e-44 
+XP_005382033.1 PREDICTED: syncytin-1-like isoform X1 [Chinchilla ...  171     5e-44 
+BCF86908.1 syncytin-1 like protein 1 [Suncus murinus]                 176     5e-44 
+XP_062954402.1 syncytin-1-like [Cynocephalus volans]                  172     5e-44 
+XP_058513052.1 LOW QUALITY PROTEIN: uncharacterized protein LOC13...  179     7e-44 
+XP_076973609.1 syncytin-1-like [Tamandua tetradactyla]                174     9e-44 
+XP_023380178.1 endogenous retrovirus group S71 member 1 Env polyp...  169     1e-43 
+KAL1768778.1 envelope glycoprotein syncytin-A isoform X1 [Sigmodo...  175     1e-43 
+XP_033619826.1 syncytin-1-like [Fukomys damarensis]                   175     1e-43 
+KAL0611156.1 envelope glycoprotein [Plecturocebus cupreus]            176     2e-43 
+XP_073872923.1 syncytin-1-like [Macaca fascicularis]                  175     2e-43 
+XP_073939287.1 syncytin-1-like isoform X1 [Castor canadensis]         174     3e-43 
+XP_011362863.1 endogenous retrovirus group S71 member 1 Env polyp...  172     3e-43 
+XP_081154792.1 syncytin-1-like [Spermophilus citellus]                169     4e-43 
+KAN7444175.1 syncytin-1-like [Corynorhinus townsendii]                173     4e-43 
+BBC20779.1 envelope protein [Chlorocebus sabaeus]                     173     4e-43 
+XP_006887621.1 PREDICTED: HERV-W_7q21.2 provirus ancestral Env po...  163     5e-43 
+KAL0625558.1 LOW QUALITY PROTEIN: envelope glycoprotein [Plecturo...  175     6e-43 
+XP_071069796.1 syncytin-1-like [Dasypus novemcinctus]                 169     7e-43 
+XP_053524000.1 syncytin-1-like [Artibeus jamaicensis]                 172     8e-43 
+
+
+>NP_001291472.1 syncytin-1 precursor [Pongo abelii]
+Length=538
+
+ Score = 1071 bits (2770),  Expect = 0.0, Method: Compositional matrix adjust.
+ Identities = 515/538 (96%), Positives = 524/538 (97%), Gaps = 0/538 (0%)
+
+Query  1    MALPYHIFLFTVLLPSFTLTAPPPCRCMTSSSPYQEFLWRMQRPGNIDAPSYRSLSKGTP  60
+            MALPYHIFLFTVLLPSFTLTAPPPCRCMTSSSPYQEFLWRM  PGNIDAPSYRS SKGTP
+Sbjct  1    MALPYHIFLFTVLLPSFTLTAPPPCRCMTSSSPYQEFLWRMHHPGNIDAPSYRSFSKGTP  60
+
+Query  61   TFTAHTHMPRNCYHSATLCMHANTHYWTGKMINPSCPGGLGVTVCWTYFTQTGMSDGGGV  120
+            TFTAHTHMPRNCY+SATLCMH NTHYWTGKMINPSCPGGLGVTVCWTYFT TGMSDGGGV
+Sbjct  61   TFTAHTHMPRNCYNSATLCMHGNTHYWTGKMINPSCPGGLGVTVCWTYFTHTGMSDGGGV  120
+
+Query  121  QDQAREKHVKEVISQLTRVHGTSSPYKGLDLSKLHETLRTHTRLVSLFNTTLTGLHEVSA  180
+            QD+AREKHVKEVISQLT+VH TSSPYKGLDLSKLHETLRTHTRLVSLFNTTLTGLHEVSA
+Sbjct  121  QDEAREKHVKEVISQLTQVHSTSSPYKGLDLSKLHETLRTHTRLVSLFNTTLTGLHEVSA  180
+
+Query  181  QNPTNCWICLPLNFRPYVSIPVPEQWNNFSTEINTTSVLVGPLVSNLEITHTSNLTCVKF  240
+            QNPTNCW+CLPL FRPYVSIPVPEQWNNFSTEINTTSVLVGPLVSNLEITHTSNLTCVKF
+Sbjct  181  QNPTNCWMCLPLAFRPYVSIPVPEQWNNFSTEINTTSVLVGPLVSNLEITHTSNLTCVKF  240
+
+Query  241  SNTTYTTNSQCIRWVTPPTQIVCLPSGIFFVCGTSAYRCLNGSSESMCFLSFLVPPMTIY  300
+            SNTT TTNSQCIRWVTPPTQ+VCLPSGIFFVCGTSAYRCLNGSSESMCFLSFLVPPMTIY
+Sbjct  241  SNTTNTTNSQCIRWVTPPTQVVCLPSGIFFVCGTSAYRCLNGSSESMCFLSFLVPPMTIY  300
+
+Query  301  TEQDLYSYVISKPRNKRVPILPFVIGAGVLGALGTGIGGITTSTQFYYKLSQELNGDMER  360
+            TEQDLY+YV+SKPRNKRVPILPFV+ AGVLGALGTGIGGITTSTQFYYKLSQELNGDMER
+Sbjct  301  TEQDLYNYVVSKPRNKRVPILPFVMAAGVLGALGTGIGGITTSTQFYYKLSQELNGDMER  360
+
+Query  361  VADSLVTLQDQLNSLAAVVLQNRRALDLLTAERGGTCLFLGEECCYYVNQSGIVTEKVKE  420
+            VADSLVTLQDQLNS+AAVVLQNRRALDLLTAERGGTCLFLGEECCYYVNQSGIVTEKVKE
+Sbjct  361  VADSLVTLQDQLNSIAAVVLQNRRALDLLTAERGGTCLFLGEECCYYVNQSGIVTEKVKE  420
+
+Query  421  IRDRIQRRAEELRNTGPWGLLSQWMPWILPFLGPLAAIILLLLFGPCIFNLLVNFVSSRI  480
+            IRDRIQRRAEELRN GPWGL SQWMPWILPFLGPLAAIILLLLFGPCIFNLLVNFVSSRI
+Sbjct  421  IRDRIQRRAEELRNIGPWGLFSQWMPWILPFLGPLAAIILLLLFGPCIFNLLVNFVSSRI  480
+
+Query  481  EAVKLQMEPKMQSKTKIYRRPLDRPASPRSDVNDIKGTPPEEISAAQPLLRPNSAGSS  538
+            EAVKLQMEPKMQSKTKIY RPLD PASPRSDVNDIKGTPPEEIS AQPLLRPNSAGSS
+Sbjct  481  EAVKLQMEPKMQSKTKIYHRPLDWPASPRSDVNDIKGTPPEEISTAQPLLRPNSAGSS  538
+
+
+>AAK18189.1 recombinant envelope protein [Multiple sclerosis associated retrovirus 
+element]
+Length=542
+
+ Score = 961 bits (2483),  Expect = 0.0, Method: Compositional matrix adjust.
+ Identities = 473/542 (87%), Positives = 490/542 (90%), Gaps = 4/542 (1%)
+
+Query  1    MALPYHIFLFTVLLPSFTLTAPPPCRCMTSSSPYQEFLWRMQRPGNIDAPSYRSLSKGTP  60
+            MALPYH FLFTVLLP F LTAPPPC C TSSSPYQEFLWR + PGNIDAPSYRSLSKG  
+Sbjct  1    MALPYHTFLFTVLLPPFALTAPPPCCCTTSSSPYQEFLWRTRLPGNIDAPSYRSLSKGNS  60
+
+Query  61   TFTAHTHMPRNCYHSATLCMHANTHYWTGKMINPSCPGGLGVTVCWTYFTQTGMSDGGGV  120
+            TFTAHTHMPRNCY+SATLCMHANTHYWTGKMINPSCPGGLG TVCWTYFT T MSDGGG+
+Sbjct  61   TFTAHTHMPRNCYNSATLCMHANTHYWTGKMINPSCPGGLGATVCWTYFTHTSMSDGGGI  120
+
+Query  121  QDQAREKHVKEVISQLTRVHGTSSPYKGLDLSKLHETLRTHTRLVSLFNTTLTGLHEVSA  180
+            Q QAREK VKE ISQLTR H T SPYKGL LSKLHETLRTHTRLVSLFNTTLT LHEVSA
+Sbjct  121  QGQAREKQVKEAISQLTRGHSTPSPYKGLVLSKLHETLRTHTRLVSLFNTTLTRLHEVSA  180
+
+Query  181  QNPTNCWICLPLNFRPYVSIPVPEQWNNFSTEINTTSVLVGPLVSNLEITHTSNLTCVKF  240
+            QNPTNCW+CLPL+FRPY+SIPVPEQWNNFSTEINTTSVLVGPLVSNLEITHTSNLTCVKF
+Sbjct  181  QNPTNCWMCLPLHFRPYISIPVPEQWNNFSTEINTTSVLVGPLVSNLEITHTSNLTCVKF  240
+
+Query  241  SNTTYTTNSQCIRWVTPPTQIVCLPSGIFFVCGTSAYRCLNGSSESMCFLSFLVPPMTIY  300
+            SNT  TT+SQCIRWVTPPT+IVCLPSGIFFVCGTSAY CLNGSSESMCFLSFLVPPMTIY
+Sbjct  241  SNTIDTTSSQCIRWVTPPTRIVCLPSGIFFVCGTSAYHCLNGSSESMCFLSFLVPPMTIY  300
+
+Query  301  TEQDLYSYVISKPRNKRVPILPFVIGAGVLGALGTGIGGITTSTQFYYKLSQELNGDMER  360
+            TEQDLY++V+ KP NKRVPILPFVI AGVLG LGTGIG ITTSTQFYYKLSQE+NGDME+
+Sbjct  301  TEQDLYNHVVPKPHNKRVPILPFVIRAGVLGRLGTGIGSITTSTQFYYKLSQEINGDMEQ  360
+
+Query  361  VADSLVTLQDQLNSLAAVVLQNRRALDLLTAERGGTCLFLGEECCYYVNQSGIVTEKVKE  420
+            V DSLVTLQDQLNSLAAVVLQNRRALDLLTA+RGGTCLFLGEE CYYVNQS IVTEKVKE
+Sbjct  361  VTDSLVTLQDQLNSLAAVVLQNRRALDLLTAKRGGTCLFLGEERCYYVNQSRIVTEKVKE  420
+
+Query  421  IRDRIQRRAEELRNTGPWGLLSQWMPWILPFLGPLAAIILLLLFGPCIFNLLVNFVSSRI  480
+            IRDRIQ RAEEL+NT  WGLLSQWMPW LPFLGPLAAII LLLFGPCIFN LV FVSSRI
+Sbjct  421  IRDRIQCRAEELQNTERWGLLSQWMPWTLPFLGPLAAIIFLLLFGPCIFNFLVKFVSSRI  480
+
+Query  481  EAVK----LQMEPKMQSKTKIYRRPLDRPASPRSDVNDIKGTPPEEISAAQPLLRPNSAG  536
+            EAVK    LQMEP+MQS TKIYR PLDRPA   SDVNDI+ TPPEEIS AQPLL  NS G
+Sbjct  481  EAVKLQIVLQMEPQMQSMTKIYRGPLDRPARLCSDVNDIEVTPPEEISTAQPLLHSNSVG  540
+
+Query  537  SS  538
+            SS
+Sbjct  541  SS  542
+
+
+>XP_055089226.1 LOW QUALITY PROTEIN: syncytin-1-like [Symphalangus syndactylus]
+Length=542
+
+ Score = 950 bits (2456),  Expect = 0.0, Method: Compositional matrix adjust.
+ Identities = 467/542 (86%), Positives = 491/542 (91%), Gaps = 4/542 (1%)
+
+Query  1    MALPYHIFLFTVLLPSFTLTAPPPCRCMTSSSPYQEFLWRMQRPGNIDAPSYRSLSKGTP  60
+            MALPYHIFLFTVLL  FTLTAPPPC CMT SSPYQ+FLWRM   GNIDAPSYRSLSK TP
+Sbjct  1    MALPYHIFLFTVLLLPFTLTAPPPCCCMTRSSPYQDFLWRMWLSGNIDAPSYRSLSKRTP  60
+
+Query  61   TFTAHTHMPRNCYHSATLCMHANTHYWTGKMINPSCPGGLGVTVCWTYFTQTGMSDGGGV  120
+            TFTA+THMPRNCY+SATLC HANTHYWTGKMIN SCPGGLG TVCWTYFT T MSD GGV
+Sbjct  61   TFTANTHMPRNCYNSATLCRHANTHYWTGKMINLSCPGGLGATVCWTYFTYTSMSDAGGV  120
+
+Query  121  QDQAREKHVKEVISQLTRVHGTSSPYKGLDLSKLHETLRTHTRLVSLFNTTLTGLHEVSA  180
+            QDQ REK VKE+ISQLT VH T + YKGLDLSKLHETLRTH+ LVS+FNTTLTGLHEV +
+Sbjct  121  QDQVREKQVKEIISQLTWVHSTPTLYKGLDLSKLHETLRTHSCLVSIFNTTLTGLHEVLS  180
+
+Query  181  QNPTNCWICLPLNFRPYVSIPVPEQWNNFSTEINTTSVLVGPLVSNLEITHTSNLTCVKF  240
+            QNPTNCW+CLPL+FRPY+SIPVPEQWNNFSTEINTTS+LVGP VSNLEITHTSNLTCVKF
+Sbjct  181  QNPTNCWMCLPLHFRPYISIPVPEQWNNFSTEINTTSILVGPXVSNLEITHTSNLTCVKF  240
+
+Query  241  SNTTYTTNSQCIRWVTPPTQIVCLPSGIFFVCGTSAYRCLNGSSESMCFLSFLVPPMTIY  300
+            SNT  TTNSQCIRWVTPP +IVCLPSGIFFVCGTSAY CL GSSESMCFLSFLVP +TIY
+Sbjct  241  SNTIDTTNSQCIRWVTPPIRIVCLPSGIFFVCGTSAYCCLKGSSESMCFLSFLVPLITIY  300
+
+Query  301  TEQDLYSYVISKPRNKRVPILPFVIGAGVLGALGTGIGGITTSTQFYYKLSQELNGDMER  360
+            TEQDLY++ + KPRNKRVPILPFVIGAGVL  LGTG G ITTSTQFYYKLSQELNGDMER
+Sbjct  301  TEQDLYNHAVPKPRNKRVPILPFVIGAGVLDRLGTGTGAITTSTQFYYKLSQELNGDMER  360
+
+Query  361  VADSLVTLQDQLNSLAAVVLQNRRALDLLTAERGGTCLFLGEECCYYVNQSGIVTEKVKE  420
+            VA+SL TLQDQLNSLAAVVLQNRR LDLLTAERGGTCLFLGEECCYYVNQSGIVTEKVKE
+Sbjct  361  VANSLDTLQDQLNSLAAVVLQNRRTLDLLTAERGGTCLFLGEECCYYVNQSGIVTEKVKE  420
+
+Query  421  IRDRIQRRAEELRNTGPWGLLSQWMPWILPFLGPLAAIILLLLFGPCIFNLLVNFVSSRI  480
+            IRD IQ RAEEL+NTGPWGLLSQWMPWILPFLGP AAIILLLLFGPCIFNLLV FVSSRI
+Sbjct  421  IRDXIQLRAEELQNTGPWGLLSQWMPWILPFLGPPAAIILLLLFGPCIFNLLVKFVSSRI  480
+
+Query  481  EAVK----LQMEPKMQSKTKIYRRPLDRPASPRSDVNDIKGTPPEEISAAQPLLRPNSAG  536
+            +AVK    LQMEP+MQS TKIYR PLDRPASP SD NDI+GTPP+EIS AQPLL PNSAG
+Sbjct  481  KAVKLQIVLQMEPQMQSLTKIYRGPLDRPASPCSDANDIEGTPPKEISTAQPLLCPNSAG  540
+
+Query  537  SS  538
+            S+
+Sbjct  541  ST  542
+
+
+>XP_054298799.1 LOW QUALITY PROTEIN: syncytin-1-like [Pongo pygmaeus]
+Length=542
+
+ Score = 945 bits (2442),  Expect = 0.0, Method: Compositional matrix adjust.
+ Identities = 474/542 (87%), Positives = 497/542 (92%), Gaps = 4/542 (1%)
+
+Query  1    MALPYHIFLFTVLLPSFTLTAPPPCRCMTSSSPYQEFLWRMQRPGNIDAPSYRSLSKGTP  60
+            MALPYHIFLFTVLLP FT +APPPC   TSSSPYQ+FLWRM  PGNIDAPSYRSLSKG P
+Sbjct  1    MALPYHIFLFTVLLPPFTFSAPPPCCRTTSSSPYQQFLWRMWLPGNIDAPSYRSLSKGIP  60
+
+Query  61   TFTAHTHMPRNCYHSATLCMHANTHYWTGKMINPSCPGGLGVTVCWTYFTQTGMSDGGGV  120
+            TFTAHTHMPRNCY+SATLCMHANTHYWTGKMINPSCPGGLG TVCWTYFT TGMSDGGGV
+Sbjct  61   TFTAHTHMPRNCYNSATLCMHANTHYWTGKMINPSCPGGLGATVCWTYFTHTGMSDGGGV  120
+
+Query  121  QDQAREKHVKEVISQLTRVHGTSSPYKGLDLSKLHETLRTHTRLVSLFNTTLTGLHEVSA  180
+            QDQARE+HVKEVISQLTRVH + SPYKGL LSKLHETLRTHTRLVSLFN TLTGLHEVSA
+Sbjct  121  QDQAREEHVKEVISQLTRVHSSPSPYKGLYLSKLHETLRTHTRLVSLFNNTLTGLHEVSA  180
+
+Query  181  QNPTNCWICLPLNFRPYVSIPVPEQWNNFSTEINTTSVLVGPLVSNLEITHTSNLTCVKF  240
+            QNPTNCW+CLPL+FRPY+SIPV  QWNNFSTEI TTS+LVGPLVSNLEITHTSNLTCVKF
+Sbjct  181  QNPTNCWMCLPLHFRPYISIPVSXQWNNFSTEIITTSILVGPLVSNLEITHTSNLTCVKF  240
+
+Query  241  SNTTYTTNSQCIRWVTPPTQIVCLPSGIFFVCGTSAYRCLNGSSESMCFLSFLVPPMTIY  300
+            SNT  TTNSQCIRWVTPPTQIVCLPSGIFFVCG SAY CLNGSSESMCFLSFLV PMTIY
+Sbjct  241  SNTIDTTNSQCIRWVTPPTQIVCLPSGIFFVCGPSAYHCLNGSSESMCFLSFLVLPMTIY  300
+
+Query  301  TEQDLYSYVISKPRNKRVPILPFVIGAGVLGALGTGIGGITTSTQFYYKLSQELNGDMER  360
+            TE+DLY++VI KP NKRVPILPFVI AGVLG LGTGIG ITTSTQFYY+LSQELNGDME 
+Sbjct  301  TERDLYNHVIPKPCNKRVPILPFVIKAGVLGGLGTGIGDITTSTQFYYQLSQELNGDMEW  360
+
+Query  361  VADSLVTLQDQLNSLAAVVLQNRRALDLLTAERGGTCLFLGEECCYYVNQSGIVTEKVKE  420
+            VADSLVTLQDQLNSLAAVVLQN+R LDLLT ERGGTCLFLGE+CCYYVNQS I+TEKVKE
+Sbjct  361  VADSLVTLQDQLNSLAAVVLQNQRDLDLLTTERGGTCLFLGEQCCYYVNQSRIITEKVKE  420
+
+Query  421  IRDRIQRRAEELRNTGPWGLLSQWMPWILPFLGPLAAIILLLLFGPCIFNLLVNFVSSRI  480
+            I+DRIQ RAEEL+NTGPWGL SQ  PWILPFLGPLAAIILLLLFGPCIFNLLV FVSSRI
+Sbjct  421  IQDRIQHRAEELQNTGPWGLFSQXTPWILPFLGPLAAIILLLLFGPCIFNLLVKFVSSRI  480
+
+Query  481  EAVKLQM----EPKMQSKTKIYRRPLDRPASPRSDVNDIKGTPPEEISAAQPLLRPNSAG  536
+            EA+KLQM    EP+MQS TKIY RPLD+PASP S+VNDIKGTPPEEIS AQPLL P+SAG
+Sbjct  481  EAIKLQMVLQIEPQMQSMTKIYCRPLDQPASPWSEVNDIKGTPPEEISTAQPLLCPSSAG  540
+
+Query  537  SS  538
+            SS
+Sbjct  541  SS  542
+
+
+>XP_073851949.1 LOW QUALITY PROTEIN: syncytin-1-like [Macaca fascicularis]
+Length=541
+
+ Score = 918 bits (2372),  Expect = 0.0, Method: Compositional matrix adjust.
+ Identities = 468/542 (86%), Positives = 491/542 (91%), Gaps = 5/542 (1%)
+
+Query  1    MALPYHIFLFTVLLPSFTLTAPPPCRCMTSSSPYQEFLWRMQRPGNIDAPSYRSLSKGTP  60
+            MALPY IFLFTVLLP FTLTAPPPC C TSSSP+QEFLWRM  P NIDAPSYRSLSKG P
+Sbjct  1    MALPY-IFLFTVLLPPFTLTAPPPCCCTTSSSPHQEFLWRMWFPRNIDAPSYRSLSKGNP  59
+
+Query  61   TFTAHTHMPRNCYHSATLCMHANTHYWTGKMINPSCPGGLGVTVCWTYFTQTGMSDGGGV  120
+            TFT H+HMP NC +SATLCMHANTHYWTGKMINPSCPGGLG TVCWTYFT TGMSDGG V
+Sbjct  60   TFTTHSHMPCNCCNSATLCMHANTHYWTGKMINPSCPGGLGATVCWTYFTHTGMSDGGEV  119
+
+Query  121  QDQAREKHVKEVISQLTRVHGTSSPYKGLDLSKLHETLRTHTRLVSLFNTTLTGLHEVSA  180
+            QDQAR+ HVKEVISQLT VH T SPYKGLDLSKLHETLRTHTRL+SLFNTTLTGLHEVSA
+Sbjct  120  QDQARKNHVKEVISQLTWVHSTPSPYKGLDLSKLHETLRTHTRLISLFNTTLTGLHEVSA  179
+
+Query  181  QNPTNCWICLPLNFRPYVSIPVPEQWNNFSTEINTTSVLVGPLVSNLEITHTSNLTCVKF  240
+            QNPTNCW+CLPL+FRPY+SIPVPEQWNNFSTEIN+TSVLVGPLVSNLEITHTSNLTCVKF
+Sbjct  180  QNPTNCWMCLPLHFRPYISIPVPEQWNNFSTEINSTSVLVGPLVSNLEITHTSNLTCVKF  239
+
+Query  241  SNTTYTTNSQCIRWVTPPTQIVCLPSGIFFVCGTSAYRCLNGSSESMCFLSFLVPPMTIY  300
+            SNT  TTNSQCI WVTPPT+IVCLPSGIFFVCGTSAY CLNGSSE MCFLSFLVPP TIY
+Sbjct  240  SNTIDTTNSQCITWVTPPTRIVCLPSGIFFVCGTSAYHCLNGSSEFMCFLSFLVPPXTIY  299
+
+Query  301  TEQDLYSYVISKPRNKRVPILPFVIGAGVLGALGTGIGGITTSTQFYYKLSQELNGDMER  360
+            TEQDLY+YV+ +P NKRVPILPFVI AGVLG LGTGIGGITTS QFYYKLSQELNGDMER
+Sbjct  300  TEQDLYNYVVPEPCNKRVPILPFVIRAGVLGGLGTGIGGITTSAQFYYKLSQELNGDMER  359
+
+Query  361  VADSLVTLQDQLNSLAAVVLQNRRALDLLTAERGGTCLFLGEECCYYVNQSGIVTEKVKE  420
+            VA+SLVTLQDQL+SLAAVVLQNRRALDLLTAER GTCLFLGEECCYYVNQS IVT+KVKE
+Sbjct  360  VANSLVTLQDQLDSLAAVVLQNRRALDLLTAERVGTCLFLGEECCYYVNQSRIVTKKVKE  419
+
+Query  421  IRDRIQRRAEELRNTGPWGLLSQWMPWILPFLGPLAAIILLLLFGPCIFNLLVNFVSSRI  480
+            I+D IQRRAEEL NT PWGLLSQW+PWILPFLGPLAAIIL LLFGPCIFNLLV F SSRI
+Sbjct  420  IQDXIQRRAEELXNTRPWGLLSQWIPWILPFLGPLAAIILFLLFGPCIFNLLVQFFSSRI  479
+
+Query  481  EAVK----LQMEPKMQSKTKIYRRPLDRPASPRSDVNDIKGTPPEEISAAQPLLRPNSAG  536
+            EAVK    LQM+ +MQS TK+Y  PLDRPASP SDVND++ TP EEIS AQPLL  NSAG
+Sbjct  480  EAVKLQMVLQMDTQMQSMTKVYCGPLDRPASPCSDVNDVRVTPTEEISTAQPLLCSNSAG  539
+
+Query  537  SS  538
+            SS
+Sbjct  540  SS  541
+
+
+>XP_058289587.1 LOW QUALITY PROTEIN: syncytin-1-like [Hylobates moloch]
+Length=537
+
+ Score = 910 bits (2351),  Expect = 0.0, Method: Compositional matrix adjust.
+ Identities = 465/542 (86%), Positives = 484/542 (89%), Gaps = 9/542 (2%)
+
+Query  1    MALPYHIFLFTVLLPSFTLTAPPPCRCMTSSSPYQEFLWRMQRPGNIDAPSYRSLSKGTP  60
+            MALPYHIFLFTVLLP FTLTAPPPC C TSSSPYQEFLWRM  P NIDAPSYRSLSKG P
+Sbjct  1    MALPYHIFLFTVLLPPFTLTAPPPCCCTTSSSPYQEFLWRMWLPRNIDAPSYRSLSKGNP  60
+
+Query  61   TFTAHTHMPRNCYHSATLCMHANTHYWTGKMINPSCPGGLGVTVCWTYFTQTGMSDGGGV  120
+            TF  HTHMP NC +SATLCMHANTHYWTGKMINPSCPGGLG TVCWT FT T MSDGGGV
+Sbjct  61   TFITHTHMPNNCCNSATLCMHANTHYWTGKMINPSCPGGLGATVCWTCFTHTSMSDGGGV  120
+
+Query  121  QDQAREKHVKEVISQLTRVHGTSSPYKGLDLSKLHETLRTHTRLVSLFNTTLTGLHEVSA  180
+            QDQARE+H+KEVISQLTRVH T SPYKGLDLSKLHETLRTHTRLVSL NTTLTGLHEVSA
+Sbjct  121  QDQARERHIKEVISQLTRVHNTPSPYKGLDLSKLHETLRTHTRLVSLLNTTLTGLHEVSA  180
+
+Query  181  QNPTNCWICLPLNFRPYVSIPVPEQWNNFSTEINTTSVLVGPLVSNLEITHTSNLTCVKF  240
+            QNPTNC +CLPL+FRPY+SIPVPEQWNNFSTEINTT +LVGPLVSNLEITHTSNLTCVKF
+Sbjct  181  QNPTNCCLCLPLHFRPYISIPVPEQWNNFSTEINTTPILVGPLVSNLEITHTSNLTCVKF  240
+
+Query  241  SNTTYTTNSQCIRWVTPPTQIVCLPSGIFFVCGTSAYRCLNGSSESMCFLSFLVPPMTIY  300
+            SNT      QCIRWVTPPT++V LPSGIFFVCGTSAY CLNGSSESMCFLSFLVPPMTIY
+Sbjct  241  SNT-----XQCIRWVTPPTRMVSLPSGIFFVCGTSAYLCLNGSSESMCFLSFLVPPMTIY  295
+
+Query  301  TEQDLYSYVISKPRNKRVPILPFVIGAGVLGALGTGIGGITTSTQFYYKLSQELNGDMER  360
+            TEQDLY YV+ KP NKRVPIL FVI AGVLG LGTGIGGI TSTQFYYKLSQELNGDME 
+Sbjct  296  TEQDLYHYVVPKPCNKRVPILSFVIRAGVLGGLGTGIGGIITSTQFYYKLSQELNGDMEW  355
+
+Query  361  VADSLVTLQDQLNSLAAVVLQNRRALDLLTAERGGTCLFLGEECCYYVNQSGIVTEKVKE  420
+            VADSLVTLQDQ NS AA VLQNRRALDLLTAERGGTCLFLGEECCYYVNQSGI+TEKVKE
+Sbjct  356  VADSLVTLQDQPNSPAAAVLQNRRALDLLTAERGGTCLFLGEECCYYVNQSGIITEKVKE  415
+
+Query  421  IRDRIQRRAEELRNTGPWGLLSQWMPWILPFLGPLAAIILLLLFGPCIFNLLVNFVSSRI  480
+            I+D IQRRAEE +NTGPWGLL QWMPW LPF+GPLAAII LLLFGPCIFNLLV FVSSRI
+Sbjct  416  IQDXIQRRAEEPQNTGPWGLLCQWMPWTLPFIGPLAAIISLLLFGPCIFNLLVKFVSSRI  475
+
+Query  481  EAVK----LQMEPKMQSKTKIYRRPLDRPASPRSDVNDIKGTPPEEISAAQPLLRPNSAG  536
+            EAVK    LQMEP+MQS TKIY  PLDRP+S  S+VNDI+  PP+EIS AQPLL PNSAG
+Sbjct  476  EAVKLQILLQMEPQMQSMTKIYCGPLDRPSSLCSNVNDIEVIPPKEISTAQPLLCPNSAG  535
+
+Query  537  SS  538
+            SS
+Sbjct  536  SS  537
+
+
+>XP_050641298.1 syncytin-1 [Macaca thibetana thibetana]
+Length=495
+
+ Score = 907 bits (2345),  Expect = 0.0, Method: Compositional matrix adjust.
+ Identities = 446/495 (90%), Positives = 469/495 (95%), Gaps = 0/495 (0%)
+
+Query  1    MALPYHIFLFTVLLPSFTLTAPPPCRCMTSSSPYQEFLWRMQRPGNIDAPSYRSLSKGTP  60
+            MALPYHIFLFTVLLP FTLTAPPPC C TSSSPYQEFLWRMQRPGNIDAPSYRSLSKGTP
+Sbjct  1    MALPYHIFLFTVLLPPFTLTAPPPCHCTTSSSPYQEFLWRMQRPGNIDAPSYRSLSKGTP  60
+
+Query  61   TFTAHTHMPRNCYHSATLCMHANTHYWTGKMINPSCPGGLGVTVCWTYFTQTGMSDGGGV  120
+            TFTAHTH PRNCY++ATLCM +NTHYWTGKMINPSCPGGLG TVCWTYFT T MSDG GV
+Sbjct  61   TFTAHTHTPRNCYNAATLCMQSNTHYWTGKMINPSCPGGLGATVCWTYFTHTSMSDGSGV  120
+
+Query  121  QDQAREKHVKEVISQLTRVHGTSSPYKGLDLSKLHETLRTHTRLVSLFNTTLTGLHEVSA  180
+            QDQAREKH +EVISQLTRVH TSSPY+GLDLSKLHETLR HTRLVSLFNTTL GLHEVSA
+Sbjct  121  QDQAREKHTEEVISQLTRVHSTSSPYRGLDLSKLHETLRIHTRLVSLFNTTLLGLHEVSA  180
+
+Query  181  QNPTNCWICLPLNFRPYVSIPVPEQWNNFSTEINTTSVLVGPLVSNLEITHTSNLTCVKF  240
+            QNPTNCW+CLPL+FRPY+SIPVPEQWNNFSTEINTTSVLVGPLVSNLEIT TSNLTCV F
+Sbjct  181  QNPTNCWMCLPLHFRPYISIPVPEQWNNFSTEINTTSVLVGPLVSNLEITRTSNLTCVNF  240
+
+Query  241  SNTTYTTNSQCIRWVTPPTQIVCLPSGIFFVCGTSAYRCLNGSSESMCFLSFLVPPMTIY  300
+            S+T  TTNSQCIRWVTPPT+IVCLPSGIFFVCGTSAY CLNGSSESMCFLSFLVPPMTIY
+Sbjct  241  SSTIDTTNSQCIRWVTPPTRIVCLPSGIFFVCGTSAYHCLNGSSESMCFLSFLVPPMTIY  300
+
+Query  301  TEQDLYSYVISKPRNKRVPILPFVIGAGVLGALGTGIGGITTSTQFYYKLSQELNGDMER  360
+            TEQDLY+YVI KPRNKRVPILPFVI AGVLG LGTGIG ITTSTQFYYKLSQELNGDME+
+Sbjct  301  TEQDLYNYVIHKPRNKRVPILPFVIRAGVLGGLGTGIGSITTSTQFYYKLSQELNGDMEQ  360
+
+Query  361  VADSLVTLQDQLNSLAAVVLQNRRALDLLTAERGGTCLFLGEECCYYVNQSGIVTEKVKE  420
+            VADSLVTLQDQLNSLAAVVLQN+RALDLLTAERGGTCLFLGEECCYYVNQSGI++EKVKE
+Sbjct  361  VADSLVTLQDQLNSLAAVVLQNQRALDLLTAERGGTCLFLGEECCYYVNQSGIISEKVKE  420
+
+Query  421  IRDRIQRRAEELRNTGPWGLLSQWMPWILPFLGPLAAIILLLLFGPCIFNLLVNFVSSRI  480
+            I+DRIQRRA+EL+NTGPWGLL+QW+P ILPFLG LAAIILLLLFGPCIFNLLV FVSSRI
+Sbjct  421  IKDRIQRRAKELQNTGPWGLLNQWIPRILPFLGLLAAIILLLLFGPCIFNLLVKFVSSRI  480
+
+Query  481  EAVKLQMEPKMQSKT  495
+            +A+KLQMEP+MQS T
+Sbjct  481  KAIKLQMEPQMQSMT  495
+
+
+>XP_021788190.2 LOW QUALITY PROTEIN: syncytin-1-like [Papio anubis]
+Length=541
+
+ Score = 885 bits (2288),  Expect = 0.0, Method: Compositional matrix adjust.
+ Identities = 468/543 (86%), Positives = 493/543 (91%), Gaps = 7/543 (1%)
+
+Query  1    MALPYHIFLFTVLLPSFTLTAPPPCRCMTSSSPYQEFLWRMQRPGNIDAPSYRSLSKGTP  60
+            MALPYHIFLFTV+LP  TLTAPPPCRCMTSSSPYQEFLWRM+ PGNIDAPSYR+LSK  P
+Sbjct  1    MALPYHIFLFTVILPPLTLTAPPPCRCMTSSSPYQEFLWRMRLPGNIDAPSYRNLSKRNP  60
+
+Query  61   TFTAHTHMPRNCYHSATLCMH-ANTHYWTGKMINPSCPGGLGVTVCWTYFTQTGMSDGGG  119
+            TFTAHTHMPRN Y+SATLCMH ANTHYWTGK INP+CPGGLG TVCWTYFT TGMSDGGG
+Sbjct  61   TFTAHTHMPRNYYNSATLCMHQANTHYWTGKTINPNCPGGLGATVCWTYFTHTGMSDGGG  120
+
+Query  120  VQDQAREKHVKEVISQLTRVHGTSSPYKGLDLSKLHETLRTHTRLVSLFNTTLTGLHEVS  179
+            VQDQAREKHVKEV+SQLTRVH T SP KGLDLSKLHETL THTRLV+LFNTTLTGLHE+S
+Sbjct  121  VQDQAREKHVKEVLSQLTRVHSTPSPNKGLDLSKLHETLCTHTRLVNLFNTTLTGLHELS  180
+
+Query  180  AQNPTNCWICLPLNFRPYVSIPVPEQWNNFSTEINTTSVLVGPLVSNLEITHTSNLTCVK  239
+            AQNPTNCW+CLPL+FRPYVSIPVPEQWNNFSTEINTTSVLVGPLVSNLEITHTSNLTCVK
+Sbjct  181  AQNPTNCWMCLPLHFRPYVSIPVPEQWNNFSTEINTTSVLVGPLVSNLEITHTSNLTCVK  240
+
+Query  240  FSNTTYTTNSQCIRWVTPPTQIVCLPSGIFFVCGTSAYRCLNGSSESMCFLSFLVPPMTI  299
+            F+NT  TTNSQCIRWVTPPT+IVCLPSGIFFVCG S Y CLNGSSESMCFLSFL PP+TI
+Sbjct  241  FNNTIDTTNSQCIRWVTPPTRIVCLPSGIFFVCGISDY-CLNGSSESMCFLSFLAPPVTI  299
+
+Query  300  YTEQDLYSYVISKPRNKRVPILPFVIGAGVLGALGTGIGGITTSTQFYYKLSQELNGDME  359
+            YTEQ LY++V+ KP NKRVP LPFVI AGVLG LGTGIGGITT TQFYYKLSQELNGDME
+Sbjct  300  YTEQVLYNHVVPKPHNKRVPXLPFVIRAGVLGGLGTGIGGITTPTQFYYKLSQELNGDME  359
+
+Query  360  RVADSLVTLQDQLNSLAAVVLQNRRALDLLTAERGGTCLFLGEECCYYVNQSGIVTEKVK  419
+            RVA+SLVTLQ QLN LAAVVLQNRRALDLLTAERGGT LFLGEECC YVNQSGIVTEKV+
+Sbjct  360  RVANSLVTLQGQLNXLAAVVLQNRRALDLLTAERGGTSLFLGEECC-YVNQSGIVTEKVR  418
+
+Query  420  EIRDRIQRRAEELRNTGPWGLLSQWMPWILPFLGPLAAIILLLLFGPCIFNLLVNFVSSR  479
+            EI D+IQ  AEEL+NTGPW LLSQWMPWILPFL PLA IILLLLFGPCIFNLLV FVSSR
+Sbjct  419  EIEDQIQCGAEELQNTGPWDLLSQWMPWILPFLEPLAGIILLLLFGPCIFNLLVKFVSSR  478
+
+Query  480  IEAVK----LQMEPKMQSKTKIYRRPLDRPASPRSDVNDIKGTPPEEISAAQPLLRPNSA  535
+            IEAVK    LQMEP+M S TKIY  PLD PASP SDVND++GTPP+EIS AQPLL P+SA
+Sbjct  479  IEAVKLQIVLQMEPQMPSMTKIYCGPLDWPASPCSDVNDLEGTPPKEISTAQPLLCPSSA  538
+
+Query  536  GSS  538
+            GSS
+Sbjct  539  GSS  541
+
+
+>XP_063459663.1 syncytin-1-like [Pan paniscus]
+Length=530
+
+ Score = 882 bits (2278),  Expect = 0.0, Method: Compositional matrix adjust.
+ Identities = 453/532 (85%), Positives = 472/532 (89%), Gaps = 9/532 (2%)
+
+Query  1    MALPYHIFLFTVLLPSFTLTAPPPCRCMTSSSPYQEFLWRMQRPGNIDAPSYRSLSKGTP  60
+            MALPYHIFLFTVLLP FTLTAPPPC CM SSSPYQEFLWRM  P +ID PSYRSLSKG P
+Sbjct  1    MALPYHIFLFTVLLPPFTLTAPPPCHCMASSSPYQEFLWRMWLPRDIDDPSYRSLSKGNP  60
+
+Query  61   TFTAHTHMPRNCYHSATLCMHANTHYWTGKMINPSCPGGLGVTVCWTYFTQTGMSDGGGV  120
+            T     HMPRNCY+SATLCMHANTHYWTGK+INPSCPGGL   VCWTYFT TGMSDGGGV
+Sbjct  61   T-----HMPRNCYNSATLCMHANTHYWTGKVINPSCPGGLAAAVCWTYFTHTGMSDGGGV  115
+
+Query  121  QDQAREKHVKEVISQLTRVHGTSSPYKGLDLSKLHETLRTHTRLVSLFNTTLTGLHEVSA  180
+            QDQA EKH KEVI QLT+V GT SPYKGLDLSKLHETL THT LVSL NTTLTGLHEV A
+Sbjct  116  QDQATEKHAKEVIPQLTQVPGTPSPYKGLDLSKLHETLHTHTCLVSLLNTTLTGLHEVLA  175
+
+Query  181  QNPTNCWICLPLNFRPYVSIPVPEQWNNFSTEINTTSVLVGPLVSNLEITHTSNLTCVKF  240
+            QNPTNCW+CLPL+FRPY+SIPVPEQWNNFSTEINTTS+LVGPL SNLEITHTSNLTCVKF
+Sbjct  176  QNPTNCWMCLPLHFRPYISIPVPEQWNNFSTEINTTSILVGPLASNLEITHTSNLTCVKF  235
+
+Query  241  SNTTYTTNSQCIRWVTPPTQIVCLPSGIFFVCGTSAYRCLNGSSESMCFLSFLVPPMTIY  300
+            SNT  TTNSQCIRWVTPPTQIVCLPS IFFVCGTSAYRCLNGSSESMCFLSF VPP+TIY
+Sbjct  236  SNTIDTTNSQCIRWVTPPTQIVCLPSEIFFVCGTSAYRCLNGSSESMCFLSFFVPPVTIY  295
+
+Query  301  TEQDLYSYVISKPRNKRVPILPFVIGAGVLGALGTGIGGITTSTQFYYKLSQELNGDMER  360
+            TE DLYS+V+ K  NKRVPILPFVIGAGVLG LGTGIGGI TSTQFYYKLSQELNGD+E 
+Sbjct  296  TEHDLYSHVVPKLCNKRVPILPFVIGAGVLGGLGTGIGGIKTSTQFYYKLSQELNGDIEW  355
+
+Query  361  VADSLVTLQDQLNSLAAVVLQNRRALDLLTAERGGTCLFLGEECCYYVNQSGIVTEKVKE  420
+            V DSLVTLQDQLNSLAAVVLQNRRALDLLTA+RGG CLFL EECCYYVNQSGIVTEKVKE
+Sbjct  356  VTDSLVTLQDQLNSLAAVVLQNRRALDLLTAKRGGICLFLVEECCYYVNQSGIVTEKVKE  415
+
+Query  421  IRDRIQRRAEELRNTGPWGLLSQWMPWILPFLGPLAAIILLLLFGPCIFNLLVNFVSSRI  480
+            I+DRIQ RAEEL+NT PWGLLSQWMPWILPFLGPLA IILLLLFGPCIFNLL  FVSSRI
+Sbjct  416  IQDRIQHRAEELQNTRPWGLLSQWMPWILPFLGPLATIILLLLFGPCIFNLLFKFVSSRI  475
+
+Query  481  EAVK----LQMEPKMQSKTKIYRRPLDRPASPRSDVNDIKGTPPEEISAAQP  528
+            EAVK    LQMEP++QS TKIY  P D+PAS  S VNDI+GTPPEEIS   P
+Sbjct  476  EAVKLQMALQMEPQIQSMTKIYCGPPDQPASACSHVNDIEGTPPEEISMHNP  527
+
+
+>8OUH_D Chain D, Syncytin-1 [Homo sapiens]
+Length=446
+
+ Score = 871 bits (2250),  Expect = 0.0, Method: Compositional matrix adjust.
+ Identities = 419/428 (98%), Positives = 421/428 (98%), Gaps = 0/428 (0%)
+
+Query  12   VLLPSFTLTAPPPCRCMTSSSPYQEFLWRMQRPGNIDAPSYRSLSKGTPTFTAHTHMPRN  71
+            V     +L APPPCRCMTSSSPYQEFLWRMQRPGNIDAPSYRSLSKGTPTFTAHTHMPRN
+Sbjct  3    VAFVGLSLGAPPPCRCMTSSSPYQEFLWRMQRPGNIDAPSYRSLSKGTPTFTAHTHMPRN  62
+
+Query  72   CYHSATLCMHANTHYWTGKMINPSCPGGLGVTVCWTYFTQTGMSDGGGVQDQAREKHVKE  131
+            CYHSATLCMHANTHYWTGKMINPSCPGGLGVTVCWTYFTQTGMSDGGGVQDQAREKHVKE
+Sbjct  63   CYHSATLCMHANTHYWTGKMINPSCPGGLGVTVCWTYFTQTGMSDGGGVQDQAREKHVKE  122
+
+Query  132  VISQLTRVHGTSSPYKGLDLSKLHETLRTHTRLVSLFNTTLTGLHEVSAQNPTNCWICLP  191
+            VISQLTRVHGTSSPYKGLDLSKLHETLRTHTRLVSLFNTTLTGLHEVSAQNPTN WICLP
+Sbjct  123  VISQLTRVHGTSSPYKGLDLSKLHETLRTHTRLVSLFNTTLTGLHEVSAQNPTNSWICLP  182
+
+Query  192  LNFRPYVSIPVPEQWNNFSTEINTTSVLVGPLVSNLEITHTSNLTCVKFSNTTYTTNSQC  251
+            LNFRPYVSIPVPEQWNNFSTEINTTSVLVGPLVSNLEITHTSNLTCVKFSNTTYTTNSQC
+Sbjct  183  LNFRPYVSIPVPEQWNNFSTEINTTSVLVGPLVSNLEITHTSNLTCVKFSNTTYTTNSQC  242
+
+Query  252  IRWVTPPTQIVCLPSGIFFVCGTSAYRCLNGSSESMCFLSFLVPPMTIYTEQDLYSYVIS  311
+            IRWVTPPTQIVCLPSGIFFVCGTSAYRCLNGSSESMCFLSFLVPPMTIYTEQDLY+YVIS
+Sbjct  243  IRWVTPPTQIVCLPSGIFFVCGTSAYRCLNGSSESMCFLSFLVPPMTIYTEQDLYNYVIS  302
+
+Query  312  KPRNKRVPILPFVIGAGVLGALGTGIGGITTSTQFYYKLSQELNGDMERVADSLVTLQDQ  371
+            KPRNKRVPILPFVIGAGVLGALGTGIGGITTSTQFYYKLSQELNGDMERVADSLVTLQDQ
+Sbjct  303  KPRNKRVPILPFVIGAGVLGALGTGIGGITTSTQFYYKLSQELNGDMERVADSLVTLQDQ  362
+
+Query  372  LNSLAAVVLQNRRALDLLTAERGGTCLFLGEECCYYVNQSGIVTEKVKEIRDRIQRRAEE  431
+            LNSLAAVVLQNRRALDLLTAERGGTCLFLGEECCYYVNQSGIVTEKVKEIRDRIQRRAEE
+Sbjct  363  LNSLAAVVLQNRRALDLLTAERGGTCLFLGEECCYYVNQSGIVTEKVKEIRDRIQRRAEE  422
+
+Query  432  LRNTGPWG  439
+            LRNTGPWG
+Sbjct  423  LRNTGPWG  430
+
+
+>AAD14545.1 envelope protein, partial [Homo sapiens]
+Length=410
+
+ Score = 843 bits (2179),  Expect = 0.0, Method: Compositional matrix adjust.
+ Identities = 406/410 (99%), Positives = 407/410 (99%), Gaps = 0/410 (0%)
+
+Query  1    MALPYHIFLFTVLLPSFTLTAPPPCRCMTSSSPYQEFLWRMQRPGNIDAPSYRSLSKGTP  60
+            MALPYHIFLFTV+ PSFTLTAPPPCRCMTSSSPYQEFLWRMQRPGNIDAPSYRSL KGTP
+Sbjct  1    MALPYHIFLFTVVSPSFTLTAPPPCRCMTSSSPYQEFLWRMQRPGNIDAPSYRSLCKGTP  60
+
+Query  61   TFTAHTHMPRNCYHSATLCMHANTHYWTGKMINPSCPGGLGVTVCWTYFTQTGMSDGGGV  120
+            TFTAHTHMPRNCYHSATLCMHANTHYWTGKMINPSCPGGLGVTVCWTYFTQTGMSDGGGV
+Sbjct  61   TFTAHTHMPRNCYHSATLCMHANTHYWTGKMINPSCPGGLGVTVCWTYFTQTGMSDGGGV  120
+
+Query  121  QDQAREKHVKEVISQLTRVHGTSSPYKGLDLSKLHETLRTHTRLVSLFNTTLTGLHEVSA  180
+            QDQAREKHVKEVISQLTRVHGTSSPYKGLDLSKLHETLRTHTRLVSLFNTTLTGLHEVSA
+Sbjct  121  QDQAREKHVKEVISQLTRVHGTSSPYKGLDLSKLHETLRTHTRLVSLFNTTLTGLHEVSA  180
+
+Query  181  QNPTNCWICLPLNFRPYVSIPVPEQWNNFSTEINTTSVLVGPLVSNLEITHTSNLTCVKF  240
+            QNPTNCWICLPLNFRPYVSIPVPEQWNNFSTEINTTSVLVGPLVSNLEITHTSNLTCVKF
+Sbjct  181  QNPTNCWICLPLNFRPYVSIPVPEQWNNFSTEINTTSVLVGPLVSNLEITHTSNLTCVKF  240
+
+Query  241  SNTTYTTNSQCIRWVTPPTQIVCLPSGIFFVCGTSAYRCLNGSSESMCFLSFLVPPMTIY  300
+            SNTTYTTNSQCIRWVTPPTQIVCLPSGIFFVCGTSAYRCLNGSSESMCFLSFLVPPM IY
+Sbjct  241  SNTTYTTNSQCIRWVTPPTQIVCLPSGIFFVCGTSAYRCLNGSSESMCFLSFLVPPMAIY  300
+
+Query  301  TEQDLYSYVISKPRNKRVPILPFVIGAGVLGALGTGIGGITTSTQFYYKLSQELNGDMER  360
+            TEQDLYSYVISKPRNKRVPILPFVIGAGVLGALGTGIGGITTSTQFYYKLSQELNGDMER
+Sbjct  301  TEQDLYSYVISKPRNKRVPILPFVIGAGVLGALGTGIGGITTSTQFYYKLSQELNGDMER  360
+
+Query  361  VADSLVTLQDQLNSLAAVVLQNRRALDLLTAERGGTCLFLGEECCYYVNQ  410
+            VADSLVTLQDQLNSLAAVVLQNRRALDLLTAERGGTCLFLGEECCYYVNQ
+Sbjct  361  VADSLVTLQDQLNSLAAVVLQNRRALDLLTAERGGTCLFLGEECCYYVNQ  410
+
+
+>XP_063658889.1 LOW QUALITY PROTEIN: syncytin-1-like [Pan troglodytes]
+Length=808
+
+ Score = 838 bits (2165),  Expect = 0.0, Method: Compositional matrix adjust.
+ Identities = 412/485 (85%), Positives = 434/485 (89%), Gaps = 9/485 (2%)
+
+Query  58   GTPTFTAHTHMPRNCYHSATLCMHANTHYWTGKMINPSCPGGLGVTVCWTYFTQTGMSDG  117
+            GTPTFTAHTHM  NCY+SATLCMHANTHYWTGKMINPSCPGGLG TVCWTYFT TGMSDG
+Sbjct  329  GTPTFTAHTHMAHNCYNSATLCMHANTHYWTGKMINPSCPGGLGATVCWTYFTHTGMSDG  388
+
+Query  118  GGVQDQAREKHVKEVISQLTRVHGTSSPYKGLDLSKLHETLRTHTRLVSLFNTTLTGLHE  177
+            GGVQDQAREK      S LT+VH T   YKGLDLSKLHETL T+  LVSLFNTTLTGLHE
+Sbjct  389  GGVQDQAREK-----XSXLTQVHSTPGSYKGLDLSKLHETLHTYIHLVSLFNTTLTGLHE  443
+
+Query  178  VSAQNPTNCWICLPLNFRPYVSIPVPEQWNNFSTEINTTSVLVGPLVSNLEITHTSNLTC  237
+            VSAQN TNCW+ LPL FRPY+SI VPEQWNNFSTEINTTS+LVGPLVSNLEITHTSNLTC
+Sbjct  444  VSAQNATNCWMFLPLYFRPYISILVPEQWNNFSTEINTTSILVGPLVSNLEITHTSNLTC  503
+
+Query  238  VKFSNTTYTTNSQCIRWVTPPTQIVCLPSGIFFVCGTSAYRCLNGSSESMCFLSFLVPPM  297
+            VKFSNT  T NSQCIRWV+ PT I CLPSGIFFVCGTSAY CL GSSES+CFLSFLVPPM
+Sbjct  504  VKFSNTIDTPNSQCIRWVSHPTXIACLPSGIFFVCGTSAYHCLKGSSESICFLSFLVPPM  563
+
+Query  298  TIYTEQDLYSYVISKPRNKRVPILPFVIGAGVLGALGTGIGGITTSTQFYYKLSQELNGD  357
+            TIYTEQDLY++V+ KPRNKRVPIL F++GAG LG LGTGIGGITTSTQFYYKLSQELNGD
+Sbjct  564  TIYTEQDLYNHVVPKPRNKRVPILTFIVGAGGLGRLGTGIGGITTSTQFYYKLSQELNGD  623
+
+Query  358  MERVADSLVTLQDQLNSLAAVVLQNRRALDLLTAERGGTCLFLGEECCYYVNQSGIVTEK  417
+            M+ VADSLVTLQDQLNSL AVVLQNRRALDLLTA+RG TCLFLGEECCYYVNQSGI+TEK
+Sbjct  624  MKWVADSLVTLQDQLNSLVAVVLQNRRALDLLTAKRGRTCLFLGEECCYYVNQSGIITEK  683
+
+Query  418  VKEIRDRIQRRAEELRNTGPWGLLSQWMPWILPFLGPLAAIILLLLFGPCIFNLLVNFVS  477
+            VKEIRD+IQRRAEEL+NTGPWGL+SQWMPWILPFLGPLAAIILL LFGPCIFNLLV FVS
+Sbjct  684  VKEIRDQIQRRAEELQNTGPWGLVSQWMPWILPFLGPLAAIILLFLFGPCIFNLLVKFVS  743
+
+Query  478  SRIEAVK----LQMEPKMQSKTKIYRRPLDRPASPRSDVNDIKGTPPEEISAAQPLLRPN  533
+            S+IEAVK    LQMEP+MQS TK Y  PLD+PASP SDVNDIKGTPPEEIS AQ LL PN
+Sbjct  744  SKIEAVKLQIILQMEPQMQSMTKXYHGPLDQPASPCSDVNDIKGTPPEEISTAQHLLCPN  803
+
+Query  534  SAGSS  538
+            SAGSS
+Sbjct  804  SAGSS  808
+
+
+>XP_063660068.1 syncytin-1-like [Pan troglodytes]
+Length=475
+
+ Score = 835 bits (2158),  Expect = 0.0, Method: Compositional matrix adjust.
+ Identities = 420/474 (89%), Positives = 437/474 (92%), Gaps = 4/474 (1%)
+
+Query  68   MPRNCYHSATLCMHANTHYWTGKMINPSCPGGLGVTVCWTYFTQTGMSDGGGVQDQAREK  127
+            MPRNCY+SATLCMHANTHYWTGKMINPSCPGGLG TVCWTYFT T MSDGGG+Q QAREK
+Sbjct  1    MPRNCYNSATLCMHANTHYWTGKMINPSCPGGLGATVCWTYFTHTSMSDGGGIQGQAREK  60
+
+Query  128  HVKEVISQLTRVHGTSSPYKGLDLSKLHETLRTHTRLVSLFNTTLTGLHEVSAQNPTNCW  187
+             VKE ISQLTR H T SPYKGL LSKLHETLRTHTRLVSLFNTTLT LHEVSAQNPTNCW
+Sbjct  61   QVKEAISQLTRGHSTPSPYKGLVLSKLHETLRTHTRLVSLFNTTLTRLHEVSAQNPTNCW  120
+
+Query  188  ICLPLNFRPYVSIPVPEQWNNFSTEINTTSVLVGPLVSNLEITHTSNLTCVKFSNTTYTT  247
+            +CLPL+FRPY+SIPVPEQWNNFSTEINTTSVLVGPLVSNLEITHTSNLTCVKFSNT  TT
+Sbjct  121  MCLPLHFRPYISIPVPEQWNNFSTEINTTSVLVGPLVSNLEITHTSNLTCVKFSNTIDTT  180
+
+Query  248  NSQCIRWVTPPTQIVCLPSGIFFVCGTSAYRCLNGSSESMCFLSFLVPPMTIYTEQDLYS  307
+            +SQCIRWVTPPT+IVCLPSGIFFVCGTSAY CLNG SESMCFLSFLVPPMTIYTEQDLY+
+Sbjct  181  SSQCIRWVTPPTRIVCLPSGIFFVCGTSAYHCLNGFSESMCFLSFLVPPMTIYTEQDLYN  240
+
+Query  308  YVISKPRNKRVPILPFVIGAGVLGALGTGIGGITTSTQFYYKLSQELNGDMERVADSLVT  367
+            +VI KP NKRVPILPFVI AGVLG LGTGIGGITTSTQFYYKLSQE+NGDME+V DSLVT
+Sbjct  241  HVIPKPHNKRVPILPFVIRAGVLGRLGTGIGGITTSTQFYYKLSQEINGDMEQVTDSLVT  300
+
+Query  368  LQDQLNSLAAVVLQNRRALDLLTAERGGTCLFLGEECCYYVNQSGIVTEKVKEIRDRIQR  427
+            LQDQLNSLAAVVLQNRRALDLLTA+RGGTCLFLGEECCYYVNQS IVTEKVKEIRDRIQ 
+Sbjct  301  LQDQLNSLAAVVLQNRRALDLLTAKRGGTCLFLGEECCYYVNQSRIVTEKVKEIRDRIQC  360
+
+Query  428  RAEELRNTGPWGLLSQWMPWILPFLGPLAAIILLLLFGPCIFNLLVNFVSSRIEAVK---  484
+            RAEEL+NT  WGLLSQWMPW+LPFLGPLAA+ILLLLFGPCIFNLLV FVSSRIEAVK   
+Sbjct  361  RAEELQNTEHWGLLSQWMPWVLPFLGPLAALILLLLFGPCIFNLLVKFVSSRIEAVKLQM  420
+
+Query  485  -LQMEPKMQSKTKIYRRPLDRPASPRSDVNDIKGTPPEEISAAQPLLRPNSAGS  537
+             LQMEP+MQS TKIY  PLD+PASP SDVNDIKGTPPEEIS AQPL  P SAGS
+Sbjct  421  VLQMEPQMQSMTKIYHGPLDQPASPCSDVNDIKGTPPEEISTAQPLPCPISAGS  474
+
+
+>XP_063495487.1 protein PIGBOS1 isoform X1 [Symphalangus syndactylus]
+Length=442
+
+ Score = 691 bits (1783),  Expect = 0.0, Method: Compositional matrix adjust.
+ Identities = 354/401 (88%), Positives = 371/401 (93%), Gaps = 6/401 (1%)
+
+Query  99   GLGVTVCWTYFTQTGMSDGGGVQDQAREKHVKEVISQLTRVHGTSSPYKGLDLSKLHETL  158
+            GL  TVCWTYFT TGMSDGGGVQDQAREKH+ EVISQLT VH T SPYK LDLSKLHETL
+Sbjct  44   GLRATVCWTYFTHTGMSDGGGVQDQAREKHINEVISQLTWVHSTPSPYKVLDLSKLHETL  103
+
+Query  159  RTHTRLVSLFNTTLTGLHEVSAQNPTNCWICLPLNFRPYVSIPVPEQWNNFSTEINTTSV  218
+            RTHT LVSLFNT LTGLHEV A+NPTN W+CLPL+ RPY+SIPVPEQWNNFSTEINTTSV
+Sbjct  104  RTHTCLVSLFNTNLTGLHEVLAENPTNRWMCLPLHLRPYISIPVPEQWNNFSTEINTTSV  163
+
+Query  219  LVGPLVSNLEITHTSNLTCVKFSNTTYTTNSQCIRWVTPPTQIVCLPSGIFFVCGTSAYR  278
+            LVGPLVSNLEITHTSNLTCVKFSNT  TTNSQCI+WVTPPT+IVCLPSGIFFVCGTSAYR
+Sbjct  164  LVGPLVSNLEITHTSNLTCVKFSNTIDTTNSQCIKWVTPPTRIVCLPSGIFFVCGTSAYR  223
+
+Query  279  CLNGSSESMCFLSFLVPPMTIYTEQDLYSYVISKPRNKRVPILPFVIGAGVLGALGTGIG  338
+             LNGSSESMCFLSFLVPPMTIYTEQDLY+YV+ KPRNKRVPILPFV+G GVLG LGTG+G
+Sbjct  224  -LNGSSESMCFLSFLVPPMTIYTEQDLYNYVVPKPRNKRVPILPFVVGVGVLGRLGTGMG  282
+
+Query  339  GITTSTQFYYKLSQELNGDMERVADSLVTLQDQLNSLAAVVLQNRRALDLLTAERGGTCL  398
+            GITTSTQFYYKLSQELNGDME V DSLVTLQDQLNSLAAVVLQN+RALDLLT ERGGTCL
+Sbjct  283  GITTSTQFYYKLSQELNGDMEWVTDSLVTLQDQLNSLAAVVLQNQRALDLLTTERGGTCL  342
+
+Query  399  FLGEECCYYVNQSGIVTEKVKEIRDRIQRRAEELRNTGPWGLLSQWMPWILPFLGPLAAI  458
+            FLGEECC YVNQSGI+T+KVKEIRD+IQR AEEL+NTGPWGLLSQWMPWILPFLGPLAAI
+Sbjct  343  FLGEECC-YVNQSGIITKKVKEIRDQIQRGAEELQNTGPWGLLSQWMPWILPFLGPLAAI  401
+
+Query  459  ILLLLFGPCIFNLLVNFVSSRIEAVK----LQMEPKMQSKT  495
+            ILLLLFGPCIFNLLV FVSSRIEAVK    LQMEP+MQS T
+Sbjct  402  ILLLLFGPCIFNLLVKFVSSRIEAVKLQIVLQMEPQMQSMT  442
+
+
+>XP_054409599.1 syncytin-1-like [Pongo abelii]
+Length=380
+
+ Score = 653 bits (1685),  Expect = 0.0, Method: Compositional matrix adjust.
+ Identities = 327/383 (85%), Positives = 337/383 (88%), Gaps = 3/383 (1%)
+
+Query  41   MQRPGNIDAPSYRSLSKGTPTFTAHTHMPRNCYHSATLCMHANTHYWTGKMINPSCPGGL  100
+            M+ P NI+APSYRS SKG  TFT HTHMPRNCY SATLC HANTHYWTGKMIN +CPGGL
+Sbjct  1    MRLPRNINAPSYRSFSKGNSTFTTHTHMPRNCYTSATLCKHANTHYWTGKMINLTCPGGL  60
+
+Query  101  GVTVCWTYFTQTGMSDGGGVQDQAREKHVKEVISQLTRVHGTSSPYKGLDLSKLHETLRT  160
+            G TVCWTYFT T MSDGGGVQDQAREKH +EVISQLTRVH TS PYKGL L KLHETL T
+Sbjct  61   GATVCWTYFTHTSMSDGGGVQDQAREKHPREVISQLTRVHSTSRPYKGLALLKLHETLHT  120
+
+Query  161  HTRLVSLFNTTLTGLHEVSAQNPTNCWICLPLNFRPYVSIPVPEQWNNFSTEINTTSVLV  220
+            HT LVSLFNTTLTGLHE  AQNPT CW+C PL+FRPY SIPVPEQWNNFSTEINTTSVLV
+Sbjct  121  HTPLVSLFNTTLTGLHEALAQNPTKCWMCFPLHFRPYTSIPVPEQWNNFSTEINTTSVLV  180
+
+Query  221  GPLVSNLEITHTSNLTCVKFSNTTYTTNSQCIRWVTPPTQIVCLPSGIFFVCGTSAYRCL  280
+            GPLVSNLEITHTSNLTCVKFSNT  TTNSQ IR VTPPT+IVCLPSGI     TSAY CL
+Sbjct  181  GPLVSNLEITHTSNLTCVKFSNTIDTTNSQHIRRVTPPTRIVCLPSGIL---PTSAYHCL  237
+
+Query  281  NGSSESMCFLSFLVPPMTIYTEQDLYSYVISKPRNKRVPILPFVIGAGVLGALGTGIGGI  340
+            NGSSESMC LSFLVPPMTIYTEQDLY+YVI KP NK VPIL FVI AGVLG LGTGIG I
+Sbjct  238  NGSSESMCILSFLVPPMTIYTEQDLYNYVIPKPCNKTVPILSFVIRAGVLGRLGTGIGSI  297
+
+Query  341  TTSTQFYYKLSQELNGDMERVADSLVTLQDQLNSLAAVVLQNRRALDLLTAERGGTCLFL  400
+            TTSTQFYYKLSQELNGDMERVADSLVTLQDQLNSLAAVVLQNRRALDLLTA+ GGTCLFL
+Sbjct  298  TTSTQFYYKLSQELNGDMERVADSLVTLQDQLNSLAAVVLQNRRALDLLTAKTGGTCLFL  357
+
+Query  401  GEECCYYVNQSGIVTEKVKEIRD  423
+            GEE C YVNQS IVT+KVKEIRD
+Sbjct  358  GEEFCCYVNQSRIVTKKVKEIRD  380
+
+
+>AAL11494.1 envelope protein, partial [Homo sapiens]
+Length=319
+
+ Score = 631 bits (1628),  Expect = 0.0, Method: Compositional matrix adjust.
+ Identities = 302/319 (95%), Positives = 307/319 (96%), Gaps = 0/319 (0%)
+
+Query  1    MALPYHIFLFTVLLPSFTLTAPPPCRCMTSSSPYQEFLWRMQRPGNIDAPSYRSLSKGTP  60
+            MALPYHIFLFTVLLPSFTLTAPPPCRCMTSSSPYQEFLWRMQRPGNIDAPSYRSLSKGTP
+Sbjct  1    MALPYHIFLFTVLLPSFTLTAPPPCRCMTSSSPYQEFLWRMQRPGNIDAPSYRSLSKGTP  60
+
+Query  61   TFTAHTHMPRNCYHSATLCMHANTHYWTGKMINPSCPGGLGVTVCWTYFTQTGMSDGGGV  120
+            TFTAHTHMPRNCYHSATLC HANTHYWTGKMINPSCPGGLGVTVCWTYFTQTGMSDGGGV
+Sbjct  61   TFTAHTHMPRNCYHSATLCXHANTHYWTGKMINPSCPGGLGVTVCWTYFTQTGMSDGGGV  120
+
+Query  121  QDQAREKHVKEVISQLTRVHGTSSPYKGLDLSKLHETLRTHTRLVSLFNTTLTGLHEVSA  180
+            QDQAREKHVKEVISQLTRVHGTSSPYKGLDLSKLHETLRTHTRLVSLFNT LTGLHEVSA
+Sbjct  121  QDQAREKHVKEVISQLTRVHGTSSPYKGLDLSKLHETLRTHTRLVSLFNTALTGLHEVSA  180
+
+Query  181  QNPTNCWICLPLNFRPYVSIPVPEQWNNFSTEINTTSVLVGPLVSNLEITHTSNLTCVKF  240
+            QNPTN W+CLPL+FRPY+S PVPEQWNNFSTEI TTSVLVGPL SN+EI HTSNLTCVKF
+Sbjct  181  QNPTNSWMCLPLHFRPYISTPVPEQWNNFSTEIITTSVLVGPLASNVEIIHTSNLTCVKF  240
+
+Query  241  SNTTYTTNSQCIRWVTPPTQIVCLPSGIFFVCGTSAYRCLNGSSESMCFLSFLVPPMTIY  300
+            SNT  TTNSQCIRWVTPPT+IVCLPSGIFFVCGTSAY CLN  SESMCFLSFLVPPMTIY
+Sbjct  241  SNTIDTTNSQCIRWVTPPTRIVCLPSGIFFVCGTSAYHCLNSFSESMCFLSFLVPPMTIY  300
+
+Query  301  TEQDLYSYVISKPRNKRVP  319
+            TEQDLYSYVISKPRNKRVP
+Sbjct  301  TEQDLYSYVISKPRNKRVP  319
+
+
+>XP_063565306.1 LOW QUALITY PROTEIN: uncharacterized protein [Gorilla gorilla 
+gorilla]
+Length=888
+
+ Score = 592 bits (1527),  Expect = 0.0, Method: Compositional matrix adjust.
+ Identities = 320/401 (80%), Positives = 334/401 (83%), Gaps = 16/401 (4%)
+
+Query  151  LSKLHETL-----RTHTRLVSLFNTTLTGLHEVSAQNPTNCWICL---PLNFRPYVSIPV  202
+            L  LH+T       TH    SLF  T  GL +   Q    C +C    PL+FR Y+SIPV
+Sbjct  491  LKTLHQTFPLGIDSTHQMAKSLF--TGPGLFKTIKQIVRACKVCQKNNPLHFRSYISIPV  548
+
+Query  203  PEQWNNFSTEINTTSVLVGPLVSNLEITHTSNLTCVKFSNTTYTTNSQCIRWVTPPTQIV  262
+            PEQWNNFS EINTTS+LVGPLVSNLEITHTSNLTCVKF+NT  TTNS CIRWVTPPTQIV
+Sbjct  549  PEQWNNFSPEINTTSILVGPLVSNLEITHTSNLTCVKFTNTIDTTNSXCIRWVTPPTQIV  608
+
+Query  263  CLPSGIFFVCGTSAYRCLNGSSESMCFLSFLVPPMTIYTEQDLYSYVISKPRNKRVPILP  322
+            CLPSGIFFVC TSAYRCLNGSSESMCFLSFLVPPMTIYTEQDLY+YV+ KPRNKRVPILP
+Sbjct  609  CLPSGIFFVCXTSAYRCLNGSSESMCFLSFLVPPMTIYTEQDLYNYVVPKPRNKRVPILP  668
+
+Query  323  FVIGAGVLGALGTGIGGITTSTQFYYKLSQELNGDMERVADSLVTLQDQLNSLAAVVLQN  382
+            FVIGAGVLG LGT IGGITT TQF YKL QELNGDME V D LVTLQDQLNSLA VVLQN
+Sbjct  669  FVIGAGVLGRLGTRIGGITTPTQF-YKLFQELNGDMEWVTDFLVTLQDQLNSLATVVLQN  727
+
+Query  383  RRALDL-LTAERGGTCLFLGEECCYYVNQSGIVTEKVKEIRDRIQRRAEELRNTGPWGLL  441
+            RRALD  L A+RGGTCLFLGEECCYYVNQS IVTEKVKEIRD IQ RAEEL+NTGPWGLL
+Sbjct  728  RRALDFRLIAKRGGTCLFLGEECCYYVNQSRIVTEKVKEIRDCIQHRAEELQNTGPWGLL  787
+
+Query  442  SQWMPWILPFLGPLAAIILLLLFGPCIFNLLVNFVSSRIEAVK----LQMEPKMQSKTKI  497
+            SQWMPWILPFLGPLAAIILLLLFGPCIFNLLV  VSSRIEAVK    LQMEP+ QS TKI
+Sbjct  788  SQWMPWILPFLGPLAAIILLLLFGPCIFNLLVKLVSSRIEAVKLQIVLQMEPQRQSITKI  847
+
+Query  498  YRRPLDRPASPRSDVNDIKGTPPEEISAAQPLLRPNSAGSS  538
+            YR  LD PASP SDV+DI+GTPPEEIS A PLL PNSAGSS
+Sbjct  848  YRGSLDXPASPCSDVDDIEGTPPEEISTAXPLLFPNSAGSS  888
+
+
+>XP_055153865.1 LOW QUALITY PROTEIN: syncytin-1-like [Symphalangus syndactylus]
+Length=486
+
+ Score = 579 bits (1492),  Expect = 0.0, Method: Compositional matrix adjust.
+ Identities = 298/363 (82%), Positives = 323/363 (89%), Gaps = 3/363 (1%)
+
+Query  179  SAQNPTNCWICLPLNFRPYVSIPVPEQWNNFSTEINTTSVLVGPLVSNLEITHTSNLTCV  238
+            S+QNPTNCW+CLPL+FRPY+SIPVPEQWNNFSTEI TTS+LVGPLVSNLEITHTSNLTCV
+Sbjct  124  SSQNPTNCWMCLPLHFRPYISIPVPEQWNNFSTEIKTTSILVGPLVSNLEITHTSNLTCV  183
+
+Query  239  KFSNTTYTTNSQCIRWVTPPTQIVCLPSGIFFVCGTSAYRCLNGSSESMCFLSFLVPPMT  298
+            KFSN+  TTNSQCIRWVTPPTQ+VCL SGIFF C TSAY CLNG SESMCFLSFL+ PMT
+Sbjct  184  KFSNSIDTTNSQCIRWVTPPTQMVCLSSGIFFFCSTSAYHCLNGFSESMCFLSFLMLPMT  243
+
+Query  299  IYTEQDLYSYVISKPRNKRVPILPFVIGAGVLGALGTGIGGITTSTQFYYKLSQELNGDM  358
+            IYTEQDLY+ V+ KP+NKRV ILPFVIGAGVLG LGTGIG ITTSTQFY KLSQELNGDM
+Sbjct  244  IYTEQDLYNCVVPKPQNKRVLILPFVIGAGVLGGLGTGIGSITTSTQFYCKLSQELNGDM  303
+
+Query  359  ERVADSLVTLQDQLNSLAAVVLQNRRALDLLTAERGGTCLFLGEECCYYVNQSGIVTEKV  418
+            E V +SLVTLQDQLNS AAVVLQNRRALDLLTAERGGTCLFLG E  +YVNQSGI+T+KV
+Sbjct  304  EWVTNSLVTLQDQLNSPAAVVLQNRRALDLLTAERGGTCLFLGXESFHYVNQSGIITKKV  363
+
+Query  419  KEIRDRIQRRAEELRNTGPWGLLSQWMPWILPFLGPLAAIILLLLFGPCIFNLLVNFVSS  478
+            KEI+DRIQRRAEEL+NT PWGLLSQWM  ILPFLG LAAI LLLLFGPCIFNL V FVSS
+Sbjct  364  KEIKDRIQRRAEELQNTRPWGLLSQWMSCILPFLGLLAAIRLLLLFGPCIFNLFVKFVSS  423
+
+Query  479  RIEAVK---LQMEPKMQSKTKIYRRPLDRPASPRSDVNDIKGTPPEEISAAQPLLRPNSA  535
+            RI+AVK   LQMEP+ QS TKIY  PLD+PASP S+ +DI+GTPP+EIS A+ LL PNSA
+Sbjct  424  RIKAVKTDVLQMEPQKQSMTKIYHGPLDQPASPCSNADDIEGTPPKEISTARSLLCPNSA  483
+
+Query  536  GSS  538
+            GSS
+Sbjct  484  GSS  486
+
+
+>XP_063663143.1 LOW QUALITY PROTEIN: syncytin-1-like [Pan troglodytes]
+Length=543
+
+ Score = 574 bits (1479),  Expect = 0.0, Method: Compositional matrix adjust.
+ Identities = 319/372 (86%), Positives = 338/372 (91%), Gaps = 7/372 (2%)
+
+Query  171  TLTGLHEVSAQNPTNCWICLPLNFRPYVSIPVPEQWNNFSTEINTTSVLVGPLVSNLEIT  230
+            T TGL   S+QNPTN W+CLPL+FRPY+SIPVPEQ NN ST+INTTSVLVGPLVSNLEIT
+Sbjct  175  TYTGLS--SSQNPTNFWMCLPLHFRPYISIPVPEQCNNSSTKINTTSVLVGPLVSNLEIT  232
+
+Query  231  HTSNLTCVKFSNTTYTTNSQCIRWVTPPTQIVCLPSGIFFVCGTSAYRCLNGSSESMCFL  290
+            HTSNL C+KFSNT  TTNSQCIRWVTPPT+IVCL  GIFFVCGTSA  CLNGSSESMCFL
+Sbjct  233  HTSNLICIKFSNTIDTTNSQCIRWVTPPTRIVCLSLGIFFVCGTSAC-CLNGSSESMCFL  291
+
+Query  291  SFLVPPMTIYTEQDLYSYVISKPRNKRVPILPFVIGAGVLGALGTGIGGITTSTQFYYKL  350
+            SFLVPPMTIYTEQDLY++V  KPRNKRVPILPF+IGAGVLG LGTG GGITTSTQFYYKL
+Sbjct  292  SFLVPPMTIYTEQDLYNHVAPKPRNKRVPILPFIIGAGVLGGLGTGTGGITTSTQFYYKL  351
+
+Query  351  SQELNGDMERVADSLVTLQDQLNSLAAVVLQNRRALDLLTAERGGTCLFLGEECCYYVNQ  410
+            SQELN D ERV +SLVTLQDQLNSLAAVVLQNRRALDLLTAER GTCLFLGEECCYYVNQ
+Sbjct  352  SQELNDDTERVTNSLVTLQDQLNSLAAVVLQNRRALDLLTAEREGTCLFLGEECCYYVNQ  411
+
+Query  411  SGIVTEKVKEIRDRIQRRAEELRNTGPWGLLSQWMPWILPFLGPLAAIILLLLFGPCIFN  470
+            SGIVTEKVKEIRDRIQRRAEEL+NTGPWGLLSQWMPWILPFLGPLAAIILLLLFGPC+FN
+Sbjct  412  SGIVTEKVKEIRDRIQRRAEELQNTGPWGLLSQWMPWILPFLGPLAAIILLLLFGPCVFN  471
+
+Query  471  LLVNFVSSRIEAVKLQM----EPKMQSKTKIYRRPLDRPASPRSDVNDIKGTPPEEISAA  526
+            LLV FVSSRI+AV+LQM    E +MQS TKIY  PLDRPASP S+VNDI+GTPP+EIS A
+Sbjct  472  LLVKFVSSRIKAVQLQMVLQIELQMQSTTKIYCGPLDRPASPCSNVNDIEGTPPKEISTA  531
+
+Query  527  QPLLRPNSAGSS  538
+            QPLL PNSAGSS
+Sbjct  532  QPLLCPNSAGSS  543
+
+
+>XP_050662900.1 LOW QUALITY PROTEIN: syncytin-1-like [Macaca thibetana thibetana]
+Length=469
+
+ Score = 566 bits (1458),  Expect = 0.0, Method: Compositional matrix adjust.
+ Identities = 301/352 (86%), Positives = 314/352 (89%), Gaps = 9/352 (3%)
+
+Query  191  PLNFRPYVSIPVPEQWNNFSTEINTTSVLVGPLVSNLEITHTSNLTCVKFSNTTYTTNSQ  250
+            PL+FRPY+SIPVPE WNNFSTEINTTSVLVGPLVSNLE  HTSNLT VKFSNT  TTNSQ
+Sbjct  123  PLHFRPYISIPVPELWNNFSTEINTTSVLVGPLVSNLETIHTSNLTYVKFSNTVDTTNSQ  182
+
+Query  251  CIRWVTPPTQIVCLPSGIFFVCGTSAYRCLNGSSESMCFLSFLVPPMTIYTEQDLYSYVI  310
+            CIRWVTPPTQ VCLPSGIFFVCGTSAY  LNGSSES CFLSFL PPMTIYTEQDLY++V 
+Sbjct  183  CIRWVTPPTQRVCLPSGIFFVCGTSAYCYLNGSSESTCFLSFLGPPMTIYTEQDLYNHVE  242
+
+Query  311  SKPRNKRVPILPFVIGAGVLGALGTGIGGITTSTQFYYKLSQELNGDMERVADSLVTLQD  370
+             KPRNKRVPILPFVI AGVLG LGTGIGGITTSTQFYYK+SQELNGDME+VADS+VTL  
+Sbjct  243  PKPRNKRVPILPFVIRAGVLGGLGTGIGGITTSTQFYYKVSQELNGDMEQVADSIVTL--  300
+
+Query  371  QLNSLAAVVLQNRRALDLLTAERGGTCLFLGEECCYYVNQSGIVTEKVKEIRDRIQRRAE  430
+                LAAVVLQN+RALDLLT ER GTCLFLGEECCYYVNQSGI+TEKVKEIRDRIQRRAE
+Sbjct  301  ---XLAAVVLQNQRALDLLTXEREGTCLFLGEECCYYVNQSGIITEKVKEIRDRIQRRAE  357
+
+Query  431  ELRNTGPWGLLSQWMPWILPFLGPLAAIILLLLFGPCIFNLLVNFVSSRIEAVKL----Q  486
+            E +NTGPWGLLSQWMPWILP LGPLAAII+L LFGPCIFNLLV  VSSRIEAVKL    Q
+Sbjct  358  EFQNTGPWGLLSQWMPWILPSLGPLAAIIVLFLFGPCIFNLLVKLVSSRIEAVKLQIVFQ  417
+
+Query  487  MEPKMQSKTKIYRRPLDRPASPRSDVNDIKGTPPEEISAAQPLLRPNSAGSS  538
+            MEP+MQS TKIY  PLDRPASP SDVNDI+GTPPEEISAAQPLL  NSAGSS
+Sbjct  418  MEPQMQSMTKIYCGPLDRPASPCSDVNDIEGTPPEEISAAQPLLHTNSAGSS  469
+
+
+
+Lambda      K        H
+   0.321    0.135    0.426 
+
+Gapped
+Lambda      K        H
+   0.267   0.0410    0.140 
+
+Effective search space used: 31179095985930
+
+
+  Database: clustered nr
+    Posted date:  Mar 9, 2024 12:10 AM
+  Number of letters in database: 117,307,649,189
+  Number of sequences in database:  357,442,162
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Window for multiple hits: 40

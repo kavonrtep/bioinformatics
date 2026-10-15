@@ -1,0 +1,741 @@
+# NCBI BLAST search run on 2026-10-15 (RID D29E4AN5014)
+# qseqid	saccver	pident	length	mismatch	gapopen	qstart	qend	sstart	send	evalue	bitscore	qcovs	staxids	stitle
+NC_045512.2	MT926410.1	99.990	29903	3	0	1	29903	691	30593	0.0	55204	100	2767255	Reverse genetics vector pCCI-4K-SARS-CoV-2-Wuhan-Hu-1, complete sequence
+NC_045512.2	OZ204570.1	99.973	29878	0	1	1	29870	1	29878	0.0	55123	100	694009	Severe acute respiratory syndrome-related coronavirus genome assembly, chromosome: 1
+NC_045512.2	HG994854.1	99.953	29782	14	0	55	29836	55	29836	0.0	54924	100	694009	Severe acute respiratory syndrome-related coronavirus isolate H_SC_03 genome assembly, complete genome: monopartite
+NC_045512.2	HG994852.1	99.933	29782	17	1	55	29836	55	29833	0.0	54887	100	694009	Severe acute respiratory syndrome-related coronavirus isolate H_SC_01 genome assembly, complete genome: monopartite
+NC_045512.2	HG994855.1	99.926	29782	22	0	55	29836	55	29836	0.0	54885	100	694009	Severe acute respiratory syndrome-related coronavirus isolate H_SC_06 genome assembly, complete genome: monopartite
+NC_045512.2	HG994857.1	99.926	29782	22	0	55	29836	55	29836	0.0	54885	100	694009	Severe acute respiratory syndrome-related coronavirus isolate H_SC_08 genome assembly, complete genome: monopartite
+NC_045512.2	OY757873.1	99.458	29900	109	4	3	29902	1	29847	0.0	54268	100	694009	Severe acute respiratory syndrome-related coronavirus isolate DW-RAT-192 genome assembly, chromosome: 1
+NC_045512.2	OY757872.1	99.455	29898	107	5	4	29901	1	29842	0.0	54259	100	694009	Severe acute respiratory syndrome-related coronavirus isolate DW-RAT-193 genome assembly, chromosome: 1
+NC_045512.2	OY757878.1	99.432	29906	111	6	4	29903	1	29853	0.0	54240	100	694009	Severe acute respiratory syndrome-related coronavirus isolate DW-RAT-195 genome assembly, chromosome: 1
+NC_045512.2	OY757870.1	99.445	29894	110	5	7	29900	5	29842	0.0	54233	100	694009	Severe acute respiratory syndrome-related coronavirus isolate DW-RAT-194 genome assembly, chromosome: 1
+NC_045512.2	OY757875.1	99.414	29886	113	7	24	29903	18	29847	0.0	54163	100	694009	Severe acute respiratory syndrome-related coronavirus isolate DW-RAT-191 genome assembly, chromosome: 1
+NC_045512.2	MW289908.1	99.986	27760	3	1	1	27759	691	28450	0.0	51240	100	2797845	Reverse genetics vector pCCI-4K-SARS-CoV-2-ZsGreen, complete sequence
+NC_045512.2	MW289908.1	100.000	2152	0	0	27752	29903	29192	31343	0.0	3975	100	2797845	Reverse genetics vector pCCI-4K-SARS-CoV-2-ZsGreen, complete sequence
+NC_045512.2	MT926412.1	99.986	27760	3	1	1	27759	691	28450	0.0	51240	100	2767257	Reverse genetics vector pCCI-4K-SARS-CoV-2-NanoLuc, complete sequence
+NC_045512.2	MT926412.1	100.000	2150	0	0	27754	29903	29014	31163	0.0	3971	100	2767257	Reverse genetics vector pCCI-4K-SARS-CoV-2-NanoLuc, complete sequence
+NC_045512.2	MT926411.1	99.986	27760	3	1	1	27759	691	28450	0.0	51240	100	2767256	Reverse genetics vector pCCI-4K-SARS-CoV-2-mCherry, complete sequence
+NC_045512.2	MT926411.1	100.000	2150	0	0	27754	29903	29209	31358	0.0	3971	100	2767256	Reverse genetics vector pCCI-4K-SARS-CoV-2-mCherry, complete sequence
+NC_045512.2	MZ937000.1	96.851	29881	896	9	25	29903	1	29838	0.0	49925	100	1508220	Bat coronavirus isolate BANAL-20-52/Laos/2020, complete genome
+NC_045512.2	PP856573.1	96.850	29872	898	7	1	29870	1	29831	0.0	49910	100	1508220	Mutant Bat coronavirus clone BANAL-52, complete genome
+NC_045512.2	MN996532.2	96.137	29877	1130	7	1	29875	1	29855	0.0	48758	100	2709072	Bat coronavirus RaTG13, complete genome
+NC_045512.2	OP963576.1	92.302	29876	2247	38	3	29859	3	29844	0.0	42383	100	3020201	Bat SARS-like virus BtSY2 ORF1ab polyprotein (ORF1ab), ORF1a polyprotein (ORF1ab), surface glycoprotein, ORF3a protein, ORF3b protein, envelope protein, membrane protein M, ORF6 protein, ORF7a protein, ORF7b protein, ORF8 protein, nucleocapsid phosphoprotein, and ORF10 protein genes, complete cds
+NC_045512.2	OR233302.1	92.189	29854	2285	33	28	29865	1	29823	0.0	42167	100	3068538	Horseshoe bat sarbecovirus isolate Rp22DB159, complete genome
+NC_045512.2	PV839359.1	92.158	26613	2043	27	3308	29903	3260	29845	0.0	37543	100	694009	Severe acute respiratory syndrome-related coronavirus isolate RpuRB21065.RSL, partial genome
+NC_045512.2	PV839359.1	90.302	3207	302	5	1	3207	1	3198	0.0	4191	100	694009	Severe acute respiratory syndrome-related coronavirus isolate RpuRB21065.RSL, partial genome
+NC_045512.2	MZ081381.1	97.206	21583	594	7	1	21581	1	21576	0.0	36507	95	2872809	Betacoronavirus sp. RpYN06 strain bat/Yunnan/RpYN06/2020, complete genome
+NC_045512.2	MZ081381.1	93.339	6816	421	23	23075	29881	23002	29793	0.0	10041	95	2872809	Betacoronavirus sp. RpYN06 strain bat/Yunnan/RpYN06/2020, complete genome
+NC_045512.2	MZ937001.1	96.702	21955	661	32	43	21978	2	21912	0.0	36474	98	1508220	Bat coronavirus isolate BANAL-20-103/Laos/2020, complete genome
+NC_045512.2	MZ937001.1	95.541	7400	305	11	22331	29725	22253	29632	0.0	11814	98	1508220	Bat coronavirus isolate BANAL-20-103/Laos/2020, complete genome
+NC_045512.2	PP856574.1	96.517	21995	701	32	1	21975	1	21950	0.0	36313	99	1508220	Mutant Bat coronavirus clone BANAL-236, complete genome
+NC_045512.2	PP856574.1	95.851	7544	290	9	22331	29870	22294	29818	0.0	12176	99	1508220	Mutant Bat coronavirus clone BANAL-236, complete genome
+NC_045512.2	MZ937003.2	96.513	21994	702	32	2	21975	1	21949	0.0	36306	99	1508220	Bat coronavirus isolate BANAL-20-236/Laos/2020, complete genome
+NC_045512.2	MZ937003.2	95.866	7571	290	9	22331	29897	22293	29844	0.0	12225	99	1508220	Bat coronavirus isolate BANAL-20-236/Laos/2020, complete genome
+NC_045512.2	MZ937004.1	97.047	21539	629	3	39	21577	1	21532	0.0	36245	94	1508220	Bat coronavirus isolate BANAL-20-247/Laos/2020, complete genome
+NC_045512.2	MZ937004.1	91.038	4854	383	39	23074	27910	22909	27727	0.0	6506	94	1508220	Bat coronavirus isolate BANAL-20-247/Laos/2020, complete genome
+NC_045512.2	MZ937004.1	97.792	1585	35	0	28257	29841	28061	29645	0.0	2734	94	1508220	Bat coronavirus isolate BANAL-20-247/Laos/2020, complete genome
+NC_045512.2	MZ937002.1	97.085	21341	618	2	237	21577	1	21337	0.0	35960	93	1508220	Bat coronavirus isolate BANAL-20-116/Laos/2020, complete genome
+NC_045512.2	MZ937002.1	90.770	4854	386	40	23074	27910	22714	27522	0.0	6425	93	1508220	Bat coronavirus isolate BANAL-20-116/Laos/2020, complete genome
+NC_045512.2	MZ937002.1	98.040	1582	31	0	28257	29838	27856	29437	0.0	2750	93	1508220	Bat coronavirus isolate BANAL-20-116/Laos/2020, complete genome
+NC_045512.2	PV839353.1	90.848	26618	2311	80	3337	29903	3280	29823	0.0	35543	100	694009	Severe acute respiratory syndrome-related coronavirus isolate RpuRB22384.RSL, partial genome
+NC_045512.2	PV839353.1	89.835	3207	323	1	1	3207	1	3204	0.0	4113	100	694009	Severe acute respiratory syndrome-related coronavirus isolate RpuRB22384.RSL, partial genome
+NC_045512.2	HG994858.1	99.938	19221	12	0	55	19275	55	19275	0.0	35432	99	694009	Severe acute respiratory syndrome-related coronavirus isolate H_SC_09 genome assembly, complete genome: monopartite
+NC_045512.2	HG994858.1	99.912	10266	9	0	19571	29836	19571	29836	0.0	18912	99	694009	Severe acute respiratory syndrome-related coronavirus isolate H_SC_09 genome assembly, complete genome: monopartite
+NC_045512.2	HG994859.1	99.932	19221	13	0	55	19275	55	19275	0.0	35427	99	694009	Severe acute respiratory syndrome-related coronavirus isolate H_SC_10 genome assembly, complete genome: monopartite
+NC_045512.2	HG994859.1	99.932	10266	7	0	19571	29836	19571	29836	0.0	18920	99	694009	Severe acute respiratory syndrome-related coronavirus isolate H_SC_10 genome assembly, complete genome: monopartite
+NC_045512.2	HG994856.1	99.932	19221	13	0	55	19275	55	19275	0.0	35425	96	694009	Severe acute respiratory syndrome-related coronavirus isolate H_SC_07 genome assembly, complete genome: monopartite
+NC_045512.2	HG994856.1	99.967	6125	2	0	21387	27511	21387	27511	0.0	11300	96	694009	Severe acute respiratory syndrome-related coronavirus isolate H_SC_07 genome assembly, complete genome: monopartite
+NC_045512.2	HG994856.1	99.937	1576	1	0	19571	21146	19571	21146	0.0	2905	96	694009	Severe acute respiratory syndrome-related coronavirus isolate H_SC_07 genome assembly, complete genome: monopartite
+NC_045512.2	HG994856.1	99.742	1548	4	0	27809	29356	27809	29356	0.0	2837	96	694009	Severe acute respiratory syndrome-related coronavirus isolate H_SC_07 genome assembly, complete genome: monopartite
+NC_045512.2	HG994856.1	99.693	326	1	0	29511	29836	29511	29836	3.24e-164	597	96	694009	Severe acute respiratory syndrome-related coronavirus isolate H_SC_07 genome assembly, complete genome: monopartite
+NC_045512.2	HG994853.1	99.896	19221	20	0	55	19275	55	19275	0.0	35397	96	694009	Severe acute respiratory syndrome-related coronavirus isolate H_SC_02 genome assembly, complete genome: monopartite
+NC_045512.2	HG994853.1	99.863	5829	6	1	21683	27511	21683	27509	0.0	10722	96	694009	Severe acute respiratory syndrome-related coronavirus isolate H_SC_02 genome assembly, complete genome: monopartite
+NC_045512.2	HG994853.1	99.951	2028	1	0	27809	29836	27807	29834	0.0	3740	96	694009	Severe acute respiratory syndrome-related coronavirus isolate H_SC_02 genome assembly, complete genome: monopartite
+NC_045512.2	HG994853.1	100.000	1576	0	0	19571	21146	19571	21146	0.0	2911	96	694009	Severe acute respiratory syndrome-related coronavirus isolate H_SC_02 genome assembly, complete genome: monopartite
+NC_045512.2	OQ297708.1	90.513	26627	2409	76	3274	29857	3216	29768	0.0	35072	100	2708335	MAG: Pangolin coronavirus isolate GD/P79-9/2019, complete genome
+NC_045512.2	OQ297708.1	89.507	3183	330	4	32	3212	1	3181	0.0	4024	100	2708335	MAG: Pangolin coronavirus isolate GD/P79-9/2019, complete genome
+NC_045512.2	PZ487753.1	94.677	21531	1128	7	51	21577	1	21517	0.0	33395	95	1508220	Bat coronavirus isolate RmaSTT500, partial genome
+NC_045512.2	PZ487753.1	91.329	6781	543	32	23074	29841	22894	29642	0.0	9223	95	1508220	Bat coronavirus isolate RmaSTT500, partial genome
+NC_045512.2	PZ487748.1	94.572	21536	1150	8	51	21582	1	21521	0.0	33275	97	1508220	Bat coronavirus isolate RpuSTT361, partial genome
+NC_045512.2	PZ487748.1	93.463	7496	471	10	22349	29841	22271	29750	0.0	11110	97	1508220	Bat coronavirus isolate RpuSTT361, partial genome
+NC_045512.2	PZ487747.1	94.441	21588	1172	19	1	21582	9	21574	0.0	33192	97	1508220	Bat coronavirus isolate RacSTT351, partial genome
+NC_045512.2	PZ487747.1	93.566	7554	464	11	22349	29899	22324	29858	0.0	11237	97	1508220	Bat coronavirus isolate RacSTT351, partial genome
+NC_045512.2	PZ487726.1	94.415	21592	1178	10	7	21595	1	21567	0.0	33166	97	1508220	Bat coronavirus isolate RshSTT039, partial genome
+NC_045512.2	PZ487726.1	91.988	7364	527	35	22490	29841	22423	29735	0.0	10272	97	1508220	Bat coronavirus isolate RshSTT039, partial genome
+NC_045512.2	PZ487727.1	94.402	21597	1181	12	2	21595	50	21621	0.0	33159	97	1508220	Bat coronavirus isolate RshSTT334, partial genome
+NC_045512.2	PZ487727.1	91.969	7371	538	32	22490	29851	22477	29802	0.0	10283	97	1508220	Bat coronavirus isolate RshSTT334, partial genome
+NC_045512.2	PZ487727.1	98.039	51	1	0	34	84	51	1	2.41e-11	89.8	97	1508220	Bat coronavirus isolate RshSTT334, partial genome
+NC_045512.2	PZ487757.1	94.370	21597	1188	10	2	21595	49	21620	0.0	33120	97	1508220	Bat coronavirus isolate RshSTT570, partial genome
+NC_045512.2	PZ487757.1	92.274	7391	517	31	22490	29871	22476	29821	0.0	10436	97	1508220	Bat coronavirus isolate RshSTT570, partial genome
+NC_045512.2	PZ487757.1	94.000	50	3	0	34	83	50	1	1.88e-07	76.8	97	1508220	Bat coronavirus isolate RshSTT570, partial genome
+NC_045512.2	PZ487742.1	94.438	21538	1172	18	51	21582	1	21518	0.0	33113	97	1508220	Bat coronavirus isolate RacSTT334, partial genome
+NC_045512.2	PZ487742.1	93.517	7496	464	11	22349	29841	22268	29744	0.0	11130	97	1508220	Bat coronavirus isolate RacSTT334, partial genome
+NC_045512.2	OR233322.1	94.341	21576	1193	10	23	21595	1	21551	0.0	33054	97	3068538	Horseshoe bat sarbecovirus isolate Ra22QT106, complete genome
+NC_045512.2	OR233322.1	91.840	7390	549	31	22490	29870	22407	29751	0.0	10257	97	3068538	Horseshoe bat sarbecovirus isolate Ra22QT106, complete genome
+NC_045512.2	PZ487745.1	93.831	21996	1303	37	1	21980	36	21993	0.0	33052	99	1508220	Bat coronavirus isolate RacSTT345, partial genome
+NC_045512.2	PZ487745.1	93.570	7558	467	10	22349	29903	22350	29891	0.0	11247	99	1508220	Bat coronavirus isolate RacSTT345, partial genome
+NC_045512.2	PZ487745.1	97.143	35	1	0	37	71	35	1	0.019	60.2	99	1508220	Bat coronavirus isolate RacSTT345, partial genome
+NC_045512.2	OR233324.1	94.368	21554	1186	10	23	21573	1	21529	0.0	33052	97	3068538	Horseshoe bat sarbecovirus isolate Ra22QT77, complete genome
+NC_045512.2	OR233324.1	91.840	7390	549	31	22490	29870	22407	29751	0.0	10257	97	3068538	Horseshoe bat sarbecovirus isolate Ra22QT77, complete genome
+NC_045512.2	PZ487729.1	94.375	21548	1184	10	51	21595	1	21523	0.0	33052	97	1508220	Bat coronavirus isolate RshSTT779, partial genome
+NC_045512.2	PZ487729.1	92.284	7361	514	31	22490	29841	22379	29694	0.0	10397	97	1508220	Bat coronavirus isolate RshSTT779, partial genome
+NC_045512.2	PZ487728.1	94.371	21548	1185	10	51	21595	1	21523	0.0	33046	97	1508220	Bat coronavirus isolate RshSTT671, partial genome
+NC_045512.2	PZ487728.1	92.284	7361	514	31	22490	29841	22379	29694	0.0	10397	97	1508220	Bat coronavirus isolate RshSTT671, partial genome
+NC_045512.2	OR233323.1	94.332	21576	1195	10	23	21595	1	21551	0.0	33045	97	3068538	Horseshoe bat sarbecovirus isolate Ra22QT135, complete genome
+NC_045512.2	OR233323.1	91.840	7390	549	31	22490	29870	22407	29751	0.0	10257	97	3068538	Horseshoe bat sarbecovirus isolate Ra22QT135, complete genome
+NC_045512.2	PZ487752.1	94.357	21548	1188	10	51	21595	1	21523	0.0	33030	97	1508220	Bat coronavirus isolate RshSTT494, partial genome
+NC_045512.2	PZ487752.1	92.256	7361	516	31	22490	29841	22379	29694	0.0	10386	97	1508220	Bat coronavirus isolate RshSTT494, partial genome
+NC_045512.2	PZ487755.1	94.374	21525	1185	8	51	21573	1	21501	0.0	33017	97	1508220	Bat coronavirus isolate RmiSTT521, partial genome
+NC_045512.2	PZ487755.1	92.229	7361	518	31	22490	29841	22379	29694	0.0	10375	97	1508220	Bat coronavirus isolate RmiSTT521, partial genome
+NC_045512.2	PZ487758.1	94.369	21525	1186	8	51	21573	1	21501	0.0	33011	97	1508220	Bat coronavirus isolate RshSTT610, partial genome
+NC_045512.2	PZ487758.1	92.243	7361	517	31	22490	29841	22379	29694	0.0	10381	97	1508220	Bat coronavirus isolate RshSTT610, partial genome
+NC_045512.2	PZ487749.1	94.369	21525	1186	8	51	21573	1	21501	0.0	33011	97	1508220	Bat coronavirus isolate RshSTT381, partial genome
+NC_045512.2	PZ487749.1	92.256	7361	516	31	22490	29841	22379	29694	0.0	10386	97	1508220	Bat coronavirus isolate RshSTT381, partial genome
+NC_045512.2	PZ487756.1	94.338	21548	1192	10	51	21595	1	21523	0.0	33008	97	1508220	Bat coronavirus isolate RshSTT564, partial genome
+NC_045512.2	PZ487756.1	92.202	7361	520	31	22490	29841	22379	29694	0.0	10364	97	1508220	Bat coronavirus isolate RshSTT564, partial genome
+NC_045512.2	PZ487751.1	94.365	21525	1187	8	51	21573	1	21501	0.0	33006	97	1508220	Bat coronavirus isolate RshSTT419, partial genome
+NC_045512.2	PZ487751.1	92.203	7362	516	33	22490	29841	22379	29692	0.0	10362	97	1508220	Bat coronavirus isolate RshSTT419, partial genome
+NC_045512.2	PZ487754.1	94.365	21525	1187	8	51	21573	1	21501	0.0	33006	97	1508220	Bat coronavirus isolate RshSTT515, partial genome
+NC_045512.2	PZ487754.1	92.216	7361	519	31	22490	29841	22379	29694	0.0	10370	97	1508220	Bat coronavirus isolate RshSTT515, partial genome
+NC_045512.2	PZ487738.1	94.334	21548	1193	10	51	21595	1	21523	0.0	33002	97	1508220	Bat coronavirus isolate RshSTT314, partial genome
+NC_045512.2	PZ487738.1	92.216	7361	519	31	22490	29841	22379	29694	0.0	10370	97	1508220	Bat coronavirus isolate RshSTT314, partial genome
+NC_045512.2	PZ487740.1	94.334	21548	1193	10	51	21595	1	21523	0.0	33002	97	1508220	Bat coronavirus isolate RshSTT322, partial genome
+NC_045512.2	PZ487740.1	92.216	7361	519	31	22490	29841	22379	29694	0.0	10370	97	1508220	Bat coronavirus isolate RshSTT322, partial genome
+NC_045512.2	PZ487736.1	94.334	21548	1193	10	51	21595	1	21523	0.0	33002	97	1508220	Bat coronavirus isolate RshSTT268, partial genome
+NC_045512.2	PZ487736.1	92.202	7361	520	31	22490	29841	22379	29694	0.0	10364	97	1508220	Bat coronavirus isolate RshSTT268, partial genome
+NC_045512.2	PZ487735.1	94.334	21548	1193	10	51	21595	1	21523	0.0	33002	97	1508220	Bat coronavirus isolate RmiSTT249, partial genome
+NC_045512.2	PZ487735.1	92.216	7361	519	31	22490	29841	22379	29694	0.0	10370	97	1508220	Bat coronavirus isolate RmiSTT249, partial genome
+NC_045512.2	PZ487743.1	94.334	21548	1193	10	51	21595	1	21523	0.0	33002	97	1508220	Bat coronavirus isolate RshSTT336, partial genome
+NC_045512.2	PZ487743.1	92.216	7361	519	31	22490	29841	22379	29694	0.0	10370	97	1508220	Bat coronavirus isolate RshSTT336, partial genome
+NC_045512.2	PZ487737.1	94.334	21548	1193	10	51	21595	1	21523	0.0	33002	97	1508220	Bat coronavirus isolate RshSTT287, partial genome
+NC_045512.2	PZ487737.1	92.216	7361	519	31	22490	29841	22379	29694	0.0	10370	97	1508220	Bat coronavirus isolate RshSTT287, partial genome
+NC_045512.2	PZ487744.1	94.334	21548	1193	10	51	21595	1	21523	0.0	33002	97	1508220	Bat coronavirus isolate RshSTT344, partial genome
+NC_045512.2	PZ487744.1	92.202	7361	520	31	22490	29841	22379	29694	0.0	10364	97	1508220	Bat coronavirus isolate RshSTT344, partial genome
+NC_045512.2	PZ487731.1	94.329	21548	1194	10	51	21595	1	21523	0.0	32997	97	1508220	Bat coronavirus isolate RshSTT227, partial genome
+NC_045512.2	PZ487731.1	92.229	7361	518	31	22490	29841	22379	29694	0.0	10375	97	1508220	Bat coronavirus isolate RshSTT227, partial genome
+NC_045512.2	PZ487730.1	94.329	21548	1194	10	51	21595	1	21523	0.0	32997	97	1508220	Bat coronavirus isolate RshSTT219, partial genome
+NC_045512.2	PZ487730.1	92.216	7361	519	31	22490	29841	22379	29694	0.0	10370	97	1508220	Bat coronavirus isolate RshSTT219, partial genome
+NC_045512.2	PZ487739.1	94.329	21548	1194	10	51	21595	1	21523	0.0	32997	97	1508220	Bat coronavirus isolate RshSTT317, partial genome
+NC_045512.2	PZ487739.1	92.229	7361	518	31	22490	29841	22379	29694	0.0	10375	97	1508220	Bat coronavirus isolate RshSTT317, partial genome
+NC_045512.2	PZ487734.1	94.329	21548	1194	10	51	21595	1	21523	0.0	32997	97	1508220	Bat coronavirus isolate RshSTT245, partial genome
+NC_045512.2	PZ487734.1	92.229	7361	518	31	22490	29841	22379	29694	0.0	10375	97	1508220	Bat coronavirus isolate RshSTT245, partial genome
+NC_045512.2	PZ487732.1	94.329	21548	1194	10	51	21595	1	21523	0.0	32997	97	1508220	Bat coronavirus isolate RshSTT241, partial genome
+NC_045512.2	PZ487732.1	92.216	7361	519	31	22490	29841	22379	29694	0.0	10370	97	1508220	Bat coronavirus isolate RshSTT241, partial genome
+NC_045512.2	PZ487750.1	94.324	21548	1195	10	51	21595	1	21523	0.0	32991	97	1508220	Bat coronavirus isolate RshSTT395, partial genome
+NC_045512.2	PZ487750.1	92.229	7361	518	31	22490	29841	22379	29694	0.0	10375	97	1508220	Bat coronavirus isolate RshSTT395, partial genome
+NC_045512.2	PZ487733.1	94.320	21548	1196	10	51	21595	1	21523	0.0	32985	97	1508220	Bat coronavirus isolate RmiSTT243, partial genome
+NC_045512.2	PZ487733.1	92.216	7361	519	31	22490	29841	22379	29694	0.0	10370	97	1508220	Bat coronavirus isolate RmiSTT243, partial genome
+NC_045512.2	PZ487746.1	93.826	21946	1301	37	51	21980	1	21908	0.0	32971	98	1508220	Bat coronavirus isolate RacSTT347, partial genome
+NC_045512.2	PZ487746.1	93.517	7496	467	10	22349	29841	22265	29744	0.0	11132	98	1508220	Bat coronavirus isolate RacSTT347, partial genome
+NC_045512.2	PZ487741.1	94.312	21537	1201	16	51	21582	1	21518	0.0	32963	97	1508220	Bat coronavirus isolate RacSTT333, partial genome
+NC_045512.2	PZ487741.1	93.517	7496	467	10	22349	29841	22268	29747	0.0	11132	97	1508220	Bat coronavirus isolate RacSTT333, partial genome
+NC_045512.2	MT121216.1	90.113	24840	2349	74	3274	28069	3127	27903	0.0	32166	99	2708335	Pangolin coronavirus isolate MP789, complete genome
+NC_045512.2	MT121216.1	89.205	3094	330	4	121	3212	1	3092	0.0	3860	99	2708335	Pangolin coronavirus isolate MP789, complete genome
+NC_045512.2	MT121216.1	96.365	1623	59	0	28113	29735	27899	29521	0.0	2671	99	2708335	Pangolin coronavirus isolate MP789, complete genome
+NC_045512.2	OQ297707.1	90.000	24839	2379	72	3274	28069	3127	27903	0.0	32079	99	2708335	MAG: Pangolin coronavirus isolate GD/P44-9/2019, partial genome
+NC_045512.2	OQ297707.1	88.192	2744	322	2	470	3212	350	3092	0.0	3271	99	2708335	MAG: Pangolin coronavirus isolate GD/P44-9/2019, partial genome
+NC_045512.2	OQ297707.1	96.395	1720	61	1	28113	29832	27899	29617	0.0	2832	99	2708335	MAG: Pangolin coronavirus isolate GD/P44-9/2019, partial genome
+NC_045512.2	OQ297707.1	99.167	240	2	0	121	360	1	240	9.68e-115	433	99	2708335	MAG: Pangolin coronavirus isolate GD/P44-9/2019, partial genome
+NC_045512.2	MW703458.1	92.655	21553	1558	23	39	21581	1	21538	0.0	31015	95	2833184	Sarbecovirus sp. isolate PrC31, complete genome
+NC_045512.2	MW703458.1	91.464	6795	550	22	23102	29886	22991	29765	0.0	9310	95	2833184	Sarbecovirus sp. isolate PrC31, complete genome
+NC_045512.2	OK017806.1	91.598	21459	1762	34	144	21581	1	21439	0.0	29601	94	2833184	Sarbecovirus sp. isolate YN2021, complete genome
+NC_045512.2	OK017806.1	90.731	6775	596	26	23075	29839	22865	29617	0.0	9003	94	2833184	Sarbecovirus sp. isolate YN2021, complete genome
+NC_045512.2	OK287355.1	90.866	21709	1917	53	13	21696	2	21669	0.0	29043	95	2833184	Sarbecovirus sp. isolate BetaCoV_Yunnan_Rp_JCC9_2020, complete genome
+NC_045512.2	OK287355.1	90.262	6716	619	29	23102	29806	23003	29694	0.0	8746	95	2833184	Sarbecovirus sp. isolate BetaCoV_Yunnan_Rp_JCC9_2020, complete genome
+NC_045512.2	PX802981.1	86.011	26585	3568	125	3335	29857	3294	29789	0.0	28350	99	2708335	Pangolin coronavirus isolate PCoV-GX/P49T, complete genome
+NC_045512.2	PX802981.1	84.151	3199	483	21	18	3207	1	3184	0.0	3077	99	2708335	Pangolin coronavirus isolate PCoV-GX/P49T, complete genome
+NC_045512.2	PX802979.1	86.011	26585	3568	125	3335	29857	3282	29777	0.0	28350	99	2708335	Pangolin coronavirus isolate PCoV-GX/P1T, complete genome
+NC_045512.2	PX802979.1	84.154	3187	482	20	29	3207	1	3172	0.0	3066	99	2708335	Pangolin coronavirus isolate PCoV-GX/P1T, complete genome
+NC_045512.2	PQ675609.1	85.988	26599	3569	129	3335	29871	3301	29803	0.0	28326	99	2708335	Pangolin coronavirus isolate PCoV-GX/P8V-P1, complete genome
+NC_045512.2	PQ675609.1	84.186	3206	483	21	11	3207	1	3191	0.0	3090	99	2708335	Pangolin coronavirus isolate PCoV-GX/P8V-P1, complete genome
+NC_045512.2	PQ675610.1	85.984	26599	3570	129	3335	29871	3308	29810	0.0	28321	99	2708335	Pangolin coronavirus isolate PCoV-GX/P8V-P5, complete genome
+NC_045512.2	PQ675610.1	84.215	3212	483	21	5	3207	2	3198	0.0	3101	99	2708335	Pangolin coronavirus isolate PCoV-GX/P8V-P5, complete genome
+NC_045512.2	PQ675611.1	85.972	26597	3577	124	3335	29871	3308	29810	0.0	28304	99	2708335	Pangolin coronavirus isolate PCoV-GX/P8V-P15, complete genome
+NC_045512.2	PQ675611.1	84.215	3212	483	21	5	3207	2	3198	0.0	3101	99	2708335	Pangolin coronavirus isolate PCoV-GX/P8V-P15, complete genome
+NC_045512.2	MT040335.1	85.979	26589	3568	138	3335	29857	3312	29806	0.0	28301	99	2708335	Pangolin coronavirus isolate PCoV_GX-P5L, complete genome
+NC_045512.2	MT040335.1	84.151	3199	483	21	18	3207	19	3202	0.0	3077	99	2708335	Pangolin coronavirus isolate PCoV_GX-P5L, complete genome
+NC_045512.2	MT040333.1	85.973	26585	3576	129	3335	29857	3312	29805	0.0	28293	99	2708335	Pangolin coronavirus isolate PCoV_GX-P4L, complete genome
+NC_045512.2	MT040333.1	84.120	3199	484	21	18	3207	19	3202	0.0	3072	99	2708335	Pangolin coronavirus isolate PCoV_GX-P4L, complete genome
+NC_045512.2	PV146377.1	85.965	26597	3570	137	3335	29865	3286	29785	0.0	28284	99	2708335	Pangolin coronavirus isolate PCoV-GX/P11V-1, complete genome
+NC_045512.2	PV146377.1	84.123	3187	483	20	29	3207	5	3176	0.0	3061	99	2708335	Pangolin coronavirus isolate PCoV-GX/P11V-1, complete genome
+NC_045512.2	PV146378.1	85.961	26597	3571	137	3335	29865	3300	29799	0.0	28278	99	2708335	Pangolin coronavirus isolate PCoV-GX/P11V-5, complete genome
+NC_045512.2	PV146378.1	84.150	3205	484	21	12	3207	1	3190	0.0	3083	99	2708335	Pangolin coronavirus isolate PCoV-GX/P11V-5, complete genome
+NC_045512.2	MT072864.1	85.939	26592	3580	136	3335	29857	3294	29795	0.0	28262	99	2708335	Pangolin coronavirus isolate PCoV_GX-P2V, complete genome
+NC_045512.2	MT072864.1	84.120	3199	484	21	18	3207	1	3184	0.0	3072	99	2708335	Pangolin coronavirus isolate PCoV_GX-P2V, complete genome
+NC_045512.2	MT040334.1	85.951	26586	3576	131	3335	29857	3312	29801	0.0	28256	99	2708335	Pangolin coronavirus isolate PCoV_GX-P1E, complete genome
+NC_045512.2	MT040334.1	84.151	3199	483	21	18	3207	19	3202	0.0	3077	99	2708335	Pangolin coronavirus isolate PCoV_GX-P1E, complete genome
+NC_045512.2	MT040336.1	85.945	26589	3573	138	3335	29857	3312	29802	0.0	28247	99	2708335	Pangolin coronavirus isolate PCoV_GX-P5E, complete genome
+NC_045512.2	MT040336.1	84.089	3199	485	21	18	3207	19	3202	0.0	3066	99	2708335	Pangolin coronavirus isolate PCoV_GX-P5E, complete genome
+NC_045512.2	PV146379.1	85.945	26588	3574	137	3335	29856	3300	29790	0.0	28245	99	2708335	Pangolin coronavirus isolate PCoV-GX/P11V-15, complete genome
+NC_045512.2	PV146379.1	83.931	3205	491	21	12	3207	1	3190	0.0	3044	99	2708335	Pangolin coronavirus isolate PCoV-GX/P11V-15, complete genome
+NC_045512.2	PX802980.1	85.902	26593	3584	138	3347	29861	3300	29805	0.0	28186	99	2708335	Pangolin coronavirus isolate PCoV-GX/P5V, complete genome
+NC_045512.2	PX802980.1	83.939	3194	476	30	29	3207	7	3178	0.0	3022	99	2708335	Pangolin coronavirus isolate PCoV-GX/P5V, complete genome
+NC_045512.2	PZ113259.1	94.682	18110	925	27	3887	21978	3849	21938	0.0	28073	99	694009	Severe acute respiratory syndrome-related coronavirus isolate RacCS20583.RSL, partial genome
+NC_045512.2	PZ113259.1	94.263	7548	406	13	22331	29872	22279	29805	0.0	11514	99	694009	Severe acute respiratory syndrome-related coronavirus isolate RacCS20583.RSL, partial genome
+NC_045512.2	PZ113259.1	94.772	3864	199	1	1	3864	1	3861	0.0	6013	99	694009	Severe acute respiratory syndrome-related coronavirus isolate RacCS20583.RSL, partial genome
+NC_045512.2	PZ113262.1	94.677	18110	926	27	3887	21978	3849	21938	0.0	28068	99	694009	Severe acute respiratory syndrome-related coronavirus isolate RacCS20600b.RSL, partial genome
+NC_045512.2	PZ113262.1	94.263	7548	406	13	22331	29872	22279	29805	0.0	11514	99	694009	Severe acute respiratory syndrome-related coronavirus isolate RacCS20600b.RSL, partial genome
+NC_045512.2	PZ113262.1	94.720	3864	201	1	1	3864	1	3861	0.0	6002	99	694009	Severe acute respiratory syndrome-related coronavirus isolate RacCS20600b.RSL, partial genome
+NC_045512.2	PZ113264.1	94.671	18110	927	27	3887	21978	3849	21938	0.0	28062	99	694009	Severe acute respiratory syndrome-related coronavirus isolate RacCS20637.RSL, partial genome
+NC_045512.2	PZ113264.1	94.250	7548	407	13	22331	29872	22279	29805	0.0	11509	99	694009	Severe acute respiratory syndrome-related coronavirus isolate RacCS20637.RSL, partial genome
+NC_045512.2	PZ113264.1	94.695	3864	202	1	1	3864	1	3861	0.0	5997	99	694009	Severe acute respiratory syndrome-related coronavirus isolate RacCS20637.RSL, partial genome
+NC_045512.2	PZ113260.1	94.671	18110	927	27	3887	21978	3849	21938	0.0	28062	99	694009	Severe acute respiratory syndrome-related coronavirus isolate RacCS20588.RSL, partial genome
+NC_045512.2	PZ113260.1	94.263	7548	406	13	22331	29872	22279	29805	0.0	11514	99	694009	Severe acute respiratory syndrome-related coronavirus isolate RacCS20588.RSL, partial genome
+NC_045512.2	PZ113260.1	94.746	3864	200	1	1	3864	1	3861	0.0	6008	99	694009	Severe acute respiratory syndrome-related coronavirus isolate RacCS20588.RSL, partial genome
+NC_045512.2	PZ113263.1	95.259	17697	833	6	3887	21582	3844	21535	0.0	28027	97	694009	Severe acute respiratory syndrome-related coronavirus isolate RacCS20605.RSL, partial genome
+NC_045512.2	PZ113263.1	94.506	7481	392	6	22394	29872	22337	29800	0.0	11520	97	694009	Severe acute respiratory syndrome-related coronavirus isolate RacCS20605.RSL, partial genome
+NC_045512.2	PZ113263.1	94.765	3859	199	1	6	3864	1	3856	0.0	6004	97	694009	Severe acute respiratory syndrome-related coronavirus isolate RacCS20605.RSL, partial genome
+NC_045512.2	MW532698.1	85.874	26412	3574	135	3335	29678	3311	29633	0.0	27959	99	2708335	Pangolin coronavirus isolate GX_P2V, complete genome
+NC_045512.2	MW532698.1	84.204	3216	484	21	1	3207	1	3201	0.0	3103	99	2708335	Pangolin coronavirus isolate GX_P2V, complete genome
+NC_045512.2	MW532698.1	100.000	96	0	0	29783	29878	29634	29729	5.01e-38	178	99	2708335	Pangolin coronavirus isolate GX_P2V, complete genome
+NC_045512.2	MW251311.1	94.703	17690	936	1	3888	21577	3881	21569	0.0	27475	93	2801854	Bat coronavirus RacCS264, partial genome
+NC_045512.2	MW251311.1	92.601	6136	442	10	23744	29875	23598	29725	0.0	8805	93	2801854	Bat coronavirus RacCS264, partial genome
+NC_045512.2	MW251311.1	93.234	3843	253	3	22	3864	58	3893	0.0	5650	93	2801854	Bat coronavirus RacCS264, partial genome
+NC_045512.2	MW251311.1	98.529	68	1	0	7	74	68	1	8.56e-21	121	93	2801854	Bat coronavirus RacCS264, partial genome
+NC_045512.2	PZ113261.1	94.703	17690	936	1	3888	21577	3846	21534	0.0	27475	95	694009	Severe acute respiratory syndrome-related coronavirus isolate RacCS20600a.RSL, partial genome
+NC_045512.2	PZ113261.1	90.502	6812	599	33	23074	29872	22911	29687	0.0	8951	95	694009	Severe acute respiratory syndrome-related coronavirus isolate RacCS20600a.RSL, partial genome
+NC_045512.2	PZ113261.1	93.208	3843	254	3	22	3864	23	3858	0.0	5644	95	694009	Severe acute respiratory syndrome-related coronavirus isolate RacCS20600a.RSL, partial genome
+NC_045512.2	PZ113261.1	100.000	33	0	0	7	39	33	1	0.005	62.1	95	694009	Severe acute respiratory syndrome-related coronavirus isolate RacCS20600a.RSL, partial genome
+NC_045512.2	MW251308.1	94.703	17690	936	1	3888	21577	3888	21576	0.0	27475	95	2801851	Bat coronavirus RacCS203, complete genome
+NC_045512.2	MW251308.1	90.517	6812	598	33	23074	29872	22953	29729	0.0	8957	95	2801851	Bat coronavirus RacCS203, complete genome
+NC_045512.2	MW251308.1	93.234	3843	253	3	22	3864	65	3900	0.0	5650	95	2801851	Bat coronavirus RacCS203, complete genome
+NC_045512.2	MW251308.1	98.667	75	1	0	7	81	75	1	1.10e-24	134	95	2801851	Bat coronavirus RacCS203, complete genome
+NC_045512.2	MW251310.1	94.698	17690	937	1	3888	21577	3881	21569	0.0	27470	93	2801853	Bat coronavirus RacCS253, partial genome
+NC_045512.2	MW251310.1	92.233	6244	471	12	23633	29871	23487	29721	0.0	8841	93	2801853	Bat coronavirus RacCS253, partial genome
+NC_045512.2	MW251310.1	93.234	3843	253	3	22	3864	58	3893	0.0	5650	93	2801853	Bat coronavirus RacCS253, partial genome
+NC_045512.2	MW251310.1	98.529	68	1	0	7	74	68	1	8.56e-21	121	93	2801853	Bat coronavirus RacCS253, partial genome
+NC_045512.2	MW251309.1	94.698	17690	937	1	3888	21577	3881	21569	0.0	27470	93	2801852	Bat coronavirus RacCS224, partial genome
+NC_045512.2	MW251309.1	92.564	6132	444	10	23744	29871	23598	29721	0.0	8791	93	2801852	Bat coronavirus RacCS224, partial genome
+NC_045512.2	MW251309.1	93.234	3843	253	3	22	3864	58	3893	0.0	5650	93	2801852	Bat coronavirus RacCS224, partial genome
+NC_045512.2	MW251309.1	98.529	68	1	0	7	74	68	1	8.56e-21	121	93	2801852	Bat coronavirus RacCS224, partial genome
+NC_045512.2	MW251309.1	100.000	40	0	0	26930	26969	21998	21959	6.76e-07	75.0	93	2801852	Bat coronavirus RacCS224, partial genome
+NC_045512.2	MW251312.1	94.692	17690	938	1	3888	21577	3881	21569	0.0	27470	93	2801855	Bat coronavirus RacCS271, partial genome
+NC_045512.2	MW251312.1	92.086	6267	484	10	23619	29881	23473	29731	0.0	8839	93	2801855	Bat coronavirus RacCS271, partial genome
+NC_045512.2	MW251312.1	93.208	3843	254	3	22	3864	58	3893	0.0	5646	93	2801855	Bat coronavirus RacCS271, partial genome
+NC_045512.2	MW251312.1	98.529	68	1	0	7	74	68	1	8.56e-21	121	93	2801855	Bat coronavirus RacCS271, partial genome
+NC_045512.2	MG772933.1	89.116	21729	2278	68	6	21696	6	21685	0.0	26943	95	1508227	Bat SARS-like coronavirus isolate bat-SL-CoVZC45, complete genome
+NC_045512.2	MG772933.1	88.907	6833	728	25	23075	29899	22992	29802	0.0	8392	95	1508227	Bat SARS-like coronavirus isolate bat-SL-CoVZC45, complete genome
+NC_045512.2	PV652241.1	89.143	21673	2276	59	57	21696	8	21636	0.0	26916	95	1508220	Bat coronavirus isolate BtRp-SarbeCov/GX21-GX15, complete genome
+NC_045512.2	PV652241.1	89.653	6794	673	24	23102	29886	22970	29742	0.0	8624	95	1508220	Bat coronavirus isolate BtRp-SarbeCov/GX21-GX15, complete genome
+NC_045512.2	OK017803.1	89.153	21591	2256	67	144	21696	1	21543	0.0	26818	95	2833184	Sarbecovirus sp. isolate HN2021A, complete genome
+NC_045512.2	OK017803.1	89.363	6778	682	32	23075	29839	22850	29601	0.0	8486	95	2833184	Sarbecovirus sp. isolate HN2021A, complete genome
+NC_045512.2	OK017804.1	89.111	21591	2256	68	144	21696	1	21534	0.0	26759	95	2833184	Sarbecovirus sp. isolate HN2021B, complete genome
+NC_045512.2	OK017804.1	89.377	6778	681	32	23075	29839	22841	29592	0.0	8492	95	2833184	Sarbecovirus sp. isolate HN2021B, complete genome
+NC_045512.2	PV839354.1	91.175	18652	1604	32	3337	21969	3283	21911	0.0	25287	96	694009	Severe acute respiratory syndrome-related coronavirus isolate RpuRB21105.RSL, partial genome
+NC_045512.2	PV839354.1	93.142	6853	446	11	23056	29903	22996	29829	0.0	10030	96	694009	Severe acute respiratory syndrome-related coronavirus isolate RpuRB21105.RSL, partial genome
+NC_045512.2	PV839354.1	89.897	3207	324	0	1	3207	1	3207	0.0	4128	96	694009	Severe acute respiratory syndrome-related coronavirus isolate RpuRB21105.RSL, partial genome
+NC_045512.2	PV839355.1	91.164	18652	1606	32	3337	21969	3272	21900	0.0	25276	96	694009	Severe acute respiratory syndrome-related coronavirus isolate RpuRB21122.RSL, partial genome
+NC_045512.2	PV839355.1	93.142	6853	446	11	23056	29903	22985	29818	0.0	10030	96	694009	Severe acute respiratory syndrome-related coronavirus isolate RpuRB21122.RSL, partial genome
+NC_045512.2	PV839355.1	89.862	3186	323	0	22	3207	11	3196	0.0	4095	96	694009	Severe acute respiratory syndrome-related coronavirus isolate RpuRB21122.RSL, partial genome
+NC_045512.2	PV839356.1	91.581	18256	1520	14	3337	21582	3277	21525	0.0	25207	95	694009	Severe acute respiratory syndrome-related coronavirus isolate RpuRB21114.RSL, partial genome
+NC_045512.2	PV839356.1	93.069	6853	451	11	23056	29903	22990	29823	0.0	10011	95	694009	Severe acute respiratory syndrome-related coronavirus isolate RpuRB21114.RSL, partial genome
+NC_045512.2	PV839356.1	89.847	3201	325	0	7	3207	1	3201	0.0	4111	95	694009	Severe acute respiratory syndrome-related coronavirus isolate RpuRB21114.RSL, partial genome
+NC_045512.2	PV839361.1	90.851	18690	1661	36	3337	22002	3283	21947	0.0	24995	95	694009	Severe acute respiratory syndrome-related coronavirus isolate RpuRB21140.RSL, partial genome
+NC_045512.2	PV839361.1	89.086	4856	481	38	23075	27910	22951	27777	0.0	5986	95	694009	Severe acute respiratory syndrome-related coronavirus isolate RpuRB21140.RSL, partial genome
+NC_045512.2	PV839361.1	89.897	3207	324	0	1	3207	1	3207	0.0	4128	95	694009	Severe acute respiratory syndrome-related coronavirus isolate RpuRB21140.RSL, partial genome
+NC_045512.2	PV839361.1	96.238	1648	60	2	28257	29903	28111	29757	0.0	2699	95	694009	Severe acute respiratory syndrome-related coronavirus isolate RpuRB21140.RSL, partial genome
+NC_045512.2	PV839360.1	90.698	18728	1681	46	3308	22002	3260	21959	0.0	24877	96	694009	Severe acute respiratory syndrome-related coronavirus isolate RpuRB21146.RSL, partial genome
+NC_045512.2	PV839360.1	91.220	6845	553	36	23075	29903	22963	29775	0.0	9267	96	694009	Severe acute respiratory syndrome-related coronavirus isolate RpuRB21146.RSL, partial genome
+NC_045512.2	PV839360.1	91.144	3207	275	5	1	3207	1	3198	0.0	4340	96	694009	Severe acute respiratory syndrome-related coronavirus isolate RpuRB21146.RSL, partial genome
+NC_045512.2	OQ297706.1	88.738	19810	2145	69	1922	21696	1779	21537	0.0	24153	94	694009	MAG: Severe acute respiratory syndrome-related coronavirus isolate GD/L102.18/2022, partial genome
+NC_045512.2	OQ297706.1	89.391	6749	682	28	23102	29839	22871	29596	0.0	8466	94	694009	MAG: Severe acute respiratory syndrome-related coronavirus isolate GD/L102.18/2022, partial genome
+NC_045512.2	OQ297706.1	92.121	1726	136	0	144	1869	1	1726	0.0	2435	94	694009	MAG: Severe acute respiratory syndrome-related coronavirus isolate GD/L102.18/2022, partial genome
+NC_045512.2	PV652242.1	89.230	18319	1939	30	3282	21581	3164	21467	0.0	22868	94	1508220	Bat coronavirus isolate BtRp-SarbeCov/GZ24-GZ209, complete genome
+NC_045512.2	PV652242.1	89.481	6816	680	31	23084	29886	22901	29692	0.0	8580	94	1508220	Bat coronavirus isolate BtRp-SarbeCov/GZ24-GZ209, complete genome
+NC_045512.2	PV652242.1	92.084	3133	242	5	76	3207	1	3128	0.0	4407	94	1508220	Bat coronavirus isolate BtRp-SarbeCov/GZ24-GZ209, complete genome
+NC_045512.2	OK017805.1	89.105	18247	1944	35	3353	21581	3174	21394	0.0	22642	94	2833184	Sarbecovirus sp. isolate HN2021G, complete genome
+NC_045512.2	OK017805.1	89.353	6753	676	36	23102	29839	22847	29571	0.0	8447	94	2833184	Sarbecovirus sp. isolate HN2021G, complete genome
+NC_045512.2	OK017805.1	91.476	3062	250	6	144	3204	1	3052	0.0	4198	94	2833184	Sarbecovirus sp. isolate HN2021G, complete genome
+NC_045512.2	MG772934.1	88.655	18272	2036	34	3329	21581	3247	21500	0.0	22223	95	1508227	Bat SARS-like coronavirus isolate bat-SL-CoVZXC21, complete genome
+NC_045512.2	MG772934.1	89.000	6827	715	28	23084	29899	22931	29732	0.0	8414	95	1508227	Bat SARS-like coronavirus isolate bat-SL-CoVZXC21, complete genome
+NC_045512.2	MG772934.1	92.726	3217	227	6	6	3219	6	3218	0.0	4638	95	1508227	Bat SARS-like coronavirus isolate bat-SL-CoVZXC21, complete genome
+NC_045512.2	PV839357.1	92.910	14993	1039	11	14915	29903	14855	29827	0.0	21795	79	694009	Severe acute respiratory syndrome-related coronavirus isolate RpuRB21012.RSL, partial genome
+NC_045512.2	PV839357.1	89.967	3060	305	2	3947	7005	3887	6945	0.0	3949	79	694009	Severe acute respiratory syndrome-related coronavirus isolate RpuRB21012.RSL, partial genome
+NC_045512.2	PV839357.1	91.694	2408	200	0	19	2426	1	2408	0.0	3339	79	694009	Severe acute respiratory syndrome-related coronavirus isolate RpuRB21012.RSL, partial genome
+NC_045512.2	PV839357.1	90.312	2116	205	0	7059	9174	6999	9114	0.0	2772	79	694009	Severe acute respiratory syndrome-related coronavirus isolate RpuRB21012.RSL, partial genome
+NC_045512.2	PV839357.1	86.197	710	89	5	2498	3207	2480	3180	0.0	760	79	694009	Severe acute respiratory syndrome-related coronavirus isolate RpuRB21012.RSL, partial genome
+NC_045512.2	PV839357.1	82.927	328	48	7	3308	3628	3242	3568	2.22e-71	289	79	694009	Severe acute respiratory syndrome-related coronavirus isolate RpuRB21012.RSL, partial genome
+NC_045512.2	HG994860.1	99.931	10092	7	0	55	10146	55	10146	0.0	18602	93	694009	Severe acute respiratory syndrome-related coronavirus isolate H_SC_11 genome assembly, complete genome: monopartite
+NC_045512.2	HG994860.1	99.933	8891	6	0	10385	19275	10385	19275	0.0	16390	93	694009	Severe acute respiratory syndrome-related coronavirus isolate H_SC_11 genome assembly, complete genome: monopartite
+NC_045512.2	HG994860.1	99.960	4969	2	0	22543	27511	22543	27511	0.0	9166	93	694009	Severe acute respiratory syndrome-related coronavirus isolate H_SC_11 genome assembly, complete genome: monopartite
+NC_045512.2	HG994860.1	99.852	2028	3	0	27809	29836	27809	29836	0.0	3729	93	694009	Severe acute respiratory syndrome-related coronavirus isolate H_SC_11 genome assembly, complete genome: monopartite
+NC_045512.2	HG994860.1	100.000	938	0	0	21387	22324	21387	22324	0.0	1733	93	694009	Severe acute respiratory syndrome-related coronavirus isolate H_SC_11 genome assembly, complete genome: monopartite
+NC_045512.2	HG994860.1	99.846	650	1	0	20497	21146	20497	21146	0.0	1195	93	694009	Severe acute respiratory syndrome-related coronavirus isolate H_SC_11 genome assembly, complete genome: monopartite
+NC_045512.2	HG994860.1	100.000	341	0	0	19571	19911	19571	19911	3.20e-174	630	93	694009	Severe acute respiratory syndrome-related coronavirus isolate H_SC_11 genome assembly, complete genome: monopartite
+NC_045512.2	OQ297732.1	89.652	13345	1364	15	3815	17149	3625	16962	0.0	17091	93	694009	MAG: Severe acute respiratory syndrome-related coronavirus isolate GD/L105.18/2022, partial genome
+NC_045512.2	OQ297732.1	90.468	6200	581	10	23642	29836	23373	29567	0.0	8207	93	694009	MAG: Severe acute respiratory syndrome-related coronavirus isolate GD/L105.18/2022, partial genome
+NC_045512.2	OQ297732.1	84.996	4492	646	26	17220	21696	17033	21511	0.0	4543	93	694009	MAG: Severe acute respiratory syndrome-related coronavirus isolate GD/L105.18/2022, partial genome
+NC_045512.2	OQ297732.1	91.986	1697	136	0	164	1860	1	1697	0.0	2383	93	694009	MAG: Severe acute respiratory syndrome-related coronavirus isolate GD/L105.18/2022, partial genome
+NC_045512.2	OQ297732.1	92.696	1287	89	4	1922	3207	1759	3041	0.0	1855	93	694009	MAG: Severe acute respiratory syndrome-related coronavirus isolate GD/L105.18/2022, partial genome
+NC_045512.2	OQ297732.1	83.908	435	67	2	3288	3719	3095	3529	9.75e-110	416	93	694009	MAG: Severe acute respiratory syndrome-related coronavirus isolate GD/L105.18/2022, partial genome
+NC_045512.2	OQ297732.1	75.194	258	58	6	23102	23356	22845	23099	1.42e-23	130	93	694009	MAG: Severe acute respiratory syndrome-related coronavirus isolate GD/L105.18/2022, partial genome
+NC_045512.2	OL674075.1	82.573	17697	2925	140	3966	21582	3903	21520	0.0	15448	87	694009	Severe acute respiratory syndrome-related coronavirus isolate Rs7905, complete genome
+NC_045512.2	OL674075.1	76.667	3060	656	54	14	3045	1	3030	0.0	1642	87	694009	Severe acute respiratory syndrome-related coronavirus isolate Rs7905, complete genome
+NC_045512.2	OL674075.1	74.256	3900	868	102	23702	27548	23575	27391	0.0	1515	87	694009	Severe acute respiratory syndrome-related coronavirus isolate Rs7905, complete genome
+NC_045512.2	OL674075.1	82.763	1578	238	31	28304	29868	28120	29676	0.0	1376	87	694009	Severe acute respiratory syndrome-related coronavirus isolate Rs7905, complete genome
+NC_045512.2	OL674078.1	82.568	17697	2926	140	3966	21582	3902	21519	0.0	15442	87	694009	Severe acute respiratory syndrome-related coronavirus isolate Rs7921, complete genome
+NC_045512.2	OL674078.1	76.692	3059	655	54	15	3045	1	3029	0.0	1646	87	694009	Severe acute respiratory syndrome-related coronavirus isolate Rs7921, complete genome
+NC_045512.2	OL674078.1	74.256	3900	868	102	23702	27548	23574	27390	0.0	1515	87	694009	Severe acute respiratory syndrome-related coronavirus isolate Rs7921, complete genome
+NC_045512.2	OL674078.1	82.440	1549	238	31	28304	29839	28119	29646	0.0	1323	87	694009	Severe acute respiratory syndrome-related coronavirus isolate Rs7921, complete genome
+NC_045512.2	OL674078.1	97.701	87	2	0	29752	29838	29730	29816	1.09e-29	150	87	694009	Severe acute respiratory syndrome-related coronavirus isolate Rs7921, complete genome
+NC_045512.2	OL674074.1	82.568	17697	2926	140	3966	21582	3814	21431	0.0	15442	86	694009	Severe acute respiratory syndrome-related coronavirus isolate Rs7896, complete genome
+NC_045512.2	OL674074.1	76.258	2961	648	51	112	3045	9	2941	0.0	1522	86	694009	Severe acute respiratory syndrome-related coronavirus isolate Rs7896, complete genome
+NC_045512.2	OL674074.1	74.256	3900	868	102	23702	27548	23486	27302	0.0	1515	86	694009	Severe acute respiratory syndrome-related coronavirus isolate Rs7896, complete genome
+NC_045512.2	OL674074.1	80.451	1376	235	31	28304	29666	28031	29385	0.0	1020	86	694009	Severe acute respiratory syndrome-related coronavirus isolate Rs7896, complete genome
+NC_045512.2	OL674080.1	82.568	17697	2926	140	3966	21582	3995	21612	0.0	15442	87	694009	Severe acute respiratory syndrome-related coronavirus isolate Rs7931, complete genome
+NC_045512.2	OL674080.1	76.715	3062	655	54	12	3045	91	3122	0.0	1652	87	694009	Severe acute respiratory syndrome-related coronavirus isolate Rs7931, complete genome
+NC_045512.2	OL674080.1	74.256	3900	868	102	23702	27548	23667	27483	0.0	1515	87	694009	Severe acute respiratory syndrome-related coronavirus isolate Rs7931, complete genome
+NC_045512.2	OL674080.1	83.127	1612	238	31	28304	29902	28212	29802	0.0	1439	87	694009	Severe acute respiratory syndrome-related coronavirus isolate Rs7931, complete genome
+NC_045512.2	OL674080.1	94.505	91	5	0	16427	16517	1	91	6.57e-27	141	87	694009	Severe acute respiratory syndrome-related coronavirus isolate Rs7931, complete genome
+NC_045512.2	OL674079.1	82.568	17697	2926	140	3966	21582	3901	21518	0.0	15442	87	694009	Severe acute respiratory syndrome-related coronavirus isolate Rs7924, complete genome
+NC_045512.2	OL674079.1	76.684	3058	655	54	16	3045	1	3028	0.0	1644	87	694009	Severe acute respiratory syndrome-related coronavirus isolate Rs7924, complete genome
+NC_045512.2	OL674079.1	74.256	3900	868	102	23702	27548	23573	27389	0.0	1515	87	694009	Severe acute respiratory syndrome-related coronavirus isolate Rs7924, complete genome
+NC_045512.2	OL674079.1	82.440	1549	238	31	28304	29839	28118	29645	0.0	1323	87	694009	Severe acute respiratory syndrome-related coronavirus isolate Rs7924, complete genome
+NC_045512.2	OL674076.1	82.568	17697	2926	140	3966	21582	3984	21601	0.0	15442	87	694009	Severe acute respiratory syndrome-related coronavirus isolate Rs7907, complete genome
+NC_045512.2	OL674076.1	76.610	3044	655	53	29	3045	98	3111	0.0	1624	87	694009	Severe acute respiratory syndrome-related coronavirus isolate Rs7907, complete genome
+NC_045512.2	OL674076.1	74.256	3900	868	102	23702	27548	23656	27472	0.0	1515	87	694009	Severe acute respiratory syndrome-related coronavirus isolate Rs7907, complete genome
+NC_045512.2	OL674076.1	83.011	1601	238	31	28304	29891	28201	29780	0.0	1419	87	694009	Severe acute respiratory syndrome-related coronavirus isolate Rs7907, complete genome
+NC_045512.2	OL674077.1	82.562	17697	2927	140	3966	21582	4003	21620	0.0	15437	87	694009	Severe acute respiratory syndrome-related coronavirus isolate Ra7909, complete genome
+NC_045512.2	OL674077.1	76.715	3062	655	54	12	3045	99	3130	0.0	1652	87	694009	Severe acute respiratory syndrome-related coronavirus isolate Ra7909, complete genome
+NC_045512.2	OL674077.1	74.256	3900	868	102	23702	27548	23675	27491	0.0	1515	87	694009	Severe acute respiratory syndrome-related coronavirus isolate Ra7909, complete genome
+NC_045512.2	OL674077.1	83.053	1605	238	31	28304	29895	28220	29803	0.0	1426	87	694009	Severe acute respiratory syndrome-related coronavirus isolate Ra7909, complete genome
+NC_045512.2	OL674081.1	82.562	17697	2927	140	3966	21582	3777	21394	0.0	15437	87	694009	Severe acute respiratory syndrome-related coronavirus isolate Rs7952, complete genome
+NC_045512.2	OL674081.1	74.250	3899	870	101	23702	27548	23449	27265	0.0	1515	87	694009	Severe acute respiratory syndrome-related coronavirus isolate Rs7952, complete genome
+NC_045512.2	OL674081.1	76.169	2929	644	50	144	3045	3	2904	0.0	1493	87	694009	Severe acute respiratory syndrome-related coronavirus isolate Rs7952, complete genome
+NC_045512.2	OL674081.1	82.421	1553	239	31	28304	29843	27994	29525	0.0	1325	87	694009	Severe acute respiratory syndrome-related coronavirus isolate Rs7952, complete genome
+NC_045512.2	MZ081376.1	82.474	17694	2944	139	3966	21580	3916	21531	0.0	15350	86	2872804	Betacoronavirus sp. RmYN05 strain bat/Yunnan/RmYN05/2020, complete genome
+NC_045512.2	MZ081376.1	76.700	3073	658	54	1	3045	1	3043	0.0	1655	86	2872804	Betacoronavirus sp. RmYN05 strain bat/Yunnan/RmYN05/2020, complete genome
+NC_045512.2	MZ081376.1	74.834	3604	801	82	23701	27260	23593	27134	0.0	1533	86	2872804	Betacoronavirus sp. RmYN05 strain bat/Yunnan/RmYN05/2020, complete genome
+NC_045512.2	MZ081376.1	83.082	1590	237	29	28304	29881	28143	29712	0.0	1417	86	2872804	Betacoronavirus sp. RmYN05 strain bat/Yunnan/RmYN05/2020, complete genome
+NC_045512.2	MZ081380.1	82.473	17698	2937	144	3966	21580	3916	21531	0.0	15344	86	2872808	Betacoronavirus sp. RsYN04 strain bat/Yunnan/RsYN04/2020, complete genome
+NC_045512.2	MZ081380.1	76.700	3073	658	54	1	3045	1	3043	0.0	1655	86	2872808	Betacoronavirus sp. RsYN04 strain bat/Yunnan/RsYN04/2020, complete genome
+NC_045512.2	MZ081380.1	74.806	3604	802	82	23701	27260	23593	27134	0.0	1528	86	2872808	Betacoronavirus sp. RsYN04 strain bat/Yunnan/RsYN04/2020, complete genome
+NC_045512.2	MZ081380.1	83.082	1590	237	29	28304	29881	28143	29712	0.0	1417	86	2872808	Betacoronavirus sp. RsYN04 strain bat/Yunnan/RsYN04/2020, complete genome
+NC_045512.2	MZ081378.1	82.448	17696	2945	142	3966	21580	3916	21531	0.0	15322	86	2872806	Betacoronavirus sp. RmYN08 strain bat/Yunnan/RmYN08/2020, complete genome
+NC_045512.2	MZ081378.1	76.700	3073	658	54	1	3045	1	3043	0.0	1655	86	2872806	Betacoronavirus sp. RmYN08 strain bat/Yunnan/RmYN08/2020, complete genome
+NC_045512.2	MZ081378.1	74.834	3604	801	82	23701	27260	23593	27134	0.0	1533	86	2872806	Betacoronavirus sp. RmYN08 strain bat/Yunnan/RmYN08/2020, complete genome
+NC_045512.2	MZ081378.1	83.082	1590	237	29	28304	29881	28143	29712	0.0	1417	86	2872806	Betacoronavirus sp. RmYN08 strain bat/Yunnan/RmYN08/2020, complete genome
+NC_045512.2	OQ503499.1	82.330	17702	2968	145	3956	21576	3848	21470	0.0	15213	88	694009	Severe acute respiratory syndrome-related coronavirus isolate RsHB190371, complete genome
+NC_045512.2	OQ503499.1	82.488	6818	1079	91	23087	29843	22897	29660	0.0	5869	88	694009	Severe acute respiratory syndrome-related coronavirus isolate RsHB190371, complete genome
+NC_045512.2	OQ503499.1	78.526	1900	376	25	32	1915	2	1885	0.0	1219	88	694009	Severe acute respiratory syndrome-related coronavirus isolate RsHB190371, complete genome
+NC_045512.2	MZ081379.1	82.346	17696	2949	157	3956	21562	3884	21493	0.0	15210	88	2872807	Betacoronavirus sp. RsYN03 strain bat/Yunnan/RsYN03/2019, complete genome
+NC_045512.2	MZ081379.1	82.769	6883	1044	109	23075	29881	22921	29737	0.0	6010	88	2872807	Betacoronavirus sp. RsYN03 strain bat/Yunnan/RsYN03/2019, complete genome
+NC_045512.2	MZ081379.1	79.027	1850	350	29	6	1836	6	1836	0.0	1232	88	2872807	Betacoronavirus sp. RsYN03 strain bat/Yunnan/RsYN03/2019, complete genome
+NC_045512.2	OK017801.1	82.322	17700	2969	145	3956	21574	3739	21359	0.0	15204	87	2833184	Sarbecovirus sp. isolate HB2020D, complete genome
+NC_045512.2	OK017801.1	81.445	6823	1135	101	23087	29839	22791	29552	0.0	5465	87	2833184	Sarbecovirus sp. isolate HB2020D, complete genome
+NC_045512.2	OK017801.1	78.052	1786	364	22	144	1915	5	1776	0.0	1101	87	2833184	Sarbecovirus sp. isolate HB2020D, complete genome
+NC_045512.2	OR233297.1	82.348	17703	2936	174	3956	21562	3861	21470	0.0	15204	89	3068538	Horseshoe bat sarbecovirus isolate Rt21LC92, complete genome
+NC_045512.2	OR233297.1	82.868	6870	1061	89	23087	29893	22913	29729	0.0	6059	89	3068538	Horseshoe bat sarbecovirus isolate Rt21LC92, complete genome
+NC_045512.2	OR233297.1	77.883	2211	449	33	29	2218	4	2195	0.0	1338	89	3068538	Horseshoe bat sarbecovirus isolate Rt21LC92, complete genome
+NC_045512.2	OQ503498.1	82.307	17702	2972	145	3956	21576	4016	21638	0.0	15191	88	694009	Severe acute respiratory syndrome-related coronavirus isolate BDA190366, complete genome
+NC_045512.2	OQ503498.1	82.497	6873	1088	91	23087	29898	23065	29883	0.0	5921	88	694009	Severe acute respiratory syndrome-related coronavirus isolate BDA190366, complete genome
+NC_045512.2	OQ503498.1	78.505	1926	380	27	6	1915	146	2053	0.0	1232	88	694009	Severe acute respiratory syndrome-related coronavirus isolate BDA190366, complete genome
+NC_045512.2	OK017802.1	82.316	17688	2969	144	3956	21562	3736	21345	0.0	15187	87	2833184	Sarbecovirus sp. isolate HB2020E, complete genome
+NC_045512.2	OK017802.1	82.478	6820	1075	89	23084	29839	22781	29544	0.0	5864	87	2833184	Sarbecovirus sp. isolate HB2020E, complete genome
+NC_045512.2	OK017802.1	78.331	1786	359	22	144	1915	5	1776	0.0	1129	87	2833184	Sarbecovirus sp. isolate HB2020E, complete genome
+NC_045512.2	LC556375.1	82.295	17690	2956	159	3956	21555	3903	21506	0.0	15154	92	694009	Severe acute respiratory syndrome-related coronavirus Rc-o319 RNA, complete genome
+NC_045512.2	LC556375.1	82.745	4874	760	59	23076	27905	22916	27752	0.0	4266	92	694009	Severe acute respiratory syndrome-related coronavirus Rc-o319 RNA, complete genome
+NC_045512.2	LC556375.1	90.305	1640	141	9	28257	29893	28094	29718	0.0	2132	92	694009	Severe acute respiratory syndrome-related coronavirus Rc-o319 RNA, complete genome
+NC_045512.2	LC556375.1	78.023	3076	622	46	6	3058	1	3045	0.0	1886	92	694009	Severe acute respiratory syndrome-related coronavirus Rc-o319 RNA, complete genome
+NC_045512.2	LC556375.1	78.074	488	105	2	22391	22877	22258	22744	6.12e-77	307	92	694009	Severe acute respiratory syndrome-related coronavirus Rc-o319 RNA, complete genome
+NC_045512.2	OK017836.1	82.264	17704	2976	146	3956	21576	3727	21349	0.0	15147	87	2833184	Sarbecovirus sp. isolate JX2021AC, complete genome
+NC_045512.2	OK017836.1	82.501	6812	1081	89	23087	29839	22776	29535	0.0	5873	87	2833184	Sarbecovirus sp. isolate JX2021AC, complete genome
+NC_045512.2	OK017836.1	79.027	1788	343	26	144	1915	5	1776	0.0	1195	87	2833184	Sarbecovirus sp. isolate JX2021AC, complete genome
+NC_045512.2	LC663793.1	82.278	17684	2970	146	3956	21555	3908	21511	0.0	15143	91	2833184	Sarbecovirus sp. Rc-kw8 RNA, complete genome
+NC_045512.2	LC663793.1	82.989	4885	745	66	23066	27904	22908	27752	0.0	4338	91	2833184	Sarbecovirus sp. Rc-kw8 RNA, complete genome
+NC_045512.2	LC663793.1	90.067	1641	142	12	28257	29893	28095	29718	0.0	2108	91	2833184	Sarbecovirus sp. Rc-kw8 RNA, complete genome
+NC_045512.2	LC663793.1	78.009	3074	626	42	6	3058	6	3050	0.0	1886	91	2833184	Sarbecovirus sp. Rc-kw8 RNA, complete genome
+NC_045512.2	LC663958.1	82.270	17699	2967	153	3962	21574	3894	21507	0.0	15141	91	2833184	Sarbecovirus sp. Rc-os20 RNA, complete geneome
+NC_045512.2	LC663958.1	82.768	4834	753	61	23081	27871	22964	27760	0.0	4239	91	2833184	Sarbecovirus sp. Rc-os20 RNA, complete geneome
+NC_045512.2	LC663958.1	90.378	1642	135	14	28257	29893	27774	29397	0.0	2135	91	2833184	Sarbecovirus sp. Rc-os20 RNA, complete geneome
+NC_045512.2	LC663958.1	77.962	3072	632	37	6	3058	5	3050	0.0	1881	91	2833184	Sarbecovirus sp. Rc-os20 RNA, complete geneome
+NC_045512.2	PV344440.1	82.399	17556	2917	155	4095	21562	4004	21474	0.0	15141	87	1928434	Betacoronavirus sp. isolate RoNJ141, complete genome
+NC_045512.2	PV344440.1	82.651	6859	1054	105	23084	29870	22910	29704	0.0	5949	87	1928434	Betacoronavirus sp. isolate RoNJ141, complete genome
+NC_045512.2	PV344440.1	78.416	1932	373	35	14	1923	1	1910	0.0	1218	87	1928434	Betacoronavirus sp. isolate RoNJ141, complete genome
+NC_045512.2	PV648374.1	82.244	17701	2980	149	3956	21573	3897	21517	0.0	15125	91	1508220	Bat coronavirus isolate CoV/Bat306, complete genome
+NC_045512.2	PV648374.1	82.810	4869	756	60	23045	27871	22914	27743	0.0	4279	91	1508220	Bat coronavirus isolate CoV/Bat306, complete genome
+NC_045512.2	PV648374.1	89.695	1640	151	11	28257	29893	27757	29381	0.0	2076	91	1508220	Bat coronavirus isolate CoV/Bat306, complete genome
+NC_045512.2	PV648374.1	78.106	3083	616	50	1	3057	1	3050	0.0	1899	91	1508220	Bat coronavirus isolate CoV/Bat306, complete genome
+NC_045512.2	PV648367.1	82.234	17691	2997	135	3956	21572	3896	21514	0.0	15123	91	1508220	Bat coronavirus isolate CoV/Bat25-27, complete genome
+NC_045512.2	PV648367.1	82.855	4882	751	63	23066	27904	22946	27784	0.0	4300	91	1508220	Bat coronavirus isolate CoV/Bat25-27, complete genome
+NC_045512.2	PV648367.1	89.454	1631	142	22	28257	29881	28127	29733	0.0	2032	91	1508220	Bat coronavirus isolate CoV/Bat25-27, complete genome
+NC_045512.2	PV648367.1	78.210	3084	610	53	1	3057	1	3049	0.0	1916	91	1508220	Bat coronavirus isolate CoV/Bat25-27, complete genome
+NC_045512.2	PV648368.1	82.224	17698	2997	137	3956	21577	3896	21520	0.0	15115	91	1508220	Bat coronavirus isolate CoV/Bat25-44, complete genome
+NC_045512.2	PV648368.1	82.781	4884	759	60	23065	27904	22945	27790	0.0	4285	91	1508220	Bat coronavirus isolate CoV/Bat25-44, complete genome
+NC_045512.2	PV648368.1	88.950	1629	157	16	28257	29881	28133	29742	0.0	1989	91	1508220	Bat coronavirus isolate CoV/Bat25-44, complete genome
+NC_045512.2	PV648368.1	78.106	3083	615	51	1	3057	1	3049	0.0	1899	91	1508220	Bat coronavirus isolate CoV/Bat25-44, complete genome
+NC_045512.2	OQ503497.1	82.236	17721	2962	164	3956	21582	3859	21487	0.0	15114	88	694009	Severe acute respiratory syndrome-related coronavirus isolate 151491, complete genome
+NC_045512.2	OQ503497.1	82.779	6800	1056	85	23087	29827	22905	29648	0.0	5963	88	694009	Severe acute respiratory syndrome-related coronavirus isolate 151491, complete genome
+NC_045512.2	OQ503497.1	79.635	1920	355	31	15	1917	1	1901	0.0	1347	88	694009	Severe acute respiratory syndrome-related coronavirus isolate 151491, complete genome
+NC_045512.2	LC663959.1	82.219	17710	2976	155	3956	21577	3901	21525	0.0	15099	91	2833184	Sarbecovirus sp. Rc-mk2 RNA, complete geneome
+NC_045512.2	LC663959.1	82.684	4880	764	59	23034	27871	22919	27759	0.0	4255	91	2833184	Sarbecovirus sp. Rc-mk2 RNA, complete geneome
+NC_045512.2	LC663959.1	90.311	1641	139	11	28257	29893	27773	29397	0.0	2132	91	2833184	Sarbecovirus sp. Rc-mk2 RNA, complete geneome
+NC_045512.2	LC663959.1	78.411	3071	619	35	6	3058	5	3049	0.0	1958	91	2833184	Sarbecovirus sp. Rc-mk2 RNA, complete geneome
+NC_045512.2	OK017842.1	82.347	17583	2904	181	4095	21576	3776	21259	0.0	15090	86	2833184	Sarbecovirus sp. isolate JX2021M, complete genome
+NC_045512.2	OK017842.1	81.200	4867	831	61	23087	27910	22686	27511	0.0	3842	86	2833184	Sarbecovirus sp. isolate JX2021M, complete genome
+NC_045512.2	OK017842.1	88.385	1498	158	10	28257	29744	27845	29336	0.0	1788	86	2833184	Sarbecovirus sp. isolate JX2021M, complete genome
+NC_045512.2	OK017842.1	76.597	1863	400	29	242	2086	1	1845	0.0	992	86	2833184	Sarbecovirus sp. isolate JX2021M, complete genome
+NC_045512.2	PV648371.1	82.209	17700	2985	150	3956	21572	3897	21515	0.0	15090	91	1508220	Bat coronavirus isolate CoV/Bat72, complete genome
+NC_045512.2	PV648371.1	82.738	4872	757	63	23065	27894	22928	27757	0.0	4261	91	1508220	Bat coronavirus isolate CoV/Bat72, complete genome
+NC_045512.2	PV648371.1	89.225	1652	151	19	28251	29897	27743	29372	0.0	2039	91	1508220	Bat coronavirus isolate CoV/Bat72, complete genome
+NC_045512.2	PV648371.1	78.365	3083	608	50	1	3057	1	3050	0.0	1943	91	1508220	Bat coronavirus isolate CoV/Bat72, complete genome
+NC_045512.2	PV648369.1	82.209	17700	2985	150	3956	21572	3897	21515	0.0	15090	91	1508220	Bat coronavirus isolate CoV/Bat54, complete genome
+NC_045512.2	PV648369.1	82.780	4849	754	60	23065	27871	22928	27737	0.0	4253	91	1508220	Bat coronavirus isolate CoV/Bat54, complete genome
+NC_045512.2	PV648369.1	89.247	1646	151	18	28257	29897	27751	29375	0.0	2036	91	1508220	Bat coronavirus isolate CoV/Bat54, complete genome
+NC_045512.2	PV648369.1	78.365	3083	608	50	1	3057	1	3050	0.0	1943	91	1508220	Bat coronavirus isolate CoV/Bat54, complete genome
+NC_045512.2	KF294455.1	82.354	17556	2911	172	4095	21555	4016	21479	0.0	15084	65	1508227	Bat SARS-like coronavirus isolate Anlong-111 orf1ab polyprotein and orf1a polyprotein genes, complete cds
+NC_045512.2	KF294455.1	78.671	1941	367	38	6	1923	6	1922	0.0	1247	65	1508227	Bat SARS-like coronavirus isolate Anlong-111 orf1ab polyprotein and orf1a polyprotein genes, complete cds
+NC_045512.2	PV648370.1	82.198	17700	2987	150	3956	21572	3897	21515	0.0	15079	91	1508220	Bat coronavirus isolate CoV/Bat70, complete genome
+NC_045512.2	PV648370.1	82.821	4849	752	60	23065	27871	22928	27737	0.0	4265	91	1508220	Bat coronavirus isolate CoV/Bat70, complete genome
+NC_045512.2	PV648370.1	89.247	1646	151	18	28257	29897	27751	29375	0.0	2036	91	1508220	Bat coronavirus isolate CoV/Bat70, complete genome
+NC_045512.2	PV648370.1	78.398	3083	607	50	1	3057	1	3050	0.0	1949	91	1508220	Bat coronavirus isolate CoV/Bat70, complete genome
+NC_045512.2	PV648366.1	82.189	17691	3005	135	3956	21572	3897	21515	0.0	15079	91	1508220	Bat coronavirus isolate CoV/Bat25-5, complete genome
+NC_045512.2	PV648366.1	82.786	4845	762	53	23066	27871	22932	27743	0.0	4261	91	1508220	Bat coronavirus isolate CoV/Bat25-5, complete genome
+NC_045512.2	PV648366.1	89.332	1631	144	22	28257	29880	27757	29364	0.0	2021	91	1508220	Bat coronavirus isolate CoV/Bat25-5, complete genome
+NC_045512.2	PV648366.1	78.483	3086	599	55	1	3057	1	3050	0.0	1960	91	1508220	Bat coronavirus isolate CoV/Bat25-5, complete genome
+NC_045512.2	PV648372.1	82.192	17700	2988	150	3956	21572	3897	21515	0.0	15073	91	1508220	Bat coronavirus isolate CoV/Bat74, complete genome
+NC_045512.2	PV648372.1	82.821	4849	752	60	23065	27871	22928	27737	0.0	4265	91	1508220	Bat coronavirus isolate CoV/Bat74, complete genome
+NC_045512.2	PV648372.1	88.882	1646	153	22	28257	29897	27751	29371	0.0	1999	91	1508220	Bat coronavirus isolate CoV/Bat74, complete genome
+NC_045512.2	PV648372.1	78.398	3083	607	50	1	3057	1	3050	0.0	1949	91	1508220	Bat coronavirus isolate CoV/Bat74, complete genome
+NC_045512.2	PV344445.1	82.318	17577	2924	166	4095	21578	4004	21489	0.0	15071	88	1928434	Betacoronavirus sp. isolate RoNJ147, complete genome
+NC_045512.2	PV344445.1	82.664	6876	1052	107	23070	29870	22804	29614	0.0	5965	88	1928434	Betacoronavirus sp. isolate RoNJ147, complete genome
+NC_045512.2	PV344445.1	78.416	1932	373	35	14	1923	1	1910	0.0	1218	88	1928434	Betacoronavirus sp. isolate RoNJ147, complete genome
+NC_045512.2	PV344444.1	82.312	17577	2925	166	4095	21578	4002	21487	0.0	15066	88	1928434	Betacoronavirus sp. isolate RoNJ149, complete genome
+NC_045512.2	PV344444.1	82.667	6877	1052	107	23070	29871	22874	29685	0.0	5967	88	1928434	Betacoronavirus sp. isolate RoNJ149, complete genome
+NC_045512.2	PV344444.1	78.394	1930	373	35	16	1923	1	1908	0.0	1214	88	1928434	Betacoronavirus sp. isolate RoNJ149, complete genome
+NC_045512.2	PV344443.1	82.306	17577	2926	166	4095	21578	4005	21490	0.0	15060	88	1928434	Betacoronavirus sp. isolate RoNJ119, complete genome
+NC_045512.2	PV344443.1	82.672	6879	1052	107	23070	29873	22877	29690	0.0	5971	88	1928434	Betacoronavirus sp. isolate RoNJ119, complete genome
+NC_045512.2	PV344443.1	78.427	1933	373	35	13	1923	1	1911	0.0	1219	88	1928434	Betacoronavirus sp. isolate RoNJ119, complete genome
+NC_045512.2	OR261265.1	82.183	17725	2956	183	3956	21578	3639	21263	0.0	15051	88	3068888	Rhinolophus siamensis bat sarbecovirus isolate RsVN21-195, complete genome
+NC_045512.2	OR261265.1	82.670	6884	1056	99	23070	29886	22650	29463	0.0	5976	88	3068888	Rhinolophus siamensis bat sarbecovirus isolate RsVN21-195, complete genome
+NC_045512.2	OR261265.1	76.054	1992	439	33	246	2218	1	1973	0.0	1002	88	3068888	Rhinolophus siamensis bat sarbecovirus isolate RsVN21-195, complete genome
+NC_045512.2	OR261264.1	82.183	17725	2956	183	3956	21578	3869	21493	0.0	15051	89	3061635	Rhinolophus thomasi bat coronavirus isolate RtVN21-193, complete genome
+NC_045512.2	OR261264.1	82.612	6884	1060	99	23070	29886	22880	29693	0.0	5954	89	3061635	Rhinolophus thomasi bat coronavirus isolate RtVN21-193, complete genome
+NC_045512.2	OR261264.1	77.609	2233	459	36	6	2218	7	2218	0.0	1315	89	3061635	Rhinolophus thomasi bat coronavirus isolate RtVN21-193, complete genome
+NC_045512.2	OK017809.1	82.189	17703	2964	166	3956	21562	3739	21348	0.0	15049	87	2833184	Sarbecovirus sp. isolate FJ2021D, complete genome
+NC_045512.2	OK017809.1	82.655	6780	1049	97	23087	29799	22791	29510	0.0	5888	87	2833184	Sarbecovirus sp. isolate FJ2021D, complete genome
+NC_045512.2	OK017809.1	78.779	1786	351	22	144	1915	5	1776	0.0	1173	87	2833184	Sarbecovirus sp. isolate FJ2021D, complete genome
+NC_045512.2	PV344436.1	82.307	17561	2924	165	4095	21562	4003	21473	0.0	15047	87	1928434	Betacoronavirus sp. isolate RoNJ84, complete genome
+NC_045512.2	PV344436.1	82.597	6861	1059	103	23084	29871	22909	29707	0.0	5930	87	1928434	Betacoronavirus sp. isolate RoNJ84, complete genome
+NC_045512.2	PV344436.1	78.405	1931	373	35	15	1923	1	1909	0.0	1216	87	1928434	Betacoronavirus sp. isolate RoNJ84, complete genome
+NC_045512.2	PV652251.1	82.301	17555	2936	156	4095	21562	4013	21483	0.0	15047	87	1508220	Bat coronavirus isolate BtRs-SarbeCov/GX23-GX3, complete genome
+NC_045512.2	PV652251.1	82.512	6822	1061	103	23084	29833	22922	29683	0.0	5867	87	1508220	Bat coronavirus isolate BtRs-SarbeCov/GX23-GX3, complete genome
+NC_045512.2	PV652251.1	79.381	1940	355	39	6	1923	6	1922	0.0	1325	87	1508220	Bat coronavirus isolate BtRs-SarbeCov/GX23-GX3, complete genome
+NC_045512.2	JX993988.1	82.178	17697	2977	158	3956	21562	3782	21391	0.0	15043	87	1283333	Bat coronavirus Cp/Yunnan2011, complete genome
+NC_045512.2	JX993988.1	82.350	6697	1046	105	23075	29698	22819	29452	0.0	5694	87	1283333	Bat coronavirus Cp/Yunnan2011, complete genome
+NC_045512.2	JX993988.1	78.318	1748	343	27	108	1836	1	1731	0.0	1096	87	1283333	Bat coronavirus Cp/Yunnan2011, complete genome
+NC_045512.2	OK017859.1	82.283	17565	2947	153	4096	21577	3868	21350	0.0	15043	87	2833184	Sarbecovirus sp. isolate GX2019A, complete genome
+NC_045512.2	OK017859.1	81.407	4889	815	72	23070	27910	22741	27583	0.0	3906	87	2833184	Sarbecovirus sp. isolate GX2019A, complete genome
+NC_045512.2	OK017859.1	89.843	1595	146	11	28257	29839	27917	29507	0.0	2034	87	2833184	Sarbecovirus sp. isolate GX2019A, complete genome
+NC_045512.2	OK017859.1	77.465	2099	425	41	144	2218	5	2079	0.0	1212	87	2833184	Sarbecovirus sp. isolate GX2019A, complete genome
+NC_045512.2	PV652250.1	82.298	17557	2933	160	4095	21562	3983	21453	0.0	15042	87	1508220	Bat coronavirus isolate BtRs-SarbeCov/GX23-GX14, complete genome
+NC_045512.2	PV652250.1	82.561	6818	1063	97	23084	29833	22892	29651	0.0	5888	87	1508220	Bat coronavirus isolate BtRs-SarbeCov/GX23-GX14, complete genome
+NC_045512.2	PV652250.1	79.383	1911	351	37	35	1923	3	1892	0.0	1306	87	1508220	Bat coronavirus isolate BtRs-SarbeCov/GX23-GX14, complete genome
+NC_045512.2	PV652249.1	82.298	17557	2933	160	4095	21562	3875	21345	0.0	15042	87	1508220	Bat coronavirus isolate BtRs-SarbeCov/GX23-GX2, complete genome
+NC_045512.2	PV652249.1	82.546	6818	1064	97	23084	29833	22784	29543	0.0	5882	87	1508220	Bat coronavirus isolate BtRs-SarbeCov/GX23-GX2, complete genome
+NC_045512.2	PV652249.1	78.889	1800	340	35	144	1923	5	1784	0.0	1182	87	1508220	Bat coronavirus isolate BtRs-SarbeCov/GX23-GX2, complete genome
+NC_045512.2	PV652252.1	82.298	17557	2933	160	4095	21562	4013	21483	0.0	15042	87	1508220	Bat coronavirus isolate BtRs-SarbeCov/GX23-GX15, complete genome
+NC_045512.2	PV652252.1	82.512	6822	1061	103	23084	29833	22922	29683	0.0	5867	87	1508220	Bat coronavirus isolate BtRs-SarbeCov/GX23-GX15, complete genome
+NC_045512.2	PV652252.1	79.278	1940	357	39	6	1923	6	1922	0.0	1314	87	1508220	Bat coronavirus isolate BtRs-SarbeCov/GX23-GX15, complete genome
+NC_045512.2	OK017832.1	82.164	17717	2975	168	3956	21577	3724	21350	0.0	15040	89	2833184	Sarbecovirus sp. isolate HN2021C, complete genome
+NC_045512.2	OK017832.1	82.880	6840	1038	101	23070	29839	22741	29517	0.0	6021	89	2833184	Sarbecovirus sp. isolate HN2021C, complete genome
+NC_045512.2	OK017832.1	77.158	2097	435	37	144	2218	5	2079	0.0	1179	89	2833184	Sarbecovirus sp. isolate HN2021C, complete genome
+NC_045512.2	OK017838.1	82.174	17699	2974	163	3956	21562	3736	21345	0.0	15038	86	2833184	Sarbecovirus sp. isolate JX2021G, complete genome
+NC_045512.2	OK017838.1	81.244	4873	822	67	23084	27910	22781	27607	0.0	3851	86	2833184	Sarbecovirus sp. isolate JX2021G, complete genome
+NC_045512.2	OK017838.1	89.655	1595	149	11	28257	29839	27892	29482	0.0	2017	86	2833184	Sarbecovirus sp. isolate JX2021G, complete genome
+NC_045512.2	OK017838.1	78.655	1785	355	20	144	1915	5	1776	0.0	1162	86	2833184	Sarbecovirus sp. isolate JX2021G, complete genome
+NC_045512.2	OK017840.1	82.173	17698	2976	161	3956	21562	3736	21345	0.0	15038	86	2833184	Sarbecovirus sp. isolate JX2021K, complete genome
+NC_045512.2	OK017840.1	81.326	4873	821	68	23084	27910	22784	27613	0.0	3875	86	2833184	Sarbecovirus sp. isolate JX2021K, complete genome
+NC_045512.2	OK017840.1	89.718	1595	148	11	28257	29839	27947	29537	0.0	2023	86	2833184	Sarbecovirus sp. isolate JX2021K, complete genome
+NC_045512.2	OK017840.1	78.543	1785	357	20	144	1915	5	1776	0.0	1151	86	2833184	Sarbecovirus sp. isolate JX2021K, complete genome
+NC_045512.2	PV648373.1	82.149	17708	2992	153	3956	21577	3888	21512	0.0	15032	91	1508220	Bat coronavirus isolate CoV/Bat82, complete genome
+NC_045512.2	PV648373.1	83.003	4848	746	57	23066	27871	22950	27761	0.0	4316	91	1508220	Bat coronavirus isolate CoV/Bat82, complete genome
+NC_045512.2	PV648373.1	89.071	1647	148	24	28257	29897	27775	29395	0.0	2015	91	1508220	Bat coronavirus isolate CoV/Bat82, complete genome
+NC_045512.2	PV648373.1	78.444	3085	602	53	1	3057	1	3050	0.0	1954	91	1508220	Bat coronavirus isolate CoV/Bat82, complete genome
+NC_045512.2	OK017837.1	82.165	17701	2972	166	3956	21562	3736	21345	0.0	15027	87	2833184	Sarbecovirus sp. isolate JX2021C, complete genome
+NC_045512.2	OK017837.1	82.493	6826	1066	99	23084	29839	22784	29550	0.0	5866	87	2833184	Sarbecovirus sp. isolate JX2021C, complete genome
+NC_045512.2	OK017837.1	78.567	1787	353	24	144	1915	5	1776	0.0	1151	87	2833184	Sarbecovirus sp. isolate JX2021C, complete genome
+NC_045512.2	PV344441.1	82.286	17562	2926	167	4095	21562	4079	21549	0.0	15025	88	1928434	Betacoronavirus sp. isolate RoNJ133, complete genome
+NC_045512.2	PV344441.1	82.761	6874	1051	105	23069	29870	22971	29782	0.0	6006	88	1928434	Betacoronavirus sp. isolate RoNJ133, complete genome
+NC_045512.2	PV344441.1	78.535	1938	372	35	8	1923	67	1982	0.0	1234	88	1928434	Betacoronavirus sp. isolate RoNJ133, complete genome
+NC_045512.2	OQ297701.1	82.276	17558	2935	161	4095	21562	4065	21535	0.0	15019	87	694009	MAG: Severe acute respiratory syndrome-related coronavirus isolate GD/L19.18/2020, complete genome
+NC_045512.2	OQ297701.1	82.742	6849	1063	90	23084	29869	22974	29766	0.0	5989	87	694009	MAG: Severe acute respiratory syndrome-related coronavirus isolate GD/L19.18/2020, complete genome
+NC_045512.2	OQ297701.1	78.529	1863	373	20	67	1915	114	1963	0.0	1199	87	694009	MAG: Severe acute respiratory syndrome-related coronavirus isolate GD/L19.18/2020, complete genome
+NC_045512.2	MZ081382.1	82.138	17708	2988	156	3956	21574	3884	21505	0.0	15016	88	2872810	Betacoronavirus sp. RsYN09 strain bat/Yunnan/RsYN09/2020, complete genome
+NC_045512.2	MZ081382.1	82.499	6874	1065	106	23070	29869	22908	29717	0.0	5903	88	2872810	Betacoronavirus sp. RsYN09 strain bat/Yunnan/RsYN09/2020, complete genome
+NC_045512.2	MZ081382.1	79.078	1931	366	29	6	1917	6	1917	0.0	1293	88	2872810	Betacoronavirus sp. RsYN09 strain bat/Yunnan/RsYN09/2020, complete genome
+NC_045512.2	OK017792.1	82.145	17704	2973	172	3956	21562	3730	21342	0.0	15008	88	2833184	Sarbecovirus sp. isolate GD2017F, complete genome
+NC_045512.2	OK017792.1	82.333	6815	1077	102	23084	29834	22781	29532	0.0	5797	88	2833184	Sarbecovirus sp. isolate GD2017F, complete genome
+NC_045512.2	OK017792.1	77.184	2095	438	34	144	2218	5	2079	0.0	1184	88	2833184	Sarbecovirus sp. isolate GD2017F, complete genome
+NC_045512.2	OK017843.1	82.154	17713	2955	186	3956	21562	3736	21348	0.0	15008	87	2833184	Sarbecovirus sp. isolate JX2021N, complete genome
+NC_045512.2	OK017843.1	81.471	4868	816	64	23087	27910	22788	27613	0.0	3914	87	2833184	Sarbecovirus sp. isolate JX2021N, complete genome
+NC_045512.2	OK017843.1	89.768	1593	151	7	28257	29839	27947	29537	0.0	2028	87	2833184	Sarbecovirus sp. isolate JX2021N, complete genome
+NC_045512.2	OK017843.1	76.903	1918	406	30	186	2086	47	1944	0.0	1053	87	2833184	Sarbecovirus sp. isolate JX2021N, complete genome
+NC_045512.2	PV652248.1	82.250	17555	2945	155	4095	21562	4013	21483	0.0	14997	87	1508220	Bat coronavirus isolate BtRa-SarbeCov/GX23-GX18, complete genome
+NC_045512.2	PV652248.1	82.471	6823	1061	105	23084	29833	22922	29682	0.0	5849	87	1508220	Bat coronavirus isolate BtRa-SarbeCov/GX23-GX18, complete genome
+NC_045512.2	PV652248.1	79.392	1941	353	41	6	1923	6	1922	0.0	1325	87	1508220	Bat coronavirus isolate BtRa-SarbeCov/GX23-GX18, complete genome
+NC_045512.2	OK017807.1	82.111	17687	3007	141	3956	21562	3736	21345	0.0	14988	87	2833184	Sarbecovirus sp. isolate AH2021A, complete genome
+NC_045512.2	OK017807.1	82.569	6741	1050	95	23084	29758	22784	29465	0.0	5823	87	2833184	Sarbecovirus sp. isolate AH2021A, complete genome
+NC_045512.2	OK017807.1	78.559	1791	356	22	141	1917	2	1778	0.0	1155	87	2833184	Sarbecovirus sp. isolate AH2021A, complete genome
+NC_045512.2	PQ577584.1	82.247	17563	2931	168	4095	21562	4005	21475	0.0	14986	86	1928434	Betacoronavirus sp. isolate B87, complete genome
+NC_045512.2	PQ577584.1	81.281	4872	818	71	23087	27910	22915	27740	0.0	3858	86	1928434	Betacoronavirus sp. isolate B87, complete genome
+NC_045512.2	PQ577584.1	89.897	1643	150	11	28257	29887	28074	29712	0.0	2100	86	1928434	Betacoronavirus sp. isolate B87, complete genome
+NC_045512.2	PQ577584.1	78.892	1914	381	17	13	1915	2	1903	0.0	1275	86	1928434	Betacoronavirus sp. isolate B87, complete genome
+NC_045512.2	PV652247.1	82.239	17555	2947	155	4095	21562	4014	21484	0.0	14986	87	1508220	Bat coronavirus isolate BtRa-SarbeCov/GX23-GX6, complete genome
+NC_045512.2	PV652247.1	82.456	6823	1062	105	23084	29833	22923	29683	0.0	5843	87	1508220	Bat coronavirus isolate BtRa-SarbeCov/GX23-GX6, complete genome
+NC_045512.2	PV652247.1	79.392	1941	354	40	6	1923	6	1923	0.0	1327	87	1508220	Bat coronavirus isolate BtRa-SarbeCov/GX23-GX6, complete genome
+NC_045512.2	PQ577586.1	82.247	17563	2931	168	4095	21562	4009	21479	0.0	14986	86	1928434	Betacoronavirus sp. isolate B78, complete genome
+NC_045512.2	PQ577586.1	81.294	4870	821	67	23087	27910	22919	27744	0.0	3864	86	1928434	Betacoronavirus sp. isolate B78, complete genome
+NC_045512.2	PQ577586.1	89.858	1617	148	11	28257	29861	28078	29690	0.0	2063	86	1928434	Betacoronavirus sp. isolate B78, complete genome
+NC_045512.2	PQ577586.1	78.895	1919	382	17	8	1915	1	1907	0.0	1279	86	1928434	Betacoronavirus sp. isolate B78, complete genome
+NC_045512.2	MW681002.1	82.247	17563	2931	168	4095	21562	4243	21713	0.0	14986	86	694009	Severe acute respiratory syndrome-related coronavirus isolate Rs56, complete genome
+NC_045512.2	MW681002.1	81.294	4870	821	67	23087	27910	23153	27978	0.0	3864	86	694009	Severe acute respiratory syndrome-related coronavirus isolate Rs56, complete genome
+NC_045512.2	MW681002.1	89.976	1636	148	11	28257	29880	28312	29943	0.0	2098	86	694009	Severe acute respiratory syndrome-related coronavirus isolate Rs56, complete genome
+NC_045512.2	MW681002.1	78.917	1921	382	17	6	1915	233	2141	0.0	1282	86	694009	Severe acute respiratory syndrome-related coronavirus isolate Rs56, complete genome
+NC_045512.2	PQ577588.1	82.224	17580	2931	175	4095	21576	4029	21512	0.0	14973	88	1928434	Betacoronavirus sp. isolate B64, complete genome
+NC_045512.2	PQ577588.1	82.868	6847	1058	93	23087	29872	22939	29731	0.0	6039	88	1928434	Betacoronavirus sp. isolate B64, complete genome
+NC_045512.2	PQ577588.1	78.895	1919	382	17	8	1915	21	1927	0.0	1279	88	1928434	Betacoronavirus sp. isolate B64, complete genome
+NC_045512.2	PQ577589.1	82.224	17580	2931	175	4095	21576	4002	21485	0.0	14973	87	1928434	Betacoronavirus sp. isolate B50, complete genome
+NC_045512.2	PQ577589.1	82.863	6845	1058	93	23087	29870	22912	29702	0.0	6035	87	1928434	Betacoronavirus sp. isolate B50, complete genome
+NC_045512.2	PQ577589.1	78.884	1899	379	16	29	1915	12	1900	0.0	1266	87	1928434	Betacoronavirus sp. isolate B50, complete genome
+NC_045512.2	OK017821.1	82.223	17556	2948	160	4095	21562	3878	21348	0.0	14970	87	2833184	Sarbecovirus sp. isolate GD2017O, complete genome
+NC_045512.2	OK017821.1	82.612	6815	1075	88	23084	29839	22787	29550	0.0	5919	87	2833184	Sarbecovirus sp. isolate GD2017O, complete genome
+NC_045512.2	OK017821.1	78.227	1782	368	15	144	1915	5	1776	0.0	1123	87	2833184	Sarbecovirus sp. isolate GD2017O, complete genome
+NC_045512.2	OK017841.1	82.231	17564	2932	169	4095	21562	3776	21246	0.0	14970	87	2833184	Sarbecovirus sp. isolate JX2021L, complete genome
+NC_045512.2	OK017841.1	82.446	6722	1057	90	23087	29744	22686	29348	0.0	5762	87	2833184	Sarbecovirus sp. isolate JX2021L, complete genome
+NC_045512.2	OK017841.1	76.758	1863	397	29	242	2086	1	1845	0.0	1009	87	2833184	Sarbecovirus sp. isolate JX2021L, complete genome
+NC_045512.2	PQ577580.1	82.227	17560	2940	163	4095	21562	4009	21479	0.0	14970	86	1928434	Betacoronavirus sp. isolate CH215, complete genome
+NC_045512.2	PQ577580.1	81.294	4870	821	67	23087	27910	22919	27744	0.0	3864	86	1928434	Betacoronavirus sp. isolate CH215, complete genome
+NC_045512.2	PQ577580.1	89.803	1628	150	11	28257	29872	28078	29701	0.0	2073	86	1928434	Betacoronavirus sp. isolate CH215, complete genome
+NC_045512.2	PQ577580.1	78.895	1919	382	17	8	1915	1	1907	0.0	1279	86	1928434	Betacoronavirus sp. isolate CH215, complete genome
+NC_045512.2	KJ473814.1	82.202	17569	2964	154	4096	21582	3955	21442	0.0	14970	87	1503302	BtRs-BetaCoV/HuB2013, complete genome
+NC_045512.2	KJ473814.1	81.343	4931	827	70	23068	27952	22844	27727	0.0	3923	87	1503302	BtRs-BetaCoV/HuB2013, complete genome
+NC_045512.2	KJ473814.1	90.114	1669	148	11	28221	29878	27996	29658	0.0	2152	87	1503302	BtRs-BetaCoV/HuB2013, complete genome
+NC_045512.2	KJ473814.1	78.048	2100	428	28	63	2145	1	2084	0.0	1293	87	1503302	BtRs-BetaCoV/HuB2013, complete genome
+NC_045512.2	OK017828.1	82.100	17698	2989	168	3956	21562	3739	21348	0.0	14966	88	2833184	Sarbecovirus sp. isolate GD2019E, complete genome
+NC_045512.2	OK017828.1	82.593	6819	1069	89	23084	29839	22787	29550	0.0	5908	88	2833184	Sarbecovirus sp. isolate GD2019E, complete genome
+NC_045512.2	OK017828.1	76.695	2094	450	33	144	2218	5	2079	0.0	1129	88	2833184	Sarbecovirus sp. isolate GD2019E, complete genome
+NC_045512.2	OK017839.1	82.091	17712	2989	166	3956	21576	3736	21355	0.0	14966	86	2833184	Sarbecovirus sp. isolate JX2021J, complete genome
+NC_045512.2	OK017839.1	81.249	4869	822	66	23087	27910	22782	27604	0.0	3849	86	2833184	Sarbecovirus sp. isolate JX2021J, complete genome
+NC_045512.2	OK017839.1	89.843	1595	146	11	28257	29839	27938	29528	0.0	2034	86	2833184	Sarbecovirus sp. isolate JX2021J, complete genome
+NC_045512.2	OK017839.1	78.543	1785	357	20	144	1915	5	1776	0.0	1151	86	2833184	Sarbecovirus sp. isolate JX2021J, complete genome
+NC_045512.2	OK017817.1	82.217	17556	2949	160	4095	21562	3878	21348	0.0	14964	87	2833184	Sarbecovirus sp. isolate GD2017K, complete genome
+NC_045512.2	OK017817.1	82.641	6815	1073	88	23084	29839	22787	29550	0.0	5930	87	2833184	Sarbecovirus sp. isolate GD2017K, complete genome
+NC_045512.2	OK017817.1	78.227	1782	368	15	144	1915	5	1776	0.0	1123	87	2833184	Sarbecovirus sp. isolate GD2017K, complete genome
+NC_045512.2	OK017816.1	82.217	17556	2949	160	4095	21562	3878	21348	0.0	14964	87	2833184	Sarbecovirus sp. isolate GD2017J, complete genome
+NC_045512.2	OK017816.1	82.627	6815	1074	88	23084	29839	22787	29550	0.0	5925	87	2833184	Sarbecovirus sp. isolate GD2017J, complete genome
+NC_045512.2	OK017816.1	78.227	1782	368	15	144	1915	5	1776	0.0	1123	87	2833184	Sarbecovirus sp. isolate GD2017J, complete genome
+NC_045512.2	OM240725.1	82.222	17567	2928	175	4095	21562	3930	21400	0.0	14960	87	1805463	Bat betacoronavirus isolate RaCH025, complete genome
+NC_045512.2	OM240725.1	82.765	6835	1068	88	23087	29863	22840	29622	0.0	5995	87	1805463	Bat betacoronavirus isolate RaCH025, complete genome
+NC_045512.2	OM240725.1	78.490	1841	369	20	89	1915	1	1828	0.0	1181	87	1805463	Bat betacoronavirus isolate RaCH025, complete genome
+NC_045512.2	OK017814.1	82.211	17556	2950	160	4095	21562	3878	21348	0.0	14958	87	2833184	Sarbecovirus sp. isolate GD2017H, complete genome
+NC_045512.2	OK017814.1	82.546	6818	1074	92	23084	29839	22787	29550	0.0	5891	87	2833184	Sarbecovirus sp. isolate GD2017H, complete genome
+NC_045512.2	OK017814.1	78.227	1782	368	15	144	1915	5	1776	0.0	1123	87	2833184	Sarbecovirus sp. isolate GD2017H, complete genome
+NC_045512.2	OK017820.1	82.211	17556	2950	160	4095	21562	3878	21348	0.0	14958	87	2833184	Sarbecovirus sp. isolate GD2017N, complete genome
+NC_045512.2	OK017820.1	82.617	6817	1073	89	23084	29839	22787	29552	0.0	5921	87	2833184	Sarbecovirus sp. isolate GD2017N, complete genome
+NC_045512.2	OK017820.1	78.227	1782	368	15	144	1915	5	1776	0.0	1123	87	2833184	Sarbecovirus sp. isolate GD2017N, complete genome
+NC_045512.2	PQ577587.1	82.222	17567	2928	175	4095	21562	4000	21470	0.0	14958	87	1928434	Betacoronavirus sp. isolate B68, complete genome
+NC_045512.2	PQ577587.1	82.714	6838	1060	90	23087	29861	22910	29688	0.0	5967	87	1928434	Betacoronavirus sp. isolate B68, complete genome
+NC_045512.2	PQ577587.1	78.774	1908	382	17	19	1915	3	1898	0.0	1258	87	1928434	Betacoronavirus sp. isolate B68, complete genome
+NC_045512.2	PQ577585.1	82.213	17563	2937	167	4095	21562	3971	21441	0.0	14957	87	1928434	Betacoronavirus sp. isolate B86, complete genome
+NC_045512.2	PQ577585.1	82.617	6840	1072	95	23087	29864	22881	29665	0.0	5936	87	1928434	Betacoronavirus sp. isolate B86, complete genome
+NC_045512.2	PQ577585.1	78.765	1879	378	15	48	1915	1	1869	0.0	1240	87	1928434	Betacoronavirus sp. isolate B86, complete genome
+NC_045512.2	PQ577582.1	82.217	17567	2929	175	4095	21562	3964	21434	0.0	14953	87	1928434	Betacoronavirus sp. isolate CH053, complete genome
+NC_045512.2	PQ577582.1	82.745	6833	1069	88	23087	29861	22874	29654	0.0	5986	87	1928434	Betacoronavirus sp. isolate CH053, complete genome
+NC_045512.2	PQ577582.1	78.880	1875	369	20	55	1915	1	1862	0.0	1243	87	1928434	Betacoronavirus sp. isolate CH053, complete genome
+NC_045512.2	PQ577581.1	82.219	17569	2925	177	4095	21562	3998	21468	0.0	14953	87	1928434	Betacoronavirus sp. isolate CH063, complete genome
+NC_045512.2	PQ577581.1	82.783	6842	1068	88	23087	29870	22908	29697	0.0	6008	87	1928434	Betacoronavirus sp. isolate CH063, complete genome
+NC_045512.2	PQ577581.1	79.058	1910	372	22	19	1915	2	1896	0.0	1286	87	1928434	Betacoronavirus sp. isolate CH063, complete genome
+NC_045512.2	OK017815.1	82.206	17556	2951	160	4095	21562	3878	21348	0.0	14953	87	2833184	Sarbecovirus sp. isolate GD2017I, complete genome
+NC_045512.2	OK017815.1	82.656	6815	1072	88	23084	29839	22787	29550	0.0	5936	87	2833184	Sarbecovirus sp. isolate GD2017I, complete genome
+NC_045512.2	OK017815.1	78.227	1782	368	15	144	1915	5	1776	0.0	1123	87	2833184	Sarbecovirus sp. isolate GD2017I, complete genome
+NC_045512.2	OK017835.1	82.197	17559	2944	161	4096	21562	3877	21345	0.0	14940	87	2833184	Sarbecovirus sp. isolate HN2021F, complete genome
+NC_045512.2	OK017835.1	83.025	6816	1035	90	23087	29839	22785	29541	0.0	6065	87	2833184	Sarbecovirus sp. isolate HN2021F, complete genome
+NC_045512.2	OK017835.1	79.408	1792	333	30	144	1917	5	1778	0.0	1232	87	2833184	Sarbecovirus sp. isolate HN2021F, complete genome
+NC_045512.2	OK017860.1	82.071	17698	2994	161	3956	21562	3733	21342	0.0	14938	88	2833184	Sarbecovirus sp. isolate JX2021D, complete genome
+NC_045512.2	OK017860.1	82.848	6833	1057	86	23068	29839	22763	29541	0.0	6019	88	2833184	Sarbecovirus sp. isolate JX2021D, complete genome
+NC_045512.2	OK017860.1	77.673	2020	409	35	144	2142	5	2003	0.0	1194	88	2833184	Sarbecovirus sp. isolate JX2021D, complete genome
+NC_045512.2	OK017810.1	82.080	17706	2978	174	3956	21562	3736	21345	0.0	14938	87	2833184	Sarbecovirus sp. isolate FJ2021E, complete genome
+NC_045512.2	OK017810.1	82.465	6718	1046	102	23087	29735	22785	29439	0.0	5758	87	2833184	Sarbecovirus sp. isolate FJ2021E, complete genome
+NC_045512.2	OK017810.1	78.587	1784	358	19	144	1915	5	1776	0.0	1157	87	2833184	Sarbecovirus sp. isolate FJ2021E, complete genome
+NC_045512.2	OK017834.1	82.193	17561	2941	167	4096	21562	3877	21345	0.0	14934	87	2833184	Sarbecovirus sp. isolate HN2021E, complete genome
+NC_045512.2	OK017834.1	81.701	4869	803	65	23087	27910	22782	27607	0.0	3975	87	2833184	Sarbecovirus sp. isolate HN2021E, complete genome
+NC_045512.2	OK017834.1	89.850	1596	141	15	28257	29839	27941	29528	0.0	2030	87	2833184	Sarbecovirus sp. isolate HN2021E, complete genome
+NC_045512.2	OK017834.1	77.294	2092	439	30	144	2217	5	2078	0.0	1199	87	2833184	Sarbecovirus sp. isolate HN2021E, complete genome
+NC_045512.2	PQ577579.1	82.164	17566	2940	174	4095	21562	3971	21441	0.0	14918	87	1928434	Betacoronavirus sp. isolate CH231, complete genome
+NC_045512.2	PQ577579.1	82.739	6842	1071	88	23087	29870	22881	29670	0.0	5993	87	1928434	Betacoronavirus sp. isolate CH231, complete genome
+NC_045512.2	PQ577579.1	78.841	1881	373	19	48	1915	1	1869	0.0	1245	87	1928434	Betacoronavirus sp. isolate CH231, complete genome
+NC_045512.2	DQ648857.1	82.164	17549	2967	150	4097	21562	4041	21509	0.0	14916	88	389167	Bat coronavirus (BtCoV/279/2005), complete genome
+NC_045512.2	DQ648857.1	82.538	6872	1074	96	23069	29875	22931	29741	0.0	5927	88	389167	Bat coronavirus (BtCoV/279/2005), complete genome
+NC_045512.2	DQ648857.1	79.407	1923	354	35	6	1908	6	1906	0.0	1319	88	389167	Bat coronavirus (BtCoV/279/2005), complete genome
+NC_045512.2	PQ577583.1	82.160	17578	2946	172	4095	21576	4009	21492	0.0	14912	87	1928434	Betacoronavirus sp. isolate CH007, complete genome
+NC_045512.2	PQ577583.1	82.600	6753	1067	80	23087	29782	22919	29620	0.0	5862	87	1928434	Betacoronavirus sp. isolate CH007, complete genome
+NC_045512.2	PQ577583.1	78.895	1919	382	17	8	1915	1	1907	0.0	1279	87	1928434	Betacoronavirus sp. isolate CH007, complete genome
+NC_045512.2	OK017819.1	82.145	17569	2965	159	4095	21576	3878	21361	0.0	14907	86	2833184	Sarbecovirus sp. isolate GD2017M, complete genome
+NC_045512.2	OK017819.1	81.323	4867	825	62	23087	27910	22788	27613	0.0	3875	86	2833184	Sarbecovirus sp. isolate GD2017M, complete genome
+NC_045512.2	OK017819.1	89.576	1602	151	11	28250	29839	27940	29537	0.0	2019	86	2833184	Sarbecovirus sp. isolate GD2017M, complete genome
+NC_045512.2	OK017819.1	78.307	1784	363	19	144	1915	5	1776	0.0	1129	86	2833184	Sarbecovirus sp. isolate GD2017M, complete genome
+NC_045512.2	OK017813.1	82.145	17569	2965	159	4095	21576	3878	21361	0.0	14907	86	2833184	Sarbecovirus sp. isolate GD2017G, complete genome
+NC_045512.2	OK017813.1	81.364	4867	823	62	23087	27910	22788	27613	0.0	3886	86	2833184	Sarbecovirus sp. isolate GD2017G, complete genome
+NC_045512.2	OK017813.1	89.576	1602	151	11	28250	29839	27940	29537	0.0	2019	86	2833184	Sarbecovirus sp. isolate GD2017G, complete genome
+NC_045512.2	OK017813.1	78.307	1784	363	19	144	1915	5	1776	0.0	1129	86	2833184	Sarbecovirus sp. isolate GD2017G, complete genome
+NC_045512.2	OK017811.1	82.043	17709	2979	177	3956	21562	3736	21345	0.0	14899	87	2833184	Sarbecovirus sp. isolate FJ2021M, complete genome
+NC_045512.2	OK017811.1	82.522	6734	1043	104	23087	29750	22785	29454	0.0	5792	87	2833184	Sarbecovirus sp. isolate FJ2021M, complete genome
+NC_045512.2	OK017811.1	78.947	1786	348	22	144	1915	5	1776	0.0	1190	87	2833184	Sarbecovirus sp. isolate FJ2021M, complete genome
+NC_045512.2	JX993987.1	82.002	17713	3018	153	3956	21582	3785	21413	0.0	14892	88	1283332	Bat coronavirus Rp/Shaanxi2011, complete genome
+NC_045512.2	JX993987.1	82.256	6712	1078	83	23084	29736	22827	29484	0.0	5692	88	1283332	Bat coronavirus Rp/Shaanxi2011, complete genome
+NC_045512.2	JX993987.1	77.321	2165	444	37	77	2217	1	2142	0.0	1234	88	1283332	Bat coronavirus Rp/Shaanxi2011, complete genome
+NC_045512.2	OQ175349.1	82.128	17547	2978	148	4096	21562	4011	21479	0.0	14885	88	3018906	Bat Coronavirus RsHB20 isolate BtRs-BetaCoV/HB2020-Q329, complete genome
+NC_045512.2	OQ175349.1	82.755	6860	1067	85	23087	29886	22922	29725	0.0	6008	88	3018906	Bat Coronavirus RsHB20 isolate BtRs-BetaCoV/HB2020-Q329, complete genome
+NC_045512.2	OQ175349.1	79.149	1928	365	30	6	1917	6	1912	0.0	1299	88	3018906	Bat Coronavirus RsHB20 isolate BtRs-BetaCoV/HB2020-Q329, complete genome
+NC_045512.2	OK017824.1	82.009	17692	3016	155	3956	21562	3739	21348	0.0	14883	87	2833184	Sarbecovirus sp. isolate GD2017W, complete genome
+NC_045512.2	OK017824.1	81.067	4875	830	70	23084	27910	22784	27613	0.0	3803	87	2833184	Sarbecovirus sp. isolate GD2017W, complete genome
+NC_045512.2	OK017824.1	89.906	1595	145	11	28257	29839	27947	29537	0.0	2039	87	2833184	Sarbecovirus sp. isolate GD2017W, complete genome
+NC_045512.2	OK017824.1	76.732	2093	451	31	144	2218	5	2079	0.0	1134	87	2833184	Sarbecovirus sp. isolate GD2017W, complete genome
+NC_045512.2	OQ297702.1	82.117	17553	2972	154	4095	21562	3992	21462	0.0	14870	88	694009	MAG: Severe acute respiratory syndrome-related coronavirus isolate GD/L17.18/2020, complete genome
+NC_045512.2	OQ297702.1	82.716	6879	1067	90	23084	29899	22901	29720	0.0	6004	88	694009	MAG: Severe acute respiratory syndrome-related coronavirus isolate GD/L17.18/2020, complete genome
+NC_045512.2	OQ297702.1	78.989	1918	379	18	9	1915	1	1905	0.0	1288	88	694009	MAG: Severe acute respiratory syndrome-related coronavirus isolate GD/L17.18/2020, complete genome
+NC_045512.2	MZ328294.1	82.088	17552	2976	157	4096	21562	3991	21459	0.0	14855	87	2877476	Jingmen Rhinolophus sinicus betacoronavirus 1, complete genome
+NC_045512.2	MZ328294.1	82.572	6782	1066	85	23087	29808	22902	29627	0.0	5869	87	2877476	Jingmen Rhinolophus sinicus betacoronavirus 1, complete genome
+NC_045512.2	MZ328294.1	78.970	1902	368	25	32	1917	7	1892	0.0	1267	87	2877476	Jingmen Rhinolophus sinicus betacoronavirus 1, complete genome
+NC_045512.2	OK017822.1	81.982	17693	3019	157	3956	21562	3739	21348	0.0	14855	87	2833184	Sarbecovirus sp. isolate GD2017P, complete genome
+NC_045512.2	OK017822.1	81.173	4876	823	73	23084	27910	22784	27613	0.0	3831	87	2833184	Sarbecovirus sp. isolate GD2017P, complete genome
+NC_045512.2	OK017822.1	89.705	1593	150	9	28257	29838	27922	29511	0.0	2021	87	2833184	Sarbecovirus sp. isolate GD2017P, complete genome
+NC_045512.2	OK017822.1	76.636	2093	453	31	144	2218	5	2079	0.0	1123	87	2833184	Sarbecovirus sp. isolate GD2017P, complete genome
+NC_045512.2	OK017845.1	81.968	17713	3012	162	3956	21576	3736	21358	0.0	14848	86	2833184	Sarbecovirus sp. isolate JX2021P, complete genome
+NC_045512.2	OK017845.1	81.310	4869	822	65	23087	27910	22785	27610	0.0	3869	86	2833184	Sarbecovirus sp. isolate JX2021P, complete genome
+NC_045512.2	OK017845.1	88.955	1512	150	12	28257	29756	27944	29450	0.0	1851	86	2833184	Sarbecovirus sp. isolate JX2021P, complete genome
+NC_045512.2	OK017845.1	78.400	1787	360	20	144	1917	5	1778	0.0	1138	86	2833184	Sarbecovirus sp. isolate JX2021P, complete genome
+NC_045512.2	OQ297703.1	82.094	17553	2976	154	4095	21562	4000	21470	0.0	14848	87	694009	MAG: Severe acute respiratory syndrome-related coronavirus isolate GD/L18.18/2020, complete genome
+NC_045512.2	OQ297703.1	82.747	6845	1060	89	23084	29865	22909	29695	0.0	5986	87	694009	MAG: Severe acute respiratory syndrome-related coronavirus isolate GD/L18.18/2020, complete genome
+NC_045512.2	OQ297703.1	79.016	1911	377	18	16	1915	1	1898	0.0	1286	87	694009	MAG: Severe acute respiratory syndrome-related coronavirus isolate GD/L18.18/2020, complete genome
+NC_045512.2	OQ297703.1	98.182	55	1	0	29778	29832	29691	29745	1.44e-13	97.1	87	694009	MAG: Severe acute respiratory syndrome-related coronavirus isolate GD/L18.18/2020, complete genome
+NC_045512.2	OQ503506.1	81.959	17715	3007	171	3956	21574	3887	21508	0.0	14833	89	694009	Severe acute respiratory syndrome-related coronavirus isolate B228, complete genome
+NC_045512.2	OQ503506.1	82.703	6874	1051	104	23070	29869	22911	29720	0.0	5980	89	694009	Severe acute respiratory syndrome-related coronavirus isolate B228, complete genome
+NC_045512.2	OQ503506.1	77.656	2090	431	28	15	2086	18	2089	0.0	1240	89	694009	Severe acute respiratory syndrome-related coronavirus isolate B228, complete genome
+NC_045512.2	OQ503496.1	81.938	17678	3018	160	3974	21562	3856	21447	0.0	14794	88	694009	Severe acute respiratory syndrome-related coronavirus isolate 141376, complete genome
+NC_045512.2	OQ503496.1	82.524	6815	1074	88	23087	29839	22887	29646	0.0	5879	88	694009	Severe acute respiratory syndrome-related coronavirus isolate 141376, complete genome
+NC_045512.2	OQ503496.1	79.123	1916	372	22	13	1915	2	1902	0.0	1297	88	694009	Severe acute respiratory syndrome-related coronavirus isolate 141376, complete genome
+NC_045512.2	OQ503495.1	81.932	17678	3019	160	3974	21562	3867	21458	0.0	14789	88	694009	Severe acute respiratory syndrome-related coronavirus isolate 141341, complete genome
+NC_045512.2	OQ503495.1	82.524	6815	1074	88	23087	29839	22898	29657	0.0	5879	88	694009	Severe acute respiratory syndrome-related coronavirus isolate 141341, complete genome
+NC_045512.2	OQ503495.1	79.125	1921	373	22	8	1915	8	1913	0.0	1301	88	694009	Severe acute respiratory syndrome-related coronavirus isolate 141341, complete genome
+NC_045512.2	OK017808.1	81.921	17700	3017	164	3956	21562	3736	21345	0.0	14789	86	2833184	Sarbecovirus sp. isolate FJ2021A, complete genome
+NC_045512.2	OK017808.1	81.419	4876	811	70	23084	27910	22781	27610	0.0	3897	86	2833184	Sarbecovirus sp. isolate FJ2021A, complete genome
+NC_045512.2	OK017808.1	88.751	1449	149	9	28257	29694	27944	29389	0.0	1760	86	2833184	Sarbecovirus sp. isolate FJ2021A, complete genome
+NC_045512.2	OK017808.1	78.915	1788	349	22	144	1917	5	1778	0.0	1188	86	2833184	Sarbecovirus sp. isolate FJ2021A, complete genome
+NC_045512.2	OK017844.1	81.912	17719	3011	173	3956	21576	3736	21358	0.0	14787	86	2833184	Sarbecovirus sp. isolate JX2021O, complete genome
+NC_045512.2	OK017844.1	81.434	4869	816	65	23087	27910	22785	27610	0.0	3903	86	2833184	Sarbecovirus sp. isolate JX2021O, complete genome
+NC_045512.2	OK017844.1	88.918	1507	150	12	28257	29751	27944	29445	0.0	1842	86	2833184	Sarbecovirus sp. isolate JX2021O, complete genome
+NC_045512.2	OK017844.1	78.579	1788	355	22	144	1917	5	1778	0.0	1155	86	2833184	Sarbecovirus sp. isolate JX2021O, complete genome
+NC_045512.2	OQ297705.1	82.021	17559	2992	152	4088	21562	4264	21741	0.0	14783	88	694009	MAG: Severe acute respiratory syndrome-related coronavirus isolate CQ/L80.18/2021, complete genome
+NC_045512.2	OQ297705.1	82.796	6882	1066	91	23069	29889	23163	29987	0.0	6043	88	694009	MAG: Severe acute respiratory syndrome-related coronavirus isolate CQ/L80.18/2021, complete genome
+NC_045512.2	OQ297705.1	77.886	2166	425	44	6	2145	283	2420	0.0	1299	88	694009	MAG: Severe acute respiratory syndrome-related coronavirus isolate CQ/L80.18/2021, complete genome
+NC_045512.2	OQ297704.1	82.019	17557	2996	148	4088	21562	3987	21464	0.0	14783	88	694009	MAG: Severe acute respiratory syndrome-related coronavirus isolate SC/L75.18/2021, complete genome
+NC_045512.2	OQ297704.1	82.717	6868	1069	91	23069	29875	22886	29696	0.0	5999	88	694009	MAG: Severe acute respiratory syndrome-related coronavirus isolate SC/L75.18/2021, complete genome
+NC_045512.2	OQ297704.1	77.886	2166	425	44	6	2145	6	2143	0.0	1297	88	694009	MAG: Severe acute respiratory syndrome-related coronavirus isolate SC/L75.18/2021, complete genome
+NC_045512.2	KF294457.1	81.890	17697	3025	159	3956	21562	3855	21461	0.0	14759	92	1508227	Bat SARS-like coronavirus isolate Longquan-140 orf1ab polyprotein, spike glycoprotein, envelope protein, membrane protein, and nucleocapsid protein genes, complete cds
+NC_045512.2	KF294457.1	82.670	6855	1042	113	23084	29870	22900	29676	0.0	5943	92	1508227	Bat SARS-like coronavirus isolate Longquan-140 orf1ab polyprotein, spike glycoprotein, envelope protein, membrane protein, and nucleocapsid protein genes, complete cds
+NC_045512.2	KF294457.1	84.966	3073	406	48	6	3060	6	3040	0.0	3064	92	1508227	Bat SARS-like coronavirus isolate Longquan-140 orf1ab polyprotein, spike glycoprotein, envelope protein, membrane protein, and nucleocapsid protein genes, complete cds
+NC_045512.2	OK017825.1	81.994	17544	3006	146	4097	21562	3883	21351	0.0	14755	88	2833184	Sarbecovirus sp. isolate GD2019A, complete genome
+NC_045512.2	OK017825.1	82.608	6825	1055	99	23084	29839	22790	29551	0.0	5906	88	2833184	Sarbecovirus sp. isolate GD2019A, complete genome
+NC_045512.2	OK017825.1	76.625	2092	453	31	145	2218	6	2079	0.0	1122	88	2833184	Sarbecovirus sp. isolate GD2019A, complete genome
+NC_045512.2	MZ081377.1	81.891	17704	3015	173	3956	21562	3884	21493	0.0	14755	89	2872805	Betacoronavirus sp. RmYN07 strain bat/Yunnan/RmYN07/2020, complete genome
+NC_045512.2	MZ081377.1	82.674	6880	1053	104	23075	29881	22921	29734	0.0	5973	89	2872805	Betacoronavirus sp. RmYN07 strain bat/Yunnan/RmYN07/2020, complete genome
+NC_045512.2	MZ081377.1	77.799	2099	430	28	6	2086	6	2086	0.0	1262	89	2872805	Betacoronavirus sp. RmYN07 strain bat/Yunnan/RmYN07/2020, complete genome
+NC_045512.2	PQ577590.1	81.880	17699	3026	163	3956	21562	3647	21256	0.0	14750	86	1928434	Betacoronavirus sp. isolate 201924, complete genome
+NC_045512.2	PQ577590.1	81.579	4875	805	70	23084	27910	22695	27524	0.0	3941	86	1928434	Betacoronavirus sp. isolate 201924, complete genome
+NC_045512.2	PQ577590.1	89.610	1617	152	11	28257	29861	27858	29470	0.0	2041	86	1928434	Betacoronavirus sp. isolate 201924, complete genome
+NC_045512.2	PQ577590.1	77.471	1700	353	23	233	1917	2	1686	0.0	990	86	1928434	Betacoronavirus sp. isolate 201924, complete genome
+NC_045512.2	OK017826.1	81.988	17544	3007	146	4097	21562	3880	21348	0.0	14750	88	2833184	Sarbecovirus sp. isolate GD2019B, complete genome
+NC_045512.2	OK017826.1	82.608	6825	1055	99	23084	29839	22787	29548	0.0	5906	88	2833184	Sarbecovirus sp. isolate GD2019B, complete genome
+NC_045512.2	OK017826.1	76.625	2092	453	31	145	2218	6	2079	0.0	1122	88	2833184	Sarbecovirus sp. isolate GD2019B, complete genome
+NC_045512.2	MK211374.1	82.016	17504	2982	148	4163	21582	4053	21474	0.0	14731	87	2591233	Coronavirus BtRl-BetaCoV/SC2018, complete genome
+NC_045512.2	MK211374.1	82.286	6825	1072	107	23084	29838	22891	29648	0.0	5779	87	2591233	Coronavirus BtRl-BetaCoV/SC2018, complete genome
+NC_045512.2	MK211374.1	79.403	1942	350	43	6	1923	3	1918	0.0	1325	87	2591233	Coronavirus BtRl-BetaCoV/SC2018, complete genome
+NC_045512.2	KJ473813.1	81.823	17671	3087	113	3956	21562	3634	21243	0.0	14722	87	1503300	BtRf-BetaCoV/SX2013, complete genome
+NC_045512.2	KJ473813.1	80.328	4880	855	76	23075	27904	22665	27489	0.0	3596	87	1503300	BtRf-BetaCoV/SX2013, complete genome
+NC_045512.2	KJ473813.1	88.589	1630	167	14	28263	29878	27837	29461	0.0	1962	87	1503300	BtRf-BetaCoV/SX2013, complete genome
+NC_045512.2	KJ473813.1	76.700	2000	430	32	236	2217	1	1982	0.0	1079	87	1503300	BtRf-BetaCoV/SX2013, complete genome
+NC_045512.2	PV652246.1	81.837	17706	3021	175	3956	21562	3884	21493	0.0	14700	89	1508220	Bat coronavirus isolate BtRs-SarbeCov/YN22-YN77, complete genome
+NC_045512.2	PV652246.1	82.642	6873	1051	103	23084	29881	22929	29734	0.0	5952	89	1508220	Bat coronavirus isolate BtRs-SarbeCov/YN22-YN77, complete genome
+NC_045512.2	PV652246.1	77.418	2099	438	28	6	2086	6	2086	0.0	1218	89	1508220	Bat coronavirus isolate BtRs-SarbeCov/YN22-YN77, complete genome
+NC_045512.2	PX775822.1	81.797	17684	3079	131	3956	21568	3905	21519	0.0	14694	88	2833184	Sarbecovirus sp. isolate B24-90, complete genome
+NC_045512.2	PX775822.1	79.943	4886	868	86	23075	27904	22927	27756	0.0	3491	88	2833184	Sarbecovirus sp. isolate B24-90, complete genome
+NC_045512.2	PX775822.1	87.924	1623	172	18	28263	29870	27800	29413	0.0	1890	88	2833184	Sarbecovirus sp. isolate B24-90, complete genome
+NC_045512.2	PX775822.1	77.783	2237	450	42	3	2217	42	2253	0.0	1334	88	2833184	Sarbecovirus sp. isolate B24-90, complete genome
+NC_045512.2	KJ473812.1	81.791	17678	3080	122	3956	21562	3611	21220	0.0	14683	87	1503296	BtRf-BetaCoV/HeB2013, complete genome
+NC_045512.2	KJ473812.1	80.287	4880	857	78	23075	27904	22648	27472	0.0	3585	87	1503296	BtRf-BetaCoV/HeB2013, complete genome
+NC_045512.2	KJ473812.1	88.521	1629	168	14	28263	29877	27820	29443	0.0	1954	87	1503296	BtRf-BetaCoV/HeB2013, complete genome
+NC_045512.2	KJ473812.1	76.465	1980	424	35	259	2217	1	1959	0.0	1037	87	1503296	BtRf-BetaCoV/HeB2013, complete genome
+NC_045512.2	GQ153542.1	81.821	17707	3022	173	3956	21562	3874	21483	0.0	14683	89	742004	Bat SARS coronavirus HKU3-7, complete genome
+NC_045512.2	GQ153542.1	82.620	6847	1078	83	23084	29870	22922	29716	0.0	5949	89	742004	Bat SARS coronavirus HKU3-7, complete genome
+NC_045512.2	GQ153542.1	77.638	2227	466	25	6	2217	4	2213	0.0	1325	89	742004	Bat SARS coronavirus HKU3-7, complete genome
+NC_045512.2	KJ473811.1	81.786	17684	3081	131	3956	21568	3634	21248	0.0	14683	87	1503299	BtRf-BetaCoV/JL2012, complete genome
+NC_045512.2	KJ473811.1	80.132	4852	863	79	23075	27878	22656	27454	0.0	3526	87	1503299	BtRf-BetaCoV/JL2012, complete genome
+NC_045512.2	KJ473811.1	87.588	1555	171	16	28263	29803	27491	29037	0.0	1783	87	1503299	BtRf-BetaCoV/JL2012, complete genome
+NC_045512.2	KJ473811.1	76.650	2000	431	32	236	2217	1	1982	0.0	1074	87	1503299	BtRf-BetaCoV/JL2012, complete genome
+NC_045512.2	GQ153543.1	81.815	17707	3023	173	3956	21562	3874	21483	0.0	14678	88	742005	Bat SARS coronavirus HKU3-8, complete genome
+NC_045512.2	GQ153543.1	80.939	4984	849	73	23084	28021	22922	27850	0.0	3847	88	742005	Bat SARS coronavirus HKU3-8, complete genome
+NC_045512.2	GQ153543.1	89.501	1705	165	9	28177	29870	27980	29681	0.0	2145	88	742005	Bat SARS coronavirus HKU3-8, complete genome
+NC_045512.2	GQ153543.1	77.638	2227	466	25	6	2217	4	2213	0.0	1325	88	742005	Bat SARS coronavirus HKU3-8, complete genome
+NC_045512.2	OK017794.1	81.768	17678	3095	119	3956	21568	3730	21344	0.0	14672	87	2833184	Sarbecovirus sp. isolate LN2020A, complete genome
+NC_045512.2	OK017794.1	80.008	4852	869	79	23075	27878	22752	27550	0.0	3493	87	2833184	Sarbecovirus sp. isolate LN2020A, complete genome
+NC_045512.2	OK017794.1	87.610	1590	175	16	28263	29838	27586	29167	0.0	1825	87	2833184	Sarbecovirus sp. isolate LN2020A, complete genome
+NC_045512.2	OK017794.1	77.210	2093	439	32	144	2217	5	2078	0.0	1188	87	2833184	Sarbecovirus sp. isolate LN2020A, complete genome
+NC_045512.2	OK017799.1	81.763	17678	3096	119	3956	21568	3730	21344	0.0	14667	87	2833184	Sarbecovirus sp. isolate LN2020G, complete genome
+NC_045512.2	OK017799.1	79.988	4852	870	79	23075	27878	22752	27550	0.0	3487	87	2833184	Sarbecovirus sp. isolate LN2020G, complete genome
+NC_045512.2	OK017799.1	87.681	1591	174	16	28263	29839	27586	29168	0.0	1832	87	2833184	Sarbecovirus sp. isolate LN2020G, complete genome
+NC_045512.2	OK017799.1	77.258	2093	438	32	144	2217	5	2078	0.0	1194	87	2833184	Sarbecovirus sp. isolate LN2020G, complete genome
+NC_045512.2	OK017812.1	81.907	17554	3007	157	4095	21562	3878	21348	0.0	14665	86	2833184	Sarbecovirus sp. isolate GD2016B, complete genome
+NC_045512.2	OK017812.1	81.277	4871	827	63	23084	27910	22787	27616	0.0	3864	86	2833184	Sarbecovirus sp. isolate GD2016B, complete genome
+NC_045512.2	OK017812.1	90.094	1595	142	11	28257	29839	27925	29515	0.0	2056	86	2833184	Sarbecovirus sp. isolate GD2016B, complete genome
+NC_045512.2	OK017812.1	78.251	1784	364	18	144	1915	5	1776	0.0	1123	86	2833184	Sarbecovirus sp. isolate GD2016B, complete genome
+NC_045512.2	PX775821.1	81.752	17684	3087	131	3956	21568	3840	21454	0.0	14650	88	2833184	Sarbecovirus sp. isolate B23-32, complete genome
+NC_045512.2	PX775821.1	80.012	4838	864	80	23075	27863	22862	27645	0.0	3482	88	2833184	Sarbecovirus sp. isolate B23-32, complete genome
+NC_045512.2	PX775821.1	87.909	1621	171	19	28263	29867	27901	29512	0.0	1884	88	2833184	Sarbecovirus sp. isolate B23-32, complete genome
+NC_045512.2	PX775821.1	77.727	2209	450	37	29	2217	2	2188	0.0	1315	88	2833184	Sarbecovirus sp. isolate B23-32, complete genome
+NC_045512.2	OK017800.1	81.752	17684	3087	131	3956	21568	3730	21344	0.0	14650	87	2833184	Sarbecovirus sp. isolate LN2020H, complete genome
+NC_045512.2	OK017800.1	80.173	4852	861	79	23075	27878	22752	27550	0.0	3537	87	2833184	Sarbecovirus sp. isolate LN2020H, complete genome
+NC_045512.2	OK017800.1	87.791	1589	174	14	28263	29838	27586	29167	0.0	1842	87	2833184	Sarbecovirus sp. isolate LN2020H, complete genome
+NC_045512.2	OK017800.1	77.114	2093	441	32	144	2217	5	2078	0.0	1177	87	2833184	Sarbecovirus sp. isolate LN2020H, complete genome
+NC_045512.2	PX775823.1	81.746	17684	3088	131	3956	21568	3850	21464	0.0	14645	88	2833184	Sarbecovirus sp. isolate B24-116-G, complete genome
+NC_045512.2	PX775823.1	79.967	4897	869	86	23075	27915	22872	27712	0.0	3506	88	2833184	Sarbecovirus sp. isolate B24-116-G, complete genome
+NC_045512.2	PX775823.1	87.862	1623	173	18	28263	29870	27735	29348	0.0	1884	88	2833184	Sarbecovirus sp. isolate B24-116-G, complete genome
+NC_045512.2	PX775823.1	77.768	2222	451	38	15	2217	1	2198	0.0	1327	88	2833184	Sarbecovirus sp. isolate B24-116-G, complete genome
+NC_045512.2	KY770860.1	81.740	17683	3080	131	3956	21562	3819	21428	0.0	14628	88	2833184	Sarbecovirus sp. isolate Jiyuan-84, complete genome
+NC_045512.2	KY770860.1	80.320	4878	858	75	23075	27904	22856	27679	0.0	3596	88	2833184	Sarbecovirus sp. isolate Jiyuan-84, complete genome
+NC_045512.2	KY770860.1	88.257	1635	168	19	28263	29883	28027	29651	0.0	1934	88	2833184	Sarbecovirus sp. isolate Jiyuan-84, complete genome
+NC_045512.2	KY770860.1	77.362	2191	450	39	49	2217	1	2167	0.0	1256	88	2833184	Sarbecovirus sp. isolate Jiyuan-84, complete genome
+NC_045512.2	PQ577578.1	81.749	17698	3051	159	3956	21562	3877	21486	0.0	14622	87	1928434	Betacoronavirus sp. isolate HD13589, complete genome
+NC_045512.2	PQ577578.1	81.482	4871	816	65	23084	27910	22925	27753	0.0	3919	87	1928434	Betacoronavirus sp. isolate HD13589, complete genome
+NC_045512.2	PQ577578.1	89.938	1600	147	9	28257	29845	28087	29683	0.0	2050	87	1928434	Betacoronavirus sp. isolate HD13589, complete genome
+NC_045512.2	PQ577578.1	78.794	1924	374	26	8	1915	9	1914	0.0	1262	87	1928434	Betacoronavirus sp. isolate HD13589, complete genome
+NC_045512.2	OK017823.1	81.735	17690	3068	152	3956	21562	3739	21348	0.0	14617	86	2833184	Sarbecovirus sp. isolate GD2017Q, complete genome
+NC_045512.2	OK017823.1	81.169	4875	825	71	23084	27910	22784	27613	0.0	3831	86	2833184	Sarbecovirus sp. isolate GD2017Q, complete genome
+NC_045512.2	OK017823.1	89.705	1593	150	9	28257	29838	27922	29511	0.0	2021	86	2833184	Sarbecovirus sp. isolate GD2017Q, complete genome
+NC_045512.2	OK017823.1	77.747	1793	374	20	144	1924	5	1784	0.0	1077	86	2833184	Sarbecovirus sp. isolate GD2017Q, complete genome
+NC_045512.2	MT299804.1	99.974	7606	2	0	14816	22421	3099	10704	0.0	14035	25	2724903	Cloning vector pSF_lenti_SARS-CoV-2_partial-ORF1b/partial-S, complete sequence
+NC_045512.2	MT299805.1	99.829	7585	13	0	22319	29903	3096	10680	0.0	13935	25	2724904	Cloning vector pSF_lenti_SARS-CoV-2_partial-S/E/M/N, complete sequence
+NC_045512.2	MT299803.1	99.987	7501	0	1	7416	14915	3099	10599	0.0	13845	25	2724902	Cloning vector pSF_lenti_SARS-CoV-2_partial-ORF1ab, complete sequence
+NC_045512.2	MT299802.1	99.880	7515	1	1	1	7515	3099	10605	0.0	13821	25	2724905	Cloning vector pSF_lenti_SARS-CoV-2_partial-ORF1a, complete sequence
+NC_045512.2	KU182964.1	82.945	15051	2490	73	6556	21568	5888	20899	0.0	13501	79	2833184	Sarbecovirus sp. isolate JTMC15, complete genome
+NC_045512.2	KU182964.1	80.194	4852	860	79	23075	27878	22307	27105	0.0	3542	79	2833184	Sarbecovirus sp. isolate JTMC15, complete genome
+NC_045512.2	KU182964.1	88.029	1629	173	16	28263	29877	27141	28761	0.0	1908	79	2833184	Sarbecovirus sp. isolate JTMC15, complete genome
+NC_045512.2	KU182964.1	77.713	2230	456	36	6	2217	6	2212	0.0	1327	79	2833184	Sarbecovirus sp. isolate JTMC15, complete genome
+NC_045512.2	OR233327.1	94.357	8294	466	2	5236	13528	5205	13497	0.0	13169	79	3068538	Horseshoe bat sarbecovirus isolate Rp22DB167, partial genome
+NC_045512.2	OR233327.1	93.545	4973	318	3	24893	29863	24780	29751	0.0	7576	79	3068538	Horseshoe bat sarbecovirus isolate Rp22DB167, partial genome
+NC_045512.2	OR233327.1	94.171	3551	204	1	29	3579	1	3548	0.0	5583	79	3068538	Horseshoe bat sarbecovirus isolate Rp22DB167, partial genome
+NC_045512.2	OR233327.1	87.608	2203	267	5	13616	15815	13585	15784	0.0	2573	79	3068538	Horseshoe bat sarbecovirus isolate Rp22DB167, partial genome
+NC_045512.2	OR233327.1	86.867	2094	275	0	16396	18489	16365	18458	0.0	2364	79	3068538	Horseshoe bat sarbecovirus isolate Rp22DB167, partial genome
+NC_045512.2	OR233327.1	85.750	1600	210	17	20107	21696	20076	21667	0.0	1712	79	3068538	Horseshoe bat sarbecovirus isolate Rp22DB167, partial genome
+NC_045512.2	OR233327.1	88.000	425	51	0	24380	24804	24267	24691	1.18e-153	562	79	3068538	Horseshoe bat sarbecovirus isolate Rp22DB167, partial genome
+NC_045512.2	OR233327.1	87.409	413	52	0	15863	16275	15832	16244	4.41e-128	477	79	3068538	Horseshoe bat sarbecovirus isolate Rp22DB167, partial genome
+NC_045512.2	OR233327.1	76.923	234	48	6	23132	23362	23031	23261	3.96e-24	132	79	3068538	Horseshoe bat sarbecovirus isolate Rp22DB167, partial genome
+NC_045512.2	OQ297700.1	92.506	5284	396	0	9672	14955	9613	14896	0.0	7566	65	2708335	MAG: Pangolin coronavirus isolate GD/M5-9/2019, partial genome
+NC_045512.2	OQ297700.1	88.676	5272	577	14	3274	8532	3209	8473	0.0	6412	65	2708335	MAG: Pangolin coronavirus isolate GD/M5-9/2019, partial genome
+NC_045512.2	OQ297700.1	92.966	3739	263	0	24331	28069	24247	27985	0.0	5448	65	2708335	MAG: Pangolin coronavirus isolate GD/M5-9/2019, partial genome
+NC_045512.2	OQ297700.1	88.161	3176	372	4	39	3212	1	3174	0.0	3869	65	2708335	MAG: Pangolin coronavirus isolate GD/M5-9/2019, partial genome
+NC_045512.2	OQ297700.1	96.021	955	38	0	28113	29067	27981	28935	0.0	1554	65	2708335	MAG: Pangolin coronavirus isolate GD/M5-9/2019, partial genome
+NC_045512.2	OQ297700.1	97.214	718	20	0	29124	29841	28992	29709	0.0	1216	65	2708335	MAG: Pangolin coronavirus isolate GD/M5-9/2019, partial genome
+NC_045512.2	OQ297700.1	92.954	369	26	0	23904	24272	23820	24188	1.99e-146	538	65	2708335	MAG: Pangolin coronavirus isolate GD/M5-9/2019, partial genome
