@@ -1212,20 +1212,31 @@ Introduction slides - globin family, globin fold, distal and proximal His, hexac
 3. Retrieve FASTA sequence for the 10 best bacterial hits based on E-value,
    sequence identity, and query coverage. Select the hits with checkboxes and
    use "Download" → "FASTA (complete sequence)". Check the length of the
-   downloaded proteins: some bacterial globins are fused to other domains
-   (e.g. flavohemoglobins carry a reductase domain), these extra domains will
-   appear as long gapped regions in the alignment.
+   downloaded proteins: a single globin domain has ~130-160 aa (human
+   neuroglobin 151 aa). Some bacterial globins are fused to other domains
+   (e.g. flavohemoglobins carry a reductase domain); if such a protein is among
+   your hits, the extra domain will appear as a long gapped region in the
+   alignment.
 4. Import FASTA with bacterial globins to Jalview program. 
 5. Collect the amino acid sequences of human and mouse globin homologs
    (hemoglobin, myoglobin, and neuroglobin) from UniProt directly from Jalview
    program. Use following accessions: P69905; P68871; P02144; Q9NPG2; P01942;
    P02088; P04247; Q9ER97 (use Fetch sequences command from File menu)
-6. Create a multiple sequence alignment (MSA) using the Jalview program with
-   bacterial, human and mouse sequences. Check the alignment around the two
-   histidines by eye: with MAFFT, the proximal His of neuroglobin can end up one
-   column away from the proximal His of hemoglobins and myoglobin (Clustal Omega
-   aligns them correctly). Note that UniProt numbers include the initial Met, so
-   myoglobin His64/His93 appear as 65/94 in Jalview.
+6. Create a multiple sequence alignment (MSA) of the bacterial, human and mouse
+   sequences with **MAFFT using the default settings** (in Jalview: "Web
+   Service" → "Alignment" → MAFFT → "MAFFT with Defaults"; do not use Clustal
+   Omega or the L-INS-i / E-INS-i presets). Alternatively, save all 18
+   sequences from Jalview as one FASTA file, run
+   `mafft globins.fasta > globins_aln.fasta` in the terminal and open the
+   result in Jalview.
+   Check the alignment around the two histidines by eye: the residues at the
+   distal (E7) and proximal (F8) positions should each form one column. The
+   region between helices E and F contains gaps that are difficult to place,
+   and some programs put the proximal His of hemoglobins and myoglobin a few
+   columns away from the proximal His of neuroglobin and the bacterial globins
+   (Clustal Omega does this for most sets of hits). If you see this, shift the
+   residues by hand in Jalview. Note that UniProt numbers include the initial
+   Met, so myoglobin His64/His93 appear as 65/94 in Jalview.
 7. Analyze the MSA to assess the conservation of the two histidine residues in
    the heme-binding pocket among the bacterial globin sequences.
 8. Clearly describe your observations and conclusions regarding the conservation
