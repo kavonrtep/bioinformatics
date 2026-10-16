@@ -73,6 +73,9 @@ Introduction slides for exercises A2, 3.6 and 3.8: [week3_intro.pdf](./slides/we
 
 # Week 4
 
+Introduction slides for the BLAST exercises 1.7-1.11: [week4_intro.pdf](./slides/week4_intro.pdf),
+for exercise 3.7: [globins_intro.pdf](./slides/globins_intro.pdf)
+
 ## Multiple sequence alignment - cont.
 
 - [Exercise 3.7 - Identification of Bacterial Homologs of Human Neuroglobin and Analysis of Heme-Binding Pocket Conservation](./sequence_alignment.md/#exercise-37---identification-of-bacterial-homologs-of-human-neuroglobin-and-analysis-of-heme-binding-pocket-conservation)

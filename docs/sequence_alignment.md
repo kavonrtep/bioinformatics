@@ -1192,6 +1192,9 @@ Some of the key functions of bacterial globins include:
   domain linked to a signaling domain. Binding of O2 regulates e.g. aerotaxis
   (movement towards or away from oxygen) or production of second messengers.
 
+Introduction slides - globin family, globin fold, distal and proximal His, hexacoordination, E7/F8 in an alignment:
+[globins_intro.pdf](./slides/globins_intro.pdf)
+
 #### Tasks:
 
 1. Obtain the amino acid sequence of human neuroglobin from a database, such as
@@ -1218,7 +1221,11 @@ Some of the key functions of bacterial globins include:
    program. Use following accessions: P69905; P68871; P02144; Q9NPG2; P01942;
    P02088; P04247; Q9ER97 (use Fetch sequences command from File menu)
 6. Create a multiple sequence alignment (MSA) using the Jalview program with
-   bacterial, human and mouse sequences.
+   bacterial, human and mouse sequences. Check the alignment around the two
+   histidines by eye: with MAFFT, the proximal His of neuroglobin can end up one
+   column away from the proximal His of hemoglobins and myoglobin (Clustal Omega
+   aligns them correctly). Note that UniProt numbers include the initial Met, so
+   myoglobin His64/His93 appear as 65/94 in Jalview.
 7. Analyze the MSA to assess the conservation of the two histidine residues in
    the heme-binding pocket among the bacterial globin sequences.
 8. Clearly describe your observations and conclusions regarding the conservation

@@ -13,6 +13,9 @@ AACTACTGCAATGTCCCTTAGACACCTGCCTTGGGCCTGGCCTGCTGCTCTGCCCTGGCAACCAATAAAC
 CCCTTGAATGAG
 ```
 
+Introduction slides - BLAST databases (core_nt, ClusteredNR) and what the hit list does not show (slides 2-3):
+[week4_intro.pdf](./slides/week4_intro.pdf)
+
 ### search I
 setting of the search:
 - In the section "Program Selection" select the option "Somewhat similar
@@ -297,6 +300,9 @@ such as ciprofloxacin are recommended for chemoprophylaxis. Resistance of
 meningococci to ciprofloxacin is associated with mutations in the quinolone
 resistance-determining region (QRDR) of the gyrA gene.
 
+Introduction slides - DNA gyrase, quinolones and the QRDR (slide 5):
+[week4_intro.pdf](./slides/week4_intro.pdf)
+
 Your task will be to determine how many mutations are present in the gyrA gene
 of the sequenced N. meningitidis strains compared to the reference genome.
 
@@ -413,6 +419,9 @@ from patients in China. The gene encodes a phosphoethanolamine transferase,
 an enzyme that modifies lipid A in the bacterial outer membrane so that the
 positively charged colistin binds less well.
 
+Introduction slides - colistin and lipid A, plasmids and mobile elements (slides 6-8):
+[week4_intro.pdf](./slides/week4_intro.pdf)
+
 The sequence of the *mcr-1* gene from the original plasmid pHNSHP45
 (`KP347127.1`) is in
 `~/Desktop/Bioinformatics/data/blast_data/mcr1/mcr1_cds.fasta`, the protein
@@ -527,6 +536,9 @@ Soon after the first SARS-CoV-2 genome was published in January 2020
 used BLAST to search for its closest relatives. The answer is important for
 understanding the origin of the virus: which animal viruses are most similar,
 and how similar are they? In this exercise, you will repeat this analysis.
+
+Introduction slides - SARS-CoV-2 genome, spike RBD and recombination (slides 10-12):
+[week4_intro.pdf](./slides/week4_intro.pdf)
 
 ### Part 1 - whole genome
 - Open the nucleotide BLAST page (blastn). Instead of pasting a sequence, you
@@ -664,6 +676,9 @@ the viral membrane with the membrane of the host cell. Syncytin-1 uses the same
 ability to fuse placental cells (trophoblasts) into the syncytiotrophoblast, a
 multinucleate layer separating maternal and fetal blood.
 
+Introduction slides - endogenous retroviruses, syncytiotrophoblast and dating an insertion (slides 14-16):
+[week4_intro.pdf](./slides/week4_intro.pdf)
+
 Human syncytin-1 (UniProt `Q9UQF0`) is in
 `~/Desktop/Bioinformatics/data/blast_data/syncytin/syncytin1_human.fasta`.
 
@@ -780,6 +795,9 @@ sources: the person handling the sample, laboratory reagents ("kitome"), other
 samples sequenced on the same run, cloning vectors, or control DNA added by the
 sequencing facility. Assembly programs can also make errors and join unrelated
 sequences together (chimeric contigs).
+
+Introduction slides - sources and signs of contamination (slides 18-19):
+[week4_intro.pdf](./slides/week4_intro.pdf)
 
 Your draft assembly contains 11 contigs. The FASTA header of each contig shows
 its length and its average sequencing coverage (`cov`):
