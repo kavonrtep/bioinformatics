@@ -420,6 +420,55 @@ tblastn -query gyrA_strains.fasta -subject NZ_CP021520.1.fasta -max_hsps 1 -outf
 ```
 </details>
 
+### Optional - multiple alignment of the strains with the reference GyrA protein
+TBLASTN compares each strain with the reference separately. To see all
+differences at once, create an MSA of the reference GyrA protein and the four
+strains in Jalview.
+
+1. Get the reference GyrA protein from GenBank:
+   - In the "Alignments" tab of the TBLASTN results, click on the "GenBank"
+     link above the alignment ("Range 1: ..."). This opens the GenBank record
+     of the reference genome showing only the aligned region, i.e. the *gyrA*
+     gene (the whole genome is ~2.2 Mb long).
+   - Find the `CDS` feature of the gene *gyrA* and click on its `/protein_id`
+     link. This opens the protein record. What is its accession? How long is
+     the protein?
+   - Switch the protein record to "FASTA" format and copy the sequence.
+2. In Jalview, use "File" → "Input Alignment" → "From Textbox" and paste the
+   reference protein together with the four strain sequences (FASTA format), then
+   click "New Window".
+3. Align the sequences: "Web Service" → "Alignment" → MAFFT → "MAFFT with
+   Defaults" (or Clustal Omega).
+4. Colour the alignment ("Colour" → "Percentage Identity") and inspect it.
+
+Questions:
+- Find positions 91 and 95 of the reference. (The Jalview ruler counts
+  alignment columns. As long as there is no gap in the reference before this
+  position, the column number is the same as the position in the reference protein.) Do
+  you get the same result as with TBLASTN?
+- Where is the deletion in the alignment?
+- Which strains are most similar to the reference and which differ at many
+  positions? Are the differences spread along the whole protein or clustered?
+- The protein accession starts with `WP_`. Such RefSeq records are
+  "non-redundant" proteins: one record represents identical proteins from many
+  genomes. Look at the protein record - how can you find out in which genomes
+  it is encoded? (Hint: "Identical Proteins" link in the right panel.)
+
+<details>
+<summary>Backup - if NCBI is not available</summary>
+
+The reference GyrA protein is in
+`~/Desktop/Bioinformatics/data/blast_data/gyrA/WP_002216981.1.fasta` and the
+strain proteins are in `gyrA_strains.fasta` in the same directory. Combine them
+into one file and open it in Jalview (or align it with `mafft` in the terminal):
+
+```bash
+cd ~/Desktop/Bioinformatics/data/blast_data/gyrA/
+cat WP_002216981.1.fasta gyrA_strains.fasta > gyrA_all.fasta
+mafft gyrA_all.fasta > gyrA_aln.fasta
+```
+</details>
+
 
 ## Exercise 1.8 - Spread of the colistin resistance gene mcr-1
 Colistin is an old antibiotic that is used as a "last resort" drug against
