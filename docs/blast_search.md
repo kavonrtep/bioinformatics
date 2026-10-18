@@ -98,19 +98,23 @@ AHADGNISITSNCKIFVRSGYLDYTHGSEYSSKAHRFTPNESSFTVFDIRWAYMQMLRRSRSSNEAVRAQ
 AAAVAGYAPMSVMPAIMPDSGVDRMRRDFCTIAISFVKAWGDVYQRKTIKETPCWIEVTLHRPLQILDQL
 LKNSSQFGS
 ```
-Use the [protein-protein BLAST (blastp)](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastp&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome) page to perform search against the non redundant
-protein database (nr) to identify protein and find its homologs.
+Use the [protein-protein BLAST (blastp)](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastp&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome) page to identify the protein and find its homologs. Keep the default
+database **ClusteredNR**.
 
 BLAST home page: https://blast.ncbi.nlm.nih.gov/Blast.cgi
 
 > **Note on protein databases:** the default protein database on the NCBI BLAST
-> page is now **ClusteredNR**. In ClusteredNR, proteins that are >90 % identical
-> (and of similar length) are grouped into clusters and only one representative
-> per cluster is searched - the search is faster and the hit list is more
-> diverse, but you will not see the individual (e.g. identical) sequences. For
-> this exercise select **"Non-redundant protein sequences (nr)"** in the Database
-> menu. Optionally, repeat the search with ClusteredNR and compare the hit lists.
+> page is **ClusteredNR**. It is built from the "Non-redundant protein
+> sequences (nr)" database: proteins that are >90 % identical (and of similar
+> length) are grouped into clusters and only one representative per cluster is
+> searched. The search is faster and the hit list is more diverse (it is not
+> filled with hundreds of almost identical sequences), but the individual
+> sequences are hidden inside the clusters.
 
+- The results are shown in the "Clusters" tab. Look at the first hit: what is
+  the name of the cluster, and how many proteins ("members") and organisms
+  does it contain (column "Cluster Composition")? Click on ⊞ to see the cluster
+  members. Is our C. elegans protein among them?
 - Based on the identical hit to C. elegans what is the identity of this protein?
 - Aside from the C. elegans proteins, what is the most significant hit? What is
   its identity and E-value?
@@ -120,6 +124,9 @@ BLAST home page: https://blast.ncbi.nlm.nih.gov/Blast.cgi
 - Check also taxonomy report. How many hits was found total. How many hits was
   found in "chordata" taxonomy group? If no hits are found in Chordata, try to modify search
   parameters to identify similar sequence in Chordata group.
+- Optional: repeat the search with the database "Non-redundant protein
+  sequences (nr)" and compare the hit lists. How many of the first 100 hits are
+  from nematodes in each search? Why is the difference?
 
 <details>
 <summary>💡 Hint</summary>
