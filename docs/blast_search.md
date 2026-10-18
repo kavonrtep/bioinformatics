@@ -1,7 +1,7 @@
 # BLAST
 
 ## Exercise 1.1 - BLASTN - NCBI web interface
-Make nucleotide blast  search against following sequence:
+Make [nucleotide BLAST (blastn)](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastn&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome) search against following sequence:
 ```
 >gi|202471|gb|M57671.1|OCOINS Octodon degus insulin mRNA, complete cds
 GCATTCTGAGGCATTCTCTAACAGGTTCTCGACCCTCCGCCATGGCCCCGTGGATGCATCTCCTCACCGT
@@ -98,10 +98,10 @@ AHADGNISITSNCKIFVRSGYLDYTHGSEYSSKAHRFTPNESSFTVFDIRWAYMQMLRRSRSSNEAVRAQ
 AAAVAGYAPMSVMPAIMPDSGVDRMRRDFCTIAISFVKAWGDVYQRKTIKETPCWIEVTLHRPLQILDQL
 LKNSSQFGS
 ```
-Use the protein-protein blast page to perform search against the non redundant
+Use the [protein-protein BLAST (blastp)](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastp&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome) page to perform search against the non redundant
 protein database (nr) to identify protein and find its homologs.
 
-blast link : https://blast.ncbi.nlm.nih.gov/Blast.cgi
+BLAST home page: https://blast.ncbi.nlm.nih.gov/Blast.cgi
 
 > **Note on protein databases:** the default protein database on the NCBI BLAST
 > page is now **ClusteredNR**. In ClusteredNR, proteins that are >90 % identical
@@ -132,7 +132,7 @@ Nematoda from the search).
 </details>
 
 ## Exercise 1.3 - BLASTX - NCBI web interface
-The part of genomic sequence of Twort bacteriophage is below. Use BLASTX to
+The part of genomic sequence of Twort bacteriophage is below. Use [BLASTX](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastx&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome) to
 search protein database (select "Non-redundant protein sequences (nr)", not the
 default ClusteredNR) to find homologous protein from other bacteriophages and
 viruses.
@@ -190,7 +190,7 @@ GGCGCCGCC
 ```
 
 
-- use `blastn` and `blastx` to characterize clone12. What tool is relevant to use?
+- use [`blastn`](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastn&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome) and [`blastx`](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastx&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome) to characterize clone12. What tool is relevant to use?
 - check DNA sequence using ORFfinder https://www.ncbi.nlm.nih.gov/orffinder
   - first run ORFfinder with default settings ("ORF start codon to use": "ATG
     only"), then repeat it with "Any sense codon". Why is the longest ORF
@@ -287,7 +287,7 @@ check the list of top hits and identify the source species. Evaluate the
 percentage identity and sequence coverage, which are important for assessing the
 quality of the match. Records with high identity and good sequence coverage are
 likely to correspond to the correct species matching your sequences. Use
-`blastn` (megablast) with the default database core_nt.
+[`blastn`](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastn&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome) (megablast) with the default database core_nt.
 
 Questions:
 
@@ -372,7 +372,7 @@ WEKSGNDEAEDADIETEISDDLEDETADNENALPSGKHGVRPSGRGSGGLRGMRLPADGKIVSLITFAPEAA
 QSDLQVLTATANGYGKRTPIADYSRKNKGGQGNIAINTGERNGDLVAATLVSETDDLMLITSGGVLIRTKVE
 QIRETGRAAAGVKLINLDEGETLVSLERVAEDESELSDASVISNVTEPEVEN
 ```
-Use the TBLASTN tool on NCBI to compare each of the protein sequences with the
+Use the [TBLASTN tool on NCBI](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=tblastn&PAGE_TYPE=BlastSearch&BLAST_SPEC=blast2seq&LINK_LOC=align2seq) to compare each of the protein sequences with the
 reference genome NZ_CP021520.1. Set the mode to "Align two sequences" for a
 direct comparison of your sequence (query) with the reference sequence
 (subject). Enter the reference genome ID in the subject field and run the
@@ -486,7 +486,7 @@ SVPAFFWTDKQTGITPMATDTVLTHDAITPTLLKLFDVTADKVKDRTAFIR
 </details>
 
 ### Part 1 - Where is mcr-1 found today?
-- Run **blastn** (megablast) with `mcr1_cds.fasta` against "Core nucleotide
+- Run [**blastn**](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastn&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome) (megablast) with `mcr1_cds.fasta` against "Core nucleotide
   database (core_nt)".
 - In "Algorithm parameters", increase "Max target sequences" to 500.
 
@@ -509,7 +509,7 @@ A gene that spreads on plasmids usually originates on the chromosome of some
 other bacterium. To find the possible source, we need to search for more
 distant homologs at the protein level.
 
-- Run **blastp** with `mcr1_protein.fasta` (or just type the accession
+- Run [**blastp**](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastp&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome) with `mcr1_protein.fasta` (or just type the accession
   `AKF16168.1`). Keep the default database **ClusteredNR** and set "Max target
   sequences" to 250.
 
@@ -598,7 +598,7 @@ Introduction slides - SARS-CoV-2 genome, spike RBD and recombination (slides 10-
 [week4_intro.pdf](./slides/week4_intro.pdf)
 
 ### Part 1 - whole genome
-- Open the nucleotide BLAST page (blastn). Instead of pasting a sequence, you
+- Open the [nucleotide BLAST page (blastn)](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastn&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome). Instead of pasting a sequence, you
   can type the accession `NC_045512.2` into the query box.
 - Database: "Core nucleotide database (core_nt)"
 - Organism: type `Severe acute respiratory syndrome coronavirus 2` and select
@@ -776,7 +776,7 @@ ESQYKRLPQEPPEEDAV
 </details>
 
 ### Part 1 - How many copies of HERV-W env are in the human genome?
-- Open the **tblastn** page (protein query vs. translated nucleotide database).
+- Open the [**tblastn**](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=tblastn&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome) page (protein query vs. translated nucleotide database).
   You can type the accession `Q9UQF0` into the query box.
 - Database: "RefSeq Genome Database (refseq_genomes)", Organism: type
   `Homo sapiens` and select "Homo sapiens (taxid:9606)" (not the entries with
@@ -797,7 +797,7 @@ Questions:
   UniProt entry `Q9UQF0` lists the gene name *ERVW-1*.)
 
 ### Part 2 - Which organisms have syncytin-1?
-- Run **blastp** with the same query. Keep the default database
+- Run [**blastp**](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastp&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome) with the same query. Keep the default database
   "ClusteredNR" - each hit represents a cluster of very similar proteins, so
   the hit list is not flooded by hundreds of almost identical sequences and
   the taxonomic overview is easier to read. Set "Max target sequences" to 250.
@@ -2195,7 +2195,7 @@ AAACTAAAGATATTAGTTTT
 </details>
 
 ### Task
-- Open the nucleotide BLAST page (blastn) and upload the file
+- Open the [nucleotide BLAST page (blastn)](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastn&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome) and upload the file
   `draft_assembly_contigs.fasta` ("Or, upload file" button). All 11 contigs
   will be searched at once.
 - Database: "Core nucleotide database (core_nt)", Program: megablast

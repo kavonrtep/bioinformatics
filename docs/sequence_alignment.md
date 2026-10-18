@@ -1199,7 +1199,7 @@ Introduction slides - globin family, globin fold, distal and proximal His, hexac
 
 1. Obtain the amino acid sequence of human neuroglobin from a database, such as
    UniProt or NCBI Protein.
-2. Use a sequence similarity search tool  BLASTP, to identify bacterial homologs
+2. Use a sequence similarity search tool [BLASTP](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastp&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome), to identify bacterial homologs
    of human neuroglobin.
    - Database: keep the default "ClusteredNR" (one representative per cluster
      of very similar proteins). A search of the full "nr" database restricted
