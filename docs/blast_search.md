@@ -657,13 +657,29 @@ Introduction slides - SARS-CoV-2 genome, spike RBD and recombination (slides 10-
 - Open the [nucleotide BLAST page (blastn)](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastn&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome). Instead of pasting a sequence, you
   can type the accession `NC_045512.2` into the query box.
 - Database: "Core nucleotide database (core_nt)"
-- Organism: type `Severe acute respiratory syndrome coronavirus 2` and select
-  "taxid:2697049", then check **exclude**. GenBank contains millions of
-  SARS-CoV-2 genomes from patients - without excluding them, all hits would be
-  SARS-CoV-2 itself.
-- Click "Add organism", type `synthetic construct`, select "taxid:32630" and
-  check **exclude** as well. Laboratories have deposited many synthetic copies
-  of the SARS-CoV-2 genome (e.g. clones used for reverse genetics).
+- Exclude two groups of sequences from the search:
+  - SARS-CoV-2 itself (taxid 2697049) - GenBank contains millions of
+    SARS-CoV-2 genomes from patients; without excluding them, all hits would
+    be SARS-CoV-2.
+  - synthetic constructs (taxid 32630) - laboratories have deposited many
+    synthetic copies of the SARS-CoV-2 genome (e.g. clones used for reverse
+    genetics).
+
+  Use one of the two options:
+
+  **Option A - Organism field:**
+  - In the "Organism" field enter
+    `Severe acute respiratory syndrome coronavirus 2 (taxid:2697049)` (copy
+    the whole text including the taxid - when you type just the name or the
+    taxid, the suggestion often does not appear in the drop-down menu) and
+    check **exclude**.
+  - Click "Add organism", type `synthetic construct`, select
+    "synthetic construct (taxid:32630)" and check **exclude** as well.
+
+  **Option B - Entrez Query:** leave the "Organism" field empty and type
+  `NOT txid2697049[Organism:exp] NOT txid32630[Organism:exp]` into the
+  "Entrez Query" field (a few lines below the organism field). `[Organism:exp]`
+  means the taxon including all its subordinate taxa.
 - Program: "Highly similar sequences (megablast)"
 - In "Algorithm parameters", set "Max target sequences" to 250
 - Run BLAST
@@ -701,8 +717,8 @@ genome it is located at positions 22517-23185.
 - Repeat the search with the same settings, but enter `22517` and `23185` into
   the "Query subrange" From/To fields. Because the region is short and more
   divergent, change the Program to "Somewhat similar sequences (blastn)".
-  (If you use "Edit Search" on the results page, check that both excluded
-  organisms are still set - the form does not always keep them.)
+  (If you use "Edit Search" on the results page, check that both exclusions
+  are still set - the form does not always keep them.)
 
 Questions:
 - Which virus is the closest relative in the RBD region? Is it the same virus
