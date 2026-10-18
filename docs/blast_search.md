@@ -26,6 +26,10 @@ setting of the search:
   of the full "Nucleotide collection (nr/nt)". Despite its name, `nt` is not
   really non-redundant - identical sequences from different submissions are
   kept as separate records.
+- Expand "Algorithm parameters" at the bottom of the form and change "Max target
+  sequences" from the default 100 to **250**. The database contains many insulin
+  sequences from other mammals, and with only 100 hits shown the human sequence
+  may not be on the list at all.
 - Check "Show results in a new window" and  Click the BLAST button to launch the search.
 
 > **Tip:** The BLAST form remembers some settings (e.g. the organism filter)
@@ -55,6 +59,7 @@ Taxonomic summary of all positive hits
 
 First, take a look at the best hit. Since our search sequence (the query) was taken from GenBank, which is part of core_nt, we should find an identical sequence in the search. Make sure this is the case!
 Find the best hit from human (Homo sapiens) that is not a synthetic construct
+(tip: use Ctrl+F and search for "Homo sapiens" in the Descriptions table)
 and answer following questions:
 - what is the identifier (Accession)?
 - what is the alignment score ("max score")?
