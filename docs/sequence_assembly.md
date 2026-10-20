@@ -564,6 +564,465 @@ less -S usa300_unique_genes_go_0046677.gff3
 - Not all annotated genes have Gene Ontology terms assigned, so searching by GO terms may miss some relevant genes. More detailed analysis of gene functions may require additional annotation or literature review.
 </details>
 
+# Exercise 3 - Genome assembly of MRSA from Illumina and Nanopore reads
+
+In this exercise you will assemble the genome of the methicillin-resistant
+*Staphylococcus aureus* strain USA300 twice - from short Illumina reads and
+from long Oxford Nanopore (ONT) reads - and compare the results. All
+computations take seconds to a few minutes, so focus on the **interpretation of
+the outputs**: what the numbers and plots tell you about the reads, the genome
+and the quality of the assembly.
+
+The reads were **simulated** from the genome of a USA300 isolate with realistic
+error models of current instruments (Illumina NovaSeq 2×150 bp, ONT R10.4.1),
+and contain several problems you will meet in real data. A closely related
+genome - the published genome of USA300 strain FPR3757 - is available, so we
+can check what the assemblers got right and what they missed. But be careful:
+our isolate is not necessarily identical to the published strain.
+
+Data are in `~/Desktop/Bioinformatics/data/genome_assembly2/`:
+
+| File | Content |
+|---|---|
+| `usa300_R1.fastq.gz`, `usa300_R2.fastq.gz` | Illumina paired-end reads 2×150 bp |
+| `usa300_ont.fastq.gz` | Oxford Nanopore reads |
+| `usa300_FPR3757_reference.fna.gz`, `usa300_FPR3757_reference.gff.gz` | published genome and annotation of USA300 FPR3757, used **only** for evaluation of the assemblies (Part 2) |
+| `precomputed/` | results of the long-running steps, use them only if something fails |
+
+## Installation of the conda environments
+
+Two environments are needed (BUSCO conflicts with some of the other programs).
+The installation takes a few minutes:
+
+```bash
+conda create -n assembly2 -y --override-channels -c conda-forge -c bioconda \
+    python=3.11 fastp kmer-jellyfish megahit flye quast minimap2 samtools seqkit bandage blast bedtools
+conda create -n busco -y --override-channels -c conda-forge -c bioconda busco
+```
+
+> Note: the k-mer counter Jellyfish is in the package `kmer-jellyfish`. The
+> package `jellyfish` is an unrelated Python library.
+
+Prepare a working directory:
+
+```bash
+mkdir -p ~/assembly2
+cd ~/assembly2
+cp ~/Desktop/Bioinformatics/data/genome_assembly2/*.gz .
+ls -lh
+conda activate assembly2
+```
+
+## Part 1 - Assembly from short Illumina reads
+
+### Quality control and trimming with fastp
+
+`fastp` checks the quality of the reads and removes adapters and low-quality
+ends in one step. The result is an HTML report with statistics before and after
+filtering.
+
+```bash
+fastp -i usa300_R1.fastq.gz -I usa300_R2.fastq.gz \
+      -o trimmed_R1.fastq.gz -O trimmed_R2.fastq.gz \
+      --detect_adapter_for_pe -w 4 -h fastp.html -j fastp.json
+firefox fastp.html
+```
+
+Questions:
+- How many read pairs are in the dataset? What is the total number of bases?
+  What is the approximate sequencing coverage, if the genome size of *S. aureus*
+  is about 2.9 Mb?
+- What fraction of bases has quality ≥ Q30? What does Q30 mean in terms of the
+  probability of an error?
+- Which adapter sequence did fastp find? How many reads contained it? Adapters
+  are present when the sequenced DNA fragment (insert) is shorter than the
+  read - look at the "Insert size estimation" plot. (fastp can estimate the
+  insert size only for pairs whose two reads overlap, i.e. for inserts shorter
+  than ~290 bp; all other pairs are reported as "not overlapped".)
+- Look at the "base content" plot after filtering. What is the GC content of
+  the reads? (Compare with the human genome, ~41 % GC.)
+- Some reads end with a long run of `GGGGG...` (polyG). Count them in the raw
+  and in the trimmed reads:
+  ```bash
+  zcat usa300_R2.fastq.gz | grep -c 'GGGGGGGGGGGGGGGGGGGG$'
+  zcat trimmed_R2.fastq.gz | grep -c 'GGGGGGGGGGGGGGGGGGGG$'
+  ```
+  The NovaSeq instrument uses two-colour chemistry, in which "no signal" is
+  read as G - polyG tails appear when the DNA fragment has ended. fastp
+  recognises NovaSeq data from the read names and trims polyG tails
+  automatically.
+
+### k-mer spectrum and estimation of the genome size
+
+A k-mer spectrum (histogram of k-mer counts) shows how many distinct k-mers
+occur once, twice, three times, ... in the reads. K-mers from the genome form a
+peak around the average k-mer coverage, k-mers containing sequencing errors
+occur only once or twice.
+
+```bash
+jellyfish count -C -m 21 -s 50M -t 4 -o reads.jf <(zcat trimmed_R1.fastq.gz trimmed_R2.fastq.gz)
+jellyfish histo reads.jf > reads.histo
+head -50 reads.histo
+```
+
+Open [GenomeScope 2.0](http://qb.cshl.edu/genomescope/genomescope2.0/), upload
+`reads.histo`, set k-mer length 21 and **ploidy 1** (bacteria are haploid).
+
+Questions:
+- Where is the main peak (k-mer coverage)? What is the estimated genome size?
+- What is the meaning of the large number of k-mers with count 1?
+- Between the error peak and the main peak there are more k-mers than expected.
+  What could they come from? Keep this question in mind until you map the
+  reads to the final assembly in Part 2.
+
+### Assembly with MEGAHIT
+
+MEGAHIT is a fast and memory-efficient de Bruijn graph assembler. It builds the
+graph several times with increasing k-mer size (k = 21, 29, ... 141) and uses
+the result of each round in the next one.
+
+```bash
+megahit -1 trimmed_R1.fastq.gz -2 trimmed_R2.fastq.gz -t 4 -o megahit
+# assembly takes ~1 minute
+grep -c ">" megahit/final.contigs.fa
+grep ">" megahit/final.contigs.fa | head
+```
+
+The header of each contig contains its length (`len=`) and its average k-mer
+coverage (`multi=`).
+
+- How many contigs were assembled? What is the length of the longest contig?
+- Sort the contigs by coverage:
+  `grep ">" megahit/final.contigs.fa | sort -t= -k3,3nr | head`. Most long
+  contigs have similar coverage. Some contigs have a much higher coverage - how
+  long are they? What could they be? (Hint: how many copies of the sequence are
+  in one bacterial cell?)
+
+### The effect of k-mer size
+
+To see why MEGAHIT uses several k-mer sizes, make two assemblies with a single
+small and a single large k (each takes a few seconds):
+
+```bash
+megahit -1 trimmed_R1.fastq.gz -2 trimmed_R2.fastq.gz -t 4 --k-list 21 -o megahit_k21
+megahit -1 trimmed_R1.fastq.gz -2 trimmed_R2.fastq.gz -t 4 --k-list 99 -o megahit_k99
+```
+
+### Assembly statistics with QUAST
+
+```bash
+quast megahit_k21/final.contigs.fa megahit_k99/final.contigs.fa megahit/final.contigs.fa \
+      -l k21,k99,multi_k -o quast_megahit
+firefox quast_megahit/report.html
+```
+
+- Compare the number of contigs, the total length, the largest contig and the
+  N50 of the three assemblies. Which k-mer size gives the best assembly and
+  why? (Think about repeats shorter/longer than k and about k-mers containing
+  errors.)
+- Is the total length of the assembly in agreement with the genome size
+  estimated from the k-mer spectrum?
+
+### Assembly graph in Bandage
+
+The contigs are paths in the assembly graph. Convert the final graph of MEGAHIT
+(k=141) to a format that Bandage can read and open it:
+
+```bash
+megahit_toolkit contig2fastg 141 megahit/intermediate_contigs/k141.contigs.fa > megahit_k141.fastg
+Bandage load megahit_k141.fastg &
+```
+
+Click "Draw graph".
+- The graph consists of many separate pieces. Find pieces where several
+  contigs meet in one node - these are **repeats** (the assembler cannot
+  decide which way to continue). Click on such a node and check its length and
+  depth (right panel). Is the depth higher than for the surrounding contigs?
+- Other contigs simply end (dead ends). Repeats cannot explain them - what can?
+- Can you find a contig that forms a circle? Compare its depth with the rest of
+  the graph.
+
+## Part 2 - Assembly from long Nanopore reads
+
+### Read statistics
+
+```bash
+seqkit stats -a usa300_ont.fastq.gz
+```
+
+- How many reads are there, what is the total number of bases and the
+  coverage of the genome?
+- What are the mean length, the longest read and the N50 of the reads? Compare
+  the read N50 with the length of the longest repeat that you saw in Bandage.
+
+### Assembly with Flye
+
+Flye is a long-read assembler based on a repeat graph. `--nano-hq` is the
+setting for current ONT reads (R10.4.1, accuracy > 95 %).
+
+```bash
+flye --nano-hq usa300_ont.fastq.gz -t 4 -o flye
+# assembly takes 3-5 minutes
+cat flye/assembly_info.txt
+```
+
+<details>
+<summary>💡 Flye failed or takes too long?</summary>
+
+Use the precomputed assembly (identical to what Flye produces from these reads):
+
+```bash
+mkdir -p flye
+cp ~/Desktop/Bioinformatics/data/genome_assembly2/precomputed/usa300_flye_assembly.fasta flye/assembly.fasta
+cp ~/Desktop/Bioinformatics/data/genome_assembly2/precomputed/usa300_flye_assembly_info.txt flye/assembly_info.txt
+cp ~/Desktop/Bioinformatics/data/genome_assembly2/precomputed/usa300_flye_assembly_graph.gfa flye/assembly_graph.gfa
+```
+</details>
+
+The table `assembly_info.txt` contains for each contig: length, mean coverage
+(`cov.`), whether it is circular (`circ.`), whether it is a repeat, and its
+multiplicity.
+
+- How many contigs were assembled? What is their length and coverage?
+- Which contig is the bacterial chromosome? How do you know that it is
+  complete?
+- What is the second contig? Use its coverage to estimate how many copies of it
+  are in one cell.
+- Open `flye/assembly_graph.gfa` in Bandage and compare it with the graph of
+  the MEGAHIT assembly.
+
+### Where are the small plasmids?
+
+In Part 1 you found two short contigs (~3 kb and ~4.4 kb) with very high
+coverage in the MEGAHIT assembly. Are they present in the Flye assembly?
+
+```bash
+# extract the two MEGAHIT contigs (replace the names by the names of your contigs)
+seqkit grep -p k141_XXX -p k141_YYY megahit/final.contigs.fa > small_contigs.fa
+# compare them with the Flye assembly
+minimap2 flye/assembly.fasta small_contigs.fa
+# how many ONT reads come from them?
+minimap2 -x map-ont small_contigs.fa usa300_ont.fastq.gz | cut -f 1,6 | sort -u | cut -f 2 | sort | uniq -c
+```
+
+- Are the small contigs in the Flye assembly? (The output of minimap2 is a
+  table, one line per alignment; columns 2-4 are the length of the contig and
+  the start and end of the alignment in it. A short partial alignment of a few
+  hundred bp does not mean that the contig is present.) Are they in the ONT
+  reads?
+- Use [NCBI BLASTN](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastn&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome)
+  to find out what they are.
+- Long-read assemblers often lose small plasmids (shorter than the typical read
+  length). How would you get a complete genome, including all plasmids?
+
+### Comparison of the two assemblies with the published genome
+
+Now we will use the published genome of USA300 FPR3757 as a reference. QUAST will
+align the contigs to it and report misassemblies, missing parts of the genome
+and missing genes:
+
+```bash
+quast flye/assembly.fasta megahit/final.contigs.fa -l Flye,MEGAHIT \
+      -r usa300_FPR3757_reference.fna.gz -g usa300_FPR3757_reference.gff.gz \
+      -o quast_vs_reference
+firefox quast_vs_reference/report.html
+```
+
+- Compare "Genome fraction (%)", "# misassemblies", "# mismatches per 100 kbp",
+  "# indels per 100 kbp" and "# genomic features" (genes completely and
+  partially present) of both assemblies.
+- Open "Icarus" (link at the top of the report) - contig browser. Where are the
+  gaps of the MEGAHIT assembly?
+
+### Assembly errors or real differences? Reads mapped to the published genome
+
+QUAST compares the assemblies with the published genome of USA300 FPR3757 and
+reports every difference as an error. But the strain we sequenced is not
+necessarily identical to the published one. To decide whether a difference is
+an assembly error or a real difference between the genomes, we look at the
+reads themselves. Map both Illumina and ONT reads to the published genome:
+
+```bash
+gunzip -k usa300_FPR3757_reference.fna.gz usa300_FPR3757_reference.gff.gz
+minimap2 -ax sr -t 4 usa300_FPR3757_reference.fna trimmed_R1.fastq.gz trimmed_R2.fastq.gz \
+    | samtools sort -o illumina_to_reference.bam
+minimap2 -ax map-ont -t 4 usa300_FPR3757_reference.fna usa300_ont.fastq.gz \
+    | samtools sort -o ont_to_reference.bam
+samtools index illumina_to_reference.bam
+samtools index ont_to_reference.bam
+```
+
+Start IGV, load `usa300_FPR3757_reference.fna` as the genome (`Genomes → Load
+Genome from File...`), then the annotation `usa300_FPR3757_reference.gff` and
+both BAM files (`File → Load from File...`). In the Illumina track, right-click
+and select "View as pairs". IGV colours read pairs with an unexpected distance
+(insert size) or orientation of the mates - see
+[paired-end alignments](https://igv.org/doc/desktop/#UserGuide/tracks/alignments/paired_end_alignments/)
+in the IGV manual. Normal pairs are grey and point towards each other (→ ←).
+
+**A. Regions with low Illumina coverage**
+- Zoom out to the whole chromosome. Is the Illumina coverage even? Is the ONT
+  coverage even?
+- Zoom in to a region where the Illumina coverage drops to (almost) zero and
+  look at the sequence. Library preparation of Illumina libraries (PCR
+  amplification) is less efficient for AT-rich DNA, and *S. aureus* has a very
+  AT-rich genome. Explain now the shoulder in the k-mer spectrum (Part 1) and
+  the gaps in the MEGAHIT assembly.
+
+**B. Structural differences.** QUAST reported misassemblies in the Flye
+assembly. Find their positions in the reference: open the Icarus contig
+browser from the QUAST report, or look at the alignments of the Flye contigs
+to the reference in `quast_vs_reference/contigs_reports/all_alignments_Flye.tsv`
+(columns: start and end in the reference, start and end in the contig; lines
+between the alignments describe the type of the misassembly). Go to these
+positions in IGV:
+- One region has no Illumina and no ONT coverage at all. How is it different
+  from the AT-rich regions with low coverage from task A? Look at the
+  Illumina read pairs around it: what colour are they and what is their insert
+  size (click on a read)? Estimate the size of the missing region from the
+  insert size of these pairs. Some ONT reads span the whole region - how does
+  IGV show it? Which genes of the reference are missing in our isolate?
+- At two other positions about 20 kb apart you will find read pairs in which
+  both mates point in the same direction (→ → or ← ←), and reads that are
+  aligned only partly (soft-clipped, shown in colour after enabling "Show
+  soft-clipped bases" in `View → Preferences → Alignments`). The ONT reads are
+  split at the same positions (one part of the read is aligned on one strand,
+  the other part on the opposite strand). What kind of rearrangement produces
+  such pairs? Draw it. How long is the rearranged region?
+- Is the Flye assembly wrong, or is our strain different from the published
+  one? What would you write in the "Misassemblies" row of QUAST if you were
+  sure?
+
+**C. Background noise.** Zoom to any other region of the chromosome (e.g.
+10 kb).
+- Do you see occasional coloured pairs there as well? How many compared with
+  the grey ones?
+- Such pairs come from **chimeric fragments** created during library
+  preparation (two unrelated DNA pieces ligated together). How can you tell a
+  real structural variant from chimeric fragments? (Hint: how many pairs
+  support each event?)
+
+### Completeness of the assemblies with BUSCO
+
+BUSCO searches the assembly for genes which are present in a single copy in
+nearly all genomes of a taxonomic group.
+
+```bash
+conda activate busco
+busco -i flye/assembly.fasta -o busco_flye -m genome -l staphylococcus_odb12 -c 4
+busco -i megahit/final.contigs.fa -o busco_megahit -m genome -l staphylococcus_odb12 -c 4
+cat busco_flye/short_summary*.txt busco_megahit/short_summary*.txt
+conda activate assembly2
+```
+
+- What is the fraction of complete, fragmented and missing BUSCO genes in each
+  assembly?
+- According to QUAST, the MEGAHIT assembly misses many more genes than the Flye
+  assembly. Why does BUSCO show only a small difference? (Hint: what kind of
+  genes does BUSCO use, and what kind of genes are in the missing AT-rich
+  regions?)
+
+## Part 3 - What makes USA300 a dangerous pathogen?
+
+USA300 is the most common community-acquired MRSA in North America. We will
+compare its genome with the methicillin-sensitive laboratory strain NCTC 8325
+and find the genes that USA300 has in addition. Use the Flye assembly - it is
+the most complete one.
+
+### Whole-genome dotplot
+
+Compare the Flye assembly with NCTC 8325
+(`~/Desktop/Bioinformatics/data/genome_assembly/GCF_000013425.1_ASM1342v1_genomic.fna`)
+using Gepard or [D-Genies](https://dgenies.toulouse.inra.fr/).
+
+- Is the dotplot line going up or down? Does it start at the corner of the
+  plot? Why can the assembly of a circular chromosome start at any position
+  and be in any orientation?
+- Find places where the line is interrupted - sequences present in only one of
+  the two genomes.
+
+### Genome annotation
+
+Annotate the Flye assembly with **Bakta** using one of the options:
+
+- **Galaxy**: upload `flye/assembly.fasta` to https://usegalaxy.eu/, run Bakta
+  (set "Keep original contig header" to "yes") and download the GFF3 file and
+  the annotation table (TSV). Name them `usa300_flye.bakta.gff3` and
+  `usa300_flye.bakta.tsv`.
+- **Proksee** (https://proksee.ca/): upload `flye/assembly.fasta` and run the
+  annotation. You can also add the NCTC 8325 genome as a BLAST track - regions
+  without BLAST hits are specific for USA300.
+- **Precomputed results** (if the web services are busy): Flye gives the same
+  assembly from the same reads, so the Bakta annotation of your assembly is
+  available:
+
+  ```bash
+  cp ~/Desktop/Bioinformatics/data/genome_assembly2/precomputed/usa300_flye.bakta.* .
+  ```
+
+Look at `usa300_flye.bakta.txt` (summary) and `usa300_flye.bakta.png` (map
+of the genome). How many protein-coding genes (CDS) were found?
+
+### Regions specific for USA300
+
+The file `precomputed/usa300_unique_vs_nctc8325.bed` contains the regions of
+the Flye assembly (≥ 1 kb) without similarity to NCTC 8325 (BLASTN, ≥ 90 %
+identity).
+
+```bash
+cp ~/Desktop/Bioinformatics/data/genome_assembly2/precomputed/usa300_unique_vs_nctc8325.bed .
+cat usa300_unique_vs_nctc8325.bed
+```
+
+<details>
+<summary>How was the BED file created?</summary>
+
+The NCTC 8325 genome is used as a BLAST database and the Flye contigs are
+searched against it. The aligned parts of the contigs are merged and the
+complement (the parts without any hit) is reported:
+
+```bash
+cp ~/Desktop/Bioinformatics/data/genome_assembly/GCF_000013425.1_ASM1342v1_genomic.fna nctc8325.fna
+makeblastdb -in nctc8325.fna -dbtype nucl
+blastn -task megablast -query flye/assembly.fasta -db nctc8325.fna \
+       -outfmt "6 qseqid qstart qend" -evalue 1e-10 -perc_identity 90 \
+    | awk -v OFS='\t' '{print $1, $2-1, $3}' | sort -k1,1 -k2,2n | bedtools merge -i - > shared.bed
+samtools faidx flye/assembly.fasta
+bedtools complement -i shared.bed -g <(cut -f 1,2 flye/assembly.fasta.fai) \
+    | awk '$3-$2 >= 1000' > usa300_unique_vs_nctc8325.bed
+```
+</details>
+
+In IGV load `flye/assembly.fasta` as the genome, then the Bakta annotation
+(`usa300_flye.bakta.gff3`) and `usa300_unique_vs_nctc8325.bed`. The table
+`usa300_flye.bakta.tsv` (columns: contig, type, start, stop, strand, locus
+tag, gene, product, ...) is useful for searching, e.g.
+`grep -i "leukocidin" usa300_flye.bakta.tsv`.
+
+- How many USA300-specific regions are there and what is their total length?
+- Go through the largest regions and look at the annotated genes. Find:
+  - **mecA** encoding the penicillin-binding protein **PBP2a**, the cause of
+    methicillin resistance. It is part of the mobile element **SCCmec**.
+    (Careful: Bakta also reports another, unrelated gene called *mecA* - an
+    adapter protein present in all *S. aureus*. Which one is in a
+    USA300-specific region?) Which genes are around? Do you see transposases
+    or recombinases?
+  - Next to SCCmec, genes of the arginine deiminase pathway (arginine
+    deiminase, ornithine carbamoyltransferase, carbamate kinase,
+    arginine-ornithine antiporter). This is the **arginine catabolic mobile
+    element (ACME)**, typical for USA300; it helps the bacteria survive on the
+    acidic human skin. (*S. aureus* also has its own chromosomal copy of this
+    pathway - find it and check that it is not in a USA300-specific region.)
+  - **lukS-PV, lukF-PV** - Panton-Valentine leukocidin, a toxin killing white
+    blood cells. What kind of genes surround it outside of the
+    USA300-specific region? (Hint: search for "phage" around it.)
+- The plasmid (contig_2) is entirely specific for USA300. Which antibiotic
+  resistance genes does it carry? Which antibiotics do they affect?
+- Methicillin resistance, ACME and PVL are all located on mobile genetic
+  elements (SCCmec, ACME, prophage), resistance to other antibiotics on a
+  plasmid. What does it tell you about how *S. aureus* strains become
+  dangerous?
+
 # How to make assembly on Metacentrum
 
 We need to execute all these commands on Metacentrum:

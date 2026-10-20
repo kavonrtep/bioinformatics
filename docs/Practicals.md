@@ -101,12 +101,13 @@ pre-computed results.
 
 # Week 5 (Oct. 27)
 ## Genome assembly
-- [Exercise 2 - Genome Assembly - Short Reads](./sequence_assembly.md#part-1---assembly-using-single-end-short-reads)
-- [Exercise 2 - Genome Assembly - Short Paired-End Reads](./sequence_assembly.md#part-2---assembly-using-pair-end-short-reads)
+- [Exercise 3 - Genome assembly of MRSA from Illumina and Nanopore reads](./sequence_assembly.md#exercise-3---genome-assembly-of-mrsa-from-illumina-and-nanopore-reads)
+  - [Installation of the conda environments](./sequence_assembly.md#installation-of-the-conda-environments)
+  - [Part 1 - Assembly from short Illumina reads](./sequence_assembly.md#part-1---assembly-from-short-illumina-reads)
 
 # Week 6 (Nov 3)
 ## Genome assembly - cont.
-- [Exercise 2 - Genome Assembly - Long Reads](./sequence_assembly.md#part-3---assembly-using-long-pacbio-hifi-reads)
+- [Exercise 3 - Part 2 - Assembly from long Nanopore reads](./sequence_assembly.md#part-2---assembly-from-long-nanopore-reads)
 
 ### Using BLAST from command line
  - [Exercise 2.1](./blast_search.md/#exercise-21)
@@ -115,7 +116,7 @@ pre-computed results.
 # Week 7 (Nov 10)
 
 ## Genome assembly - cont.
-- [Exercise 2 - Genome Assembly - Long Reads](./sequence_assembly.md#part-3---assembly-using-long-pacbio-hifi-reads)
+- [Exercise 3 - Part 3 - What makes USA300 a dangerous pathogen?](./sequence_assembly.md#part-3---what-makes-usa300-a-dangerous-pathogen)
 
 ### Using Galaxy platform
  - [Introduction to Galaxy](./Introduction_to_Galaxy.md)
