@@ -573,12 +573,16 @@ computations take seconds to a few minutes, so focus on the **interpretation of
 the outputs**: what the numbers and plots tell you about the reads, the genome
 and the quality of the assembly.
 
-The reads were **simulated** from the genome of a USA300 isolate with realistic
-error models of current instruments (Illumina NovaSeq 2×150 bp, ONT R10.4.1),
-and contain several problems you will meet in real data. A closely related
+You have Illumina NovaSeq (2×150 bp) and Oxford Nanopore (R10.4.1) reads from a
+USA300 isolate. The data contain several problems typical of real sequencing
+runs. A closely related
 genome - the published genome of USA300 strain FPR3757 - is available, so we
 can check what the assemblers got right and what they missed. But be careful:
 our isolate is not necessarily identical to the published strain.
+
+Introduction slides - the pipeline, read QC, k-mer spectrum, assembly graphs, QUAST, Flye
+output, read pairs in IGV, BUSCO and MRSA:
+[assembly_intro.pdf](./slides/assembly_intro.pdf)
 
 Data are in `~/Desktop/Bioinformatics/data/genome_assembly2/`:
 
@@ -638,7 +642,7 @@ Questions:
   are present when the sequenced DNA fragment (insert) is shorter than the
   read - look at the "Insert size estimation" plot. (fastp can estimate the
   insert size only for pairs whose two reads overlap, i.e. for inserts shorter
-  than ~290 bp; all other pairs are reported as "not overlapped".)
+  than ~270 bp (fastp needs at least 30 bp of overlap); all other pairs are reported as "not overlapped".)
 - Look at the "base content" plot after filtering. What is the GC content of
   the reads? (Compare with the human genome, ~41 % GC.)
 - Some reads end with a long run of `GGGGG...` (polyG). Count them in the raw

@@ -101,6 +101,8 @@ pre-computed results.
 
 # Week 5 (Oct. 27)
 ## Genome assembly
+Introduction slides for Exercise 3 (weeks 5-7): [assembly_intro.pdf](./slides/assembly_intro.pdf)
+
 - [Exercise 3 - Genome assembly of MRSA from Illumina and Nanopore reads](./sequence_assembly.md#exercise-3---genome-assembly-of-mrsa-from-illumina-and-nanopore-reads)
   - [Installation of the conda environments](./sequence_assembly.md#installation-of-the-conda-environments)
   - [Part 1 - Assembly from short Illumina reads](./sequence_assembly.md#part-1---assembly-from-short-illumina-reads)
