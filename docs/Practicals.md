@@ -99,7 +99,7 @@ a *Backup* section with an alternative web service, local BLAST commands and
 pre-computed results.
 
 
-# Week 5 (Oct. 27)
+# Week 5 (Oct. 26)
 ## Genome assembly
 Introduction slides for Exercise 3 (weeks 5-7): [assembly_intro.pdf](./slides/assembly_intro.pdf)
 
@@ -107,7 +107,7 @@ Introduction slides for Exercise 3 (weeks 5-7): [assembly_intro.pdf](./slides/as
   - [Installation of the conda environments](./sequence_assembly.md#installation-of-the-conda-environments)
   - [Part 1 - Assembly from short Illumina reads](./sequence_assembly.md#part-1---assembly-from-short-illumina-reads)
 
-# Week 6 (Nov 3)
+# Week 6 (Nov 2)
 ## Genome assembly - cont.
 - [Exercise 3 - Part 2 - Assembly from long Nanopore reads](./sequence_assembly.md#part-2---assembly-from-long-nanopore-reads)
 
@@ -115,7 +115,7 @@ Introduction slides for Exercise 3 (weeks 5-7): [assembly_intro.pdf](./slides/as
  - [Exercise 2.1](./blast_search.md/#exercise-21)
  - [Exercise 2.2](./blast_search.md/#exercise-22---extract-hits-from-database-and-create-alignment-with-query)
 
-# Week 7 (Nov 10)
+# Week 7 (Nov 9)
 
 ## Genome assembly - cont.
 - [Exercise 3 - Part 3 - What makes USA300 a dangerous pathogen?](./sequence_assembly.md#part-3---what-makes-usa300-a-dangerous-pathogen)
@@ -123,19 +123,19 @@ Introduction slides for Exercise 3 (weeks 5-7): [assembly_intro.pdf](./slides/as
 ### Using Galaxy platform
  - [Introduction to Galaxy](./Introduction_to_Galaxy.md)
 
-# Week 8 (Nov 24)
+# Week 8 (Nov 16)
 
 - [Chip-Seq analysis](./chip_seq_analysis.md)
 - Optional: [Integrative Genomics Viewer](./Integrative_Genomics_Viewer.md) 
 
-# Week 9 (Dec 1)
+# Week 9 (Nov 23)
 
 ## Creating phylogenetic tree
   - [Exercise 1 - Comparison of phylogenetic trees based on amino acid and nucleotide sequences of ubiquitin gene](./ubiquitin_tree_example.md#comparison-of-phylogenetic-trees-based-on-amino-acid-and-nucleotide-sequences-of-ubiquitin-gene)
   - [Exercise 2 - The case of the Florida dentist](./florida_case_dentist.md#the-case-of-the-florida-dentist)
   - [Exercies 3 - Origin of HIV](./origin_of_hiv.md)
 
-# Week 10 (Dec 8)
+# Week 10 (Nov 30)
 - [Uniprot, PDB, AlphaFoldDB](./pdb_database.md)
 - [Mol* Viewer](./molstar.md)
 - [Using structure prediction](./epitope_selection_exercise.md)

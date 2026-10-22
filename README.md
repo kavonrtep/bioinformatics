@@ -6,12 +6,12 @@
 - [Week 2 - Sequence alignment](./docs/Practicals.md#week-2)
 - [Week 3 - Sequences alignment - cont.](./docs/Practicals.md#week-3)
 - [Week 4 - NCBI BLAST](./docs/Practicals.md#week-4)
-- [Week 5 - Genome assembly](./docs/Practicals.md#week-5-oct-27)
-- [Week 6 - Genome assembly - cont.](./docs/Practicals.md#week-6-nov-3)
-- [Week 7 - Genome assembly - cont.](./docs/Practicals.md#week-7-nov-10)
-- [Week 8 - ChiP Seq analysis](./docs/Practicals.md#week-8-nov-24)
-- [Week 9 - Molecular phylogenetics](./docs/Practicals.md#week-9-dec-1)
-- [Week 10 - Protein structure prediction](./docs/Practicals.md#week-10-dec-8)
+- [Week 5 - Genome assembly](./docs/Practicals.md#week-5-oct-26)
+- [Week 6 - Genome assembly - cont.](./docs/Practicals.md#week-6-nov-2)
+- [Week 7 - Genome assembly - cont.](./docs/Practicals.md#week-7-nov-9)
+- [Week 8 - ChiP Seq analysis](./docs/Practicals.md#week-8-nov-16)
+- [Week 9 - Molecular phylogenetics](./docs/Practicals.md#week-9-nov-23)
+- [Week 10 - Protein structure prediction](./docs/Practicals.md#week-10-nov-30)
 
  
 ## Course Materials
