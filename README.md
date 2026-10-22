@@ -21,7 +21,7 @@
 - [NCBI Blast](./docs/blast_search.md)
 - [Sequence Mapping](./docs/sequence_mapping.org)
 - [Databases](./docs/Databases_exercise.org)
-- [Sequence Assembly](./docs/sequence_assembly.org)
+- [Sequence Assembly](./docs/sequence_assembly.md)
 - [Transcriptome Assembly](./docs/transciptome_assembly.org)
 - [Differential expression using RNA-Seq](./docs/transcriptomic_exercise.org)
 - [Integrative_Genomics_Viewer](./docs/Integrative_Genomics_Viewer.org)
