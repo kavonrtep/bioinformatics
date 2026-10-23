@@ -15,7 +15,7 @@ can check what the assemblers got right and what they missed. But be careful:
 our isolate is not necessarily identical to the published strain.
 
 Introduction slides - the pipeline, read QC, k-mer spectrum, assembly graphs, QUAST, Flye
-output, read pairs in IGV, BUSCO and MRSA:
+output, read pairs in IGV, BUSCO, MRSA, BED files and bedtools:
 [assembly_intro.pdf](./slides/assembly_intro.pdf)
 
 Contents:
