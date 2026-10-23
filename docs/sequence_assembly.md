@@ -695,6 +695,10 @@ grep ">" megahit/final.contigs.fa | head
 The header of each contig contains its length (`len=`) and its average k-mer
 coverage (`multi=`).
 
+> Note: the contig names (`k141_27`, ...) are different in every run - your
+> neighbour (and your second run) will have the same contigs under different
+> names. Compare contigs by their length and coverage, not by their names.
+
 - How many contigs were assembled? What is the length of the longest contig?
 - Sort the contigs by coverage:
   `grep ">" megahit/final.contigs.fa | sort -t= -k3,3nr | head`. Most long
@@ -773,7 +777,8 @@ cat flye/assembly_info.txt
 <details>
 <summary>💡 Flye failed or takes too long?</summary>
 
-Use the precomputed assembly (identical to what Flye produces from these reads):
+Use the precomputed assembly (the same contigs that Flye produces from these
+reads; see below why your contig_2 may start at a different position):
 
 ```bash
 mkdir -p flye
@@ -794,6 +799,41 @@ multiplicity.
   are in one cell.
 - Open `flye/assembly_graph.gfa` in Bandage and compare it with the graph of
   the MEGAHIT assembly.
+
+### Did you get the same assembly as your neighbour?
+
+Many programs that run on several threads (`-t 4`) are **not deterministic**:
+the threads finish their parts of the work in a different order in each run,
+and the result can differ slightly. Compare your Flye assembly with your
+neighbour's and with the precomputed one:
+
+```bash
+cat flye/assembly_info.txt
+P=~/Desktop/Bioinformatics/data/genome_assembly2/precomputed
+cat $P/usa300_flye_assembly_info.txt
+# first 60 bases of each contig
+seqkit seq -s -w 0 flye/assembly.fasta | cut -c 1-60
+seqkit seq -s -w 0 $P/usa300_flye_assembly.fasta | cut -c 1-60
+# align the two assemblies (columns: contig, length, start, end, strand,
+# contig in the precomputed assembly, its length, start, end)
+minimap2 -x asm5 $P/usa300_flye_assembly.fasta flye/assembly.fasta | cut -f 1-9
+```
+
+- Are the chromosomes identical? Do both contig_2 sequences start with the
+  same bases? If not, is contig_2 a different sequence, or the same circle
+  opened at a different position? (Look at the minimap2 alignment.)
+- Why can a circular contig start at any position? Why does it happen to
+  contig_2 and not to the chromosome? (Hint: look at the `repeat` and `mult.`
+  columns.)
+- What may differ between two runs of a non-deterministic program, and what
+  must not (sequence, length, completeness of the genome)? What does it mean
+  for comparing your results with the teacher's, or for reproducibility of a
+  published analysis?
+- Optional (4 minutes): Flye has an option `--deterministic`, which runs the
+  first step of the assembly on a single thread:
+  `flye --nano-hq usa300_ont.fastq.gz -t 4 --deterministic -o flye_det`.
+  Run it twice, or compare with your neighbour. Is the result always the same?
+  Is it the same as your first assembly?
 
 ### Where are the small plasmids?
 
@@ -956,12 +996,13 @@ Annotate the Flye assembly with **Bakta** using one of the options:
 - **Proksee** (https://proksee.ca/): upload `flye/assembly.fasta` and run the
   annotation. You can also add the NCTC 8325 genome as a BLAST track - regions
   without BLAST hits are specific for USA300.
-- **Precomputed results** (if the web services are busy): Flye gives the same
-  assembly from the same reads, so the Bakta annotation of your assembly is
-  available:
+- **Precomputed results** (if the web services are busy): the Bakta annotation
+  of the precomputed Flye assembly. Your contig_2 may start at a different
+  position (see Part 2), so use the precomputed assembly together with it:
 
   ```bash
   cp ~/Desktop/Bioinformatics/data/genome_assembly2/precomputed/usa300_flye.bakta.* .
+  cp ~/Desktop/Bioinformatics/data/genome_assembly2/precomputed/usa300_flye_assembly.fasta .
   ```
 
 Look at `usa300_flye.bakta.txt` (summary) and `usa300_flye.bakta.png` (map
@@ -997,7 +1038,9 @@ bedtools complement -i shared.bed -g <(cut -f 1,2 flye/assembly.fasta.fai) \
 ```
 </details>
 
-In IGV load `flye/assembly.fasta` as the genome, then the Bakta annotation
+In IGV load `flye/assembly.fasta` as the genome (or
+`usa300_flye_assembly.fasta` if you use the precomputed Bakta annotation),
+then the Bakta annotation
 (`usa300_flye.bakta.gff3`) and `usa300_unique_vs_nctc8325.bed`. The table
 `usa300_flye.bakta.tsv` (columns: contig, type, start, stop, strand, locus
 tag, gene, product, ...) is useful for searching, e.g.
