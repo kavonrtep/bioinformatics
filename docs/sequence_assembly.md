@@ -93,6 +93,20 @@ fastp -i usa300_R1.fastq.gz -I usa300_R2.fastq.gz \
 firefox fastp.html
 ```
 
+Options used:
+- `-i`, `-I` - input reads: read 1 and read 2 of each pair
+- `-o`, `-O` - output files for the trimmed read 1 and read 2
+- `--detect_adapter_for_pe` - find the adapter sequence in the reads
+  themselves. Without this option, fastp trims paired-end adapters only
+  where the two reads of a pair overlap.
+- `-w 4` - number of worker threads (CPU cores) to use (default 3)
+- `-h fastp.html` - name of the HTML report (graphs, open it in a browser)
+- `-j fastp.json` - name of the JSON report: the same statistics in a
+  machine-readable form, e.g. for MultiQC or for your own scripts
+
+All options are described in the [fastp repository](https://github.com/OpenGene/fastp)
+or by `fastp --help`.
+
 Questions:
 - How many read pairs are in the dataset? What is the total number of bases?
   What is the approximate sequencing coverage, if the genome size of *S. aureus*
