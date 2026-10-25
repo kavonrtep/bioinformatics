@@ -65,6 +65,18 @@ conda create -n assembly2 -y --override-channels -c conda-forge -c bioconda \
 conda create -n busco -y --override-channels -c conda-forge -c bioconda busco
 ```
 
+<details>
+<summary>Options used</summary>
+
+- `-n assembly2` - name of the new environment
+- `-y` - do not ask for confirmation
+- `--override-channels -c conda-forge -c bioconda` - take packages only from
+  the channels conda-forge and bioconda (bioinformatics software), and ignore
+  other channels set in your conda configuration
+- the rest - packages to install; `python=3.11` fixes the Python version
+
+</details>
+
 > Note: the k-mer counter Jellyfish is in the package `kmer-jellyfish`. The
 > package `jellyfish` is an unrelated Python library.
 
@@ -93,7 +105,9 @@ fastp -i usa300_R1.fastq.gz -I usa300_R2.fastq.gz \
 firefox fastp.html
 ```
 
-Options used:
+<details>
+<summary>Options used</summary>
+
 - `-i`, `-I` - input reads: read 1 and read 2 of each pair
 - `-o`, `-O` - output files for the trimmed read 1 and read 2
 - `--detect_adapter_for_pe` - find the adapter sequence in the reads
@@ -106,6 +120,8 @@ Options used:
 
 All options are described in the [fastp repository](https://github.com/OpenGene/fastp)
 or by `fastp --help`.
+
+</details>
 
 Questions:
 - How many read pairs are in the dataset? What is the total number of bases?
@@ -126,6 +142,9 @@ Questions:
   zcat usa300_R2.fastq.gz | grep -c 'GGGGGGGGGGGGGGGGGGGG$'
   zcat trimmed_R2.fastq.gz | grep -c 'GGGGGGGGGGGGGGGGGGGG$'
   ```
+  (`zcat` prints the content of a gzipped file; `grep -c` counts the lines
+  matching the pattern; `$` means the end of the line, so the pattern is 20 G
+  at the end of a read.)
   The NovaSeq instrument uses two-colour chemistry, in which "no signal" is
   read as G - polyG tails appear when the DNA fragment has ended. fastp
   recognises NovaSeq data from the read names and trims polyG tails
@@ -143,6 +162,32 @@ jellyfish count -C -m 21 -s 50M -t 4 -o reads.jf <(zcat trimmed_R1.fastq.gz trim
 jellyfish histo reads.jf > reads.histo
 head -50 reads.histo
 ```
+
+<details>
+<summary>Options used</summary>
+
+- `jellyfish count` - counts all k-mers in the reads and stores the counts in a
+  binary file
+  - `-C` - canonical k-mers: a k-mer and its reverse complement are counted
+    as one, because we do not know from which DNA strand a read comes
+  - `-m 21` - k-mer length (k = 21)
+  - `-s 50M` - initial size of the hash table (room for 50 million distinct
+    k-mers). A good value is about the genome size plus the number of error
+    k-mers; if it is too small, Jellyfish still works, only more slowly.
+  - `-t 4` - number of threads (CPU cores) to use
+  - `-o reads.jf` - output file with the counts
+  - `<(zcat ...)` - Jellyfish cannot read gzipped files. `zcat` decompresses
+    both read files, and `<( )` passes its output to Jellyfish as if it were
+    a file.
+- `jellyfish histo` - makes the histogram from the counts: two columns, the
+  count (how many times a k-mer was seen) and the number of distinct k-mers
+  with this count. By default it stops at count 10,000; the last line
+  collects all k-mers seen more often (option `-h` changes this limit).
+
+All options are described in the [Jellyfish repository](https://github.com/gmarcais/Jellyfish)
+or by `jellyfish count --help`.
+
+</details>
 
 Open [GenomeScope 2.0](http://genomescope.org/genomescope2.0/), upload
 `reads.histo`, set k-mer length 21 and **ploidy 1** (bacteria are haploid).
@@ -171,6 +216,22 @@ grep -c ">" megahit/final.contigs.fa
 grep ">" megahit/final.contigs.fa | head
 ```
 
+<details>
+<summary>Options used</summary>
+
+- `-1`, `-2` - read 1 and read 2 of the read pairs
+- `-t 4` - number of threads (CPU cores)
+- `-o megahit` - output directory. MEGAHIT stops with an error if the
+  directory already exists - delete it (`rm -r megahit`) before running the
+  assembly again.
+- Without `--k-list`, MEGAHIT uses k = 21, 29, 39, 59, 79, 99, 119, 141.
+- `grep -c ">"` - counts the lines with `>`, i.e. the number of sequences in a
+  FASTA file
+
+All options: [MEGAHIT repository](https://github.com/voutcn/megahit) or `megahit --help`.
+
+</details>
+
 The header of each contig contains its length (`len=`) and its average k-mer
 coverage (`multi=`).
 
@@ -180,7 +241,10 @@ coverage (`multi=`).
 
 - How many contigs were assembled? What is the length of the longest contig?
 - Sort the contigs by coverage:
-  `grep ">" megahit/final.contigs.fa | sort -t= -k3,3nr | head`. Most long
+  `grep ">" megahit/final.contigs.fa | sort -t= -k3,3nr | head`
+  (`-t=` splits the header line at `=` signs, `-k3,3nr` sorts by the third
+  part, which starts with the coverage, numerically (`n`) from the highest
+  (`r`)). Most long
   contigs have similar coverage. Some contigs have a much higher coverage - how
   long are they? What could they be? (Hint: how many copies of the sequence are
   in one bacterial cell?)
@@ -195,6 +259,14 @@ megahit -1 trimmed_R1.fastq.gz -2 trimmed_R2.fastq.gz -t 4 --k-list 21 -o megahi
 megahit -1 trimmed_R1.fastq.gz -2 trimmed_R2.fastq.gz -t 4 --k-list 99 -o megahit_k99
 ```
 
+<details>
+<summary>Options used</summary>
+
+- `--k-list 21` - build the graph with this k only (a comma-separated list,
+  e.g. `--k-list 21,41,61`, gives several rounds)
+
+</details>
+
 ### 1.5 Assembly statistics with QUAST
 
 ```bash
@@ -202,6 +274,18 @@ quast megahit_k21/final.contigs.fa megahit_k99/final.contigs.fa megahit/final.co
       -l k21,k99,multi_k -o quast_megahit
 firefox quast_megahit/report.html
 ```
+
+<details>
+<summary>Options used</summary>
+
+- the FASTA files - assemblies to compare (any number)
+- `-l k21,k99,multi_k` - names of the assemblies in the report, in the same
+  order as the files
+- `-o quast_megahit` - output directory; `report.html` is the main report
+
+All options: [QUAST manual](https://quast.sourceforge.net/docs/manual.html) or `quast --help`.
+
+</details>
 
 - Compare the number of contigs, the total length, the largest contig and the
   N50 of the three assemblies. Which k-mer size gives the best assembly and
@@ -220,6 +304,18 @@ megahit_toolkit contig2fastg 141 megahit/intermediate_contigs/k141.contigs.fa > 
 Bandage load megahit_k141.fastg &
 ```
 
+<details>
+<summary>Options used</summary>
+
+- `megahit_toolkit contig2fastg 141 ...k141.contigs.fa` - converts the
+  contigs of the k = 141 round, together with their connections, to the FASTG
+  graph format; the number must be the k of the file. The result is printed,
+  `>` saves it to a file.
+- `Bandage load file &` - opens the graph in Bandage; `&` runs the program in
+  the background, so you can still use the terminal
+
+</details>
+
 Click "Draw graph".
 - The graph consists of many separate pieces. Find pieces where several
   contigs meet in one node - these are **repeats** (the assembler cannot
@@ -237,6 +333,18 @@ Click "Draw graph".
 seqkit stats -a usa300_ont.fastq.gz
 ```
 
+<details>
+<summary>Options used</summary>
+
+- `seqkit stats` - number of sequences, total length, minimal, average and
+  maximal length
+- `-a` - all statistics: also the quartiles of the read length, N50 and the
+  fraction of bases with quality ≥ Q20 and Q30
+
+All seqkit commands: [SeqKit documentation](https://bioinf.shenwei.me/seqkit/) or `seqkit stats --help`.
+
+</details>
+
 - How many reads are there, what is the total number of bases and the
   coverage of the genome?
 - What are the mean length, the longest read and the N50 of the reads? Compare
@@ -252,6 +360,21 @@ flye --nano-hq usa300_ont.fastq.gz -t 4 -o flye
 # assembly takes 3-5 minutes
 cat flye/assembly_info.txt
 ```
+
+<details>
+<summary>Options used</summary>
+
+- `--nano-hq` - type of the reads (ONT R10.4 or Guppy5+/Dorado SUP basecalling,
+  error rate below 5 %); other types are e.g. `--nano-raw` (older ONT reads),
+  `--pacbio-hifi`
+- `-t 4` - number of threads
+- `-o flye` - output directory; the main results are `assembly.fasta`,
+  `assembly_info.txt` and `assembly_graph.gfa`
+- Flye does not need the genome size (option `--genome-size` is optional).
+
+All options: [Flye manual](https://github.com/mikolmogorov/Flye/blob/flye/docs/USAGE.md) or `flye --help`.
+
+</details>
 
 <details>
 <summary>💡 Flye failed or takes too long?</summary>
@@ -298,6 +421,21 @@ seqkit seq -s -w 0 $P/usa300_flye_assembly.fasta | cut -c 1-60
 minimap2 -x asm5 $P/usa300_flye_assembly.fasta flye/assembly.fasta | cut -f 1-9
 ```
 
+<details>
+<summary>Options used</summary>
+
+- `P=...` - saves the path to a shell variable, `$P` then stands for it
+- `seqkit seq -s -w 0` - prints only the sequences (`-s`), each on one line
+  (`-w 0` = no line wrapping); `cut -c 1-60` keeps the first 60 characters
+- `minimap2 -x asm5 target query` - aligns one assembly (query) to another
+  (target); the preset `asm5` is for very similar genomes (~0.1 % divergence;
+  `asm10` and `asm20` allow more). The output is a PAF table, one line per
+  alignment; `cut -f 1-9` keeps the first 9 columns.
+
+All options: [minimap2 manual](https://lh3.github.io/minimap2/minimap2.html) or `minimap2` without arguments.
+
+</details>
+
 - Are the chromosomes identical? Do both contig_2 sequences start with the
   same bases? If not, is contig_2 a different sequence, or the same circle
   opened at a different position? (Look at the minimap2 alignment.)
@@ -328,6 +466,20 @@ minimap2 flye/assembly.fasta small_contigs.fa
 minimap2 -x map-ont small_contigs.fa usa300_ont.fastq.gz | cut -f 1,6 | sort -u | cut -f 2 | sort | uniq -c
 ```
 
+<details>
+<summary>Options used</summary>
+
+- `seqkit grep -p NAME` - selects sequences by their name (ID); `-p` can be
+  repeated
+- `minimap2 target query` - without `-x` minimap2 uses the settings for ONT
+  reads; good enough for a quick check
+- `minimap2 -x map-ont` - preset for ONT reads
+- `cut -f 1,6` - columns 1 (read name) and 6 (contig name) of the PAF table;
+  `sort -u` keeps each read only once per contig (one read can have several
+  alignments); `cut -f 2 | sort | uniq -c` counts the reads for each contig
+
+</details>
+
 - Are the small contigs in the Flye assembly? (The output of minimap2 is a
   table, one line per alignment; columns 2-4 are the length of the contig and
   the start and end of the alignment in it. A short partial alignment of a few
@@ -350,6 +502,17 @@ quast flye/assembly.fasta megahit/final.contigs.fa -l Flye,MEGAHIT \
       -o quast_vs_reference
 firefox quast_vs_reference/report.html
 ```
+
+<details>
+<summary>Options used</summary>
+
+- `-r` - reference genome; QUAST then reports genome fraction, misassemblies,
+  mismatches and indels
+- `-g` - annotation of the reference (GFF); QUAST counts the genes that are
+  completely or partly present in each assembly
+- `-l Flye,MEGAHIT` - names of the assemblies in the report
+
+</details>
 
 - Compare "Genome fraction (%)", "# misassemblies", "# mismatches per 100 kbp",
   "# indels per 100 kbp" and "# genomic features" (genes completely and
@@ -374,6 +537,25 @@ minimap2 -ax map-ont -t 4 usa300_FPR3757_reference.fna usa300_ont.fastq.gz \
 samtools index illumina_to_reference.bam
 samtools index ont_to_reference.bam
 ```
+
+<details>
+<summary>Options used</summary>
+
+- `gunzip -k` - decompresses the files and keeps (`-k`) the gzipped originals;
+  IGV needs an uncompressed reference
+- `minimap2 -a` - output in the SAM format (alignments with the read
+  sequences) instead of PAF
+- `-x sr` - preset for short reads; with two FASTQ files minimap2 aligns them
+  as pairs. `-x map-ont` - preset for ONT reads.
+- `-t 4` - number of threads
+- `| samtools sort -o file.bam` - sorts the alignments by position in the
+  reference and saves them in the binary BAM format
+- `samtools index` - creates the index (`.bai`) which IGV needs to show a
+  region quickly
+
+samtools commands: [samtools documentation](https://www.htslib.org/doc/samtools.html).
+
+</details>
 
 Start IGV, load `usa300_FPR3757_reference.fna` as the genome (`Genomes → Load
 Genome from File...`), then the annotation `usa300_FPR3757_reference.gff` and
@@ -437,6 +619,21 @@ busco -i megahit/final.contigs.fa -o busco_megahit -m genome -l staphylococcus_o
 cat busco_flye/short_summary*.txt busco_megahit/short_summary*.txt
 conda activate assembly2
 ```
+
+<details>
+<summary>Options used</summary>
+
+- `-i` - input assembly; `-o` - name of the output directory
+- `-m genome` - the input is a genome assembly (other modes: `transcriptome`,
+  `proteins`)
+- `-l staphylococcus_odb12` - the set of BUSCO genes (lineage dataset) for the
+  genus *Staphylococcus*; BUSCO downloads it on the first run. A narrower
+  lineage has more genes (`busco --list-datasets` shows all of them).
+- `-c 4` - number of CPUs
+
+All options: [BUSCO user guide](https://busco.ezlab.org/busco_userguide.html) or `busco --help`.
+
+</details>
 
 - What is the fraction of complete, fragmented and missing BUSCO genes in each
   assembly?
@@ -506,6 +703,25 @@ head usa300_vs_nctc8325.tsv
 wc -l usa300_vs_nctc8325.tsv
 ```
 
+<details>
+<summary>Options used</summary>
+
+- `makeblastdb -in nctc8325.fna -dbtype nucl` - makes a BLAST database from a
+  FASTA file (`nucl` = nucleotide sequences); it writes index files next to it
+- `blastn -task megablast` - fast search for very similar sequences (word size
+  28); good for comparing two strains
+- `-query` - sequences to search with; `-db` - database to search in
+- `-evalue 1e-10` - report only alignments with an E-value below 10⁻¹⁰
+- `-perc_identity 90` - report only alignments with at least 90 % identity
+- `-outfmt "6 qseqid qstart qend"` - tabular output (format 6) with the
+  selected columns only: query name, start and end of the alignment in the
+  query
+- `wc -l` - counts lines (here: alignments)
+
+All options: `blastn -help`, or the [BLAST+ manual](https://www.ncbi.nlm.nih.gov/books/NBK279690/).
+
+</details>
+
 bedtools needs the lengths of the contigs (a "genome file"). `samtools faidx`
 indexes the assembly; the first two columns of the index are the contig names
 and lengths:
@@ -515,6 +731,15 @@ samtools faidx flye/assembly.fasta
 cut -f 1,2 flye/assembly.fasta.fai > genome.txt
 cat genome.txt
 ```
+
+<details>
+<summary>Options used</summary>
+
+- `samtools faidx` - creates the index `assembly.fasta.fai`: one line per
+  sequence with its name, length and position in the file
+- `cut -f 1,2` - keeps columns 1 and 2 (name and length)
+
+</details>
 
 Join the alignments into shared regions and take the rest of the genome:
 
@@ -542,6 +767,15 @@ seqkit subseq --bed usa300_unique_vs_nctc8325.bed flye/assembly.fasta > usa300_u
 seqkit stats usa300_unique.fasta
 grep ">" usa300_unique.fasta
 ```
+
+<details>
+<summary>Options used</summary>
+
+- `seqkit subseq --bed file.bed` - extracts the regions listed in a BED file
+  from the FASTA file; the names of the new sequences contain the contig name
+  and the coordinates of the region
+
+</details>
 
 - How many BLAST alignments are there? How many shared regions
   (`wc -l shared.bed`)?
