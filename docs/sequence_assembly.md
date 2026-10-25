@@ -417,10 +417,28 @@ cat $P/usa300_flye_assembly_info.txt
 # first 60 bases of each contig
 seqkit seq -s -w 0 flye/assembly.fasta | cut -c 1-60
 seqkit seq -s -w 0 $P/usa300_flye_assembly.fasta | cut -c 1-60
-# align the two assemblies (columns: contig, length, start, end, strand,
-# contig in the precomputed assembly, its length, start, end)
+# align your assembly (query) to the precomputed one (target)
 minimap2 -x asm5 $P/usa300_flye_assembly.fasta flye/assembly.fasta | cut -f 1-9
 ```
+
+The output of minimap2 is a table in the **PAF** format, one line per
+alignment (one contig can have several lines). `cut -f 1-9` keeps the first 9
+columns:
+
+| column | meaning | here |
+|---|---|---|
+| 1 | query name | your contig |
+| 2 | query length | length of your contig |
+| 3, 4 | start and end of the alignment in the query | |
+| 5 | strand: `+` same orientation, `-` reverse complement | |
+| 6 | target name | contig of the precomputed assembly |
+| 7 | target length | |
+| 8, 9 | start and end of the alignment in the target | |
+
+Coordinates start at 0 and the end is not included (as in BED), so an
+alignment of a whole 1,000 bp contig is `0 1000`. A contig that is the same
+circle opened at another position gives two lines: one piece aligns to the
+end of the other contig, the rest to its beginning.
 
 <details>
 <summary>Options used</summary>
@@ -481,11 +499,33 @@ minimap2 -x map-ont small_contigs.fa usa300_ont.fastq.gz | cut -f 1,6 | sort -u 
 
 </details>
 
-- Are the small contigs in the Flye assembly? (The output of minimap2 is a
-  table, one line per alignment; columns 2-4 are the length of the contig and
-  the start and end of the alignment in it. A short partial alignment of a few
-  hundred bp does not mean that the contig is present.) Are they in the ONT
-  reads?
+The first minimap2 command prints the full PAF table (no output = no
+alignment), one line per alignment:
+
+| column | meaning | here |
+|---|---|---|
+| 1 | query name | MEGAHIT contig |
+| 2 | query length | length of the MEGAHIT contig |
+| 3, 4 | start and end of the alignment in the query | |
+| 5 | strand (`+` / `-`) | |
+| 6 | target name | Flye contig |
+| 7 | target length | length of the Flye contig |
+| 8, 9 | start and end of the alignment in the target | |
+| 10 | number of matching bases (estimate) | |
+| 11 | length of the alignment (including gaps) | |
+| 12 | mapping quality (0-60; 0 = the query fits equally well elsewhere) | |
+| 13+ | extra tags, e.g. `tp:A:P` primary alignment, `dv:f:` estimated divergence | |
+
+Compare columns 3-4 with column 2: how much of the contig is aligned? Without
+`-c`, minimap2 does not compute the exact base-by-base alignment, so columns
+10-11 are estimates.
+
+The second command (reads vs the small contigs) prints only the summary of
+the pipeline: the number of reads and the contig name, e.g. `360 k141_219`.
+
+- Are the small contigs in the Flye assembly? (A short partial alignment of a
+  few hundred bp does not mean that the contig is present.) Are they in the
+  ONT reads?
 - Use [NCBI BLASTN](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastn&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome)
   to find out what they are.
 - Long-read assemblers often lose small plasmids (shorter than the typical read
@@ -557,6 +597,26 @@ samtools index ont_to_reference.bam
 samtools commands: [samtools documentation](https://www.htslib.org/doc/samtools.html).
 
 </details>
+
+Here minimap2 writes the **SAM** format (`-a`) instead of PAF, and samtools
+saves it as BAM. You will look at the alignments in IGV, but you can also see
+them as text, e.g. `samtools view illumina_to_reference.bam | head -3`. The
+main columns of SAM (one line per read):
+
+| column | meaning |
+|---|---|
+| 1 | read name (both mates of a pair have the same name) |
+| 2 | FLAG - a number that encodes properties of the alignment (paired, mapped, reverse strand, first/second mate, ...); decode it at [Explain SAM flags](https://broadinstitute.github.io/picard/explain-flags.html) |
+| 3 | reference sequence name |
+| 4 | position of the first aligned base (1-based) |
+| 5 | mapping quality (MAPQ, 0-60) |
+| 6 | CIGAR - how the read aligns: e.g. `151M` = 151 bases aligned, `100M51S` = 100 aligned and 51 soft-clipped, `D`/`I` = deletion/insertion |
+| 7, 8 | reference and position of the mate (`=` = the same reference) |
+| 9 | TLEN - insert size: distance between the outer ends of the two mates (negative for the second one) |
+| 10, 11 | read sequence and base qualities |
+
+`samtools flagstat illumina_to_reference.bam` summarises the flags (e.g. the
+percentage of properly paired reads).
 
 Start IGV, load `usa300_FPR3757_reference.fna` as the genome (`Genomes → Load
 Genome from File...`), then the annotation `usa300_FPR3757_reference.gff` and
