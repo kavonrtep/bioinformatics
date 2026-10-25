@@ -108,7 +108,7 @@ Inspect the reports and answer:
 
 ### Estimation of genome size:
 
-We will use a k-mer-count-based estimation of genome size according to <http://genomescope.org>
+We will use a k-mer-count-based estimation of genome size according to <http://genomescope.org/genomescope2.0/>
 
 We will use the Jellyfish program. It is a command-line program that reads FASTA and multi-FASTA files containing DNA sequences. It outputs its k-mer counts in a binary format, which can be translated into a human-readable text format using the "jellyfish dump" command (<https://github.com/gmarcais/Jellyfish>)
 
@@ -130,7 +130,7 @@ jellyfish dump -c reads.jf | less
 
 Note: parameter `-s` is the initial hash size - it affects memory usage.
 
-Go to <http://genomescope.org> and upload the resulting `reads.histo` file and fill in the correct parameters - **kmer size** and **read length**:
+Go to <http://genomescope.org/genomescope2.0/> and upload the resulting `reads.histo` file and fill in the correct parameters - **kmer size** and **read length**:
 
 -   What is the estimated genome size?
 -   What is your sequencing coverage? (*read_length* × *number_of_reads*) / *genome_size*

@@ -130,7 +130,7 @@ jellyfish histo reads.jf > reads.histo
 head -50 reads.histo
 ```
 
-Open [GenomeScope 2.0](http://qb.cshl.edu/genomescope/genomescope2.0/), upload
+Open [GenomeScope 2.0](http://genomescope.org/genomescope2.0/), upload
 `reads.histo`, set k-mer length 21 and **ploidy 1** (bacteria are haploid).
 
 Questions:
