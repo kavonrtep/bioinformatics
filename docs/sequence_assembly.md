@@ -132,6 +132,10 @@ head -50 reads.histo
 
 Open [GenomeScope 2.0](http://genomescope.org/genomescope2.0/), upload
 `reads.histo`, set k-mer length 21 and **ploidy 1** (bacteria are haploid).
+If the GenomeScope website is not available, use the same model in the
+[k-mer Spectrum Lab](https://kavonrtep.github.io/games/kmer-spectrum.html#genomescope)
+(tab "Your data: GenomeScope"): open `reads.histo`, set k-mer length 21 and
+ploidy 1.
 
 Questions:
 - Where is the main peak (k-mer coverage)? What is the estimated genome size?
