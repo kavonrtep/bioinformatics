@@ -561,6 +561,44 @@ firefox quast_vs_reference/report.html
 - Open "Icarus" (link at the top of the report) - contig browser. Where are the
   gaps of the MEGAHIT assembly?
 
+Now look at the comparison of the Flye assembly with the reference as a
+**dotplot** in Gepard. Gepard reads only uncompressed FASTA files, so
+decompress the reference first:
+
+```bash
+zcat usa300_FPR3757_reference.fna.gz > usa300_FPR3757_reference.fna
+```
+
+<details>
+<summary>Options used</summary>
+
+- `zcat file.gz > file` - writes the decompressed content to a new file; the
+  gzipped original stays (the same as `gunzip -k`)
+
+</details>
+
+Start Gepard with the shortcut on the Desktop. Load
+`usa300_FPR3757_reference.fna` (in `~/assembly2`) as the first sequence and
+`flye/assembly.fasta` as the second one, set the word length to 20 and create
+the dotplot. Both files contain several sequences (the chromosome and the
+plasmids); Gepard puts them one after another, so the plasmids are at the end
+of each axis.
+
+- Describe the dotplot: how many pieces does the main diagonal have, and why
+  does it not start in the corner of the plot? (Remember step 2.3: where does a
+  circular contig start?)
+- Which parts of the reference have no line? Compare with the "Genome fraction"
+  of Flye in the QUAST report.
+- QUAST reported misassemblies in the Flye assembly. Find where they are: the
+  file `quast_vs_reference/contigs_reports/all_alignments_Flye.tsv` lists the
+  aligned blocks (columns: start and end in the reference, start and end in the
+  contig), and the lines between the blocks describe the misassembly. Zoom into
+  these regions in Gepard (set the start and end of both sequences to a
+  window of ~50-70 kb around the positions and use word length 10). What does
+  the dotplot look like at each of them? What kind of rearrangement is it? You
+  will check with the reads in step 2.6 whether these are assembly errors or
+  real differences.
+
 ### 2.6 Assembly errors or real differences? Reads mapped to the published genome
 
 QUAST compares the assemblies with the published genome of USA300 FPR3757 and
@@ -570,7 +608,8 @@ an assembly error or a real difference between the genomes, we look at the
 reads themselves. Map both Illumina and ONT reads to the published genome:
 
 ```bash
-gunzip -k usa300_FPR3757_reference.fna.gz usa300_FPR3757_reference.gff.gz
+# usa300_FPR3757_reference.fna was made in step 2.5 (zcat)
+gunzip -k usa300_FPR3757_reference.gff.gz
 minimap2 -ax sr -t 4 usa300_FPR3757_reference.fna trimmed_R1.fastq.gz trimmed_R2.fastq.gz \
     | samtools sort -o illumina_to_reference.bam
 minimap2 -ax map-ont -t 4 usa300_FPR3757_reference.fna usa300_ont.fastq.gz \
@@ -582,8 +621,9 @@ samtools index ont_to_reference.bam
 <details>
 <summary>Options used</summary>
 
-- `gunzip -k` - decompresses the files and keeps (`-k`) the gzipped originals;
-  IGV needs an uncompressed reference
+- `gunzip -k` - decompresses the annotation and keeps (`-k`) the gzipped
+  original; IGV needs uncompressed files (the reference FASTA was decompressed
+  in step 2.5)
 - `minimap2 -a` - output in the SAM format (alignments with the read
   sequences) instead of PAF
 - `-x sr` - preset for short reads; with two FASTQ files minimap2 aligns them
