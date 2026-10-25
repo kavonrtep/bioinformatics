@@ -237,7 +237,8 @@ coverage (`multi=`).
 
 > Note: the contig names (`k141_27`, ...) are different in every run - your
 > neighbour (and your second run) will have the same contigs under different
-> names. Compare contigs by their length and coverage, not by their names.
+> names, and a circular contig may start at a different position. Compare
+> contigs by their length and coverage, not by their names.
 
 - How many contigs were assembled? What is the length of the longest contig?
 - Sort the contigs by coverage:
@@ -454,7 +455,7 @@ All options: [minimap2 manual](https://lh3.github.io/minimap2/minimap2.html) or 
 
 ### 2.4 Where are the small plasmids?
 
-In step 1.3 you found two short contigs (~3 kb and ~4.4 kb) with very high
+In step 1.3 you found two short contigs (~3.3 kb and ~4.6 kb) with very high
 coverage in the MEGAHIT assembly. Are they present in the Flye assembly?
 
 ```bash
