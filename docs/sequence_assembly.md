@@ -722,8 +722,21 @@ and select "View as pairs". IGV colours read pairs with an unexpected distance
 in the IGV manual. Normal pairs are grey and point towards each other (→ ←).
 
 **A. Regions with low Illumina coverage**
-- Zoom out to the whole chromosome. Is the Illumina coverage even? Is the ONT
-  coverage even?
+
+IGV loads the reads (and computes the coverage track) only for a small
+region, the *visibility window* (by default 30 kb). When you zoom out
+further, the tracks stay empty and IGV asks you to zoom in. You cannot see
+the coverage of the whole chromosome at once, you have to scan it piece by
+piece. The window can be enlarged in `View → Preferences → Alignments →
+Visibility range threshold (kb)` (it applies to all BAM tracks), but the
+more reads in the region, the slower IGV gets. The ONT reads are long and
+there are relatively few of them, so their coverage can be viewed in large
+windows (e.g. 200-500 kb). The Illumina track has many more reads and needs a
+closer zoom (~30-50 kb); with a large threshold IGV would load the Illumina
+reads for the whole window too, and that is slow.
+
+- Scan a part of the chromosome (move the view with the arrow keys or by
+  dragging). Is the ONT coverage even? Is the Illumina coverage even?
 - Zoom in to a region where the Illumina coverage drops to (almost) zero and
   look at the sequence. Library preparation of Illumina libraries (PCR
   amplification) is less efficient for AT-rich DNA, and *S. aureus* has a very
