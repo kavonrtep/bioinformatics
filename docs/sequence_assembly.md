@@ -804,8 +804,38 @@ All options: [BUSCO user guide](https://busco.ezlab.org/busco_userguide.html) or
 
 </details>
 
+**Which lineage dataset?** Each dataset belongs to one taxonomic group and
+contains the genes (orthologous groups from [OrthoDB](https://www.orthodb.org/))
+that are present in a single copy in at least 90 % of the species of that
+group (see [Lineage datasets](https://busco.ezlab.org/busco_userguide.html#lineage-datasets)
+in the BUSCO user guide). The datasets form a tree; for *S. aureus* the path
+from the most general to the most specific one is (number of BUSCO genes in
+brackets, from `busco --list-datasets`):
+
+```
+bacteria_odb12 [116]
+└── bacillota_odb12 [201]
+    └── bacilli_odb12 [295]
+        └── bacillales_odb12 [429]
+            └── staphylococcaceae_odb12 [809]
+                └── staphylococcus_odb12 [1317]
+```
+
+The more specific the lineage, the more genes it has (closely related
+species share more single-copy genes) and the more precise the estimate of
+completeness. A general lineage (e.g. `bacteria_odb12`) contains only a few
+genes that are conserved in all bacteria; it is useful when you do not know
+what the organism is, or as a quick first check. Use the most specific lineage
+that contains your organism. If you do not know the organism, BUSCO can
+choose the lineage itself (`--auto-lineage-prok`, see
+[Automated lineage selection](https://busco.ezlab.org/busco_userguide.html#automated-lineage-selection)).
+
 - What is the fraction of complete, fragmented and missing BUSCO genes in each
   assembly?
+- Optional: run BUSCO on the MEGAHIT assembly with `-l bacteria_odb12`
+  (`-o busco_megahit_bacteria`). How many genes were searched, and how
+  different is the result? Which lineage tells you more about the quality of
+  the assembly?
 - According to QUAST, the MEGAHIT assembly misses many more genes than the Flye
   assembly. Why does BUSCO show only a small difference? (Hint: what kind of
   genes does BUSCO use, and what kind of genes are in the missing AT-rich
@@ -834,10 +864,11 @@ using Gepard or [D-Genies](https://dgenies.toulouse.inra.fr/).
 
 Annotate the Flye assembly with **Bakta** using one of the options:
 
-- **Galaxy**: upload `flye/assembly.fasta` to https://usegalaxy.eu/, run Bakta
-  (set "Keep original contig header" to "yes") and download the GFF3 file and
-  the annotation table (TSV). Name them `usa300_flye.bakta.gff3` and
-  `usa300_flye.bakta.tsv`.
+- **Galaxy**: upload `flye/assembly.fasta` to https://usegalaxy.org/ or
+  https://usegalaxy.org.au/ (the Bakta tool on usegalaxy.eu does not work at
+  the moment), run Bakta (set "Keep original contig header" to "yes") and
+  download the GFF3 file and the annotation table (TSV). Name them
+  `usa300_flye.bakta.gff3` and `usa300_flye.bakta.tsv`.
 - **Proksee** (https://proksee.ca/): upload `flye/assembly.fasta` and run the
   annotation. You can also add the NCTC 8325 genome as a BLAST track - regions
   without BLAST hits are specific for USA300.
