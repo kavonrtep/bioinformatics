@@ -476,20 +476,36 @@ All options: [minimap2 manual](https://lh3.github.io/minimap2/minimap2.html) or 
 In step 1.3 you found two short contigs (~3.3 kb and ~4.6 kb) with very high
 coverage in the MEGAHIT assembly. Are they present in the Flye assembly?
 
+Both contigs are circular in the MEGAHIT graph - MEGAHIT marks such contigs
+with `flag=3` in the header (`flag=0` = ordinary contig). If you did not write
+down their names, find them again:
+
 ```bash
-# extract the two MEGAHIT contigs (replace the names by the names of your contigs)
-seqkit grep -p k141_XXX -p k141_YYY megahit/final.contigs.fa > small_contigs.fa
+grep ">" megahit/final.contigs.fa | grep "flag=3"
+```
+
+Selecting the contigs by length (e.g. < 5 kb) would not work - there are many
+other short contigs, but only these two are circular.
+
+```bash
+# extract the circular MEGAHIT contigs
+seqkit grep -n -r -p "flag=3" megahit/final.contigs.fa > circular_contigs.fa
+grep ">" circular_contigs.fa
 # compare them with the Flye assembly
-minimap2 flye/assembly.fasta small_contigs.fa
+minimap2 flye/assembly.fasta circular_contigs.fa
 # how many ONT reads come from them?
-minimap2 -x map-ont small_contigs.fa usa300_ont.fastq.gz | cut -f 1,6 | sort -u | cut -f 2 | sort | uniq -c
+minimap2 -x map-ont circular_contigs.fa usa300_ont.fastq.gz | cut -f 1,6 | sort -u | cut -f 2 | sort | uniq -c
 ```
 
 <details>
 <summary>Options used</summary>
 
-- `seqkit grep -p NAME` - selects sequences by their name (ID); `-p` can be
-  repeated
+- `grep "flag=3"` - keeps only the header lines that contain `flag=3`
+- `seqkit grep -n -r -p "flag=3"` - selects sequences whose header matches the
+  pattern: `-n` searches the full header line (by default only the ID, e.g.
+  `k141_219`, is searched), `-r` treats the pattern as a regular expression
+  (without it the whole name would have to be equal to the pattern). To select
+  contigs by their names, use `seqkit grep -p k141_XXX -p k141_YYY`.
 - `minimap2 target query` - without `-x` minimap2 uses the settings for ONT
   reads; good enough for a quick check
 - `minimap2 -x map-ont` - preset for ONT reads
@@ -520,10 +536,10 @@ Compare columns 3-4 with column 2: how much of the contig is aligned? Without
 `-c`, minimap2 does not compute the exact base-by-base alignment, so columns
 10-11 are estimates.
 
-The second command (reads vs the small contigs) prints only the summary of
+The second command (reads vs the circular contigs) prints only the summary of
 the pipeline: the number of reads and the contig name, e.g. `360 k141_219`.
 
-- Are the small contigs in the Flye assembly? (A short partial alignment of a
+- Are the circular contigs in the Flye assembly? (A short partial alignment of a
   few hundred bp does not mean that the contig is present.) Are they in the
   ONT reads?
 - Use [NCBI BLASTN](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastn&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome)
