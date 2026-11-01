@@ -864,11 +864,14 @@ using Gepard or [D-Genies](https://dgenies.toulouse.inra.fr/).
 
 Annotate the Flye assembly with **Bakta** using one of the options:
 
-- **Galaxy**: upload `flye/assembly.fasta` to https://usegalaxy.org/ or
-  https://usegalaxy.org.au/ (the Bakta tool on usegalaxy.eu does not work at
-  the moment), run Bakta (set "Keep original contig header" to "yes") and
-  download the GFF3 file and the annotation table (TSV). Name them
-  `usa300_flye.bakta.gff3` and `usa300_flye.bakta.tsv`.
+- **Galaxy**: upload `flye/assembly.fasta` to https://usegalaxy.eu/, run Bakta
+  (set "Keep original contig header" to "yes") and download the GFF3 file and
+  the annotation table (TSV). Name them `usa300_flye.bakta.gff3` and
+  `usa300_flye.bakta.tsv`. On usegalaxy.eu, use version **1.9.4+galaxy3**
+  (the "Versions" button at the top of the tool form). Bakta is also
+  available on
+  https://usegalaxy.org/ and https://usegalaxy.org.au/, but it runs slower
+  there.
 - **Proksee** (https://proksee.ca/): upload `flye/assembly.fasta` and run the
   annotation. You can also add the NCTC 8325 genome as a BLAST track - regions
   without BLAST hits are specific for USA300.
@@ -1002,6 +1005,42 @@ then the Bakta annotation (`usa300_flye.bakta.gff3`),
 `usa300_flye.bakta.tsv` (columns: contig, type, start, stop, strand, locus
 tag, gene, product, ...) is useful for searching, e.g.
 `grep -i "leukocidin" usa300_flye.bakta.tsv`.
+
+To get the list of all genes in the USA300-specific regions, take the
+protein-coding genes (CDS) from the Bakta annotation and keep those that
+overlap the specific regions:
+
+```bash
+grep -P "\tCDS\t" usa300_flye.bakta.gff3 \
+    | bedtools intersect -a - -b usa300_unique_vs_nctc8325.bed -u > unique_genes.gff
+wc -l unique_genes.gff
+cut -f 1,4,5,9 unique_genes.gff | less -S
+# number of genes in each specific region
+bedtools intersect -a usa300_unique_vs_nctc8325.bed -b unique_genes.gff -c
+```
+
+<details>
+<summary>Options used</summary>
+
+- `grep -P "\tCDS\t"` - keeps only the lines with `CDS` in a separate column
+  (`-P` allows `\t` for the tab character). The Bakta GFF3 file ends with the
+  sequence of the genome (`##FASTA` section), which bedtools cannot read -
+  `grep` removes it as well.
+- `bedtools intersect -a - -b B -u` - reads the genes from the pipe (`-`) and
+  prints each one that overlaps at least one region of B (once, `-u` =
+  unique). bedtools reads GFF as well as BED and converts the coordinates
+  itself.
+- `cut -f 1,4,5,9` - contig, start, end and attributes (column 9) of each gene
+- `less -S` - shows the file without wrapping long lines (quit with `q`)
+- `bedtools intersect ... -c` - prints each region of A with the number of
+  genes of B that overlap it
+
+</details>
+
+Column 9 contains the attributes of the gene separated by `;`: `locus_tag=`,
+`product=` and, if Bakta knows it, the gene symbol `gene=`. Many genes have no
+gene symbol, only a product name - search for both, e.g.
+`grep -i "gene=mecA" unique_genes.gff` or `grep -i "arginine" unique_genes.gff`.
 
 - Go through the largest regions and look at the annotated genes. Find:
   - **mecA** encoding the penicillin-binding protein **PBP2a**, the cause of
