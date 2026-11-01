@@ -577,6 +577,17 @@ grep ">" flye_contigs/*
 
 ### 2.5 Comparison of the two assemblies with the published genome
 
+Before running QUAST, look at the published genome in the NCBI database:
+[USA300 FPR3757 (GCF_000013465.1)](https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000013465.1/).
+Scroll down to the list of chromosomes and plasmids.
+
+- How many sequences does the genome consist of? What are their names and
+  lengths?
+- Which of them did you find in the MEGAHIT assembly, and which in the Flye
+  assembly? Compare the lengths of the plasmids with the lengths of your
+  circular contigs. (The MEGAHIT contigs are longer by the same number of
+  bases - why? Hint: k = 141.)
+
 Now we will use the published genome of USA300 FPR3757 as a reference. QUAST will
 align the contigs to it and report misassemblies, missing parts of the genome
 and missing genes:
