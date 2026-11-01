@@ -544,6 +544,34 @@ the pipeline: the number of reads and the contig name, e.g. `360 k141_219`.
   ONT reads?
 - Use [NCBI BLASTN](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastn&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome)
   to find out what they are.
+
+The Flye assembly also contains a second circular contig (~37 kb, step 2.2).
+Is it a plasmid too? Split the Flye assembly into one file per contig, so that
+you can upload just this contig to BLAST:
+
+```bash
+seqkit split -i flye/assembly.fasta -O flye_contigs
+ls flye_contigs
+grep ">" flye_contigs/*
+```
+
+<details>
+<summary>Options used</summary>
+
+- `seqkit split -i` - writes each sequence to a separate file named by its ID
+  (`assembly.part_contig_1.fasta`, `assembly.part_contig_2.fasta`, ...)
+- `-O flye_contigs` - output directory (by default `flye/assembly.fasta.split`)
+
+</details>
+
+- Upload the file with the ~37 kb contig to
+  [NCBI BLASTN](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastn&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome)
+  ("Or, upload file"). What is it?
+- Is it in the MEGAHIT assembly as well - as one contig, or in several pieces?
+  `minimap2 -x asm5 flye_contigs/assembly.part_contig_2.fasta megahit/final.contigs.fa | cut -f 1-12 | sort -k 8,8n`
+  lists the MEGAHIT contigs along the Flye contig (sorted by column 8, the
+  start in the Flye contig). Why is it not assembled in one piece from the
+  Illumina reads? (Hint: alignments with mapping quality 0 in column 12.)
 - Long-read assemblers often lose small plasmids (shorter than the typical read
   length). How would you get a complete genome, including all plasmids?
 
