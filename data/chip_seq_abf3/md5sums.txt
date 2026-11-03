@@ -1,0 +1,15 @@
+b4b4af755424159099b026fcb2b07fc2  ABF3_ABA_rep1.fastq.gz
+d46e3a7e07c0499cac05e5a77049df91  ABF3_ABA_rep2.fastq.gz
+7e7e14111aed4ea780c666c260b0b00b  ABF3_ABA_rep3.fastq.gz
+2ad0ac000ca0dcdc91aab9e75be547ce  ABF3_mock_rep1.fastq.gz
+9e5c5604b11fe09853e62d27f94ce7e9  ABF3_mock_rep2.fastq.gz
+b08d37850975f6f43b51e9c055232def  ABF3_mock_rep3.fastq.gz
+4f17a8e2b19ad9c45b7784aaf1d9ba84  control_rep1.fastq.gz
+0b7c1e71f806f4a378199eb86c880c08  control_rep2.fastq.gz
+8a51c2e7e81e5c85002603832a213cff  rnaseq_ABA_rep1.fastq.gz
+21df9ed6fc72eb7d4ef0d44e715a3c02  rnaseq_ABA_rep2.fastq.gz
+680ca543553feab4b1af30d1c8f0f003  rnaseq_mock_rep1.fastq.gz
+14e059ebba857a0b524d3af7c4f12670  rnaseq_mock_rep2.fastq.gz
+fa754c524492674cbbc8434e4937b04c  TAIR10_annotation.gff3.gz
+bb2cd5da056b029bacbd558ecd9f1a27  TAIR10_genome.fa.gz
+ae08aad1f8885ee951df343f31319b97  TAIR10_transcripts.fa.gz

@@ -126,6 +126,7 @@ Introduction slides for Exercise 3 (weeks 5-7): [assembly_intro.pdf](./slides/as
 # Week 8 (Nov 16)
 
 - [Chip-Seq analysis](./chip_seq_analysis.md)
+- [ChIP-seq - how does the transcription factor ABF3 respond to abscisic acid?](./chip_seq_abf3.md) - local analysis: mapping, peaks, differential binding, motifs, RNA-seq
 - Optional: [Integrative Genomics Viewer](./Integrative_Genomics_Viewer.md) 
 
 # Week 9 (Nov 23)

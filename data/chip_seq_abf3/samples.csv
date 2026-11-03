@@ -1,0 +1,7 @@
+SampleID,Condition,Replicate,bamReads,ControlID,bamControl,Peaks,PeakCaller
+ABA_rep1,ABA,1,bam/ABF3_ABA_rep1.bam,control,bam/control.bam,peaks/ABF3_ABA_rep1_peaks.narrowPeak,narrow
+ABA_rep2,ABA,2,bam/ABF3_ABA_rep2.bam,control,bam/control.bam,peaks/ABF3_ABA_rep2_peaks.narrowPeak,narrow
+ABA_rep3,ABA,3,bam/ABF3_ABA_rep3.bam,control,bam/control.bam,peaks/ABF3_ABA_rep3_peaks.narrowPeak,narrow
+mock_rep1,mock,1,bam/ABF3_mock_rep1.bam,control,bam/control.bam,peaks/ABF3_mock_rep1_peaks.narrowPeak,narrow
+mock_rep2,mock,2,bam/ABF3_mock_rep2.bam,control,bam/control.bam,peaks/ABF3_mock_rep2_peaks.narrowPeak,narrow
+mock_rep3,mock,3,bam/ABF3_mock_rep3.bam,control,bam/control.bam,peaks/ABF3_mock_rep3_peaks.narrowPeak,narrow
