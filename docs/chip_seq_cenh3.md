@@ -40,6 +40,11 @@ first 1.5 million reads of each sample were used, shortened to 110 bp.
 | `CEN6_genes.gff3.gz` | gene annotation of chromosome 6 |
 | `CEN6_satellites.bed` | satellite DNA arrays (tandem repeats) on chromosome 6 |
 
+Introduction slides - centromeres and CENH3, the experiment, the command line
+used in the exercise (commands, paths, variables, loops, pipes, positions),
+log2 ChIP/input, domain calling, bedtools, dotplots and PAF:
+[chipseq_cenh3_intro.pdf](./slides/chipseq_cenh3_intro.pdf)
+
 Note the differences from the [ABF3 exercise](./chip_seq_abf3.md): a
 transcription factor binds short sites (a peak of ~200 bp), but CENH3 covers
 regions of hundreds of kilobases; and these regions consist of repetitive DNA.
@@ -539,14 +544,16 @@ the second one:
 ```bash
 samtools faidx CEN6.fa OX352004:73000001-79500000 > part1.fa
 samtools faidx CEN6.fa OX352004:79400001-86000000 > part2.fa
-minimap2 -x asm10 part2.fa part1.fa | sort -k11,11nr | head -3 | cut -f 1-12
+minimap2 -c -x asm10 part2.fa part1.fa | sort -k11,11nr | head -3 | cut -f 1-12
 ```
 
 <details>
 <summary>Options used</summary>
 
 - `minimap2 -x asm10 target.fa query.fa` - align two similar long sequences
-  (assemblies with up to ~10 % divergence); output in the PAF format
+  (preset for assemblies differing by about 1 %); output in the PAF format
+- `-c` - compute the exact base-by-base alignment; without it, columns 10
+  and 11 are only estimates (takes about 15 s here)
 - PAF columns: 1-4 query name, length, start, end; 5 strand; 6-9 target name,
   length, start, end; 10 number of matching bases; 11 alignment length;
   12 mapping quality. Positions start from 0 and are relative to the
@@ -557,7 +564,7 @@ minimap2 -x asm10 part2.fa part1.fa | sort -k11,11nr | head -3 | cut -f 1-12
 
 - Where exactly are the two copies (positions on the chromosome)? How long are
   they? What is their identity (column 10 / column 11)?
-- What does the high identity say about the age of the duplication?
+- What does the identity say about the age of the duplication?
 - Macas et al. 2023 propose that the elongated pea centromeres grow by
   duplications like this one and by the expansion of satellite arrays. How
   could a duplication create a **new** CENH3 domain?
