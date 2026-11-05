@@ -39,6 +39,11 @@ shortened to 50 bp.
 | `rnaseq_ABA_rep1`, `rep2` | RNA-seq, ABA 4 h | 4 M × 50 bp |
 | `rnaseq_mock_rep1`, `rep2` | RNA-seq, mock 4 h | 4 M × 50 bp |
 
+Introduction slides - the experiment, the command line used in the exercise
+(commands, paths, variables, loops, pipes), mapping, coverage, peak calling,
+differential binding, motifs and RNA-seq:
+[chipseq_abf3_intro.pdf](./slides/chipseq_abf3_intro.pdf)
+
 Contents:
 
 - [Installation and data](#installation-and-data)
@@ -86,7 +91,7 @@ conda activate chipseq
 
 </details>
 
-The reads, the genome and the annotation are on Zenodo (1.9 GB). The other
+The reads, the genome and the annotation are on [Zenodo](https://zenodo.org/records/23984926) (1.9 GB). The other
 files (gene tables, R scripts, results for the case something fails) are in
 the course repository, in `~/Desktop/Bioinformatics/data/chip_seq_abf3/`
 (if you cloned the repository elsewhere, change the path in `D=...`):
@@ -95,7 +100,7 @@ the course repository, in `~/Desktop/Bioinformatics/data/chip_seq_abf3/`
 D=~/Desktop/Bioinformatics/data/chip_seq_abf3
 mkdir -p ~/chipseq_abf3/data
 cd ~/chipseq_abf3/data
-Z=https://zenodo.org/records/XXXXXXX/files
+Z=https://zenodo.org/records/23984926/files
 for f in $(cut -d ' ' -f 3 $D/md5sums.txt); do
     wget -c $Z/$f
 done
