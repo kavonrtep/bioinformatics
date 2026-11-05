@@ -1,0 +1,3 @@
+658e6faa8c071ddbe3693e271087046e  CEN6_OX352004.fa.gz
+9761386dee8a64197bd0ca6a3a61fa71  CENH3_ChIP.fastq.gz
+65d91c6114f51bcb5e5d8c233cf43b51  input.fastq.gz
