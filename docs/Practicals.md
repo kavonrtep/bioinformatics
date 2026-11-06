@@ -127,7 +127,6 @@ Introduction slides for Exercise 3 (weeks 5-7): [assembly_intro.pdf](./slides/as
 
 - [ChIP-seq - where are the centromeres of pea chromosome 6?](./chip_seq_cenh3.md) - local analysis: mapping, broad CENH3 domains, satellite DNA, dotplots
   - Introduction slides: [chipseq_cenh3_intro.pdf](./slides/chipseq_cenh3_intro.pdf)
-  - older Galaxy version: [Chip-Seq analysis](./chip_seq_analysis.md)
 - [ChIP-seq - how does the transcription factor ABF3 respond to abscisic acid?](./chip_seq_abf3.md) - local analysis: mapping, peaks, differential binding, motifs, RNA-seq
   - Introduction slides: [chipseq_abf3_intro.pdf](./slides/chipseq_abf3_intro.pdf)
 - Optional: [Integrative Genomics Viewer](./Integrative_Genomics_Viewer.md) 
