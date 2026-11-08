@@ -21,7 +21,7 @@ ChIP-seq mapped to the assembled chromosome 6 of pea and ask:
    CENH3 domain have arisen?
 
 Everything runs on your computer (or on a VPS with 4 CPUs and 8 GB RAM); all
-computing steps together take about 3 minutes.
+computing steps together take about 5 minutes.
 
 The data come from [Macas et al. 2023, *PLoS Genetics* 19: e1010633](https://doi.org/10.1371/journal.pgen.1010633)
 (ENA [PRJEB54858](https://www.ebi.ac.uk/ena/browser/view/PRJEB54858)), who
@@ -133,6 +133,27 @@ minimap2 -x sr -d CEN6.mmi CEN6.fa
 zcat $D/CEN6_genes.gff3.gz > CEN6_genes.gff3
 ```
 
+<details>
+<summary>Options used</summary>
+
+- `zcat file.gz > file` - decompress a gzipped file; `>` writes the output
+  to a new file
+- `samtools faidx CEN6.fa` - creates the index `CEN6.fa.fai`: for each
+  sequence its name, length and position in the file, so that any region can
+  be extracted quickly (used by IGV, samtools, bedtools)
+- `cut -f 1,2 CEN6.fa.fai` - prints the first two columns of the index =
+  sequence name and length
+- `minimap2 -x sr -d CEN6.mmi CEN6.fa` - builds the minimap2 index of the
+  genome and saves it to `CEN6.mmi`. A mapper does not search the genome
+  sequence directly; it first breaks the genome into short words (k-mers,
+  here 21 bases) and records where each occurs, so that reads can be placed
+  quickly. `-x sr` - the preset for short reads (sets the k-mer size and
+  other parameters; the same preset must be used when mapping); `-d` - the
+  file where the index is saved. Indexing takes about 10 seconds and
+  1.5 GB of memory; the index is built once and reused for every sample.
+
+</details>
+
 - How long is chromosome 6? The whole pea genome has about 4.5 Gb in 7
   chromosomes. What fraction of the genome is in our reference?
 
@@ -178,7 +199,7 @@ for s in CENH3_ChIP input; do
 done
 ```
 
-Mapping takes about 1 minute per sample.
+Mapping takes about 1.5 minutes per sample.
 
 <details>
 <summary>Options used</summary>
