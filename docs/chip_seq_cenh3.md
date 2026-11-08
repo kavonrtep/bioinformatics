@@ -300,6 +300,25 @@ samtools view -c -F 4 bam/input.bam OX352004:84700000-85100000
   samples have a similar total number of reads). How many times is the
   region enriched in the ChIP?
 
+**Open IGV now** and keep it open: you will add each result to it as soon as
+you produce it. Start IGV (Desktop shortcut, or `igv &` in a second
+terminal), load `CEN6.fa` as the genome (`Genomes → Load Genome from
+File...`), then load (`File → Load from File...`):
+
+- `CEN6_genes.gff3` and `~/Desktop/Bioinformatics/data/chip_seq_cenh3/CEN6_satellites.bed`
+- `bam/CENH3_ChIP.bam` and `bam/input.bam` (the `.bai` index from 1.2 must be
+  next to each BAM)
+
+Type `OX352004:84800000-84820000` into the search box. Reads are drawn only
+when you zoom in to a region shorter than about 30 kb; the grey histogram
+above the reads is the coverage, computed by IGV on the fly. IGV draws reads
+with MAPQ 0 as transparent (white) boxes.
+
+- How many of the reads in this region are transparent? Why? (Compare with
+  the counts above.)
+- Compare the ChIP and the input track. Is the difference as large as the
+  counts suggested?
+
 ### 1.4 Coverage tracks
 
 `bamCoverage` computes the coverage of each sample in 1 kb bins (normalised to
@@ -332,6 +351,18 @@ head tracks/ChIP_vs_input_10kb.bedGraph
 All options: [bamCompare](https://deeptools.readthedocs.io/en/latest/content/tools/bamCompare.html).
 
 </details>
+
+Load the three new tracks into IGV (`File → Load from File...`):
+`tracks/CENH3_ChIP.bw` and `tracks/input.bw` (select both track names,
+right-click → "Group Autoscale", so that they share one scale), and
+`tracks/ChIP_vs_input_10kb.bedGraph`. Look at the whole chromosome (type
+`OX352004` into the search box), then at `OX352004:132500000-138500000`.
+
+- Where on the chromosome is the ChIP coverage high? Does the
+  log2(ChIP/input) track show the same regions?
+- In the region 132.5-138.5 Mb both the ChIP **and** the input coverage
+  increase strongly. Is the region enriched in CENH3? What would you conclude
+  if you looked only at the ChIP coverage, without the input?
 
 ### 1.5 Peak calling with MACS3
 
@@ -369,6 +400,12 @@ mkdir -p peaks
 cp $D/precomputed/CENH3_macs3_peaks.broadPeak peaks/
 ```
 </details>
+
+Load `peaks/CENH3_macs3_peaks.broadPeak` into IGV and look at
+`OX352004:84000000-89000000`, next to the log2(ChIP/input) track.
+
+- Where are the MACS3 peaks relative to the enriched regions of the
+  log2(ChIP/input) track? Do they cover them?
 
 ### 1.6 CENH3 domains from the ChIP/input ratio
 
@@ -417,7 +454,7 @@ seqkit stats CENH3_domains.fa
 - Repeat `bdgpeakcall` with the cutoff `-c 2` (and a different output name,
   e.g. `-o domains_c2.narrowPeak`). Which regions are added? Look at column 5
   of the narrowPeak file (10 × the highest log2 ratio in the region). Are the
-  added regions as strong as the others? Check them in IGV (next step).
+  added regions as strong as the others? Check them in IGV (1.7).
 
 <details>
 <summary>💡 bdgpeakcall failed?</summary>
@@ -428,21 +465,23 @@ cp $D/precomputed/ChIP_vs_input_10kb.bedGraph tracks/
 ```
 </details>
 
+Load `CENH3_domains.bed` into IGV (and `peaks/domains_c2.narrowPeak`, if you
+made it).
+
 ### 1.7 CENH3 domains in IGV
 
-Start IGV, load `CEN6.fa` as the genome (`Genomes → Load Genome from
-File...`), then (`File → Load from File...`):
-
-- `CEN6_genes.gff3` and `~/Desktop/Bioinformatics/data/chip_seq_cenh3/CEN6_satellites.bed`
-- `tracks/CENH3_ChIP.bw`, `tracks/input.bw` - select both, right-click →
-  "Group Autoscale"
-- `tracks/ChIP_vs_input_10kb.bedGraph`
-- `peaks/CENH3_macs3_peaks.broadPeak` and `CENH3_domains.bed`
+Everything is now in IGV: the genome `CEN6.fa`, `CEN6_genes.gff3`,
+`CEN6_satellites.bed`, the two BAM files, `tracks/CENH3_ChIP.bw` and
+`tracks/input.bw` (group-autoscaled), `tracks/ChIP_vs_input_10kb.bedGraph`,
+`peaks/CENH3_macs3_peaks.broadPeak` and `CENH3_domains.bed`. If a track is
+missing, load it (`File → Load from File...`). You can drag the track names
+to reorder them; put the domains and the MACS3 peaks under the
+log2(ChIP/input) track.
 
 > Working on a VPS without a graphical desktop? Copy the files to your
 > computer first, e.g. `scp -r user@server:chipseq_cenh3/tracks .` (the same
 > for `peaks/`, `CENH3_domains.bed`, `CEN6.fa`, `CEN6.fa.fai`,
-> `CEN6_genes.gff3`).
+> `CEN6_genes.gff3`, and `bam/` if you want to see the reads).
 
 Look at the whole chromosome first, then go to these regions (type them into
 the search box):
@@ -451,20 +490,17 @@ the search box):
 |---|---|
 | `OX352004` | whole chromosome - all CENH3 domains |
 | `OX352004:84000000-89000000` | two domains: MACS3 peaks vs. domains |
-| `OX352004:84800000-84820000` | reads inside a domain (load `bam/CENH3_ChIP.bam`) |
+| `OX352004:84800000-84820000` | reads inside a domain |
 | `OX352004:110500000-113500000` | a large satellite array |
-| `OX352004:132500000-138500000` | ChIP and input both high |
+| `OX352004:132500000-138500000` | ChIP and input both high (1.4) |
 
 - Where on the chromosome are the CENH3 domains? Do they coincide with the
   satellite arrays? Is every satellite array bound by CENH3?
 - Compare the MACS3 peaks and the domains in the region 84-89 Mb. How many
   MACS3 peaks are inside one domain?
-- Load `bam/CENH3_ChIP.bam` and look at the reads in the region
-  84,800,000-84,820,000. IGV draws reads with MAPQ 0 as transparent
-  (white) boxes. How many of the reads are like that? Why?
-- In the region 132.5-138.5 Mb both the ChIP **and** the input coverage
-  increase strongly. Is the region enriched in CENH3? What would you conclude
-  if you looked only at the ChIP coverage, without the input?
+- Look again at the reads in the region 84,800,000-84,820,000 and at the
+  domain they are in. Could the domain be found from the reads with
+  MAPQ ≥ 10 alone?
 - Are the regions added with the cutoff `-c 2` real CENH3 domains?
 
 ## Part 2 - What is inside the CENH3 domains?
