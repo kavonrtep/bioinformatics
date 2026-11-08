@@ -65,7 +65,7 @@ Contents:
   [2.2 genes](#22-genes-in-the-domains) ·
   [2.3 repeat units](#23-structure-of-the-satellite-arrays) ·
   [2.4 similarity of arrays](#24-are-the-arrays-similar-to-each-other) ·
-  [2.5 duplication](#25-how-did-a-new-cenh3-domain-arise)
+  [2.5 duplication (optional)](#25-how-did-a-new-cenh3-domain-arise-optional)
 
 ## Installation and data
 
@@ -75,8 +75,16 @@ it, create a smaller one with only the tools needed here (a few minutes):
 
 ```bash
 conda create -n chipseq -y --override-channels -c conda-forge -c bioconda \
-    fastp minimap2 samtools macs3 deeptools bedtools seqkit
+    -c petrnovak fastp minimap2 samtools macs3 deeptools bedtools seqkit dottir
 conda activate chipseq
+```
+
+If you already have the `chipseq` environment from the ABF3 exercise, add the
+dotplot program to it:
+
+```bash
+conda activate chipseq
+conda install -y --override-channels -c conda-forge -c bioconda -c petrnovak dottir
 ```
 
 <details>
@@ -87,9 +95,9 @@ conda activate chipseq
 - `deeptools` - coverage tracks (bigWig, bedGraph), ChIP/input ratio
 - `macs3` - peak calling
 - `bedtools`, `seqkit` - work with intervals and sequences
-
-The dotplot programs `dotter` and `Gepard` (part 2) are installed on the lab
-computers (Gepard has a shortcut on the Desktop).
+- `dottir` - dotplots (part 2): the interactive viewer `dottir-gui` and the
+  command-line tool `dottir`; a reimplementation of `dotter` that also
+  handles sequences of many Mb
 
 </details>
 
@@ -573,73 +581,145 @@ one of the CENH3 domains, e.g. `OX352004:84000000-89000000`.
 
 ### 2.3 Structure of the satellite arrays
 
-Extract 20 kb from the middle of several CENH3 domains and make a dotplot of
-each against itself with `dotter`:
+Extract 20 kb from the middle of six CENH3 domains into one FASTA file and
+make a dotplot of the file against itself with `dottir-gui`:
 
 ```bash
 mkdir -p arrays
-samtools faidx CEN6.fa OX352004:79420001-79440000 > arrays/array_79.4Mb.fa
-samtools faidx CEN6.fa OX352004:84800001-84820000 > arrays/array_84.8Mb.fa
-samtools faidx CEN6.fa OX352004:88000001-88020000 > arrays/array_88.0Mb.fa
-samtools faidx CEN6.fa OX352004:108800001-108820000 > arrays/array_108.8Mb.fa
-samtools faidx CEN6.fa OX352004:137400001-137420000 > arrays/array_137.4Mb.fa
-samtools faidx CEN6.fa OX352004:138000001-138020000 > arrays/array_138.0Mb.fa
-dotter arrays/array_84.8Mb.fa arrays/array_84.8Mb.fa &
+for r in 79420001-79440000 84800001-84820000 88000001-88020000 \
+         108800001-108820000 137400001-137420000 138000001-138020000; do
+    samtools faidx CEN6.fa OX352004:$r
+done > arrays/all_arrays.fa
+grep ">" arrays/all_arrays.fa
+dottir-gui arrays/all_arrays.fa &
 ```
 
 <details>
 <summary>Options used</summary>
 
 - `samtools faidx genome.fa chromosome:start-end` - extract a region of the
-  genome (positions are counted from 1, both ends included)
-- `dotter seq1 seq2 &` - dotplot of two sequences; `&` runs the program in
-  the background so you can use the terminal at the same time
+  genome (positions are counted from 1, both ends included); the `for` loop
+  runs it for six regions and `> arrays/all_arrays.fa` collects all six
+  sequences into one file
+- `dottir-gui file.fa &` - dotplot of a file against itself (two files would
+  be compared with each other); `&` runs the program in the background so
+  you can use the terminal at the same time. The six sequences are placed one
+  after the other along both axes, with their names and lines at the
+  boundaries. Computing the plot takes about 10 seconds.
 
 </details>
 
-All these regions are FabTR-10 arrays.
+How to use the viewer:
 
-- What do the parallel diagonal lines in the dotplot mean? Measure the
-  distance between neighbouring lines (move the cursor and read the positions)
-  - this is the length of the repeat unit.
+- **Zoom** with the mouse wheel (at the cursor) or by dragging a rectangle
+  with the middle button; **pan** by dragging with the left button;
+  `View → Reset pan/zoom` shows everything again.
+- **Click** on the plot to set the crosshair; the status bar at the bottom
+  shows its position as `sequence:position` on both axes, and the panel
+  below the plot shows the alignment of the two sequences around it.
+- The **Greyramp** sliders on the right change which scores are shown as
+  black and white; move the white slider up to hide the noise.
+- `File → Save PNG` saves the picture.
+
+All six regions are FabTR-10 arrays. Look at the whole plot first.
+
+- The plot consists of 6 × 6 blocks, one for each pair of arrays. Describe
+  the blocks on the diagonal (each array against itself) and the blocks off
+  the diagonal (one array against another). Where are the dots dense and
+  where are they faint or missing?
+- Zoom into one block on the diagonal, e.g. the array from 84.8 Mb. What do
+  the parallel diagonal lines mean? Measure the distance between neighbouring
+  lines (click on one line, then on the next one at the same horizontal
+  position, and compare the vertical coordinates) - this is the length of
+  the repeat unit (monomer).
 - Is the repeat unit the same in all arrays? Do you see lines at several
   distances in some arrays (e.g. faint lines at a short distance and strong
   lines at a longer one)? What could it mean? (Hint: *higher-order repeats* -
   a block of several monomers repeated as a unit.)
 
+Check your measurement with `dottir periodogram`, which sums the dotplot
+signal along all diagonals and reports the distances at which the signal is
+periodic:
+
+```bash
+dottir periodogram arrays/all_arrays.fa --z-score off \
+    -o arrays/periodogram.tsv --find-peaks arrays/periods.tsv
+grep -v "^#" arrays/periods.tsv | cut -f 1-3,8
+```
+
+<details>
+<summary>Options used</summary>
+
+- `dottir periodogram file.fa` - for every sequence in the file, compute how
+  much dotplot signal there is at each distance from the main diagonal
+- `-o file.tsv` - the signal at every distance, one line per distance (long,
+  you do not need to read it)
+- `--find-peaks file.tsv` - report the distances with a peak of signal
+  (period_bp), with a score and the number of harmonics (multiples of the
+  period that also have a peak - a true tandem repeat has many)
+- `--z-score off` - skip a slow statistical test that is not needed here
+- `cut -f 1-3,8` - show the columns sequence, period, score and number of
+  harmonics
+
+</details>
+
+- Which periods have the highest score in each array? Do they agree with
+  your measurement? What is the relation between the periods found in the
+  arrays at 137.4 and 138.0 Mb?
+
 ### 2.4 Are the arrays similar to each other?
 
-Compare pairs of arrays with each other:
+Go back to the whole plot (`View → Reset pan/zoom`) and look at the blocks
+off the diagonal. Zoom into these three blocks (drag a rectangle with the
+middle mouse button, or with the right button and choose *Zoom to
+selection*):
 
-```bash
-dotter arrays/array_137.4Mb.fa arrays/array_138.0Mb.fa &
-dotter arrays/array_84.8Mb.fa arrays/array_108.8Mb.fa &
-dotter arrays/array_79.4Mb.fa arrays/array_84.8Mb.fa &
-```
+- the array at 137.4 Mb against the array at 138.0 Mb
+- the array at 84.8 Mb against the array at 108.8 Mb
+- the array at 79.4 Mb against the array at 84.8 Mb
 
 - Which pairs of arrays are very similar and which are only distantly related?
-  (Compare how continuous the lines are.) Where on the chromosome are the
-  similar arrays?
+  (Compare how continuous and how dark the lines are.) Where on the
+  chromosome are the similar arrays?
 - All arrays belong to the same family, FabTR-10. Do the monomers in one array
   look more similar to each other than to the monomers of another array? What
-  does it tell you about how satellite arrays evolve?
+  does it tell you about how satellite arrays evolve? (Hint: *concerted
+  evolution* - the copies in an array are homogenized, e.g. by unequal
+  crossing-over.)
 
-### 2.5 How did a new CENH3 domain arise?
+### 2.5 How did a new CENH3 domain arise? (optional)
 
 The domain at 79.4 Mb is small, and its sequence is very similar to the domain
-at 84.7 Mb (2.4). Make a dotplot of the 13 Mb region around both domains
-with Gepard (Desktop shortcut). Use the same file as both sequences:
+at 84.7 Mb (2.4). Compare the two halves of the 13 Mb region around both
+domains with a dotplot:
 
 ```bash
-samtools faidx CEN6.fa OX352004:73000001-86000000 > region_73-86Mb.fa
+samtools faidx CEN6.fa OX352004:73000001-79500000 > part1.fa
+samtools faidx CEN6.fa OX352004:79400001-86000000 > part2.fa
+dottir-gui part1.fa part2.fa &
 ```
 
-In Gepard select `region_73-86Mb.fa` as sequence 1 and sequence 2 and
-compute the dotplot (it may take a minute or two).
+<details>
+<summary>Options used</summary>
 
-- Besides the main diagonal, there is a long line parallel to it. What does it
-  mean? How long is the duplicated segment and how far apart are the two
-  copies?
+- `dottir-gui seq1.fa seq2.fa` - dotplot of two sequences: the first one on
+  the horizontal axis, the second one on the vertical axis
+- for sequences of several Mb `dottir-gui` switches to a fast approximate
+  mode: only exact matches of short "seeds" are plotted, dots are coloured by
+  how many copies the sequence has in the genome region (unique, low, mid,
+  high - see the panel on the right, where the classes can be switched off),
+  and long runs of dots are joined into lines ("chains"). Computing takes
+  10-20 seconds.
+
+</details>
+
+Zoom in a bit. Among the scattered dots of the repeats there is one long
+continuous line.
+
+- What does the long line mean? Click on its two ends and read the positions
+  in the status bar (they are relative to `part1.fa` and `part2.fa`, which
+  start at 73,000,001 and 79,400,001). How long is the duplicated segment
+  and how far apart are the two copies on the chromosome?
 - Where in the duplicated segment are the CENH3 domains at 79.4 Mb and
   84.7 Mb? Why do you think the region at 79.4 Mb has CENH3?
 
@@ -647,8 +727,6 @@ Check the duplication with minimap2 - align the first part of the region to
 the second one:
 
 ```bash
-samtools faidx CEN6.fa OX352004:73000001-79500000 > part1.fa
-samtools faidx CEN6.fa OX352004:79400001-86000000 > part2.fa
 minimap2 -c -x asm10 part2.fa part1.fa > part1_vs_part2.paf
 sort -k11,11nr part1_vs_part2.paf | head -3 | cut -f 1-12
 ```
@@ -686,7 +764,7 @@ cat duplication.bed
 Load `duplication.bed` into IGV and go to `OX352004:73000000-86000000`.
 
 - How are the two copies arranged on the chromosome? Where in each copy are
-  the CENH3 domains at 79.4 Mb and 84.7 Mb? Compare with the Gepard dotplot.
+  the CENH3 domains at 79.4 Mb and 84.7 Mb? Compare with the dotplot.
 - What does the identity say about the age of the duplication?
 - Macas et al. 2023 propose that the elongated pea centromeres grow by
   duplications like this one and by the expansion of satellite arrays. How
