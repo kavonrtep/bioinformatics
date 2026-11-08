@@ -484,11 +484,6 @@ array is one BED feature; its name (shown when you click on it, or with
 "Expanded" display mode) is the satellite family. Satellite DNA is explained
 in Part 2.
 
-> Working on a VPS without a graphical desktop? Copy the files to your
-> computer first, e.g. `scp -r user@server:chipseq_cenh3/tracks .` (the same
-> for `peaks/`, `CENH3_domains.bed`, `CEN6.fa`, `CEN6.fa.fai`,
-> `CEN6_genes.gff3`, and `bam/` if you want to see the reads).
-
 Look at the whole chromosome first, then go to these regions (type them into
 the search box):
 
