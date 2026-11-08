@@ -690,36 +690,37 @@ selection*):
 ### 2.5 How did a new CENH3 domain arise? (optional)
 
 The domain at 79.4 Mb is small, and its sequence is very similar to the domain
-at 84.7 Mb (2.4). Compare the two halves of the 13 Mb region around both
-domains with a dotplot:
+at 84.7 Mb (2.4). Make a dotplot of the 13 Mb region around both domains
+against itself:
 
 ```bash
-samtools faidx CEN6.fa OX352004:73000001-79500000 > part1.fa
-samtools faidx CEN6.fa OX352004:79400001-86000000 > part2.fa
-dottir-gui part1.fa part2.fa &
+samtools faidx CEN6.fa OX352004:73000001-86000000 > region_73-86Mb.fa
+dottir-gui region_73-86Mb.fa &
 ```
 
 <details>
 <summary>Options used</summary>
 
-- `dottir-gui seq1.fa seq2.fa` - dotplot of two sequences: the first one on
-  the horizontal axis, the second one on the vertical axis
+- `dottir-gui region.fa` - dotplot of one sequence against itself
 - for sequences of several Mb `dottir-gui` switches to a fast approximate
   mode: only exact matches of short "seeds" are plotted, dots are coloured by
-  how many copies the sequence has in the genome region (unique, low, mid,
-  high - see the panel on the right, where the classes can be switched off),
-  and long runs of dots are joined into lines ("chains"). Computing takes
+  how many copies the sequence has in the region (unique, low, mid, high -
+  see the panel on the right, where the classes can be switched off), and
+  long runs of dots are joined into lines ("chains"). Computing takes
   10-20 seconds.
 
 </details>
 
-Zoom in a bit. Among the scattered dots of the repeats there is one long
-continuous line.
+Most of the dots come from the repeats of the centromere. In the panel on the
+right, switch the repeat classes **mid** and **high** off (or use the
+*Synteny* preset) and adjust the sensitivity sliders (*white below* /
+*black at*) until, besides the main diagonal, one long line parallel to it
+stands out.
 
 - What does the long line mean? Click on its two ends and read the positions
-  in the status bar (they are relative to `part1.fa` and `part2.fa`, which
-  start at 73,000,001 and 79,400,001). How long is the duplicated segment
-  and how far apart are the two copies on the chromosome?
+  in the status bar (they are relative to the region, which starts at
+  73,000,001). How long is the duplicated segment and how far apart are the
+  two copies on the chromosome?
 - Where in the duplicated segment are the CENH3 domains at 79.4 Mb and
   84.7 Mb? Why do you think the region at 79.4 Mb has CENH3?
 
@@ -727,6 +728,8 @@ Check the duplication with minimap2 - align the first part of the region to
 the second one:
 
 ```bash
+samtools faidx CEN6.fa OX352004:73000001-79500000 > part1.fa
+samtools faidx CEN6.fa OX352004:79400001-86000000 > part2.fa
 minimap2 -c -x asm10 part2.fa part1.fa > part1_vs_part2.paf
 sort -k11,11nr part1_vs_part2.paf | head -3 | cut -f 1-12
 ```
