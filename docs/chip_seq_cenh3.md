@@ -305,7 +305,9 @@ you produce it. Start IGV (Desktop shortcut, or `igv &` in a second
 terminal), load `CEN6.fa` as the genome (`Genomes → Load Genome from
 File...`), then load (`File → Load from File...`):
 
-- `CEN6_genes.gff3` (the gene annotation)
+- `CEN6_genes.gff3` - the gene annotation: genes are drawn as blue boxes
+  (exons) joined by thin lines (introns), with arrows for the strand;
+  right-click → "Expanded" shows every transcript of a gene on its own line
 - `bam/CENH3_ChIP.bam` and `bam/input.bam` (the `.bai` index from 1.2 must be
   next to each BAM)
 
@@ -560,9 +562,14 @@ echo -e "OX352004\t56520000\t138150000" > centromere.bed
 bedtools intersect -a $D/CEN6_genes.bed -b centromere.bed -u | wc -l
 ```
 
+Load `centromere.bed` into IGV: one feature spanning the whole primary
+constriction. Look at the gene track (loaded in 1.3) along it, then zoom into
+one of the CENH3 domains, e.g. `OX352004:84000000-89000000`.
+
 - Compute the gene density (genes per Mb) in the CENH3 domains, in the whole
   centromere and in the whole chromosome. Are there genes in the centromere?
 - Look at the genes inside the domains in IGV. Where in the domains are they?
+  Are they inside the satellite arrays or between them?
 
 ### 2.3 Structure of the satellite arrays
 
@@ -642,7 +649,8 @@ the second one:
 ```bash
 samtools faidx CEN6.fa OX352004:73000001-79500000 > part1.fa
 samtools faidx CEN6.fa OX352004:79400001-86000000 > part2.fa
-minimap2 -c -x asm10 part2.fa part1.fa | sort -k11,11nr | head -3 | cut -f 1-12
+minimap2 -c -x asm10 part2.fa part1.fa > part1_vs_part2.paf
+sort -k11,11nr part1_vs_part2.paf | head -3 | cut -f 1-12
 ```
 
 <details>
@@ -662,6 +670,23 @@ minimap2 -c -x asm10 part2.fa part1.fa | sort -k11,11nr | head -3 | cut -f 1-12
 
 - Where exactly are the two copies (positions on the chromosome)? How long are
   they? What is their identity (column 10 / column 11)?
+
+To see the two copies in IGV, convert the longest alignment to BED. The PAF
+positions are 0-based and relative to the extracted sequences: `part1.fa`
+starts at chromosome position 73,000,001 and `part2.fa` at 79,400,001, so
+73,000,000 and 79,400,000 are added to the query and target coordinates:
+
+```bash
+sort -k11,11nr part1_vs_part2.paf | head -1 | awk -v OFS='\t' \
+    '{print "OX352004", 73000000+$3, 73000000+$4, "copy_1";
+      print "OX352004", 79400000+$8, 79400000+$9, "copy_2"}' > duplication.bed
+cat duplication.bed
+```
+
+Load `duplication.bed` into IGV and go to `OX352004:73000000-86000000`.
+
+- How are the two copies arranged on the chromosome? Where in each copy are
+  the CENH3 domains at 79.4 Mb and 84.7 Mb? Compare with the Gepard dotplot.
 - What does the identity say about the age of the duplication?
 - Macas et al. 2023 propose that the elongated pea centromeres grow by
   duplications like this one and by the expansion of satellite arrays. How
