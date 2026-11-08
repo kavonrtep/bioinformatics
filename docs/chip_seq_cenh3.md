@@ -305,7 +305,7 @@ you produce it. Start IGV (Desktop shortcut, or `igv &` in a second
 terminal), load `CEN6.fa` as the genome (`Genomes → Load Genome from
 File...`), then load (`File → Load from File...`):
 
-- `CEN6_genes.gff3` and `~/Desktop/Bioinformatics/data/chip_seq_cenh3/CEN6_satellites.bed`
+- `CEN6_genes.gff3` (the gene annotation)
 - `bam/CENH3_ChIP.bam` and `bam/input.bam` (the `.bai` index from 1.2 must be
   next to each BAM)
 
@@ -470,13 +470,19 @@ made it).
 
 ### 1.7 CENH3 domains in IGV
 
-Everything is now in IGV: the genome `CEN6.fa`, `CEN6_genes.gff3`,
-`CEN6_satellites.bed`, the two BAM files, `tracks/CENH3_ChIP.bw` and
-`tracks/input.bw` (group-autoscaled), `tracks/ChIP_vs_input_10kb.bedGraph`,
-`peaks/CENH3_macs3_peaks.broadPeak` and `CENH3_domains.bed`. If a track is
-missing, load it (`File → Load from File...`). You can drag the track names
-to reorder them; put the domains and the MACS3 peaks under the
-log2(ChIP/input) track.
+All results are now in IGV: the genome `CEN6.fa`, `CEN6_genes.gff3`, the two
+BAM files, `tracks/CENH3_ChIP.bw` and `tracks/input.bw` (group-autoscaled),
+`tracks/ChIP_vs_input_10kb.bedGraph`, `peaks/CENH3_macs3_peaks.broadPeak` and
+`CENH3_domains.bed`. If a track is missing, load it (`File → Load from
+File...`). You can drag the track names to reorder them; put the domains and
+the MACS3 peaks under the log2(ChIP/input) track.
+
+Add one more track, the **satellite DNA arrays** of chromosome 6
+(`File → Load from File...`):
+`~/Desktop/Bioinformatics/data/chip_seq_cenh3/CEN6_satellites.bed`. Each
+array is one BED feature; its name (shown when you click on it, or with
+"Expanded" display mode) is the satellite family. Satellite DNA is explained
+in Part 2.
 
 > Working on a VPS without a graphical desktop? Copy the files to your
 > computer first, e.g. `scp -r user@server:chipseq_cenh3/tracks .` (the same
@@ -513,9 +519,9 @@ the same data to describe the structure of the pea chromosome 6 centromere.
 
 **Satellite DNA** consists of short sequences (monomers, typically 150-2,000
 bp) repeated head-to-tail many times, forming arrays of up to several Mb.
-The file `CEN6_satellites.bed` contains the satellite arrays found on
-chromosome 6; the 4th column is the name of the satellite family (FabTR-10,
-FabTR-48, ...).
+The file `CEN6_satellites.bed` (the track you loaded into IGV in 1.7)
+contains the satellite arrays found on chromosome 6; the 4th column is the
+name of the satellite family (FabTR-10, FabTR-48, ...).
 
 ```bash
 # which satellite arrays overlap each domain
