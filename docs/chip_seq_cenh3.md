@@ -221,6 +221,46 @@ samtools flagstat bam/CENH3_ChIP.bam
 samtools flagstat bam/input.bam
 ```
 
+<details>
+<summary>How to read the flagstat output</summary>
+
+The output has this form (`N` and `xx.xx` stand for the numbers you get; the
+last lines about mates are left out here):
+
+```
+N + 0 in total (QC-passed reads + QC-failed reads)
+N + 0 primary
+0 + 0 secondary
+N + 0 supplementary
+0 + 0 duplicates
+0 + 0 primary duplicates
+N + 0 mapped (xx.xx% : N/A)
+N + 0 primary mapped (xx.xx% : N/A)
+0 + 0 paired in sequencing
+...
+```
+
+- `N + 0` - reads that passed QC + reads that failed QC. Nothing was flagged
+  as failing QC, so the second number is always 0.
+- `in total` - the number of alignment records (lines) in the BAM file, not
+  reads: one read can have more than one line.
+- `primary` - one line per read, so this is the number of reads that went
+  into the mapping (compare with the fastp report).
+- `secondary` - alternative placements of a read; minimap2 does not report
+  them by default, hence 0. `supplementary` - a read whose parts align to
+  different places (split alignment) gets one extra line for each extra
+  piece.
+- `duplicates` - 0 because duplicates were not marked (no markdup step).
+- `mapped` - mapped lines and their fraction of all lines. `primary mapped` -
+  mapped reads and their fraction of all reads; this is the fraction to use
+  when answering the question below.
+- `paired in sequencing`, `read1`, `read2`, `properly paired`, `singletons`,
+  `with mate mapped ...` - all 0, the reads are single-end. For paired-end
+  data these lines show how many pairs map consistently (both mates mapped,
+  at the expected distance and orientation).
+
+</details>
+
 - What fraction of the reads was mapped? The reads come from the **whole**
   genome, but the reference is only chromosome 6. Compare the mapped fraction
   with the fraction of the genome in the reference (step "Installation").
