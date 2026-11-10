@@ -181,8 +181,8 @@ reference results (`precomputed/`).
 `deeptools` (coverage tracks, profiles), `macs3` (peak calling), `DiffBind`
 (differential binding, ready R script), `bedtools` (intervals, closest gene,
 sequences), `homer` (motifs), IGV (you look at the data), optionally `salmon` +
-`DESeq2` (RNA-seq). See the [introduction slides](./slides/chipseq_abf3_intro.pdf)
-for what each method does.
+`DESeq2` (RNA-seq). See the [introduction slides](./slides/chipseq_abf3_agent_intro.pdf)
+(the experiment, what is compared with what, and how to read the output of each method).
 
 ## Installation and data
 
