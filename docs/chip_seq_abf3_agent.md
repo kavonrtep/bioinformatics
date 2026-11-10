@@ -33,18 +33,110 @@ Contents:
 
 ## The experiment
 
-The plant hormone **abscisic acid (ABA)** accumulates in plants exposed to
-drought, salt or cold and switches on thousands of stress-response genes. The
-transcription factors **ABFs** (bZIP family) bind the **ABA-responsive element
-(ABRE)**, a DNA motif with the core `ACGTG`.
+Read this part carefully - you cannot write a good plan (and you cannot
+check the agent) unless you know exactly what each sample is and what is
+compared with what.
 
-Data: [Song et al. 2016, *Science* 354: aag1550](https://doi.org/10.1126/science.aag1550).
-Three-day-old *Arabidopsis thaliana* seedlings grown in the dark were treated
-with 10 µM ABA or with a mock solution for 4 hours. The plants carry an extra
-copy of the **ABF3** gene fused with the fluorescent protein YPet; the fusion
-protein was precipitated with an anti-GFP antibody. The control is the same
-anti-GFP ChIP in wild-type plants without any tagged protein. The reads were
-reduced to 3 million per sample and shortened to 50 bp (single-end).
+### The biological question
+
+The plant hormone **abscisic acid (ABA)** accumulates in plants exposed to
+drought, salt or cold and switches on thousands of stress-response genes.
+Part of this response are the **ABFs** (ABRE-binding factors), transcription
+factors of the bZIP family. They bind the **ABA-responsive element (ABRE)**, a
+short DNA motif with the core `ACGTG`, in the promoters of their target genes.
+Without ABA the ABFs are inactive; ABA activates protein kinases that
+phosphorylate them.
+
+The question of this exercise: **where in the genome does ABF3 bind, and does
+ABA change it?** Does ABF3 find new binding sites after ABA, or does it bind
+more strongly to sites where it already was? And are the genes near these
+sites switched on?
+
+Data: [Song et al. 2016, *Science* 354: aag1550](https://doi.org/10.1126/science.aag1550),
+who studied 21 ABA-related transcription factors this way.
+
+### The ABF3-YPet plants - how to pull down ABF3
+
+ChIP needs an antibody that recognises the protein of interest. Good
+antibodies against single plant transcription factors are rarely available
+(and the authors studied 21 of them). So they used a **tag** instead: they
+made transgenic *Arabidopsis* plants with an **extra copy of the ABF3 gene**,
+in which the coding sequence of **YPet** (a yellow fluorescent protein, a
+variant of GFP) is attached to the end of the ABF3 coding sequence. The extra
+copy is the whole genomic ABF3 gene with its own promoter, so the tagged
+protein is made in the same cells and at the same time as the normal one.
+
+```text
+                  promoter    ABF3 gene (exons + introns)
+native ABF3       ====[>>>>>>]===[#####]--[#####]--[#####]====          -> ABF3 protein
+extra copy        ====[>>>>>>]===[#####]--[#####]--[#####][YPet]====    -> ABF3-YPet protein
+(transgene)                                               (tag)
+```
+
+The ABF3-YPet plant therefore has both: the normal ABF3 and the tagged
+ABF3-YPet. The **anti-GFP antibody** recognises YPet, so it pulls down only
+the tagged ABF3 together with the DNA it is bound to. We assume that the tag
+does not change where ABF3 binds.
+
+### The control - what does the antibody pull down without a target?
+
+ChIP never gives pure binding sites. Some DNA sticks to the beads or the
+antibody, some regions break more easily into fragments, some are present in
+many copies or map badly. All of this gives reads that have nothing to do
+with ABF3. To recognise this **background**, the authors did the same anti-GFP
+ChIP in **wild-type plants (Col-0)**, which have no YPet at all - same
+antibody, same procedure, but nothing to recognise. A region with many reads
+in the ABF3-YPet ChIP **and** in the control is not a binding site; a binding
+site has many more reads in the ABF3-YPet ChIP than in the control.
+
+### The treatment - ABA and mock
+
+Seedlings were grown for 3 days in the dark and then kept for 4 hours in a
+solution with 10 µM **ABA**, or in the same solution without ABA (**mock**).
+ABA is dissolved in ethanol, so the mock solution contains the same amount of
+ethanol. The only difference between ABA and mock is therefore ABA itself.
+
+Each condition has independent **biological replicates** (different
+batches of plants): 3 + 3 for the ChIP, 2 + 2 for the RNA-seq. Replicates tell
+us how much the signal varies by chance, so that we can say whether a
+difference between ABA and mock is larger than that.
+
+### What is compared with what
+
+```text
+                         mock (ethanol)          ABA
+                     +------------------+------------------+
+ABF3-YPet ChIP       | rep1 rep2 rep3   | rep1 rep2 rep3   |  (B) mock vs ABA:
+(anti-GFP)           |                  |                  |      does binding change?
+                     +--------+---------+--------+---------+
+                              |  (A) each replicate vs control:
+                              |      where does ABF3 bind?
+                     +--------+---------------------------+
+control ChIP         | control rep1 + rep2 (merged)      |
+(anti-GFP, Col-0)    |                                   |
+                     +-----------------------------------+
+RNA-seq (Col-0)      | rep1 rep2        | rep1 rep2        |  (C) mock vs ABA:
+                     |                  |                  |      which genes change?
+                     +------------------+------------------+
+```
+
+| | Compared | Question | Tool |
+|---|---|---|---|
+| A | each ABF3-YPet ChIP replicate vs the control | Where does ABF3 bind? (binding sites = peaks) | MACS3 |
+| B | 3 ABA vs 3 mock ABF3-YPet ChIP replicates, read counts in the binding sites | Is the binding stronger or weaker after ABA? | DiffBind |
+| - | sequences of the sites gained after ABA vs random genome regions | Which DNA motif does ABF3 recognise there? | HOMER |
+| C | 2 ABA vs 2 mock RNA-seq replicates | Which genes are induced or repressed by ABA? | salmon + DESeq2 |
+| B + C | genes with gained binding vs the other genes | Are the genes with gained binding induced? | your own R script |
+
+Note that the control is **never compared with ABA or mock directly**. It
+only tells us what background looks like, so that we can find the binding
+sites (A). The effect of ABA is the comparison of ABF3-YPet ChIP with ABF3-YPet
+ChIP (B), and of RNA-seq with RNA-seq (C).
+
+To make the exercise fast, the reads were reduced to 3 million (ChIP) and 4
+million (RNA-seq) per sample and shortened to 50 bp.
+
+### The files
 
 Sequencing data - one file per row, all in `~/chipseq_abf3/data/`:
 
@@ -56,8 +148,8 @@ Sequencing data - one file per row, all in `~/chipseq_abf3/data/`:
 | `ABF3_mock_rep1.fastq.gz` | ChIP-seq | ABF3-YPet | anti-GFP | mock 4 h | 1 | 3 M | single-end 50 bp |
 | `ABF3_mock_rep2.fastq.gz` | ChIP-seq | ABF3-YPet | anti-GFP | mock 4 h | 2 | 3 M | single-end 50 bp |
 | `ABF3_mock_rep3.fastq.gz` | ChIP-seq | ABF3-YPet | anti-GFP | mock 4 h | 3 | 3 M | single-end 50 bp |
-| `control_rep1.fastq.gz` | ChIP-seq control | wild type (Col-0) | anti-GFP | none | 1 | 2.6 M | single-end 50 bp |
-| `control_rep2.fastq.gz` | ChIP-seq control | wild type (Col-0) | anti-GFP | none | 2 | 3 M | single-end 50 bp |
+| `control_rep1.fastq.gz` | ChIP-seq control | wild type (Col-0) | anti-GFP | not stated | 1 | 2.6 M | single-end 50 bp |
+| `control_rep2.fastq.gz` | ChIP-seq control | wild type (Col-0) | anti-GFP | not stated | 2 | 3 M | single-end 50 bp |
 | `rnaseq_ABA_rep1.fastq.gz` | RNA-seq | wild type (Col-0) | - | ABA 4 h | 1 | 4 M | single-end 50 bp |
 | `rnaseq_ABA_rep2.fastq.gz` | RNA-seq | wild type (Col-0) | - | ABA 4 h | 2 | 4 M | single-end 50 bp |
 | `rnaseq_mock_rep1.fastq.gz` | RNA-seq | wild type (Col-0) | - | mock 4 h | 1 | 4 M | single-end 50 bp |

@@ -23,8 +23,8 @@ Sequencing data in `data/` (one file per row). All reads are single-end
 | `ABF3_mock_rep1.fastq.gz` | ChIP | ABF3-YPet | anti-GFP | mock | 1 | 3 M |
 | `ABF3_mock_rep2.fastq.gz` | ChIP | ABF3-YPet | anti-GFP | mock | 2 | 3 M |
 | `ABF3_mock_rep3.fastq.gz` | ChIP | ABF3-YPet | anti-GFP | mock | 3 | 3 M |
-| `control_rep1.fastq.gz` | ChIP control | wild type | anti-GFP | none | 1 | 2.6 M |
-| `control_rep2.fastq.gz` | ChIP control | wild type | anti-GFP | none | 2 | 3 M |
+| `control_rep1.fastq.gz` | ChIP control | wild type | anti-GFP | not stated | 1 | 2.6 M |
+| `control_rep2.fastq.gz` | ChIP control | wild type | anti-GFP | not stated | 2 | 3 M |
 | `rnaseq_ABA_rep1.fastq.gz` | RNA-seq | wild type | - | ABA | 1 | 4 M |
 | `rnaseq_ABA_rep2.fastq.gz` | RNA-seq | wild type | - | ABA | 2 | 4 M |
 | `rnaseq_mock_rep1.fastq.gz` | RNA-seq | wild type | - | mock | 1 | 4 M |
