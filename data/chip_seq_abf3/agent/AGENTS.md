@@ -12,13 +12,33 @@ write and run the commands. Work in small steps and never skip ahead.
 - Organism: *Arabidopsis thaliana*, genome TAIR10 (chromosomes `1`-`5`, `Mt`,
   `Pt`; names are plain numbers, no `Chr` prefix).
 
-| File in `data/` | Content |
+Sequencing data in `data/` (one file per row). All reads are single-end
+50 bp - never use paired-end options.
+
+| File | Assay | Plants | Antibody | Treatment | Replicate | Reads |
+|---|---|---|---|---|---|---|
+| `ABF3_ABA_rep1.fastq.gz` | ChIP | ABF3-YPet | anti-GFP | ABA | 1 | 3 M |
+| `ABF3_ABA_rep2.fastq.gz` | ChIP | ABF3-YPet | anti-GFP | ABA | 2 | 3 M |
+| `ABF3_ABA_rep3.fastq.gz` | ChIP | ABF3-YPet | anti-GFP | ABA | 3 | 3 M |
+| `ABF3_mock_rep1.fastq.gz` | ChIP | ABF3-YPet | anti-GFP | mock | 1 | 3 M |
+| `ABF3_mock_rep2.fastq.gz` | ChIP | ABF3-YPet | anti-GFP | mock | 2 | 3 M |
+| `ABF3_mock_rep3.fastq.gz` | ChIP | ABF3-YPet | anti-GFP | mock | 3 | 3 M |
+| `control_rep1.fastq.gz` | ChIP control | wild type | anti-GFP | none | 1 | 2.6 M |
+| `control_rep2.fastq.gz` | ChIP control | wild type | anti-GFP | none | 2 | 3 M |
+| `rnaseq_ABA_rep1.fastq.gz` | RNA-seq | wild type | - | ABA | 1 | 4 M |
+| `rnaseq_ABA_rep2.fastq.gz` | RNA-seq | wild type | - | ABA | 2 | 4 M |
+| `rnaseq_mock_rep1.fastq.gz` | RNA-seq | wild type | - | mock | 1 | 4 M |
+| `rnaseq_mock_rep2.fastq.gz` | RNA-seq | wild type | - | mock | 2 | 4 M |
+
+The control is the same anti-GFP ChIP in plants without the tagged protein;
+it is the control (`-c`) for every ChIP replicate. ABA and mock = 4 h
+treatment.
+
+| Reference file in `data/` | Content |
 |---|---|
-| `ABF3_ABA_rep1..3.fastq.gz` | ChIP of ABF3-YPet (anti-GFP), ABA 4 h; single-end 50 bp, 3 M reads |
-| `ABF3_mock_rep1..3.fastq.gz` | ChIP of ABF3-YPet, mock 4 h |
-| `control_rep1..2.fastq.gz` | anti-GFP ChIP in wild type (no tagged protein) = control |
-| `rnaseq_ABA_rep1..2`, `rnaseq_mock_rep1..2.fastq.gz` | RNA-seq, single-end 50 bp |
-| `TAIR10_genome.fa.gz`, `TAIR10_annotation.gff3.gz`, `TAIR10_transcripts.fa.gz` | genome, annotation, transcripts |
+| `TAIR10_genome.fa.gz` | genome |
+| `TAIR10_annotation.gff3.gz` | annotation (GFF3) |
+| `TAIR10_transcripts.fa.gz` | transcripts (for salmon) |
 
 | File in `HELP/` | Content |
 |---|---|

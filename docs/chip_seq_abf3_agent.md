@@ -46,15 +46,36 @@ protein was precipitated with an anti-GFP antibody. The control is the same
 anti-GFP ChIP in wild-type plants without any tagged protein. The reads were
 reduced to 3 million per sample and shortened to 50 bp (single-end).
 
-| Sample | Treatment | Reads |
-|---|---|---|
-| `ABF3_ABA_rep1`, `rep2`, `rep3` | ChIP of ABF3-YPet, ABA 4 h | 3 M × 50 bp |
-| `ABF3_mock_rep1`, `rep2`, `rep3` | ChIP of ABF3-YPet, mock 4 h | 3 M × 50 bp |
-| `control_rep1`, `control_rep2` | anti-GFP ChIP in wild type | 2.6 M, 3 M × 50 bp |
-| `rnaseq_ABA_rep1`, `rep2`, `rnaseq_mock_rep1`, `rep2` | RNA-seq, ABA / mock 4 h | 4 M × 50 bp |
+Sequencing data - one file per row, all in `~/chipseq_abf3/data/`:
 
-Genome and annotation: TAIR10. Helper files (gene and TSS tables, R scripts,
-reference results) are in `~/Desktop/Bioinformatics/data/chip_seq_abf3/`.
+| File | Assay | Plants | Antibody | Treatment | Replicate | Reads | Read type |
+|---|---|---|---|---|---|---|---|
+| `ABF3_ABA_rep1.fastq.gz` | ChIP-seq | ABF3-YPet | anti-GFP | ABA 4 h | 1 | 3 M | single-end 50 bp |
+| `ABF3_ABA_rep2.fastq.gz` | ChIP-seq | ABF3-YPet | anti-GFP | ABA 4 h | 2 | 3 M | single-end 50 bp |
+| `ABF3_ABA_rep3.fastq.gz` | ChIP-seq | ABF3-YPet | anti-GFP | ABA 4 h | 3 | 3 M | single-end 50 bp |
+| `ABF3_mock_rep1.fastq.gz` | ChIP-seq | ABF3-YPet | anti-GFP | mock 4 h | 1 | 3 M | single-end 50 bp |
+| `ABF3_mock_rep2.fastq.gz` | ChIP-seq | ABF3-YPet | anti-GFP | mock 4 h | 2 | 3 M | single-end 50 bp |
+| `ABF3_mock_rep3.fastq.gz` | ChIP-seq | ABF3-YPet | anti-GFP | mock 4 h | 3 | 3 M | single-end 50 bp |
+| `control_rep1.fastq.gz` | ChIP-seq control | wild type (Col-0) | anti-GFP | none | 1 | 2.6 M | single-end 50 bp |
+| `control_rep2.fastq.gz` | ChIP-seq control | wild type (Col-0) | anti-GFP | none | 2 | 3 M | single-end 50 bp |
+| `rnaseq_ABA_rep1.fastq.gz` | RNA-seq | wild type (Col-0) | - | ABA 4 h | 1 | 4 M | single-end 50 bp |
+| `rnaseq_ABA_rep2.fastq.gz` | RNA-seq | wild type (Col-0) | - | ABA 4 h | 2 | 4 M | single-end 50 bp |
+| `rnaseq_mock_rep1.fastq.gz` | RNA-seq | wild type (Col-0) | - | mock 4 h | 1 | 4 M | single-end 50 bp |
+| `rnaseq_mock_rep2.fastq.gz` | RNA-seq | wild type (Col-0) | - | mock 4 h | 2 | 4 M | single-end 50 bp |
+
+Reference files:
+
+| File | Content |
+|---|---|
+| `data/TAIR10_genome.fa.gz` | genome sequence (chromosomes `1`-`5`, `Mt`, `Pt`) |
+| `data/TAIR10_annotation.gff3.gz` | gene annotation (for IGV) |
+| `data/TAIR10_transcripts.fa.gz` | transcript sequences (for RNA-seq) |
+| `~/Desktop/Bioinformatics/data/chip_seq_abf3/TAIR10_genes.bed` | protein-coding genes (BED6: chromosome, start, end, gene ID, symbol, strand) |
+| `~/Desktop/Bioinformatics/data/chip_seq_abf3/TAIR10_tss.bed` | transcription start sites of the same genes |
+| `~/Desktop/Bioinformatics/data/chip_seq_abf3/TAIR10_tx2gene.tsv` | transcript → gene table |
+
+The same directory also contains the R scripts for DiffBind and DESeq2 and
+reference results (`precomputed/`).
 
 **Biological questions:**
 
