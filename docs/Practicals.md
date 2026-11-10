@@ -129,6 +129,7 @@ Introduction slides for Exercise 3 (weeks 5-7): [assembly_intro.pdf](./slides/as
   - Introduction slides: [chipseq_cenh3_intro.pdf](./slides/chipseq_cenh3_intro.pdf)
 - [ChIP-seq - how does the transcription factor ABF3 respond to abscisic acid?](./chip_seq_abf3.md) - local analysis: mapping, peaks, differential binding, motifs, RNA-seq
   - Introduction slides: [chipseq_abf3_intro.pdf](./slides/chipseq_abf3_intro.pdf)
+  - Alternative: [the same analysis with a coding agent (opencode)](./chip_seq_abf3_agent.md) - plan the analysis, steer the agent, check and interpret the results
 - Optional: [Integrative Genomics Viewer](./Integrative_Genomics_Viewer.md) 
 - Getting help from chatbots and coding agents: [ai_help_intro.pdf](./slides/ai_help_intro.pdf)
 
