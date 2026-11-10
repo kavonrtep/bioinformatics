@@ -66,12 +66,7 @@ variant of GFP) is attached to the end of the ABF3 coding sequence. The extra
 copy is the whole genomic ABF3 gene with its own promoter, so the tagged
 protein is made in the same cells and at the same time as the normal one.
 
-```text
-                  promoter    ABF3 gene (exons + introns)
-native ABF3       ====[>>>>>>]===[#####]--[#####]--[#####]====          -> ABF3 protein
-extra copy        ====[>>>>>>]===[#####]--[#####]--[#####][YPet]====    -> ABF3-YPet protein
-(transgene)                                               (tag)
-```
+![ABF3-YPet: two copies of ABF3, the anti-GFP antibody pulls down only the tagged one](./img/chipseq_abf3_tag.png)
 
 The ABF3-YPet plant therefore has both: the normal ABF3 and the tagged
 ABF3-YPet. The **anti-GFP antibody** recognises YPet, so it pulls down only
@@ -89,6 +84,10 @@ antibody, same procedure, but nothing to recognise. A region with many reads
 in the ABF3-YPet ChIP **and** in the control is not a binding site; a binding
 site has many more reads in the ABF3-YPet ChIP than in the control.
 
+![The control: the same anti-GFP ChIP in plants without YPet shows only the background](./img/chipseq_abf3_control.png)
+
+The coverage tracks in the figure are a made-up example, not the exercise data.
+
 ### The treatment - ABA and mock
 
 Seedlings were grown for 3 days in the dark and then kept for 4 hours in a
@@ -101,24 +100,11 @@ batches of plants): 3 + 3 for the ChIP, 2 + 2 for the RNA-seq. Replicates tell
 us how much the signal varies by chance, so that we can say whether a
 difference between ABA and mock is larger than that.
 
+![Plants, treatment and the samples with their file names](./img/chipseq_abf3_design.png)
+
 ### What is compared with what
 
-```text
-                         mock (ethanol)          ABA
-                     +------------------+------------------+
-ABF3-YPet ChIP       | rep1 rep2 rep3   | rep1 rep2 rep3   |  (B) mock vs ABA:
-(anti-GFP)           |                  |                  |      does binding change?
-                     +--------+---------+--------+---------+
-                              |  (A) each replicate vs control:
-                              |      where does ABF3 bind?
-                     +--------+---------------------------+
-control ChIP         | control rep1 + rep2 (merged)      |
-(anti-GFP, Col-0)    |                                   |
-                     +-----------------------------------+
-RNA-seq (Col-0)      | rep1 rep2        | rep1 rep2        |  (C) mock vs ABA:
-                     |                  |                  |      which genes change?
-                     +------------------+------------------+
-```
+![What is compared with what: A = ChIP vs control, B = ChIP ABA vs mock, C = RNA-seq ABA vs mock](./img/chipseq_abf3_compare.png)
 
 | | Compared | Question | Tool |
 |---|---|---|---|
