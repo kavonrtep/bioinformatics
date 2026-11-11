@@ -174,7 +174,9 @@ sequences), `homer` (motifs), IGV (you look at the data), optionally `salmon` +
 
 Do this part yourself, without the agent, **before the practical** - the
 download (1.9 GB) and the conda environment take a while. The environment is
-the same as in the [original exercise](./chip_seq_abf3.md#installation-and-data):
+the same as in the [original exercise](./chip_seq_abf3.md#installation-and-data).
+
+### Conda environment and data
 
 ```bash
 cd ~/Desktop/Bioinformatics && git pull
@@ -192,11 +194,39 @@ checks each file with `md5sum`. You can run it again at any time: complete
 files are skipped, damaged ones are downloaded again. It must end with
 `All files downloaded and checked.`
 
-Install opencode and copy the instructions for the agent into the working
-directory:
+### Install opencode
+
+[opencode](https://opencode.ai) is a coding agent that runs in the terminal.
+Install it with the official script (no administrator rights needed, it goes
+to `~/.opencode/bin`):
 
 ```bash
 curl -fsSL https://opencode.ai/install | bash
+```
+
+The script adds `~/.opencode/bin` to your `PATH` in `~/.bashrc`. Open a new
+terminal (or run `source ~/.bashrc`) and check that it works:
+
+```bash
+opencode --version
+opencode models | grep free
+```
+
+The second command lists the free models (e.g. `opencode/big-pickle`). They
+need no account and no API key.
+
+- `opencode: command not found` - the new `PATH` is not active yet; open a
+  new terminal, or run `export PATH=~/.opencode/bin:$PATH`.
+- No free model listed - check the internet connection; the list of models is
+  downloaded from the opencode server.
+
+### Prepare the working directory
+
+Copy the instructions for the agent and the plan template into the working
+directory:
+
+```bash
+D=~/Desktop/Bioinformatics/data/chip_seq_abf3
 cd ~/chipseq_abf3
 cp $D/agent/AGENTS.md $D/agent/opencode.json .
 cp $D/agent/plan_template.md plan.md
