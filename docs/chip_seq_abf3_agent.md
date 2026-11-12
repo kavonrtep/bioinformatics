@@ -437,7 +437,7 @@ Goal: map the trimmed reads to TAIR10; get % mapped and the number of reads
 on Mt and Pt for every sample
 Input: trimmed reads of the rows with assay = ChIP-seq or ChIP-seq control
 (8 samples); merge the two ChIP-seq control rows into one file
-Expected result: most reads map; the control may differ from the ChIP
+Expected result: most reads map
 How I check it: samtools flagstat of one BAM file myself
 ```
 
