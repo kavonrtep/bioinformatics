@@ -383,6 +383,9 @@ Warm-up (in the **build** agent):
 2. Ask it to prepare the genome for mapping (decompress, index for samtools
    and minimap2), and to tell you how many chromosomes the genome has and how
    long they are.
+3. Ask it to check that all tools listed in `AGENTS.md` are available
+   (`which fastp minimap2 ...`) and to list any that are missing. Tell the
+   teacher if something is missing - the agent must not install anything.
 
 - Watch the commands it runs. Did it follow the rules from `AGENTS.md`
   (script in `scripts/`, log in `logs/`)?
@@ -422,6 +425,9 @@ moves:
    `plan.md` (you see it in VS Code at once).
 4. **Check** one number yourself (`wc -l`, `samtools flagstat`, `head` of a
    file, a picture ...) and fill in *Result* and *My check*.
+
+Always use the step numbers from `plan.md` in your prompts ("Step 9"), not
+the number you have in your head - the agent finds the step by its heading.
 
 The agent is a weak model and does exactly what the step description says.
 A weak and a good description of the same step:

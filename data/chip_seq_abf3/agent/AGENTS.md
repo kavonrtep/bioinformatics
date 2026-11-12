@@ -12,33 +12,21 @@ write and run the commands. Work in small steps and never skip ahead.
 - Organism: *Arabidopsis thaliana*, genome TAIR10 (chromosomes `1`-`5`, `Mt`,
   `Pt`; names are plain numbers, no `Chr` prefix).
 
-Sequencing data in `data/` (one file per row). All reads are single-end
-50 bp - never use paired-end options.
+Sequencing data in `data/`: 12 files (8 ChIP-seq incl. 2 controls, 4 RNA-seq),
+all single-end 50 bp - never use paired-end options.
 
-| File | Assay | Plants | Antibody | Treatment | Replicate | Reads |
-|---|---|---|---|---|---|---|
-| `ABF3_ABA_rep1.fastq.gz` | ChIP | ABF3-YPet | anti-GFP | ABA | 1 | 3 M |
-| `ABF3_ABA_rep2.fastq.gz` | ChIP | ABF3-YPet | anti-GFP | ABA | 2 | 3 M |
-| `ABF3_ABA_rep3.fastq.gz` | ChIP | ABF3-YPet | anti-GFP | ABA | 3 | 3 M |
-| `ABF3_mock_rep1.fastq.gz` | ChIP | ABF3-YPet | anti-GFP | mock | 1 | 3 M |
-| `ABF3_mock_rep2.fastq.gz` | ChIP | ABF3-YPet | anti-GFP | mock | 2 | 3 M |
-| `ABF3_mock_rep3.fastq.gz` | ChIP | ABF3-YPet | anti-GFP | mock | 3 | 3 M |
-| `control_rep1.fastq.gz` | ChIP control | wild type | anti-GFP | not stated | 1 | 2.6 M |
-| `control_rep2.fastq.gz` | ChIP control | wild type | anti-GFP | not stated | 2 | 3 M |
-| `rnaseq_ABA_rep1.fastq.gz` | RNA-seq | wild type | - | ABA | 1 | 4 M |
-| `rnaseq_ABA_rep2.fastq.gz` | RNA-seq | wild type | - | ABA | 2 | 4 M |
-| `rnaseq_mock_rep1.fastq.gz` | RNA-seq | wild type | - | mock | 1 | 4 M |
-| `rnaseq_mock_rep2.fastq.gz` | RNA-seq | wild type | - | mock | 2 | 4 M |
-
-The same table is in `sample_table.tsv` in the working directory
+The samples are described in `sample_table.tsv` in the working directory
 (tab-separated, header `file assay plants antibody treatment replicate
-reads_million read_type`). This is the sample sheet of the project: the
-student names samples by its column values (e.g. "assay = ChIP-seq and
-treatment = ABA") or by a column they added (e.g. `group`). Always select the
-files from `sample_table.tsv` (in scripts, read it with `awk -F'\t'` and the
-column names), list the selected files before you start, and name the outputs
-after the `file` column without `.fastq.gz`. Read the file again when the student says it has changed. Never modify
-it yourself.
+reads_million read_type`). This is the sample sheet of the project and the
+only description of the samples: the student names samples by its column
+values (e.g. "assay = ChIP-seq and treatment = ABA") or by a column they
+added (e.g. `group`). Always select the files from `sample_table.tsv` (in
+scripts, read it with `awk -F'\t'` and the column names), list the selected
+files before you start, and name the outputs after the `file` column without
+`.fastq.gz`. Some values contain spaces (`ChIP-seq control`, `not stated`,
+`single-end 50 bp`): always split on tabs, never on spaces or on the output
+of `column -t`. Read the file again when the student says it has changed.
+Never modify it yourself.
 
 The control is the same anti-GFP ChIP in plants without the tagged protein;
 it is the control (`-c`) for every ChIP replicate. ABA and mock = 4 h
@@ -47,7 +35,7 @@ treatment.
 | Reference file in `data/` | Content |
 |---|---|
 | `TAIR10_genome.fa.gz` | genome |
-| `TAIR10_annotation.gff3.gz` | annotation (GFF3) |
+| `TAIR10_annotation.gff3.gz` | annotation (GFF3) - not needed in the planned steps, genes and TSS are in `HELP/` |
 | `TAIR10_transcripts.fa.gz` | transcripts (for salmon) |
 
 | File in `HELP/` | Content |
@@ -74,7 +62,8 @@ treatment.
 
 `plan.md` is the student's analysis plan: Part 1 = outline, Part 2 = one
 `## Step N - name` block per step (Goal, Input, Expected result, How I check
-it). The student refers to it as "Step N" in prompts.
+it). The student refers to it as "Step N" in prompts. If the step number and the
+step name or content the student mentions do not match, ask which step is meant.
 
 - When asked to propose a step (plan agent): read that step in `plan.md`,
   then propose the commands with settings (from the tool notes below), the
@@ -83,7 +72,8 @@ it). The student refers to it as "Step N" in prompts.
   match the data. Do not run anything.
 - When asked to do a step (build agent): do what was agreed, nothing more.
   When it is finished, write the script name(s) after
-  `Script (the agent fills in):` in that step of `plan.md`.
+  `Script (the agent fills in):` in that step of `plan.md` (if the line is
+  missing, add it as the last line of the step).
 - Never change anything else in `plan.md` - it is the student's text.
 
 ## How to work
@@ -139,8 +129,11 @@ it). The student refers to it as "Step N" in prompts.
   the working directory: `diffbind_ABA_vs_mock.tsv`, `diffbind_ABA_vs_mock.bed`
   (chrom, start, end, name, log2FC, FDR), `sites_gained_200bp.bed`,
   `diffbind_plots.pdf`. Takes 1-3 minutes.
-- **Closest gene**: `bedtools closest -a diffbind_ABA_vs_mock.bed -b HELP/TAIR10_tss.bed -d -t first`
+- **Closest gene**: `bedtools closest -a diffbind_ABA_vs_mock.bed -b HELP/TAIR10_tss.bed -D b -t first`
   (both inputs sorted by position; sort with `sort -k1,1 -k2,2n` if needed).
+  `-D b` gives a signed distance relative to the gene's strand: negative =
+  site upstream of the TSS, positive = downstream, 0 = overlap. Do not use
+  `-d` (no sign).
 - **Motifs** (HOMER has no Arabidopsis genome installed - do NOT use
   `findMotifsGenome.pl` and do not try to install a genome). Instead:
   `bedtools getfasta -fi TAIR10.fa -bed sites.bed -fo motifs/target.fa`;
@@ -162,7 +155,8 @@ it). The student refers to it as "Step N" in prompts.
   - `sites_closest_gene.tsv` - NO header, tab-separated, 13 columns:
     1-6 site (chr, start, end, site name, binding log2 fold change ABA/mock,
     binding FDR), 7-12 TSS (chr, start, end, gene ID, gene symbol, strand),
-    13 distance site-TSS in bp. A gene can appear in several rows.
+    13 distance site-TSS in bp (negative = upstream of the TSS; use the
+    absolute value for "within N kb"). A gene can appear in several rows.
   - `deseq2_ABA_vs_mock.tsv` - with header, tab-separated, one row per gene:
     `gene_id`, `symbol`, `baseMean`, `log2FoldChange` (ABA/mock), `lfcSE`,
     `stat`, `pvalue`, `padj` (`padj` can be `NA` - treat as not significant).

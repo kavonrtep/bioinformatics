@@ -1,9 +1,10 @@
 # Are the genes with ABA-gained ABF3 binding induced by ABA?
 # usage: Rscript integrate.R <sites with the closest gene> <DESeq2 table>
 #   e.g. Rscript integrate.R sites_closest_gene.tsv deseq2_ABA_vs_mock.tsv
-# sites_closest_gene.tsv = output of bedtools closest -d (DiffBind sites + TSS):
+# sites_closest_gene.tsv = output of bedtools closest -D b (DiffBind sites + TSS):
 #   1-6 site (chr, start, end, name, log2 fold change, FDR),
 #   7-12 TSS (chr, start, end, gene ID, symbol, strand), 13 distance
+#   (negative = site upstream of the TSS)
 args <- commandArgs(trailingOnly = TRUE)
 sites <- read.delim(args[1], header = FALSE)
 colnames(sites) <- c("chr", "start", "end", "site", "binding_log2fc", "binding_fdr",
@@ -11,7 +12,7 @@ colnames(sites) <- c("chr", "start", "end", "site", "binding_log2fc", "binding_f
 expr <- read.delim(args[2])
 
 # only sites up to 1 kb from the TSS of a gene
-sites <- sites[sites$distance <= 1000, ]
+sites <- sites[abs(sites$distance) <= 1000, ]
 gained <- unique(sites$gene_id[sites$binding_fdr < 0.05 & sites$binding_log2fc > 0])
 unchanged <- setdiff(unique(sites$gene_id[sites$binding_fdr >= 0.05]), gained)
 

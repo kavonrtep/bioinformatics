@@ -14,6 +14,7 @@ Biological questions:
 3.
 
 Steps (one line each: what is done, with which rows of sample_table.tsv):
+0. Genome preparation - done in the warm-up
 1. Quality control of reads - assay = ChIP-seq or ChIP-seq control
 2.
 3.

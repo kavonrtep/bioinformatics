@@ -1,13 +1,18 @@
-# Differential expression ABA vs mock (2 + 2 replicates) from salmon results
+# Differential expression ABA vs mock from salmon results (salmon/ABA_repN, salmon/mock_repN)
 # usage: Rscript deseq2.R <directory with salmon results> <tx2gene table> <output table>
 #   e.g. Rscript deseq2.R salmon TAIR10_tx2gene.tsv deseq2_ABA_vs_mock.tsv
 args <- commandArgs(trailingOnly = TRUE)
 qdir <- args[1]; tx2gene_file <- args[2]; out <- args[3]
 suppressMessages({library(tximport); library(DESeq2)})
 
-samples <- data.frame(sample = c("ABA_rep1", "ABA_rep2", "mock_rep1", "mock_rep2"),
-                      condition = factor(c("ABA", "ABA", "mock", "mock"),
+# one salmon folder per sample (e.g. salmon/ABA_rep1); the condition is the
+# part of the folder name before "_rep" (ABA or mock)
+sample_names <- sort(basename(dirname(Sys.glob(file.path(qdir, "*", "quant.sf")))))
+samples <- data.frame(sample = sample_names,
+                      condition = factor(sub("_rep.*$", "", sample_names),
                                          levels = c("mock", "ABA")))
+print(samples)
+stopifnot(!anyNA(samples$condition), length(unique(samples$condition)) == 2)
 files <- file.path(qdir, samples$sample, "quant.sf")
 names(files) <- samples$sample
 
