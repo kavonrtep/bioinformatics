@@ -141,6 +141,12 @@ Sequencing data - one file per row, all in `~/chipseq_abf3/data/`:
 | `rnaseq_mock_rep1.fastq.gz` | RNA-seq | wild type (Col-0) | - | mock 4 h | 1 | 4 M | single-end 50 bp |
 | `rnaseq_mock_rep2.fastq.gz` | RNA-seq | wild type (Col-0) | - | mock 4 h | 2 | 4 M | single-end 50 bp |
 
+The same table is in the file `sample_table.tsv` (tab-separated, you copy it
+to the working directory below). Use its columns when you tell the agent which
+files to use, instead of relying on the file names - for example *"all rows
+with assay = ChIP-seq and treatment = ABA"*. You can also add your own column,
+e.g. `group`, and tell the agent to compare the groups in it.
+
 Reference files:
 
 | File | Content |
@@ -228,7 +234,7 @@ directory:
 ```bash
 D=~/Desktop/Bioinformatics/data/chip_seq_abf3
 cd ~/chipseq_abf3
-cp $D/agent/AGENTS.md $D/agent/opencode.json .
+cp $D/agent/AGENTS.md $D/agent/opencode.json $D/agent/sample_table.tsv .
 cp $D/agent/plan_template.md plan.md
 ```
 
@@ -236,6 +242,9 @@ cp $D/agent/plan_template.md plan.md
   not do, and tested settings for each tool. opencode reads it automatically
   at the start of every session. **Read it** - it tells you a lot about how
   the analysis is done.
+- `sample_table.tsv` - one row per sequencing file (assay, plants, antibody,
+  treatment, replicate, ...), the same as the table in
+  [The files](#the-files). The agent uses it to find the files.
 - `opencode.json` - the model (`opencode/big-pickle`, free) and permissions:
   the agent may run commands, but asks before deleting or moving files or
   installing software.

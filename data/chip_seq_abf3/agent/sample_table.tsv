@@ -1,0 +1,13 @@
+file	assay	plants	antibody	treatment	replicate	reads_million	read_type
+ABF3_ABA_rep1.fastq.gz	ChIP-seq	ABF3-YPet	anti-GFP	ABA	1	3	single-end 50 bp
+ABF3_ABA_rep2.fastq.gz	ChIP-seq	ABF3-YPet	anti-GFP	ABA	2	3	single-end 50 bp
+ABF3_ABA_rep3.fastq.gz	ChIP-seq	ABF3-YPet	anti-GFP	ABA	3	3	single-end 50 bp
+ABF3_mock_rep1.fastq.gz	ChIP-seq	ABF3-YPet	anti-GFP	mock	1	3	single-end 50 bp
+ABF3_mock_rep2.fastq.gz	ChIP-seq	ABF3-YPet	anti-GFP	mock	2	3	single-end 50 bp
+ABF3_mock_rep3.fastq.gz	ChIP-seq	ABF3-YPet	anti-GFP	mock	3	3	single-end 50 bp
+control_rep1.fastq.gz	ChIP-seq control	Col-0	anti-GFP	not stated	1	2.6	single-end 50 bp
+control_rep2.fastq.gz	ChIP-seq control	Col-0	anti-GFP	not stated	2	3	single-end 50 bp
+rnaseq_ABA_rep1.fastq.gz	RNA-seq	Col-0	none	ABA	1	4	single-end 50 bp
+rnaseq_ABA_rep2.fastq.gz	RNA-seq	Col-0	none	ABA	2	4	single-end 50 bp
+rnaseq_mock_rep1.fastq.gz	RNA-seq	Col-0	none	mock	1	4	single-end 50 bp
+rnaseq_mock_rep2.fastq.gz	RNA-seq	Col-0	none	mock	2	4	single-end 50 bp

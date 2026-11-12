@@ -30,6 +30,14 @@ Sequencing data in `data/` (one file per row). All reads are single-end
 | `rnaseq_mock_rep1.fastq.gz` | RNA-seq | wild type | - | mock | 1 | 4 M |
 | `rnaseq_mock_rep2.fastq.gz` | RNA-seq | wild type | - | mock | 2 | 4 M |
 
+The same table is in `sample_table.tsv` in the working directory
+(tab-separated, header `file assay plants antibody treatment replicate
+reads_million read_type`). When the student names samples by column values
+(e.g. "assay = ChIP-seq and treatment = ABA") or by a column they added (e.g.
+`group`), select the files from `sample_table.tsv` and list them before you
+start. Read the file again when the student says it has changed. Never modify
+it yourself.
+
 The control is the same anti-GFP ChIP in plants without the tagged protein;
 it is the control (`-c`) for every ChIP replicate. ABA and mock = 4 h
 treatment.

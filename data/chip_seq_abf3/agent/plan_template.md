@@ -15,7 +15,8 @@ Copy the block below for each step. One step = one prompt to the agent.
 ### Step N - <short name>
 
 - **Question / goal:** what do I want to learn from this step?
-- **Input:** which files (exact names or directory)?
+- **Input:** which files? (names, a directory, or rows of `sample_table.tsv`,
+  e.g. assay = RNA-seq)
 - **Tool and key settings:** which program, important parameters (see the
   tool notes in `AGENTS.md`)
 - **Output:** which files, in which directory?
@@ -29,8 +30,8 @@ Copy the block below for each step. One step = one prompt to the agent.
 
 - **Question / goal:** Are the reads of good quality? Do I need to trim them?
   Do all samples have a similar number of reads?
-- **Input:** all eight ChIP-seq files `data/ABF3_*.fastq.gz`,
-  `data/control_rep*.fastq.gz` (not the RNA-seq)
+- **Input:** the eight rows of `sample_table.tsv` with assay = ChIP-seq or
+  ChIP-seq control (`ABF3_*` and `control_*` files, not the RNA-seq)
 - **Tool and key settings:** fastp, single-end, 4 threads
 - **Output:** trimmed reads in `trimmed/`, reports `qc/*.html` and
   `qc/*.json`; a table with reads before and after filtering for every sample
