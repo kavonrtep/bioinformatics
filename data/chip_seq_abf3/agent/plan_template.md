@@ -2,41 +2,60 @@
 
 Name:
 
-## Biological questions
+Write plain text after the colons. Lines starting with # are headings - keep
+them, the agent uses them to find the steps.
 
+
+# Part 1 - Outline (before you start the agent)
+
+Biological questions:
 1.
 2.
 3.
 
-## Steps
+Steps (one line each: what is done, with which rows of sample_table.tsv):
+1. Quality control of reads - assay = ChIP-seq or ChIP-seq control
+2.
+3.
+4.
+5.
+6.
+7.
+8.
 
-Copy the block below for each step. One step = one prompt to the agent.
 
-### Step N - <short name>
+# Part 2 - Steps (fill in one step at a time)
 
-- **Question / goal:** what do I want to learn from this step?
-- **Input:** which files? (names, a directory, or rows of `sample_table.tsv`,
-  e.g. assay = RNA-seq)
-- **Tool and key settings:** which program, important parameters (see the
-  tool notes in `AGENTS.md`)
-- **Output:** which files, in which directory?
-- **Check:** how will I know the step worked? (a number, a file, a picture
-  that I look at myself)
-- **Expected result:** what do I expect, and what would surprise me?
+## Step 1 - Quality control of reads (example)
 
----
+Goal: Are the reads good? Do all samples have a similar number of reads?
+Input: rows of sample_table.tsv with assay = ChIP-seq or ChIP-seq control (8 files)
+Expected result: about 3 M reads per sample (2.6 M in control_rep1), few reads removed
+How I check it: open one fastp report (qc/) and compare its numbers with the agent's table
 
-### Example: Step 1 - Quality control of reads
+Changed in the agent's proposal:
+Script (the agent fills in):
+Result:
+My check:
 
-- **Question / goal:** Are the reads of good quality? Do I need to trim them?
-  Do all samples have a similar number of reads?
-- **Input:** the eight rows of `sample_table.tsv` with assay = ChIP-seq or
-  ChIP-seq control (`ABF3_*` and `control_*` files, not the RNA-seq)
-- **Tool and key settings:** fastp, single-end, 4 threads
-- **Output:** trimmed reads in `trimmed/`, reports `qc/*.html` and
-  `qc/*.json`; a table with reads before and after filtering for every sample
-- **Check:** eight HTML reports exist; I open one report myself and compare
-  its read count with the agent's table
-- **Expected result:** about 3 M reads per sample (2.6 M in `control_rep1`),
-  only a small fraction of reads removed; a sample that loses many more
-  reads than the others would be suspicious
+
+## Step 2 -
+
+Goal:
+Input:
+Expected result:
+How I check it:
+
+Changed in the agent's proposal:
+Script (the agent fills in):
+Result:
+My check:
+
+
+(copy the block "## Step ..." for every next step)
+
+
+# Part 3 - Final plan (optional, at the end)
+
+Now that you know all the steps: write the instructions you would give an
+agent to run the whole analysis at once, without you watching every step.

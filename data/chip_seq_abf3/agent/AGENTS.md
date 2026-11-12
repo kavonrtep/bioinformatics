@@ -70,6 +70,22 @@ treatment.
 - The computer has 4 CPU threads and 8 GB RAM: use `-t 4` / `-p 4` / `-@ 2`.
 - No internet access is needed. Do not download HOMER genomes or databases.
 
+## The student's plan (`plan.md`)
+
+`plan.md` is the student's analysis plan: Part 1 = outline, Part 2 = one
+`## Step N - name` block per step (Goal, Input, Expected result, How I check
+it). The student refers to it as "Step N" in prompts.
+
+- When asked to propose a step (plan agent): read that step in `plan.md`,
+  then propose the commands with settings (from the tool notes below), the
+  input files selected from `sample_table.tsv`, the output files, and what you
+  will report. Point out anything in the step that is unclear or that does not
+  match the data. Do not run anything.
+- When asked to do a step (build agent): do what was agreed, nothing more.
+  When it is finished, write the script name(s) after
+  `Script (the agent fills in):` in that step of `plan.md`.
+- Never change anything else in `plan.md` - it is the student's text.
+
 ## How to work
 
 1. Before each step, say in 2-3 sentences what you will do and which files you

@@ -29,6 +29,7 @@ Contents:
 - [Step 2 - First contact with the agent](#step-2---first-contact-with-the-agent)
 - [Step 3 - Run the analysis step by step](#step-3---run-the-analysis-step-by-step)
 - [Step 4 - Check and interpret the results](#step-4---check-and-interpret-the-results)
+- [Optional - the final plan](#optional---the-final-plan)
 - [What to hand in](#what-to-hand-in)
 
 ## The experiment
@@ -259,8 +260,22 @@ cp $D/agent/plan_template.md plan.md
   the agent may run commands, but asks before deleting or moving files or
   installing software.
 
+- `plan.md` - your analysis plan, you fill it in during Steps 1-3.
+
 If the free model has a different name, list the available ones with
 `opencode models` and change `"model"` in `opencode.json`.
+
+Open the working directory in VS Code (answer *Yes* if it asks whether you
+trust the authors) and open `plan.md`:
+
+```bash
+code ~/chipseq_abf3
+```
+
+In VS Code switch on **File → Auto Save** (a check mark appears). The agent
+reads `plan.md` from the disk - text you have not saved, it does not see. The
+agent also writes into `plan.md` (the script names); with Auto Save VS Code
+shows the change at once and you cannot overwrite it by accident.
 
 ## Step 1 - Write the analysis plan
 
@@ -285,30 +300,45 @@ Use these column values in your plan and in your prompts. If you need to add
 a column (e.g. `group`), open `sample_table.tsv` in LibreOffice Calc
 (separator: Tab), add the column and save it with *Keep current format*.
 
-Then decide what the analysis should do. Open
-`plan.md` and fill in:
+Then write **Part 1 of `plan.md` - the outline**: your biological questions
+and the list of steps, one line each, with the rows of the sample table that
+each step uses. No details yet - you describe each step just before you run
+it (Step 3). Think about the order of the steps (what needs what), which
+samples go into which step, and what the control is used for.
 
-- the biological questions you want to answer,
-- the steps of the analysis; for each step its **goal, input, tool and key
-  settings, output, how you check it, and what result you expect** (an
-  example for the first step is in the template).
-
-Think about the order of the steps (what needs what), which samples go into
-which step (ChIP, control, RNA-seq), and what the control is used for.
-
-**Discuss the plan with the teacher before you continue.**
+**Discuss the outline with the teacher before you continue.**
 
 <details>
-<summary>💡 Hints for the plan</summary>
+<summary>💡 Hints for the outline</summary>
 
-- A ChIP-seq analysis usually goes: reads QC → mapping → coverage tracks →
-  peak calling (ChIP vs control) → look at the data → compare conditions →
-  what is in the changed sites (genes, motifs).
-- The two control samples can be merged into one.
-- Peaks are called in each replicate separately; comparing the number of
-  peaks is not enough to say that binding changed - use DiffBind.
-- One step should produce something you can check: a number, a table, a
-  picture.
+A ChIP-seq analysis usually has these steps. For each of them think: what
+goes in, what comes out, what do I expect?
+
+1. **Quality control of reads** - are the reads good? How many reads per
+   sample?
+2. **Mapping to the genome** - what fraction of the reads maps? Where else in
+   the cell does DNA come from (`Mt`, `Pt`)? The two controls can be merged
+   into one.
+3. **Coverage tracks** (bigWig) - for looking at the data in IGV, normalised
+   so that samples with different numbers of reads can be compared.
+4. **Peak calling** - comparison A: which samples are the ChIP and which the
+   control? Peaks are called in each replicate separately. Do you expect
+   tens, thousands or millions of peaks?
+5. **Profile around genes** (TSS) - does ABF3 bind close to genes? Before or
+   after the start of the gene?
+6. **Differential binding** (DiffBind) - comparison B: which samples are
+   compared? Comparing the numbers of peaks is not enough to say that the
+   binding changed.
+7. **Closest genes** of the binding sites - which genes may ABF3 regulate?
+8. **Motifs** in the sites with gained binding (HOMER) - which DNA sequence
+   does ABF3 recognise? What do you expect (see the introduction slides)?
+9. *(optional)* **RNA-seq** - comparison C: which genes change expression
+   after ABA (salmon + DESeq2)?
+10. *(optional)* **Binding vs expression** - B and C together, with your own
+    specification ([see below](#optional---binding-vs-expression-your-own-specification)).
+
+Each step should give something you can check yourself: a number, a table, a
+picture.
 
 </details>
 
@@ -321,11 +351,23 @@ opencode
 ```
 
 Start opencode from the activated environment - the agent then finds all the
-tools. The basics:
+tools.
+
+opencode has two agents. You switch between them with `Shift+Tab`; always
+look which one is active before you send a prompt:
+
+- **plan** - reads files and proposes what to do, but does not change files
+  (and asks before it runs a command). Use it to **think**: *"how would you
+  do this step?"*
+- **build** - writes scripts and runs commands. Use it to **do** the step you
+  agreed on.
+
+Working with an agent on a bigger task always goes like this: first plan,
+check the plan, then let it run.
 
 | Key / command | What it does |
 |---|---|
-| `Shift+Tab` | switch between the **build** agent (runs commands, edits files) and the **plan** agent (only reads and proposes, changes nothing) |
+| `Shift+Tab` | switch between the **plan** and the **build** agent |
 | `Esc` | stop the agent when it goes wrong |
 | `/undo` | remove your last message and the agent's answer (do not rely on it to restore files) |
 | `/new` | start a new conversation (`AGENTS.md` is read again) |
@@ -347,57 +389,80 @@ Warm-up (in the **build** agent):
 - Check the chromosome lengths yourself: `cut -f 1,2 TAIR10.fa.fai`. Do they
   agree with what the agent said?
 
-Then switch to the **plan** agent (`Shift+Tab`), paste your plan and ask the agent
-to comment on it: is something missing, are the steps in the right order? Do
-you agree with its comments? Do not let it change the plan without thinking.
+Then switch to the **plan** agent and let it review your outline. Do not
+paste the plan into the prompt - refer to the file:
+
+```text
+Read plan.md, Part 1. Is a step missing? Are the steps in the right order?
+Are the right samples used in each step? Do not change the file.
+```
+
+Do you agree with its comments? If yes, change `plan.md` yourself.
 
 ## Step 3 - Run the analysis step by step
 
-Switch back to the **build** agent (`Shift+Tab`). For each step of your plan, write one
-prompt. A good prompt contains:
+Go through your outline one step at a time. Every step has the same four
+moves:
 
-- **what** to do and **why** (the goal from your plan),
-- **which input** - the rows of `sample_table.tsv` (column = value), not
-  file names - and **which output** you want,
-- the **tool and settings** if they matter (the agent knows the tested
-  settings from `AGENTS.md`, but you can point to them),
-- **what to report** back (e.g. "a table with the number of peaks per
-  sample").
+1. **Describe the step** in Part 2 of `plan.md`: goal, input (rows of the
+   sample table), expected result, how you check it. The first step is
+   filled in as an example.
+2. **Plan agent** - ask it how it would do the step:
 
-A weak prompt and a good prompt:
+   ```text
+   Read plan.md, Step 2. Propose how to do it: the commands and settings,
+   the output files, and what you will report to me. Do not run anything.
+   ```
+
+   Read the proposal. Ask about anything you do not understand. If you want
+   something different, say so. Note what you changed in *Changed in the
+   agent's proposal*.
+3. **Build agent** - `Do Step 2 as proposed.` The agent writes a script into
+   `scripts/`, runs it, reports the results and writes the script name into
+   `plan.md` (you see it in VS Code at once).
+4. **Check** one number yourself (`wc -l`, `samtools flagstat`, `head` of a
+   file, a picture ...) and fill in *Result* and *My check*.
+
+The agent is a weak model and does exactly what the step description says.
+A weak and a good description of the same step:
 
 ```text
-do the mapping
+## Step 2 - Mapping
+Goal: do the mapping
 ```
 
 ```text
-Step 3 - mapping. Map the trimmed reads (trimmed/) of the rows of
-sample_table.tsv with assay = ChIP-seq or ChIP-seq control (8 samples) to
-TAIR10 with minimap2 as described in AGENTS.md, sorted and indexed BAM files
-in bam/. Then merge the BAM files of the ChIP-seq control rows into
-bam/control.bam. Test on one sample first. At the end give me a table:
-sample, treatment, replicate, number of reads, % mapped (from samtools
-flagstat).
+## Step 2 - Mapping
+Goal: map the trimmed reads to TAIR10; get % mapped and the number of reads
+on Mt and Pt for every sample
+Input: trimmed reads of the rows with assay = ChIP-seq or ChIP-seq control
+(8 samples); merge the two ChIP-seq control rows into one file
+Expected result: most reads map; the control may differ from the ChIP
+How I check it: samtools flagstat of one BAM file myself
 ```
+
+A good description says **what** and **why**, the **input as rows of the
+sample table** (not file names), and **what you want to get back** (a table,
+a number, a picture). Settings of the tools are in `AGENTS.md` - you do not
+need to write them, but you should understand them when the plan agent
+proposes them.
+
+Once you know the routine, you can skip the plan agent for simple steps
+(e.g. coverage tracks), but not for the steps that compare samples (peaks,
+DiffBind, RNA-seq).
 
 Rules for you:
 
-- **One step at a time.** Read the agent's report before asking for the next
-  step.
-- **Read the script** the agent wrote (`scripts/`) for each step. Can you say
-  what each command does?
-- **Check one number yourself** after each step (`wc -l`, `samtools
-  flagstat`, `head` of a file ...). Write the check into `plan.md`.
+- **One step at a time.** Read the agent's report before you describe the
+  next step.
+- **Read the script** the agent wrote (`scripts/`). Can you say what each
+  command does?
 - When the agent goes in circles (the same error repeatedly, installing
   software, changing the plan on its own): press `Esc`, tell it exactly what is
   wrong and what to do instead. If it does not help, ask the teacher.
 - If a step really fails, the reference results are in
   `~/Desktop/Bioinformatics/data/chip_seq_abf3/precomputed/` (peaks, DiffBind
   results) - tell the agent to use them and continue.
-
-Suggested order (your plan may differ): QC → mapping and statistics →
-coverage tracks (bigWig) → peak calling → profile around TSS → DiffBind →
-closest genes → motifs in the gained sites → *(optional)* RNA-seq.
 
 Mapping and peak calling of all samples take a few minutes - the agent runs
 them in the background. Use the time to look at the outputs of the previous
@@ -409,7 +474,7 @@ The last question - *are the genes with stronger ABF3 binding also induced by
 ABA?* - has no ready script. The agent writes it in R, from **your**
 specification. Once you have the DiffBind sites with the closest genes
 (`sites_closest_gene.tsv`) and the DESeq2 results (`deseq2_ABA_vs_mock.tsv`),
-write the specification into `plan.md` first. Decide:
+write the specification as a new step into `plan.md`. Decide:
 
 - which binding sites count - all, or only those close to a TSS (how close)?
 - how you define the groups of genes: "gained binding", "unchanged binding",
@@ -419,9 +484,10 @@ write the specification into `plan.md` first. Decide:
   (which one?), a statistical test (which one, comparing what)?
 - a table of the individual genes with gained binding and their expression.
 
-Give the specification to the agent and ask it to show you the R script
-before running it. Check: does the script do what you specified? Take two
-genes from the output table and find them in both input files yourself.
+Ask the **plan** agent to show you the R script it would write. Check: does
+the script do what you specified? Then let the **build** agent save and run
+it. Take two genes from the output table and find them in both input files
+yourself.
 
 ## Step 4 - Check and interpret the results
 
@@ -482,11 +548,23 @@ Go to RD29B (AT5G52300), RAB18 (AT5G66400), ABI1 (AT4G26080), ACT2
 - Which part of your plan turned out to be too vague for the agent? How would
   you write it next time?
 
+## Optional - the final plan
+
+At the end you know all the steps and what each of them produces. Write
+Part 3 of `plan.md`: the instructions you would give an agent to run the
+whole analysis at once, without you checking every step. What must be in
+it so that the agent does not go wrong? Which checks would you ask the agent
+to do itself, and which results would you still check yourself?
+
+This is how agents are used on bigger projects - but a good plan for the
+whole analysis is only possible when you understand the single steps.
+
 ## What to hand in
 
 From `~/chipseq_abf3`:
 
-- `plan.md` - your plan, with the checks you did after each step,
+- `plan.md` - your outline and all steps with results and your checks
+  (and the final plan, if you wrote it),
 - `scripts/` - the scripts the agent wrote,
 - the conversation exported with `/export`,
 - `answers.md` - your answers to the questions in Step 4.
