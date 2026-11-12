@@ -32,10 +32,12 @@ Sequencing data in `data/` (one file per row). All reads are single-end
 
 The same table is in `sample_table.tsv` in the working directory
 (tab-separated, header `file assay plants antibody treatment replicate
-reads_million read_type`). When the student names samples by column values
-(e.g. "assay = ChIP-seq and treatment = ABA") or by a column they added (e.g.
-`group`), select the files from `sample_table.tsv` and list them before you
-start. Read the file again when the student says it has changed. Never modify
+reads_million read_type`). This is the sample sheet of the project: the
+student names samples by its column values (e.g. "assay = ChIP-seq and
+treatment = ABA") or by a column they added (e.g. `group`). Always select the
+files from `sample_table.tsv` (in scripts, read it with `awk -F'\t'` and the
+column names), list the selected files before you start, and name the outputs
+after the `file` column without `.fastq.gz`. Read the file again when the student says it has changed. Never modify
 it yourself.
 
 The control is the same anti-GFP ChIP in plants without the tagged protein;

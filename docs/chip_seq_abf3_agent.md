@@ -141,11 +141,19 @@ Sequencing data - one file per row, all in `~/chipseq_abf3/data/`:
 | `rnaseq_mock_rep1.fastq.gz` | RNA-seq | wild type (Col-0) | - | mock 4 h | 1 | 4 M | single-end 50 bp |
 | `rnaseq_mock_rep2.fastq.gz` | RNA-seq | wild type (Col-0) | - | mock 4 h | 2 | 4 M | single-end 50 bp |
 
-The same table is in the file `sample_table.tsv` (tab-separated, you copy it
-to the working directory below). Use its columns when you tell the agent which
-files to use, instead of relying on the file names - for example *"all rows
-with assay = ChIP-seq and treatment = ABA"*. You can also add your own column,
-e.g. `group`, and tell the agent to compare the groups in it.
+The same table is in two files, which you copy to the working directory
+below:
+
+- `sample_table.ods` - for you, open it in LibreOffice Calc,
+- `sample_table.tsv` - the same table as tab-separated text, for the agent.
+
+**This table is the description of the data you give to the agent.** In every
+prompt, tell the agent which samples to use by referring to the table, not to
+the file names, for example *"the rows of sample_table.tsv with assay =
+ChIP-seq and treatment = ABA"*. This is how a real analysis is set up: the
+sample sheet, not the file names, says what each file is. If you need groups
+that are not in the table, add your own column (e.g. `group`) to
+`sample_table.tsv` and tell the agent to compare the groups in it.
 
 Reference files:
 
@@ -234,7 +242,8 @@ directory:
 ```bash
 D=~/Desktop/Bioinformatics/data/chip_seq_abf3
 cd ~/chipseq_abf3
-cp $D/agent/AGENTS.md $D/agent/opencode.json $D/agent/sample_table.tsv .
+cp $D/agent/AGENTS.md $D/agent/opencode.json .
+cp $D/agent/sample_table.tsv $D/agent/sample_table.ods .
 cp $D/agent/plan_template.md plan.md
 ```
 
@@ -242,9 +251,10 @@ cp $D/agent/plan_template.md plan.md
   not do, and tested settings for each tool. opencode reads it automatically
   at the start of every session. **Read it** - it tells you a lot about how
   the analysis is done.
-- `sample_table.tsv` - one row per sequencing file (assay, plants, antibody,
-  treatment, replicate, ...), the same as the table in
-  [The files](#the-files). The agent uses it to find the files.
+- `sample_table.tsv` and `sample_table.ods` - one row per sequencing file
+  (assay, plants, antibody, treatment, replicate, ...), the same as the table
+  in [The files](#the-files). You refer to it in your prompts; the agent
+  reads the `.tsv` to find the files.
 - `opencode.json` - the model (`opencode/big-pickle`, free) and permissions:
   the agent may run commands, but asks before deleting or moving files or
   installing software.
@@ -254,7 +264,28 @@ If the free model has a different name, list the available ones with
 
 ## Step 1 - Write the analysis plan
 
-Before you start the agent, decide what the analysis should do. Open
+**First inspect the sample table and the files.** Open `sample_table.ods` in
+LibreOffice Calc and look at the same table as text, the way the agent sees
+it:
+
+```bash
+cd ~/chipseq_abf3
+column -t -s $'\t' sample_table.tsv
+ls -lh data/
+zcat data/ABF3_ABA_rep1.fastq.gz | head -8
+```
+
+- How many ChIP-seq, control and RNA-seq samples are there? Which columns
+  tell them apart?
+- Which rows (column = value) are the input of each comparison A, B and C in
+  [What is compared with what](#what-is-compared-with-what)?
+- Is every file of the table in `data/`? Do the reads look single-end 50 bp?
+
+Use these column values in your plan and in your prompts. If you need to add
+a column (e.g. `group`), open `sample_table.tsv` in LibreOffice Calc
+(separator: Tab), add the column and save it with *Keep current format*.
+
+Then decide what the analysis should do. Open
 `plan.md` and fill in:
 
 - the biological questions you want to answer,
@@ -300,9 +331,13 @@ tools. The basics:
 | `/new` | start a new conversation (`AGENTS.md` is read again) |
 | `/export` | save the conversation as Markdown |
 
-Warm-up (in the **build** agent): ask the agent to prepare the genome for
-mapping (decompress, index for samtools and minimap2), and to tell you how
-many chromosomes the genome has and how long they are.
+Warm-up (in the **build** agent):
+
+1. Ask the agent to read `sample_table.tsv` and tell you how many samples
+   there are per assay and treatment. Does it agree with what you found?
+2. Ask it to prepare the genome for mapping (decompress, index for samtools
+   and minimap2), and to tell you how many chromosomes the genome has and how
+   long they are.
 
 - Watch the commands it runs. Did it follow the rules from `AGENTS.md`
   (script in `scripts/`, log in `logs/`)?
@@ -319,7 +354,8 @@ Switch back to the **build** agent. For each step of your plan, write one
 prompt. A good prompt contains:
 
 - **what** to do and **why** (the goal from your plan),
-- **which input** files and **which output** you want,
+- **which input** - the rows of `sample_table.tsv` (column = value), not
+  file names - and **which output** you want,
 - the **tool and settings** if they matter (the agent knows the tested
   settings from `AGENTS.md`, but you can point to them),
 - **what to report** back (e.g. "a table with the number of peaks per
@@ -332,11 +368,13 @@ do the mapping
 ```
 
 ```text
-Step 3 - mapping. Map the trimmed ChIP-seq reads (trimmed/, 8 samples) to
+Step 3 - mapping. Map the trimmed reads (trimmed/) of the rows of
+sample_table.tsv with assay = ChIP-seq or ChIP-seq control (8 samples) to
 TAIR10 with minimap2 as described in AGENTS.md, sorted and indexed BAM files
-in bam/. Then merge the two controls into bam/control.bam. Test on one sample
-first. At the end give me a table: sample, number of reads, % mapped (from
-samtools flagstat).
+in bam/. Then merge the BAM files of the ChIP-seq control rows into
+bam/control.bam. Test on one sample first. At the end give me a table:
+sample, treatment, replicate, number of reads, % mapped (from samtools
+flagstat).
 ```
 
 Rules for you:

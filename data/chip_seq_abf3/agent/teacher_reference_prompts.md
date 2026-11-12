@@ -3,7 +3,9 @@
 Prompts used in the pilot run of the agent exercise
 ([chip_seq_abf3_agent.md](../../../docs/chip_seq_abf3_agent.md)). One prompt per step, all in
 one opencode session, with `AGENTS.md` and `opencode.json` from this directory in the working
-directory. They show the level of detail the free model needs. Do not give them to students
+directory. They show the level of detail the free model needs. Samples are selected by
+rows of `sample_table.tsv` (the normal setup); the pilot itself used file
+names. Do not give them to students
 before they have written their own plan.
 
 ## Pilot result (2026-11-10, opencode v2.2.1, `opencode/big-pickle`)
@@ -24,23 +26,26 @@ before they have written their own plan.
 ## Prompts
 
 ```text
-00  Warm-up: prepare the genome for mapping (decompress, index for samtools and minimap2)
-    as described in AGENTS.md. Then tell me how many chromosomes the genome has and how
-    long they are.
+00  Warm-up: read sample_table.tsv and tell me how many samples there are per assay and
+    treatment. Then prepare the genome for mapping (decompress, index for samtools and
+    minimap2) as described in AGENTS.md, and tell me how many chromosomes the genome has
+    and how long they are.
 
-01  Step 1 - read QC. Run fastp on the 8 ChIP-seq samples (ABF3_* and control_*, not
-    RNA-seq), trimmed reads to trimmed/, reports to qc/. Report a table: sample, reads
-    before, reads after filtering.
+01  Step 1 - read QC. Run fastp on the rows of sample_table.tsv with assay = ChIP-seq or
+    ChIP-seq control (8 samples), trimmed reads to trimmed/, reports to qc/. Report a
+    table: sample, reads before, reads after filtering.
 
-02  Step 2 - mapping. Map the trimmed ChIP-seq reads to TAIR10 with minimap2 (sorted,
-    indexed BAM in bam/), then merge the two controls into bam/control.bam. Test on one
-    sample first, run the rest in the background. Report a table: sample, total reads,
-    % mapped (samtools flagstat), and reads on Mt and Pt (samtools idxstats).
+02  Step 2 - mapping. Map the trimmed reads of the same 8 rows to TAIR10 with minimap2
+    (sorted, indexed BAM in bam/), then merge the rows with assay = ChIP-seq control into
+    bam/control.bam. Test on one sample first, run the rest in the background. Report a
+    table: sample, total reads, % mapped (samtools flagstat), and reads on Mt and Pt
+    (samtools idxstats).
 
-03  Step 3 - coverage tracks. Make CPM-normalised bigWig files for the 6 ABF3 samples and
-    the merged control into bigwig/, settings from AGENTS.md. List the files when done.
+03  Step 3 - coverage tracks. Make CPM-normalised bigWig files for the rows with assay =
+    ChIP-seq (6) and the merged control into bigwig/, settings from AGENTS.md. List the
+    files when done.
 
-04  Step 4 - peak calling. Call peaks with MACS3 in each of the 6 ABF3 replicates
+04  Step 4 - peak calling. Call peaks with MACS3 in each row with assay = ChIP-seq
     separately against the merged control. Report a table: sample, number of peaks,
     fragment length d.
 
@@ -48,9 +53,10 @@ before they have written their own plan.
     ABF3_ABA_rep1, ABF3_mock_rep1 and control bigWigs over all genes. Tell me which files
     to open.
 
-06  Step 6 - differential binding. Create samples.csv for the 6 ABF3 replicates (format in
-    AGENTS.md) and run the DiffBind script. Report: number of consensus sites, number of
-    sites with FDR < 0.05 gained and lost in ABA.
+06  Step 6 - differential binding. Create samples.csv for the rows with assay = ChIP-seq,
+    Condition = treatment column (format in AGENTS.md), and run the DiffBind script.
+    Report: number of consensus sites, number of sites with FDR < 0.05 gained and lost
+    in ABA.
 
 07  Step 7 - closest genes. For all DiffBind sites find the closest TSS (bedtools closest,
     HELP/TAIR10_tss.bed). Save to sites_closest_gene.tsv and show the 20 most significant
@@ -60,7 +66,7 @@ before they have written their own plan.
     a shuffled genomic background with HOMER as described in AGENTS.md. Report the best 3
     de novo motifs (consensus, % target, % background) and the top 5 known motifs.
 
-09a Step 9 (optional) - RNA-seq. Quantify the 4 RNA-seq samples with salmon and run the
+09a Step 9 (optional) - RNA-seq. Quantify the rows with assay = RNA-seq with salmon and run the
     DESeq2 script. Report the number of genes with padj < 0.05 up and down in ABA.
 
 09b Integration step: use sites_closest_gene.tsv and deseq2_ABA_vs_mock.tsv. Only sites up
