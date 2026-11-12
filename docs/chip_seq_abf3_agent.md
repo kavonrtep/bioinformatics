@@ -325,11 +325,14 @@ tools. The basics:
 
 | Key / command | What it does |
 |---|---|
-| `Tab` | switch between the **build** agent (runs commands, edits files) and the **plan** agent (only reads and proposes, changes nothing) |
+| `Shift+Tab` | switch between the **build** agent (runs commands, edits files) and the **plan** agent (only reads and proposes, changes nothing) |
 | `Esc` | stop the agent when it goes wrong |
-| `/undo` | undo the last change of files |
+| `/undo` | remove your last message and the agent's answer (do not rely on it to restore files) |
 | `/new` | start a new conversation (`AGENTS.md` is read again) |
-| `/export` | save the conversation as Markdown |
+| `/export` | open the conversation as Markdown in a text editor - save it as `conversation.md` |
+
+The keys are for opencode 2.x. Older versions switch agents with `Tab`; if
+a key does not work, type `/help`.
 
 Warm-up (in the **build** agent):
 
@@ -344,13 +347,13 @@ Warm-up (in the **build** agent):
 - Check the chromosome lengths yourself: `cut -f 1,2 TAIR10.fa.fai`. Do they
   agree with what the agent said?
 
-Then switch to the **plan** agent (`Tab`), paste your plan and ask the agent
+Then switch to the **plan** agent (`Shift+Tab`), paste your plan and ask the agent
 to comment on it: is something missing, are the steps in the right order? Do
 you agree with its comments? Do not let it change the plan without thinking.
 
 ## Step 3 - Run the analysis step by step
 
-Switch back to the **build** agent. For each step of your plan, write one
+Switch back to the **build** agent (`Shift+Tab`). For each step of your plan, write one
 prompt. A good prompt contains:
 
 - **what** to do and **why** (the goal from your plan),
