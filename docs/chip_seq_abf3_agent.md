@@ -169,7 +169,7 @@ Reference files:
 
 `help/` also contains the R scripts for DiffBind and DESeq2, and
 `precomputed/` the reference results. Both are copied into the working
-directory when you prepare it (below), so the agent has everything at hand.
+directory by the setup script (below), so the agent has everything at hand.
 
 **Biological questions:**
 
@@ -189,28 +189,65 @@ sequences), `homer` (motifs), IGV (you look at the data), optionally `salmon` +
 ## Installation and data
 
 Do this part yourself, without the agent, **before the practical** - the
-download (1.9 GB) and the conda environment take a while. The environment is
-the same as in the [original exercise](./chip_seq_abf3.md#installation-and-data).
+download (1.9 GB) and the conda environment take a while. Update the course
+repository first (`cd ~/Desktop/Bioinformatics && git pull`).
 
-### Conda environment and data
+### 1. Create the working directory
 
 ```bash
-cd ~/Desktop/Bioinformatics && git pull
+mkdir -p ~/chipseq_abf3
+cd ~/chipseq_abf3
+```
+
+All your work happens here. The agent works only inside this directory.
+
+### 2. Run the setup script
+
+In `~/chipseq_abf3`:
+
+```bash
+bash ~/Desktop/Bioinformatics/data/chip_seq_abf3/agent/setup.sh
+```
+
+The script copies the files below into the working directory and downloads
+the reads, the genome and the annotation from
+[Zenodo](https://zenodo.org/records/23984926) into `data/`, checking each file
+with `md5sum`. It must end with `Setup finished`. If the download fails, run
+the script again: complete files are skipped, and files you have edited
+(`plan.md`, `sample_table.*`, ...) are never overwritten.
+
+- `AGENTS.md` - rules for the agent: where the data are, what it may and may
+  not do, and tested settings for each tool. opencode reads it automatically
+  at the start of every session. **Read it** - it tells you a lot about how
+  the analysis is done. The settings are tested defaults, not rules for you:
+  if you decide on something else (another threshold, a different step),
+  tell the agent and note it in *Changed in the agent's proposal*.
+- `sample_table.tsv` and `sample_table.ods` - one row per sequencing file
+  (assay, plants, antibody, treatment, replicate, ...), the same as the table
+  in [The files](#the-files). You refer to it in your prompts; the agent
+  reads the `.tsv` to find the files.
+- `plan.md` - your analysis plan, you fill it in during Steps 1-3.
+- `opencode.json` - the model (`opencode/big-pickle`, free) and permissions:
+  the agent may run commands, but asks before deleting or moving files,
+  installing software, or touching files outside `~/chipseq_abf3`.
+- `help/` - gene and TSS positions, the transcript → gene table, R scripts
+  for DiffBind and DESeq2; `precomputed/` - reference results.
+- `data/` - the sequencing reads and the reference files.
+
+### 3. Install the conda environment
+
+The same environment as in the
+[original exercise](./chip_seq_abf3.md#installation-and-data) - if you have
+it already, skip `conda create`:
+
+```bash
 conda create -n chipseq -y --override-channels -c conda-forge -c bioconda \
     fastp minimap2 samtools macs3 deeptools bedtools seqkit homer salmon \
     bioconductor-diffbind bioconductor-deseq2 bioconductor-tximport bioconductor-genomeinfodb
-
-D=~/Desktop/Bioinformatics/data/chip_seq_abf3
-bash $D/download_data.sh
+conda activate chipseq
 ```
 
-The script downloads the reads, the genome and the annotation from
-[Zenodo](https://zenodo.org/records/23984926) into `~/chipseq_abf3/data` and
-checks each file with `md5sum`. You can run it again at any time: complete
-files are skipped, damaged ones are downloaded again. It must end with
-`All files downloaded and checked.`
-
-### Install opencode
+### 4. Install opencode
 
 [opencode](https://opencode.ai) is a coding agent that runs in the terminal.
 Install it with the official script (no administrator rights needed, it goes
@@ -234,46 +271,24 @@ need no account and no API key.
 - `opencode: command not found` - the new `PATH` is not active yet; open a
   new terminal, or run `export PATH=~/.opencode/bin:$PATH`.
 - No free model listed - check the internet connection; the list of models is
-  downloaded from the opencode server.
+  downloaded from the opencode server. If the free model has a different
+  name, change `"model"` in `opencode.json`.
 
-### Prepare the working directory
+### 5. Start opencode
 
-Copy the instructions for the agent, the plan template, the helper files and
-the reference results into the working directory:
+Always start it in the working directory, with the environment activated -
+the agent then finds the data and all the tools:
 
 ```bash
-D=~/Desktop/Bioinformatics/data/chip_seq_abf3
 cd ~/chipseq_abf3
-cp $D/agent/AGENTS.md $D/agent/opencode.json .
-cp $D/agent/sample_table.tsv $D/agent/sample_table.ods .
-cp $D/agent/plan_template.md plan.md
-mkdir -p help
-cp $D/TAIR10_genes.bed $D/TAIR10_tss.bed $D/TAIR10_tx2gene.tsv help/
-cp $D/diffbind.R $D/deseq2.R help/
-cp -r $D/precomputed .
+conda activate chipseq
+opencode
 ```
 
-The agent works only inside `~/chipseq_abf3` - everything it needs is now
-there.
+Check that it starts, then quit with `/exit` (or `Ctrl+C`). You start
+working with the agent in Step 2.
 
-- `AGENTS.md` - rules for the agent: where the data are, what it may and may
-  not do, and tested settings for each tool. opencode reads it automatically
-  at the start of every session. **Read it** - it tells you a lot about how
-  the analysis is done. The settings are tested defaults, not rules for you:
-  if you decide on something else (another threshold, a different step),
-  tell the agent and note it in *Changed in the agent's proposal*.
-- `sample_table.tsv` and `sample_table.ods` - one row per sequencing file
-  (assay, plants, antibody, treatment, replicate, ...), the same as the table
-  in [The files](#the-files). You refer to it in your prompts; the agent
-  reads the `.tsv` to find the files.
-- `opencode.json` - the model (`opencode/big-pickle`, free) and permissions:
-  the agent may run commands, but asks before deleting or moving files,
-  installing software, or touching files outside `~/chipseq_abf3`.
-
-- `plan.md` - your analysis plan, you fill it in during Steps 1-3.
-
-If the free model has a different name, list the available ones with
-`opencode models` and change `"model"` in `opencode.json`.
+## Step 1 - Write the analysis plan
 
 Open the working directory in VS Code (answer *Yes* if it asks whether you
 trust the authors) and open `plan.md`:
@@ -286,8 +301,6 @@ In VS Code switch on **File → Auto Save** (a check mark appears). The agent
 reads `plan.md` from the disk - text you have not saved, it does not see. The
 agent also writes into `plan.md` (the script names); with Auto Save VS Code
 shows the change at once and you cannot overwrite it by accident.
-
-## Step 1 - Write the analysis plan
 
 **First inspect the sample table and the files.** Open `sample_table.ods` in
 LibreOffice Calc and look at the same table as text, the way the agent sees
