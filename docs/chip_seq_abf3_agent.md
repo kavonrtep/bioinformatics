@@ -163,12 +163,13 @@ Reference files:
 | `data/TAIR10_genome.fa.gz` | genome sequence (chromosomes `1`-`5`, `Mt`, `Pt`) |
 | `data/TAIR10_annotation.gff3.gz` | gene annotation (for IGV) |
 | `data/TAIR10_transcripts.fa.gz` | transcript sequences (for RNA-seq) |
-| `~/Desktop/Bioinformatics/data/chip_seq_abf3/TAIR10_genes.bed` | protein-coding genes (BED6: chromosome, start, end, gene ID, symbol, strand) |
-| `~/Desktop/Bioinformatics/data/chip_seq_abf3/TAIR10_tss.bed` | transcription start sites of the same genes |
-| `~/Desktop/Bioinformatics/data/chip_seq_abf3/TAIR10_tx2gene.tsv` | transcript → gene table |
+| `help/TAIR10_genes.bed` | protein-coding genes (BED6: chromosome, start, end, gene ID, symbol, strand) |
+| `help/TAIR10_tss.bed` | transcription start sites of the same genes |
+| `help/TAIR10_tx2gene.tsv` | transcript → gene table |
 
-The same directory also contains the R scripts for DiffBind and DESeq2 and
-reference results (`precomputed/`).
+`help/` also contains the R scripts for DiffBind and DESeq2, and
+`precomputed/` the reference results. Both are copied into the working
+directory when you prepare it (below), so the agent has everything at hand.
 
 **Biological questions:**
 
@@ -237,8 +238,8 @@ need no account and no API key.
 
 ### Prepare the working directory
 
-Copy the instructions for the agent and the plan template into the working
-directory:
+Copy the instructions for the agent, the plan template, the helper files and
+the reference results into the working directory:
 
 ```bash
 D=~/Desktop/Bioinformatics/data/chip_seq_abf3
@@ -246,19 +247,28 @@ cd ~/chipseq_abf3
 cp $D/agent/AGENTS.md $D/agent/opencode.json .
 cp $D/agent/sample_table.tsv $D/agent/sample_table.ods .
 cp $D/agent/plan_template.md plan.md
+mkdir -p help
+cp $D/TAIR10_genes.bed $D/TAIR10_tss.bed $D/TAIR10_tx2gene.tsv help/
+cp $D/diffbind.R $D/deseq2.R help/
+cp -r $D/precomputed .
 ```
+
+The agent works only inside `~/chipseq_abf3` - everything it needs is now
+there.
 
 - `AGENTS.md` - rules for the agent: where the data are, what it may and may
   not do, and tested settings for each tool. opencode reads it automatically
   at the start of every session. **Read it** - it tells you a lot about how
-  the analysis is done.
+  the analysis is done. The settings are tested defaults, not rules for you:
+  if you decide on something else (another threshold, a different step),
+  tell the agent and note it in *Changed in the agent's proposal*.
 - `sample_table.tsv` and `sample_table.ods` - one row per sequencing file
   (assay, plants, antibody, treatment, replicate, ...), the same as the table
   in [The files](#the-files). You refer to it in your prompts; the agent
   reads the `.tsv` to find the files.
 - `opencode.json` - the model (`opencode/big-pickle`, free) and permissions:
-  the agent may run commands, but asks before deleting or moving files or
-  installing software.
+  the agent may run commands, but asks before deleting or moving files,
+  installing software, or touching files outside `~/chipseq_abf3`.
 
 - `plan.md` - your analysis plan, you fill it in during Steps 1-3.
 
@@ -466,9 +476,8 @@ Rules for you:
 - When the agent goes in circles (the same error repeatedly, installing
   software, changing the plan on its own): press `Esc`, tell it exactly what is
   wrong and what to do instead. If it does not help, ask the teacher.
-- If a step really fails, the reference results are in
-  `~/Desktop/Bioinformatics/data/chip_seq_abf3/precomputed/` (peaks, DiffBind
-  results) - tell the agent to use them and continue.
+- If a step really fails, the reference results are in `precomputed/`
+  (peaks, DiffBind results) - tell the agent to use them and continue.
 
 Mapping and peak calling of all samples take a few minutes - the agent runs
 them in the background. Use the time to look at the outputs of the previous

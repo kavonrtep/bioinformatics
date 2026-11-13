@@ -1,14 +1,24 @@
 # ChIP-seq of ABF3 - instructions for the agent
 
-You help a student analyse ChIP-seq data. The student decides WHAT to do; you
-write and run the commands. Work in small steps and never skip ahead.
+You help a student analyse ChIP-seq data. The student decides what to do and
+may also choose how (other settings, thresholds, extra or different steps);
+you write and run the commands. Work in small steps and never skip ahead.
+
+The student's decisions are not errors. When the student chooses something
+different from this file or from your proposal, do it their way. You may
+explain the consequence once (e.g. "100 bp bins give a smoother but less
+detailed profile"), then follow the decision and do not report it later as
+a deviation or a problem. Report as problems only things that do not work:
+errors, missing files, results that contradict the data.
 
 ## Project
 
 - Working directory: `~/chipseq_abf3` (run everything from here).
 - Raw data (read-only, never modify or delete): `data/`
-- Helper files (read-only): `~/Desktop/Bioinformatics/data/chip_seq_abf3/`
-  (referred to as `HELP/` below)
+- Helper files (read-only): `help/`
+- Reference results (read-only): `precomputed/` - use ONLY when the student asks
+- Everything you need is in the working directory. Do not read or search
+  files outside it.
 - Organism: *Arabidopsis thaliana*, genome TAIR10 (chromosomes `1`-`5`, `Mt`,
   `Pt`; names are plain numbers, no `Chr` prefix).
 
@@ -35,18 +45,15 @@ treatment.
 | Reference file in `data/` | Content |
 |---|---|
 | `TAIR10_genome.fa.gz` | genome |
-| `TAIR10_annotation.gff3.gz` | annotation (GFF3) - not needed in the planned steps, genes and TSS are in `HELP/` |
+| `TAIR10_annotation.gff3.gz` | annotation (GFF3) - not needed in the planned steps, genes and TSS are in `help/` |
 | `TAIR10_transcripts.fa.gz` | transcripts (for salmon) |
 
-| File in `HELP/` | Content |
+| File in `help/` | Content |
 |---|---|
 | `TAIR10_genes.bed` | protein-coding genes, BED6: chrom, start, end, gene ID, symbol, strand |
 | `TAIR10_tss.bed` | 1-bp TSS of the same genes, same columns |
 | `TAIR10_tx2gene.tsv` | transcript -> gene table |
 | `diffbind.R`, `deseq2.R` | ready R scripts (read the header for usage) |
-| `integrate.R` | reference solution for the teacher - do NOT read or use it |
-| `samples.csv` | example DiffBind sample sheet - do NOT copy it, write your own |
-| `precomputed/` | reference results - use ONLY when the student asks |
 
 ## Environment rules
 
@@ -100,7 +107,10 @@ step name or content the student mentions do not match, ask which step is meant.
 7. Do not interpret the biology unless asked - the student does that.
 8. Do not continue with the next step until the student asks.
 
-## Tool notes (use these settings - they are tested)
+## Tool notes (tested default settings)
+
+Use these settings unless the student asks for something else - then use
+the student's settings (see the beginning of this file).
 
 - **Genome preparation**: `zcat data/TAIR10_genome.fa.gz > TAIR10.fa`,
   `samtools faidx TAIR10.fa`, `minimap2 -x sr -d TAIR10.mmi TAIR10.fa`.
@@ -116,11 +126,11 @@ step name or content the student mentions do not match, ask which step is meant.
   Reads are single-end: do NOT use `-f BAMPE`. Run each ChIP replicate
   separately against the merged control. The fragment length is in
   `peaks/S_peaks.xls` (line `# d = `).
-- **Profile around genes**: `computeMatrix reference-point -S <bigwigs> -R HELP/TAIR10_genes.bed --referencePoint TSS -b 2000 -a 2000 --skipZeros -p 4 -o M.gz`,
+- **Profile around genes**: `computeMatrix reference-point -S <bigwigs> -R help/TAIR10_genes.bed --referencePoint TSS -b 2000 -a 2000 --skipZeros -p 4 -o M.gz`,
   then `plotProfile -m M.gz -o P.png --perGroup` and `plotHeatmap -m M.gz -o H.png`.
   For regions without strand use `--referencePoint center`.
 - **DiffBind**: do NOT write your own DiffBind code. Use
-  `Rscript HELP/diffbind.R samples.csv` run in the working directory. You
+  `Rscript help/diffbind.R samples.csv` run in the working directory. You
   must create `samples.csv` (comma-separated) with exactly these columns:
   `SampleID,Condition,Replicate,bamReads,ControlID,bamControl,Peaks,PeakCaller`
   (Condition = `ABA` or `mock`, ControlID = `control`, bamControl =
@@ -129,7 +139,7 @@ step name or content the student mentions do not match, ask which step is meant.
   the working directory: `diffbind_ABA_vs_mock.tsv`, `diffbind_ABA_vs_mock.bed`
   (chrom, start, end, name, log2FC, FDR), `sites_gained_200bp.bed`,
   `diffbind_plots.pdf`. Takes 1-3 minutes.
-- **Closest gene**: `bedtools closest -a diffbind_ABA_vs_mock.bed -b HELP/TAIR10_tss.bed -D b -t first`
+- **Closest gene**: `bedtools closest -a diffbind_ABA_vs_mock.bed -b help/TAIR10_tss.bed -D b -t first`
   (both inputs sorted by position; sort with `sort -k1,1 -k2,2n` if needed).
   `-D b` gives a signed distance relative to the gene's strand: negative =
   site upstream of the TSS, positive = downstream, 0 = overlap. Do not use
@@ -145,9 +155,9 @@ step name or content the student mentions do not match, ask which step is meant.
 - **RNA-seq (optional)**: `salmon index -t data/TAIR10_transcripts.fa.gz -i salmon_index -p 4`;
   `salmon quant -i salmon_index -l A -r data/rnaseq_S.fastq.gz -p 4 --validateMappings -o salmon/S`
   (S without the `rnaseq_` prefix, e.g. `salmon/ABA_rep1`); then
-  `Rscript HELP/deseq2.R salmon HELP/TAIR10_tx2gene.tsv deseq2_ABA_vs_mock.tsv`.
+  `Rscript help/deseq2.R salmon help/TAIR10_tx2gene.tsv deseq2_ABA_vs_mock.tsv`.
 - **Binding vs expression (you write this script)**: do NOT use
-  `HELP/integrate.R`. Write `scripts/NN_integrate.R` yourself, exactly as the
+  any ready script. Write `scripts/NN_integrate.R` yourself, exactly as the
   student specifies (which sites, which genes, thresholds, plot, test). If
   the specification is incomplete, ask the student instead of choosing
   yourself. Use base R only (`read.delim`, `merge`, `table`, `boxplot`,
